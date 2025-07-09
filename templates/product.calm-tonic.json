@@ -529,10 +529,21 @@
             "heading_2": "Stay laser-focused",
             "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>"
           }
+        },
+        "row_tWbad6": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "heading_1": "Get centered, stay clear",
+            "text_1": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>",
+            "heading_2": "Stay laser-focused",
+            "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>"
+          }
         }
       },
       "block_order": [
-        "row_NPeT7w"
+        "row_NPeT7w",
+        "row_tWbad6"
       ],
       "name": "Focus You",
       "settings": {
