@@ -534,11 +534,11 @@
           "type": "row",
           "settings": {
             "image_position": "right",
-            "image": "shopify://shop_images/Image_3_36db5ab5-6dbf-48cd-8984-66c109f9d15c.png",
-            "heading_1": "Get centered, stay clear",
-            "text_1": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>",
-            "heading_2": "Stay laser-focused",
-            "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>"
+            "image": "shopify://shop_images/Image_5.png",
+            "heading_1": "Feel consistent energy",
+            "text_1": "<p>Clinically dosed and powered by liposomal technology for 10x better absorption. More magnesium reaches your cells for stronger nerve signaling, steadier energy, and fewer focus crashes.</p>",
+            "heading_2": "Kick-in focus, right on time",
+            "text_2": "<p>Starts working in about 1 hour and reaches full power in 2–4 hours, delivering the clarity and balance you need exactly when the pressure is on.</p>"
           }
         }
       },
