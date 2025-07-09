@@ -19,14 +19,14 @@
         </div>
         <div class="focus-you__content">
           {% if block.settings.heading_1 != blank %}
-            <h3 class="focus-you__heading">{{ block.settings.heading_1 }}</h3>
+            <h3 class="focus-you__heading"><em>{{ block.settings.heading_1 }}</em></h3>
           {% endif %}
           {% if block.settings.text_1 != blank %}
             <div class="focus-you__text">{{ block.settings.text_1 }}</div>
           {% endif %}
 
           {% if block.settings.heading_2 != blank %}
-            <h3 class="focus-you__heading">{{ block.settings.heading_2 }}</h3>
+            <h3 class="focus-you__heading"><em>{{ block.settings.heading_2 }}</em></h3>
           {% endif %}
           {% if block.settings.text_2 != blank %}
             <div class="focus-you__text">{{ block.settings.text_2 }}</div>
@@ -41,7 +41,7 @@
   .focus-you__row {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 60px;
   margin-bottom: 4rem;
   justify-content: space-between;
 }
