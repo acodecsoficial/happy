@@ -2711,7 +2711,7 @@
         "button_8rgaR3"
       ],
       "custom_css": [
-        ".section-template--24761927336256__image_with_text_wjQyxT-padding{border-top: 1px solid #000;}"
+        ".section-template--24761927336256__image_with_text_wjQyxT-padding {border-top: 1px solid #000;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
