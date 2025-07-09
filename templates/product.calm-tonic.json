@@ -2749,6 +2749,28 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "ingredients_tabs_nKwUYB": {
+      "type": "ingredients-tabs",
+      "blocks": {
+        "tab_GQg8LN": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "MAGNESIUM BISGLYCINATE",
+            "tab_heading": "Magnesium Bisglycinate",
+            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
+            "tab_image": "shopify://shop_images/Badge.png"
+          }
+        }
+      },
+      "block_order": [
+        "tab_GQg8LN"
+      ],
+      "name": "Ingredients Tabs",
+      "settings": {
+        "heading": "THOUGHTFULLY SOURCED,clinically-verified ingredients",
+        "subheading": ""
+      }
     }
   },
   "order": [
@@ -2768,6 +2790,7 @@
     "wines",
     "landing_section_qAbkWE",
     "faqs_9gMU6f",
-    "17401711251af96b37"
+    "17401711251af96b37",
+    "ingredients_tabs_nKwUYB"
   ]
 }
