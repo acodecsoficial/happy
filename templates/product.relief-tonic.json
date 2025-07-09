@@ -1989,7 +1989,6 @@
         "result_item_rqhTek",
         "result_item_9ia4b9"
       ],
-      "disabled": true,
       "custom_css": [
         "h3.heading {border-bottom: 1px solid; border-top: none; padding-top: 0;}",
         "h2.heading {font-size: 50px !important;}",
@@ -1999,7 +1998,7 @@
       ],
       "name": "Results List",
       "settings": {
-        "title": "YOUR NMN JOURNEY : v<em>itality milestones</em>"
+        "title": "Your Relief <em>Timeline</em>"
       }
     },
     "ingredients_tabs_nKwUYB": {
