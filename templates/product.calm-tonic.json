@@ -2284,8 +2284,8 @@
           "type": "step",
           "settings": {
             "number": "",
-            "step_title": "TAKE ONE TEASPOON (6 ML)",
-            "step_text": "every morning, <br>straight or mixed into water, juice or a smoothie."
+            "step_title": "SIP (10 ml)",
+            "step_text": "Use when you need to feel sharp, <br>centered, and ready.<br>Drink straight or mix with water or tea."
           }
         }
       },
@@ -2301,8 +2301,8 @@
       ],
       "settings": {
         "show_border_top": true,
-        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy.png",
-        "second_image": "shopify://shop_images/piscina.jpg"
+        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_1.png",
+        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_2.png"
       }
     },
     "image_banner_D6TgTi": {
