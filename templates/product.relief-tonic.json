@@ -1284,7 +1284,7 @@
           "settings": {
             "text": "<h3>Fresh Citrus Nutty flavor that’s easy to enjoy</h3>",
             "text_style": "body",
-            "has_border": false,
+            "has_border": true,
             "center_mobile": false
           }
         },
