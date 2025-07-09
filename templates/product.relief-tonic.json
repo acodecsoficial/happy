@@ -207,6 +207,52 @@
         "padding_bottom": 12
       }
     },
+    "marquee_pMqq4Y": {
+      "type": "marquee",
+      "blocks": {
+        "text_F9fHWN": {
+          "type": "text",
+          "settings": {
+            "text": "Clinically-Validated Doses"
+          }
+        },
+        "text_z7tkeC": {
+          "type": "text",
+          "settings": {
+            "text": "Premium Ingredients"
+          }
+        },
+        "text_8c4bkD": {
+          "type": "text",
+          "settings": {
+            "text": "100% Natural"
+          }
+        },
+        "text_LhF6BY": {
+          "type": "text",
+          "settings": {
+            "text": "Vegan & Gluten-Free"
+          }
+        },
+        "text_qkCpGH": {
+          "type": "text",
+          "settings": {
+            "text": "No Added Sugars"
+          }
+        }
+      },
+      "block_order": [
+        "text_F9fHWN",
+        "text_z7tkeC",
+        "text_8c4bkD",
+        "text_LhF6BY",
+        "text_qkCpGH"
+      ],
+      "custom_css": [
+        "site-marqueex {border-top: 1px solid;}"
+      ],
+      "settings": {}
+    },
     "landing_section_GdHXgh": {
       "type": "landing-section",
       "blocks": {
@@ -469,52 +515,6 @@
         "use_top_border_mobile": false,
         "use_bottom_border_mobile": false
       }
-    },
-    "marquee_pMqq4Y": {
-      "type": "marquee",
-      "blocks": {
-        "text_F9fHWN": {
-          "type": "text",
-          "settings": {
-            "text": "Clinically-Validated Doses"
-          }
-        },
-        "text_z7tkeC": {
-          "type": "text",
-          "settings": {
-            "text": "Premium Ingredients"
-          }
-        },
-        "text_8c4bkD": {
-          "type": "text",
-          "settings": {
-            "text": "100% Natural"
-          }
-        },
-        "text_LhF6BY": {
-          "type": "text",
-          "settings": {
-            "text": "Vegan & Gluten-Free"
-          }
-        },
-        "text_qkCpGH": {
-          "type": "text",
-          "settings": {
-            "text": "No Added Sugars"
-          }
-        }
-      },
-      "block_order": [
-        "text_F9fHWN",
-        "text_z7tkeC",
-        "text_8c4bkD",
-        "text_LhF6BY",
-        "text_qkCpGH"
-      ],
-      "custom_css": [
-        "site-marqueex {border-top: 1px solid;}"
-      ],
-      "settings": {}
     },
     "landing_section_KWgCJm": {
       "type": "landing-section",
@@ -2800,8 +2800,8 @@
   },
   "order": [
     "main",
-    "landing_section_GdHXgh",
     "marquee_pMqq4Y",
+    "landing_section_GdHXgh",
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
     "image_with_text_blocks_gAjTfr",
