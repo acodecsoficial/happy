@@ -548,7 +548,7 @@
       ],
       "name": "Focus You",
       "settings": {
-        "title": "FOCUS YOU can feel",
+        "title": "<p>FOCUS YOU <em>can feel</em></p>",
         "subtitle": ""
       }
     },
