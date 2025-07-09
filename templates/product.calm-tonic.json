@@ -1201,7 +1201,7 @@
         "text_nLEfLV": {
           "type": "text",
           "settings": {
-            "text": "<p>BUILD TO PERFORM, <em>designed to fit you</em></p>",
+            "text": "<p>BUILD to perform</p>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1209,6 +1209,7 @@
         },
         "text_GcHhgp": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h3><em>Clinically proven NMN raised blood NAD⁺ by up to 60% in eight weeks</em></h3>",
             "text_style": "heading",
@@ -1235,7 +1236,7 @@
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Sharper mental clarity and reduced brain fog</h3>",
+            "text": "<h3>Stay sharp in high-stress meetings</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1244,7 +1245,7 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Deeper all day cellular energy from higher NAD⁺</h3>",
+            "text": "<h3>Regroup quickly between tasks</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1253,7 +1254,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Greater physical endurance after sixty days </h3>",
+            "text": "<h3>Helps with mood swings (PMS, perimenopause)</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1262,7 +1263,7 @@
         "text_Ucicgf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Improved insulin sensitivity and hormone balance in women</h3>",
+            "text": "<h3>Loosens tight muscles caused by stress</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1271,18 +1272,9 @@
         "text_fAHjYt": {
           "type": "text",
           "settings": {
-            "text": "<h3>Biological age held steady in sixty days </h3>",
+            "text": "<h3>Tastes like refreshing citrus, no bitterness</h3>",
             "text_style": "body",
             "has_border": true,
-            "center_mobile": false
-          }
-        },
-        "text_dtFzJp": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Fruity, easy taste for daily use</h3>",
-            "text_style": "body",
-            "has_border": false,
             "center_mobile": false
           }
         },
@@ -1329,7 +1321,6 @@
         "text_FHXk9x",
         "text_Ucicgf",
         "text_fAHjYt",
-        "text_dtFzJp",
         "spacing_GFqXPi",
         "button_iKqTjh"
       ],
@@ -1343,7 +1334,7 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/BEBIDA.jpg",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_2.jpg",
         "image_height_desk": "fit",
         "image_mob": "shopify://shop_images/BEBIDA.jpg",
         "image_height_mob": "adapt",
