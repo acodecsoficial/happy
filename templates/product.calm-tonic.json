@@ -1395,7 +1395,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>HOW NMN WORKS <em>for your cells</em></p>",
+                "text": "<p>HOW MAGNESIUM <em>works in your body</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
@@ -1474,7 +1474,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/icon_7.png",
+                        "icon_image": "shopify://shop_images/Icons_b92ad3e1-6ae1-429e-a102-ccbd8bfed659.png",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1497,7 +1497,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3> Every cell contains a NAD⁺ battery that drives energy, repair and longevity. </h3>",
+                        "text": "<h3>Supports brain and nerve health helps you think more clearly</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1531,7 +1531,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_2.png",
+                        "icon_image": "shopify://shop_images/Icons_1_8a8314c9-a01d-4713-b9f4-3f501f60d867.png",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1554,7 +1554,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Aging, stress and hormones drain that battery. NMN is the raw material your body uses to recharge it.</h3>",
+                        "text": "<h3>Helps your body process stress and stay emotionally balanced</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1665,7 +1665,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/MNM.png",
+                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
@@ -1756,7 +1756,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_3.png",
+                            "icon_image": "shopify://shop_images/Component_4_5e1ff22a-e1f7-4910-bd1e-e6a38ea2d57a.png",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1779,7 +1779,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Independent studies show superior absorption, high encapsulation efficiency and fewer stomach issues compared with high dose tablets.</h3>",
+                            "text": "<h3>Promotes better connection between brain cells for faster response and learning</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1813,7 +1813,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_4.png",
+                            "icon_image": "shopify://shop_images/Icons_2_8224ef2b-f32c-40e0-afb0-43872cd3cd3a.png",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1836,7 +1836,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Cells rebuild NAD⁺ quickly and you feel renewed from within.</h3>",
+                            "text": "<h3>The liposomal format makes it easier to absorb and gentler on your gut</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1947,6 +1947,7 @@
         "result_item_rqhTek",
         "result_item_9ia4b9"
       ],
+      "disabled": true,
       "custom_css": [
         "h3.heading {border-bottom: 1px solid; border-top: none; padding-top: 0;}",
         "h2.heading {font-size: 50px !important;}",
@@ -2227,7 +2228,7 @@
       ],
       "settings": {
         "background_color": "#f7f5eb",
-        "full_width": true,
+        "full_width": false,
         "max_width": 0,
         "top_spacing": 0,
         "bottom_spacing": 0,
