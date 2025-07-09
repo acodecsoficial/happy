@@ -2710,6 +2710,9 @@
         "text_yLR6KH",
         "button_8rgaR3"
       ],
+      "custom_css": [
+        ".section-template--24761927336256__image_with_text_wjQyxT-padding{border-top: 1px solid #000;}"
+      ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_3.png",
