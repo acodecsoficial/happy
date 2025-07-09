@@ -516,42 +516,6 @@
       ],
       "settings": {}
     },
-    "focus_you_Lh73aQ": {
-      "type": "focus-you",
-      "blocks": {
-        "row_NPeT7w": {
-          "type": "row",
-          "settings": {
-            "image_position": "left",
-            "image": "shopify://shop_images/Image_3_36db5ab5-6dbf-48cd-8984-66c109f9d15c.png",
-            "heading_1": "Get centered, stay clear",
-            "text_1": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>",
-            "heading_2": "Stay laser-focused",
-            "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>"
-          }
-        },
-        "row_tWbad6": {
-          "type": "row",
-          "settings": {
-            "image_position": "right",
-            "image": "shopify://shop_images/Image_5.png",
-            "heading_1": "Feel consistent energy",
-            "text_1": "<p>Clinically dosed and powered by liposomal technology for 10x better absorption. More magnesium reaches your cells for stronger nerve signaling, steadier energy, and fewer focus crashes.</p>",
-            "heading_2": "Kick-in focus, right on time",
-            "text_2": "<p>Starts working in about 1 hour and reaches full power in 2–4 hours, delivering the clarity and balance you need exactly when the pressure is on.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "row_NPeT7w",
-        "row_tWbad6"
-      ],
-      "name": "Focus You",
-      "settings": {
-        "title": "<p>FOCUS YOU <em>can feel</em></p>",
-        "subtitle": ""
-      }
-    },
     "landing_section_KWgCJm": {
       "type": "landing-section",
       "blocks": {
@@ -825,7 +789,7 @@
                   "name": "Heading block",
                   "settings": {
                     "subheading": "",
-                    "text": "<p>WHY HAPPY AGING <em>is your advantage</em></p>",
+                    "text": "<p>WHY choose <em>Happy Aging?</em></p>",
                     "tag_select": "h2",
                     "text_color": "",
                     "letter_spacing": 0,
@@ -884,7 +848,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>One</em></p>",
+                        "text": "<p><em>Fast Relief</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 0,
@@ -912,7 +876,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>ritual solves energy dips, hormone swings and supplement overload</p>",
+                        "text": "<p>Daily support for discomforts and staying balanced.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -950,7 +914,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>400 mg</em></p>",
+                        "text": "<p><em>Effective Dose</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -977,7 +941,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>NMN in liposomal form powers mitochondria without caffeine spikes</p>",
+                        "text": "<p>200mg of high-performing Quercetin.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1014,7 +978,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Clean</em></p>",
+                        "text": "<p><em>Clean Formula</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1041,7 +1005,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>label, sugar free and third party tested for peace of mind</p>",
+                        "text": "<p>No fillers. No sugar. Vegan. Gluten-free. Third-party tested.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1079,7 +1043,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Quick</em></p>",
+                        "text": "<p><em>Convenient</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1106,7 +1070,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>sip format fits the busiest mornings</p>",
+                        "text": "<p>A small 6 mL tonic that fits easily into your routine.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1145,7 +1109,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Science</em></p>",
+                        "text": "<p><em>Science-Backed</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1172,7 +1136,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>backed results and full transparency build lifelong trust</p>",
+                        "text": "<p>Formulated with research and tested for quality.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1389,6 +1353,42 @@
         "wrap_content_mobile": true,
         "spacing_desktop": "lg:py-0",
         "spacing_mobile": "py-0"
+      }
+    },
+    "focus_you_Lh73aQ": {
+      "type": "focus-you",
+      "blocks": {
+        "row_NPeT7w": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/Image_3_36db5ab5-6dbf-48cd-8984-66c109f9d15c.png",
+            "heading_1": "Get centered, stay clear",
+            "text_1": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>",
+            "heading_2": "Stay laser-focused",
+            "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>"
+          }
+        },
+        "row_tWbad6": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "image": "shopify://shop_images/Image_5.png",
+            "heading_1": "Feel consistent energy",
+            "text_1": "<p>Clinically dosed and powered by liposomal technology for 10x better absorption. More magnesium reaches your cells for stronger nerve signaling, steadier energy, and fewer focus crashes.</p>",
+            "heading_2": "Kick-in focus, right on time",
+            "text_2": "<p>Starts working in about 1 hour and reaches full power in 2–4 hours, delivering the clarity and balance you need exactly when the pressure is on.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_NPeT7w",
+        "row_tWbad6"
+      ],
+      "name": "Focus You",
+      "settings": {
+        "title": "<p>FOCUS YOU <em>can feel</em></p>",
+        "subtitle": ""
       }
     },
     "landing_section_3RqYFU": {
@@ -2788,10 +2788,10 @@
     "main",
     "landing_section_GdHXgh",
     "marquee_pMqq4Y",
-    "focus_you_Lh73aQ",
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
     "image_with_text_blocks_gAjTfr",
+    "focus_you_Lh73aQ",
     "landing_section_3RqYFU",
     "results_list_LqxNh4",
     "ingredients_tabs_nKwUYB",
