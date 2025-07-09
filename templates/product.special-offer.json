@@ -142,6 +142,7 @@
         },
         "quantity_block_XPNgFV": {
           "type": "quantity_block",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1-month_1_deae0144-b2c7-4a81-a62a-56143de55c6f.png",
             "qty": 1,
@@ -162,6 +163,7 @@
         },
         "quantity_block_4r9Hy4": {
           "type": "quantity_block",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/3-month_1_2778109b-4401-45a3-99d7-68b145edc100.png",
             "qty": 3,
@@ -182,6 +184,7 @@
         },
         "quantity_block_mtz7Ty": {
           "type": "quantity_block",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/6-month_1_b89833f4-490e-4b32-b77f-a44ae4112e65.png",
             "qty": 6,
