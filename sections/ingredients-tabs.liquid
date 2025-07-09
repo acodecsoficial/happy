@@ -77,6 +77,122 @@
   </script>
 </section>
 
+<style>
+  /* === Ingredients Tabs Section === */
+.ingredients-tabs-section {
+  padding: 4rem 1rem;
+  background-color: #f6f2e8; /* ajuste conforme seu design */
+}
+
+.ingredients-tabs-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ingredients-tabs-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.ingredients-tabs-subheading {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.ingredients-tabs-wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+/* Lista de abas */
+.ingredients-tabs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #ccc;
+}
+
+.ingredients-tab-item {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  color: #999;
+  position: relative;
+}
+
+.ingredients-tab-item.active {
+  color: #333;
+  font-weight: bold;
+}
+
+.ingredients-tab-item.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+}
+
+/* Painéis de conteúdo */
+.ingredients-tabs-content {
+  position: relative;
+}
+
+.ingredients-tab-panel {
+  display: none;
+}
+
+.ingredients-tab-panel.active {
+  display: block;
+}
+
+.ingredients-tab-panel-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ingredients-tab-panel-text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.ingredients-tab-panel-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  .ingredients-tabs-wrap {
+    grid-template-columns: 1fr;
+  }
+  .ingredients-tabs-list {
+    display: flex;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .ingredients-tab-item {
+    flex: none;
+    padding: 0.75rem 1rem;
+  }
+}
+
+</style>
+
 {% schema %}
 {
   "name": "Ingredients Tabs",
