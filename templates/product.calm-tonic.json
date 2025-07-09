@@ -2366,6 +2366,38 @@
         "text_section": "Forget “a glass of wine”—elevate to an antioxidant celebration, without the alcohol. Each shot delivers 220 mg of 98% purity Resveratrol, equal to 43 bottles of red wine. Toast to vibrant health and longevity with every sip."
       }
     },
+    "ingredients_tabs_nKwUYB": {
+      "type": "ingredients-tabs",
+      "blocks": {
+        "tab_GQg8LN": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "MAGNESIUM BISGLYCINATE",
+            "tab_heading": "Magnesium Bisglycinate",
+            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
+            "tab_image": "shopify://shop_images/Badge.png"
+          }
+        },
+        "tab_g36fUn": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Phosphatidylcholine Liposomes",
+            "tab_heading": "Magnesium Bisglycinate",
+            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
+            "tab_image": "shopify://shop_images/Image_5.png"
+          }
+        }
+      },
+      "block_order": [
+        "tab_GQg8LN",
+        "tab_g36fUn"
+      ],
+      "name": "Ingredients Tabs",
+      "settings": {
+        "heading": "THOUGHTFULLY SOURCED,clinically-verified ingredients",
+        "subheading": ""
+      }
+    },
     "landing_section_qAbkWE": {
       "type": "landing-section",
       "blocks": {
@@ -2749,38 +2781,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "ingredients_tabs_nKwUYB": {
-      "type": "ingredients-tabs",
-      "blocks": {
-        "tab_GQg8LN": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "MAGNESIUM BISGLYCINATE",
-            "tab_heading": "Magnesium Bisglycinate",
-            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
-            "tab_image": "shopify://shop_images/Badge.png"
-          }
-        },
-        "tab_g36fUn": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Phosphatidylcholine Liposomes",
-            "tab_heading": "Magnesium Bisglycinate",
-            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
-            "tab_image": "shopify://shop_images/Image_5.png"
-          }
-        }
-      },
-      "block_order": [
-        "tab_GQg8LN",
-        "tab_g36fUn"
-      ],
-      "name": "Ingredients Tabs",
-      "settings": {
-        "heading": "THOUGHTFULLY SOURCED,clinically-verified ingredients",
-        "subheading": ""
-      }
     }
   },
   "order": [
@@ -2796,11 +2796,11 @@
     "landing_section_nqCRrp",
     "image_banner_azPmDb",
     "timeline_section_hBBi6r",
+    "ingredients_tabs_nKwUYB",
     "image_banner_D6TgTi",
     "wines",
     "landing_section_qAbkWE",
     "faqs_9gMU6f",
-    "17401711251af96b37",
-    "ingredients_tabs_nKwUYB"
+    "17401711251af96b37"
   ]
 }
