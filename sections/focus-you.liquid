@@ -1,6 +1,113 @@
+<section id="focus-you" class="focus-you-section">
+  <div class="focus-you__inner">
+    {% if section.settings.title != blank %}
+      <h2 class="focus-you__title">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <p class="focus-you__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    {% for block in section.blocks %}
+      <div class="focus-you__row {% if block.settings.image_position == 'left' %}focus-you__row--image-left{% endif %}">
+        <div class="focus-you__media">
+          {% if block.settings.image %}
+            <img 
+              src="{{ block.settings.image | img_url: 'master' }}" 
+              alt="{{ block.settings.heading_1 }}" 
+              class="focus-you__img"
+            >
+          {% endif %}
+        </div>
+        <div class="focus-you__content">
+          {% if block.settings.heading_1 != blank %}
+            <h3 class="focus-you__heading">{{ block.settings.heading_1 }}</h3>
+          {% endif %}
+          {% if block.settings.text_1 != blank %}
+            <div class="focus-you__text">{{ block.settings.text_1 }}</div>
+          {% endif %}
+
+          {% if block.settings.heading_2 != blank %}
+            <h3 class="focus-you__heading">{{ block.settings.heading_2 }}</h3>
+          {% endif %}
+          {% if block.settings.text_2 != blank %}
+            <div class="focus-you__text">{{ block.settings.text_2 }}</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Focus You",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título da seção",
+      "default": "FOCUS YOU can feel"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo (opcional)"
+      /* removido default vazio */
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Linha de conteúdo",
+      "settings": [
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Posição da imagem",
+          "options": [
+            { "value": "right", "label": "Direita" },
+            { "value": "left",  "label": "Esquerda" }
+          ],
+          "default": "right"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagem"
+        },
+        {
+          "type": "text",
+          "id": "heading_1",
+          "label": "Título 1",
+          "default": "Get centered, stay clear"
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Texto 1",
+          "default": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>"
+        },
+        {
+          "type": "text",
+          "id": "heading_2",
+          "label": "Título 2",
+          "default": "Stay laser-focused"
+        },
+        {
+          "type": "richtext",
+          "id": "text_2",
+          "label": "Texto 2",
+          "default": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Focus You",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
+
