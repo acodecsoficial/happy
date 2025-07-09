@@ -1575,6 +1575,7 @@
                 "grid_list_Wy3bat": {
                   "type": "grid-list",
                   "name": "Grid (simple)",
+                  "disabled": true,
                   "settings": {
                     "desktop_grid_columns": "1",
                     "column_gap_desktop": 0,
