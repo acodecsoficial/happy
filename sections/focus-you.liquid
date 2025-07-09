@@ -35,7 +35,7 @@
 
           {% if block.settings.button_text != blank %}
     <div class="ai-button-wrapper-buttonikqtjh">
-      <a href="{{ block.settings.button_url }}" class="ai-button-buttonikqtjh">
+      <a href="{{ block.settings.button_url }}" class="ai-button-buttonikqtjh focus">
         <h2>{{ block.settings.button_text }}</h2>
       </a>
     </div>
@@ -55,6 +55,11 @@
   justify-content: space-between;
   margin-top: 40px;
 }
+
+  .ai-button-buttonikqtjh.focus{
+    height: 41px;
+    max-width: 304px;
+  }
 
   .focus-you__title{
     font-size: 50px !important;
