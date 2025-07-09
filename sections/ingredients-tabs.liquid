@@ -18,7 +18,7 @@
       <ul class="ingredients-tabs-list">
         {%- for block in section.blocks -%}
           <li
-            class="ingredients-tab-item{% if forloop.first %} active{% endif %}"
+            class="ingredients-tab-item heading{% if forloop.first %} active{% endif %}"
             data-tab="tab-{{ block.id }}"
           >
             {{ block.settings.tab_title }}
