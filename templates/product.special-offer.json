@@ -142,7 +142,6 @@
         },
         "quantity_block_XPNgFV": {
           "type": "quantity_block",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1-month_1_deae0144-b2c7-4a81-a62a-56143de55c6f.png",
             "qty": 1,
@@ -225,7 +224,7 @@
         "quantity_block_mtz7Ty"
       ],
       "settings": {
-        "old_product": "nad-longevity-shots-ii-copy",
+        "old_product": "nad-longevity-shots-special-offer",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "highlight_color": "#d0535b",
