@@ -759,6 +759,7 @@
         "section_inner_yArRpj",
         "section_inner_gGdAUQ"
       ],
+      "disabled": true,
       "custom_css": [
         ".text-block ul li {list-style: inside; padding: 5px;}",
         "@media screen and (max-width: 540px) {h2 {font-size: 36px; }}"
