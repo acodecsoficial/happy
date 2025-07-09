@@ -78,36 +78,40 @@
 </section>
 
 <style>
-  /* === Ingredients Tabs Section === */
+ /* === Ingredients Tabs – Ajustes Finais === */
 .ingredients-tabs-section {
-  padding: 4rem 1rem;
-  background-color: #f6f2e8; /* ajuste conforme seu design */
+  padding: 6rem 1rem;             /* mais “respiro” acima e abaixo */
+  background-color: #f6f2e8;
 }
 
 .ingredients-tabs-inner {
-  max-width: 1200px;
+  max-width: 1280px;              /* um pouco mais largo */
   margin: 0 auto;
 }
 
+/* Cabeçalho */
 .ingredients-tabs-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 2.25rem;             /* ligeiramente menor para encaixar */
+  line-height: 1.2;
   text-align: center;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .ingredients-tabs-subheading {
   font-style: italic;
   font-size: 1rem;
+  line-height: 1.3;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;            /* mais espaço para a área de tabs */
   color: #555;
 }
 
+/* Grid das cols: lista mais estreita, conteúdo maior */
 .ingredients-tabs-wrap {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 3rem;
 }
 
 /* Lista de abas */
@@ -115,36 +119,47 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid rgba(0,0,0,0.1);
 }
 
 .ingredients-tab-item {
   font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  padding: 1rem 0;
+  font-size: 1.125rem;            /* um pouco maior */
+  line-height: 1.4;
+  text-transform: uppercase;      /* conforme mock */
+  letter-spacing: 1px;
+  padding: 1.25rem 0;             /* mais espaçamento vertical */
   cursor: pointer;
-  color: #999;
+  color: #aaa;
   position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.05); /* divisores sutis */
+  transition: color .2s;
+}
+
+.ingredients-tab-item:hover {
+  color: #666;
 }
 
 .ingredients-tab-item.active {
   color: #333;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .ingredients-tab-item.active::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
-  height: 2px;
+  height: 3px;                    /* underline um pouco mais grosso */
   background-color: #333;
 }
 
 /* Painéis de conteúdo */
 .ingredients-tabs-content {
   position: relative;
+  padding-left: 2rem;             /* espaço antes da borda */
+  border-left: 2px solid rgba(0,0,0,0.1);
 }
 
 .ingredients-tab-panel {
@@ -157,20 +172,24 @@
 
 .ingredients-tab-panel-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;              /* ajuste fino */
+  line-height: 1.3;
+  margin-bottom: 1rem;
 }
 
 .ingredients-tab-panel-text {
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;                /* ficando maior e mais legível */
+  line-height: 1.7;
+  margin-bottom: 2rem;            /* mais espaço antes da imagem */
   color: #333;
 }
 
+/* Imagem do painel */
 .ingredients-tab-panel-image img {
   width: 100%;
-  height: auto;
+  max-height: 400px;              /* controla o tamanho vertical */
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
@@ -183,13 +202,21 @@
     display: flex;
     overflow-x: auto;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
   }
   .ingredients-tab-item {
     flex: none;
     padding: 0.75rem 1rem;
+    border-bottom: none;
+    border-right: 1px solid rgba(0,0,0,0.05);
+  }
+  .ingredients-tabs-content {
+    padding-left: 0;
+    border-left: none;
+    margin-top: 2rem;
   }
 }
+
 
 </style>
 
