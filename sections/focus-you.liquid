@@ -32,6 +32,14 @@
           {% if block.settings.text_2 != blank %}
             <div class="focus-you__text">{{ block.settings.text_2 }}</div>
           {% endif %}
+
+          {% if block.settings.button_text != blank %}
+    <div class="ai-button-wrapper-buttonikqtjh">
+      <a href="{{ block.settings.button_url }}" class="ai-button-buttonikqtjh">
+        <h2>{{ block.settings.button_text }}</h2>
+      </a>
+    </div>
+  {% endif %}
         </div>
       </div>
     {% endfor %}
