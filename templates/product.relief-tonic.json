@@ -239,9 +239,9 @@
               "type": "highlight-image-item",
               "name": "Highlight image item",
               "settings": {
-                "image": "shopify://shop_images/Poli_Alves_r1_03E_9920.png",
+                "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_1.png",
                 "image_max_width_mobile": 1000,
-                "title": "<h2>FIRST <em>liquid liposomal NMN.</em></h2>",
+                "title": "<h2>REFRESH YOUR body’s response</h2>",
                 "title_size": 48,
                 "title_line_height": 42,
                 "title_color": "",
@@ -367,7 +367,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p>FIRST <em>liquid liposomal NMN.</em></p>",
+                        "text": "<p>REFRESH YOUR body’s response</p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 50,
@@ -399,7 +399,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Before the mirror reflects it, <em>your cells already know.</em></h2>",
+                        "text": "<h2>Relief Tonic steps in when your body reacts strongly to everyday triggers like pollen, stress, or pollution.</h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -414,7 +414,7 @@
                     "text_block_EJp8ft": {
                       "type": "text-block",
                       "settings": {
-                        "text": "<p>What matters isn't how much you take but how well your body absorbs it.<strong> Cell Renew Tonic by Happy Aging</strong> is formulated for up to 10x better absorption, delivering the right dose with ease and without discomfort.</p>",
+                        "text": "<p>It helps your system stay steady, helps keep your body running smoothly, and keeps discomfort in check before it slows you down.<br/>The secret? 200mg of Quercetin in every dose. Thanks to advanced liposomal technology, your body absorbs it faster and uses it better.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -453,7 +453,7 @@
       ],
       "custom_css": [
         ".site-container {padding-left: 0; padding-right: 0;}",
-        "@media (min-width: 1000px){#shopify-block-AM1F5dFhTcHluS3V3b__highlight_image_item_BLJ8i3 .highlight-image__title{display: none; }}"
+        "@media (min-width: 1000px) {#shopify-block-AM1F5dFhTcHluS3V3b__highlight_image_item_BLJ8i3 .highlight-image__title {display: none; }}"
       ],
       "settings": {
         "background_color": "",
