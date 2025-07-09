@@ -452,7 +452,8 @@
         "section_inner_YmreYw"
       ],
       "custom_css": [
-        ".site-container {padding-left: 0; padding-right: 0;}"
+        ".site-container {padding-left: 0; padding-right: 0;}",
+        "@media (min-width: 1000px){#shopify-block-AM1F5dFhTcHluS3V3b__highlight_image_item_BLJ8i3 .highlight-image__title{display: none; }}"
       ],
       "settings": {
         "background_color": "",
