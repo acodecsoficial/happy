@@ -1573,7 +1573,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_1_8a8314c9-a01d-4713-b9f4-3f501f60d867.png",
+                        "icon_image": "shopify://shop_images/Icons_3_e2229035-1dab-4451-a1fc-7bd6fb7c9ede.png",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1596,7 +1596,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Helps your body process stress and stay emotionally balanced</h3>",
+                        "text": "<h3>Supports your body’s natural balance</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1617,7 +1617,6 @@
                 "grid_list_Wy3bat": {
                   "type": "grid-list",
                   "name": "Grid (simple)",
-                  "disabled": true,
                   "settings": {
                     "desktop_grid_columns": "1",
                     "column_gap_desktop": 0,
@@ -1631,7 +1630,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Component_4.png",
+                        "icon_image": "shopify://shop_images/Icons_3_e2229035-1dab-4451-a1fc-7bd6fb7c9ede.png",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1654,7 +1653,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Liposomal technology shields each NMN molecule so it survives digestion and reaches the bloodstream intact.</h3>",
+                        "text": "<h3>Helps protect your body from everyday damage</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1708,7 +1707,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1.png",
+                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1_1.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
@@ -1799,7 +1798,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Component_4_5e1ff22a-e1f7-4910-bd1e-e6a38ea2d57a.png",
+                            "icon_image": "shopify://shop_images/Component_4_1.png",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1822,7 +1821,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Promotes better connection between brain cells for faster response and learning</h3>",
+                            "text": "<h3>Kind to your digestion and easy to take</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1856,7 +1855,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_2_8224ef2b-f32c-40e0-afb0-43872cd3cd3a.png",
+                            "icon_image": "shopify://shop_images/Icons_4_59d5cd90-3e40-4788-9650-7e98b7604fa6.png",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1879,7 +1878,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>The liposomal format makes it easier to absorb and gentler on your gut</h3>",
+                            "text": "<h3>Clean and simple ingredients</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
