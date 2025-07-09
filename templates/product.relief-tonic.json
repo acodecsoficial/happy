@@ -1202,7 +1202,7 @@
         "text_nLEfLV": {
           "type": "text",
           "settings": {
-            "text": "<p>BUILD to perform</p>",
+            "text": "<p>MADE FOR <em>real life</em></p>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1237,7 +1237,7 @@
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Stay sharp in high-stress meetings</h3>",
+            "text": "<h3>Breathe easier and start your mornings clear</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1246,7 +1246,7 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Regroup quickly between tasks</h3>",
+            "text": "<h3>Stay steady through the seasons</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1255,7 +1255,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Helps with mood swings (PMS, perimenopause)</h3>",
+            "text": "<h3>Recover quicker after workouts</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1264,7 +1264,7 @@
         "text_Ucicgf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Loosens tight muscles caused by stress</h3>",
+            "text": "<h3>Keep your cells protected from daily wear</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1273,9 +1273,18 @@
         "text_fAHjYt": {
           "type": "text",
           "settings": {
-            "text": "<h3>Tastes like refreshing citrus, no bitterness</h3>",
+            "text": "<h3>Gentle formula you can use long-term</h3>",
             "text_style": "body",
             "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_xCnNhb": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Fresh Citrus Nutty flavor that’s easy to enjoy</h3>",
+            "text_style": "body",
+            "has_border": false,
             "center_mobile": false
           }
         },
@@ -1322,6 +1331,7 @@
         "text_FHXk9x",
         "text_Ucicgf",
         "text_fAHjYt",
+        "text_xCnNhb",
         "spacing_GFqXPi",
         "button_iKqTjh"
       ],
