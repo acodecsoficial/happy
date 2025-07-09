@@ -8,14 +8,13 @@
     {% endif %}
 
     {% for block in section.blocks %}
-      <div class="focus-you__row {% if block.settings.image_position == 'left' %}focus-you__row--image-left{% endif %}">
+      {%- assign pos = block.settings.image_position | default: 'right' -%}
+      <div class="focus-you__row focus-you__row--image-{{ pos }}">
         <div class="focus-you__media">
           {% if block.settings.image %}
-            <img 
-              src="{{ block.settings.image | img_url: 'master' }}" 
-              alt="{{ block.settings.heading_1 }}" 
-              class="focus-you__img"
-            >
+            <img src="{{ block.settings.image | img_url: 'master' }}"
+                 alt=""
+                 class="focus-you__img">
           {% endif %}
         </div>
         <div class="focus-you__content">
