@@ -505,7 +505,7 @@
         "background_color": "",
         "full_width": false,
         "max_width": 1440,
-        "top_spacing": 0,
+        "top_spacing": 80,
         "bottom_spacing": 50,
         "use_top_border": false,
         "use_bottom_border": true,
