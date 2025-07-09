@@ -1196,6 +1196,46 @@
         "use_bottom_border_mobile": false
       }
     },
+    "focus_you_Lh73aQ": {
+      "type": "focus-you",
+      "blocks": {
+        "row_NPeT7w": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/Image_8.png",
+            "heading_1": "Easier breathing, fewer sniffles",
+            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
+            "heading_2": "Less tension, more comfort",
+            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
+            "button_text": "",
+            "button_url": "/"
+          }
+        },
+        "row_tWbad6": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "image": "shopify://shop_images/Image_8.png",
+            "heading_1": "Everyday defense, all day long",
+            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
+            "heading_2": "Steady energy, no crash",
+            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
+            "button_text": "Experience Relief Today",
+            "button_url": "/"
+          }
+        }
+      },
+      "block_order": [
+        "row_NPeT7w",
+        "row_tWbad6"
+      ],
+      "name": "Focus You",
+      "settings": {
+        "title": "<p>Feel <em>the Change</em></p>",
+        "subtitle": ""
+      }
+    },
     "image_with_text_blocks_gAjTfr": {
       "type": "image-with-text-blocks",
       "blocks": {
@@ -1365,44 +1405,55 @@
         "spacing_mobile": "py-0"
       }
     },
-    "focus_you_Lh73aQ": {
-      "type": "focus-you",
+    "how_it_helps_YPBkT9": {
+      "type": "how-it-helps",
       "blocks": {
-        "row_NPeT7w": {
-          "type": "row",
+        "card_6a7aP7": {
+          "type": "card",
           "settings": {
-            "image_position": "left",
-            "image": "shopify://shop_images/Image_8.png",
-            "heading_1": "Easier breathing, fewer sniffles",
-            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
-            "heading_2": "Less tension, more comfort",
-            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
-            "button_text": "",
-            "button_url": "/"
+            "card_title": "Keeps things steady",
+            "card_text": "Helps your body reset before symptoms hit."
           }
         },
-        "row_tWbad6": {
-          "type": "row",
+        "card_cMMrq6": {
+          "type": "card",
           "settings": {
-            "image_position": "right",
-            "image": "shopify://shop_images/Image_8.png",
-            "heading_1": "Everyday defense, all day long",
-            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
-            "heading_2": "Steady energy, no crash",
-            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
-            "button_text": "Experience Relief Today",
-            "button_url": "/"
+            "card_title": "Soothes discomfort",
+            "card_text": "Eases tension when you're feeling worn out."
+          }
+        },
+        "card_mVB6G9": {
+          "type": "card",
+          "settings": {
+            "card_title": "Triggers all around",
+            "card_text": "Pollen, stress, and pollution can throw your body off."
+          }
+        },
+        "card_h6ztFg": {
+          "type": "card",
+          "settings": {
+            "card_title": "Shields your cells",
+            "card_text": "Daily protection against stress and wear."
+          }
+        },
+        "card_zCpNRP": {
+          "type": "card",
+          "settings": {
+            "card_title": "Absorbs 10x better",
+            "card_text": "Liposomal technology delivers real results, fast."
           }
         }
       },
       "block_order": [
-        "row_NPeT7w",
-        "row_tWbad6"
+        "card_6a7aP7",
+        "card_cMMrq6",
+        "card_mVB6G9",
+        "card_h6ztFg",
+        "card_zCpNRP"
       ],
-      "name": "Focus You",
+      "name": "How it Helps",
       "settings": {
-        "title": "<p>Feel <em>the Change</em></p>",
-        "subtitle": ""
+        "heading": "HOW it helps"
       }
     },
     "landing_section_3RqYFU": {
@@ -2355,57 +2406,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "how_it_helps_YPBkT9": {
-      "type": "how-it-helps",
-      "blocks": {
-        "card_6a7aP7": {
-          "type": "card",
-          "settings": {
-            "card_title": "Keeps things steady",
-            "card_text": "Helps your body reset before symptoms hit."
-          }
-        },
-        "card_cMMrq6": {
-          "type": "card",
-          "settings": {
-            "card_title": "Keeps things steady",
-            "card_text": "Helps your body reset before symptoms hit."
-          }
-        },
-        "card_mVB6G9": {
-          "type": "card",
-          "settings": {
-            "card_title": "Keeps things steady",
-            "card_text": "Helps your body reset before symptoms hit."
-          }
-        },
-        "card_h6ztFg": {
-          "type": "card",
-          "settings": {
-            "card_title": "Keeps things steady",
-            "card_text": "Helps your body reset before symptoms hit."
-          }
-        },
-        "card_zCpNRP": {
-          "type": "card",
-          "settings": {
-            "card_title": "Keeps things steady",
-            "card_text": "Helps your body reset before symptoms hit."
-          }
-        }
-      },
-      "block_order": [
-        "card_6a7aP7",
-        "card_cMMrq6",
-        "card_mVB6G9",
-        "card_h6ztFg",
-        "card_zCpNRP"
-      ],
-      "name": "How it Helps",
-      "settings": {
-        "heading": "HOW it helps"
       }
     },
     "timeline_section_hBBi6r": {
