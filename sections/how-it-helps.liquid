@@ -1,14 +1,14 @@
 <section id="how-it-helps-{{ section.id }}" class="how-it-helps-section">
   <div class="page-width">
     {%- if section.settings.heading != blank -%}
-      <h2 class="how-it-helps-heading">{{ section.settings.heading }}</h2>
+      <h2 class="how-it-helps-heading heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
 
     <div class="how-it-helps-grid">
       {%- for block in section.blocks -%}
         <div class="how-it-helps-card">
           {%- if block.settings.card_title != blank -%}
-            <h3 class="how-it-helps-card-title"><em>{{ block.settings.card_title }}</em></h3>
+            <h3 class="how-it-helps-card-title heading"><em>{{ block.settings.card_title }}</em></h3>
           {%- endif -%}
           {%- if block.settings.card_text != blank -%}
             <p class="how-it-helps-card-text">{{ block.settings.card_text }}</p>
@@ -28,7 +28,6 @@
 }
 
 .how-it-helps-heading {
-  font-family: 'Playfair Display', serif;
   font-size: 2.25rem;
   line-height: 1.2;
   margin-bottom: 2rem;
@@ -51,14 +50,12 @@
 }
 
 .how-it-helps-card-title {
-  font-family: 'Playfair Display', serif;
   font-size: 1.125rem;
   line-height: 1.3;
   margin-bottom: 0.75rem;
 }
 
 .how-it-helps-card-text {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   flex-grow: 1;
