@@ -5,12 +5,14 @@
 
 <section id="ingredients-tabs-{{ section.id }}" class="ingredients-tabs-section">
   <div class="ingredients-tabs-inner">
+    <div class="flex">
     {%- if section.settings.heading != blank -%}
       <h2 class="ingredients-tabs-heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
     {%- if section.settings.subheading != blank -%}
       <p class="ingredients-tabs-subheading">{{ section.settings.subheading }}</p>
     {%- endif -%}
+    </div>
 
     <div class="ingredients-tabs-wrap">
       <ul class="ingredients-tabs-list">
