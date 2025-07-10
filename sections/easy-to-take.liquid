@@ -7,7 +7,7 @@
     /* Troca a bg para mobile quando em tela pequena */
     @media (max-width: 767px) {
       #easy-to-take-{{ section.id }} {
-        background-image: url('{{ section.settings.mobile_image | img_url: '800x' }}');
+        background-image: url('{{ section.settings.mobile_image | img_url: '800x' }}') !important;
       }
     }
   </style>
