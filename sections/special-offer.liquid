@@ -182,7 +182,49 @@
 
     
                 
-                  {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, tonic: true -%}
+                 
+<div class="buy-buttons">
+  {% form 'product', product, class: 'product-form' %}
+    {%- if product.variants.size > 1 -%}
+      <label for="ProductSelect-{{ section.id }}">Opções:</label>
+      <select name="id" id="ProductSelect-{{ section.id }}" class="variant-select">
+        {% for variant in product.variants %}
+          <option value="{{ variant.id }}">
+            {{ variant.title }} — {{ variant.price | money }}
+          </option>
+        {% endfor %}
+      </select>
+    {%- else -%}
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+    {%- endif -%}
+
+    <label for="Quantity-{{ section.id }}">Quantidade:</label>
+    <input
+      type="number"
+      id="Quantity-{{ section.id }}"
+      name="quantity"
+      min="1"
+      value="1"
+      class="quantity-input"
+    />
+
+    <button
+      type="submit"
+      name="add"
+      class="button button--primary add-to-cart-btn"
+    >
+      {{ 'products.product.add_to_cart' | t }}
+    </button>
+
+    <button
+      type="submit"
+      name="checkout"
+      class="button button--secondary buy-now-btn"
+    >
+      {{ 'products.product.buy_it_now' | t }}
+    </button>
+  {% endform %}
+</div>
                 
 
     <div class="mt-4 lg:mt-6 text-center flex flex-col items-center">
