@@ -93,7 +93,7 @@
         "stay_ai_subscription_buy_box_extended_mVMLAy": {
           "type": "shopify://apps/stay-ai-subscription/blocks/buy-box-extended/896a3134-375a-4df4-8274-d37b95eafdee",
           "settings": {
-            "product-form-id": "",
+            "product-form-id": "50857668378944",
             "one_time_purchase_label": "One-Time Purchase",
             "subscription_label": "Subscribe & Save",
             "subscription_tag": "Popular",
@@ -103,7 +103,7 @@
             "icon_path_2": "",
             "icon_path_3": "",
             "default_to_subscription": true,
-            "subscription_label_first": false,
+            "subscription_label_first": true,
             "compare_at_price_first": true,
             "widget_layout": "standard",
             "include_custom_font": false,
@@ -176,7 +176,7 @@
             "image": "shopify://shop_images/1-month_1_deae0144-b2c7-4a81-a62a-56143de55c6f.png",
             "qty": 1,
             "onetime_price": 60,
-            "plan_id": "693008859456",
+            "plan_id": "692732723520",
             "title": "1 Month Supply",
             "sub_title": "+ 1 Free Week",
             "num_bottles": "10",
