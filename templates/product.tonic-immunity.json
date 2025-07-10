@@ -2173,7 +2173,6 @@
                     },
                     "ai_gen_block_3608cf6_FRaWaP": {
                       "type": "ai_gen_block_3608cf6",
-                      "disabled": true,
                       "settings": {
                         "button_text": "Buy Now",
                         "button_link": "#",
