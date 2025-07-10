@@ -54,6 +54,8 @@
             "text_4": "Vegan • sugar-free • gut-friendly • non-GMO",
             "icon_5": "shopify://shop_images/ef2c6725c952b0369c8c54637b11dbd3.png",
             "text_5": "Crash-free energy & all-day mental clarity",
+            "text_6": "",
+            "text_7": "",
             "text_size_desktop": 14,
             "text_size_mobile": 14,
             "icon_size_desktop": 16,
@@ -527,7 +529,9 @@
             "heading_1": "Get centered, stay clear",
             "text_1": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>",
             "heading_2": "Stay laser-focused",
-            "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>"
+            "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>",
+            "button_text": "",
+            "button_url": "/"
           }
         },
         "row_tWbad6": {
@@ -538,7 +542,9 @@
             "heading_1": "Feel consistent energy",
             "text_1": "<p>Clinically dosed and powered by liposomal technology for 10x better absorption. More magnesium reaches your cells for stronger nerve signaling, steadier energy, and fewer focus crashes.</p>",
             "heading_2": "Kick-in focus, right on time",
-            "text_2": "<p>Starts working in about 1 hour and reaches full power in 2–4 hours, delivering the clarity and balance you need exactly when the pressure is on.</p>"
+            "text_2": "<p>Starts working in about 1 hour and reaches full power in 2–4 hours, delivering the clarity and balance you need exactly when the pressure is on.</p>",
+            "button_text": "Buy Now",
+            "button_url": "/"
           }
         }
       },
