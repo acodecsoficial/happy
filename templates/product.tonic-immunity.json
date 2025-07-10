@@ -2102,6 +2102,32 @@
             "right_spacing_mobile": 20
           },
           "blocks": {
+            "grid_list_8NRiw8": {
+              "type": "grid-list",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 40,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 30,
+                "row_gap_mobile": 30
+              },
+              "blocks": {
+                "image_block_4rVcUP": {
+                  "type": "image-block",
+                  "settings": {
+                    "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_4.png",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_4rVcUP"
+              ]
+            },
             "section_inner_edEAQq": {
               "type": "section-inner",
               "settings": {
@@ -2315,37 +2341,11 @@
                 "grid_list_39DAGw",
                 "grid_list_eF7r7e"
               ]
-            },
-            "grid_list_8NRiw8": {
-              "type": "grid-list",
-              "settings": {
-                "desktop_grid_columns": "1",
-                "column_gap_desktop": 40,
-                "row_gap_desktop": 40,
-                "mobile_grid_columns": "1",
-                "column_gap_mobile": 30,
-                "row_gap_mobile": 30
-              },
-              "blocks": {
-                "image_block_4rVcUP": {
-                  "type": "image-block",
-                  "settings": {
-                    "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_4.png",
-                    "different_mobile_image": false,
-                    "show_on_mobile": true,
-                    "show_on_desktop": true
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_block_4rVcUP"
-              ]
             }
           },
           "block_order": [
-            "section_inner_edEAQq",
-            "grid_list_8NRiw8"
+            "grid_list_8NRiw8",
+            "section_inner_edEAQq"
           ]
         }
       },
