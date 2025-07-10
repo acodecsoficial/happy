@@ -1800,6 +1800,7 @@
                 "bottom_spacing_desktop": 0,
                 "left_spacing_desktop": 50,
                 "right_spacing_desktop": 0,
+                "mobile_max_width": 0,
                 "mobile_grid_columns": "1",
                 "mobile_horizontal_alignment": "start",
                 "mobile_vertical_alignment": "start",
@@ -1824,6 +1825,7 @@
                     "bottom_spacing_desktop": 0,
                     "left_spacing_desktop": 0,
                     "right_spacing_desktop": 0,
+                    "mobile_max_width": 0,
                     "mobile_grid_columns": "1",
                     "mobile_horizontal_alignment": "start",
                     "mobile_vertical_alignment": "start",
@@ -2371,28 +2373,6 @@
         "use_bottom_border_mobile": false
       }
     },
-    "image_banner_azPmDb": {
-      "type": "image-banner",
-      "custom_css": [
-        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
-        ".banner__media {margin-top: 3rem;}",
-        ".banner__content {display: none;}"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_1.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "image_banner_gUYYx6": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -2408,6 +2388,28 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
+      }
+    },
+    "image_banner_azPmDb": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
+        ".banner__media {margin-top: 3rem;}",
+        ".banner__content {display: none;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Image_11.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "timeline_section_hBBi6r": {
@@ -2462,7 +2464,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Image_51ffbcb3-db98-4e77-806a-44de65fe5b49.png",
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_5.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -2932,8 +2934,8 @@
     "results_list_LqxNh4",
     "ingredients_tabs_nKwUYB",
     "landing_section_nqCRrp",
-    "image_banner_azPmDb",
     "image_banner_gUYYx6",
+    "image_banner_azPmDb",
     "timeline_section_hBBi6r",
     "image_banner_D6TgTi",
     "wines",
