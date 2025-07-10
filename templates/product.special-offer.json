@@ -120,6 +120,26 @@
             "css_code": ""
           }
         },
+        "stay_ai_subscription_buybox_kA3aeU": {
+          "type": "shopify://apps/stay-ai-subscription/blocks/buybox/896a3134-375a-4df4-8274-d37b95eafdee",
+          "settings": {
+            "enabled": true,
+            "box_layout": "radio",
+            "selector_color": "#ffffff",
+            "selector_secondary_color": "#4A4A4A",
+            "selector_hover_color": "#4A4A4A",
+            "selector_hover_secondary_color": "#ffffff",
+            "selector_hover_border_color": "#4A4A4A",
+            "text_hover_color": "#ffffff",
+            "selector_border_radius": 4,
+            "selector_border_width": 1,
+            "text_color": "#4a4a4a",
+            "stroke_width": 2,
+            "border_radius": 12,
+            "remove_styles": false,
+            "styles": ""
+          }
+        },
         "buy_buttons_W9PKFR": {
           "type": "buy_buttons",
           "settings": {
@@ -245,6 +265,7 @@
         "kite_discount_free_gift_app_block_rxdmna",
         "kite_discount_free_gift_app_block_free_gift_Lh3WmU",
         "stay_ai_subscription_buy_box_extended_mVMLAy",
+        "stay_ai_subscription_buybox_kA3aeU",
         "buy_buttons_W9PKFR",
         "text_RB6DBe",
         "text_h9imWD",
