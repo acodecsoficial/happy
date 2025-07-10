@@ -1,4 +1,4 @@
-<section id="easy-to-take-{{ section.id }}" class="easy-to-take-section">
+<section id="easy-to-take-{{ section.id }}" class="easy-to-take-section" style="background-image: url({{ section.settings.desktop_image | img_url: '2048x' }});">
   <div class="easy-to-take-inner">
     <div class="easy-to-take-content">
       {% if section.settings.title != blank %}
