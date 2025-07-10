@@ -180,9 +180,9 @@
       <p class="text-xs mt-1.5 font-surt" style="color: #707070">$60/mo every 5 weeks after</p>
     </div>
 
-   {%- comment -%} Simple add-to-cart button with full-page reload {%- endcomment -%}
+  {%- comment -%} Add-to-cart button: AJAX + reload page without redirect to cart {%- endcomment -%}
 <cart-add>
-  <form action="/cart/add" method="post" class="flex justify-center mt-6 lg:mt-10">
+  <form action="/cart/add" method="post" class="reload-add-to-cart flex justify-center mt-6 lg:mt-10">
     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
     {% if product.selling_plan_groups.size > 0 %}
       <input type="hidden" name="selling_plan" value="{{ product.selling_plan_groups[0].selling_plans[0].id }}">
@@ -194,6 +194,25 @@
     </button>
   </form>
 </cart-add>
+
+<script>
+  document.addEventListener('submit', function(e) {
+    var form = e.target;
+    if (form.classList.contains('reload-add-to-cart')) {
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch('/cart/add.js', {
+        method: 'POST',
+        body: data,
+        credentials: 'same-origin',
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function(response) { return response.json(); })
+      .then(function() { window.location.reload(); })
+      .catch(function(err) { console.error('Erro ao adicionar ao carrinho:', err); });
+    }
+  });
+</script>
 
 
 
