@@ -571,7 +571,7 @@
             "desktop_max_width": 974,
             "desktop_grid_columns": "2",
             "horizontal_alignment": "center",
-            "vertical_alignment": "center",
+            "vertical_alignment": "start",
             "desktop_grid_column_gap": 20,
             "desktop_grid_row_gap": 0,
             "top_spacing_desktop": 0,
@@ -2446,7 +2446,7 @@
           "settings": {
             "number": "",
             "step_title": "TAKE ONE TEASPOON (6 ML)",
-            "step_text": "Every morning, straight or mixed into water,<br> juice or your favorite smoothie."
+            "step_text": "Every morning, straight or mixed into water, juice or your favorite smoothie."
           }
         }
       },
