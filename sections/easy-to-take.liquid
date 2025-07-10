@@ -1,4 +1,17 @@
-<section id="easy-to-take-{{ section.id }}" class="easy-to-take-section" style="background-image: url({{ section.settings.desktop_image | img_url: '2048x' }});">
+<section
+  id="easy-to-take-{{ section.id }}"
+  class="easy-to-take-section"
+  style="background-image: url('{{ section.settings.desktop_image | img_url: '2048x' }}');"
+>
+  <style>
+    /* Troca a bg para mobile quando em tela pequena */
+    @media (max-width: 767px) {
+      #easy-to-take-{{ section.id }} {
+        background-image: url('{{ section.settings.mobile_image | img_url: '800x' }}');
+      }
+    }
+  </style>
+
   <div class="easy-to-take-inner">
     <div class="easy-to-take-content">
       {% if section.settings.title != blank %}
@@ -6,20 +19,6 @@
       {% endif %}
       {% if section.settings.subtitle != blank %}
         <p class="easy-to-take-subtitle">{{ section.settings.subtitle }}</p>
-      {% endif %}
-    </div>
-    <div class="easy-to-take-image-wrapper">
-      {% if section.settings.desktop_image %}
-        <div
-          class="easy-to-take-bg easy-to-take-bg--desktop"
-          style="background-image: url({{ section.settings.desktop_image | img_url: '2048x' }});"
-        ></div>
-      {% endif %}
-      {% if section.settings.mobile_image %}
-        <div
-          class="easy-to-take-bg easy-to-take-bg--mobile"
-          style="background-image: url({{ section.settings.mobile_image | img_url: '800x' }});"
-        ></div>
       {% endif %}
     </div>
   </div>
