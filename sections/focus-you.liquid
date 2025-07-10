@@ -44,7 +44,7 @@
       </div>
 
     {% if block.settings.button_text != blank %}
-    <div class="ai-button-wrapper-buttonikqtjh desktop">
+    <div class="ai-button-wrapper-buttonikqtjh desktop" style="margin: 0 20px;">
       <a href="{{ block.settings.button_url }}" class="ai-button-buttonikqtjh focus">
         <h2>{{ block.settings.button_text }}</h2>
       </a>
@@ -111,8 +111,10 @@
   max-width: 530px;
 }
 
-.desktop{
-  display: none;
+@media (min-width: 768px){
+  .desktop{
+  display: none !important;
+}
 }
 
 @media (max-width: 767px) {
@@ -132,7 +134,7 @@
   }
 
   .mobile{
-    display: none;
+    display: none !important;
   }
 }
 
