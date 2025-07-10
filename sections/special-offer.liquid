@@ -180,52 +180,43 @@
       <p class="text-xs mt-1.5 font-surt" style="color: #707070">$60/mo every 5 weeks after</p>
     </div>
 
-    
-                
-                 
-<div class="buy-buttons">
-  {% form 'product', product, class: 'product-form' %}
-    {%- if product.variants.size > 1 -%}
-      <label for="ProductSelect-{{ section.id }}">Opções:</label>
-      <select name="id" id="ProductSelect-{{ section.id }}" class="variant-select">
-        {% for variant in product.variants %}
-          <option value="{{ variant.id }}">
-            {{ variant.title }} — {{ variant.price | money }}
-          </option>
-        {% endfor %}
-      </select>
-    {%- else -%}
-      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-    {%- endif -%}
-
-    <label for="Quantity-{{ section.id }}">Quantidade:</label>
-    <input
-      type="number"
-      id="Quantity-{{ section.id }}"
-      name="quantity"
-      min="1"
-      value="1"
-      class="quantity-input"
-    />
-
-    <button
-      type="submit"
-      name="add"
-      class="button button--primary add-to-cart-btn"
-    >
-      {{ 'products.product.add_to_cart' | t }}
+    {%- comment -%} Single AJAX add-to-cart button snippet {%- endcomment -%}
+<cart-add>
+  <form method="post" class="flex justify-center mt-6 lg:mt-10 ajax-add-to-cart">
+    <input type="hidden" name="id" id="variant-id-js" value="{{ product.selected_or_first_available_variant.id }}">
+    {% if product.selling_plan_groups.size > 0 %}
+      <input type="hidden" name="selling_plan" value="{{ product.selling_plan_groups[0].selling_plans[0].id }}">
+    {% endif %}
+    <button type="submit" class="button button--black border border-black mb-5 lg:mb-1">
+      <div class="flex flex-col items-center pb-1.5">
+        <span class="text-[20px] lg:text-[32px] font-body-regular heading pt-2">Try It Today</span>
+      </div>
     </button>
+  </form>
+</cart-add>
 
-    <button
-      type="submit"
-      name="checkout"
-      class="button button--secondary buy-now-btn"
-    >
-      {{ 'products.product.buy_it_now' | t }}
-    </button>
-  {% endform %}
-</div>
-                
+<script>
+  document.addEventListener('submit', function(e) {
+    var form = e.target;
+    if (form.classList.contains('ajax-add-to-cart')) {
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch('/cart/add.js', {
+        method: 'POST',
+        body: data,
+        credentials: 'same-origin',
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function(response) { return response.json(); })
+      .then(function(item) {
+        // TODO: adicionar feedback ao usuário ou atualizar mini-cart
+        console.log('Adicionado ao carrinho:', item);
+      })
+      .catch(function(err) { console.error('Erro ao adicionar ao carrinho:', err); });
+    }
+  });
+</script>
+
 
     <div class="mt-4 lg:mt-6 text-center flex flex-col items-center">
       <p class="text-[12px] font-surt" style="color: #707070; font-weight: 400;">{{ section.settings.sub_cta_text }}</p>
