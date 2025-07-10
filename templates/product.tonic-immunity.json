@@ -287,7 +287,7 @@
               "settings": {
                 "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_2.png",
                 "image_max_width_mobile": 1000,
-                "title": "<h2>REFRESH YOUR body’s response</h2>",
+                "title": "<h2>FIRST <em>liquid liposomal Vitamin C</em></h2>",
                 "title_size": 48,
                 "title_line_height": 42,
                 "title_color": "",
@@ -413,7 +413,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p>REFRESH YOUR body’s response</p>",
+                        "text": "<p>FIRST <em>liquid liposomal Vitamin C</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 50,
@@ -445,7 +445,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Relief Tonic steps in when your body reacts strongly to everyday triggers like pollen, stress, or pollution.</h2>",
+                        "text": "<h2>Before the sniffles start, your cells are already stronger.</h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -460,7 +460,7 @@
                     "text_block_EJp8ft": {
                       "type": "text-block",
                       "settings": {
-                        "text": "<p>It helps your system stay steady, helps keep your body running smoothly, and keeps discomfort in check before it slows you down.<br/>The secret? 200mg of Quercetin in every dose. Thanks to advanced liposomal technology, your body absorbs it faster and uses it better.</p>",
+                        "text": "<p>What matters isn't how much you take but how well your body absorbs it. Immunity Tonic by Happy Aging uses advanced liposomal technology to deliver Vitamin C with up to 10x better absorption, getting into your system fast for real support.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -605,7 +605,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/FEEL_IT_first_shifts_2.jpg",
+                    "image": "shopify://shop_images/Image_10.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -631,7 +631,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Morning lift off, refreshed before coffee</li><li>Calm drive all day, no highs or crashes</li><li>Cycle friendly balance, mood and weight on track</li><li>Workout carry over, less burn and quick bounce back</li><li>Evening unwind, smooth shift to good sleep</li></ul>",
+                    "text": "<ul><li>Energized mornings, without the crash</li><li>Stronger immune defense, no guesswork</li><li>Natural support for skin, mood, and vitality</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -666,7 +666,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/FEEL_IT_first_shifts.jpg",
+                    "image": "shopify://shop_images/Image_10.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -693,7 +693,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Morning lift off, refreshed before coffee</li><li>Calm drive all day, no highs or crashes</li><li>Cycle friendly balance, mood and weight on track</li><li>Workout carry over, less burn and quick bounce back</li><li>Evening unwind, smooth shift to good sleep</li></ul>",
+                    "text": "<ul><li>Liposomal delivery ensures superior cellular absorption</li><li>Clinically backed Vitamin C dose optimizes bioavailability</li><li>Neutralizes oxidative stress and supports collagen synthesis</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -723,7 +723,6 @@
         "section_inner_yArRpj",
         "section_inner_gGdAUQ"
       ],
-      "disabled": true,
       "custom_css": [
         ".text-block ul li {list-style: inside; padding: 5px;}",
         "@media screen and (max-width: 540px) {h2 {font-size: 36px; }}"
@@ -789,7 +788,7 @@
                   "name": "Heading block",
                   "settings": {
                     "subheading": "",
-                    "text": "<p>WHY choose <em>Happy Aging?</em></p>",
+                    "text": "<p>WHY HAPPY AGING <em>is your advantage</em></p>",
                     "tag_select": "h2",
                     "text_color": "",
                     "letter_spacing": 0,
@@ -848,7 +847,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Fast Relief</em></p>",
+                        "text": "<p><em>One</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 0,
@@ -876,7 +875,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Daily support for discomforts and staying balanced.</p>",
+                        "text": "<p>A ritual that strengthens your defenses without the overload</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -914,7 +913,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Effective Dose</em></p>",
+                        "text": "<p><em>1,000 mg</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -941,7 +940,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>200mg of high-performing Quercetin.</p>",
+                        "text": "<p>Vitamin C in liposomal form supports immunity, collagen and antioxidant activity</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -978,7 +977,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Clean Formula</em></p>",
+                        "text": "<p><em>Clean</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1005,7 +1004,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>No fillers. No sugar. Vegan. Gluten-free. Third-party tested.</p>",
+                        "text": "<p>No sugar, synthetic preservatives or fillers</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1043,7 +1042,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Convenient</em></p>",
+                        "text": "<p><em>Quick</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1070,7 +1069,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>A small 6 mL tonic that fits easily into your routine.</p>",
+                        "text": "<p>Sip format fits busy mornings and wellness routines</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1109,7 +1108,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Science-Backed</em></p>",
+                        "text": "<p><em>Science</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1136,7 +1135,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Formulated with research and tested for quality.</p>",
+                        "text": "<p>Clinically backed formula with targeted delivery</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
