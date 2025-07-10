@@ -1637,7 +1637,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Supports your body’s natural balance</h3>",
+                        "text": "<h3>Oxidative stress and inflammation can compromise your defenses. Vitamin C helps rebalance.</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1694,7 +1694,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Helps protect your body from everyday damage</h3>",
+                        "text": "<h3>Real immunity starts with real absorption.</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1748,7 +1748,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1_1.png",
+                    "image": "shopify://shop_images/Frame_11.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
@@ -1862,7 +1862,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Kind to your digestion and easy to take</h3>",
+                            "text": "<h3>Clinical data supports higher absorption and better outcomes with liposomal delivery.</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1919,7 +1919,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Clean and simple ingredients</h3>",
+                            "text": "<h3>Liposomal technology protects the nutrient through digestion so it reaches your bloodstream intact.</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
