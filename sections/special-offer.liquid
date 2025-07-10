@@ -195,27 +195,7 @@
   </form>
 </cart-add>
 
-<script>
-  document.addEventListener('submit', function(e) {
-    var form = e.target;
-    if (form.classList.contains('ajax-add-to-cart')) {
-      e.preventDefault();
-      var data = new FormData(form);
-      fetch('/cart/add.js', {
-        method: 'POST',
-        body: data,
-        credentials: 'same-origin',
-        headers: { 'Accept': 'application/json' }
-      })
-      .then(function(response) { return response.json(); })
-      .then(function(item) {
-        // TODO: adicionar feedback ao usuário ou atualizar mini-cart
-        console.log('Adicionado ao carrinho:', item);
-      })
-      .catch(function(err) { console.error('Erro ao adicionar ao carrinho:', err); });
-    }
-  });
-</script>
+
 
 
     <div class="mt-4 lg:mt-6 text-center flex flex-col items-center">
