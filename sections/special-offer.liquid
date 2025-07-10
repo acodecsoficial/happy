@@ -180,10 +180,10 @@
       <p class="text-xs mt-1.5 font-surt" style="color: #707070">$60/mo every 5 weeks after</p>
     </div>
 
-    {%- comment -%} Single AJAX add-to-cart button snippet {%- endcomment -%}
+   {%- comment -%} Simple add-to-cart button with full-page reload {%- endcomment -%}
 <cart-add>
-  <form method="post" class="flex justify-center mt-6 lg:mt-10 ajax-add-to-cart">
-    <input type="hidden" name="id" id="variant-id-js" value="{{ product.selected_or_first_available_variant.id }}">
+  <form action="/cart/add" method="post" class="flex justify-center mt-6 lg:mt-10">
+    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
     {% if product.selling_plan_groups.size > 0 %}
       <input type="hidden" name="selling_plan" value="{{ product.selling_plan_groups[0].selling_plans[0].id }}">
     {% endif %}
@@ -194,7 +194,6 @@
     </button>
   </form>
 </cart-add>
-
 
 
 
