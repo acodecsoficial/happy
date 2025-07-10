@@ -2133,7 +2133,7 @@
               "settings": {
                 "desktop_grid_columns": "1",
                 "horizontal_alignment": "start",
-                "vertical_alignment": "flex-between",
+                "vertical_alignment": "center",
                 "desktop_grid_column_gap": 0,
                 "desktop_grid_row_gap": 0,
                 "top_spacing_desktop": 0,
