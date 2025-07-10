@@ -835,7 +835,7 @@
     margin-bottom: {{ s.margin_bottom_desktop }}px;
   "
 >
-  {% for i in (1..5) %}
+  {% for i in (1..7) %}
 {% assign icon_key = "icon_" | append: i %}
 {% assign icon = s[icon_key] %}
 
@@ -1545,6 +1545,26 @@
       "type": "text",
       "id": "text_5",
       "label": "Texto 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_6",
+      "label": "Ícone 6"
+    },
+    {
+      "type": "text",
+      "id": "text_6",
+      "label": "Texto 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_7",
+      "label": "Ícone 7"
+    },
+    {
+      "type": "text",
+      "id": "text_7",
+      "label": "Texto 7"
     },
     {
       "type": "range",
