@@ -90,56 +90,6 @@
             "blockId": "block-id"
           }
         },
-        "stay_ai_subscription_buy_box_extended_mVMLAy": {
-          "type": "shopify://apps/stay-ai-subscription/blocks/buy-box-extended/896a3134-375a-4df4-8274-d37b95eafdee",
-          "settings": {
-            "product-form-id": "50857668378944",
-            "one_time_purchase_label": "One-Time Purchase",
-            "subscription_label": "Subscribe & Save",
-            "subscription_tag": "Popular",
-            "subscription_details_type": "one-line",
-            "subscription_details": "<ul><li>Recurring savings on each order</li><li>Free shipping in the US</li><li>Cancel / pause anytime</li></ul>",
-            "icon_path_1": "",
-            "icon_path_2": "",
-            "icon_path_3": "",
-            "default_to_subscription": true,
-            "subscription_label_first": true,
-            "compare_at_price_first": true,
-            "widget_layout": "standard",
-            "include_custom_font": false,
-            "font_family": "work_sans_n6",
-            "text_color": "#000000",
-            "font_size": 15,
-            "border_color": "#E0E0E0",
-            "bg_color": "#FFF",
-            "selected_bg_color": "#E0E0E0",
-            "selected_text_color": "#121212",
-            "accent_color": "#121212",
-            "border_width": 1,
-            "border_radius": 10,
-            "css_code": ""
-          }
-        },
-        "stay_ai_subscription_buybox_kA3aeU": {
-          "type": "shopify://apps/stay-ai-subscription/blocks/buybox/896a3134-375a-4df4-8274-d37b95eafdee",
-          "settings": {
-            "enabled": true,
-            "box_layout": "radio",
-            "selector_color": "#ffffff",
-            "selector_secondary_color": "#4A4A4A",
-            "selector_hover_color": "#4A4A4A",
-            "selector_hover_secondary_color": "#ffffff",
-            "selector_hover_border_color": "#4A4A4A",
-            "text_hover_color": "#ffffff",
-            "selector_border_radius": 4,
-            "selector_border_width": 1,
-            "text_color": "#4a4a4a",
-            "stroke_width": 2,
-            "border_radius": 12,
-            "remove_styles": false,
-            "styles": ""
-          }
-        },
         "buy_buttons_W9PKFR": {
           "type": "buy_buttons",
           "settings": {
@@ -264,8 +214,6 @@
         "forms_inline_UteN6W",
         "kite_discount_free_gift_app_block_rxdmna",
         "kite_discount_free_gift_app_block_free_gift_Lh3WmU",
-        "stay_ai_subscription_buy_box_extended_mVMLAy",
-        "stay_ai_subscription_buybox_kA3aeU",
         "buy_buttons_W9PKFR",
         "text_RB6DBe",
         "text_h9imWD",
