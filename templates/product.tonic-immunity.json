@@ -1229,6 +1229,7 @@
         "row_NPeT7w",
         "row_tWbad6"
       ],
+      "disabled": true,
       "name": "Focus You",
       "settings": {
         "title": "<p>Feel <em>the Change</em></p>",
@@ -1241,7 +1242,7 @@
         "text_nLEfLV": {
           "type": "text",
           "settings": {
-            "text": "<p>MADE FOR <em>real life</em></p>",
+            "text": "<p>BUILD TO PROTECT, <em>designed to support you</em></p>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1249,9 +1250,8 @@
         },
         "text_GcHhgp": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<h3><em>Clinically proven NMN raised blood NAD⁺ by up to 60% in eight weeks</em></h3>",
+            "text": "<h3><em>Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1276,7 +1276,7 @@
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Breathe easier and start your mornings clear</h3>",
+            "text": "<h3>Boosts daily immunity and supports white blood cell activity</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1285,7 +1285,7 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Stay steady through the seasons</h3>",
+            "text": "<h3>Helps reduce duration and severity of seasonal immune challenges</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1294,7 +1294,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Recover quicker after workouts</h3>",
+            "text": "<h3>Protects skin and tissues from oxidative stress</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1303,7 +1303,7 @@
         "text_Ucicgf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Keep your cells protected from daily wear</h3>",
+            "text": "<h3>Supports adrenal health and vitality</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1312,16 +1312,7 @@
         "text_fAHjYt": {
           "type": "text",
           "settings": {
-            "text": "<h3>Gentle formula you can use long-term</h3>",
-            "text_style": "body",
-            "has_border": true,
-            "center_mobile": false
-          }
-        },
-        "text_xCnNhb": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Fresh Citrus Nutty flavor that’s easy to enjoy</h3>",
+            "text": "<h3>Refreshing taste, easy to use</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1370,7 +1361,6 @@
         "text_FHXk9x",
         "text_Ucicgf",
         "text_fAHjYt",
-        "text_xCnNhb",
         "spacing_GFqXPi",
         "button_iKqTjh"
       ],
@@ -1384,9 +1374,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_3.jpg",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_4.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/BEBIDA.jpg",
+        "image_mob": "shopify://shop_images/Sem_Titulo-1_4.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -1450,6 +1440,7 @@
         "card_h6ztFg",
         "card_zCpNRP"
       ],
+      "disabled": true,
       "name": "How it Helps",
       "settings": {
         "heading": "HOW it helps"
@@ -1487,7 +1478,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>Built on Science, <em>made for You.</em></p>",
+                "text": "<p>HOW VITAMIN C WORKS <em>for your cells</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
@@ -1566,7 +1557,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_3_e2229035-1dab-4451-a1fc-7bd6fb7c9ede.png",
+                        "icon_image": "shopify://shop_images/Icons_5.png",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1589,7 +1580,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>200mg of quality Quercetin per dose</h3>",
+                        "text": "<h3>Vitamin C supports your immune cells’ function, from activation to protection.</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
