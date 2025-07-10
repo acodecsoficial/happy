@@ -180,18 +180,10 @@
       <p class="text-xs mt-1.5 font-surt" style="color: #707070">$60/mo every 5 weeks after</p>
     </div>
 
-    <cart-add>
-      <form class="mt-6 lg:mt-10 justify-center flex">
-        <input type="hidden" name="id" id="variant-id-js" value="{{ product.selected_or_first_available_variant.id }}">
-        <input type="hidden" name="selling_plan" value="{{ product.selling_plan_groups[0].selling_plans[0].id }}">
-        <button class="mb-5 lg:mb-1 button button--black border border-black">
-          <div class="flex flex-col items-center pb-1.5">
-            <span class="text-[20px] lg:text-[32px] font-body-regular heading" style="padding-top: 10px;">Try It Today</span>
-           
-          </div>
-        </button>
-      </form>
-    </cart-add>
+    
+                
+                  {%- render 'buy-buttons-tonic', block: block, product: product, product_form_id: product_form_id, section_id: section.id, tonic: true -%}
+                
 
     <div class="mt-4 lg:mt-6 text-center flex flex-col items-center">
       <p class="text-[12px] font-surt" style="color: #707070; font-weight: 400;">{{ section.settings.sub_cta_text }}</p>
