@@ -2140,7 +2140,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<h2>Easy to take, <em>hard to beat</em></h2>",
+                        "text": "<h2>TAKE BACK <em>your immunity</em></h2>",
                         "tag_select": "h1",
                         "text_color": "",
                         "desktop_font_size": 0,
@@ -2149,11 +2149,25 @@
                       },
                       "blocks": {}
                     },
+                    "text_block_rbCFYQ": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h3><em>Clinically supported liposomal Vitamin C for rapid, effective defense</em></h3>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
                     "text_block_3Rzw4W": {
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p><em>One 6 mL tonic. 200mg of Quercetin. Fast support with clean ingredients.</em></p>",
+                        "text": "<p>A single teaspoon delivers 1,000 mg of Vitamin C in liposomal form, helping your body stay ready and resilient. Expect faster uptake, stronger immune readiness and vitality that shows.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -2199,6 +2213,7 @@
                   },
                   "block_order": [
                     "heading_block_h8V6Bc",
+                    "text_block_rbCFYQ",
                     "text_block_3Rzw4W",
                     "ai_gen_block_ab0bec8_dRmymN",
                     "ai_gen_block_3608cf6_FRaWaP"
@@ -2315,7 +2330,7 @@
                 "image_block_4rVcUP": {
                   "type": "image-block",
                   "settings": {
-                    "image": "shopify://shop_images/TAKE_BACK_your_energy_1.gif",
+                    "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_4.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -2389,6 +2404,7 @@
         "text_yLR6KH",
         "button_8rgaR3"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
