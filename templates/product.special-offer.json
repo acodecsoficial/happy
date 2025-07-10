@@ -230,7 +230,7 @@
         "highlight_color": "#d0535b",
         "title_label": "",
         "media_size": "medium",
-        "constrain_to_viewport": true,
+        "constrain_to_viewport": false,
         "title": "50% OFF YOUR FIRST subscription order",
         "sub_cta_text": "Limited Time Offer: Pause or Cancel Anytime",
         "sub_cta_description": "",
