@@ -34,7 +34,7 @@
           {% endif %}
 
           {% if block.settings.button_text != blank %}
-    <div class="ai-button-wrapper-buttonikqtjh">
+    <div class="ai-button-wrapper-buttonikqtjh mobile">
       <a href="{{ block.settings.button_url }}" class="ai-button-buttonikqtjh focus">
         <h2>{{ block.settings.button_text }}</h2>
       </a>
@@ -42,6 +42,14 @@
   {% endif %}
         </div>
       </div>
+
+    {% if block.settings.button_text != blank %}
+    <div class="ai-button-wrapper-buttonikqtjh desktop">
+      <a href="{{ block.settings.button_url }}" class="ai-button-buttonikqtjh focus">
+        <h2>{{ block.settings.button_text }}</h2>
+      </a>
+    </div>
+  {% endif %}
     {% endfor %}
   </div>
 </section>
@@ -103,6 +111,10 @@
   max-width: 530px;
 }
 
+.desktop{
+  display: none;
+}
+
 @media (max-width: 767px) {
   .focus-you__row {
     flex-direction: column-reverse !important;
@@ -117,6 +129,10 @@
 
   .focus-you__content, .focus-you__title.heading{
     padding: 0px 20px;
+  }
+
+  .mobile{
+    display: none;
   }
 }
 
