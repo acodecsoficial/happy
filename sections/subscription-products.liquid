@@ -79,7 +79,7 @@
                     {% endfor %}
                   </select>
                   <div class="price-display">
-                    <span class="price-original">{{ current_variant.price | money_without_trailing_zeros }}</span>
+                    <span class="price-original js-subscription-price">{{ current_variant.price | money_without_trailing_zeros }}</span>
                     <span class="price-subscription">
                       {% if has_plan %}
                         {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
@@ -133,40 +133,56 @@
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.plan-select').forEach(select => {
-        const card = select.closest('.subscription-products__card');
-        const hiddenInput = card.querySelector('input.js-plan-id');
-        const priceDisplay = card.querySelector('.price-display');
-        const widget = card.querySelector('subscription-widget');
-        const cfg = widget.config;
+document.addEventListener('DOMContentLoaded', function() {
+  // Itera cada widget e atualiza preços a partir do JSON de configuração
+  document.querySelectorAll('subscription-widget').forEach(widget => {
+    const cfgScript = widget.querySelector('[data-widget-config]');
+    if (!cfgScript) return;
+    const cfg = JSON.parse(cfgScript.innerText);
+    const currentVariant = cfg.product.current_variant;
+    const allocations = currentVariant.selling_plan_allocations;
+    const oneTimeCents = currentVariant.price;
 
-        select.addEventListener('change', function() {
-          const planId = Number(this.value);
-          if (hiddenInput) hiddenInput.value = planId;
+    // Encontra elementos dentro do card
+    const card = widget.closest('.subscription-products__card');
+    const select = card.querySelector('.plan-select');
+    const hiddenInput = card.querySelector('input.js-plan-id');
+    const priceOriginalEl = card.querySelector('.price-original');
+    const priceSubsEl = card.querySelector('.price-subscription');
 
-          const alloc = cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId);
-          const cents = alloc ? alloc.price : cfg.product.current_variant.price;
-          const formatted = widget.formatPrice(cents);
-          if (priceDisplay) priceDisplay.textContent = formatted;
-        });
+    if (select) {
+      select.addEventListener('change', function() {
+        const planId = Number(this.value);
+        if (hiddenInput) hiddenInput.value = planId;
+        // Encontra alocação para o plano selecionado
+        const alloc = allocations.find(a => a.selling_plan_id === planId);
+        const subCents = alloc ? alloc.price : oneTimeCents;
+        // Atualiza display de preços
+        priceOriginalEl.textContent = widget.formatPrice(oneTimeCents);
+        priceSubsEl.textContent = widget.formatPrice(subCents);
       });
+    }
+  });
 
-      document.querySelectorAll('.js-subscription-form').forEach(form => {
-        form.addEventListener('submit', function(event) {
-          event.preventDefault();
-          const formData = new FormData(this);
-          fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
-            .then(res => res.json())
-            .then(() => {
-              alert('Produto adicionado ao carrinho!');
-              window.location.reload();
-            })
-            .catch(console.error);
-        });
-      });
+  // AJAX submit sem navegação extra
+  document.querySelectorAll('.js-subscription-form').forEach(form => {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      fetch('/cart/add.js', {
+        method: 'POST',
+        body: new URLSearchParams(formData)
+      })
+      .then(res => res.json())
+      .then(() => {
+        alert('Produto adicionado ao carrinho!');
+        window.location.reload();
+      })
+      .catch(console.error);
     });
-  </script>
+  });
+});
+</script>
 
 </section>
 
