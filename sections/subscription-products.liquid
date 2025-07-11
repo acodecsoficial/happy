@@ -112,6 +112,18 @@
   </style>
 </section>
 
+<script>
+  document.querySelectorAll('.plan-select').forEach(select => {
+    select.addEventListener('change', event => {
+      const widget = select.closest('subscription-widget');
+      const hiddenInput = widget.querySelector('input.js-plan-id');
+      if (hiddenInput) {
+        hiddenInput.value = select.value;
+      }
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Subscription Products",
