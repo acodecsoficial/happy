@@ -122,7 +122,31 @@
       }
     });
   });
+
+  // Intercepta o submit para AJAX e mostra notificação
+    document.querySelectorAll('.js-subscription-form').forEach(form => {
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        fetch('/cart/add.js', {
+          method: 'POST',
+          body: new URLSearchParams(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+          // exibe mensagem de sucesso
+          const msg = document.createElement('div');
+          msg.textContent = 'Produto adicionado ao carrinho!';
+          msg.className = 'cart-notification';
+          document.body.append(msg);
+          setTimeout(() => msg.remove(), 3000);
+        })
+        .catch(err => console.error(err));
+      });
+    });
 </script>
+
+
 
 {% schema %}
 {
