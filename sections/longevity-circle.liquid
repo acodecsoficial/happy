@@ -2,7 +2,7 @@
 
 <section class="longevity-circle" id="longevity-circle-{{ section.id }}">
   <div class="longevity-circle__inner">
-    <h2 class="longevity-circle__title">{{ section.settings.title }}</h2>
+    <h2 class="longevity-circle__title heading">{{ section.settings.title }}</h2>
     <p class="longevity-circle__subtitle">{{ section.settings.subtitle }}</p>
     <div class="longevity-circle__text">{{ section.settings.texto }}</div>
 
@@ -59,10 +59,10 @@
   "name": "Longevity Circle",
   "settings": [
     {
-      "type": "text",
+      "type": "richtext",
       "id": "title",
       "label": "Título",
-      "default": "WELCOME TO THE longevity circle"
+      "default": "<p>WELCOME TO THE <em>longevity circle</em></p>"
     },
     {
       "type": "text",
