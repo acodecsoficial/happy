@@ -64,10 +64,11 @@
                     {% for group in product.selling_plan_groups %}
                       {% for plan in group.selling_plans %}
                         <option value="{{ plan.id }}"
-                                {% if has_plan and plan.id == current_variant.selling_plan_allocations.first.selling_plan.id %}selected{% endif %}
+                                {% if has_plan and plan.id == current_variant.selling_plan_allocations.first.selling_plan.id %}
                                 data-subscription-price="{{ plan_allocation.price | money_without_trailing_zeros }}"
                                 data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}">
                           {{ plan.name }}{{ plan.price }}
+                          {% endif %}
                         
                         </option>
                       {% endfor %}
