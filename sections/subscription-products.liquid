@@ -79,7 +79,7 @@
                     {% endfor %}
                   </select>
                   <div class="price-display">
-                    <span class="price-original js-subscription-price">{{ current_variant.price | money_without_trailing_zeros }}</span>
+                    <span class="price-original">{{ current_variant.price | money_without_trailing_zeros }}</span>
                     <span class="price-subscription">
                       {% if has_plan %}
                         {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
