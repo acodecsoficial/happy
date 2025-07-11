@@ -1183,7 +1183,7 @@
       "name": "Landing Section",
       "settings": {
         "background_color": "#e5dbcc",
-        "full_width": true,
+        "full_width": false,
         "max_width": 1440,
         "top_spacing": 70,
         "bottom_spacing": 70,
