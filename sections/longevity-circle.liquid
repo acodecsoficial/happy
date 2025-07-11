@@ -1,6 +1,113 @@
+
+
+<section class="longevity-circle" id="longevity-circle-{{ section.id }}">
+  <div class="longevity-circle__inner">
+    <h2 class="longevity-circle__title">{{ section.settings.title }}</h2>
+    <p class="longevity-circle__subtitle">{{ section.settings.subtitle }}</p>
+    <div class="longevity-circle__text">{{ section.settings.texto }}</div>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="longevity-circle__bottles">
+        {% for block in section.blocks %}
+          <div class="longevity-circle__bottle">
+            <img src="{{ block.settings.image | img_url: '400x' }}" alt="{{ block.settings.alt }}">
+          </div>
+        {% endfor %}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <style>
+    #longevity-circle-{{ section.id }} {
+      position: relative;
+      background-image: url({{ section.settings.bg_desktop | img_url: '2048x' }});
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+    }
+    @media screen and (max-width: 767px) {
+      #longevity-circle-{{ section.id }} {
+        background-image: url({{ section.settings.bg_mobile | img_url: '1024x' }});
+      }
+    }
+    .longevity-circle__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .longevity-circle__title { font-size: 2rem; margin-bottom: .5em; }
+    .longevity-circle__subtitle { font-style: italic; margin-bottom: 1em; }
+    .longevity-circle__text { max-width: 600px; margin: 0 auto 2em; }
+
+    .longevity-circle__bottles {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .longevity-circle__bottle img {
+      max-height: 150px;
+      object-fit: contain;
+    }
+  </style>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Longevity Circle",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "WELCOME TO THE longevity circle"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo",
+      "default": "LIPOSOMAL magnesium — CALM TONIC"
+    },
+    {
+      "type": "textarea",
+      "id": "texto",
+      "label": "Descrição",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit…"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_desktop",
+      "label": "Imagem de fundo (desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_mobile",
+      "label": "Imagem de fundo (mobile)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "bottle",
+      "name": "Frasco",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagem do frasco"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Longevity Circle",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
