@@ -2308,6 +2308,7 @@
     },
     "longevity_circle_RpR8et": {
       "type": "longevity-circle",
+      "disabled": true,
       "name": "Longevity Circle",
       "settings": {
         "title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
