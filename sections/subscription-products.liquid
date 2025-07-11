@@ -15,7 +15,6 @@
 
     <div class="subscription-products__grid">
       {% assign product_cards = section.blocks | where: 'type', 'product_card' %}
-
       {% for block in product_cards %}
         {% assign product = block.settings.product %}
         {% if product %}
@@ -27,15 +26,8 @@
           {% endif %}
 
           <div class="subscription-products__card">
-            <a href="{{ product.url }}" class="card__image">
-              <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.title }}" loading="lazy" />
-            </a>
-            <div class="card__info">
-              ★ {{ product.reviews_count | default: 0 }} REVIEWS
-              <h3 class="card__title">{{ product.title }}</h3>
-            </div>
-
             <form action="/cart/add" method="post" class="js-subscription-form">
+
               <subscription-widget class="subscription-widget">
                 <script type="application/json" data-widget-config>
                   {
@@ -63,30 +55,38 @@
                   <select name="selling_plan" class="plan-select js-plan-select">
                     {% for group in product.selling_plan_groups %}
                       {% for plan in group.selling_plans %}
+                        {% assign alloc = current_variant.selling_plan_allocations | where: 'selling_plan_id', plan.id | first %}
+                        {% if alloc %}
+                          {% assign sub_price = alloc.price %}
+                        {% else %}
+                          {% assign sub_price = current_variant.price %}
+                        {% endif %}
                         <option value="{{ plan.id }}"
-                                {% if has_plan and plan.id == current_variant.selling_plan_allocations.first.selling_plan.id %}selected{% endif %}
-                                data-subscription-price="{{ plan.price | money_without_trailing_zeros }}"
+                                {% if alloc %}selected{% endif %}
+                                data-subscription-price="{{ sub_price | money_without_trailing_zeros }}"
                                 data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}">
                           {{ plan.name }}
                         </option>
                       {% endfor %}
                     {% endfor %}
                   </select>
+                  <p class="price-display">
+                    {% comment %} Valor inicial do plano selecionado {% endcomment %}
+                    {% if has_plan %}
+                      {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
+                    {% else %}
+                      {{ current_variant.price | money_without_trailing_zeros }}
+                    {% endif %}
+                  </p>
                 </div>
-
-                <p class="price-display">
-                  {% if has_plan %}
-                    {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
-                  {% else %}
-                    {{ current_variant.price | money_without_trailing_zeros }}
-                  {% endif %}
-                </p>
 
               </subscription-widget>
 
-              <button type="submit" class="button button--primary">{{ 'products.product.add_to_cart' | t }}</button>
-            </form>
+              <button type="submit" class="button button--primary">
+                {{ 'products.product.add_to_cart' | t }}
+              </button>
 
+            </form>
           </div>
 
         {% endif %}
@@ -95,10 +95,11 @@
 
     {% if section.settings.show_all_link %}
       <div class="subscription-products__footer">
-        <a href="{{ section.settings.all_link_url }}" class="see-all">{{ section.settings.all_link_text }} &rarr;</a>
+        <a href="{{ section.settings.all_link_url }}" class="see-all">
+          {{ section.settings.all_link_text }} &rarr;
+        </a>
       </div>
     {% endif %}
-
   </div>
 
   <style>
@@ -122,35 +123,41 @@
   </style>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Atualiza hidden plan e exibe preço selecionado
-    document.querySelectorAll('.plan-select').forEach(select => {
-      const card = select.closest('.subscription-products__card');
-      const hiddenInput = card.querySelector('input.js-plan-id');
-      const priceDisplay = card.querySelector('.price-display');
-      select.addEventListener('change', function() {
-        if (hiddenInput) hiddenInput.value = this.value;
-        const price = this.selectedOptions[0].getAttribute('data-subscription-price');
-        if (priceDisplay && price) priceDisplay.textContent = price;
-      });
-    });
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.plan-select').forEach(select => {
+        const card = select.closest('.subscription-products__card');
+        const hiddenInput = card.querySelector('input.js-plan-id');
+        const priceDisplay = card.querySelector('.price-display');
+        const widget = card.querySelector('subscription-widget');
+        const cfg = widget.config;
 
-    // AJAX submit sem recarregar, alerta e reload
-    document.querySelectorAll('.js-subscription-form').forEach(form => {
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(this);
-        fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
-          .then(res => res.json())
-          .then(() => {
-            alert('Produto adicionado ao carrinho!');
-            window.location.reload();
-          })
-          .catch(console.error);
+        select.addEventListener('change', function() {
+          const planId = Number(this.value);
+          if (hiddenInput) hiddenInput.value = planId;
+
+          const alloc = cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId);
+          const cents = alloc ? alloc.price : cfg.product.current_variant.price;
+          const formatted = widget.formatPrice(cents);
+          if (priceDisplay) priceDisplay.textContent = formatted;
+        });
+      });
+
+      document.querySelectorAll('.js-subscription-form').forEach(form => {
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          const formData = new FormData(this);
+          fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
+            .then(res => res.json())
+            .then(() => {
+              alert('Produto adicionado ao carrinho!');
+              window.location.reload();
+            })
+            .catch(console.error);
+        });
       });
     });
-  });
-</script>
+  </script>
+
 </section>
 
 {% schema %}
