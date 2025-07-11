@@ -64,12 +64,10 @@
                     {% for group in product.selling_plan_groups %}
                       {% for plan in group.selling_plans %}
                         <option value="{{ plan.id }}"
-                                {% if has_plan and plan.id == current_variant.selling_plan_allocations.first.selling_plan.id %}
-                                data-subscription-price="{{ plan_allocation.price | money_without_trailing_zeros }}"
+                                {% if has_plan and plan.id == current_variant.selling_plan_allocations.first.selling_plan.id %}selected{% endif %}
+                                data-subscription-price="{{ plan.price | money_without_trailing_zeros }}"
                                 data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}">
-                          {{ plan.name }}{{ plan.price }}
-                          {% endif %}
-                        
+                          {{ plan.name }}
                         </option>
                       {% endfor %}
                     {% endfor %}
@@ -124,36 +122,35 @@
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('subscription-widget').forEach(widget => {
-        const select = widget.querySelector('.plan-select');
-        const priceDisplay = widget.querySelector('.price-display');
-        const hiddenInput = widget.querySelector('input.js-plan-id');
-        if (select && priceDisplay && hiddenInput) {
-          select.addEventListener('change', function() {
-            hiddenInput.value = this.value;
-            const price = this.selectedOptions[0].getAttribute('data-subscription-price');
-            priceDisplay.textContent = price;
-            if (typeof widget.refresh === 'function') widget.refresh();
-          });
-        }
-      });
-
-      document.querySelectorAll('.js-subscription-form').forEach(form => {
-        form.addEventListener('submit', function(event) {
-          event.preventDefault();
-          const formData = new FormData(this);
-          fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
-            .then(res => res.json())
-            .then(() => {
-              alert('Produto adicionado ao carrinho!');
-              window.location.reload();
-            })
-            .catch(console.error);
-        });
+  document.addEventListener('DOMContentLoaded', function() {
+    // Atualiza hidden plan e exibe preço selecionado
+    document.querySelectorAll('.plan-select').forEach(select => {
+      const card = select.closest('.subscription-products__card');
+      const hiddenInput = card.querySelector('input.js-plan-id');
+      const priceDisplay = card.querySelector('.price-display');
+      select.addEventListener('change', function() {
+        if (hiddenInput) hiddenInput.value = this.value;
+        const price = this.selectedOptions[0].getAttribute('data-subscription-price');
+        if (priceDisplay && price) priceDisplay.textContent = price;
       });
     });
-  </script>
+
+    // AJAX submit sem recarregar, alerta e reload
+    document.querySelectorAll('.js-subscription-form').forEach(form => {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
+          .then(res => res.json())
+          .then(() => {
+            alert('Produto adicionado ao carrinho!');
+            window.location.reload();
+          })
+          .catch(console.error);
+      });
+    });
+  });
+</script>
 </section>
 
 {% schema %}
