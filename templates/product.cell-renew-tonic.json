@@ -2732,6 +2732,28 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "subscription_products_N4tawj": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_KEtthm": {
+          "type": "product_card",
+          "settings": {
+            "product": "bamboo-water-bottle-gift"
+          }
+        }
+      },
+      "block_order": [
+        "product_card_KEtthm"
+      ],
+      "name": "Subscription Products",
+      "settings": {
+        "title": "Complete your routine",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "SEE ALL products",
+        "show_all_link": true
+      }
     }
   },
   "order": [
@@ -2751,6 +2773,7 @@
     "wines",
     "landing_section_qAbkWE",
     "faqs_9gMU6f",
-    "17401711251af96b37"
+    "17401711251af96b37",
+    "subscription_products_N4tawj"
   ]
 }
