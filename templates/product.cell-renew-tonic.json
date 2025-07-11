@@ -2740,25 +2740,29 @@
         "product_card_KEtthm": {
           "type": "product_card",
           "settings": {
-            "product": "nmn-cell-renew-tonic"
+            "product": "nmn-cell-renew-tonic",
+            "default_quantity": 1
           }
         },
         "product_card_FNCUUa": {
           "type": "product_card",
           "settings": {
-            "product": "nmn-cell-renew-tonic"
+            "product": "nmn-cell-renew-tonic",
+            "default_quantity": 2
           }
         },
         "product_card_tTKtF3": {
           "type": "product_card",
           "settings": {
-            "product": "longevity"
+            "product": "longevity",
+            "default_quantity": 1
           }
         },
         "product_card_KpFHhQ": {
           "type": "product_card",
           "settings": {
-            "product": "longevity-shots"
+            "product": "longevity-shots",
+            "default_quantity": 1
           }
         }
       },
