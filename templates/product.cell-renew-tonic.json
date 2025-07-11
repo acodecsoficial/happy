@@ -2232,7 +2232,7 @@
         "max_width": 0,
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "use_top_border": true,
+        "use_top_border": false,
         "use_bottom_border": false,
         "full_width_mobile": true,
         "max_width_mobile": 0,
