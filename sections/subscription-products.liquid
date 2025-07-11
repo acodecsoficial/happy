@@ -31,10 +31,7 @@
               <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.title }}" loading="lazy" />
             </a>
             <div class="card__info">
-               {% if product != blank %} 
-   {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %} 
-{% endif %} 
-<div data-oke-star-rating {{ product_data_attribute }}>{{ product.metafields.okendo.StarRatingSnippet }}</div>
+              ★ {{ product.reviews_count | default: 0 }} REVIEWS
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
@@ -55,7 +52,6 @@
                 }
               </script>
 
-              <!-- Dropdown automático de planos disponíveis -->
               <div class="plan-selector">
                 <select name="selling_plan" class="plan-select js-plan-select">
                   {% for group in product.selling_plan_groups %}
@@ -69,9 +65,16 @@
                     {% endfor %}
                   {% endfor %}
                 </select>
+                <!-- Exibe preço atual baseado na seleção -->
+                <p class="price-display">
+                  {% if has_plan %}
+                    {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
+                  {% else %}
+                    {{ current_variant.price | money_without_trailing_zeros }}
+                  {% endif %}
+                </p>
               </div>
 
-              <!-- Form Add to Cart -->
               <form action="/cart/add" method="post" class="js-subscription-form">
                 <input type="hidden" name="id" value="{{ current_variant.id }}">
                 {% if has_plan %}
@@ -112,41 +115,37 @@
     .card__info { margin: 0.5rem 0; }
     .plan-selector { margin: 1rem 0; }
     .plan-select { width: 100%; padding: 0.5rem; }
+    .price-display { margin-top: 0.5rem; font-size: 1.1rem; font-weight: bold; }
   </style>
-</section>
 
-<script>
-  document.querySelectorAll('.plan-select').forEach(select => {
-    select.addEventListener('change', event => {
-      const widget = select.closest('subscription-widget');
-      const hiddenInput = widget.querySelector('input.js-plan-id');
-      if (hiddenInput) {
-        hiddenInput.value = select.value;
-      }
+  <script>
+    // Atualiza hidden e preço exibido no select
+    document.querySelectorAll('.plan-select').forEach(select => {
+      select.addEventListener('change', () => {
+        const widget = select.closest('subscription-widget');
+        const hiddenInput = widget.querySelector('input.js-plan-id');
+        const priceEl = widget.querySelector('.price-display');
+        const opt = select.options[select.selectedIndex];
+        if (hiddenInput) hiddenInput.value = opt.value;
+        if (priceEl) priceEl.textContent = opt.dataset.subscriptionPrice;
+      });
     });
-  });
 
- // Intercepta o submit para AJAX, mostra alerta e recarrega
+    // AJAX submit, alerta e recarrega
     document.querySelectorAll('.js-subscription-form').forEach(form => {
       form.addEventListener('submit', event => {
         event.preventDefault();
         const formData = new FormData(form);
-        fetch('/cart/add.js', {
-          method: 'POST',
-          body: new URLSearchParams(formData)
-        })
-        .then(response => response.json())
-        .then(data => {
-          // alerta e recarrega sem navegação extra
-          alert('Produto adicionado ao carrinho!');
-          window.location.reload();
-        })
-        .catch(err => console.error(err));
+        fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
+          .then(res => res.json())
+          .then(() => {
+            alert('Produto adicionado ao carrinho!');
+            window.location.reload();
+          });
       });
     });
-</script>
-
-
+  </script>
+</section>
 
 {% schema %}
 {
