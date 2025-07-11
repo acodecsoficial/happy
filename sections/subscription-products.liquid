@@ -123,7 +123,7 @@
     });
   });
 
-  // Intercepta o submit para AJAX e mostra notificação
+ // Intercepta o submit para AJAX, mostra alerta e recarrega
     document.querySelectorAll('.js-subscription-form').forEach(form => {
       form.addEventListener('submit', event => {
         event.preventDefault();
@@ -134,12 +134,9 @@
         })
         .then(response => response.json())
         .then(data => {
-          // exibe mensagem de sucesso
-          const msg = document.createElement('div');
-          msg.textContent = 'Produto adicionado ao carrinho!';
-          msg.className = 'cart-notification';
-          document.body.append(msg);
-          setTimeout(() => msg.remove(), 3000);
+          // alerta e recarrega sem navegação extra
+          alert('Produto adicionado ao carrinho!');
+          window.location.reload();
         })
         .catch(err => console.error(err));
       });
