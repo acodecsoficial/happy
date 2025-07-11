@@ -31,7 +31,13 @@
               <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.title }}" loading="lazy" />
             </a>
             <div class="card__info">
-              ★ {{ product.reviews_count | default: 0 }} REVIEWS
+              ★ {% if product != blank %} 
+              {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %} 
+          {% endif %} 
+          {% if shop.metafields.okendo.WidgetPreRenderBodyStyleTags != blank %}
+          {{- shop.metafields.okendo.WidgetPreRenderBodyStyleTags }}
+          {% endif %} 
+          <div data-oke-widget {{ product_data_attribute }}>{{ product.metafields.okendo.ReviewsWidgetSnippet }}</div>
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
