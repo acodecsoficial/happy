@@ -9,7 +9,6 @@
 <section id="subscription-products-{{ section.id }}" class="subscription-products">
   <div class="subscription-products__inner">
     <h2 class="subscription-products__title">{{ section.settings.title }}</h2>
-
     {% if section.settings.subtitle %}
       <p class="subscription-products__subtitle">{{ section.settings.subtitle }}</p>
     {% endif %}
@@ -21,7 +20,7 @@
         {% if block.type == "product_card" and block.settings.product %}
           {% assign product = block.settings.product %}
 
-          {% comment %} variante atual e plano {% endcomment %}
+          {% comment %} Variante atual e detecção de plano {% endcomment %}
           {% assign current_variant = product.selected_or_first_available_variant %}
           {% assign has_plan = false %}
           {% if current_variant.selling_plan_allocations.size > 0 %}
@@ -37,50 +36,69 @@
                 loading="lazy"
               />
             </a>
-
             <div class="card__info">
               ★ {{ product.reviews_count | default: 0 }} REVIEWS
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
-            <!-- dropdown de planos -->
-            <div class="plan-selector">
-              <select name="selling_plan" class="plan-select" data-product-id="{{ product.id }}">
-                {% for qb in quantity_blocks %}
-                  {% assign plan = blank %}
-                  {% for group in product.selling_plan_groups %}
-                    {% for p in group.selling_plans %}
-                      {% if p.id == qb.settings.plan_id %}
-                        {% assign plan = p %}
-                      {% endif %}
-                    {% endfor %}
-                  {% endfor %}
-                  <option
-                    value="{{ plan.id }}"
-                    data-onetime-price="{{ qb.settings.onetime_price | money_without_trailing_zeros }}"
-                    data-subscription-price="{{ plan.price | money_without_trailing_zeros }}"
-                  >
-                    {{ qb.settings.title }} {{ qb.settings.sub_title }}
-                  </option>
-                {% endfor %}
-              </select>
-            </div>
+            <subscription-widget class="subscription-widget">
+              <script type="application/json" data-widget-config>
+                {
+                  "product": {
+                    "current_variant": {{ current_variant | json }},
+                    "selling_plan_groups": {{ product.selling_plan_groups | json }},
+                    "is_bundle": false
+                  },
+                  "defaults": {
+                    "quantity": 1,
+                    "cadence": {% if has_plan %}"subscription"{% else %}"one-time-purchase"{% endif %},
+                    "plan_id": {% if has_plan %}{{ plan_allocation.selling_plan.id }}{% else %}null{% endif %}
+                  }
+                }
+              </script>
 
-            <!-- Add to Cart -->
-            <form action="/cart/add" method="post">
-              <input type="hidden" name="id"        value="{{ current_variant.id }}">
-              {% if has_plan %}
-                <input
-                  type="hidden"
-                  name="selling_plan"
-                  class="js-plan-id"
-                  value="{{ plan_allocation.selling_plan.id }}"
-                >
-              {% endif %}
-              <button type="submit" class="button button--primary">
-                {{ 'products.product.add_to_cart' | t }}
-              </button>
-            </form>
+              <div class="plan-selector">
+                <select name="selling_plan"
+                        class="plan-select js-plan-select"
+                        data-product-id="{{ product.id }}">
+                  {% for qb in quantity_blocks %}
+                    {% assign plan = '' %}
+                    {% for group in product.selling_plan_groups %}
+                      {% for p in group.selling_plans %}
+                        {% if p.id == qb.settings.plan_id %}
+                          {% assign plan = p %}
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+                    {% if plan %}
+                      <option
+                        value="{{ plan.id }}"
+                        {% if has_plan and plan.id == plan_allocation.selling_plan.id %}selected{% endif %}
+                        data-onetime-price="{{ qb.settings.onetime_price | money_without_trailing_zeros }}"
+                        data-subscription-price="{{ plan.price | money_without_trailing_zeros }}"
+                      >
+                        {{ qb.settings.title }} {{ qb.settings.sub_title }}
+                      </option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+
+              <form action="/cart/add" method="post" class="js-subscription-form">
+                <input type="hidden" name="id" value="{{ current_variant.id }}">
+                {% if has_plan %}
+                  <input
+                    type="hidden"
+                    name="selling_plan"
+                    class="js-plan-id"
+                    value="{{ plan_allocation.selling_plan.id }}"
+                  >
+                {% endif %}
+                <button type="submit" class="button button--primary">
+                  {{ 'products.product.add_to_cart' | t }}
+                </button>
+              </form>
+            </subscription-widget>
           </div>
         {% endif %}
       {% endfor %}
@@ -94,19 +112,6 @@
       </div>
     {% endif %}
   </div>
-
-  <cart-add>
-      <form class="mt-6 lg:mt-10 justify-center flex">
-        <input type="hidden" name="id" id="variant-id-js" value="{{ product.selected_or_first_available_variant.id }}">
-        <input type="hidden" name="selling_plan" value="{{ product.selling_plan_groups[0].selling_plans[0].id }}">
-        <button class="mb-5 lg:mb-1 button button--black border border-black">
-          <div class="flex flex-col items-center pb-1.5">
-            <span class="text-[20px] lg:text-[32px] font-body-regular heading" style="padding-top: 10px;">Try It Today</span>
-           
-          </div>
-        </button>
-      </form>
-    </cart-add>
 
   <style>
     /* grid responsivo */
@@ -206,7 +211,7 @@
         {
           "type": "number",
           "id": "onetime_price",
-          "label": "Preço One-Time (em centavos)"
+          "label": "Preço One-Time (centavos)"
         }
       ]
     }
