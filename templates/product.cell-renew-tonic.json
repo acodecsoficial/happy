@@ -2743,17 +2743,30 @@
             "product": "nmn-cell-renew-tonic"
           }
         },
-        "quantity_block_4xnMPg": {
-          "type": "quantity_block",
+        "product_card_FNCUUa": {
+          "type": "product_card",
           "settings": {
-            "title": "1 Month Supply",
-            "sub_title": ""
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "product_card_tTKtF3": {
+          "type": "product_card",
+          "settings": {
+            "product": "longevity"
+          }
+        },
+        "product_card_KpFHhQ": {
+          "type": "product_card",
+          "settings": {
+            "product": "longevity-shots"
           }
         }
       },
       "block_order": [
         "product_card_KEtthm",
-        "quantity_block_4xnMPg"
+        "product_card_FNCUUa",
+        "product_card_tTKtF3",
+        "product_card_KpFHhQ"
       ],
       "name": "Subscription Products",
       "settings": {
