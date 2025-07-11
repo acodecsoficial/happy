@@ -2760,13 +2760,21 @@
           "settings": {
             "product": "longevity-shots"
           }
+        },
+        "quantity_block_78HVwQ": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146812736
+          }
         }
       },
       "block_order": [
         "product_card_KEtthm",
         "product_card_FNCUUa",
         "product_card_tTKtF3",
-        "product_card_KpFHhQ"
+        "product_card_KpFHhQ",
+        "quantity_block_78HVwQ"
       ],
       "name": "Subscription Products",
       "settings": {
