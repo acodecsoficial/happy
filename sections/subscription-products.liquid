@@ -27,19 +27,20 @@
 
           <div class="subscription-products__card">
             <a href="{{ product.url }}" class="card__image">
-              <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.title }}" loading="lazy" />
+              <img src="{{ product.featured_image | img_url: '600x' }}"
+                   alt="{{ product.title }}" loading="lazy" />
             </a>
             <div class="card__info">
-               {% if product != blank %} 
-               {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %} 
-            {% endif %} 
-            <div data-oke-star-rating {{ product_data_attribute }}>{{ product.metafields.okendo.StarRatingSnippet }}</div>
-                          
+              {% if product != blank %}
+                {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %}
+              {% endif %}
+              <div data-oke-star-rating {{ product_data_attribute }}>
+                {{ product.metafields.okendo.StarRatingSnippet }}
+              </div>
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
             <form action="/cart/add" method="post" class="js-subscription-form">
-
               <subscription-widget class="subscription-widget">
                 <script type="application/json" data-widget-config>
                   {
@@ -49,7 +50,7 @@
                       "is_bundle": false
                     },
                     "defaults": {
-                      "quantity": 1,
+                      "quantity": {{ block.settings.qty }},
                       "cadence": {% if has_plan %}"subscription"{% else %}"one-time-purchase"{% endif %},
                       "plan_id": {% if has_plan %}{{ current_variant.selling_plan_allocations.first.selling_plan.id }}{% else %}null{% endif %}
                     }
@@ -59,15 +60,21 @@
                 <div class="widget-inputs">
                   <input type="hidden" name="id" value="{{ current_variant.id }}">
                   {% if has_plan %}
-                    <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ current_variant.selling_plan_allocations.first.selling_plan.id }}">
+                    <input type="hidden" name="selling_plan"
+                           class="js-plan-id"
+                           value="{{ current_variant.selling_plan_allocations.first.selling_plan.id }}">
                   {% endif %}
+                  <input type="hidden" name="quantity"
+                         class="js-hidden-qty"
+                         value="{{ block.settings.qty }}">
                 </div>
 
                 <div class="plan-selector">
                   <select name="selling_plan" class="plan-select js-plan-select">
                     {% for group in product.selling_plan_groups %}
                       {% for plan in group.selling_plans %}
-                        {% assign alloc = current_variant.selling_plan_allocations | where: 'selling_plan_id', plan.id | first %}
+                        {% assign alloc = current_variant.selling_plan_allocations
+                          | where: 'selling_plan_id', plan.id | first %}
                         {% if alloc %}
                           {% assign sub_price = alloc.price %}
                         {% else %}
@@ -76,14 +83,17 @@
                         <option value="{{ plan.id }}"
                                 {% if alloc %}selected{% endif %}
                                 data-subscription-price="{{ sub_price | money_without_trailing_zeros }}"
-                                data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}">
+                                data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}"
+                                data-qty="{{ block.settings.qty }}">
                           {{ plan.name }}
                         </option>
                       {% endfor %}
                     {% endfor %}
                   </select>
                   <div class="price-display">
-                    <span class="price-original">{{ current_variant.price | money_without_trailing_zeros }}</span>
+                    <span class="price-original">
+                      {{ current_variant.price | money_without_trailing_zeros }}
+                    </span>
                     <span class="price-subscription">
                       {% if has_plan %}
                         {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
@@ -93,13 +103,11 @@
                     </span>
                   </div>
                 </div>
-
               </subscription-widget>
 
               <button type="submit" class="button button--primary">
                 {{ 'products.product.add_to_cart' | t }}
               </button>
-
             </form>
           </div>
 
@@ -133,75 +141,77 @@
     .card__info { margin: 0.5rem 0; }
     .plan-selector { margin: 1rem 0; }
     .plan-select { width: 100%; padding: 0.5rem; }
-    .price-display { margin-top: 0.5rem; font-size: 1.1rem; font-weight: bold; }
+    .price-display { margin: 0.5rem 0; font-size: 1.1rem; font-weight: bold; }
   </style>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Atualiza hidden plan e exibe preços atualizados
-    document.querySelectorAll('.plan-select').forEach(select => {
-      const card = select.closest('.subscription-products__card');
-      const hiddenInput = card.querySelector('input.js-plan-id');
-      const priceOriginalEl = card.querySelector('.price-original');
-      const priceSubsEl = card.querySelector('.price-subscription');
-      const widget = card.querySelector('subscription-widget');
-      const cfg = widget.config;
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.subscription-products__card').forEach(card => {
+        const select = card.querySelector('.js-plan-select');
+        const hiddenPlan = card.querySelector('.js-plan-id');
+        const hiddenQty  = card.querySelector('.js-hidden-qty');
+        const priceOrig  = card.querySelector('.price-original');
+        const priceSub   = card.querySelector('.price-subscription');
+        const widget     = card.querySelector('subscription-widget');
+        const cfg        = widget.config;
 
-      select.addEventListener('change', function() {
-        const planId = Number(this.value);
-        if (hiddenInput) hiddenInput.value = planId;
+        select.addEventListener('change', function() {
+          const planId = Number(this.value);
+          if (hiddenPlan) hiddenPlan.value = planId;
+          // atualiza quantidade pelo data-qty do option
+          const newQty = this.selectedOptions[0].dataset.qty;
+          if (hiddenQty) hiddenQty.value = newQty;
 
-        // busca alocação para subscription price
-        const alloc = cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId);
-        const subsCents = alloc ? alloc.price : cfg.product.current_variant.price;
-        // onetime price sempre da variant base
-        const oneCents = cfg.product.current_variant.price;
+          // busca alocação
+          const alloc = cfg.product.current_variant.selling_plan_allocations
+                        .find(a => a.selling_plan_id === planId);
+          const subsCents = alloc ? alloc.price : cfg.product.current_variant.price;
+          const oneCents  = cfg.product.current_variant.price;
 
-        // formata os preços
-        const formattedSubs = widget.formatPrice(subsCents);
-        const formattedOne = widget.formatPrice(oneCents);
+          if (priceSub) priceSub.textContent  = widget.formatPrice(subsCents);
+          if (priceOrig) priceOrig.textContent = widget.formatPrice(oneCents);
+        });
 
-        if (priceSubsEl) priceSubsEl.textContent = formattedSubs;
-        if (priceOriginalEl) priceOriginalEl.textContent = formattedOne;
+        // submit AJAX
+        const form = card.querySelector('.js-subscription-form');
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const data = new FormData(this);
+          fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(data) })
+            .then(res => res.json())
+            .then(() => {
+              alert('Produto adicionado ao carrinho!');
+              window.location.reload();
+            })
+            .catch(console.error);
+        });
       });
     });
-
-    // AJAX submit sem reload extra
-    document.querySelectorAll('.js-subscription-form').forEach(form => {
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(this);
-        fetch('/cart/add.js', {
-          method: 'POST',
-          body: new URLSearchParams(formData)
-        })
-        .then(res => res.json())
-        .then(() => {
-          alert('Produto adicionado ao carrinho!');
-          window.location.reload();
-        })
-        .catch(console.error);
-      });
-    });
-  });
-</script>
-  
-
+  </script>
 </section>
 
 {% schema %}
 {
   "name": "Subscription Products",
   "settings": [
-    {"type":"text","id":"title","label":"Título da seção","default":"Complete your routine"},
-    {"type":"text","id":"subtitle","label":"Subtítulo (opcional)"},
-    {"type":"url","id":"all_link_url","label":"Link 'See All products'","default":"/collections/all"},
-    {"type":"text","id":"all_link_text","label":"Texto do link 'See All'","default":"SEE ALL products"},
-    {"type":"checkbox","id":"show_all_link","label":"Exibir link de ver todos","default":true}
+    { "type": "text",    "id": "title",        "label": "Título da seção",           "default": "Complete your routine" },
+    { "type": "text",    "id": "subtitle",     "label": "Subtítulo (opcional)"                                 },
+    { "type": "url",     "id": "all_link_url", "label": "Link 'See All products'",    "default": "/collections/all"   },
+    { "type": "text",    "id": "all_link_text","label": "Texto do link 'See All'",     "default": "SEE ALL products"  },
+    { "type": "checkbox","id": "show_all_link","label": "Exibir link de ver todos",    "default": true                }
   ],
   "blocks": [
-    {"type":"product_card","name":"Product Card","settings":[{"type":"product","id":"product","label":"Produto"}]}  
+    {
+      "type": "product_card",
+      "name": "Product Card",
+      "settings": [
+        { "type": "product","id": "product", "label": "Produto" },
+        { "type": "number", "id": "qty",     "label": "Quantidade padrão", "default": 1 }
+      ]
+    }
   ],
-  "presets":[{"name":"Subscription Products","category":"Custom"}]
+  "presets": [
+    { "name": "Subscription Products", "category": "Custom" }
+  ]
 }
 {% endschema %}
