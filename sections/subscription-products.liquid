@@ -14,8 +14,7 @@
     {% endif %}
 
     <div class="subscription-products__grid">
-      {% assign quantity_blocks = section.blocks | where: 'type', 'quantity_block' %}
-      {% assign product_cards   = section.blocks | where: 'type', 'product_card' %}
+      {% assign product_cards = section.blocks | where: 'type', 'product_card' %}
 
       {% for block in product_cards %}
         {% assign product = block.settings.product %}
@@ -25,7 +24,6 @@
           {% assign has_plan = false %}
           {% if current_variant.selling_plan_allocations.size > 0 %}
             {% assign has_plan = true %}
-            {% assign plan_allocation = current_variant.selling_plan_allocations.first %}
           {% endif %}
 
           <div class="subscription-products__card">
@@ -38,6 +36,7 @@
             </div>
 
             <subscription-widget class="subscription-widget">
+
               <script type="application/json" data-widget-config>
                 {
                   "product": {
@@ -48,40 +47,32 @@
                   "defaults": {
                     "quantity": 1,
                     "cadence": {% if has_plan %}"subscription"{% else %}"one-time-purchase"{% endif %},
-                    "plan_id": {% if has_plan %}{{ plan_allocation.selling_plan.id }}{% else %}null{% endif %}
+                    "plan_id": {% if has_plan %}{{ current_variant.selling_plan_allocations.first.selling_plan.id }}{% else %}null{% endif %}
                   }
                 }
               </script>
 
-              <!-- Dinâmico: dropdown de planos com quantity_blocks -->
+              <!-- Dropdown automático de planos disponíveis -->
               <div class="plan-selector">
                 <select name="selling_plan" class="plan-select js-plan-select">
-                  {% for qb in quantity_blocks %}
-                    {% assign plan = blank %}
-                    {% for group in product.selling_plan_groups %}
-                      {% for p in group.selling_plans %}
-                        {% if p.id == qb.settings.plan_id %}
-                          {% assign plan = p %}
-                        {% endif %}
-                      {% endfor %}
-                    {% endfor %}
-                    {% if plan %}
+                  {% for group in product.selling_plan_groups %}
+                    {% for plan in group.selling_plans %}
                       <option value="{{ plan.id }}"
-                              {% if has_plan and plan.id == plan_allocation.selling_plan.id %}selected{% endif %}
-                              data-onetime-price="{{ qb.settings.onetime_price | money_without_trailing_zeros }}"
-                              data-subscription-price="{{ plan.price | money_without_trailing_zeros }}">
-                        {{ qb.settings.title }} {{ qb.settings.sub_title }}
+                              {% if has_plan and plan.id == current_variant.selling_plan_allocations.first.selling_plan.id %}selected{% endif %}
+                              data-subscription-price="{{ plan.price | money_without_trailing_zeros }}"
+                              data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}">
+                        {{ plan.name }}
                       </option>
-                    {% endif %}
+                    {% endfor %}
                   {% endfor %}
                 </select>
               </div>
 
-              <!-- Form de Add to Cart -->
+              <!-- Form Add to Cart -->
               <form action="/cart/add" method="post" class="js-subscription-form">
                 <input type="hidden" name="id" value="{{ current_variant.id }}">
                 {% if has_plan %}
-                  <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ plan_allocation.selling_plan.id }}">
+                  <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ current_variant.selling_plan_allocations.first.selling_plan.id }}">
                 {% endif %}
                 <button type="submit" class="button button--primary">{{ 'products.product.add_to_cart' | t }}</button>
               </form>
@@ -119,7 +110,6 @@
     .plan-selector { margin: 1rem 0; }
     .plan-select { width: 100%; padding: 0.5rem; }
   </style>
-
 </section>
 
 {% schema %}
@@ -133,13 +123,7 @@
     {"type":"checkbox","id":"show_all_link","label":"Exibir link de ver todos","default":true}
   ],
   "blocks": [
-    {"type":"product_card","name":"Product Card","settings":[{"type":"product","id":"product","label":"Produto"}]},
-    {"type":"quantity_block","name":"Plano de Supply","settings":[
-      {"type":"number","id":"plan_id","label":"ID do Selling Plan"},
-      {"type":"text","id":"title","label":"Título do Plano","default":"1 Month Supply"},
-      {"type":"text","id":"sub_title","label":"Subtítulo (opcional)"},
-      {"type":"number","id":"onetime_price","label":"Preço One-Time (centavos)"}
-    ]}
+    {"type":"product_card","name":"Product Card","settings":[{"type":"product","id":"product","label":"Produto"}]}  
   ],
   "presets":[{"name":"Subscription Products","category":"Custom"}]
 }
