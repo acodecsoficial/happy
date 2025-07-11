@@ -133,54 +133,40 @@
   </style>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Atualiza hidden plan e exibe preços atualizados
-    document.querySelectorAll('.plan-select').forEach(select => {
-      const card = select.closest('.subscription-products__card');
-      const hiddenInput = card.querySelector('input.js-plan-id');
-      const priceOriginalEl = card.querySelector('.price-original');
-      const priceSubsEl = card.querySelector('.price-subscription');
-      const widget = card.querySelector('subscription-widget');
-      const cfg = widget.config;
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.plan-select').forEach(select => {
+        const card = select.closest('.subscription-products__card');
+        const hiddenInput = card.querySelector('input.js-plan-id');
+        const priceDisplay = card.querySelector('.price-display');
+        const widget = card.querySelector('subscription-widget');
+        const cfg = widget.config;
 
-      select.addEventListener('change', function() {
-        const planId = Number(this.value);
-        if (hiddenInput) hiddenInput.value = planId;
+        select.addEventListener('change', function() {
+          const planId = Number(this.value);
+          if (hiddenInput) hiddenInput.value = planId;
 
-        // busca alocação para subscription price
-        const alloc = cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId);
-        const subsCents = alloc ? alloc.price : cfg.product.current_variant.price;
-        // onetime price sempre da variant base
-        const oneCents = cfg.product.current_variant.price;
+          const alloc = cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId);
+          const cents = alloc ? alloc.price : cfg.product.current_variant.price;
+          const formatted = widget.formatPrice(cents);
+          if (priceDisplay) priceDisplay.textContent = formatted;
+        });
+      });
 
-        // formata os preços
-        const formattedSubs = widget.formatPrice(subsCents);
-        const formattedOne = widget.formatPrice(oneCents);
-
-        if (priceSubsEl) priceSubsEl.textContent = formattedSubs;
-        if (priceOriginalEl) priceOriginalEl.textContent = formattedOne;
+      document.querySelectorAll('.js-subscription-form').forEach(form => {
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          const formData = new FormData(this);
+          fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
+            .then(res => res.json())
+            .then(() => {
+              alert('Produto adicionado ao carrinho!');
+              window.location.reload();
+            })
+            .catch(console.error);
+        });
       });
     });
-
-    // AJAX submit sem reload extra
-    document.querySelectorAll('.js-subscription-form').forEach(form => {
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(this);
-        fetch('/cart/add.js', {
-          method: 'POST',
-          body: new URLSearchParams(formData)
-        })
-        .then(res => res.json())
-        .then(() => {
-          alert('Produto adicionado ao carrinho!');
-          window.location.reload();
-        })
-        .catch(console.error);
-      });
-    });
-  });
-</script>
+  </script>
 
 </section>
 
