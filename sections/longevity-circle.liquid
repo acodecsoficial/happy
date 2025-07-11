@@ -3,7 +3,7 @@
 <section class="longevity-circle" id="longevity-circle-{{ section.id }}">
   <div class="longevity-circle__inner">
     <h2 class="longevity-circle__title heading px-4">{{ section.settings.title }}</h2>
-    <div class="flex justify-center" style="gap: 30px; align-items:center;">
+    <div class="flex justify-start" style="gap: 30px; align-items:center;">
       <h2 class="longevity-circle__subtitle heading">{{ section.settings.subtitle }}</h2>
       <h2 class="longevity-circle__subtitle2 font-surt">{{ section.settings.subtitle2 }}</h2>
     </div>
@@ -40,7 +40,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
-      text-align: center;
+      text-align: left;
     }
     .longevity-circle__title { font-size: 50px; margin-bottom: .5em; }
     .longevity-circle__subtitle {  }
@@ -49,7 +49,7 @@
 
     .longevity-circle__bottles {
       display: flex;
-      justify-content: center;
+      justify-content: left;
       gap: 1rem;
       flex-wrap: wrap;
     }
