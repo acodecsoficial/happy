@@ -2306,6 +2306,18 @@
         "second_image": "shopify://shop_images/piscina.jpg"
       }
     },
+    "longevity_circle_RpR8et": {
+      "type": "longevity-circle",
+      "name": "Longevity Circle",
+      "settings": {
+        "title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
+        "subtitle": "<p>LIPOSOMAL <em>magnesium</em></p>",
+        "subtitle2": "<p>CALM TONIC</p>",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit…",
+        "bg_desktop": "shopify://shop_images/fundo2.png",
+        "bg_mobile": "shopify://shop_images/Frame_27.png"
+      }
+    },
     "image_banner_D6TgTi": {
       "type": "image-banner",
       "custom_css": [
@@ -2734,6 +2746,7 @@
     "landing_section_nqCRrp",
     "image_banner_azPmDb",
     "timeline_section_hBBi6r",
+    "longevity_circle_RpR8et",
     "image_banner_D6TgTi",
     "wines",
     "landing_section_qAbkWE",
