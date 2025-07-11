@@ -30,11 +30,7 @@
               <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.title }}" loading="lazy" />
             </a>
             <div class="card__info">
-               {% if product != blank %} 
-               {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %} 
-            {% endif %} 
-            <div data-oke-star-rating {{ product_data_attribute }}>{{ product.metafields.okendo.StarRatingSnippet }}</div>
-                          
+              ★ {{ product.reviews_count | default: 0 }} REVIEWS
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
@@ -61,6 +57,8 @@
                   {% if has_plan %}
                     <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ current_variant.selling_plan_allocations.first.selling_plan.id }}">
                   {% endif %}
+                  <!-- Quantidade do produto definida no schema -->
+                  <input type="hidden" name="quantity" value="{{ block.settings.default_quantity }}">
                 </div>
 
                 <div class="plan-selector">
@@ -68,13 +66,8 @@
                     {% for group in product.selling_plan_groups %}
                       {% for plan in group.selling_plans %}
                         {% assign alloc = current_variant.selling_plan_allocations | where: 'selling_plan_id', plan.id | first %}
-                        {% if alloc %}
-                          {% assign sub_price = alloc.price %}
-                        {% else %}
-                          {% assign sub_price = current_variant.price %}
-                        {% endif %}
-                        <option value="{{ plan.id }}"
-                                {% if alloc %}selected{% endif %}
+                        {% if alloc %}{% assign sub_price = alloc.price %}{% else %}{% assign sub_price = current_variant.price %}{% endif %}
+                        <option value="{{ plan.id }}" {% if alloc %}selected{% endif %}
                                 data-subscription-price="{{ sub_price | money_without_trailing_zeros }}"
                                 data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}">
                           {{ plan.name }}
@@ -85,11 +78,7 @@
                   <div class="price-display">
                     <span class="price-original">{{ current_variant.price | money_without_trailing_zeros }}</span>
                     <span class="price-subscription">
-                      {% if has_plan %}
-                        {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
-                      {% else %}
-                        {{ current_variant.price | money_without_trailing_zeros }}
-                      {% endif %}
+                      {% if has_plan %}{{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}{% else %}{{ current_variant.price | money_without_trailing_zeros }}{% endif %}
                     </span>
                   </div>
                 </div>
@@ -138,35 +127,30 @@
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Atualiza hidden plan e exibe preços atualizados
-    document.querySelectorAll('.plan-select').forEach(select => {
-      const card = select.closest('.subscription-products__card');
-      const hiddenInput = card.querySelector('input.js-plan-id');
+    // Atualiza hidden plan e preços
+    document.querySelectorAll('subscription-widget').forEach(widget => {
+      const cfg = widget.config;
+      const currentVariant = cfg.product.current_variant;
+      const allocations = currentVariant.selling_plan_allocations;
+      const oneTimeCents = currentVariant.price;
+
+      const card = widget.closest('.subscription-products__card');
+      const select = card.querySelector('.plan-select');
+      const hiddenPlan = card.querySelector('input.js-plan-id');
       const priceOriginalEl = card.querySelector('.price-original');
       const priceSubsEl = card.querySelector('.price-subscription');
-      const widget = card.querySelector('subscription-widget');
-      const cfg = widget.config;
 
       select.addEventListener('change', function() {
         const planId = Number(this.value);
-        if (hiddenInput) hiddenInput.value = planId;
-
-        // busca alocação para subscription price
-        const alloc = cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId);
-        const subsCents = alloc ? alloc.price : cfg.product.current_variant.price;
-        // onetime price sempre da variant base
-        const oneCents = cfg.product.current_variant.price;
-
-        // formata os preços
-        const formattedSubs = widget.formatPrice(subsCents);
-        const formattedOne = widget.formatPrice(oneCents);
-
-        if (priceSubsEl) priceSubsEl.textContent = formattedSubs;
-        if (priceOriginalEl) priceOriginalEl.textContent = formattedOne;
+        if (hiddenPlan) hiddenPlan.value = planId;
+        const alloc = allocations.find(a => a.selling_plan_id === planId);
+        const subCents = alloc ? alloc.price : oneTimeCents;
+        priceOriginalEl.textContent = widget.formatPrice(oneTimeCents);
+        priceSubsEl.textContent = widget.formatPrice(subCents);
       });
     });
 
-    // AJAX submit sem reload extra
+    // AJAX submit
     document.querySelectorAll('.js-subscription-form').forEach(form => {
       form.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -199,8 +183,17 @@
     {"type":"checkbox","id":"show_all_link","label":"Exibir link de ver todos","default":true}
   ],
   "blocks": [
-    {"type":"product_card","name":"Product Card","settings":[{"type":"product","id":"product","label":"Produto"}]}  
+    {  
+      "type": "product_card",
+      "name": "Product Card",
+      "settings": [
+        {"type": "product", "id": "product", "label": "Produto"},
+        {"type": "number", "id": "default_quantity", "label": "Quantidade padrão", "default": 1}
+      ]
+    }
   ],
-  "presets":[{"name":"Subscription Products","category":"Custom"}]
+  "presets": [
+    {"name": "Subscription Products", "category": "Custom"}
+  ]
 }
 {% endschema %}
