@@ -2741,10 +2741,18 @@
           "settings": {
             "product": "nmn-cell-renew-tonic"
           }
+        },
+        "quantity_block_4xnMPg": {
+          "type": "quantity_block",
+          "settings": {
+            "title": "1 Month Supply",
+            "sub_title": ""
+          }
         }
       },
       "block_order": [
-        "product_card_KEtthm"
+        "product_card_KEtthm",
+        "quantity_block_4xnMPg"
       ],
       "name": "Subscription Products",
       "settings": {
