@@ -3,7 +3,10 @@
 <section class="longevity-circle" id="longevity-circle-{{ section.id }}">
   <div class="longevity-circle__inner">
     <h2 class="longevity-circle__title heading">{{ section.settings.title }}</h2>
-    <p class="longevity-circle__subtitle">{{ section.settings.subtitle }}</p>
+    <div class="flex">
+      <p class="longevity-circle__subtitle">{{ section.settings.subtitle }}</p>
+      <p class="longevity-circle__subtitle2">{{ section.settings.subtitle2 }}</p>
+    </div>
     <div class="longevity-circle__text">{{ section.settings.texto }}</div>
 
     {%- if section.blocks.size > 0 -%}
@@ -69,6 +72,12 @@
       "id": "subtitle",
       "label": "Subtítulo",
       "default": "<p>LIPOSOMAL magnesium — CALM TONIC</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle2",
+      "label": "Subtítulo2",
+      "default": "<p>CALM TONIC</p>"
     },
     {
       "type": "textarea",
