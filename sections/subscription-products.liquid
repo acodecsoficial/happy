@@ -30,7 +30,11 @@
               <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.title }}" loading="lazy" />
             </a>
             <div class="card__info">
-              ★ {{ product.reviews_count | default: 0 }} REVIEWS
+               {% if product != blank %} 
+               {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %} 
+            {% endif %} 
+            <div data-oke-star-rating {{ product_data_attribute }}>{{ product.metafields.okendo.StarRatingSnippet }}</div>
+                          
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
@@ -88,12 +92,6 @@
                       {% endif %}
                     </span>
                   </div>
-                  <!-- Quantidade por plano -->
-                  <div class="quantity-input">
-                    <label for="plan-qty-{{ section.id }}-{{ block.id }}">Qty:</label>
-                    <input id="plan-qty-{{ section.id }}-{{ block.id }}" type="number" min="1" value="1" class="js-plan-qty" />
-                  </div>
-                </div>
                 </div>
 
               </subscription-widget>
@@ -140,35 +138,35 @@
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Usando widget.config definido em subscription-widget.js
-    document.querySelectorAll('subscription-widget').forEach(widget => {
-      const cfg = widget.config;
-      const currentVariant = cfg.product.current_variant;
-      const allocations = currentVariant.selling_plan_allocations;
-      const oneTimeCents = currentVariant.price;
-
-      // Elementos do card
-      const card = widget.closest('.subscription-products__card');
-      const select = card.querySelector('.plan-select');
+    // Atualiza hidden plan e exibe preços atualizados
+    document.querySelectorAll('.plan-select').forEach(select => {
+      const card = select.closest('.subscription-products__card');
       const hiddenInput = card.querySelector('input.js-plan-id');
       const priceOriginalEl = card.querySelector('.price-original');
       const priceSubsEl = card.querySelector('.price-subscription');
+      const widget = card.querySelector('subscription-widget');
+      const cfg = widget.config;
 
-      if (select) {
-        select.addEventListener('change', function() {
-          const planId = Number(this.value);
-          if (hiddenInput) hiddenInput.value = planId;
-          // Busca alocação no JSON de config
-          const alloc = allocations.find(a => a.selling_plan_id === planId);
-          const subCents = alloc ? alloc.price : oneTimeCents;
-          // Atualiza preços exibidos
-          priceOriginalEl.textContent = widget.formatPrice(oneTimeCents);
-          priceSubsEl.textContent = widget.formatPrice(subCents);
-        });
-      }
+      select.addEventListener('change', function() {
+        const planId = Number(this.value);
+        if (hiddenInput) hiddenInput.value = planId;
+
+        // busca alocação para subscription price
+        const alloc = cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId);
+        const subsCents = alloc ? alloc.price : cfg.product.current_variant.price;
+        // onetime price sempre da variant base
+        const oneCents = cfg.product.current_variant.price;
+
+        // formata os preços
+        const formattedSubs = widget.formatPrice(subsCents);
+        const formattedOne = widget.formatPrice(oneCents);
+
+        if (priceSubsEl) priceSubsEl.textContent = formattedSubs;
+        if (priceOriginalEl) priceOriginalEl.textContent = formattedOne;
+      });
     });
 
-    // AJAX submit sem navegação extra
+    // AJAX submit sem reload extra
     document.querySelectorAll('.js-subscription-form').forEach(form => {
       form.addEventListener('submit', function(event) {
         event.preventDefault();
