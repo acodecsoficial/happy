@@ -127,7 +127,11 @@
         const priceEl = widget.querySelector('.price-display');
         const opt = select.options[select.selectedIndex];
         if (hiddenInput) hiddenInput.value = opt.value;
-        if (priceEl) priceEl.textContent = opt.dataset.subscriptionPrice;
+        // Use getAttribute to ensure fresh value
+        const subPrice = opt.getAttribute('data-subscription-price');
+        if (priceEl && subPrice) {
+          priceEl.textContent = subPrice;
+        }
       });
     });
 
@@ -141,6 +145,9 @@
           .then(() => {
             alert('Produto adicionado ao carrinho!');
             window.location.reload();
+          });
+      });
+    });
           });
       });
     });
