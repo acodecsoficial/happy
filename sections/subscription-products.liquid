@@ -78,14 +78,16 @@
                       {% endfor %}
                     {% endfor %}
                   </select>
-                  <p class="price-display">
-                    {% comment %} Valor inicial do plano selecionado {% endcomment %}
-                    {% if has_plan %}
-                      {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
-                    {% else %}
-                      {{ current_variant.price | money_without_trailing_zeros }}
-                    {% endif %}
-                  </p>
+                  <div class="price-display">
+                    <span class="price-original">{{ current_variant.price | money_without_trailing_zeros }}</span>
+                    <span class="price-subscription">
+                      {% if has_plan %}
+                        {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
+                      {% else %}
+                        {{ current_variant.price | money_without_trailing_zeros }}
+                      {% endif %}
+                    </span>
+                  </div>
                 </div>
 
               </subscription-widget>
@@ -131,40 +133,54 @@
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.plan-select').forEach(select => {
-        const card = select.closest('.subscription-products__card');
-        const hiddenInput = card.querySelector('input.js-plan-id');
-        const priceDisplay = card.querySelector('.price-display');
-        const widget = card.querySelector('subscription-widget');
-        const cfg = widget.config;
+  document.addEventListener('DOMContentLoaded', function() {
+    // Usando widget.config definido em subscription-widget.js
+    document.querySelectorAll('subscription-widget').forEach(widget => {
+      const cfg = widget.config;
+      const currentVariant = cfg.product.current_variant;
+      const allocations = currentVariant.selling_plan_allocations;
+      const oneTimeCents = currentVariant.price;
 
+      // Elementos do card
+      const card = widget.closest('.subscription-products__card');
+      const select = card.querySelector('.plan-select');
+      const hiddenInput = card.querySelector('input.js-plan-id');
+      const priceOriginalEl = card.querySelector('.price-original');
+      const priceSubsEl = card.querySelector('.price-subscription');
+
+      if (select) {
         select.addEventListener('change', function() {
           const planId = Number(this.value);
           if (hiddenInput) hiddenInput.value = planId;
-
-          const alloc = cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId);
-          const cents = alloc ? alloc.price : cfg.product.current_variant.price;
-          const formatted = widget.formatPrice(cents);
-          if (priceDisplay) priceDisplay.textContent = formatted;
+          // Busca alocação no JSON de config
+          const alloc = allocations.find(a => a.selling_plan_id === planId);
+          const subCents = alloc ? alloc.price : oneTimeCents;
+          // Atualiza preços exibidos
+          priceOriginalEl.textContent = widget.formatPrice(oneTimeCents);
+          priceSubsEl.textContent = widget.formatPrice(subCents);
         });
-      });
+      }
+    });
 
-      document.querySelectorAll('.js-subscription-form').forEach(form => {
-        form.addEventListener('submit', function(event) {
-          event.preventDefault();
-          const formData = new FormData(this);
-          fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
-            .then(res => res.json())
-            .then(() => {
-              alert('Produto adicionado ao carrinho!');
-              window.location.reload();
-            })
-            .catch(console.error);
-        });
+    // AJAX submit sem navegação extra
+    document.querySelectorAll('.js-subscription-form').forEach(form => {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        fetch('/cart/add.js', {
+          method: 'POST',
+          body: new URLSearchParams(formData)
+        })
+        .then(res => res.json())
+        .then(() => {
+          alert('Produto adicionado ao carrinho!');
+          window.location.reload();
+        })
+        .catch(console.error);
       });
     });
-  </script>
+  });
+</script>
 
 </section>
 
