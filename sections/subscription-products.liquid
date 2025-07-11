@@ -26,6 +26,14 @@
           {% endif %}
 
           <div class="subscription-products__card">
+            <a href="{{ product.url }}" class="card__image">
+              <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.title }}" loading="lazy" />
+            </a>
+            <div class="card__info">
+              ★ {{ product.reviews_count | default: 0 }} REVIEWS
+              <h3 class="card__title">{{ product.title }}</h3>
+            </div>
+
             <form action="/cart/add" method="post" class="js-subscription-form">
 
               <subscription-widget class="subscription-widget">
