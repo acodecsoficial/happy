@@ -2743,6 +2743,13 @@
             "product": "nmn-cell-renew-tonic"
           }
         },
+        "quantity_block_nbJEDe": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        },
         "product_card_FNCUUa": {
           "type": "product_card",
           "settings": {
@@ -2764,6 +2771,7 @@
       },
       "block_order": [
         "product_card_KEtthm",
+        "quantity_block_nbJEDe",
         "product_card_FNCUUa",
         "product_card_tTKtF3",
         "product_card_KpFHhQ"
