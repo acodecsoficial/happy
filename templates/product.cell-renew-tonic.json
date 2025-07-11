@@ -2337,17 +2337,6 @@
         "text_section": "Forget “a glass of wine”—elevate to an antioxidant celebration, without the alcohol. Each shot delivers 220 mg of 98% purity Resveratrol, equal to 43 bottles of red wine. Toast to vibrant health and longevity with every sip."
       }
     },
-    "longevity_circle_4ArK4P": {
-      "type": "longevity-circle",
-      "name": "Longevity Circle",
-      "settings": {
-        "title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
-        "subtitle": "<p>LIPOSOMAL <em>magnesium </em>— CALM TONIC</p>",
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit…",
-        "bg_desktop": "shopify://shop_images/fundo2.png",
-        "bg_mobile": "shopify://shop_images/Frame_27.png"
-      }
-    },
     "landing_section_qAbkWE": {
       "type": "landing-section",
       "blocks": {
@@ -2747,7 +2736,6 @@
     "timeline_section_hBBi6r",
     "image_banner_D6TgTi",
     "wines",
-    "longevity_circle_4ArK4P",
     "landing_section_qAbkWE",
     "faqs_9gMU6f",
     "17401711251af96b37"
