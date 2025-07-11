@@ -15,6 +15,7 @@
 
     <div class="subscription-products__grid">
       {% assign product_cards = section.blocks | where: 'type', 'product_card' %}
+
       {% for block in product_cards %}
         {% assign product = block.settings.product %}
         {% if product %}
@@ -34,69 +35,55 @@
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
-            <form action="/cart/add" method="post" class="js-subscription-form">
+            <subscription-widget class="subscription-widget">
 
-              <subscription-widget class="subscription-widget">
-                <script type="application/json" data-widget-config>
-                  {
-                    "product": {
-                      "current_variant": {{ current_variant | json }},
-                      "selling_plan_groups": {{ product.selling_plan_groups | json }},
-                      "is_bundle": false
-                    },
-                    "defaults": {
-                      "quantity": 1,
-                      "cadence": {% if has_plan %}"subscription"{% else %}"one-time-purchase"{% endif %},
-                      "plan_id": {% if has_plan %}{{ current_variant.selling_plan_allocations.first.selling_plan.id }}{% else %}null{% endif %}
-                    }
+              <script type="application/json" data-widget-config>
+                {
+                  "product": {
+                    "current_variant": {{ current_variant | json }},
+                    "selling_plan_groups": {{ product.selling_plan_groups | json }},
+                    "is_bundle": false
+                  },
+                  "defaults": {
+                    "quantity": 1,
+                    "cadence": {% if has_plan %}"subscription"{% else %}"one-time-purchase"{% endif %},
+                    "plan_id": {% if has_plan %}{{ current_variant.selling_plan_allocations.first.selling_plan.id }}{% else %}null{% endif %}
                   }
-                </script>
+                }
+              </script>
 
-                <div class="widget-inputs">
-                  <input type="hidden" name="id" value="{{ current_variant.id }}">
-                  {% if has_plan %}
-                    <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ current_variant.selling_plan_allocations.first.selling_plan.id }}">
-                  {% endif %}
-                </div>
-
-                <div class="plan-selector">
-                  <select name="selling_plan" class="plan-select js-plan-select">
-                    {% for group in product.selling_plan_groups %}
-                      {% for plan in group.selling_plans %}
-                        {% assign alloc = current_variant.selling_plan_allocations | where: 'selling_plan_id', plan.id | first %}
-                        {% if alloc %}
-                          {% assign sub_price = alloc.price %}
-                        {% else %}
-                          {% assign sub_price = current_variant.price %}
-                        {% endif %}
-                        <option value="{{ plan.id }}"
-                                {% if alloc %}selected{% endif %}
-                                data-subscription-price="{{ sub_price | money_without_trailing_zeros }}"
-                                data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}">
-                          {{ plan.name }}
-                        </option>
-                      {% endfor %}
+              <div class="plan-selector">
+                <select name="selling_plan" class="plan-select js-plan-select">
+                  {% for group in product.selling_plan_groups %}
+                    {% for plan in group.selling_plans %}
+                      <option value="{{ plan.id }}"
+                              {% if has_plan and plan.id == current_variant.selling_plan_allocations.first.selling_plan.id %}selected{% endif %}
+                              data-subscription-price="{{ plan.price | money_without_trailing_zeros }}"
+                              data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}">
+                        {{ plan.name }}
+                      </option>
                     {% endfor %}
-                  </select>
-                  <div class="price-display">
-                    <span class="price-original">{{ current_variant.price | money_without_trailing_zeros }}</span>
-                    <span class="price-subscription">
-                      {% if has_plan %}
-                        {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
-                      {% else %}
-                        {{ current_variant.price | money_without_trailing_zeros }}
-                      {% endif %}
-                    </span>
-                  </div>
-                </div>
+                  {% endfor %}
+                </select>
+                <!-- Exibe preço atual baseado na seleção -->
+                <p class="price-display">
+                  {% if has_plan %}
+                    {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
+                  {% else %}
+                    {{ current_variant.price | money_without_trailing_zeros }}
+                  {% endif %}
+                </p>
+              </div>
 
-              </subscription-widget>
+              <form action="/cart/add" method="post" class="js-subscription-form">
+                <input type="hidden" name="id" value="{{ current_variant.id }}">
+                {% if has_plan %}
+                  <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ current_variant.selling_plan_allocations.first.selling_plan.id }}">
+                {% endif %}
+                <button type="submit" class="button button--primary">{{ 'products.product.add_to_cart' | t }}</button>
+              </form>
 
-              <button type="submit" class="button button--primary">
-                {{ 'products.product.add_to_cart' | t }}
-              </button>
-
-            </form>
+            </subscription-widget>
           </div>
 
         {% endif %}
@@ -105,11 +92,10 @@
 
     {% if section.settings.show_all_link %}
       <div class="subscription-products__footer">
-        <a href="{{ section.settings.all_link_url }}" class="see-all">
-          {{ section.settings.all_link_text }} &rarr;
-        </a>
+        <a href="{{ section.settings.all_link_url }}" class="see-all">{{ section.settings.all_link_text }} &rarr;</a>
       </div>
     {% endif %}
+
   </div>
 
   <style>
@@ -133,55 +119,39 @@
   </style>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Usando widget.config definido em subscription-widget.js
-    document.querySelectorAll('subscription-widget').forEach(widget => {
-      const cfg = widget.config;
-      const currentVariant = cfg.product.current_variant;
-      const allocations = currentVariant.selling_plan_allocations;
-      const oneTimeCents = currentVariant.price;
-
-      // Elementos do card
-      const card = widget.closest('.subscription-products__card');
-      const select = card.querySelector('.plan-select');
-      const hiddenInput = card.querySelector('input.js-plan-id');
-      const priceOriginalEl = card.querySelector('.price-original');
-      const priceSubsEl = card.querySelector('.price-subscription');
-
-      if (select) {
-        select.addEventListener('change', function() {
-          const planId = Number(this.value);
-          if (hiddenInput) hiddenInput.value = planId;
-          // Busca alocação no JSON de config
-          const alloc = allocations.find(a => a.selling_plan_id === planId);
-          const subCents = alloc ? alloc.price : oneTimeCents;
-          // Atualiza preços exibidos
-          priceOriginalEl.textContent = widget.formatPrice(oneTimeCents);
-          priceSubsEl.textContent = widget.formatPrice(subCents);
-        });
-      }
-    });
-
-    // AJAX submit sem navegação extra
-    document.querySelectorAll('.js-subscription-form').forEach(form => {
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(this);
-        fetch('/cart/add.js', {
-          method: 'POST',
-          body: new URLSearchParams(formData)
-        })
-        .then(res => res.json())
-        .then(() => {
-          alert('Produto adicionado ao carrinho!');
-          window.location.reload();
-        })
-        .catch(console.error);
+    // Atualiza hidden e preço exibido no select
+    document.querySelectorAll('.plan-select').forEach(select => {
+      select.addEventListener('change', () => {
+        const widget = select.closest('subscription-widget');
+        const hiddenInput = widget.querySelector('input.js-plan-id');
+        const priceEl = widget.querySelector('.price-display');
+        const opt = select.options[select.selectedIndex];
+        if (hiddenInput) hiddenInput.value = opt.value;
+        // Use getAttribute to ensure fresh value
+        const subPrice = opt.getAttribute('data-subscription-price');
+        if (priceEl && subPrice) {
+          priceEl.textContent = subPrice;
+        }
       });
     });
-  });
-</script>
 
+    // AJAX submit, alerta e recarrega
+    document.querySelectorAll('.js-subscription-form').forEach(form => {
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
+          .then(res => res.json())
+          .then(() => {
+            alert('Produto adicionado ao carrinho!');
+            window.location.reload();
+          });
+      });
+    });
+          });
+      });
+    });
+  </script>
 </section>
 
 {% schema %}
