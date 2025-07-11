@@ -1,6 +1,188 @@
+{% comment %}
+  File: sections/subscription-products.liquid
+  Disponível em Customize → Add section → Subscription Products
+{% endcomment %}
+
+<script src="{{ 'subscription-widget.js' | asset_url }}" defer></script>
+<link rel="stylesheet" href="{{ 'subscription-widget.css' | asset_url }}">
+
+<section id="subscription-products-{{ section.id }}" class="subscription-products">
+  <div class="subscription-products__inner">
+    <h2 class="subscription-products__title">{{ section.settings.title }}</h2>
+
+    {% if section.settings.subtitle %}
+      <p class="subscription-products__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    <div class="subscription-products__grid">
+      {%- assign quantity_blocks = section.blocks | where: "type", "quantity_block" -%}
+
+      {% for block in section.blocks %}
+        {% if block.type == "product_card" and block.settings.product %}
+          {% assign product = block.settings.product %}
+
+          {% comment %} variante atual e plano {% endcomment %}
+          {% assign current_variant = product.selected_or_first_available_variant %}
+          {% assign has_plan = false %}
+          {% if current_variant.selling_plan_allocations.size > 0 %}
+            {% assign has_plan = true %}
+            {% assign plan_allocation = current_variant.selling_plan_allocations.first %}
+          {% endif %}
+
+          <div class="subscription-products__card">
+            <a href="{{ product.url }}" class="card__image">
+              {{ product.featured_image | img_url: "600x" | image_tag: loading: "lazy" }}
+            </a>
+            <div class="card__info">
+              {%- render 'icon-star' -%} {{ product.reviews_count | default: 0 }} REVIEWS  
+              <h3 class="card__title">{{ product.title }}</h3>
+            </div>
+
+            <!-- dropdown de planos -->
+            <div class="plan-selector">
+              <select name="selling_plan" class="plan-select" data-product-id="{{ product.id }}">
+                {% for qb in quantity_blocks %}
+                  {% assign plan = blank %}
+                  {% for group in product.selling_plan_groups %}
+                    {% for p in group.selling_plans %}
+                      {% if p.id == qb.settings.plan_id %}
+                        {% assign plan = p %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                  <option
+                    value="{{ plan.id }}"
+                    data-onetime-price="{{ qb.settings.onetime_price | money_without_trailing_zeros }}"
+                    data-subscription-price="{{ plan.price | money_without_trailing_zeros }}"
+                  >
+                    {{ qb.settings.title }} {{ qb.settings.sub_title }}
+                  </option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <!-- Add to Cart -->
+            <form action="/cart/add" method="post">
+              <input type="hidden" name="id" value="{{ current_variant.id }}">
+              {% if has_plan %}
+                <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ plan_allocation.selling_plan.id }}">
+              {% endif %}
+              <button type="submit" class="button button--primary">
+                {{ 'products.product.add_to_cart' | t }}
+              </button>
+            </form>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.show_all_link %}
+      <div class="subscription-products__footer">
+        <a href="{{ section.settings.all_link_url }}" class="see-all">
+          {{ section.settings.all_link_text }} &rarr;
+        </a>
+      </div>
+    {% endif %}
+  </div>
+
+  <style>
+    /* grid responsivo */
+    #subscription-products-{{ section.id }} .subscription-products__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 2rem;
+    }
+    .subscription-products__card {
+      background: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .card__image img { width: 100%; height: auto; }
+    .card__info { margin: 1rem 0; }
+    .plan-selector { margin: 1rem 0; }
+    .plan-select { width: 100%; padding: .5rem; }
+  </style>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Subscription Products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título da seção",
+      "default": "Complete your routine"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo (opcional)"
+    },
+    {
+      "type": "url",
+      "id": "all_link_url",
+      "label": "Link “See All products”",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "all_link_text",
+      "label": "Texto do link “See All”",
+      "default": "SEE ALL products"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_all_link",
+      "label": "Exibir link de ver todos",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_card",
+      "name": "Product Card",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Produto"
+        }
+      ]
+    },
+    {
+      "type": "quantity_block",
+      "name": "Plano de Supply",
+      "settings": [
+        {
+          "type": "number",
+          "id": "plan_id",
+          "label": "ID do Selling Plan"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título do Plano (ex: 1 Month Supply)",
+          "default": "1 Month Supply"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Subtítulo (opcional)"
+        },
+        {
+          "type": "number",
+          "id": "onetime_price",
+          "label": "Preço One-Time (centavos)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Subscription Products",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
