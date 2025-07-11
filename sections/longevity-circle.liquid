@@ -21,9 +21,11 @@
     #longevity-circle-{{ section.id }} {
       position: relative;
       background-image: url({{ section.settings.bg_desktop | img_url: '2048x' }});
-      background-size: cover;
+      background-size: auto;
       background-position: center;
       padding: 100px 0;
+      background-repeat: no-repeat;
+      min-height: 550px;
     }
     @media screen and (max-width: 767px) {
       #longevity-circle-{{ section.id }} {
