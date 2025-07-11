@@ -119,39 +119,41 @@
   </style>
 
   <script>
-    // Atualiza hidden e preço exibido no select
-    document.querySelectorAll('.plan-select').forEach(select => {
-      select.addEventListener('change', () => {
-        const widget = select.closest('subscription-widget');
-        const hiddenInput = widget.querySelector('input.js-plan-id');
-        const priceEl = widget.querySelector('.price-display');
-        const opt = select.options[select.selectedIndex];
-        if (hiddenInput) hiddenInput.value = opt.value;
-        // Use getAttribute to ensure fresh value
-        const subPrice = opt.getAttribute('data-subscription-price');
-        if (priceEl && subPrice) {
-          priceEl.textContent = subPrice;
-        }
-      });
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('subscription-widget').forEach(widget => {
+      const select = widget.querySelector('.plan-select');
+      const priceDisplay = widget.querySelector('.price-display');
+      const hiddenInput = widget.querySelector('input.js-plan-id');
+      if (select && priceDisplay && hiddenInput) {
+        // Atualiza valor escondido e exibição do preço
+        select.addEventListener('change', function() {
+          hiddenInput.value = this.value;
+          const price = this.selectedOptions[0].getAttribute('data-subscription-price');
+          priceDisplay.textContent = price;
+          // Re-renderiza widget interno, se existir
+          if (typeof widget.refresh === 'function') widget.refresh();
+        });
+      }
     });
 
-    // AJAX submit, alerta e recarrega
     document.querySelectorAll('.js-subscription-form').forEach(form => {
-      form.addEventListener('submit', event => {
+      form.addEventListener('submit', function(event) {
         event.preventDefault();
-        const formData = new FormData(form);
-        fetch('/cart/add.js', { method: 'POST', body: new URLSearchParams(formData) })
-          .then(res => res.json())
-          .then(() => {
-            alert('Produto adicionado ao carrinho!');
-            window.location.reload();
-          });
+        const formData = new FormData(this);
+        fetch('/cart/add.js', {
+          method: 'POST',
+          body: new URLSearchParams(formData)
+        })
+        .then(res => res.json())
+        .then(() => {
+          alert('Produto adicionado ao carrinho!');
+          window.location.reload();
+        })
+        .catch(console.error);
       });
     });
-          });
-      });
-    });
-  </script>
+  });
+</script>
 </section>
 
 {% schema %}
