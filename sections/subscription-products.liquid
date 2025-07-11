@@ -31,10 +31,15 @@
 
           <div class="subscription-products__card">
             <a href="{{ product.url }}" class="card__image">
-              {{ product.featured_image | img_url: "600x" | image_tag: loading: "lazy" }}
+              <img
+                src="{{ product.featured_image | img_url: '600x' }}"
+                alt="{{ product.title }}"
+                loading="lazy"
+              />
             </a>
+
             <div class="card__info">
-              {%- render 'icon-star' -%} {{ product.reviews_count | default: 0 }} REVIEWS  
+              ★ {{ product.reviews_count | default: 0 }} REVIEWS
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
@@ -63,9 +68,14 @@
 
             <!-- Add to Cart -->
             <form action="/cart/add" method="post">
-              <input type="hidden" name="id" value="{{ current_variant.id }}">
+              <input type="hidden" name="id"        value="{{ current_variant.id }}">
               {% if has_plan %}
-                <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ plan_allocation.selling_plan.id }}">
+                <input
+                  type="hidden"
+                  name="selling_plan"
+                  class="js-plan-id"
+                  value="{{ plan_allocation.selling_plan.id }}"
+                >
               {% endif %}
               <button type="submit" class="button button--primary">
                 {{ 'products.product.add_to_cart' | t }}
@@ -97,10 +107,20 @@
       padding: 1.5rem;
       text-align: center;
     }
-    .card__image img { width: 100%; height: auto; }
-    .card__info { margin: 1rem 0; }
-    .plan-selector { margin: 1rem 0; }
-    .plan-select { width: 100%; padding: .5rem; }
+    .card__image img {
+      width: 100%;
+      height: auto;
+    }
+    .card__info {
+      margin: 1rem 0;
+    }
+    .plan-selector {
+      margin: 1rem 0;
+    }
+    .plan-select {
+      width: 100%;
+      padding: .5rem;
+    }
   </style>
 </section>
 
@@ -173,7 +193,7 @@
         {
           "type": "number",
           "id": "onetime_price",
-          "label": "Preço One-Time (centavos)"
+          "label": "Preço One-Time (em centavos)"
         }
       ]
     }
