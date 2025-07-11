@@ -2342,7 +2342,7 @@
       "name": "Longevity Circle",
       "settings": {
         "title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
-        "subtitle": "LIPOSOMAL magnesium — CALM TONIC",
+        "subtitle": "<p>LIPOSOMAL <em>magnesium </em>— CALM TONIC</p>",
         "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit…",
         "bg_desktop": "shopify://shop_images/fundo2.png",
         "bg_mobile": "shopify://shop_images/Frame_27.png"
