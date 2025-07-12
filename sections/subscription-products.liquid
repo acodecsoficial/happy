@@ -214,7 +214,7 @@
           quantity:     form.querySelector('[name="quantity"]').value,
           selling_plan: form.querySelector('[name="selling_plan"]').value
         };
-        fetch('/cart/add.js', {
+        fetch('/cart/add', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
