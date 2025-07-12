@@ -207,8 +207,16 @@
 
     
 
-   // AJAX add to cart + alert + reload
+   
+
+  });
+
+    function initSubscriptionForms() {
       document.querySelectorAll('.js-subscription-form').forEach(function(form) {
+        // Só registra uma vez por form
+        if (form.dataset.subscriptionInit) return;
+        form.dataset.subscriptionInit = true;
+
         form.addEventListener('submit', function(e) {
           e.preventDefault();
           e.stopImmediatePropagation();
@@ -233,8 +241,12 @@
           });
         });
       });
+    }
 
-  });
+    // Chama no carregamento normal...
+    document.addEventListener('DOMContentLoaded', initSubscriptionForms);
+    // ...e quando o editor do Shopify recarrega esta seção via AJAX
+    document.addEventListener('shopify:section:load', initSubscriptionForms);
 </script>
 
 </section>
