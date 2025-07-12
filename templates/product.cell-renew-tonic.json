@@ -2797,7 +2797,7 @@
         "title": "<p>Complete <em>your routine</em></p>",
         "subtitle": "",
         "all_link_url": "shopify://products/nmn-cell-renew-tonic",
-        "all_link_text": "SEE ALL products",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
         "show_all_link": true
       }
     }
