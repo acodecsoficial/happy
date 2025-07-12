@@ -29,11 +29,9 @@
 
           <div class="subscription-products__card">
             <a href="{{ product.url }}" class="card__image">
-              <img
-                src="{{ product.featured_image | img_url: '600x' }}"
-                alt="{{ product.title }}"
-                loading="lazy"
-              />
+              <img src="{{ product.featured_image | img_url: '600x' }}"
+                   alt="{{ product.title }}"
+                   loading="lazy" />
             </a>
             <div class="card__info">
               {% if product != blank %}
@@ -46,7 +44,6 @@
             </div>
 
             <form action="/cart/add.js" method="post" class="js-subscription-form">
-
               <subscription-widget class="subscription-widget">
                 <script type="application/json" data-widget-config>
                   {
@@ -77,8 +74,7 @@
 
                 <div class="plan-selector">
                   <label>Selecione sua assinatura</label>
-                  <select name="selling_plan"
-                          class="plan-select js-plan-select">
+                  <select name="selling_plan" class="plan-select js-plan-select">
                     {% for qb in quantity_blocks %}
                       {% assign plan_obj = blank %}
                       {% for group in product.selling_plan_groups %}
@@ -93,14 +89,14 @@
                                            | where: 'selling_plan_id', plan_obj.id
                                            | first %}
                         {% if alloc %}
-                          {% assign sub_price_cents = alloc.price %}
+                          {% assign sub_cents = alloc.price %}
                         {% else %}
-                          {% assign sub_price_cents = current_variant.price %}
+                          {% assign sub_cents = current_variant.price %}
                         {% endif %}
                         <option
                           value="{{ plan_obj.id }}"
                           data-qty="{{ qb.settings.quantity }}"
-                          data-subscription-cents="{{ sub_price_cents }}"
+                          data-subscription-cents="{{ sub_cents }}"
                           data-onetime-cents="{{ current_variant.price }}"
                           {% if qb == default_qb %}selected{% endif %}
                         >
@@ -174,15 +170,14 @@
         var subsEl = card.querySelector('.price-subscription');
         var widget = card.querySelector('subscription-widget');
 
-        function render(option) {
-          var planId = Number(option.value);
-          var qty    = Number(option.dataset.qty);
-          var oneC   = Number(option.dataset.onetimeCents);
-          var subC   = Number(option.dataset.subscriptionCents);
+        function render(opt) {
+          var planId = Number(opt.value);
+          var qty    = Number(opt.dataset.qty);
+          var oneC   = Number(opt.dataset.onetimeCents);
+          var subC   = Number(opt.dataset.subscriptionCents);
 
           qtyIn.value    = qty;
           planIn.value   = planId;
-
           widget.state.quantity       = qty;
           widget.state.selectedPlanId = planId;
           widget.refresh();
@@ -191,12 +186,14 @@
           subsEl.textContent = widget.formatPrice(subC);
         }
 
+        // initialize
         render(select.selectedOptions[0]);
         select.addEventListener('change', function() {
           render(this.selectedOptions[0]);
         });
       });
 
+      // AJAX add to cart + alert + reload
       document.querySelectorAll('.js-subscription-form').forEach(function(form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault();
