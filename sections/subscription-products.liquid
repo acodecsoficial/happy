@@ -42,7 +42,7 @@
               </div>
               
 
-              <div class="flex">
+              <div class="flex justify-between">
 
               <h3 class="card__title">{{ product.title }}</h3>
 
@@ -123,14 +123,15 @@
                     {% endfor %}
                   </select>
 
+                  <button type="submit" class="button button--primary js-add-to-cart">
+                {{ 'products.product.add_to_cart' | t }}
+              </button>
                   
                 </div>
 
               </subscription-widget>
 
-              <button type="submit" class="button button--primary js-add-to-cart">
-                {{ 'products.product.add_to_cart' | t }}
-              </button>
+              
             </form>
           </div>
         {% endif %}
