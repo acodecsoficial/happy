@@ -2794,7 +2794,7 @@
       ],
       "name": "Subscription Products",
       "settings": {
-        "title": "Complete your routine",
+        "title": "<p>Complete <em>your routine</em></p>",
         "subtitle": "",
         "all_link_url": "shopify://products/nmn-cell-renew-tonic",
         "all_link_text": "SEE ALL products",
