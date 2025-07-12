@@ -122,7 +122,7 @@
                     {% endfor %}
                   </select>
 
-                  <button type="submit" class="button button--primary js-add-to-cart">
+                  <button type="submit" class="button-subscription js-add-to-cart">
                 {{ 'products.product.add_to_cart' | t }}
               </button>
                   
@@ -174,13 +174,17 @@
     }
     .card__image img { width:100%; height:auto; }
     .card__info { margin:0.5rem 0; }
+    
     .plan-selector { 
       margin:1rem 0; 
       text-align:left;
       display: flex;
       justify-content: space-between;
     }
-    .plan-selector label { display:block; font-weight:bold; margin-bottom:.25rem; }
+
+    .button-subscription{
+      max-width: 132px;
+    }
     .plan-select { width:100%; padding:.5rem; }
     .price-display { margin-top:.5rem; font-weight:bold; }
     .price-original { text-decoration:line-through; margin-right:.5rem; }
