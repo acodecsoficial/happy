@@ -2308,6 +2308,7 @@
     },
     "longevity_circle_RpR8et": {
       "type": "longevity-circle",
+      "disabled": true,
       "name": "Longevity Circle",
       "settings": {
         "title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
@@ -2376,6 +2377,7 @@
         "quantity_block_6xgiyB",
         "product_card_KpFHhQ"
       ],
+      "disabled": true,
       "name": "Subscription Products",
       "settings": {
         "title": "<p>Complete <em>your routine</em></p>",
