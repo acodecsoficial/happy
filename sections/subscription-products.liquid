@@ -383,6 +383,11 @@
     .mobile{
       display: none;
     }
+
+    .subscription-products__inner{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   @media (min-width: 901px){
@@ -395,9 +400,10 @@
   /* Anula o grid original e esconde o overflow */
   .subscription-products__grid.swiper {
     display: block !important;
-    overflow: visible;
+    overflow: hidden;
     width: 100%;
     position: relative; /* já havia em .my-mobile-swiper */
+    padding-bottom: 60px;
   }
 
   /* Garante que o wrapper use flex e que cada slide não encolha */
