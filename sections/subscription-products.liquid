@@ -23,15 +23,17 @@
         {% if product %}
           {% assign current_variant = product.selected_or_first_available_variant %}
           {% assign has_plan = false %}
-{% if current_variant.selling_plan_allocations.size > 0 %}
-  {% assign has_plan = true %}
-{% endif %}
+          {% if current_variant.selling_plan_allocations.size > 0 %}
+            {% assign has_plan = true %}
+          {% endif %}
 
           <div class="subscription-products__card">
             <a href="{{ product.url }}" class="card__image">
-              <img src="{{ product.featured_image | img_url: '600x' }}"
-                   alt="{{ product.title }}"
-                   loading="lazy" />
+              <img
+                src="{{ product.featured_image | img_url: '600x' }}"
+                alt="{{ product.title }}"
+                loading="lazy"
+              />
             </a>
             <div class="card__info">
               {% capture product_data_attribute %}
@@ -74,11 +76,9 @@
 
                 <div class="plan-selector">
                   <label>Selecione sua assinatura</label>
-                  <select name="selling_plan" class="plan-select js-plan-select">
+                  <select name="selling_plan"
+                          class="plan-select js-plan-select">
                     {% for qb in quantity_blocks %}
-                      {%- comment -%}
-                        Only render options for blocks with a subscription_id set
-                      {%- endcomment -%}
                       {% if qb.settings.subscription_id %}
                         {% assign plan_obj = nil %}
                         {% for group in product.selling_plan_groups %}
@@ -118,9 +118,9 @@
                     </span>
                   </div>
                 </div>
-
               </subscription-widget>
 
+              <!-- Mantém type="submit" para o próprio widget, mas interceptamos no JS -->
               <button type="submit" class="button button--primary js-add-to-cart">
                 {{ 'products.product.add_to_cart' | t }}
               </button>
@@ -162,70 +162,69 @@
   </style>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.js-plan-select').forEach(function(select) {
-      var card   = select.closest('.subscription-products__card');
-      var qtyIn  = card.querySelector('.js-quantity-input');
-      var planIn = card.querySelector('.js-plan-id');
-      var origEl = card.querySelector('.price-original');
-      var subsEl = card.querySelector('.price-subscription');
-      var widget = card.querySelector('subscription-widget');
+    document.addEventListener('DOMContentLoaded', function() {
+      // Atualiza preços ao mudar de assinatura
+      document.querySelectorAll('.js-plan-select').forEach(function(select) {
+        var card   = select.closest('.subscription-products__card');
+        var qtyIn  = card.querySelector('.js-quantity-input');
+        var planIn = card.querySelector('.js-plan-id');
+        var origEl = card.querySelector('.price-original');
+        var subsEl = card.querySelector('.price-subscription');
+        var widget = card.querySelector('subscription-widget');
 
-      function render(option) {
-        var planId = Number(option.value);
-        var qty    = Number(option.dataset.qty);
-        var variant = widget.config.product.current_variant;
+        function render(opt) {
+          var planId = Number(opt.value);
+          var qty    = Number(opt.dataset.qty);
+          var oneC   = Number(opt.dataset.onetimeCents);
+          var subC   = Number(opt.dataset.subscriptionCents);
 
-        // encontrar alocação para este planId
-        var alloc = variant.selling_plan_allocations.find(function(a){
-          return a.selling_plan_id === planId;
+          qtyIn.value    = qty;
+          planIn.value   = planId;
+
+          widget.state.quantity       = qty;
+          widget.state.selectedPlanId = planId;
+          widget.refresh();
+
+          origEl.textContent = widget.formatPrice(oneC);
+          subsEl.textContent = widget.formatPrice(subC);
+        }
+
+        render(select.selectedOptions[0]);
+        select.addEventListener('change', function() {
+          render(this.selectedOptions[0]);
         });
+      });
 
-        var oneCents = variant.price;
-        // usa `alloc.price` (cents) quando disponível
-        var subCents = alloc ? alloc.price : oneCents;
+      // Intercepta o clique no botão de adicionar
+      document.querySelectorAll('.js-add-to-cart').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
 
-        qtyIn.value    = qty;
-        planIn.value   = planId;
+          var card = btn.closest('.subscription-products__card');
+          var form = card.querySelector('.js-subscription-form');
+          var data = {
+            id:           form.querySelector('[name="id"]').value,
+            quantity:     form.querySelector('[name="quantity"]').value,
+            selling_plan: form.querySelector('[name="selling_plan"]').value
+          };
 
-        // atualiza o widget interno
-        widget.state.quantity       = qty;
-        widget.state.selectedPlanId = planId;
-        widget.refresh();
-
-        origEl.textContent = widget.formatPrice(oneCents);
-        subsEl.textContent = widget.formatPrice(subCents);
-      }
-
-      // inicialização
-      render(select.selectedOptions[0]);
-
-      select.addEventListener('change', function() {
-        render(this.selectedOptions[0]);
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          })
+          .then(function() {
+            alert('Produto adicionado ao carrinho!');
+            window.location.reload();
+          })
+          .catch(function() {
+            alert('Erro ao adicionar ao carrinho.');
+          });
+        });
       });
     });
-
-   document.querySelectorAll('.js-subscription-form').forEach(form => {
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(this);
-        fetch('/cart/add.js', {
-          method: 'POST',
-          body: new URLSearchParams(formData)
-        })
-        .then(res => res.json())
-        .then(() => {
-          alert('Produto adicionado ao carrinho!');
-          window.location.reload();
-        })
-        .catch(console.error);
-      });
-    });
-  });
-
-  });
-</script>
-
+  </script>
 </section>
 
 {% schema %}
