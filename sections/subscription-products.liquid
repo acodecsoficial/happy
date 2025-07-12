@@ -89,7 +89,6 @@
                 </div>
 
                 <div class="plan-selector">
-                  <label>Selecione sua assinatura</label>
                   <select name="selling_plan" class="plan-select js-plan-select">
                     {% for qb in quantity_blocks %}
                       {%- comment -%}
@@ -175,7 +174,12 @@
     }
     .card__image img { width:100%; height:auto; }
     .card__info { margin:0.5rem 0; }
-    .plan-selector { margin:1rem 0; text-align:left; }
+    .plan-selector { 
+      margin:1rem 0; 
+      text-align:left;
+      display: flex;
+      justify-content: space-between;
+    }
     .plan-selector label { display:block; font-weight:bold; margin-bottom:.25rem; }
     .plan-select { width:100%; padding:.5rem; }
     .price-display { margin-top:.5rem; font-weight:bold; }
