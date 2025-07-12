@@ -205,29 +205,35 @@
       });
     });
 
-    document.querySelectorAll('.js-add-to-cart').forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    var card = btn.closest('.subscription-products__card');
-    var form = card.querySelector('.js-subscription-form');
-    var data = {
-      id:           form.querySelector('[name="id"]').value,
-      quantity:     form.querySelector('[name="quantity"]').value,
-      selling_plan: form.querySelector('[name="selling_plan"]').value
-    };
-    fetch('/cart/add.js', {
-      method: 'POST',
-      headers: { 'Content-Type':'application/json' },
-      body: JSON.stringify(data)
-    })
-    .then(function() {
-      alert('Produto adicionado ao carrinho!');
-      window.location.reload();  // recarrega MESMA página
-    })
-    .catch(function() {
-      alert('Erro ao adicionar ao carrinho.');
+    // Agora atacha o listener ao botão
+  document.querySelectorAll('.js-add-to-cart').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();  // bloqueia qualquer submit nativo
+
+      // encontra o form e os inputs
+      var card = btn.closest('.subscription-products__card');
+      var form = card.querySelector('.js-subscription-form');
+      var data = {
+        id:           form.querySelector('[name="id"]').value,
+        quantity:     form.querySelector('[name="quantity"]').value,
+        selling_plan: form.querySelector('[name="selling_plan"]').value
+      };
+
+      // envia via AJAX
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function() {
+        alert('Produto adicionado ao carrinho!');
+        window.location.reload();  // recarrega a mesma página
+      })
+      .catch(function() {
+        alert('Erro ao adicionar ao carrinho.');
+      });
     });
   });
-});
 
   });
 </script>
