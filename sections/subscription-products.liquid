@@ -384,6 +384,34 @@
   </style>
 
   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  function initSwiper() {
+    if (window.mobileSwiper) {
+      window.mobileSwiper.destroy(true, true);
+      window.mobileSwiper = null;
+    }
+    if (window.innerWidth <= 767) {
+      window.mobileSwiper = new Swiper('.my-mobile-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }
+  }
+  initSwiper();
+  let resizeDebounce;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeDebounce);
+    resizeDebounce = setTimeout(initSwiper, 200);
+  });
+});
+
+  </script>
+
+  <script>
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.js-plan-select').forEach(function(select) {
       var card   = select.closest('.subscription-products__card');
