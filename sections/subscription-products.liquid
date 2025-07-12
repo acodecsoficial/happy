@@ -319,53 +319,56 @@
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.js-plan-select').forEach(function(select) {
-      var card   = select.closest('.subscription-products__card');
-      var qtyIn  = card.querySelector('.js-quantity-input');
-      var planIn = card.querySelector('.js-plan-id');
-      var origEl = card.querySelector('.price-original');
-      var subsEl = card.querySelector('.price-subscription');
-      var widget = card.querySelector('subscription-widget');
+  document.querySelectorAll('.js-plan-select').forEach(function(select) {
+    var card   = select.closest('.subscription-products__card');
+    var qtyIn  = card.querySelector('.js-quantity-input');
+    var planIn = card.querySelector('.js-plan-id');
+    var origEl = card.querySelector('.price-original');
+    var subsEl = card.querySelector('.price-subscription');
+    var widget = card.querySelector('subscription-widget');
 
-      function render(option) {
-        var planId = Number(option.value);
-        var qty    = Number(option.dataset.qty);
-        var variant = widget.config.product.current_variant;
+    function render(option) {
+      var planId = Number(option.value);
+      var qty    = Number(option.dataset.qty);
+      var variant = widget.config.product.current_variant;
 
-        // encontrar alocação para este planId
-        var alloc = variant.selling_plan_allocations.find(function(a){
-          return a.selling_plan_id === planId;
-        });
-
-        var oneCents = variant.price;
-        // usa `alloc.price` (cents) quando disponível
-        var subCents = alloc ? alloc.price : oneCents;
-
-        qtyIn.value    = qty;
-        planIn.value   = planId;
-
-        // atualiza o widget interno
-        widget.state.quantity       = qty;
-        widget.state.selectedPlanId = planId;
-        widget.refresh();
-
-        origEl.textContent = widget.formatPrice(oneCents);
-        subsEl.textContent = widget.formatPrice(subCents);
-      }
-
-      // inicialização
-      render(select.selectedOptions[0]);
-
-      select.addEventListener('change', function() {
-        render(this.selectedOptions[0]);
+      // encontra alocação
+      var alloc = variant.selling_plan_allocations.find(function(a){
+        return a.selling_plan_id === planId;
       });
+
+      var oneCents = variant.price;
+      var subCents = alloc ? alloc.price : oneCents;
+
+      // atualiza inputs e widget
+      qtyIn.value    = qty;
+      planIn.value   = planId;
+      widget.state.quantity       = qty;
+      widget.state.selectedPlanId = planId;
+      widget.refresh();
+
+      // ** AQUI **: calcula total e exibe
+      var totalOneCents = oneCents * qty;
+      var totalSubCents = subCents * qty;
+
+      // só o total
+      origEl.textContent = widget.formatPrice(totalOneCents);
+      subsEl.textContent = widget.formatPrice(totalSubCents);
+
+      // OU, se quiser mostrar "unitário × qtde = total":
+      // origEl.textContent = `${widget.formatPrice(oneCents)} x ${qty} = ${widget.formatPrice(totalOneCents)}`;
+      // subsEl.textContent = `${widget.formatPrice(subCents)} x ${qty} = ${widget.formatPrice(totalSubCents)}`;
+    }
+
+    // inicializa
+    render(select.selectedOptions[0]);
+
+    select.addEventListener('change', function() {
+      render(this.selectedOptions[0]);
     });
-
-    
-
-   
-
   });
+});
+
 
     // AJAX add to cart + alert + reload
       document.querySelectorAll('.js-subscription-form').forEach(function(form) {
