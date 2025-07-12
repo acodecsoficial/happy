@@ -211,22 +211,15 @@
 
   });
 
-    function initSubscriptionForms() {
+    // AJAX add to cart + alert + reload
       document.querySelectorAll('.js-subscription-form').forEach(function(form) {
-        // Só registra uma vez por form
-        if (form.dataset.subscriptionInit) return;
-        form.dataset.subscriptionInit = true;
-
         form.addEventListener('submit', function(e) {
           e.preventDefault();
-          e.stopImmediatePropagation();
-
           var data = {
-            id:           form.querySelector('[name="id"]').value,
-            quantity:     form.querySelector('[name="quantity"]').value,
+            id:            form.querySelector('[name="id"]').value,
+            quantity:      form.querySelector('[name="quantity"]').value,
             selling_plan: form.querySelector('[name="selling_plan"]').value
           };
-
           fetch('/cart/add.js', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -241,12 +234,6 @@
           });
         });
       });
-    }
-
-    // Chama no carregamento normal...
-    document.addEventListener('DOMContentLoaded', initSubscriptionForms);
-    // ...e quando o editor do Shopify recarrega esta seção via AJAX
-    document.addEventListener('shopify:section:load', initSubscriptionForms);
 </script>
 
 </section>
