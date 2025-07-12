@@ -2318,37 +2318,6 @@
         "bg_mobile": "shopify://shop_images/Frame_27.png"
       }
     },
-    "image_banner_D6TgTi": {
-      "type": "image-banner",
-      "custom_css": [
-        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
-        ".banner__media {margin-top: 3rem;}",
-        ".banner__content {display: none;}",
-        "@media (max-width: 900px) {#Banner-template--24672251937088__image_banner_D6TgTi {padding-bottom: 3rem; }}"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Image_51ffbcb3-db98-4e77-806a-44de65fe5b49.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "wines": {
-      "type": "wines",
-      "disabled": true,
-      "settings": {
-        "title_section": "AGE LIKE <em>fine wine</em>",
-        "text_section": "Forget “a glass of wine”—elevate to an antioxidant celebration, without the alcohol. Each shot delivers 220 mg of 98% purity Resveratrol, equal to 43 bottles of red wine. Toast to vibrant health and longevity with every sip."
-      }
-    },
     "subscription_products_N4tawj": {
       "type": "subscription-products",
       "blocks": {
@@ -2414,6 +2383,37 @@
         "all_link_url": "shopify://collections",
         "all_link_text": "<p>SEE ALL <em>products</em></p>",
         "show_all_link": true
+      }
+    },
+    "image_banner_D6TgTi": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
+        ".banner__media {margin-top: 3rem;}",
+        ".banner__content {display: none;}",
+        "@media (max-width: 900px) {#Banner-template--24672251937088__image_banner_D6TgTi {padding-bottom: 3rem; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Image_51ffbcb3-db98-4e77-806a-44de65fe5b49.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "wines": {
+      "type": "wines",
+      "disabled": true,
+      "settings": {
+        "title_section": "AGE LIKE <em>fine wine</em>",
+        "text_section": "Forget “a glass of wine”—elevate to an antioxidant celebration, without the alcohol. Each shot delivers 220 mg of 98% purity Resveratrol, equal to 43 bottles of red wine. Toast to vibrant health and longevity with every sip."
       }
     },
     "landing_section_qAbkWE": {
@@ -2814,9 +2814,9 @@
     "image_banner_azPmDb",
     "timeline_section_hBBi6r",
     "longevity_circle_RpR8et",
+    "subscription_products_N4tawj",
     "image_banner_D6TgTi",
     "wines",
-    "subscription_products_N4tawj",
     "landing_section_qAbkWE",
     "faqs_9gMU6f",
     "17401711251af96b37"
