@@ -951,6 +951,82 @@
     
   }
 </style>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.js-plan-select').forEach(function(select) {
+      var card   = select.closest('.subscription-products__card');
+      var qtyIn  = card.querySelector('.js-quantity-input');
+      var planIn = card.querySelector('.js-plan-id');
+      var origEl = card.querySelector('.price-original');
+      var subsEl = card.querySelector('.price-subscription');
+      var widget = card.querySelector('subscription-widget');
+
+      function render(option) {
+        var planId = Number(option.value);
+        var qty    = Number(option.dataset.qty);
+        var variant = widget.config.product.current_variant;
+
+        // encontrar alocação para este planId
+        var alloc = variant.selling_plan_allocations.find(function(a){
+          return a.selling_plan_id === planId;
+        });
+
+        var oneCents = variant.price;
+        // usa `alloc.price` (cents) quando disponível
+        var subCents = alloc ? alloc.price : oneCents;
+
+        qtyIn.value    = qty;
+        planIn.value   = planId;
+
+        // atualiza o widget interno
+        widget.state.quantity       = qty;
+        widget.state.selectedPlanId = planId;
+        widget.refresh();
+
+        origEl.textContent = widget.formatPrice(oneCents);
+        subsEl.textContent = widget.formatPrice(subCents);
+      }
+
+      // inicialização
+      render(select.selectedOptions[0]);
+
+      select.addEventListener('change', function() {
+        render(this.selectedOptions[0]);
+      });
+    });
+
+    
+
+   // AJAX add to cart + alert + reload
+      document.querySelectorAll('.js-subscription-form').forEach(function(form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+
+          var data = {
+            id:           form.querySelector('[name="id"]').value,
+            quantity:     form.querySelector('[name="quantity"]').value,
+            selling_plan: form.querySelector('[name="selling_plan"]').value
+          };
+
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          })
+          .then(function() {
+            alert('Produto adicionado ao carrinho!');
+            window.location.reload();
+          })
+          .catch(function() {
+            alert('Erro ao adicionar ao carrinho.');
+          });
+        });
+      });
+
+  });
+</script>
     
   </body>
 </html>
