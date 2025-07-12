@@ -35,6 +35,13 @@
     @media screen and (max-width: 767px) {
       #longevity-circle-{{ section.id }} {
         background-image: url({{ section.settings.bg_mobile | img_url: '1024x' }});
+        background-position: bottom;
+      }
+
+      .longevity-circle__text {
+        max-width: 276px;
+        font-size: 16px;
+        margin-top: 15px;
       }
     }
     .longevity-circle__inner {
