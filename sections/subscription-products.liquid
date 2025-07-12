@@ -43,7 +43,7 @@
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
-            <form action="/cart/add.js" method="post" class="js-subscription-form">
+            <form action="/cart/add" method="post" class="js-subscription-form">
               <subscription-widget class="subscription-widget">
                 <script type="application/json" data-widget-config>
                   {
@@ -200,7 +200,7 @@
             quantity:     form.querySelector('[name="quantity"]').value,
             selling_plan: form.querySelector('[name="selling_plan"]').value
           };
-          fetch('/cart/add.js', {
+          fetch('/cart/add', {
             method: 'POST',
             headers: { 'Content-Type':'application/json' },
             body: JSON.stringify(data)
