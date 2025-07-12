@@ -13,14 +13,14 @@
       <p class="subscription-products__subtitle">{{ section.settings.subtitle }}</p>
     {% endif %}
 
-    {% assign product_cards   = section.blocks | where: 'type', 'product_card' %}
-    {% assign quantity_blocks = section.blocks | where: 'type', 'quantity_block' %}
-    {% assign default_qb      = quantity_blocks.first %}
+    {%- assign product_cards   = section.blocks | where: 'type', 'product_card' -%}
+    {%- assign quantity_blocks = section.blocks | where: 'type', 'quantity_block' -%}
 
     <div class="subscription-products__grid">
       {% for block in product_cards %}
         {% assign product = block.settings.product %}
         {% if product %}
+
           {% assign current_variant = product.selected_or_first_available_variant %}
           {% assign has_plan = false %}
           {% if current_variant.selling_plan_allocations.size > 0 %}
@@ -29,22 +29,19 @@
 
           <div class="subscription-products__card">
             <a href="{{ product.url }}" class="card__image">
-              <img src="{{ product.featured_image | img_url: '600x' }}"
-                   alt="{{ product.title }}" loading="lazy" />
+              <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.title }}" loading="lazy" />
             </a>
             <div class="card__info">
-              {% if product != blank %}
-                {% capture product_data_attribute %}
-                  data-oke-reviews-product-id="shopify-{{ product.id }}"
-                {% endcapture %}
-              {% endif %}
-              <div data-oke-star-rating {{ product_data_attribute }}>
-                {{ product.metafields.okendo.StarRatingSnippet }}
-              </div>
+               {% if product != blank %}
+                 {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %}
+               {% endif %}
+               <div data-oke-star-rating {{ product_data_attribute }}>
+                 {{ product.metafields.okendo.StarRatingSnippet }}
+               </div>
               <h3 class="card__title">{{ product.title }}</h3>
             </div>
 
-            <form action="/cart/add.js" method="post" class="js-subscription-form">
+            <form action="/cart/add" method="post" class="js-subscription-form">
 
               <subscription-widget class="subscription-widget">
                 <script type="application/json" data-widget-config>
@@ -55,61 +52,56 @@
                       "is_bundle": false
                     },
                     "defaults": {
-                      "quantity": {{ default_qb.settings.quantity }},
+                      "quantity": 1,
                       "cadence": {% if has_plan %}"subscription"{% else %}"one-time-purchase"{% endif %},
-                      "plan_id": {{ default_qb.settings.subscription_id }}
+                      "plan_id": {% if has_plan %}{{ current_variant.selling_plan_allocations.first.selling_plan.id }}{% else %}null{% endif %}
                     }
                   }
                 </script>
 
                 <div class="widget-inputs">
                   <input type="hidden" name="id" value="{{ current_variant.id }}">
-                  <input type="hidden" name="quantity"
-                         class="js-quantity-input"
-                         value="{{ default_qb.settings.quantity }}">
+                  <input type="hidden" name="quantity" class="js-quantity-input" value="1">
                   {% if has_plan %}
-                    <input type="hidden" name="selling_plan"
-                           class="js-plan-id"
-                           value="{{ default_qb.settings.subscription_id }}">
+                    <input type="hidden" name="selling_plan" class="js-plan-id" value="{{ current_variant.selling_plan_allocations.first.selling_plan.id }}">
                   {% endif %}
                 </div>
 
                 <div class="plan-selector">
                   <label>Selecione sua assinatura</label>
-                  <select name="selling_plan"
-                          class="plan-select js-plan-select">
-                    {% for qb in quantity_blocks %}
-                      {% assign plan_obj = '' %}
-                      {% for group in product.selling_plan_groups %}
-                        {% for p in group.selling_plans %}
-                          {% if p.id == qb.settings.subscription_id %}
-                            {% assign plan_obj = p %}
-                          {% endif %}
-                        {% endfor %}
-                      {% endfor %}
-                      {% if plan_obj %}
-                        {% assign it = current_variant.selling_plan_allocations 
-                                       | where: 'selling_plan_id', plan_obj.id 
-                                       | first %}
-                        {% if it %}
-                          {% assign plan_price = it.price %}
+                  <select name="selling_plan" class="plan-select js-plan-select">
+                    {% for group in product.selling_plan_groups %}
+                      {% for plan in group.selling_plans %}
+                        {% assign alloc = current_variant.selling_plan_allocations | where: 'selling_plan_id', plan.id | first %}
+                        {% if alloc %}
+                          {% assign sub_price = alloc.price %}
                         {% else %}
-                          {% assign plan_price = current_variant.price %}
+                          {% assign sub_price = current_variant.price %}
                         {% endif %}
+                        {% assign qb = quantity_blocks | where: 'settings.subscription_id', plan.id | first %}
+                        {% assign qb_qty = qb.settings.quantity | default: 1 %}
                         <option
-                          value="{{ plan_obj.id }}"
-                          data-qty="{{ qb.settings.quantity }}"
-                          {% if qb == default_qb %}selected{% endif %}
+                          value="{{ plan.id }}"
+                          {% if alloc %}selected{% endif %}
+                          data-subscription-price="{{ sub_price | money_without_trailing_zeros }}"
+                          data-onetime-price="{{ current_variant.price | money_without_trailing_zeros }}"
+                          data-qty="{{ qb_qty }}"
                         >
-                          {{ plan_obj.name }} — {{ qb.settings.quantity }} unidades
+                          {{ plan.name }}
                         </option>
-                      {% endif %}
+                      {% endfor %}
                     {% endfor %}
                   </select>
 
                   <div class="price-display">
-                    <span class="price-original"></span>
-                    <span class="price-subscription"></span>
+                    <span class="price-original">{{ current_variant.price | money_without_trailing_zeros }}</span>
+                    <span class="price-subscription">
+                      {% if has_plan %}
+                        {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
+                      {% else %}
+                        {{ current_variant.price | money_without_trailing_zeros }}
+                      {% endif %}
+                    </span>
                   </div>
                 </div>
 
@@ -121,6 +113,7 @@
 
             </form>
           </div>
+
         {% endif %}
       {% endfor %}
     </div>
@@ -137,62 +130,61 @@
   <style>
     #subscription-products-{{ section.id }} .subscription-products__grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
     .subscription-products__card {
-      background:#fff; padding:1rem; text-align:center;
-      border:1px solid #eee; border-radius:8px;
+      background: #fff;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid #eee;
+      border-radius: 8px;
     }
-    .card__image img { width:100%; height:auto; }
-    .card__info { margin:0.5rem 0; }
-    .plan-selector { margin:1rem 0; text-align:left; }
-    .plan-selector label { display:block; font-weight:bold; margin-bottom:0.25rem; }
-    .plan-select { width:100%; padding:0.5rem; }
-    .price-display { margin-top:0.5rem; font-weight:bold; }
-    .price-original { text-decoration:line-through; margin-right:0.5rem; }
+    .card__image img { width: 100%; height: auto; }
+    .card__info { margin: 0.5rem 0; }
+    .plan-selector { margin: 1rem 0; text-align: left; }
+    .plan-selector label { display: block; font-weight: bold; margin-bottom: .25rem; }
+    .plan-select { width: 100%; padding: .5rem; }
+    .price-display { margin-top: .5rem; font-size: 1.1rem; font-weight: bold; }
+    .price-original { text-decoration: line-through; margin-right: .5rem; }
   </style>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.js-plan-select').forEach(function(select) {
-        var card     = select.closest('.subscription-products__card');
-        var qtyIn    = card.querySelector('.js-quantity-input');
-        var planIn   = card.querySelector('.js-plan-id');
-        var origEl   = card.querySelector('.price-original');
-        var subsEl   = card.querySelector('.price-subscription');
-        var widget   = card.querySelector('subscription-widget');
-        var cv       = widget.config.product.current_variant;
+        var card      = select.closest('.subscription-products__card');
+        var qtyInput  = card.querySelector('.js-quantity-input');
+        var planInput = card.querySelector('.js-plan-id');
+        var origEl    = card.querySelector('.price-original');
+        var subsEl    = card.querySelector('.price-subscription');
+        var widget    = card.querySelector('subscription-widget');
+        var cfg       = widget.config;
 
-        function updatePrices(option) {
+        function updateFrom(option) {
           var planId = Number(option.value);
           var qty    = Number(option.dataset.qty);
-          // find allocation
-          var alloc = cv.selling_plan_allocations.find(function(a){
-            return a.selling_plan_id === planId;
-          });
-          var oneCents = cv.price;
-          var subCents = alloc ? alloc.price : oneCents;
+          var oneC   = cfg.product.current_variant.price;
+          var subC   = (cfg.product.current_variant.selling_plan_allocations.find(a => a.selling_plan_id === planId) || { price: oneC }).price;
 
-          qtyIn.value    = qty;
-          planIn.value   = planId;
+          qtyInput.value    = qty;
+          planInput.value   = planId;
           widget.state.quantity       = qty;
           widget.state.selectedPlanId = planId;
           widget.refresh();
 
-          origEl.textContent = widget.formatPrice(oneCents);
-          subsEl.textContent = widget.formatPrice(subCents);
+          origEl.textContent = widget.formatPrice(oneC);
+          subsEl.textContent = widget.formatPrice(subC);
         }
 
         // init
-        updatePrices(select.selectedOptions[0]);
+        updateFrom(select.selectedOptions[0]);
 
         select.addEventListener('change', function() {
-          updatePrices(this.selectedOptions[0]);
+          updateFrom(this.selectedOptions[0]);
         });
       });
 
-      // Ajax add to cart + alert + reload
+      // AJAX add to cart + alert + reload
       document.querySelectorAll('.js-subscription-form').forEach(function(form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault();
@@ -202,12 +194,17 @@
             selling_plan: form.querySelector('[name="selling_plan"]').value
           };
           fetch('/cart/add.js', {
-            method:'POST',
-            headers:{'Content-Type':'application/json'},
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
           })
-          .then(function(){ alert('Produto adicionado ao carrinho!'); window.location.reload(); })
-          .catch(function(){ alert('Erro ao adicionar ao carrinho.'); });
+          .then(function() {
+            alert('Produto adicionado ao carrinho!');
+            window.location.reload();
+          })
+          .catch(function() {
+            alert('Erro ao adicionar ao carrinho.');
+          });
         });
       });
     });
@@ -216,20 +213,28 @@
 
 {% schema %}
 {
-  "name":"Subscription Products",
-  "settings":[
-   {"type":"text","id":"title","label":"Título da seção","default":"Complete your routine"},
-   {"type":"text","id":"subtitle","label":"Subtítulo (opcional)"},
-   {"type":"url","id":"all_link_url","label":"Link 'See All products'","default":"/collections/all"},
-   {"type":"text","id":"all_link_text","label":"Texto do link 'See All'","default":"SEE ALL products"},
-   {"type":"checkbox","id":"show_all_link","label":"Exibir link de ver todos","default":true}
+  "name": "Subscription Products",
+  "settings": [
+    {"type":"text","id":"title","label":"Título da seção","default":"Complete your routine"},
+    {"type":"text","id":"subtitle","label":"Subtítulo (opcional)"},
+    {"type":"url","id":"all_link_url","label":"Link 'See All products'","default":"/collections/all"},
+    {"type":"text","id":"all_link_text","label":"Texto do link 'See All'","default":"SEE ALL products"},
+    {"type":"checkbox","id":"show_all_link","label":"Exibir link de ver todos","default":true}
   ],
-  "blocks":[
-   {"type":"product_card","name":"Product Card","settings":[{"type":"product","id":"product","label":"Produto"}]},
-   {"type":"quantity_block","name":"Quantidade & Plano","settings":[
-      {"type":"number","id":"quantity","label":"Quantidade","default":1},
-      {"type":"number","id":"subscription_id","label":"ID do Selling Plan"}
-    ]}
+  "blocks": [
+    {
+      "type":"product_card",
+      "name":"Product Card",
+      "settings":[{"type":"product","id":"product","label":"Produto"}]
+    },
+    {
+      "type":"quantity_block",
+      "name":"Quantidade & Plano",
+      "settings":[
+        {"type":"number","id":"quantity","label":"Quantidade","default":1},
+        {"type":"number","id":"subscription_id","label":"ID do Selling Plan"}
+      ]
+    }
   ],
   "presets":[{"name":"Subscription Products","category":"Custom"}]
 }
