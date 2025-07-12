@@ -23,9 +23,9 @@
         {% if product %}
           {% assign current_variant = product.selected_or_first_available_variant %}
           {% assign has_plan = false %}
-{% if current_variant.selling_plan_allocations.size > 0 %}
-  {% assign has_plan = true %}
-{% endif %}
+            {% if current_variant.selling_plan_allocations.size > 0 %}
+              {% assign has_plan = true %}
+            {% endif %}
 
           <div class="subscription-products__card">
             <a href="{{ product.url }}" class="card__image">
@@ -147,7 +147,11 @@
     {% endif %}
   </div>
 
-  <style>
+  
+
+</section>
+
+<style>
     #subscription-products-{{ section.id }} .subscription-products__grid {
       max-width: 1440px;
       display: grid;
@@ -299,8 +303,6 @@
         });
       });
 </script>
-
-</section>
 
 {% schema %}
 {
