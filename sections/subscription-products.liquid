@@ -162,60 +162,76 @@
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.js-plan-select').forEach(function(select) {
-        const card   = select.closest('.subscription-products__card');
-        const qtyIn  = card.querySelector('.js-quantity-input');
-        const planIn = card.querySelector('.js-plan-id');
-        const origEl = card.querySelector('.price-original');
-        const subsEl = card.querySelector('.price-subscription');
-        const widget = card.querySelector('subscription-widget');
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.js-plan-select').forEach(function(select) {
+      var card   = select.closest('.subscription-products__card');
+      var qtyIn  = card.querySelector('.js-quantity-input');
+      var planIn = card.querySelector('.js-plan-id');
+      var origEl = card.querySelector('.price-original');
+      var subsEl = card.querySelector('.price-subscription');
+      var widget = card.querySelector('subscription-widget');
 
-        function render(option) {
-          const planId = Number(option.value);
-          const qty    = Number(option.dataset.qty);
-          const oneC   = Number(option.dataset.onetimeCents);
-          const subC   = Number(option.dataset.subscriptionCents);
+      function render(option) {
+        var planId = Number(option.value);
+        var qty    = Number(option.dataset.qty);
+        var variant = widget.config.product.current_variant;
 
-          qtyIn.value    = qty;
-          planIn.value   = planId;
+        // encontrar alocação para este planId
+        var alloc = variant.selling_plan_allocations.find(function(a){
+          return a.selling_plan_id === planId;
+        });
 
-          widget.state.quantity       = qty;
-          widget.state.selectedPlanId = planId;
-          widget.refresh();
+        var oneCents = variant.price;
+        // usa `alloc.price` (cents) quando disponível
+        var subCents = alloc ? alloc.price : oneCents;
 
-          origEl.textContent = widget.formatPrice(oneC);
-          subsEl.textContent = widget.formatPrice(subC);
-        }
+        qtyIn.value    = qty;
+        planIn.value   = planId;
 
-        render(select.selectedOptions[0]);
-        select.addEventListener('change', () => render(select.selectedOptions[0]));
+        // atualiza o widget interno
+        widget.state.quantity       = qty;
+        widget.state.selectedPlanId = planId;
+        widget.refresh();
+
+        origEl.textContent = widget.formatPrice(oneCents);
+        subsEl.textContent = widget.formatPrice(subCents);
+      }
+
+      // inicialização
+      render(select.selectedOptions[0]);
+
+      select.addEventListener('change', function() {
+        render(this.selectedOptions[0]);
       });
+    });
 
-      document.querySelectorAll('.js-subscription-form').forEach(form => {
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          const data = {
-            id:           form.querySelector('[name="id"]').value,
-            quantity:     form.querySelector('[name="quantity"]').value,
-            selling_plan: form.querySelector('[name="selling_plan"]').value
-          };
-          fetch('/cart/add', {
-            method: 'POST',
-            headers: { 'Content-Type':'application/json' },
-            body: JSON.stringify(data)
-          })
-          .then(() => {
-            alert('Produto adicionado ao carrinho!');
-            window.location.reload();
-          })
-          .catch(() => {
-            alert('Erro ao adicionar ao carrinho.');
-          });
+    // AJAX add to cart + alerta + reload
+    document.querySelectorAll('.js-subscription-form').forEach(function(form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = {
+          id:           form.querySelector('[name="id"]').value,
+          quantity:     form.querySelector('[name="quantity"]').value,
+          selling_plan: form.querySelector('[name="selling_plan"]').value
+        };
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        })
+        .then(function() {
+          alert('Produto adicionado ao carrinho!');
+          // recarrega a própria página
+          window.location.reload();
+        })
+        .catch(function() {
+          alert('Erro ao adicionar ao carrinho.');
         });
       });
     });
-  </script>
+  });
+</script>
+
 </section>
 
 {% schema %}
