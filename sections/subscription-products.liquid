@@ -384,6 +384,40 @@
       display: none;
     }
   }
+
+  @media (min-width: 901px){
+    .desktop{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+  /* Anula o grid original e esconde o overflow */
+  .subscription-products__grid.swiper {
+    display: block !important;
+    overflow: hidden;
+    width: 100%;
+    position: relative; /* já havia em .my-mobile-swiper */
+  }
+
+  /* Garante que o wrapper use flex e que cada slide não encolha */
+  .subscription-products__grid.swiper .swiper-wrapper {
+    display: flex;
+  }
+  .subscription-products__grid.swiper .swiper-slide {
+    flex-shrink: 0;
+    width: auto;         /* ou fixe um width, se preferir */
+    margin-right: 16px;  /* seu espaço entre slides */
+  }
+
+  /* Seus botões têm position:absolute e devem estar visíveis */
+  .subscription-products__grid.swiper .swiper-button-prev,
+  .subscription-products__grid.swiper .swiper-button-next {
+    z-index: 10;
+    pointer-events: auto;
+  }
+}
+
   </style>
 
   <script>
