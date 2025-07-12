@@ -6,7 +6,7 @@
 <script src="{{ 'subscription-widget.js' | asset_url }}" defer></script>
 <link rel="stylesheet" href="{{ 'subscription-widget.css' | asset_url }}">
 
-<section id="subscription-products-{{ section.id }}" class="subscription-products">
+<section id="subscription-products-{{ section.id }}" class="subscription-products mobile">
   <div class="subscription-products__inner">
     <h2 class="subscription-products__title heading">{{ section.settings.title }}</h2>
     {% if section.settings.subtitle %}
@@ -227,6 +227,12 @@
       text-align: right;
       margin-top: 50px;
     }
+
+  @media (max-width: 900px){
+    .mobile{
+      display: none;
+    }
+  }
   </style>
 
   <script>
