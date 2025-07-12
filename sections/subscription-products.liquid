@@ -140,7 +140,8 @@
     {% if section.settings.show_all_link %}
       <div class="subscription-products__footer heading">
         <a href="{{ section.settings.all_link_url }}" class="see-all">
-          {{ section.settings.all_link_text }} &rarr;
+          {{ section.settings.all_link_text }}
+          <img src="https://cdn.shopify.com/s/files/1/0869/3704/3264/files/ARROW-RIGHT.png?v=1752313097" width="21" height="40">
         </a>
       </div>
     {% endif %}
@@ -209,6 +210,12 @@
       color: #989898;
       font-size: 14px;
       font-weight: 300;
+    }
+
+    .see-all{
+      display: flex;
+      justify-content: end;
+      gap: 10px;
     }
 
     .subscription-products__footer{
