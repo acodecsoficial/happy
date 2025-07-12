@@ -205,6 +205,22 @@
       });
     });
 
+    jQuery(function($) {
+    // Intercepta o clique no botão de adicionar ao carrinho
+    $('.js-add-to-cart').on('click', function(e) {
+      e.preventDefault();          // impede o envio/navegação
+      e.stopImmediatePropagation(); // bloqueia outros handlers
+      location.reload();           // recarrega a página atual
+    });
+
+    // (Opcional) Se quiser também capturar envio de formulário
+    $('.js-subscription-form').on('submit', function(e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      location.reload();
+    });
+  });
+
    // AJAX add to cart + alert + reload
       document.querySelectorAll('.js-subscription-form').forEach(function(form) {
         form.addEventListener('submit', function(e) {
