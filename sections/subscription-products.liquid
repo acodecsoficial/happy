@@ -138,7 +138,7 @@
     </div>
 
     {% if section.settings.show_all_link %}
-      <div class="subscription-products__footer">
+      <div class="subscription-products__footer heading">
         <a href="{{ section.settings.all_link_url }}" class="see-all">
           {{ section.settings.all_link_text }} &rarr;
         </a>
@@ -209,6 +209,10 @@
       color: #989898;
       font-size: 14px;
       font-weight: 300;
+    }
+
+    .subscription-products__footer{
+      font-size: 24px;
     }
   </style>
 
