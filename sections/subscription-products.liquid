@@ -13,8 +13,8 @@
       <p class="subscription-products__subtitle">{{ section.settings.subtitle }}</p>
     {% endif %}
 
-    {%- assign product_cards   = section.blocks | where: "type", "product_card" -%}
-    {%- assign quantity_blocks = section.blocks | where: "type", "quantity_block" -%}
+    {%- assign product_cards   = section.blocks | where: 'type', 'product_card' -%}
+    {%- assign quantity_blocks = section.blocks | where: 'type', 'quantity_block' -%}
     {%- assign default_qb      = quantity_blocks.first -%}
 
     <div class="subscription-products__grid">
@@ -22,10 +22,6 @@
         {% assign product = block.settings.product %}
         {% if product %}
           {% assign current_variant = product.selected_or_first_available_variant %}
-
-          {%- comment -%}
-            Check if variant has any selling_plan_allocations
-          {%- endcomment -%}
           {% assign has_plan = false %}
           {% if current_variant.selling_plan_allocations.first %}
             {% assign has_plan = true %}
@@ -50,6 +46,7 @@
             </div>
 
             <form action="/cart/add.js" method="post" class="js-subscription-form">
+
               <subscription-widget class="subscription-widget">
                 <script type="application/json" data-widget-config>
                   {
@@ -83,7 +80,7 @@
                   <select name="selling_plan"
                           class="plan-select js-plan-select">
                     {% for qb in quantity_blocks %}
-                      {% assign plan_obj = '' %}
+                      {% assign plan_obj = blank %}
                       {% for group in product.selling_plan_groups %}
                         {% for p in group.selling_plans %}
                           {% if p.id == qb.settings.subscription_id %}
@@ -93,7 +90,7 @@
                       {% endfor %}
                       {% if plan_obj %}
                         {% assign alloc = current_variant.selling_plan_allocations
-                                           | where: "selling_plan_id", plan_obj.id
+                                           | where: 'selling_plan_id', plan_obj.id
                                            | first %}
                         {% if alloc %}
                           {% assign sub_price_cents = alloc.price %}
@@ -114,8 +111,14 @@
                   </select>
 
                   <div class="price-display">
-                    <span class="price-original"></span>
-                    <span class="price-subscription"></span>
+                    <span class="price-original">{{ current_variant.price | money_without_trailing_zeros }}</span>
+                    <span class="price-subscription">
+                      {% if has_plan %}
+                        {{ current_variant.selling_plan_allocations.first.price | money_without_trailing_zeros }}
+                      {% else %}
+                        {{ current_variant.price | money_without_trailing_zeros }}
+                      {% endif %}
+                    </span>
                   </div>
                 </div>
 
@@ -152,25 +155,24 @@
       border: 1px solid #eee;
       border-radius: 8px;
     }
-    .card__image img { width: 100%; height: auto; }
-    .card__info { margin: 0.5rem 0; }
-    .plan-selector { margin: 1rem 0; text-align: left; }
-    .plan-selector label { display: block; font-weight: bold; margin-bottom: .25rem; }
-    .plan-select { width: 100%; padding: .5rem; }
-    .price-display { margin-top: .5rem; font-weight: bold; }
-    .price-original { text-decoration: line-through; margin-right: .5rem; }
+    .card__image img { width:100%; height:auto; }
+    .card__info { margin:0.5rem 0; }
+    .plan-selector { margin:1rem 0; text-align:left; }
+    .plan-selector label { display:block; font-weight:bold; margin-bottom:.25rem; }
+    .plan-select { width:100%; padding:.5rem; }
+    .price-display { margin-top:.5rem; font-weight:bold; }
+    .price-original { text-decoration:line-through; margin-right:.5rem; }
   </style>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.js-plan-select').forEach(function(select) {
-        var card     = select.closest('.subscription-products__card');
-        var qtyIn    = card.querySelector('.js-quantity-input');
-        var planIn   = card.querySelector('.js-plan-id');
-        var origEl   = card.querySelector('.price-original');
-        var subsEl   = card.querySelector('.price-subscription');
-        var widget   = card.querySelector('subscription-widget');
-        var cv       = widget.config.product.current_variant;
+        var card   = select.closest('.subscription-products__card');
+        var qtyIn  = card.querySelector('.js-quantity-input');
+        var planIn = card.querySelector('.js-plan-id');
+        var origEl = card.querySelector('.price-original');
+        var subsEl = card.querySelector('.price-subscription');
+        var widget = card.querySelector('subscription-widget');
 
         function render(option) {
           var planId = Number(option.value);
@@ -189,15 +191,12 @@
           subsEl.textContent = widget.formatPrice(subC);
         }
 
-        // initialize on load
         render(select.selectedOptions[0]);
-
         select.addEventListener('change', function() {
           render(this.selectedOptions[0]);
         });
       });
 
-      // AJAX add to cart + alert + reload
       document.querySelectorAll('.js-subscription-form').forEach(function(form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault();
@@ -226,23 +225,21 @@
 
 {% schema %}
 {
-  "name": "Subscription Products",
-  "settings": [
+  "name":"Subscription Products",
+  "settings":[
     {"type":"text","id":"title","label":"Título da seção","default":"Complete your routine"},
     {"type":"text","id":"subtitle","label":"Subtítulo (opcional)"},
     {"type":"url","id":"all_link_url","label":"Link 'See All products'","default":"/collections/all"},
     {"type":"text","id":"all_link_text","label":"Texto do link 'See All'","default":"SEE ALL products"},
     {"type":"checkbox","id":"show_all_link","label":"Exibir link de ver todos","default":true}
   ],
-  "blocks": [
+  "blocks":[
     {
-      "type":"product_card",
-      "name":"Product Card",
+      "type":"product_card","name":"Product Card",
       "settings":[{"type":"product","id":"product","label":"Produto"}]
     },
     {
-      "type":"quantity_block",
-      "name":"Quantidade & Plano",
+      "type":"quantity_block","name":"Quantidade & Plano",
       "settings":[
         {"type":"number","id":"quantity","label":"Quantidade","default":1},
         {"type":"number","id":"subscription_id","label":"ID do Selling Plan"}
