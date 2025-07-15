@@ -132,7 +132,7 @@
         "text_RB6DBe": {
           "type": "text",
           "settings": {
-            "text": "<strong>30 Day Money Back Guarantee</strong>",
+            "text": "30 Day Money Back Guarantee",
             "customclass": "moneybacktext",
             "text_style": "body",
             "text_size": "text-xs",
@@ -287,7 +287,7 @@
               "type": "highlight-image-item",
               "name": "Highlight image item",
               "settings": {
-                "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_1.png",
+                "image": "shopify://shop_images/banner.png",
                 "image_max_width_mobile": 1000,
                 "title": "",
                 "title_size": 48,
@@ -447,7 +447,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Relief Tonic steps in when your body reacts strongly to everyday triggers like pollen, stress, or pollution.</h2>",
+                        "text": "<h2><em>Relief Tonic steps in when your body reacts strongly to everyday triggers like pollen, stress, or pollution.</em></h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
