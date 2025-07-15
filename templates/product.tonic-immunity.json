@@ -609,7 +609,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/Image_10.png",
+                    "image": "shopify://shop_images/20250715_1450_Citrus_Elegance_simple_compose_01k07k8qfge819vcc1g0pmpsjg.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -2120,7 +2120,7 @@
                 "image_block_4rVcUP": {
                   "type": "image-block",
                   "settings": {
-                    "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_4.png",
+                    "image": "shopify://shop_images/asset2_df60975c-aa51-4c80-a156-89800a1bb9e7.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
