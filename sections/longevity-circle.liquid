@@ -113,20 +113,24 @@
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var thumbs = new Swiper('#thumbs-{{ section.id }}', {
-        spaceBetween: 10,
-        slidesPerView: 'auto',
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
-      new Swiper('#main-{{ section.id }}', {
-        spaceBetween: 20,
-        navigation: false,
-        thumbs: { swiper: thumbs },
-      });
+  document.addEventListener('DOMContentLoaded', function() {
+    // thumbs com auto‑view (cabe todas as miniaturas que couberem)
+    var thumbs = new Swiper('#thumbs-{{ section.id }}', {
+      spaceBetween: 8,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesProgress: true,
     });
-  </script>
+
+    // main sempre 1 slide por vez
+    new Swiper('#main-{{ section.id }}', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      thumbs: { swiper: thumbs },
+    });
+  });
+</script>
+
 
 {% schema %}
 {
