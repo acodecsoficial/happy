@@ -13,7 +13,7 @@
                   <div class="longevity-circle__block-title">
                     <h2 class="heading">{{ block.settings.block_title }}</h2>
                   </div>
-                  <div class="flex align-center" style="gap: 20px;">
+                  <div class="flex align-center titulo_longe" style="gap: 20px;">
                     <!-- richtext para subtítulo -->
                     <div class="longevity-circle__block-subtitle">
                       <h2 class="heading">{{ block.settings.block_subtitle }}</h2>
@@ -159,6 +159,16 @@
         max-width: 121px;
         height: 350px;
         width: 91px;
+      }
+
+      .titulo_longe{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 4px !important;
+      }
+
+      .longevity-circle__block-title p{
+        font-size: 36px;
       }
     }
   </style>
