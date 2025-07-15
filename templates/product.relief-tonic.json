@@ -448,7 +448,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Relief Tonic steps in when your body reacts strongly to everyday triggers like pollen, stress, or pollution.</h2>",
+                        "text": "<h2><em>Relief Tonic steps in when your body reacts strongly to everyday triggers like pollen, stress, or pollution.</em></h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
