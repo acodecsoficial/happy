@@ -114,18 +114,24 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var thumbs = new Swiper('#thumbs-{{ section.id }}', {
-        spaceBetween: 10,
-        slidesPerView: 1,
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
-      new Swiper('#main-{{ section.id }}', {
-        spaceBetween: 20,
-        navigation: false,
-        thumbs: { swiper: thumbs },
-      });
+    var thumbs = new Swiper('#thumbs-{{ section.id }}', {
+      spaceBetween: 10,
+      slidesPerView: 7,            // quantos thumbnails visible no desktop
+      freeMode: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+        0:   { slidesPerView: 3 },  // mobile: 3 thumbs
+        768: { slidesPerView: 5 },  // tablet: 5 thumbs
+        1024:{ slidesPerView: 7 }   // desktop: 7 thumbs
+      }
     });
+
+    new Swiper('#main-{{ section.id }}', {
+      slidesPerView: 1,             // <— aqui! sempre 1 slide visível
+      spaceBetween: 20,
+      thumbs: { swiper: thumbs }
+    });
+  });
   </script>
 
 {% schema %}
