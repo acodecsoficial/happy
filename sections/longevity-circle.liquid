@@ -9,12 +9,19 @@
             <div class="swiper-slide">
               <div class="longevity-circle__slide">
                 <div class="longevity-circle__slide-text">
-                  <h3 class="longevity-circle__block-title">
+                  <!-- richtext para título -->
+                  <div class="longevity-circle__block-title">
                     {{ block.settings.block_title }}
-                  </h3>
-                  <h4 class="longevity-circle__block-subtitle">
+                  </div>
+                  <!-- richtext para subtítulo -->
+                  <div class="longevity-circle__block-subtitle">
                     {{ block.settings.block_subtitle }}
-                  </h4>
+                  </div>
+                  <!-- richtext para subtítulo2 -->
+                  <div class="longevity-circle__block-subtitle2">
+                    {{ block.settings.block_subtitle2 }}
+                  </div>
+                  <!-- richtext para descrição -->
                   <div class="longevity-circle__block-description">
                     {{ block.settings.block_description }}
                   </div>
@@ -63,16 +70,18 @@
       align-items: center;
       gap: 2rem;
     }
-    .longevity-circle__slide-text {
-      flex: 1;
-    }
     .longevity-circle__block-title {
       font-size: 50px;
-      margin-bottom: .5em;
+      margin-bottom: .3em;
     }
     .longevity-circle__block-subtitle {
+      font-size: 20px;
       font-style: italic;
-      margin-bottom: .5em;
+      margin-bottom: .3em;
+    }
+    .longevity-circle__block-subtitle2 {
+      font-size: 16px;
+      margin-bottom: .6em;
     }
     .longevity-circle__block-description {
       font-size: 16px;
@@ -137,22 +146,28 @@
           "label": "Alt text"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "block_title",
           "label": "Título do slide",
-          "default": "WELCOME TO THE longevity circle"
+          "default": "<p>WELCOME TO THE longevity circle</p>"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "block_subtitle",
           "label": "Subtítulo do slide",
-          "default": "LIPOSOMAL magnesium — CALM TONIC"
+          "default": "<p>LIPOSOMAL magnesium — CALM TONIC</p>"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
+          "id": "block_subtitle2",
+          "label": "Subtítulo 2 do slide",
+          "default": "<p>CALM TONIC</p>"
+        },
+        {
+          "type": "richtext",
           "id": "block_description",
           "label": "Descrição do slide",
-          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit…"
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>"
         }
       ]
     }
