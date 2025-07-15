@@ -2398,15 +2398,23 @@
     },
     "longevity_circle_cNW94D": {
       "type": "longevity-circle",
+      "blocks": {
+        "bottle_9aipyC": {
+          "type": "bottle",
+          "settings": {
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>"
+          }
+        }
+      },
+      "block_order": [
+        "bottle_9aipyC"
+      ],
       "name": "Longevity Circle",
-      "settings": {
-        "title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
-        "subtitle": "<p>LIPOSOMAL <em>magnesium</em></p>",
-        "subtitle2": "<p>CALM TONIC</p>",
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "bg_desktop": "shopify://shop_images/fundo2.png",
-        "bg_mobile": "shopify://shop_images/Frame_27.png"
-      }
+      "settings": {}
     },
     "subscription_products_TYLphp": {
       "type": "subscription-products",
