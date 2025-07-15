@@ -1,111 +1,126 @@
-
-
 <section class="longevity-circle" id="longevity-circle-{{ section.id }}">
   <div class="longevity-circle__inner">
-    <h2 class="longevity-circle__title heading">{{ section.settings.title }}</h2>
-    <div class="flex justify-start" style="gap: 30px; align-items:center;">
-      <h2 class="longevity-circle__subtitle heading">{{ section.settings.subtitle }}</h2>
-      <h2 class="longevity-circle__subtitle2 font-surt">{{ section.settings.subtitle2 }}</h2>
-    </div>
-    <div class="longevity-circle__text">{{ section.settings.texto }}</div>
-
     {%- if section.blocks.size > 0 -%}
-      <div class="longevity-circle__bottles">
-        {% for block in section.blocks %}
-          <div class="longevity-circle__bottle">
-            <img src="{{ block.settings.image | img_url: '400x' }}" alt="{{ block.settings.alt }}">
-          </div>
-        {% endfor %}
+
+      <!-- MAIN SLIDER -->
+      <div class="swiper-container main-slider" id="main-{{ section.id }}">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="longevity-circle__slide">
+                <div class="longevity-circle__slide-text">
+                  <h3 class="longevity-circle__block-title">
+                    {{ block.settings.block_title }}
+                  </h3>
+                  <h4 class="longevity-circle__block-subtitle">
+                    {{ block.settings.block_subtitle }}
+                  </h4>
+                  <div class="longevity-circle__block-description">
+                    {{ block.settings.block_description }}
+                  </div>
+                </div>
+                <div class="longevity-circle__slide-image">
+                  <img
+                    src="{{ block.settings.image | img_url: '600x' }}"
+                    alt="{{ block.settings.alt }}"
+                  />
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
+
+      <!-- THUMBS SLIDER -->
+      <div class="swiper-container thumbs-slider" id="thumbs-{{ section.id }}">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <img
+                src="{{ block.settings.image | img_url: '100x' }}"
+                alt="{{ block.settings.alt }}"
+              />
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
     {%- endif -%}
   </div>
 
   <style>
     #longevity-circle-{{ section.id }} {
-      position: relative;
-      background-image: url({{ section.settings.bg_desktop | img_url: '2048x' }});
-      background-size: auto;
-      background-position: center;
       padding: 60px 0;
-      background-repeat: no-repeat;
-      min-height: 600px;
       border-top: 1px solid #000;
-    }
-    
-    @media screen and (max-width: 767px) {
-      #longevity-circle-{{ section.id }} {
-        background-image: url({{ section.settings.bg_mobile | img_url: '1024x' }});
-        background-position: bottom !important;
-      }
-
-      .longevity-circle__text {
-        max-width: 276px !important;
-        font-size: 16px;
-        margin-top: 15px;
-      }
     }
     .longevity-circle__inner {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
-      text-align: left;
     }
-    .longevity-circle__title { font-size: 50px; margin-bottom: .5em; }
-    .longevity-circle__subtitle {  }
-    .longevity-circle__subtitle2{font-size: 12px; }
-    .longevity-circle__text { max-width: 720px; font-size: 16px; margin-top: 15px; }
-
-    .longevity-circle__bottles {
+    .longevity-circle__slide {
       display: flex;
-      justify-content: left;
-      gap: 1rem;
-      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
     }
-    .longevity-circle__bottle img {
-      max-height: 150px;
+    .longevity-circle__slide-text {
+      flex: 1;
+    }
+    .longevity-circle__block-title {
+      font-size: 50px;
+      margin-bottom: .5em;
+    }
+    .longevity-circle__block-subtitle {
+      font-style: italic;
+      margin-bottom: .5em;
+    }
+    .longevity-circle__block-description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .longevity-circle__slide-image img {
+      max-height: 400px;
+      object-fit: contain;
+    }
+    /* Thumbnails */
+    .thumbs-slider {
+      margin-top: 2rem;
+    }
+    .thumbs-slider .swiper-slide {
+      width: auto;
+      opacity: 0.4;
+      cursor: pointer;
+    }
+    .thumbs-slider .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+    .thumbs-slider img {
+      display: block;
+      height: 80px;
       object-fit: contain;
     }
   </style>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var thumbs = new Swiper('#thumbs-{{ section.id }}', {
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      new Swiper('#main-{{ section.id }}', {
+        spaceBetween: 20,
+        navigation: false,
+        thumbs: { swiper: thumbs },
+      });
+    });
+  </script>
+
 {% schema %}
 {
   "name": "Longevity Circle",
-  "settings": [
-    {
-      "type": "richtext",
-      "id": "title",
-      "label": "Título",
-      "default": "<p>WELCOME TO THE longevity circle</p>"
-    },
-    {
-      "type": "richtext",
-      "id": "subtitle",
-      "label": "Subtítulo",
-      "default": "<p>LIPOSOMAL magnesium — CALM TONIC</p>"
-    },
-    {
-      "type": "richtext",
-      "id": "subtitle2",
-      "label": "Subtítulo2",
-      "default": "<p>CALM TONIC</p>"
-    },
-    {
-      "type": "textarea",
-      "id": "texto",
-      "label": "Descrição",
-      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit…"
-    },
-    {
-      "type": "image_picker",
-      "id": "bg_desktop",
-      "label": "Imagem de fundo (desktop)"
-    },
-    {
-      "type": "image_picker",
-      "id": "bg_mobile",
-      "label": "Imagem de fundo (mobile)"
-    }
-  ],
+  "settings": [],
   "blocks": [
     {
       "type": "bottle",
@@ -120,15 +135,30 @@
           "type": "text",
           "id": "alt",
           "label": "Alt text"
+        },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Título do slide",
+          "default": "WELCOME TO THE longevity circle"
+        },
+        {
+          "type": "text",
+          "id": "block_subtitle",
+          "label": "Subtítulo do slide",
+          "default": "LIPOSOMAL magnesium — CALM TONIC"
+        },
+        {
+          "type": "textarea",
+          "id": "block_description",
+          "label": "Descrição do slide",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit…"
         }
       ]
     }
   ],
   "presets": [
-    {
-      "name": "Longevity Circle",
-      "category": "Custom"
-    }
+    { "name": "Longevity Circle", "category": "Custom" }
   ]
 }
 {% endschema %}
