@@ -415,7 +415,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p>REFRESH YOUR body’s response</p>",
+                        "text": "<p>REFRESH YOUR <em>body’s response</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 50,
