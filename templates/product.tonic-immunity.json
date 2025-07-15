@@ -44,19 +44,19 @@
         "icon_text_list_xhFzwP": {
           "type": "icon_text_list",
           "settings": {
-            "icon_1": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad.svg",
+            "icon_1": "shopify://shop_images/0fe576222833e7723e12597ba42d31ce.svg",
             "text_1": "1000 mg of Liposomal Vitamin C per serving",
-            "icon_2": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad.svg",
+            "icon_2": "shopify://shop_images/6fea4535895e0fefe551a7e1ce3c88ab.svg",
             "text_2": "Up to 10x better absorption with liposomal delivery",
-            "icon_3": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad.svg",
+            "icon_3": "shopify://shop_images/7524c56ea78a6f04e5e2c56a0ee130e3.svg",
             "text_3": "Fortifies the immune system and supports all-day vitality",
-            "icon_4": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad.svg",
+            "icon_4": "shopify://shop_images/f2e81aadfa4715236ee4f1f5bc0a1ccd.svg",
             "text_4": "Protects against stress and oxidative damage",
-            "icon_5": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad.svg",
+            "icon_5": "shopify://shop_images/b9aa971410c87e016a5af8fc9b4c1131.svg",
             "text_5": "Vegan • sugar-free • gut-friendly • non-GMO",
-            "icon_6": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad.svg",
+            "icon_6": "shopify://shop_images/54b5d5eb1a54be2eeeeb622b74cf948f.svg",
             "text_6": "Natural citrus taste for easy daily use",
-            "icon_7": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad.svg",
+            "icon_7": "shopify://shop_images/f24dc820646343d9998b96eeca85a0f3.svg",
             "text_7": "All-day vitality with antioxidant-powered energy support",
             "text_size_desktop": 14,
             "text_size_mobile": 14,
@@ -104,7 +104,7 @@
             "num_bottles": "30",
             "badge": "",
             "product_content_text": "30-Day Supply",
-            "subs_info_1": "Free shipping in 12 hours",
+            "subs_info_1": "Free shipping in 12 hours, every 30 days",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Ships in 12 hours",
@@ -123,7 +123,7 @@
             "num_bottles": "",
             "badge": "",
             "product_content_text": "",
-            "subs_info_1": "Free shipping in 12 hours",
+            "subs_info_1": "Free shipping in 12 hours, every 60 days",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Ships in 12 hours",
@@ -134,7 +134,7 @@
         "text_RB6DBe": {
           "type": "text",
           "settings": {
-            "text": "<strong>30 Day Money Back Guarantee</strong>",
+            "text": "30 Day Money Back Guarantee",
             "customclass": "moneybacktext",
             "text_style": "body",
             "text_size": "text-xs",
@@ -289,7 +289,7 @@
               "type": "highlight-image-item",
               "name": "Highlight image item",
               "settings": {
-                "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_2.png",
+                "image": "shopify://shop_images/banner_9d561e61-cabe-4bbf-8280-9807b0e4c3c9.png",
                 "image_max_width_mobile": 1000,
                 "title": "<h2>FIRST <em>liquid liposomal Vitamin C</em></h2>",
                 "title_size": 48,
@@ -2473,14 +2473,7 @@
     "longevity_circle_bgDidf": {
       "type": "longevity-circle",
       "name": "Longevity Circle",
-      "settings": {
-        "title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
-        "subtitle": "<p>LIPOSOMAL <em>magnesium</em></p>",
-        "subtitle2": "<p>CALM TONIC</p>",
-        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "bg_desktop": "shopify://shop_images/fundo2.png",
-        "bg_mobile": "shopify://shop_images/Frame_27.png"
-      }
+      "settings": {}
     },
     "subscription_products_Q9kNnn": {
       "type": "subscription-products",
