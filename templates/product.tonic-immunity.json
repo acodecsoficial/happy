@@ -21,7 +21,7 @@
         "okendo_star_rating_XckRMV": {
           "type": "shopify://apps/okendo/blocks/star-rating/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "product": "nmn-cell-renew-tonic"
+            "product": "immunity-tonic"
           }
         },
         "custom_reviews_yRiyrR": {
@@ -97,27 +97,27 @@
           "type": "quantity_block",
           "settings": {
             "qty": 1,
-            "onetime_price": 98,
-            "plan_id": "693146779968",
+            "onetime_price": 55,
+            "plan_id": "693185413440",
             "title": "30-day supply",
             "sub_title": "",
             "num_bottles": "30",
             "badge": "",
-            "product_content_text": "20 servings",
+            "product_content_text": "30-Day Supply",
             "subs_info_1": "Free shipping in 12 hours",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Ships in 12 hours",
             "subs_info_5": "",
-            "subs_info_6": "Ships in 12 horas"
+            "subs_info_6": "Ships in 12 hours"
           }
         },
         "quantity_block_hxax3a": {
           "type": "quantity_block",
           "settings": {
             "qty": 2,
-            "onetime_price": 98,
-            "plan_id": "693146812736",
+            "onetime_price": 55,
+            "plan_id": "693185610048",
             "title": "60-day supply",
             "sub_title": "",
             "num_bottles": "",
@@ -193,7 +193,7 @@
         "@media screen and (max-width: 500px) {.grid-product-title {display: flex; align-items: center; gap: 15px; } span.main-tag-product {display: flex; margin-top: 0; } li#Slide-template--24670584504640__main-40407209967936 {margin-left: -2%; width: 103%; max-width: 121%; }}"
       ],
       "settings": {
-        "old_product": "cell-renew-tonic-test-only",
+        "old_product": "immunity-tonic",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "highlight_color": "#de4845",
