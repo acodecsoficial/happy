@@ -2464,6 +2464,56 @@
         "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_3.png"
       }
     },
+    "longevity_circle_EFCxTg": {
+      "type": "longevity-circle",
+      "name": "Longevity Circle",
+      "settings": {
+        "title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
+        "subtitle": "<p>LIPOSOMAL <em>magnesium</em></p>",
+        "subtitle2": "<p>CALM TONIC</p>",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "bg_desktop": "shopify://shop_images/fundo2.png",
+        "bg_mobile": "shopify://shop_images/Frame_27.png"
+      }
+    },
+    "subscription_products_R9LyAA": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_fFXXLn": {
+          "type": "product_card",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "quantity_block_jmAMT8": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146779968
+          }
+        },
+        "quantity_block_JdYBxG": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        }
+      },
+      "block_order": [
+        "product_card_fFXXLn",
+        "quantity_block_jmAMT8",
+        "quantity_block_JdYBxG"
+      ],
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<p>Complete <em>your routine</em></p>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
+        "show_all_link": true
+      }
+    },
     "image_banner_D6TgTi": {
       "type": "image-banner",
       "custom_css": [
@@ -2948,6 +2998,8 @@
     "easy_to_take_mAqb98",
     "image_banner_azPmDb",
     "timeline_section_hBBi6r",
+    "longevity_circle_EFCxTg",
+    "subscription_products_R9LyAA",
     "image_banner_D6TgTi",
     "wines",
     "landing_section_qAbkWE",
