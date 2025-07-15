@@ -95,17 +95,17 @@
           "type": "quantity_block",
           "settings": {
             "qty": 1,
-            "onetime_price": 98,
+            "onetime_price": 55,
             "plan_id": "693146779968",
-            "title": "30-day supply",
+            "title": "30-day Supply",
             "sub_title": "",
             "num_bottles": "30",
             "badge": "",
-            "product_content_text": "20 servings",
+            "product_content_text": "30-day Supply",
             "subs_info_1": "Free shipping in 12 hours",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
-            "subs_info_4": "Ships in 12 hours",
+            "subs_info_4": "Delivered every 30 days",
             "subs_info_5": "",
             "subs_info_6": "Ships in 12 horas"
           }
@@ -114,14 +114,14 @@
           "type": "quantity_block",
           "settings": {
             "qty": 2,
-            "onetime_price": 98,
-            "plan_id": "693146812736",
-            "title": "60-day supply",
+            "onetime_price": 55,
+            "plan_id": "693185708352",
+            "title": "60-day Supply",
             "sub_title": "",
             "num_bottles": "",
             "badge": "",
             "product_content_text": "",
-            "subs_info_1": "Free shipping in 12 hours",
+            "subs_info_1": "Delivered every 60 days",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Ships in 12 hours",
@@ -191,7 +191,7 @@
         "@media screen and (max-width: 500px) {.grid-product-title {display: flex; align-items: center; gap: 15px; } span.main-tag-product {display: flex; margin-top: 0; } li#Slide-template--24670584504640__main-40407209967936 {margin-left: -2%; width: 103%; max-width: 121%; }}"
       ],
       "settings": {
-        "old_product": "cell-renew-tonic-test-only",
+        "old_product": "relief-tonic",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "highlight_color": "#de4845",
@@ -2402,6 +2402,44 @@
         "bg_mobile": "shopify://shop_images/Frame_27.png"
       }
     },
+    "subscription_products_R9LyAA": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_fFXXLn": {
+          "type": "product_card",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "quantity_block_jmAMT8": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146779968
+          }
+        },
+        "quantity_block_JdYBxG": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        }
+      },
+      "block_order": [
+        "product_card_fFXXLn",
+        "quantity_block_jmAMT8",
+        "quantity_block_JdYBxG"
+      ],
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<p>Complete <em>your routine</em></p>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
+        "show_all_link": true
+      }
+    },
     "easy_to_take_mAqb98": {
       "type": "easy-to-take",
       "name": "Easy to Take",
@@ -2474,44 +2512,6 @@
         "show_border_top": true,
         "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_2.png",
         "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_3.png"
-      }
-    },
-    "subscription_products_R9LyAA": {
-      "type": "subscription-products",
-      "blocks": {
-        "product_card_fFXXLn": {
-          "type": "product_card",
-          "settings": {
-            "product": "nmn-cell-renew-tonic"
-          }
-        },
-        "quantity_block_jmAMT8": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693146779968
-          }
-        },
-        "quantity_block_JdYBxG": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 2,
-            "subscription_id": 693146812736
-          }
-        }
-      },
-      "block_order": [
-        "product_card_fFXXLn",
-        "quantity_block_jmAMT8",
-        "quantity_block_JdYBxG"
-      ],
-      "name": "Subscription Products",
-      "settings": {
-        "title": "<p>Complete <em>your routine</em></p>",
-        "subtitle": "",
-        "all_link_url": "shopify://collections/all",
-        "all_link_text": "<p>SEE ALL <em>products</em></p>",
-        "show_all_link": true
       }
     },
     "image_banner_D6TgTi": {
