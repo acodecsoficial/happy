@@ -57,64 +57,54 @@
     {%- endif -%}
   </div>
 
-    <style>
-    /* 1) Slider principal full‑width, 1 por vez */
-    #longevity-circle-{{ section.id }} .main-slider,
-    #longevity-circle-{{ section.id }} .thumbs-slider {
-      width: 100%;
-    }
-    #longevity-circle-{{ section.id }} .main-slider .swiper-slide {
-      width: 100% !important;
-    }
+  <style>
+    /* força o swiper a 100% no main e thumbs */
+#longevity-circle-{{ section.id }} .swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
 
-    /* 2) Layout do conteúdo do slide */
-    .longevity-circle__slide {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
+/* main: cada slide ocupa 100% */
+#longevity-circle-{{ section.id }} .main-slider .swiper-slide {
+  width: 100% !important;
+}
 
-    /* 3) Thumbs mais juntinhas e alinhadas */
-    #longevity-circle-{{ section.id }} .thumbs-slider {
-      margin-top: 1rem;             /* menos espaço acima */
-    }
-    #longevity-circle-{{ section.id }} .thumbs-slider .swiper-wrapper {
-      display: flex;
-      align-items: center;
-    }
-    #longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide {
-      width: auto !important;
-      margin-right: 10px;           /* gap entre thumbs */
-      opacity: 0.4;
-      cursor: pointer;
-    }
-    #longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide-thumb-active {
-      opacity: 1;
-    }
+/* thumbs: wrapper flex e gap controlado */
+#longevity-circle-{{ section.id }} .thumbs-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide {
+  width: auto !important;
+  margin-right: 8px;      /* gap entre thumbs */
+  opacity: 0.4;
+  cursor: pointer;
+}
+#longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // 1) Inicia thumbs
-      var thumbs = new Swiper('#thumbs-{{ section.id }}', {
-        spaceBetween: 10,
-        slidesPerView: 'auto',
-        freeMode: true,
-        watchSlidesProgress: true,
-        centeredSlides: false,
-      });
-
-      // 2) Inicia main ligado ao thumbs
-      new Swiper('#main-{{ section.id }}', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        centeredSlides: false,
-        loop: false,
-        initialSlide: 0,
-        thumbs: { swiper: thumbs }
-      });
+  document.addEventListener('DOMContentLoaded', function() {
+    // thumbs com auto‑view (cabe todas as miniaturas que couberem)
+    var thumbs = new Swiper('#thumbs-{{ section.id }}', {
+      spaceBetween: 8,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesProgress: true,
     });
-  </script>
+
+    // main sempre 1 slide por vez
+    new Swiper('#main-{{ section.id }}', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      thumbs: { swiper: thumbs },
+    });
+  });
+</script>
 
 
 {% schema %}
