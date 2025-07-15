@@ -1596,7 +1596,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_3_e2229035-1dab-4451-a1fc-7bd6fb7c9ede.png",
+                        "icon_image": "shopify://shop_images/Icons_4cdc66a5-6316-4435-bce7-cbfcfa7eb21b.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1653,7 +1653,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_3_e2229035-1dab-4451-a1fc-7bd6fb7c9ede.png",
+                        "icon_image": "shopify://shop_images/Icons-1_b73e55cf-5a21-4bf1-9a2d-49698f180e10.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1710,7 +1710,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_3_e2229035-1dab-4451-a1fc-7bd6fb7c9ede.png",
+                        "icon_image": "shopify://shop_images/Icons-2_e5e55a7a-276d-49fc-8859-d71b70ba4927.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1880,7 +1880,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Component_4_1.png",
+                            "icon_image": "shopify://shop_images/Component_4.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1937,7 +1937,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_4_59d5cd90-3e40-4788-9650-7e98b7604fa6.png",
+                            "icon_image": "shopify://shop_images/Icons-3_8263dc8c-e001-450c-ae28-24657170c7cd.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -2028,7 +2028,7 @@
           "settings": {
             "image": "shopify://shop_images/Day_1.jpg",
             "title": "DAY 1",
-            "text": "<p>Cellular activation starts, NAD⁺ pathways switch on</p>"
+            "text": "<p>Feel the first signs of relief as your body begins to respond to seasonal triggers more calmly.</p>"
           }
         },
         "result_item_B9jKrw": {
