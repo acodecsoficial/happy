@@ -1198,46 +1198,6 @@
         "use_bottom_border_mobile": false
       }
     },
-    "focus_you_Lh73aQ": {
-      "type": "focus-you",
-      "blocks": {
-        "row_NPeT7w": {
-          "type": "row",
-          "settings": {
-            "image_position": "left",
-            "image": "shopify://shop_images/Image_8.png",
-            "heading_1": "Easier breathing, fewer sniffles",
-            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
-            "heading_2": "Less tension, more comfort",
-            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
-            "button_text": "",
-            "button_url": "/"
-          }
-        },
-        "row_tWbad6": {
-          "type": "row",
-          "settings": {
-            "image_position": "right",
-            "image": "shopify://shop_images/Image_8.png",
-            "heading_1": "Everyday defense, all day long",
-            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
-            "heading_2": "Steady energy, no crash",
-            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
-            "button_text": "Experience Relief Today",
-            "button_url": "/"
-          }
-        }
-      },
-      "block_order": [
-        "row_NPeT7w",
-        "row_tWbad6"
-      ],
-      "name": "Focus You",
-      "settings": {
-        "title": "<p>Feel <em>the Change</em></p>",
-        "subtitle": ""
-      }
-    },
     "image_banner_BxrCUP": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -1311,10 +1271,19 @@
             "center_mobile": false
           }
         },
+        "text_wmjQzt": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Reduce Inflammation</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Recover quicker after workouts</h3>",
+            "text": "<h3>Recover quicker after workouts<br/></h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1387,6 +1356,7 @@
         "spacing_A7Nw66",
         "text_QghNzh",
         "text_BFqHcM",
+        "text_wmjQzt",
         "text_FHXk9x",
         "text_Ucicgf",
         "text_fAHjYt",
@@ -1404,9 +1374,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_3.jpg",
+        "image_desk": "shopify://shop_images/ia.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/Sem_Titulo-1_5.jpg",
+        "image_mob": "shopify://shop_images/ia.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -1422,6 +1392,46 @@
         "wrap_content_mobile": true,
         "spacing_desktop": "lg:py-0",
         "spacing_mobile": "py-0"
+      }
+    },
+    "focus_you_Lh73aQ": {
+      "type": "focus-you",
+      "blocks": {
+        "row_NPeT7w": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/Image_8.png",
+            "heading_1": "Easier breathing, fewer sniffles",
+            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
+            "heading_2": "Less tension, more comfort",
+            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
+            "button_text": "",
+            "button_url": "/"
+          }
+        },
+        "row_tWbad6": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "image": "shopify://shop_images/Image_8.png",
+            "heading_1": "Everyday defense, all day long",
+            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
+            "heading_2": "Steady energy, no crash",
+            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
+            "button_text": "Experience Relief Today",
+            "button_url": "/"
+          }
+        }
+      },
+      "block_order": [
+        "row_NPeT7w",
+        "row_tWbad6"
+      ],
+      "name": "Focus You",
+      "settings": {
+        "title": "<p>Feel <em>the Change</em></p>",
+        "subtitle": ""
       }
     },
     "how_it_helps_YPBkT9": {
@@ -2987,10 +2997,10 @@
     "landing_section_GdHXgh",
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
-    "focus_you_Lh73aQ",
     "image_banner_BxrCUP",
     "image_with_text_blocks_gAjTfr",
     "how_it_helps_YPBkT9",
+    "focus_you_Lh73aQ",
     "landing_section_3RqYFU",
     "results_list_LqxNh4",
     "ingredients_tabs_nKwUYB",
