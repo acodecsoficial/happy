@@ -920,7 +920,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>ritual solves energy dips, hormone swings and supplement overload</p>",
+                        "text": "<p>A single shot helps you feel more focused and balanced.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -958,7 +958,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>400 mg</em></p>",
+                        "text": "<p><em>200 mg</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -985,7 +985,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>NMN in liposomal form powers mitochondria without caffeine spikes</p>",
+                        "text": "<p>A clinical dose of magnesium to support mental clarity.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1049,7 +1049,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>label, sugar free and third party tested for peace of mind</p>",
+                        "text": "<p>No sugar. No gluten. Third-party tested.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1114,7 +1114,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>sip format fits the busiest mornings</p>",
+                        "text": "<p>Drink it in seconds no pills, no prep.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1180,7 +1180,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>backed results and full transparency build lifelong trust</p>",
+                        "text": "<p>Backed by research. Full transparency builds lifelong trust.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -2680,8 +2680,8 @@
         "faq_1": {
           "type": "faq",
           "settings": {
-            "question": "1. What exactly is Cell Renew Tonic?",
-            "answer": "<p>Cell Renew Tonic is a red berry liquid NMN supplement designed to help women feel sharper, stronger, and more energized at any age. It works at the cellular level to boost NAD⁺, your body’s natural fuel for energy, repair, and resilience. Just one teaspoon a day helps reset your energy, balance your hormones, and support graceful, empowered aging.</p>"
+            "question": "1. What exactly is Calm Tonic?",
+            "answer": "<p>A fast-working magnesium shot that helps you focus, stay composed, and think more clearly when life gets busy.</p>"
           }
         },
         "faq_2": {
