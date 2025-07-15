@@ -57,82 +57,65 @@
     {%- endif -%}
   </div>
 
-  <style>
-    #longevity-circle-{{ section.id }} {
-      padding: 60px 0;
-      border-top: 1px solid #000;
+    <style>
+    /* 1) Slider principal full‑width, 1 por vez */
+    #longevity-circle-{{ section.id }} .main-slider,
+    #longevity-circle-{{ section.id }} .thumbs-slider {
+      width: 100%;
     }
-    .longevity-circle__inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
+    #longevity-circle-{{ section.id }} .main-slider .swiper-slide {
+      width: 100% !important;
     }
+
+    /* 2) Layout do conteúdo do slide */
     .longevity-circle__slide {
       display: flex;
       align-items: center;
       gap: 2rem;
     }
-    .longevity-circle__block-title {
-      font-size: 50px;
-      margin-bottom: .3em;
+
+    /* 3) Thumbs mais juntinhas e alinhadas */
+    #longevity-circle-{{ section.id }} .thumbs-slider {
+      margin-top: 1rem;             /* menos espaço acima */
     }
-    .longevity-circle__block-subtitle {
-      font-size: 20px;
-      font-style: italic;
-      margin-bottom: .3em;
+    #longevity-circle-{{ section.id }} .thumbs-slider .swiper-wrapper {
+      display: flex;
+      align-items: center;
     }
-    .longevity-circle__block-subtitle2 {
-      font-size: 16px;
-      margin-bottom: .6em;
-    }
-    .longevity-circle__block-description {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-    .longevity-circle__slide-image img {
-      max-height: 400px;
-      object-fit: contain;
-    }
-    /* Thumbnails */
-    .thumbs-slider {
-      margin-top: 2rem;
-    }
-    .thumbs-slider .swiper-slide {
-      width: auto;
+    #longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide {
+      width: auto !important;
+      margin-right: 10px;           /* gap entre thumbs */
       opacity: 0.4;
       cursor: pointer;
     }
-    .thumbs-slider .swiper-slide-thumb-active {
+    #longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide-thumb-active {
       opacity: 1;
-    }
-    .thumbs-slider img {
-      display: block;
-      height: 80px;
-      object-fit: contain;
     }
   </style>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-    var thumbs = new Swiper('#thumbs-{{ section.id }}', {
-      spaceBetween: 10,
-      slidesPerView: 7,            // quantos thumbnails visible no desktop
-      freeMode: true,
-      watchSlidesProgress: true,
-      breakpoints: {
-        0:   { slidesPerView: 1 },  // mobile: 3 thumbs
-        768: { slidesPerView: 1 },  // tablet: 5 thumbs
-        1024:{ slidesPerView: 1 }   // desktop: 7 thumbs
-      }
-    });
+      // 1) Inicia thumbs
+      var thumbs = new Swiper('#thumbs-{{ section.id }}', {
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+        freeMode: true,
+        watchSlidesProgress: true,
+        centeredSlides: false,
+      });
 
-    new Swiper('#main-{{ section.id }}', {
-      slidesPerView: 1,             // <— aqui! sempre 1 slide visível
-      spaceBetween: 20,
-      thumbs: { swiper: thumbs }
+      // 2) Inicia main ligado ao thumbs
+      new Swiper('#main-{{ section.id }}', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        centeredSlides: false,
+        loop: false,
+        initialSlide: 0,
+        thumbs: { swiper: thumbs }
+      });
     });
-  });
   </script>
+
 
 {% schema %}
 {
