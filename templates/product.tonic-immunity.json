@@ -1378,9 +1378,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/asset2.png",
+        "image_desk": "shopify://shop_images/asset.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/asset2.png",
+        "image_mob": "shopify://shop_images/asset.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
