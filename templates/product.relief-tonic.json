@@ -82,10 +82,10 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true,
             "tonic": true,
-            "default_info_sub_1": "Ships every month",
+            "default_info_sub_1": "Free shipping in 12 hours, every 30 days",
             "default_info_sub_2": "Free shipping on all orders",
             "default_info_sub_3": "Cancel your subscription anytime",
-            "default_info_sub_4": "Ships in 12 hourss",
+            "default_info_sub_4": "Ships in 12 hours",
             "default_info_one_1": "Free shipping in 12",
             "default_info_one_2": "Ships in 12 horas",
             "product_content_text_default_kit": ""
@@ -102,7 +102,7 @@
             "num_bottles": "30",
             "badge": "",
             "product_content_text": "30-day Supply",
-            "subs_info_1": "Free shipping in 12 hours",
+            "subs_info_1": "Free shipping in 12 hours, every 30 days",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Delivered every 30 days",
@@ -121,7 +121,7 @@
             "num_bottles": "",
             "badge": "",
             "product_content_text": "",
-            "subs_info_1": "Delivered every 60 days",
+            "subs_info_1": "Free shipping in 12 hours, every 60 days",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Ships in 12 hours",
@@ -1394,46 +1394,6 @@
         "spacing_mobile": "py-0"
       }
     },
-    "focus_you_Lh73aQ": {
-      "type": "focus-you",
-      "blocks": {
-        "row_NPeT7w": {
-          "type": "row",
-          "settings": {
-            "image_position": "left",
-            "image": "shopify://shop_images/Image_8.png",
-            "heading_1": "Easier breathing, fewer sniffles",
-            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
-            "heading_2": "Less tension, more comfort",
-            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
-            "button_text": "",
-            "button_url": "/"
-          }
-        },
-        "row_tWbad6": {
-          "type": "row",
-          "settings": {
-            "image_position": "right",
-            "image": "shopify://shop_images/Image_8.png",
-            "heading_1": "Everyday defense, all day long",
-            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
-            "heading_2": "Steady energy, no crash",
-            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
-            "button_text": "Experience Relief Today",
-            "button_url": "/"
-          }
-        }
-      },
-      "block_order": [
-        "row_NPeT7w",
-        "row_tWbad6"
-      ],
-      "name": "Focus You",
-      "settings": {
-        "title": "<p>Feel <em>the Change</em></p>",
-        "subtitle": ""
-      }
-    },
     "how_it_helps_YPBkT9": {
       "type": "how-it-helps",
       "blocks": {
@@ -1483,6 +1443,46 @@
       "name": "How it Helps",
       "settings": {
         "heading": "HOW it helps"
+      }
+    },
+    "focus_you_Lh73aQ": {
+      "type": "focus-you",
+      "blocks": {
+        "row_NPeT7w": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/Image_8.png",
+            "heading_1": "Easier breathing, fewer sniffles",
+            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
+            "heading_2": "Less tension, more comfort",
+            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
+            "button_text": "",
+            "button_url": "/"
+          }
+        },
+        "row_tWbad6": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "image": "shopify://shop_images/Image_8.png",
+            "heading_1": "Everyday defense, all day long",
+            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
+            "heading_2": "Steady energy, no crash",
+            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
+            "button_text": "Experience Relief Today",
+            "button_url": "/"
+          }
+        }
+      },
+      "block_order": [
+        "row_NPeT7w",
+        "row_tWbad6"
+      ],
+      "name": "Focus You",
+      "settings": {
+        "title": "<p>Feel <em>the Change</em></p>",
+        "subtitle": ""
       }
     },
     "landing_section_3RqYFU": {
