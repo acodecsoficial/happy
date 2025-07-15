@@ -2407,7 +2407,9 @@
             "block_title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
             "block_subtitle": "<p>LIPOSOMAL magnesium</p>",
             "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>"
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "shopify://products/biological-age-test",
+            "block_botao": "<p>COMPLETE your routine</p>"
           }
         },
         "bottle_UAhy8F": {
@@ -2418,7 +2420,9 @@
             "block_title": "<p>WELCOME TO THE longevity circle</p>",
             "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
             "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>"
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
           }
         }
       },
