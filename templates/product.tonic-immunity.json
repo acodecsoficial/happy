@@ -1561,7 +1561,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_5.png",
+                        "icon_image": "shopify://shop_images/Icons_cb5831c2-9738-4f1f-a838-d7576cc4f736.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1618,7 +1618,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_3_e2229035-1dab-4451-a1fc-7bd6fb7c9ede.png",
+                        "icon_image": "shopify://shop_images/Icons-1_017901cf-4eae-4c08-bb65-d88b5f817459.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1675,7 +1675,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_3_e2229035-1dab-4451-a1fc-7bd6fb7c9ede.png",
+                        "icon_image": "shopify://shop_images/Icons-2_f2435c5f-5111-48e4-9dfa-850f1a088e61.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1752,7 +1752,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/Frame_11.png",
+                    "image": "shopify://shop_images/MOLECULAR_VIDEO.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
@@ -1843,7 +1843,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Component_4_1.png",
+                            "icon_image": "shopify://shop_images/Icons-3_63b35096-a2d4-4062-9b95-07be96bad84b.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1900,7 +1900,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_4_59d5cd90-3e40-4788-9650-7e98b7604fa6.png",
+                            "icon_image": "shopify://shop_images/Icons-4.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
