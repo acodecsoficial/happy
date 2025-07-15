@@ -449,7 +449,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Before the sniffles start, your cells are already stronger.</h2>",
+                        "text": "<h2><em>Before the sniffles start, your cells are already stronger.</em></h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
