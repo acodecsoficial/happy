@@ -2687,127 +2687,85 @@
         "faq_2": {
           "type": "faq",
           "settings": {
-            "question": "2. Who is this product for?",
-            "answer": "<p>This formula is made for women over 35 who want more energy, better focus, and smoother hormone balance without caffeine, sugar, or unnecessary pills. Whether you're juggling career, family, workouts, or perimenopause, this is your foundational wellness ritual.<br/><br/></p>"
+            "question": "2. Who is it for?",
+            "answer": "<p>Anyone dealing with stress, intense focus demands, or hormonal mood swings from professionals to creatives to caregivers.</p>"
           }
         },
         "faq_3": {
           "type": "faq",
           "settings": {
-            "question": "3. Why is NAD⁺ important for my body?",
-            "answer": "<p>NAD⁺ is a molecule found in every cell. It powers essential functions like energy production, DNA repair, hormone regulation, and mental clarity. As we age, NAD⁺ levels can drop by up to 50 percent by age 40. Cell Renew helps restore those levels using NMN, a direct NAD⁺ precursor.<br/><br/></p>"
+            "question": "3. What type of magnesium is used?",
+            "answer": "<p>We use magnesium bisglycinate, known for its high bioavailability and gentleness on digestion no laxative effect.<br/></p>"
           }
         },
         "faq_dfmbmf": {
           "type": "faq",
           "settings": {
-            "question": "4. What makes Cell Renew Tonic different from capsules or powders?",
-            "answer": "<p>It delivers up to 10 times better absorption with advanced liposomal delivery</p><p>It comes in liquid form for faster action and no digestive discomfort</p><p>Each teaspoon contains 444 mg of NMN in a clinically aligned dose </p><p>It is designed specifically for women’s metabolism and hormone rhythms </p><p>It uses a clean label formula that is vegan, non-GMO, sugar-free, caffeine-free, and gut-friendly </p><p>It is backed by scientific studies and third-party tested<br/><br/></p>"
+            "question": "4. What is liposomal delivery and why does it matter?",
+            "answer": "<p>Liposomal technology wraps magnesium in a phospholipid layer, helping it pass through your digestive system and reach your cells more efficiently.</p>"
           }
         },
         "faq_6UkLU3": {
           "type": "faq",
           "settings": {
-            "question": "5. When will I start noticing results?",
-            "answer": "<p>Week 1: Brighter mornings, less mental fog<br/> By Day 30: More sustained energy, emotional stability, and improved focus<br/> By Day 60: Increased stamina, faster recovery, and better hormone balance<br/> After 90 Days: Greater resilience, deeper cellular vitality, and lasting mental clarity<br/> Results may vary depending on your baseline NAD⁺ levels, lifestyle, and consistency.</p>"
+            "question": "5. How much magnesium is in each dose?",
+            "answer": "<p>Each 10 mL shot contains 212 mg of magnesium a clinically effective dose to support focus and balance.</p>"
           }
         },
         "faq_LWdF6e": {
           "type": "faq",
           "settings": {
-            "question": "6. How do I take it?",
-            "answer": "<p>Take one teaspoon (6 ml) every morning. You can take it straight or mix it into water, juice, or a smoothie. Shake the bottle before each use. One bottle lasts 30 days.</p>"
+            "question": "6. Will it make me tired?",
+            "answer": "<p>No. Calm Tonic supports focus and clarity without sedation. It helps your body stay balanced without slowing you down.</p>"
           }
         },
         "faq_aEfQyb": {
           "type": "faq",
           "settings": {
-            "question": "7. Do I need to take it with food?",
-            "answer": "<p>No. The liposomal delivery system is gentle on the stomach and designed for optimal absorption with or without food.</p>"
+            "question": "7. Can I use it every day?",
+            "answer": "<p>Yes. It’s safe and effective for daily use.</p>"
           }
         },
         "faq_WqnYjM": {
           "type": "faq",
           "settings": {
-            "question": "8. Is it safe for daily use?",
-            "answer": "<p>Yes. The 444 mg dose is within clinically tested safe ranges. The formula is free from common allergens and stimulants. It is designed to work with your biology.</p>"
+            "question": "8. Is it habit-forming?",
+            "answer": "<p>Not at all. It’s non-habit forming and designed for consistent support.</p>"
           }
         },
         "faq_Eb44T8": {
           "type": "faq",
           "settings": {
             "question": "9. Can I take it with other supplements or medications?",
-            "answer": "<p>In most cases, yes. Cell Renew pairs well with most vitamins, adaptogens, and hormone-supportive supplements. If you are taking prescription medications, hormone therapy, or managing a medical condition, consult your healthcare provider before use.</p>"
+            "answer": "<p>In most cases, yes. But consult your healthcare provider if you’re on medication or managing a specific condition.</p>"
           }
         },
         "faq_YaakAD": {
           "type": "faq",
           "settings": {
-            "question": "10. Can I take it if I’m pregnant or breastfeeding?",
-            "answer": "<p>If you are pregnant, planning to become pregnant, or breastfeeding, speak with your doctor before using Cell Renew Tonic.</p>"
+            "question": "10. Will it help me sleep?",
+            "answer": "<p>While it’s not designed as a sleep aid, many users report improved sleep quality due to lower evening tension and fewer muscle cramps.</p>"
           }
         },
         "faq_3CWMLC": {
           "type": "faq",
           "settings": {
-            "question": "11. What if I miss a day?",
-            "answer": "<p>Just resume the next day. While consistency brings the best results, missing a day now and then will not interfere with your progress.</p>"
+            "question": "11. Is it clean and allergy-safe?",
+            "answer": "<p>Yes. It contains no sugar, gluten, soy, dairy, or synthetic fillers just what your body and mind need.</p>"
           }
         },
         "faq_d6qTBa": {
           "type": "faq",
           "settings": {
-            "question": "12. What happens if I stop taking it?",
-            "answer": "<p>Your NAD⁺ levels may gradually decline again, and benefits like energy, focus, or hormonal balance may fade. For long-term support, we recommend using Cell Renew consistently.</p>"
+            "question": "12. Is it safe for all ages?",
+            "answer": "<p>Calm Tonic is formulated for adults. If you’re considering it for teens or older adults with specific conditions, consult a healthcare provider.</p>"
           }
         },
         "faq_ynT9nx": {
           "type": "faq",
           "settings": {
-            "question": "13. Are there any side effects?",
-            "answer": "<p>Most users experience no side effects. In rare cases, some may feel mild detox-like symptoms in the first few days such as slight headache or fatigue as NAD⁺ pathways reactivate. These typically resolve quickly.</p>"
-          }
-        },
-        "faq_y8B9H8": {
-          "type": "faq",
-          "settings": {
-            "question": "14. What’s in it?",
-            "answer": "<p>Ingredients per 6 ml serving:<br/> NMN (Nicotinamide Mononucleotide) 444 mg<br/> Purified water<br/> Vegetable glycerin<br/> Non-GMO sunflower lecithin<br/> Natural citrus flavor<br/> Potassium sorbate<br/> Stevia<br/> Free from sugar, caffeine, gluten, dairy, soy, synthetic additives, and GMOs</p>"
-          }
-        },
-        "faq_mjT3ae": {
-          "type": "faq",
-          "settings": {
-            "question": "15. Is it vegan and non-GMO?",
-            "answer": "<p>Yes. Cell Renew is 100 percent vegan and non-GMO. It is made with clean-label ingredients and third-party tested for purity and potency.</p>"
-          }
-        },
-        "faq_dQMyfY": {
-          "type": "faq",
-          "settings": {
-            "question": "16. Is the product FDA-approved?",
-            "answer": "<p>As with all dietary supplements in the United States, Cell Renew is not evaluated by the FDA. However, it is manufactured in certified facilities that follow GMP guidelines, and the ingredients are backed by clinical research.</p>"
-          }
-        },
-        "faq_hgWKNQ": {
-          "type": "faq",
-          "settings": {
-            "question": "17. What’s your return policy?",
-            "answer": "<p>We offer a 30-day money-back guarantee. If you are not satisfied with your results, contact our support team. Your first order also includes free shipping.</p>"
-          }
-        },
-        "faq_hATLcE": {
-          "type": "faq",
-          "settings": {
-            "question": "18. How should I store the bottle?",
-            "answer": "<p>Store it in a cool, dry place away from sunlight. Refrigeration after opening is optional and can help preserve freshness.</p>"
-          }
-        },
-        "faq_LAfBXQ": {
-          "type": "faq",
-          "settings": {
-            "question": "19. How long should I take Cell Renew?",
-            "answer": "<p>Cell Renew is designed for long-term use. The benefits are cumulative. We recommend using it for at least 60 to 90 days to allow your NAD⁺ levels to stabilize and your results to build over time.</p>"
+            "question": "13. Where is it made?",
+            "answer": "<p>Formulated and produced in the USA under strict quality standards, with third-party testing and a public Certificate of Analysis for every batch.</p>"
           }
         }
       },
@@ -2824,13 +2782,7 @@
         "faq_YaakAD",
         "faq_3CWMLC",
         "faq_d6qTBa",
-        "faq_ynT9nx",
-        "faq_y8B9H8",
-        "faq_mjT3ae",
-        "faq_dQMyfY",
-        "faq_hgWKNQ",
-        "faq_hATLcE",
-        "faq_LAfBXQ"
+        "faq_ynT9nx"
       ],
       "custom_css": [
         "#faqs {border-top: 1px solid;}"
