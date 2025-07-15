@@ -2402,6 +2402,7 @@
         "bottle_9aipyC": {
           "type": "bottle",
           "settings": {
+            "image": "shopify://shop_images/Calm.png",
             "alt": "",
             "block_title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
             "block_subtitle": "<p>LIPOSOMAL magnesium</p>",
