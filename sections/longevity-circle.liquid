@@ -58,41 +58,33 @@
   </div>
 
   <style>
-    #longevity-circle-{{ section.id }} {
-      padding: 60px 0;
-      border-top: 1px solid #000;
-    }
-    .longevity-circle__inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    .longevity-circle__slide {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
-    .longevity-circle__block-title {
-      font-size: 50px;
-      margin-bottom: .3em;
-    }
-    .longevity-circle__block-subtitle {
-      font-size: 20px;
-      font-style: italic;
-      margin-bottom: .3em;
-    }
-    .longevity-circle__block-subtitle2 {
-      font-size: 16px;
-      margin-bottom: .6em;
-    }
-    .longevity-circle__block-description {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-    .longevity-circle__slide-image img {
-      max-height: 400px;
-      object-fit: contain;
-    }
+    /* força o swiper a 100% no main e thumbs */
+#longevity-circle-{{ section.id }} .swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* main: cada slide ocupa 100% */
+#longevity-circle-{{ section.id }} .main-slider .swiper-slide {
+  width: 100% !important;
+}
+
+/* thumbs: wrapper flex e gap controlado */
+#longevity-circle-{{ section.id }} .thumbs-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide {
+  width: auto !important;
+  margin-right: 8px;      /* gap entre thumbs */
+  opacity: 0.4;
+  cursor: pointer;
+}
+#longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
     /* Thumbnails */
     .thumbs-slider {
       margin-top: 2rem;
