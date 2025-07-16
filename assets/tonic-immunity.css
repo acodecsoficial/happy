@@ -32,4 +32,10 @@
     margin-bottom: 0px !important;
   }
 
+   .cadence-selector .radio-option {
+    flex: 1;
+    padding: 0;
+    border: 1px solid #e5dbcc;
+  }
+
 }
