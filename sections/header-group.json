@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_fXjLnC": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Enjoy: Free shipping on orders over $40",
             "link": "shopify://collections/all"
@@ -23,7 +24,6 @@
         },
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Get a free travel bag on all orders $120+",
             "link": "shopify://collections/all"
