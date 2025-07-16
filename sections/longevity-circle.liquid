@@ -33,6 +33,20 @@
                         <img src="https://cdn.shopify.com/s/files/1/0869/3704/3264/files/ARROW-RIGHT.svg?v=1752313226" width="21" height="19">
                       </a>
                   </div>
+
+                  <!-- THUMBS SLIDER -->
+      <div class="swiper-container thumbs-slider" id="thumbs-{{ section.id }}">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <img
+                src="{{ block.settings.image | img_url: '100x' }}"
+                alt="{{ block.settings.alt }}"
+              />
+            </div>
+          {% endfor %}
+        </div>
+      </div>
                 </div>
                 <div class="longevity-circle__slide-image">
                   <img
@@ -46,19 +60,7 @@
         </div>
       </div>
 
-      <!-- THUMBS SLIDER -->
-      <div class="swiper-container thumbs-slider" id="thumbs-{{ section.id }}">
-        <div class="swiper-wrapper">
-          {% for block in section.blocks %}
-            <div class="swiper-slide">
-              <img
-                src="{{ block.settings.image | img_url: '100x' }}"
-                alt="{{ block.settings.alt }}"
-              />
-            </div>
-          {% endfor %}
-        </div>
-      </div>
+      
 
     {%- endif -%}
   </div>
