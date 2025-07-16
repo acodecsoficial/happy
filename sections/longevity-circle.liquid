@@ -213,25 +213,29 @@
   </style>
 
   <script>
-   document.addEventListener('DOMContentLoaded', function() {
-      var thumbs = new Swiper('#thumbs-{{ section.id }}', {
-        spaceBetween: 80,
-        freeMode: true,
-        watchSlidesProgress: true,
-        watchOverflow: true,     // esconde automaticamente se menos de slidesPerView
-        breakpoints: {
-          0:    { slidesPerView: 2 },   // mobile
-          640:  { slidesPerView: 4 },   // tablets
-          1024: { slidesPerView: 6 }    // desktop
-        }
-      });
+  document.addEventListener('DOMContentLoaded', function() {
+  var thumbs = new Swiper('#thumbs-{{ section.id }}', {
+    // desliga width auto que pode ter vindo em algum CSS
+    slidesPerView: 6,
+    spaceBetween: 80,
+    freeMode: true,
+    watchSlidesProgress: true,
+    // força a ocultar o que fica além de 6 miniaturas
+    watchOverflow: false,
+    // ajusta para cada tamanho de tela
+    breakpoints: {
+      0:    { slidesPerView: 2 },   // mobiles pequenos
+      640:  { slidesPerView: 4 },   // tablets
+      1024: { slidesPerView: 6 }    // desktops
+    }
+  });
 
-      new Swiper('#main-{{ section.id }}', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        thumbs: { swiper: thumbs },
-      });
-    });
+  new Swiper('#main-{{ section.id }}', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    thumbs: { swiper: thumbs },
+  });
+});
 
 </script>
 
