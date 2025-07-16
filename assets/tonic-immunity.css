@@ -2,4 +2,8 @@
   .quantity-grid-mobile{
     display: block !important;
   }
+
+  .quantity-grid{
+    display: none !important;
+  }
 }
