@@ -214,35 +214,29 @@
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // thumbs com auto‑view (cabe todas as miniaturas que couberem)
-    var thumbs = new Swiper('#thumbs-{{ section.id }}', {
-      spaceBetween: 80,
-      freeMode: true,
-      watchSlidesProgress: true,
-       // Define quantos slides por view em cada largura de tela
+  var thumbs = new Swiper('#thumbs-{{ section.id }}', {
+    // desliga width auto que pode ter vindo em algum CSS
+    slidesPerView: 6,
+    spaceBetween: 80,
+    freeMode: true,
+    watchSlidesProgress: true,
+    // força a ocultar o que fica além de 6 miniaturas
+    watchOverflow: false,
+    // ajusta para cada tamanho de tela
     breakpoints: {
-      // telas muito pequenas
-      0: {
-        slidesPerView: 2,
-      },
-      // tablets
-      768: {
-        slidesPerView: 4,
-      },
-      // desktop e acima: até 6
-      1024: {
-        slidesPerView: 2,
-      }
+      0:    { slidesPerView: 2 },   // mobiles pequenos
+      640:  { slidesPerView: 4 },   // tablets
+      1024: { slidesPerView: 6 }    // desktops
     }
-    });
-
-    // main sempre 1 slide por vez
-    new Swiper('#main-{{ section.id }}', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      thumbs: { swiper: thumbs },
-    });
   });
+
+  new Swiper('#main-{{ section.id }}', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    thumbs: { swiper: thumbs },
+  });
+});
+
 </script>
 
 
