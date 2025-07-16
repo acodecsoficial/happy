@@ -279,7 +279,7 @@
             "mobile_vertical_alignment": "start",
             "mobile_grid_column_gap": 0,
             "mobile_grid_row_gap": 0,
-            "top_spacing_mobile": 0,
+            "top_spacing_mobile": 60,
             "bottom_spacing_mobile": 0,
             "left_spacing_mobile": 0,
             "right_spacing_mobile": 0
