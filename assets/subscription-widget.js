@@ -492,26 +492,43 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateMobileValueProps() {
-    // Get active cadence value props
+  console.warn("Atualizando mobile value props...");
 
-    console.warn(" mobile props *****************");
-    
-    const activeCadence =
-      this.state.cadence === "subscription"
-        ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
-        : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
+  // 1) Pega todos os blocos de quantidade no mobile
+  const mobileBlocks = this.querySelectorAll(".quantity-grid-mobile .radio-option");
 
-    const valueProps = activeCadence?.querySelector(".value-props")?.innerHTML || "";
-
-    // Copy to active quantity block on mobile
-    const activeQtyBlock = this.querySelector(".quantity-grid-mobile .radio-option.active");
-    if (activeQtyBlock) {
-      const mobileValueProps = activeQtyBlock.querySelector(".js-mobile-value-props");
-      if (mobileValueProps) {
-        mobileValueProps.innerHTML = valueProps;
-      }
+  mobileBlocks.forEach(mobileBlock => {
+    // 2) Identifica a cadence deste bloco (onde estiver seu data-cadence)
+    //    Ajuste o seletor se o data-cadence estiver em outro lugar!
+    const cadenceEl = mobileBlock.querySelector("[data-cadence]");
+    const cadence = cadenceEl?.dataset.cadence;
+    if (!cadence) {
+      console.warn("Bloco sem data-cadence, pulando:", mobileBlock);
+      return;
     }
-  }
+
+    // 3) Encontra o bloco desktop com o mesmo data-cadence
+    const desktopRoot = this.querySelector(`[data-cadence="${cadence}"]`);
+    const desktopBlock = desktopRoot?.closest(".radio-option");
+    if (!desktopBlock) {
+      console.warn(`Desktop block não encontrado para cadence="${cadence}"`);
+    }
+
+    // 4) Lê o HTML do .value-props do bloco desktop (ou vazio)
+    const html = desktopBlock
+      ? desktopBlock.querySelector(".value-props")?.innerHTML ?? ""
+      : "";
+
+    // 5) Injeta no mobile
+    const mobileValueProps = mobileBlock.querySelector(".js-mobile-value-props");
+    if (mobileValueProps) {
+      mobileValueProps.innerHTML = html;
+    } else {
+      console.warn("Elemento .js-mobile-value-props não achado em:", mobileBlock);
+    }
+  });
+}
+
 
   setQuantityBlock(block) {
     if (!block || this.config.product.is_bundle) return;
