@@ -806,6 +806,19 @@
     })(window, document, "clarity", "script", "rwl1ryqeb5");
 </script>
 
+    {%- comment -%}
+  Dentro do <head> do seu layout/theme.liquid
+{%- endcomment -%}
+{% if template.suffix %}
+  {%- comment -%}
+    Em product.tonic-immunity.json, template.name é “product” e template.suffix é “tonic-immunity”
+  {%- endcomment -%}
+  <link
+    rel="stylesheet"
+    href="{{ template.suffix | append: '.css' | asset_url }}"
+  />
+{% endif %}
+
     
   </head>
 
