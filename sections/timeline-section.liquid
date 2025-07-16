@@ -59,7 +59,7 @@
           {%- render 'image', image: section.settings.first_image, class: 'max-w-[260px] time-img', sizes: '400px' -%}
         </div>
         <div class="d-none lg:block absolute top180 lg:left-[32px] xl:left-[0]">
-          {%- render 'image', image: section.settings.second_image, class: 'max-w-[260px]', sizes: '400px' -%}
+          {%- render 'image', image: section.settings.second_image, class: 'max-w-[400px]', sizes: '400px' -%}
         </div>
       {% endif %}
       {% if forloop.index == 5 and section.settings.third_image != blank %}
