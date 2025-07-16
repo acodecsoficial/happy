@@ -42,7 +42,7 @@
   }
 
     .quantity-grid-mobile {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 1rem;
