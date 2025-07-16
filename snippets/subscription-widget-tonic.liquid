@@ -408,7 +408,29 @@
         </button>
 
         
-        
+        <div class="value-props">
+          <div class="value-prop">
+            {% if tonic %}
+              {%- render 'icon-check', class: 'value-prop-icon' -%}
+            {% else %}
+                {%- render 'icon-subscription-sync', class: 'value-prop-icon' -%}
+            {% endif %}
+            <p class="value-prop-text js-ships-everyx js-subs-info-1">{{ bbb.default_info_sub_1 }}</p>
+          </div>
+          <div class="value-prop">
+            {% if tonic %}
+              {%- render 'icon-check', class: 'value-prop-icon' -%}
+            {% else %}
+              {%- render 'icon-shipping-box', class: 'value-prop-icon shipping-box' -%}
+            {% endif %}
+            <p class="value-prop-text js-subs-info-2">{{ bbb.default_info_sub_2 }}</p>
+          </div>
+          
+
+          <p class="save-text js-subscription-save"></p>
+
+          
+        </div>
       </div>
     {%- endif -%}
     {% comment %} / SUBSCRIBE {% endcomment %}
