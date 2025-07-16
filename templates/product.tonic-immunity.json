@@ -289,7 +289,7 @@
               "type": "highlight-image-item",
               "name": "Highlight image item",
               "settings": {
-                "image": "shopify://shop_images/abnner_immunity.png",
+                "image": "shopify://shop_images/banner_e93fb5b0-91c3-4a82-b806-4e47bb1a813c.jpg",
                 "image_max_width_mobile": 1000,
                 "title": "<h2>FIRST <em>liquid liposomal Vitamin C</em></h2>",
                 "title_size": 48,
@@ -1894,7 +1894,7 @@
         "max_width": 1440,
         "top_spacing": 70,
         "bottom_spacing": 70,
-        "use_top_border": false,
+        "use_top_border": true,
         "use_bottom_border": false,
         "full_width_mobile": false,
         "top_spacing_mobile": 35,
@@ -2334,11 +2334,6 @@
         "show_text_below": true
       }
     },
-    "longevity_circle_bgDidf": {
-      "type": "longevity-circle",
-      "name": "Longevity Circle",
-      "settings": {}
-    },
     "subscription_products_Q9kNnn": {
       "type": "subscription-products",
       "blocks": {
@@ -2612,64 +2607,134 @@
         "faq_1": {
           "type": "faq",
           "settings": {
-            "question": "1. What is Immunity Tonic?",
-            "answer": "<p>Immunity Tonic is a liposomal Vitamin C supplement designed specifically for women. It delivers 1,000 mg of Vitamin C per serving with up to 10x better absorption, supporting daily immune defense, antioxidant protection, and all-day vitality.</p>"
+            "question": "1. What exactly is Cell Renew Tonic?",
+            "answer": "<p>Cell Renew Tonic is a red berry liquid NMN supplement designed to help women feel sharper, stronger, and more energized at any age. It works at the cellular level to boost NAD⁺, your body’s natural fuel for energy, repair, and resilience. Just one teaspoon a day helps reset your energy, balance your hormones, and support graceful, empowered aging.</p>"
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
-            "question": "2. How does liposomal Vitamin C work?",
-            "answer": "<p>Liposomal technology encapsulates Vitamin C in tiny fat-like particles, protecting it through digestion and enhancing its delivery directly into your bloodstream—resulting in superior absorption and faster, more effective benefits.</p>"
+            "question": "2. Who is this product for?",
+            "answer": "<p>This formula is made for women over 35 who want more energy, better focus, and smoother hormone balance without caffeine, sugar, or unnecessary pills. Whether you're juggling career, family, workouts, or perimenopause, this is your foundational wellness ritual.<br/><br/></p>"
           }
         },
         "faq_3": {
           "type": "faq",
           "settings": {
-            "question": "3. What are the main benefits of taking Immunity Tonic?",
-            "answer": "<ul><li>Strengthens immune response</li><li>Boosts daily energy and vitality</li><li>Helps neutralize oxidative stress</li><li>Supports collagen production for skin and tissue health</li><li>Protects against seasonal challenges</li><li>Enhances resilience and recovery</li></ul>"
+            "question": "3. Why is NAD⁺ important for my body?",
+            "answer": "<p>NAD⁺ is a molecule found in every cell. It powers essential functions like energy production, DNA repair, hormone regulation, and mental clarity. As we age, NAD⁺ levels can drop by up to 50 percent by age 40. Cell Renew helps restore those levels using NMN, a direct NAD⁺ precursor.<br/><br/></p>"
           }
         },
         "faq_dfmbmf": {
           "type": "faq",
           "settings": {
-            "question": "4. How should I take Immunity Tonic?",
-            "answer": "<p>Take one teaspoon (6ml) every morning. You can enjoy it straight from the spoon or mix it into water, juice, or your favorite smoothie.</p>"
+            "question": "4. What makes Cell Renew Tonic different from capsules or powders?",
+            "answer": "<p>It delivers up to 10 times better absorption with advanced liposomal delivery</p><p>It comes in liquid form for faster action and no digestive discomfort</p><p>Each teaspoon contains 444 mg of NMN in a clinically aligned dose </p><p>It is designed specifically for women’s metabolism and hormone rhythms </p><p>It uses a clean label formula that is vegan, non-GMO, sugar-free, caffeine-free, and gut-friendly </p><p>It is backed by scientific studies and third-party tested<br/><br/></p>"
           }
         },
         "faq_6UkLU3": {
           "type": "faq",
           "settings": {
-            "question": "5.  How soon will I feel the benefits?",
-            "answer": "<ul><li><strong>Day 1</strong>: Cellular protection begins<br/><strong>Week 1</strong>: Noticeable energy and focus.</li><li><strong>Day 30</strong>: Enhanced skin resilience and stress support.</li><li><strong>Day 90</strong>: Improved mood, immune strength, and overall vitality.</li></ul>"
+            "question": "5. When will I start noticing results?",
+            "answer": "<p>Week 1: Brighter mornings, less mental fog<br/> By Day 30: More sustained energy, emotional stability, and improved focus<br/> By Day 60: Increased stamina, faster recovery, and better hormone balance<br/> After 90 Days: Greater resilience, deeper cellular vitality, and lasting mental clarity<br/> Results may vary depending on your baseline NAD⁺ levels, lifestyle, and consistency.</p>"
           }
         },
         "faq_LWdF6e": {
           "type": "faq",
           "settings": {
-            "question": "6. Is Immunity Tonic safe for daily use?",
-            "answer": "<p>Yes, it's designed for daily use. However, consult your healthcare provider if you're pregnant, nursing, or taking medication.</p>"
+            "question": "6. How do I take it?",
+            "answer": "<p>Take one teaspoon (6 ml) every morning. You can take it straight or mix it into water, juice, or a smoothie. Shake the bottle before each use. One bottle lasts 30 days.</p>"
           }
         },
         "faq_aEfQyb": {
           "type": "faq",
           "settings": {
-            "question": "7. Is it vegan and sugar-free?",
-            "answer": "<p>Absolutely. Immunity Tonic is vegan, sugar-free, gut-friendly, and non-GMO—with a naturally delicious citrus flavor.</p>"
+            "question": "7. Do I need to take it with food?",
+            "answer": "<p>No. The liposomal delivery system is gentle on the stomach and designed for optimal absorption with or without food.</p>"
           }
         },
         "faq_WqnYjM": {
           "type": "faq",
           "settings": {
-            "question": "8. Can it replace my multivitamin or other supplements?",
-            "answer": "<p>While it provides powerful immune and antioxidant support, it’s best used as part of a complete wellness routine. It complements other supplements, especially those in the Happy Aging lineup.</p>"
+            "question": "8. Is it safe for daily use?",
+            "answer": "<p>Yes. The 444 mg dose is within clinically tested safe ranges. The formula is free from common allergens and stimulants. It is designed to work with your biology.</p>"
           }
         },
         "faq_Eb44T8": {
           "type": "faq",
           "settings": {
-            "question": "9. Who is this product ideal for?",
-            "answer": "<p>Women seeking proactive immune support, better energy, and a simple, effective way to feel strong and vibrant every day, especially those with busy lifestyles or frequent stress exposure.</p>"
+            "question": "9. Can I take it with other supplements or medications?",
+            "answer": "<p>In most cases, yes. Cell Renew pairs well with most vitamins, adaptogens, and hormone-supportive supplements. If you are taking prescription medications, hormone therapy, or managing a medical condition, consult your healthcare provider before use.</p>"
+          }
+        },
+        "faq_YaakAD": {
+          "type": "faq",
+          "settings": {
+            "question": "10. Can I take it if I’m pregnant or breastfeeding?",
+            "answer": "<p>If you are pregnant, planning to become pregnant, or breastfeeding, speak with your doctor before using Cell Renew Tonic.</p>"
+          }
+        },
+        "faq_3CWMLC": {
+          "type": "faq",
+          "settings": {
+            "question": "11. What if I miss a day?",
+            "answer": "<p>Just resume the next day. While consistency brings the best results, missing a day now and then will not interfere with your progress.</p>"
+          }
+        },
+        "faq_d6qTBa": {
+          "type": "faq",
+          "settings": {
+            "question": "12. What happens if I stop taking it?",
+            "answer": "<p>Your NAD⁺ levels may gradually decline again, and benefits like energy, focus, or hormonal balance may fade. For long-term support, we recommend using Cell Renew consistently.</p>"
+          }
+        },
+        "faq_ynT9nx": {
+          "type": "faq",
+          "settings": {
+            "question": "13. Are there any side effects?",
+            "answer": "<p>Most users experience no side effects. In rare cases, some may feel mild detox-like symptoms in the first few days such as slight headache or fatigue as NAD⁺ pathways reactivate. These typically resolve quickly.</p>"
+          }
+        },
+        "faq_y8B9H8": {
+          "type": "faq",
+          "settings": {
+            "question": "14. What’s in it?",
+            "answer": "<p>Ingredients per 6 ml serving:<br/> NMN (Nicotinamide Mononucleotide) 444 mg<br/> Purified water<br/> Vegetable glycerin<br/> Non-GMO sunflower lecithin<br/> Natural citrus flavor<br/> Potassium sorbate<br/> Stevia<br/> Free from sugar, caffeine, gluten, dairy, soy, synthetic additives, and GMOs</p>"
+          }
+        },
+        "faq_mjT3ae": {
+          "type": "faq",
+          "settings": {
+            "question": "15. Is it vegan and non-GMO?",
+            "answer": "<p>Yes. Cell Renew is 100 percent vegan and non-GMO. It is made with clean-label ingredients and third-party tested for purity and potency.</p>"
+          }
+        },
+        "faq_dQMyfY": {
+          "type": "faq",
+          "settings": {
+            "question": "16. Is the product FDA-approved?",
+            "answer": "<p>As with all dietary supplements in the United States, Cell Renew is not evaluated by the FDA. However, it is manufactured in certified facilities that follow GMP guidelines, and the ingredients are backed by clinical research.</p>"
+          }
+        },
+        "faq_hgWKNQ": {
+          "type": "faq",
+          "settings": {
+            "question": "17. What’s your return policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not satisfied with your results, contact our support team. Your first order also includes free shipping.</p>"
+          }
+        },
+        "faq_hATLcE": {
+          "type": "faq",
+          "settings": {
+            "question": "18. How should I store the bottle?",
+            "answer": "<p>Store it in a cool, dry place away from sunlight. Refrigeration after opening is optional and can help preserve freshness.</p>"
+          }
+        },
+        "faq_LAfBXQ": {
+          "type": "faq",
+          "settings": {
+            "question": "19. How long should I take Cell Renew?",
+            "answer": "<p>Cell Renew is designed for long-term use. The benefits are cumulative. We recommend using it for at least 60 to 90 days to allow your NAD⁺ levels to stabilize and your results to build over time.</p>"
           }
         }
       },
@@ -2682,8 +2747,19 @@
         "faq_LWdF6e",
         "faq_aEfQyb",
         "faq_WqnYjM",
-        "faq_Eb44T8"
+        "faq_Eb44T8",
+        "faq_YaakAD",
+        "faq_3CWMLC",
+        "faq_d6qTBa",
+        "faq_ynT9nx",
+        "faq_y8B9H8",
+        "faq_mjT3ae",
+        "faq_dQMyfY",
+        "faq_hgWKNQ",
+        "faq_hATLcE",
+        "faq_LAfBXQ"
       ],
+      "disabled": true,
       "custom_css": [
         "#faqs {border-top: 1px solid;}"
       ],
@@ -2731,7 +2807,6 @@
     "image_banner_iQ4HPC",
     "timeline_section_hBBi6r",
     "image_banner_kGC7P6",
-    "longevity_circle_bgDidf",
     "subscription_products_Q9kNnn",
     "image_banner_D6TgTi",
     "wines",
