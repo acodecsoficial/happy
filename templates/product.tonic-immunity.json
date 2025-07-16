@@ -586,7 +586,7 @@
             "mobile_horizontal_alignment": "start",
             "mobile_vertical_alignment": "start",
             "mobile_grid_column_gap": 0,
-            "mobile_grid_row_gap": 35,
+            "mobile_grid_row_gap": 30,
             "top_spacing_mobile": 0,
             "bottom_spacing_mobile": 60,
             "left_spacing_mobile": 20,
@@ -627,6 +627,7 @@
                     "text_alignment_desktop": "left",
                     "tooltip_texts": "",
                     "mobile_font_size": 0,
+                    "top_spacing_mobile": 10,
                     "text_alignment_mobile": "left"
                   },
                   "blocks": {}
@@ -689,6 +690,7 @@
                     "text_alignment_desktop": "left",
                     "tooltip_texts": "",
                     "mobile_font_size": 48,
+                    "top_spacing_mobile": 10,
                     "text_alignment_mobile": "left"
                   },
                   "blocks": {}
