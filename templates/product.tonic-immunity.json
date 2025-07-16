@@ -2612,28 +2612,28 @@
         "faq_1": {
           "type": "faq",
           "settings": {
-            "question": "1. What exactly is Cell Renew Tonic?",
-            "answer": "<p>Cell Renew Tonic is a red berry liquid NMN supplement designed to help women feel sharper, stronger, and more energized at any age. It works at the cellular level to boost NAD⁺, your body’s natural fuel for energy, repair, and resilience. Just one teaspoon a day helps reset your energy, balance your hormones, and support graceful, empowered aging.</p>"
+            "question": "1. What is Immunity Tonic?",
+            "answer": "<p>Immunity Tonic is a liposomal Vitamin C supplement designed specifically for women. It delivers 1,000 mg of Vitamin C per serving with up to 10x better absorption, supporting daily immune defense, antioxidant protection, and all-day vitality.</p>"
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
-            "question": "2. Who is this product for?",
-            "answer": "<p>This formula is made for women over 35 who want more energy, better focus, and smoother hormone balance without caffeine, sugar, or unnecessary pills. Whether you're juggling career, family, workouts, or perimenopause, this is your foundational wellness ritual.<br/><br/></p>"
+            "question": "2. How does liposomal Vitamin C work?",
+            "answer": "<p>Liposomal technology encapsulates Vitamin C in tiny fat-like particles, protecting it through digestion and enhancing its delivery directly into your bloodstream—resulting in superior absorption and faster, more effective benefits.</p>"
           }
         },
         "faq_3": {
           "type": "faq",
           "settings": {
-            "question": "3. Why is NAD⁺ important for my body?",
-            "answer": "<p>NAD⁺ is a molecule found in every cell. It powers essential functions like energy production, DNA repair, hormone regulation, and mental clarity. As we age, NAD⁺ levels can drop by up to 50 percent by age 40. Cell Renew helps restore those levels using NMN, a direct NAD⁺ precursor.<br/><br/></p>"
+            "question": "3. What are the main benefits of taking Immunity Tonic?",
+            "answer": "<ul><li>Strengthens immune response</li><li>Boosts daily energy and vitality</li><li>Helps neutralize oxidative stress</li><li>Supports collagen production for skin and tissue health</li><li>Protects against seasonal challenges</li><li>Enhances resilience and recovery</li></ul>"
           }
         },
         "faq_dfmbmf": {
           "type": "faq",
           "settings": {
-            "question": "4. What makes Cell Renew Tonic different from capsules or powders?",
+            "question": "4. How should I take Immunity Tonic?",
             "answer": "<p>It delivers up to 10 times better absorption with advanced liposomal delivery</p><p>It comes in liquid form for faster action and no digestive discomfort</p><p>Each teaspoon contains 444 mg of NMN in a clinically aligned dose </p><p>It is designed specifically for women’s metabolism and hormone rhythms </p><p>It uses a clean label formula that is vegan, non-GMO, sugar-free, caffeine-free, and gut-friendly </p><p>It is backed by scientific studies and third-party tested<br/><br/></p>"
           }
         },
@@ -2764,7 +2764,6 @@
         "faq_hATLcE",
         "faq_LAfBXQ"
       ],
-      "disabled": true,
       "custom_css": [
         "#faqs {border-top: 1px solid;}"
       ],
