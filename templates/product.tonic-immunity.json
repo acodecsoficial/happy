@@ -1174,16 +1174,24 @@
             "center_mobile": false
           }
         },
+        "spacing_HM7NB3": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 0,
+            "spacing_mobile": 20,
+            "fill_all_desktop": false
+          }
+        },
         "text_GcHhgp": {
           "type": "text",
           "settings": {
-            "text": "<h3><em>Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
+            "text": "<h3><em> Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
           }
         },
-        "spacing_EbYH8e": {
+        "spacing_B7txqB": {
           "type": "spacing",
           "settings": {
             "spacing_desktop": 50,
@@ -1279,8 +1287,9 @@
       },
       "block_order": [
         "text_nLEfLV",
+        "spacing_HM7NB3",
         "text_GcHhgp",
-        "spacing_EbYH8e",
+        "spacing_B7txqB",
         "spacing_A7Nw66",
         "text_QghNzh",
         "text_BFqHcM",
