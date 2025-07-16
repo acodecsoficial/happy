@@ -99,7 +99,7 @@
             "qty": 1,
             "onetime_price": 75,
             "plan_id": "693185478976",
-            "title": "Free shipping in 12 hours, every 30 days",
+            "title": "30-day supply",
             "sub_title": "",
             "num_bottles": "30",
             "badge": "",
@@ -2171,7 +2171,7 @@
         "bottle_9aipyC": {
           "type": "bottle",
           "settings": {
-            "image": "shopify://shop_images/Calm.png",
+            "image": "shopify://shop_images/Calm_b4e6bc48-64a9-419c-97cd-47e1dcb48548.png",
             "alt": "",
             "block_title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
             "block_subtitle": "<p>LIPOSOMAL <em>magnesium</em></p>",
@@ -2184,7 +2184,85 @@
         "bottle_UAhy8F": {
           "type": "bottle",
           "settings": {
+            "image": "shopify://shop_images/Cell.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_fgPcGQ": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/immunity.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_Dtazi6": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/liver.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_XVyqzL": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/sleep.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_FbgAPe": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/radiance.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_UCqRei": {
+          "type": "bottle",
+          "settings": {
             "image": "shopify://shop_images/Component_20.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_TGFQAV": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/relief.png",
             "alt": "",
             "block_title": "<p>WELCOME TO THE longevity circle</p>",
             "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
@@ -2197,7 +2275,13 @@
       },
       "block_order": [
         "bottle_9aipyC",
-        "bottle_UAhy8F"
+        "bottle_UAhy8F",
+        "bottle_fgPcGQ",
+        "bottle_Dtazi6",
+        "bottle_XVyqzL",
+        "bottle_FbgAPe",
+        "bottle_UCqRei",
+        "bottle_TGFQAV"
       ],
       "name": "Longevity Circle",
       "settings": {}
