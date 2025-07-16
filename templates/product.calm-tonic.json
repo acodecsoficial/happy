@@ -2165,6 +2165,29 @@
         "second_image": "shopify://shop_images/how_to.png"
       }
     },
+    "image_banner_D6TgTi": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
+        ".banner__media {margin-top: 3rem;}",
+        ".banner__content {display: none;}",
+        "@media (max-width: 900px) {#Banner-template--24672251937088__image_banner_D6TgTi {padding-bottom: 3rem; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_6.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "longevity_circle_cNW94D": {
       "type": "longevity-circle",
       "blocks": {
@@ -2283,6 +2306,7 @@
         "bottle_UCqRei",
         "bottle_TGFQAV"
       ],
+      "disabled": true,
       "name": "Longevity Circle",
       "settings": {}
     },
@@ -2322,29 +2346,6 @@
         "all_link_url": "shopify://collections/all",
         "all_link_text": "<p>SEE ALL <em>products</em></p>",
         "show_all_link": true
-      }
-    },
-    "image_banner_D6TgTi": {
-      "type": "image-banner",
-      "custom_css": [
-        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
-        ".banner__media {margin-top: 3rem;}",
-        ".banner__content {display: none;}",
-        "@media (max-width: 900px) {#Banner-template--24672251937088__image_banner_D6TgTi {padding-bottom: 3rem; }}"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_6.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "wines": {
@@ -2706,9 +2707,9 @@
     "landing_section_nqCRrp",
     "image_banner_azPmDb",
     "timeline_section_hBBi6r",
+    "image_banner_D6TgTi",
     "longevity_circle_cNW94D",
     "subscription_products_TYLphp",
-    "image_banner_D6TgTi",
     "wines",
     "landing_section_qAbkWE",
     "faqs_9gMU6f",
