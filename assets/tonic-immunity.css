@@ -18,4 +18,8 @@
     flex-direction: row !important;
     gap: 1rem;
   }
+
+  .cadence-selector .value-props {
+    display: none !important;
+  }
 }
