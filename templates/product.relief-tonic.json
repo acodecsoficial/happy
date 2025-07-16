@@ -2221,6 +2221,7 @@
         "quantity_block_jmAMT8",
         "quantity_block_JdYBxG"
       ],
+      "disabled": true,
       "name": "Subscription Products",
       "settings": {
         "title": "<p>Complete <em>your routine</em></p>",
