@@ -297,7 +297,7 @@
                 "title_color": "",
                 "text": "",
                 "text_alignment_desktop": "left",
-                "text_alignment_mobile": "center",
+                "text_alignment_mobile": "left",
                 "flex_direction": "row",
                 "justify_content": "start",
                 "align_items": "start",
