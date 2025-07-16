@@ -2317,7 +2317,6 @@
     },
     "image_banner_kGC7P6": {
       "type": "image-banner",
-      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/IMMUNITYs.png",
