@@ -48,4 +48,8 @@
     margin-bottom: 1rem;
   }
 
+  .cadence-selector .option-header{
+    justify-content: center;
+  }
+
 }
