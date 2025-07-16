@@ -156,14 +156,14 @@
           "settings": {
             "title": "Ingredients",
             "text": "",
-            "image": "shopify://shop_images/HappyAging_CellRenewTonic_Facts_620x620_e09a2695-ca17-40bf-b1fd-bea430bd1e21.jpg"
+            "image": "shopify://shop_images/HappyAging_Immunity_Facts_Amazon_679x802_4c794111-4c37-4b4b-8340-6be4cc4ad8c6.jpg"
           }
         },
         "aside_content_rBPMby": {
           "type": "aside_content",
           "settings": {
             "title": "How to use",
-            "text": "<ul><li>Shake the bottle. </li><li>Take one teaspoon (6 ml) every morning straight or mixed into water, juice or a smoothie. </li><li>One bottle lasts thirty days.</li></ul>"
+            "text": "<ul><li>Shake the bottle. </li><li>Take one teaspoon (6 ml) every morning straight or mixed into water, juice or a smoothie. </li></ul>"
           }
         },
         "essential_upsell_app_block_XLXFkq": {
@@ -860,21 +860,6 @@
                       },
                       "blocks": {}
                     },
-                    "text_block_pGC8Tw": {
-                      "type": "text-block",
-                      "name": "Text block",
-                      "disabled": true,
-                      "settings": {
-                        "text": "<p>One</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": false,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
                     "text_block_hNGj3F": {
                       "type": "text-block",
                       "name": "Text block",
@@ -896,7 +881,6 @@
                   },
                   "block_order": [
                     "heading_block_ptKwtR",
-                    "text_block_pGC8Tw",
                     "text_block_hNGj3F"
                   ]
                 },
@@ -925,21 +909,6 @@
                       },
                       "blocks": {}
                     },
-                    "text_block_AA8Px4": {
-                      "type": "text-block",
-                      "name": "Text block",
-                      "disabled": true,
-                      "settings": {
-                        "text": "<p>One</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": false,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
                     "text_block_Gya3pg": {
                       "type": "text-block",
                       "name": "Text block",
@@ -960,7 +929,6 @@
                   },
                   "block_order": [
                     "heading_block_AkQakG",
-                    "text_block_AA8Px4",
                     "text_block_Gya3pg"
                   ]
                 },
@@ -989,21 +957,6 @@
                       },
                       "blocks": {}
                     },
-                    "text_block_fyhwdJ": {
-                      "type": "text-block",
-                      "name": "Text block",
-                      "disabled": true,
-                      "settings": {
-                        "text": "<p>One</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": false,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
                     "text_block_LUiRbt": {
                       "type": "text-block",
                       "name": "Text block",
@@ -1025,7 +978,6 @@
                   },
                   "block_order": [
                     "heading_block_iHzN3H",
-                    "text_block_fyhwdJ",
                     "text_block_LUiRbt"
                   ]
                 },
@@ -1054,21 +1006,6 @@
                       },
                       "blocks": {}
                     },
-                    "text_block_EBgipz": {
-                      "type": "text-block",
-                      "name": "Text block",
-                      "disabled": true,
-                      "settings": {
-                        "text": "<p>One</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": false,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
                     "text_block_FeLFaV": {
                       "type": "text-block",
                       "name": "Text block",
@@ -1091,7 +1028,6 @@
                   },
                   "block_order": [
                     "heading_block_q7taLp",
-                    "text_block_EBgipz",
                     "text_block_FeLFaV"
                   ]
                 },
@@ -1120,21 +1056,6 @@
                       },
                       "blocks": {}
                     },
-                    "text_block_hgW3DR": {
-                      "type": "text-block",
-                      "name": "Text block",
-                      "disabled": true,
-                      "settings": {
-                        "text": "<p>One</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": false,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
                     "text_block_YpUc8B": {
                       "type": "text-block",
                       "name": "Text block",
@@ -1156,7 +1077,6 @@
                   },
                   "block_order": [
                     "heading_block_yfYHVF",
-                    "text_block_hgW3DR",
                     "text_block_YpUc8B"
                   ]
                 }
@@ -2248,102 +2168,10 @@
                     "ai_gen_block_ab0bec8_dRmymN",
                     "ai_gen_block_3608cf6_FRaWaP"
                   ]
-                },
-                "grid_list_eF7r7e": {
-                  "type": "grid-list",
-                  "disabled": true,
-                  "settings": {
-                    "desktop_grid_columns": "1",
-                    "column_gap_desktop": 40,
-                    "row_gap_desktop": 0,
-                    "mobile_grid_columns": "1",
-                    "column_gap_mobile": 0,
-                    "row_gap_mobile": 15
-                  },
-                  "blocks": {
-                    "text_block_EnVxEh": {
-                      "type": "text-block",
-                      "settings": {
-                        "text": "<p>HOW TO MAKE <br/><br/>Mix one scoop per day with water, almond milk, or your favorite smoothie.</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": true,
-                        "top_spacing_desktop": 10,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "top_spacing_mobile": 10,
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
-                    "heading_block_wAMPBM": {
-                      "type": "heading-block",
-                      "disabled": true,
-                      "settings": {
-                        "subheading": "",
-                        "text": "",
-                        "tag_select": "h2",
-                        "text_color": "",
-                        "desktop_line_height": 0,
-                        "top_spacing_desktop": 40,
-                        "text_alignment_desktop": "left",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
-                    "text_block_JCM36W": {
-                      "type": "text-block",
-                      "disabled": true,
-                      "settings": {
-                        "text": "<p>WHEN TO USE<br/><br/>Ideal after workouts or anytime you need a clean, plant-based energy boost</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": true,
-                        "desktop_line_height": 0,
-                        "top_spacing_desktop": 10,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "top_spacing_mobile": 10,
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
-                    "ai_gen_block_89db828_8PtqA6": {
-                      "type": "ai_gen_block_89db828",
-                      "settings": {
-                        "button_text": "Buy Now",
-                        "sold_out_text": "Sold Out",
-                        "show_icon": false,
-                        "alignment": "flex-start",
-                        "min_width": 200,
-                        "padding_vertical": 14,
-                        "padding_horizontal": 24,
-                        "border_radius": 0,
-                        "border_width": 0,
-                        "font_size": 16,
-                        "font_weight": "400",
-                        "icon_size": 20,
-                        "button_color": "#000000",
-                        "button_text_color": "#ffffff",
-                        "button_hover_color": "#333333",
-                        "button_hover_text_color": "#ffffff",
-                        "border_color": "#000000",
-                        "border_hover_color": "#333333"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_block_EnVxEh",
-                    "heading_block_wAMPBM",
-                    "text_block_JCM36W",
-                    "ai_gen_block_89db828_8PtqA6"
-                  ]
                 }
               },
               "block_order": [
-                "grid_list_39DAGw",
-                "grid_list_eF7r7e"
+                "grid_list_39DAGw"
               ]
             }
           },
