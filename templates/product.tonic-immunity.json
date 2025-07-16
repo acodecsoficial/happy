@@ -1966,7 +1966,7 @@
         "result_item_9ia4b9"
       ],
       "custom_css": [
-        "h3.heading {border-bottom: 1px solid; border-top: none; padding-top: 0;}",
+        "h3.heading {border-bottom: 0px solid; border-top: none; padding-top: 0;}",
         "h2.heading {font-size: 50px !important;}",
         ".text-xs.leading-5 p {transition-duration: 0.3s; font-size: 22px; font-family: var(--font-heading-family); opacity: 0;}",
         ".d-grid .d-grid:hover .text-xs.leading-5 p {opacity: 1;}",
