@@ -17,6 +17,7 @@
      margin-bottom: 1rem !important;
     flex-direction: row !important;
     gap: 1rem;
+    align-items: center;
   }
 
   .cadence-selector .value-props {
@@ -26,4 +27,9 @@
   cadence-selector .radio-circle, .cadence-selector .option-details, .cadence-selector .price-container {
     display: none !important;
   }
+
+  .cadence-selector .radio-option, .cadence-selector .radio-option__button {
+    margin-bottom: 0px !important;
+  }
+
 }
