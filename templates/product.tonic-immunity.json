@@ -2764,6 +2764,7 @@
         "faq_hATLcE",
         "faq_LAfBXQ"
       ],
+      "disabled": true,
       "custom_css": [
         "#faqs {border-top: 1px solid;}"
       ],
