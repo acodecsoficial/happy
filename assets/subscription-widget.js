@@ -504,7 +504,7 @@ class SubscriptionWidget extends HTMLElement {
     const valueProps = activeCadence?.querySelector(".value-props")?.innerHTML || "";
 
     // Copy to active quantity block on mobile
-    const activeQtyBlock = this.querySelector(".quantity-grid-mobile .radio-option");
+    const activeQtyBlock = this.querySelector(".quantity-grid-mobile .radio-option.active");
     if (activeQtyBlock) {
       const mobileValueProps = activeQtyBlock.querySelector(".js-mobile-value-props");
       if (mobileValueProps) {
