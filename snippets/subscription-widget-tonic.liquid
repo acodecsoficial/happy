@@ -505,24 +505,29 @@
           </div>
         </button>
         <div class="value-props">
-          <div class="value-prop">
-            {% if tonic %}
-              {%- render 'icon-check', class: 'value-prop-icon' -%}
-            {% else %}
-                {%- render 'icon-shipping-box', class: 'value-prop-icon shipping-box' -%}
-            {% endif %}            
-            <p class="value-prop-text js-one-info-1">{{ bbb.default_info_one_1 }}</p>
-          </div>
-          <div class="value-prop">
-            {% if tonic %}
-              {%- render 'icon-check', class: 'value-prop-icon' -%}
-            {% else %}
-                {%- render 'icon-shipping-clock', class: 'value-prop-icon shipping-clock' -%}
-            {% endif %}
-            
-            <p class="value-prop-text js-one-info-2">{{ bbb.default_info_one_2 }}</p>
-          </div>
-        </div>
+  {% if bbb.default_info_one_1 != blank %}
+    <div class="value-prop">
+      {% if tonic %}
+        {%- render 'icon-check', class: 'value-prop-icon' -%}
+      {% else %}
+        {%- render 'icon-shipping-box', class: 'value-prop-icon shipping-box' -%}
+      {% endif %}
+      <p class="value-prop-text">{{ bbb.default_info_one_1 }}</p>
+    </div>
+  {% endif %}
+
+  {% if bbb.default_info_one_2 != blank %}
+    <div class="value-prop">
+      {% if tonic %}
+        {%- render 'icon-check', class: 'value-prop-icon' -%}
+      {% else %}
+        {%- render 'icon-shipping-clock', class: 'value-prop-icon shipping-clock' -%}
+      {% endif %}
+      <p class="value-prop-text">{{ bbb.default_info_one_2 }}</p>
+    </div>
+  {% endif %}
+</div>
+
       </div>
     {%- endunless -%}
     {% comment %} / ONE TIME {% endcomment %}
