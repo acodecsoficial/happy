@@ -492,26 +492,30 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateMobileValueProps() {
-    // Get active cadence value props
+  console.warn("Atualizando mobile value props para todos os blocos...");
 
-    console.warn(" mobile props *****************");
-    
-    const activeCadence =
-      this.state.cadence === "subscription"
-        ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
-        : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
+  // 1) Pega o bloco desktop ativo conforme o estado
+  const desktopActiveOption =
+    this.state.cadence === "subscription"
+      ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
+      : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
 
-    const valueProps = activeCadence?.querySelector(".value-props")?.innerHTML || "";
+  // 2) Extrai o HTML de .value-props desse bloco (ou string vazia)
+  const valuePropsHTML = desktopActiveOption
+    ? desktopActiveOption.querySelector(".value-props")?.innerHTML ?? ""
+    : "";
 
-    // Copy to active quantity block on mobile
-    const activeQtyBlock = this.querySelector(".quantity-grid-mobile .radio-option.active");
-    if (activeQtyBlock) {
-      const mobileValueProps = activeQtyBlock.querySelector(".js-mobile-value-props");
-      if (mobileValueProps) {
-        mobileValueProps.innerHTML = valueProps;
-      }
+  // 3) Itera por todos os blocos mobile e injeta o mesmo HTML
+  this.querySelectorAll(".quantity-grid-mobile .radio-option").forEach(mobileBlock => {
+    const mobileValueProps = mobileBlock.querySelector(".js-mobile-value-props");
+    if (mobileValueProps) {
+      mobileValueProps.innerHTML = valuePropsHTML;
+    } else {
+      console.warn("js-mobile-value-props não encontrado em:", mobileBlock);
     }
-  }
+  });
+}
+
 
   setQuantityBlock(block) {
     if (!block || this.config.product.is_bundle) return;
