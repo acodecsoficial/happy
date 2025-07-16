@@ -84,8 +84,8 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true,
             "tonic": true,
-            "default_info_sub_1": "Ships every months",
-            "default_info_sub_2": "Free shipping on all orders",
+            "default_info_sub_1": "Free shipping in 12 hours, every 30 days",
+            "default_info_sub_2": "Cancel your subscription anytime",
             "default_info_sub_3": "Cancel your subscription anytime",
             "default_info_sub_4": "",
             "default_info_one_1": "Ships in 12 hours",
@@ -104,12 +104,12 @@
             "num_bottles": "1",
             "badge": "",
             "product_content_text": "30-Day Supply",
-            "subs_info_1": "Free shipping in 12 hours, every 30 days",
-            "subs_info_2": "Free shipping on all orders",
-            "subs_info_3": "Cancel your subscription anytime",
-            "subs_info_4": "Ships in 12 hours",
-            "subs_info_5": "Ships in 12 hours",
-            "subs_info_6": "Ships in 12 hours"
+            "subs_info_1": "Free shipping in 12h, every 30 days",
+            "subs_info_2": "Cancel your subscription anytime",
+            "subs_info_3": "",
+            "subs_info_4": "",
+            "subs_info_5": "",
+            "subs_info_6": ""
           }
         },
         "quantity_block_hxax3a": {
@@ -123,10 +123,10 @@
             "num_bottles": "2",
             "badge": "",
             "product_content_text": "60-day Supply",
-            "subs_info_1": "Free shipping in 12 hours, every 60 days",
-            "subs_info_2": "Free shipping on all orders",
-            "subs_info_3": "Cancel your subscription anytime",
-            "subs_info_4": "Ships in 12 hours",
+            "subs_info_1": "Free shipping in 12h, every 30 days",
+            "subs_info_2": "Cancel your subscription anytime",
+            "subs_info_3": "",
+            "subs_info_4": "",
             "subs_info_5": "Ships in 12 hours",
             "subs_info_6": "Ships in 12 hours"
           }
