@@ -156,14 +156,14 @@
           "settings": {
             "title": "Ingredients",
             "text": "",
-            "image": "shopify://shop_images/HappyAging_CellRenewTonic_Facts_620x620_e09a2695-ca17-40bf-b1fd-bea430bd1e21.jpg"
+            "image": "shopify://shop_images/HappyAging_Calm_Facts_Amazon_679x802_bd8b1a1d-5c5d-4d32-9788-c85ff8bb5749.jpg"
           }
         },
         "aside_content_rBPMby": {
           "type": "aside_content",
           "settings": {
             "title": "How to use",
-            "text": "<ul><li>Shake the bottle. </li><li>Take one teaspoon (6 ml) every morning straight or mixed into water, juice or a smoothie. </li><li>One bottle lasts thirty days.</li></ul>"
+            "text": "<ul><li>Shake the bottle. </li><li>Use when you need to feel sharp, centered, and ready. Drink straight or mix with water or tea.<br/><br/></li></ul>"
           }
         },
         "essential_upsell_app_block_XLXFkq": {
@@ -2145,7 +2145,7 @@
           "settings": {
             "number": "",
             "step_title": "SIP (10 ml)",
-            "step_text": "Use when you need to feel sharp, <br>centered, and ready.<br>Drink straight or mix with water or tea."
+            "step_text": "Use when you need to feel sharp, centered, and ready. Drink straight or mix with water or tea."
           }
         }
       },
@@ -2306,6 +2306,7 @@
         "bottle_UCqRei",
         "bottle_TGFQAV"
       ],
+      "disabled": true,
       "name": "Longevity Circle",
       "settings": {}
     },
