@@ -2188,6 +2188,7 @@
     },
     "longevity_circle_EFCxTg": {
       "type": "longevity-circle",
+      "disabled": true,
       "name": "Longevity Circle",
       "settings": {}
     },
