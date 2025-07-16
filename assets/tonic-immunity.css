@@ -22,4 +22,8 @@
   .cadence-selector .value-props {
     display: none !important;
   }
+
+  cadence-selector .radio-circle, .cadence-selector .option-details, .cadence-selector .price-container {
+    display: none !important;
+  }
 }
