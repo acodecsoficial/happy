@@ -14,8 +14,8 @@
 
   .cadence-selector {
     order: -1;
-    margin-bottom: 1rem;
-    flex-direction: row;
+     margin-bottom: 1rem !important;
+    flex-direction: row !important;
     gap: 1rem;
   }
 }
