@@ -2258,7 +2258,6 @@
     },
     "image_banner_iQ4HPC": {
       "type": "image-banner",
-      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/martha_868fe994-f73b-494b-bb0a-272b0580bf56.png",
