@@ -83,7 +83,7 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true,
-            "tonic": true,
+            "tonic": false,
             "default_info_sub_1": "Ships in 12 hours",
             "default_info_sub_2": "",
             "default_info_sub_3": "",
@@ -101,14 +101,14 @@
             "plan_id": "693185478976",
             "title": "18-day supply",
             "sub_title": "",
-            "num_bottles": "30",
+            "num_bottles": "1",
             "badge": "",
             "product_content_text": "18-Day Supply",
             "subs_info_1": "Free shipping in 12 hours, every 18 days",
             "subs_info_2": "Cancel your subscription anytime",
             "subs_info_3": "",
             "subs_info_4": "",
-            "subs_info_5": "Ships in 12 hours",
+            "subs_info_5": "",
             "subs_info_6": ""
           }
         },
