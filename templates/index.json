@@ -74,7 +74,7 @@
         "button_color": "black",
         "text_color": "black",
         "sub_heading": "The Longevity Circle",
-        "title": "<p><em>Immunity. Calm. Relief.</em></p><h1><em>10x more absorption.</em></h1>",
+        "title": "<p><em>Immunity. Calm. Relief.</em></p><p><em>10x more absorption.</em></p>",
         "sup_word": "",
         "title_words": "",
         "text": "<p>GLOW STRONGER. STRESS LESS. FEEL BETTER.</p>",
@@ -601,7 +601,7 @@
           "type": "product",
           "settings": {
             "product": "immunity-tonic",
-            "title": "Liposomal vitamin C",
+            "title": "Liposomal Vitamin C",
             "info": "Immunity Tonic"
           }
         },
