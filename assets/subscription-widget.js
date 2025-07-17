@@ -492,52 +492,13 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateMobileValueProps() {
-  console.warn("Atualizando mobile value props...");
-
-  // 1) HTML de fallback: pega o .value‑props do bloco de cadence ativo (subscription vs one-time)
-  const desktopActiveOption = this.state.cadence === "subscription"
-    ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
-    : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
-  const fallbackHTML = desktopActiveOption
-    ? desktopActiveOption.querySelector(".value-props")?.innerHTML || ""
-    : "";
-
-  // 2) Para cada bloco mobile, tenta montar dinamicamente pelos data‑attributes…
+  console.warn("— updateMobileValueProps início —");
   this.querySelectorAll(".quantity-grid-mobile .radio-option").forEach(block => {
-    const isSubscription = this.state.cadence === "subscription";
-    const prefix       = isSubscription ? "subsinfo"   : "oneinfo";
-    const count        = isSubscription ? 6            : 2;
-
-    let html = "";
-    for (let i = 1; i <= count; i++) {
-      const key = prefix + i;          // ex: “subsinfo1” ou “oneinfo2”
-      const txt = block.dataset[key];  
-      if (!txt) continue;
-
-      // escolhe o ícone
-      const iconClass = isSubscription
-        ? "icon-subscription-sync"
-        : (i === 1 ? "icon-shipping-box" : "icon-shipping-clock");
-
-      html += `
-        <div class="value-prop">
-          <span class="value-prop-icon ${iconClass}"></span>
-          <p class="value-prop-text">${txt}</p>
-        </div>`;
-    }
-
-    // 3) Se não gerou nada, usa o fallback
-    if (!html.trim()) html = fallbackHTML;
-
-    // 4) Injeta no container mobile
-    const dest = block.querySelector(".js-mobile-value-props");
-    if (dest) {
-      dest.innerHTML = html;
-    } else {
-      console.warn("js-mobile-value-props não encontrado em:", block);
-    }
+    console.log("dataset deste bloco:", block.dataset);
   });
+  // … resto do código
 }
+
 
 
 
