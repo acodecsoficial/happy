@@ -332,45 +332,61 @@ class SubscriptionWidget extends HTMLElement {
 
 
   updatePriceElement(elements, price, comparePrice) {
-    if (!elements) return;
+  if (!elements) return;
 
-    if (elements.current) {
-      elements.current.innerText = this.formatPrice(price);
-    }
-
-    if (elements.compare) {
-      if (comparePrice && comparePrice > price) {
-        elements.compare.innerText = this.formatPrice(comparePrice);
-        elements.compare.classList.remove("hidden");
-      } else {
-        elements.compare.classList.add("hidden");
-      }
-    }
-
-    // atualiza todos os saves de subscription
-if (elements === this.elements.prices.subscription) {
-  document.querySelectorAll(".js-subscription-save").forEach(el => {
-    if (comparePrice && comparePrice > price) {
-      el.innerText = this.getSaveText(price, comparePrice);
-      el.classList.remove("hidden");
-    } else {
-      el.classList.add("hidden");
-    }
-  });
-}
-// para o one-time, você pode manter como estava:
-if (elements === this.elements.prices.onetime) {
-  document.querySelectorAll(".js-onetime-save-custom").forEach(el => {
-    if (comparePrice && comparePrice > price) {
-      el.innerText = this.getSaveText(price, comparePrice);
-      el.classList.remove("hidden");
-    } else {
-      el.classList.add("hidden");
-    }
-  });
-}
-
+  // atualiza current price
+  if (elements.current) {
+    elements.current.innerText = this.formatPrice(price);
   }
+
+  // atualiza compare price
+  if (elements.compare) {
+    if (comparePrice > price) {
+      elements.compare.innerText = this.formatPrice(comparePrice);
+      elements.compare.classList.remove("hidden");
+    } else {
+      elements.compare.classList.add("hidden");
+    }
+  }
+
+  // ❶ Subscription save → só dentro do cadence-selector
+  if (elements === this.elements.prices.subscription) {
+    this.querySelectorAll(".cadence-selector .js-subscription-save")
+      .forEach(el => {
+        if (comparePrice > price) {
+          el.innerText = this.getSaveText(price, comparePrice);
+          el.classList.remove("hidden");
+        } else {
+          el.classList.add("hidden");
+        }
+      });
+  }
+
+  // ❷ One‑time save → só dentro dos radios de quantidade mobile/desktop
+  if (elements === this.elements.prices.onetime) {
+    // desktop
+    this.querySelectorAll(".quantity-grid .js-onetime-save")
+      .forEach(el => {
+        if (comparePrice > price) {
+          el.innerText = this.getSaveText(price, comparePrice);
+          el.classList.remove("hidden");
+        } else {
+          el.classList.add("hidden");
+        }
+      });
+    // mobile
+    this.querySelectorAll(".quantity-grid-mobile .js-onetime-save-custom")
+      .forEach(el => {
+        if (comparePrice > price) {
+          el.innerText = this.getSaveText(price, comparePrice);
+          el.classList.remove("hidden");
+        } else {
+          el.classList.add("hidden");
+        }
+      });
+  }
+}
+
 
   updateQuantityPrices() {
     if (this.config.product.is_bundle) {
