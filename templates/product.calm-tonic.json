@@ -84,8 +84,8 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true,
             "tonic": true,
-            "default_info_sub_1": "Free shipping in 12 hours, every 30 days",
-            "default_info_sub_2": "Free shipping in 12 hours, every 30 days",
+            "default_info_sub_1": "Free shipping in 12 hours, every 36 days",
+            "default_info_sub_2": "Free shipping in 12 hours, every 35 days",
             "default_info_sub_3": "Cancel your subscription anytime",
             "default_info_sub_4": "Free shipping in 12 hours, every 30 days",
             "default_info_one_1": "Free shipping in 12 hours, every 30 days",
@@ -104,12 +104,12 @@
             "num_bottles": "30",
             "badge": "",
             "product_content_text": "30-Day Supply",
-            "subs_info_1": "Delivered every 18 days",
+            "subs_info_1": "Free shipping in 12 hours, every 18 days",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Ships in 12 hours",
             "subs_info_5": "",
-            "subs_info_6": ""
+            "subs_info_6": "Ships in 12 hours"
           }
         },
         "quantity_block_hxax3a": {
@@ -123,12 +123,12 @@
             "num_bottles": "",
             "badge": "",
             "product_content_text": "",
-            "subs_info_1": "Delivered every 36 days",
+            "subs_info_1": "Free shipping in 12 hours, every 35 days",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Ships in 12 hours",
-            "subs_info_5": "",
-            "subs_info_6": ""
+            "subs_info_5": "Free shipping on all orders",
+            "subs_info_6": "Ships in 12 hours"
           }
         },
         "text_RB6DBe": {
