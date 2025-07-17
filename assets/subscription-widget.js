@@ -521,7 +521,9 @@ class SubscriptionWidget extends HTMLElement {
 
       html += `
         <div class="value-prop">
-          <span class="value-prop-icon ${iconClass}"></span>
+          <span class="value-prop-icon ${iconClass}"><svg width="12" height="12" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:8px;">
+<path d="M10.5 1.54688L10.1016 1.94531L4.14844 7.875L3.75 8.27344L3.35156 7.875L0.398438 4.92188L0 4.52344L0.773438 3.72656L1.17188 4.125L3.75 6.67969L9.30469 1.14844L9.70312 0.75L10.5 1.54688Z" fill="#707070"/>
+</svg></span>
           <p class="value-prop-text">${txt}</p>
         </div>`;
     }
