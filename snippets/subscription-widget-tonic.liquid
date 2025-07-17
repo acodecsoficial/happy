@@ -292,8 +292,7 @@
               </div>
             </button>
 
-             {%- comment %} Aqui vem o bloco “value-props” idêntico ao desktop {% endcomment %}
-      <div class="value-props">
+            <div class="value-props">
         {% if tonic %}
           {%- render 'icon-check', class: 'value-prop-icon' -%}
         {% else %}
@@ -309,8 +308,6 @@
         {% endif %}
         <p class="value-prop-text js-one-info-2">{{ block.settings.subs_info_2 }}</p>
       </div>
-    </div>
-        
           </div>
         {% endfor %}
       </div>
