@@ -83,7 +83,7 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true,
-            "tonic": true,
+            "tonic": false,
             "default_info_sub_1": "Free shipping in 12 hours, every 30 days",
             "default_info_sub_2": "Free shipping in 12 hours, every 30 days",
             "default_info_sub_3": "Cancel your subscription anytime",
