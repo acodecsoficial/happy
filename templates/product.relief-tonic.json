@@ -1280,7 +1280,7 @@
         "title": "",
         "text": "",
         "image_desk": "shopify://shop_images/ia.jpg",
-        "image_height_desk": "adapt",
+        "image_height_desk": "square",
         "image_mob": "shopify://shop_images/ia.jpg",
         "image_height_mob": "adapt",
         "width": "full",
