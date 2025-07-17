@@ -97,7 +97,7 @@
           "type": "quantity_block",
           "settings": {
             "qty": 1,
-            "onetime_price": 0,
+            "onetime_price": 55,
             "plan_id": "693146779968",
             "title": "30-day Supply",
             "sub_title": "",
@@ -1280,7 +1280,7 @@
         "title": "",
         "text": "",
         "image_desk": "shopify://shop_images/ia.jpg",
-        "image_height_desk": "square",
+        "image_height_desk": "fit",
         "image_mob": "shopify://shop_images/ia.jpg",
         "image_height_mob": "adapt",
         "width": "full",
