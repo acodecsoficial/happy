@@ -492,26 +492,54 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateMobileValueProps() {
-    // Get active cadence value props
+  console.warn("Atualizando mobile value props...");
 
-    console.warn(" mobile props *****************");
-    
-    const activeCadence =
-      this.state.cadence === "subscription"
-        ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
-        : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
+  // 1) HTML de fallback: pega o .value‑props do bloco de cadence ativo (subscription vs one-time)
+  const desktopActiveOption = this.state.cadence === "subscription"
+    ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
+    : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
+  const fallbackHTML = desktopActiveOption
+    ? desktopActiveOption.querySelector(".value-props")?.innerHTML || ""
+    : "";
 
-    const valueProps = activeCadence?.querySelector(".value-props")?.innerHTML || "";
+  // 2) Para cada bloco mobile, tenta montar dinamicamente pelos data‑attributes…
+  this.querySelectorAll(".quantity-grid-mobile .radio-option").forEach(block => {
+    const isSubscription = this.state.cadence === "subscription";
+    const prefix       = isSubscription ? "subsinfo"   : "oneinfo";
+    const count        = isSubscription ? 6            : 2;
 
-    // Copy to active quantity block on mobile
-    const activeQtyBlock = this.querySelector(".quantity-grid-mobile .radio-option.active");
-    if (activeQtyBlock) {
-      const mobileValueProps = activeQtyBlock.querySelector(".js-mobile-value-props");
-      if (mobileValueProps) {
-        mobileValueProps.innerHTML = valueProps;
-      }
+    let html = "";
+    for (let i = 1; i <= count; i++) {
+      const key = prefix + i;          // ex: “subsinfo1” ou “oneinfo2”
+      const txt = block.dataset[key];  
+      if (!txt) continue;
+
+      // escolhe o ícone
+      const iconClass = isSubscription
+        ? "icon-subscription-sync"
+        : (i === 1 ? "icon-shipping-box" : "icon-shipping-clock");
+
+      html += `
+        <div class="value-prop">
+          <span class="value-prop-icon ${iconClass}"><svg width="12" height="12" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:8px;">
+<path d="M10.5 1.54688L10.1016 1.94531L4.14844 7.875L3.75 8.27344L3.35156 7.875L0.398438 4.92188L0 4.52344L0.773438 3.72656L1.17188 4.125L3.75 6.67969L9.30469 1.14844L9.70312 0.75L10.5 1.54688Z" fill="#707070"/>
+</svg></span>
+          <p class="value-prop-text">${txt}</p>
+        </div>`;
     }
-  }
+
+    // 3) Se não gerou nada, usa o fallback
+    if (!html.trim()) html = fallbackHTML;
+
+    // 4) Injeta no container mobile
+    const dest = block.querySelector(".js-mobile-value-props");
+    if (dest) {
+      dest.innerHTML = html;
+    } else {
+      console.warn("js-mobile-value-props não encontrado em:", block);
+    }
+  });
+}
 
 
 
