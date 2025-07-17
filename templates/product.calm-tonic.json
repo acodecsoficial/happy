@@ -1299,9 +1299,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_2.jpg",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_4ed4b16f-110e-4983-b235-310bb543d5e2.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/Sem_Titulo-1_6.jpg",
+        "image_mob": "shopify://shop_images/Sem_Titulo-1_4ed4b16f-110e-4983-b235-310bb543d5e2.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -2110,7 +2110,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/how_to.png",
+        "image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_27281022-99cb-44fd-899c-7e0a505a2228.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -2162,7 +2162,7 @@
       "settings": {
         "show_border_top": true,
         "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_1.png",
-        "second_image": "shopify://shop_images/how_to.png"
+        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_27281022-99cb-44fd-899c-7e0a505a2228.png"
       }
     },
     "image_banner_D6TgTi": {
