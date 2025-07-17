@@ -492,29 +492,43 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateMobileValueProps() {
-  console.warn("Atualizando mobile value props para todos os blocos...");
+  const isSubscription = this.state.cadence === "subscription";
+  // prefixo de data-attribute e quantidade de campos
+  const prefix = isSubscription ? "subsinfo" : "oneinfo";
+  const count  = isSubscription ? 6           : 2;
 
-  // 1) Pega o bloco desktop ativo conforme o estado
-  const desktopActiveOption =
-    this.state.cadence === "subscription"
-      ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
-      : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
+  // para cada bloco mobile...
+  this.querySelectorAll(".quantity-grid-mobile .radio-option").forEach(block => {
+    let html = "";
 
-  // 2) Extrai o HTML de .value-props desse bloco (ou string vazia)
-  const valuePropsHTML = desktopActiveOption
-    ? desktopActiveOption.querySelector(".value-props")?.innerHTML ?? ""
-    : "";
+    // monta um <div class="value-prop"> para cada data-[prefix][i]
+    for (let i = 1; i <= count; i++) {
+      const key = prefix + i;              // ex: “subsinfo1” ou “oneinfo2”
+      const txt = block.dataset[key];      // block.dataset.subsinfo1
+      if (!txt) continue;
 
-  // 3) Itera por todos os blocos mobile e injeta o mesmo HTML
-  this.querySelectorAll(".quantity-grid-mobile .radio-option").forEach(mobileBlock => {
-    const mobileValueProps = mobileBlock.querySelector(".js-mobile-value-props");
-    if (mobileValueProps) {
-      mobileValueProps.innerHTML = valuePropsHTML;
-    } else {
-      console.warn("js-mobile-value-props não encontrado em:", mobileBlock);
+      // escolhe o ícone
+      let iconClass;
+      if (isSubscription) {
+        iconClass = "icon-subscription-sync";
+      } else {
+        iconClass = i === 1 ? "icon-shipping-box" : "icon-shipping-clock";
+      }
+
+      html += `
+        <div class="value-prop">
+          <span class="value-prop-icon ${iconClass}"></span>
+          <p class="value-prop-text">${txt}</p>
+        </div>
+      `;
     }
+
+    // injeta no container
+    const dest = block.querySelector(".js-mobile-value-props");
+    if (dest) dest.innerHTML = html;
   });
 }
+
 
 
 
