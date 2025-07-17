@@ -52,4 +52,13 @@
     justify-content: center;
   }
 
+  
+
+}
+
+@media (max-width: 900px){
+  .quantity-grid-mobile .radio-option:nth-child(2) .value-props.js-mobile-value-props{
+    display: block !important;
+        border: 0px !important;
+  }
 }
