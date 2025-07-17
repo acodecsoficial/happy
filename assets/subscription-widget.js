@@ -324,24 +324,29 @@ class SubscriptionWidget extends HTMLElement {
       }
     }
 
-    if (elements.save) {
-      if (comparePrice && comparePrice > price) {
-        elements.save.innerText = this.getSaveText(price, comparePrice);
-        //elements.save.innerText = this.getSaveText(price, comparePrice);
-        
-        //const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
-        //oneTime.innerHTML = this.getSaveText(price, comparePrice);
-
-        if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
-          const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
-          //subsTime.innerHTML = this.getSaveText(price, comparePrice);          
-        }
-
-        elements.save.classList.remove("hidden");
-      } else {
-        elements.save.classList.add("hidden");
-      }
+    // atualiza todos os saves de subscription
+if (elements === this.elements.prices.subscription) {
+  document.querySelectorAll(".js-subscription-save").forEach(el => {
+    if (comparePrice && comparePrice > price) {
+      el.innerText = this.getSaveText(price, comparePrice);
+      el.classList.remove("hidden");
+    } else {
+      el.classList.add("hidden");
     }
+  });
+}
+// para o one-time, você pode manter como estava:
+if (elements === this.elements.prices.onetime) {
+  document.querySelectorAll(".js-onetime-save-custom").forEach(el => {
+    if (comparePrice && comparePrice > price) {
+      el.innerText = this.getSaveText(price, comparePrice);
+      el.classList.remove("hidden");
+    } else {
+      el.classList.add("hidden");
+    }
+  });
+}
+
   }
 
   updateQuantityPrices() {
