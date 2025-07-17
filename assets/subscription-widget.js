@@ -290,27 +290,32 @@ class SubscriptionWidget extends HTMLElement {
   const variant = this.getCurrentVariant();
   const plan    = this.getCurrentPlan();
 
+  // 0) Esconde tudo de subscription por default
+  this.querySelectorAll(".js-subscription-price-compare, .js-subscription-save")
+    .forEach(el => el.classList.add("hidden"));
+
   // ————— Subscription —————
   if (plan && this.state.cadence === 'subscription') {
     const subscriptionPrice        = plan.price * this.state.quantity;
     const subscriptionComparePrice = variant.price * this.state.quantity;
 
-    // Atualiza preços de subscription
-    this.updatePriceElement(
-      this.elements.prices.subscription,
-      subscriptionPrice,
-      subscriptionComparePrice
-    );
-
-    // Atualiza o preço periódico ("/mo")
+    // 1) Atualiza o preço periódico ("/mo")
     if (this.elements.prices.subscription.period) {
       this.elements.prices.subscription.period.innerText =
         this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
     }
-  } else {
-    // Se não estiver em subscription, esconde compare e save
-    this.elements.prices.subscription.compare?.classList.add("hidden");
-    this.elements.prices.subscription.save?.classList.add("hidden");
+    // 2) Mostra e preenche todas as compares de subscription
+    this.querySelectorAll(".js-subscription-price-compare")
+      .forEach(el => {
+        el.innerText = this.formatPrice(subscriptionComparePrice);
+        el.classList.remove("hidden");
+      });
+    // 3) Mostra e preenche todos os saves de subscription
+    this.querySelectorAll(".js-subscription-save")
+      .forEach(el => {
+        el.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
+        el.classList.remove("hidden");
+      });
   }
 
   // ————— One‑time —————
@@ -322,13 +327,14 @@ class SubscriptionWidget extends HTMLElement {
   const onetimePrice        = basePrice * this.state.quantity;
   const onetimeComparePrice = (variant.compare_at_price || variant.price) * this.state.quantity;
 
-  // Atualiza preços de one-time
+  // 4) Atualiza preços e saves de one‑time
   this.updatePriceElement(
     this.elements.prices.onetime,
     onetimePrice,
     onetimeComparePrice
   );
 }
+
 
 
   updatePriceElement(elements, price, comparePrice) {
