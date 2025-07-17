@@ -83,7 +83,7 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true,
-            "tonic": false,
+            "tonic": true,
             "default_info_sub_1": "Free shipping in 12 hours, every 30 days",
             "default_info_sub_2": "Free shipping in 12 hours, every 30 days",
             "default_info_sub_3": "Cancel your subscription anytime",
@@ -123,7 +123,7 @@
             "num_bottles": "",
             "badge": "",
             "product_content_text": "",
-            "subs_info_1": "Free shipping in 12 hours, every 36 days",
+            "subs_info_1": "Free shipping in 12 hours, every 35 days",
             "subs_info_2": "Free shipping on all orders",
             "subs_info_3": "Cancel your subscription anytime",
             "subs_info_4": "Ships in 12 hours",
