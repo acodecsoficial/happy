@@ -73,18 +73,18 @@
         "bg_color": "#f7f5eb",
         "button_color": "black",
         "text_color": "black",
-        "sub_heading": "Summer Sale",
-        "title": "<p>Science-backed formulas </p><p>for longevity.</p>",
+        "sub_heading": "The Longevity Circle",
+        "title": "<p><em>Immunity. Calm. Relief.</em></p><h1><em>10x more absorption.</em></h1>",
         "sup_word": "",
         "title_words": "",
-        "text": "<p>Free travel bag on all orders $120+</p>",
-        "cta_link": "shopify://collections/all",
-        "cta_text": "CLAIM OFFER",
+        "text": "<p>GLOW STRONGER. STRESS LESS. FEEL BETTER.</p>",
+        "cta_link": "shopify://collections/tonics",
+        "cta_text": "Shop Now",
         "text_garantia": "",
-        "banner_link": "shopify://collections/healthy-aging",
+        "banner_link": "shopify://collections/tonics",
         "banner_link_new_window": false,
-        "image_desktop": "shopify://shop_images/Banner_1_centralizado_smaller.gif",
-        "image_mobile": "shopify://shop_images/Banner_1_centralizado_smaller.gif",
+        "image_desktop": "shopify://shop_images/Tonics_arrivals.jpg",
+        "image_mobile": "shopify://shop_images/Tonics_arrivals.jpg",
         "video_url_desktop": "",
         "video_url_mobile": "",
         "mobile_image_first": true
@@ -581,29 +581,36 @@
     "products_carousel_6wT9GL": {
       "type": "products-carousel",
       "blocks": {
+        "product_hGQ7YU": {
+          "type": "product",
+          "settings": {
+            "product": "calm-tonic",
+            "title": "Liposomal Magnesium",
+            "info": "Calm Tonic"
+          }
+        },
+        "product_WEQKkB": {
+          "type": "product",
+          "settings": {
+            "product": "relief-tonic",
+            "title": "Liposomal Quercetin",
+            "info": "Relief tonic"
+          }
+        },
+        "product_WEQKkR": {
+          "type": "product",
+          "settings": {
+            "product": "immunity-tonic",
+            "title": "Liposomal vitamin C",
+            "info": "Immunity Tonic"
+          }
+        },
         "product_FBcxkh": {
           "type": "product",
           "settings": {
             "product": "nmn-cell-renew-tonic",
             "title": "Cell Renew Tonic",
             "info": "Liposomal NMN"
-          }
-        },
-        "product_hGQ7YU": {
-          "type": "product",
-          "settings": {
-            "product": "lean-muscle-formula",
-            "title": "Lean Muscle Formula",
-            "info": "Lean. Clean. Bloat-Free"
-          }
-        },
-        "product_WEQKkB": {
-          "type": "product",
-          "settings": {
-            "product": "hydroburn",
-            "title": "Hydro Burn",
-            "info": "Boost metabolism",
-            "image": "shopify://shop_images/Hydro_Burn_5a04bcdd-c864-4cf4-a2ff-a8b7d006f821.png"
           }
         },
         "product_ykxN6W": {
@@ -635,25 +642,16 @@
             "image": "shopify://shop_images/ef7870b7adad4811b3ad6eec17c1cfe2.png",
             "video": "shopify://files/videos/HappyAging_Hover_Calm.mp4"
           }
-        },
-        "product_WEQKkR": {
-          "type": "product",
-          "settings": {
-            "product": "kit-calm-and-glow",
-            "title": "Glow & Calm",
-            "info": "Radiant skin & inner balance in one powerful duo",
-            "image": "shopify://shop_images/Imagem_do_WhatsApp_de_2025-02-04_a_s_12.26.51_058f2d35.jpg"
-          }
         }
       },
       "block_order": [
-        "product_FBcxkh",
         "product_hGQ7YU",
         "product_WEQKkB",
+        "product_WEQKkR",
+        "product_FBcxkh",
         "product_ykxN6W",
         "product_maJCnE",
-        "product_9imzDR",
-        "product_WEQKkR"
+        "product_9imzDR"
       ],
       "settings": {
         "title": "the longevity lineup",
