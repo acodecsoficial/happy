@@ -332,45 +332,48 @@ class SubscriptionWidget extends HTMLElement {
 
 
   updatePriceElement(elements, price, comparePrice) {
-    if (!elements) return;
+  if (!elements) return;
 
-    if (elements.current) {
-      elements.current.innerText = this.formatPrice(price);
-    }
-
-    if (elements.compare) {
-      if (comparePrice && comparePrice > price) {
-        elements.compare.innerText = this.formatPrice(comparePrice);
-        elements.compare.classList.remove("hidden");
-      } else {
-        elements.compare.classList.add("hidden");
-      }
-    }
-
-    // atualiza todos os saves de subscription
-if (elements === this.elements.prices.subscription) {
-  document.querySelectorAll(".js-subscription-save").forEach(el => {
-    if (comparePrice && comparePrice > price) {
-      el.innerText = this.getSaveText(price, comparePrice);
-      el.classList.remove("hidden");
-    } else {
-      el.classList.add("hidden");
-    }
-  });
-}
-// para o one-time, você pode manter como estava:
-if (elements === this.elements.prices.onetime) {
-  document.querySelectorAll(".js-onetime-save-custom").forEach(el => {
-    if (comparePrice && comparePrice > price) {
-      el.innerText = this.getSaveText(price, comparePrice);
-      el.classList.remove("hidden");
-    } else {
-      el.classList.add("hidden");
-    }
-  });
-}
-
+  // 1) Atualiza preço atual
+  if (elements.current) {
+    elements.current.innerText = this.formatPrice(price);
   }
+
+  // 2) Atualiza compare
+  if (elements.compare) {
+    if (comparePrice > price) {
+      elements.compare.innerText = this.formatPrice(comparePrice);
+      elements.compare.classList.remove("hidden");
+    } else {
+      elements.compare.classList.add("hidden");
+    }
+  }
+
+  // 3) Atualiza todos os saves de subscription, mas só dentro deste widget
+  if (elements === this.elements.prices.subscription) {
+    this.querySelectorAll(".js-subscription-save").forEach(el => {
+      if (comparePrice > price) {
+        el.innerText = this.getSaveText(price, comparePrice);
+        el.classList.remove("hidden");
+      } else {
+        el.classList.add("hidden");
+      }
+    });
+  }
+
+  // 4) Atualiza todos os saves de one‑time, escopando ao widget
+  if (elements === this.elements.prices.onetime) {
+    this.querySelectorAll(".js-onetime-save-custom").forEach(el => {
+      if (comparePrice > price) {
+        el.innerText = this.getSaveText(price, comparePrice);
+        el.classList.remove("hidden");
+      } else {
+        el.classList.add("hidden");
+      }
+    });
+  }
+}
+
 
   updateQuantityPrices() {
     if (this.config.product.is_bundle) {
