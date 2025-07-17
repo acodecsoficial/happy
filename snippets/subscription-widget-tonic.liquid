@@ -292,7 +292,48 @@
                   </div>
                 </div>
               </button>
-              <div class="value-props js-mobile-value-props"></div>
+              <div class="value-props js-mobile-value-props">
+                {% if has_plan %}
+                  {% if bbb.default_info_sub_1 != blank %}
+                    <div class="value-prop">
+                      {% render 'icon-check', class: 'value-prop-icon' %}
+                      <p class="value-prop-text">{{ bbb.default_info_sub_1 }}</p>
+                    </div>
+                  {% endif %}
+                  {% if bbb.default_info_sub_1 != blank %}
+                    <div class="value-prop">
+                      {% render 'icon-check', class: 'value-prop-icon' %}
+                      <p class="value-prop-text">{{ bbb.default_info_sub_2 }}</p>
+                    </div>
+                  {% endif %}
+                  {% if bbb.default_info_sub_1 != blank %}
+                    <div class="value-prop">
+                      {% render 'icon-check', class: 'value-prop-icon' %}
+                      <p class="value-prop-text">{{ bbb.default_info_sub_3 }}</p>
+                    </div>
+                  {% endif %}
+                  {% if bbb.default_info_sub_1 != blank %}
+                    <div class="value-prop">
+                      {% render 'icon-check', class: 'value-prop-icon' %}
+                      <p class="value-prop-text">{{ bbb.default_info_sub_4 }}</p>
+                    </div>
+                  {% endif %}
+                {% else %}
+                  {% if bbb.default_info_one_1 != blank %}
+                    <div class="value-prop">
+                      {% render 'icon-shipping-box', class: 'value-prop-icon shipping-box' %}
+                      <p class="value-prop-text">{{ bbb.default_info_one_1 }}</p>
+                    </div>
+                  {% endif %}
+                  {% if bbb.default_info_one_1 != blank %}
+                    <div class="value-prop">
+                      {% render 'icon-shipping-box', class: 'value-prop-icon shipping-box' %}
+                      <p class="value-prop-text">{{ bbb.default_info_one_2 }}</p>
+                    </div>
+                  {% endif %}
+                  
+                {% endif %}
+              </div>
             </div>
           {% endfor %}
         </div>
