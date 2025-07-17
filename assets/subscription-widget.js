@@ -287,49 +287,26 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateSingleProductPrices() {
-  const variant = this.getCurrentVariant();
-  const plan    = this.getCurrentPlan();
+    const variant = this.getCurrentVariant();
+    const plan = this.getCurrentPlan();
 
-  // ————— Subscription —————
-  if (plan && this.state.cadence === 'subscription') {
-    const subscriptionPrice        = plan.price * this.state.quantity;
-    const subscriptionComparePrice = variant.price * this.state.quantity;
-
-    // Atualiza preços de subscription
-    this.updatePriceElement(
-      this.elements.prices.subscription,
-      subscriptionPrice,
-      subscriptionComparePrice
-    );
-
-    // Atualiza o preço periódico ("/mo")
-    if (this.elements.prices.subscription.period) {
-      this.elements.prices.subscription.period.innerText =
-        this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
+    // Always update subscription prices if plan exists
+    if (plan) {
+      const subscriptionPrice = plan.price * this.state.quantity;
+      const subscriptionComparePrice = variant.price * this.state.quantity;
+      this.updatePriceElement(this.elements.prices.subscription, subscriptionPrice, subscriptionComparePrice);
+      if (this.elements.prices.subscription.period) {
+        this.elements.prices.subscription.period.innerText = this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
+      }
     }
-  } else {
-    // Se não estiver em subscription, esconde compare e save
-    this.elements.prices.subscription.compare?.classList.add("hidden");
-    this.elements.prices.subscription.save?.classList.add("hidden");
+
+    // Always update one-time prices
+    const activeBlock = this.querySelector(".quantity-block.active");
+    const onetimePrice = (activeBlock ? Number(activeBlock.dataset.onetimePrice) : variant.price) * this.state.quantity;
+    const compareAtPrice = (variant.compare_at_price || variant.price) * this.state.quantity;
+
+    this.updatePriceElement(this.elements.prices.onetime, onetimePrice, compareAtPrice);
   }
-
-  // ————— One‑time —————
-  const activeBlock = this.querySelector(".quantity-block.active");
-  const basePrice   = activeBlock
-    ? Number(activeBlock.dataset.onetimePrice)
-    : variant.price;
-
-  const onetimePrice        = basePrice * this.state.quantity;
-  const onetimeComparePrice = (variant.compare_at_price || variant.price) * this.state.quantity;
-
-  // Atualiza preços de one-time
-  this.updatePriceElement(
-    this.elements.prices.onetime,
-    onetimePrice,
-    onetimeComparePrice
-  );
-}
-
 
   updatePriceElement(elements, price, comparePrice) {
     if (!elements) return;
