@@ -288,6 +288,7 @@
             "highlight_image_item_BLJ8i3": {
               "type": "highlight-image-item",
               "name": "Highlight image item",
+              "disabled": true,
               "settings": {
                 "image": "shopify://shop_images/banner_e93fb5b0-91c3-4a82-b806-4e47bb1a813c.jpg",
                 "image_max_width_mobile": 1000,
