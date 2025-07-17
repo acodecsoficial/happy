@@ -15,13 +15,13 @@
         "custom_liquid_mxftaL": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\n\n.showMobile{\n  display:none;\n}\n.showDesktop{\n  display:block;\n}\n\n.radio-option.active .option-label {\n    font-weight:600;\n}\n\n@media screen and (min-width:1360px) and (max-width:1445px){\n    .site-container {\n        padding-left: 5rem;\n        padding-right: 5rem;\n    }\n}\n\n.site-container > .product--left {\n    justify-content: center;\n}\n\ncadence-selector .radio-option:nth-child(2) .value-props{\n    display:none!important;\n    \n}\n\ncadence-selector .radio-option:nth-child(2){\n    border:1px solid #d7d7d7;\n    margin-bottom:0!important;\n}\n\ncadence-selector .radio-option:nth-child(2) .radio-option__button{\n    margin-bottom:0;\n}\n\n\n\n@media screen and (max-width:540px){\n  .showMobile{\n  display:block;\n}\n.showDesktop{\n  display:none;\n}\n}\n\nspan.oke-sr-label-text {\n    color: #707070!important;\n}\n\n.oke-sr-count {\n    color: #707070!important;\n    text-transform: uppercase;\n}  \n\ncadence-selector.cadence-selector, .quantity-grid-mobile {\n    padding: 10px;\n    border: 1px solid #d7d7d7;\n}\n\ncadence-selector .radio-option.active, .quantity-grid-mobile .radio-option.active {\n    border: 2px solid #9caf88 !important;\n    border-color: #9caf88 !important;\n}\n#product-form-template--24636152283456__main > subscription-widget > cadence-selector > div {\n  border-color: #9caf88 !important;\n}\n\ncadence-selector .value-props, .quantity-grid-mobile .value-props{\n    display: flex!important;\n    flex-direction: column;\n}\n\ncadence-selector .value-props .value-prop:nth-child(2),\ncadence-selector .value-props .value-prop:nth-child(4){\n    border: 1px solid red;\n    display:none;\n}\n\n.value-prop {\n    color: #707070;\n}\n\ncadence-selector.cadence-selector .radio-option.active .radio-dot {\n    background: #9caf88 !important;\n}\n\ncadence-selector.cadence-selector .radio-option.active .radio-circle {\n    border-color: #9caf88 !important;\n}\n\ncadence-selector.cadence-selector .option-details {\n    border:2px solid red;\n    display:none!important;\n}\n\np.option-label-text {\n    color:#1e1e1e;\n    font-size:14px;\n}\n\n.truemed-entry-box {\n    display: none!important;\n}\n\n.moneyinfo{\n  color:#707070;\n  font-size:10px;\n  margin-top:-10px!important;\n}\n\n.moneyback{\n  color:#1e1e1e;\n}\n\n.icon-text-block span {\n    color: #1e1e1e;\n}\n\n.quantity-grid-mobile .option-details {display: none;}\n\n\n@media screen and (max-width:540px){\n    cadence-selector.cadence-selector .radio-option {\n        max-width: 50%;\n    }\n    \n    cadence-selector.cadence-selector .radio-option p{\n        font-size: 10px!important;\n    }\n    \n    \n    \n    \n\nspan.main-tag-product {\n    text-align: center;\n        padding: 3px;\n        height: auto;\n}\n\n\n\np.save-text.js-subscription-save {\n\n    right: 5rem!important;\n    font-size: 10px;\n    background: #9CAF88;\n    padding: 5px;\n\n}\n\n}\n\n@media screen and (min-width:500px){\n    .cadence-selector .radio-option {\n        margin-bottom: 10px;\n    }\n}\n\np.save-text.js-subscription-save {\n    position: absolute;\n    right: 6%;\n    font-size: 10px;\n    background: #9CAF88;\n    padding: 5px;\n    color: #000000bf;\n}\n\n@media (max-width: 900px){\n.site-container {\n  margin-left: auto;\n  margin-right: auto;\n  max-width: 1440px;\n  padding-left: 0;\n  padding-right: 0;\n}\n\n.product__info-wrapper, .thumbnail-slider, #shopify-section-template--24672251937088__results_list_LqxNh4 .site-container, header.site-container{\npadding-left: 2rem;\n  padding-right: 2rem;\n}\n.slider-button .icon {\n  height: 33px;\n  width: 33px;\n}\n\n</style>"
+            "custom_liquid": "<style>\n\n.showMobile{\n  display:none;\n}\n.showDesktop{\n  display:block;\n}\n\n.radio-option.active .option-label {\n    font-weight:600;\n}\n\n@media screen and (min-width:1360px) and (max-width:1445px){\n    .site-container {\n        padding-left: 5rem;\n        padding-right: 5rem;\n    }\n}\n\n.site-container > .product--left {\n    justify-content: center;\n}\n\n\n\ncadence-selector .radio-option:nth-child(2){\n    border:1px solid #d7d7d7;\n    margin-bottom:0!important;\n}\n\ncadence-selector .radio-option:nth-child(2) .radio-option__button{\n    margin-bottom:0;\n}\n\n\n\n@media screen and (max-width:540px){\n  .showMobile{\n  display:block;\n}\n.showDesktop{\n  display:none;\n}\n}\n\nspan.oke-sr-label-text {\n    color: #707070!important;\n}\n\n.oke-sr-count {\n    color: #707070!important;\n    text-transform: uppercase;\n}  \n\ncadence-selector.cadence-selector, .quantity-grid-mobile {\n    padding: 10px;\n    border: 1px solid #d7d7d7;\n}\n\ncadence-selector .radio-option.active, .quantity-grid-mobile .radio-option.active {\n    border: 2px solid #9caf88 !important;\n    border-color: #9caf88 !important;\n}\n#product-form-template--24636152283456__main > subscription-widget > cadence-selector > div {\n  border-color: #9caf88 !important;\n}\n\ncadence-selector .value-props, .quantity-grid-mobile .value-props{\n    display: flex!important;\n    flex-direction: column;\n}\n\ncadence-selector .value-props .value-prop:nth-child(2),\ncadence-selector .value-props .value-prop:nth-child(4){\n    border: 1px solid red;\n    display:none;\n}\n\n.value-prop {\n    color: #707070;\n}\n\ncadence-selector.cadence-selector .radio-option.active .radio-dot {\n    background: #9caf88 !important;\n}\n\ncadence-selector.cadence-selector .radio-option.active .radio-circle {\n    border-color: #9caf88 !important;\n}\n\ncadence-selector.cadence-selector .option-details {\n    border:2px solid red;\n    display:none!important;\n}\n\np.option-label-text {\n    color:#1e1e1e;\n    font-size:14px;\n}\n\n.truemed-entry-box {\n    display: none!important;\n}\n\n.moneyinfo{\n  color:#707070;\n  font-size:10px;\n  margin-top:-10px!important;\n}\n\n.moneyback{\n  color:#1e1e1e;\n}\n\n.icon-text-block span {\n    color: #1e1e1e;\n}\n\n.quantity-grid-mobile .option-details {display: none;}\n\n\n@media screen and (max-width:540px){\n    cadence-selector.cadence-selector .radio-option {\n        max-width: 50%;\n    }\n    \n    cadence-selector.cadence-selector .radio-option p{\n        font-size: 10px!important;\n    }\n    \n    \n    .quantity-grid-mobile .radio-option:nth-child(2) button.radio-option__button {\n        padding-bottom:0!important;\n        margin-bottom:0!important;\n        /*border: 1px solid red!important;*/\n    }\n\nspan.main-tag-product {\n    text-align: center;\n        padding: 3px;\n        height: auto;\n}\n\n\n\np.save-text.js-subscription-save {\n\n    right: 5rem!important;\n    font-size: 10px;\n    background: #9CAF88;\n    padding: 5px;\n\n}\n\n}\n\n@media screen and (min-width:500px){\n    .cadence-selector .radio-option {\n        margin-bottom: 10px;\n    }\n}\n\np.save-text.js-subscription-save {\n    position: absolute;\n    right: 6%;\n    font-size: 10px;\n    background: #9CAF88;\n    padding: 5px;\n    color: #000000bf;\n}\n\n@media (max-width: 900px){\n.site-container {\n  margin-left: auto;\n  margin-right: auto;\n  max-width: 1440px;\n  padding-left: 0;\n  padding-right: 0;\n}\n\n.product__info-wrapper, .thumbnail-slider, #shopify-section-template--24672251937088__results_list_LqxNh4 .site-container, header.site-container{\npadding-left: 2rem;\n  padding-right: 2rem;\n}\n.slider-button .icon {\n  height: 33px;\n  width: 33px;\n}\n\n</style>"
           }
         },
         "okendo_star_rating_XckRMV": {
           "type": "shopify://apps/okendo/blocks/star-rating/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "product": "calm-tonic"
+            "product": "nmn-cell-renew-tonic"
           }
         },
         "custom_reviews_yRiyrR": {
@@ -31,6 +31,7 @@
         },
         "title": {
           "type": "title",
+          "name": "Liposomal quercetin",
           "settings": {
             "badge_text": "{{ product.metafields.happy_aging.title_tag.value }}"
           }
@@ -44,20 +45,19 @@
         "icon_text_list_xhFzwP": {
           "type": "icon_text_list",
           "settings": {
-            "icon_1": "shopify://shop_images/7d32a2286aa3de49012b9c0d508ab963.svg",
-            "text_1": "200 mg of highly absorbable magnesium to support mental focus",
-            "icon_2": "shopify://shop_images/94da2372bdb22b79a5368f327627a142.svg",
-            "text_2": "Clinically dosed and powered by liposomal technology for 10x better absorption",
-            "icon_3": "shopify://shop_images/ad6a354a5d14273257788002a1766c9c.svg",
-            "text_3": "Helps quiet a racing mind before moments that matter",
-            "icon_4": "shopify://shop_images/63a9ddb24ab88f3f285b45c12149f9a3.svg",
-            "text_4": "Keeps you sharp and clear under pressure",
-            "icon_5": "shopify://shop_images/3bfd882676c2bec06b91c1b38ebc1d1e.svg",
-            "text_5": "Eases tension without making you feel sluggish",
-            "icon_6": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad_ed0c3b49-bdc7-47da-b677-92e1d98cc669.svg",
-            "text_6": "Smooth, consistent mental energy with no highs or crashes",
-            "icon_7": "shopify://shop_images/64a79d36ae0e2e2691de0e828a9bf5b2.svg",
-            "text_7": "Simple daily ritual that fits your routine",
+            "icon_1": "shopify://shop_images/bae5e5212b120841d494a0b4b32d603d.svg",
+            "text_1": "200mg of easy-to-absorb Quercetin in every dose",
+            "icon_2": "shopify://shop_images/279073419e382c203b783a255fff9f45.svg",
+            "text_2": "Allergy defense",
+            "icon_3": "shopify://shop_images/b513d7e33428a61a9d27f5fd84160448.svg",
+            "text_3": "Supports your body through daily stress and physical activity",
+            "icon_4": "shopify://shop_images/8cfe688ae3ddee9ba115e14117bdcd4c.svg",
+            "text_4": "Makes breathing easier during allergy season",
+            "icon_5": "shopify://shop_images/ed6e8b9677a05a67b446b9560a67cf75.svg",
+            "text_5": "Speeds up recovery after workouts or busy days",
+            "icon_6": "shopify://shop_images/f1d86c817e4e9f49237db2e196d0d5db.svg",
+            "text_6": "Easy on your stomach, vegan, non-GMO, and no added sugar",
+            "text_7": "",
             "text_size_desktop": 14,
             "text_size_mobile": 14,
             "icon_size_desktop": 16,
@@ -88,7 +88,7 @@
             "default_info_sub_2": "",
             "default_info_sub_3": "",
             "default_info_sub_4": "",
-            "default_info_one_1": "",
+            "default_info_one_1": "Ships in 12 hours",
             "default_info_one_2": "",
             "product_content_text_default_kit": ""
           }
@@ -98,15 +98,15 @@
           "settings": {
             "qty": 1,
             "onetime_price": 55,
-            "plan_id": "693185478976",
-            "title": "18-day supply",
+            "plan_id": "693146779968",
+            "title": "30-day Supply",
             "sub_title": "",
             "num_bottles": "1",
             "badge": "",
-            "product_content_text": "18-Day Supply",
+            "product_content_text": "30-day Supply",
             "subs_info_1": "Free shipping in 12 hours",
             "subs_info_2": "Cancel your subscription anytime",
-            "subs_info_3": "Ships every 18 days",
+            "subs_info_3": "Ships every 30 days",
             "subs_info_4": "",
             "subs_info_5": "",
             "subs_info_6": ""
@@ -117,15 +117,15 @@
           "settings": {
             "qty": 2,
             "onetime_price": 55,
-            "plan_id": "693185675584",
-            "title": "36-day supply",
+            "plan_id": "693185708352",
+            "title": "60-day Supply",
             "sub_title": "",
-            "num_bottles": "",
+            "num_bottles": "2",
             "badge": "",
-            "product_content_text": "",
+            "product_content_text": "60-day supply",
             "subs_info_1": "Free shipping in 12 hours",
             "subs_info_2": "Cancel your subscription anytime",
-            "subs_info_3": "Ships every 36 days",
+            "subs_info_3": "Ships every 60 days",
             "subs_info_4": "",
             "subs_info_5": "",
             "subs_info_6": ""
@@ -156,14 +156,14 @@
           "settings": {
             "title": "Ingredients",
             "text": "",
-            "image": "shopify://shop_images/HappyAging_Calm_Facts_Amazon_679x802_d98a863a-ebe7-4f3f-b343-5ab9dfba414b.jpg"
+            "image": "shopify://shop_images/HappyAging_Relief_Facts_620x620_ff51d99e-7a64-4470-ac7a-7ef2404b7204.jpg"
           }
         },
         "aside_content_rBPMby": {
           "type": "aside_content",
           "settings": {
             "title": "How to use",
-            "text": "<ul><li>Shake the bottle. </li><li>Use when you need to feel sharp, centered, and ready. Drink straight or mix with water or tea.<br/><br/></li></ul>"
+            "text": "<ul><li>Shake the bottle. </li><li>Take one teaspoon (6 ml) every morning straight or mixed into water, juice or a smoothie. </li><li>One bottle lasts thirty days.</li></ul>"
           }
         },
         "essential_upsell_app_block_XLXFkq": {
@@ -193,11 +193,11 @@
         "@media screen and (max-width: 500px) {.grid-product-title {display: flex; align-items: center; gap: 15px; } span.main-tag-product {display: flex; margin-top: 0; } li#Slide-template--24670584504640__main-40407209967936 {margin-left: -2%; width: 103%; max-width: 121%; }}"
       ],
       "settings": {
-        "old_product": "calm-tonic",
+        "old_product": "relief-tonic",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "highlight_color": "#ffa614",
-        "title_label": "<p>Calm Tonic</p>",
+        "title_label": "<p>Relief tonic</p>",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "cover",
@@ -210,6 +210,52 @@
         "padding_top": 12,
         "padding_bottom": 12
       }
+    },
+    "marquee_pMqq4Y": {
+      "type": "marquee",
+      "blocks": {
+        "text_F9fHWN": {
+          "type": "text",
+          "settings": {
+            "text": "Clinically-Validated Doses"
+          }
+        },
+        "text_z7tkeC": {
+          "type": "text",
+          "settings": {
+            "text": "Premium Ingredients"
+          }
+        },
+        "text_8c4bkD": {
+          "type": "text",
+          "settings": {
+            "text": "100% Natural"
+          }
+        },
+        "text_LhF6BY": {
+          "type": "text",
+          "settings": {
+            "text": "Vegan & Gluten-Free"
+          }
+        },
+        "text_qkCpGH": {
+          "type": "text",
+          "settings": {
+            "text": "No Added Sugars"
+          }
+        }
+      },
+      "block_order": [
+        "text_F9fHWN",
+        "text_z7tkeC",
+        "text_8c4bkD",
+        "text_LhF6BY",
+        "text_qkCpGH"
+      ],
+      "custom_css": [
+        "site-marqueex {border-top: 1px solid;}"
+      ],
+      "settings": {}
     },
     "landing_section_GdHXgh": {
       "type": "landing-section",
@@ -243,9 +289,9 @@
               "type": "highlight-image-item",
               "name": "Highlight image item",
               "settings": {
-                "image": "shopify://shop_images/Poli_Alves_r1_03E_9920.png",
+                "image": "shopify://shop_images/banner.jpg",
                 "image_max_width_mobile": 1000,
-                "title": "<h2>FIRST <em>liquid liposomal NMN.</em></h2>",
+                "title": "",
                 "title_size": 48,
                 "title_line_height": 42,
                 "title_color": "",
@@ -371,7 +417,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p>FIRST <em>liquid liposomal NMN.</em></p>",
+                        "text": "<p>REFRESH YOUR <em>body’s response</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 50,
@@ -403,7 +449,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Before the mirror reflects it, <em>your cells already know.</em></h2>",
+                        "text": "<h2><em>Relief Tonic steps in when your body reacts strongly to everyday triggers like pollen, stress, or pollution.</em></h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -418,7 +464,7 @@
                     "text_block_EJp8ft": {
                       "type": "text-block",
                       "settings": {
-                        "text": "<p>What matters isn't how much you take but how well your body absorbs it.<strong> Cell Renew Tonic by Happy Aging</strong> is formulated for up to 10x better absorption, delivering the right dose with ease and without discomfort.</p>",
+                        "text": "<p>It helps your system stay steady, helps keep your body running smoothly, and keeps discomfort in check before it slows you down.<br/>The secret? 200mg of Quercetin in every dose. Thanks to advanced liposomal technology, your body absorbs it faster and uses it better.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -455,15 +501,15 @@
         "section_inner_WBhNK7",
         "section_inner_YmreYw"
       ],
-      "disabled": true,
       "custom_css": [
-        ".site-container {padding-left: 0; padding-right: 0;}"
+        ".site-container {padding-left: 0; padding-right: 0;}",
+        "@media (min-width: 1000px) {#shopify-block-AM1F5dFhTcHluS3V3b__highlight_image_item_BLJ8i3 .highlight-image__title {display: none; }}"
       ],
       "settings": {
         "background_color": "",
         "full_width": false,
         "max_width": 1440,
-        "top_spacing": 0,
+        "top_spacing": 80,
         "bottom_spacing": 50,
         "use_top_border": false,
         "use_bottom_border": true,
@@ -472,92 +518,6 @@
         "bottom_spacing_mobile": 0,
         "use_top_border_mobile": false,
         "use_bottom_border_mobile": false
-      }
-    },
-    "marquee_pMqq4Y": {
-      "type": "marquee",
-      "blocks": {
-        "text_F9fHWN": {
-          "type": "text",
-          "settings": {
-            "text": "Clinically-Validated Doses"
-          }
-        },
-        "text_z7tkeC": {
-          "type": "text",
-          "settings": {
-            "text": "Premium Ingredients"
-          }
-        },
-        "text_8c4bkD": {
-          "type": "text",
-          "settings": {
-            "text": "100% Natural"
-          }
-        },
-        "text_LhF6BY": {
-          "type": "text",
-          "settings": {
-            "text": "Vegan & Gluten-Free"
-          }
-        },
-        "text_qkCpGH": {
-          "type": "text",
-          "settings": {
-            "text": "No Added Sugars"
-          }
-        }
-      },
-      "block_order": [
-        "text_F9fHWN",
-        "text_z7tkeC",
-        "text_8c4bkD",
-        "text_LhF6BY",
-        "text_qkCpGH"
-      ],
-      "custom_css": [
-        "site-marqueex {border-top: 1px solid;}"
-      ],
-      "settings": {}
-    },
-    "focus_you_Lh73aQ": {
-      "type": "focus-you",
-      "blocks": {
-        "row_NPeT7w": {
-          "type": "row",
-          "settings": {
-            "image_position": "left",
-            "image": "shopify://shop_images/Image_3_36db5ab5-6dbf-48cd-8984-66c109f9d15c.png",
-            "heading_1": "Get centered, stay clear",
-            "text_1": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>",
-            "heading_2": "Stay laser-focused",
-            "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>",
-            "button_text": "",
-            "button_url": "/"
-          }
-        },
-        "row_tWbad6": {
-          "type": "row",
-          "settings": {
-            "image_position": "right",
-            "image": "shopify://shop_images/Image_5.png",
-            "heading_1": "Feel consistent energy",
-            "text_1": "<p>Clinically dosed and powered by liposomal technology for 10x better absorption. More magnesium reaches your cells for stronger nerve signaling, steadier energy, and fewer focus crashes.</p>",
-            "heading_2": "Kick-in focus, right on time",
-            "text_2": "<p>Starts working in about 1 hour and reaches full power in 2–4 hours, delivering the clarity and balance you need exactly when the pressure is on.</p>",
-            "button_text": "",
-            "button_url": "/"
-          }
-        }
-      },
-      "block_order": [
-        "row_NPeT7w",
-        "row_tWbad6"
-      ],
-      "name": "Focus You",
-      "settings": {
-        "title": "<p>FOCUS YOU <em>can feel</em></p>",
-        "subtitle": ""
       }
     },
     "landing_section_KWgCJm": {
@@ -833,7 +793,7 @@
                   "name": "Heading block",
                   "settings": {
                     "subheading": "",
-                    "text": "<p>WHY HAPPY AGING <em>is your advantage</em></p>",
+                    "text": "<p>WHY choose <em>Happy Aging?</em></p>",
                     "tag_select": "h2",
                     "text_color": "",
                     "letter_spacing": 0,
@@ -892,7 +852,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>One</em></p>",
+                        "text": "<p><em>Fast Relief</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 0,
@@ -905,7 +865,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>A single teaspoon helps you feel more focused and balanced.</p>",
+                        "text": "<p>Daily support for discomforts and staying balanced.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -942,7 +902,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>200 mg</em></p>",
+                        "text": "<p><em>Effective Dose</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -954,7 +914,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>A clinical dose of magnesium to support mental clarity.</p>",
+                        "text": "<p>200mg of high-performing Quercetin.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -990,7 +950,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Clean</em></p>",
+                        "text": "<p><em>Clean Formula</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1002,7 +962,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>No sugar. No gluten. Third-party tested.</p>",
+                        "text": "<p>No fillers. No sugar. Vegan. Gluten-free. Third-party tested.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1039,7 +999,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Quick</em></p>",
+                        "text": "<p><em>Convenient</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1051,7 +1011,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Drink it in seconds, no pills, no prep.</p>",
+                        "text": "<p>A small 6 mL tonic that fits easily into your routine.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1089,7 +1049,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Science</em></p>",
+                        "text": "<p><em>Science-Backed</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1101,7 +1061,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Backed by research. Full transparency builds lifelong trust.</p>",
+                        "text": "<p>Formulated with research and tested for quality.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1166,7 +1126,7 @@
         "text_nLEfLV": {
           "type": "text",
           "settings": {
-            "text": "<p>BUILD to perform</p>",
+            "text": "<p>MADE FOR <em>real life</em></p>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1201,7 +1161,7 @@
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Stay sharp in high-stress meetings</h3>",
+            "text": "<h3>Breathe easier and start your mornings clear</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1210,7 +1170,16 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Regroup quickly between tasks</h3>",
+            "text": "<h3>Stay steady through the seasons</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_wmjQzt": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Reduce Inflammation</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1219,7 +1188,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Helps with mood swings (PMS, perimenopause)</h3>",
+            "text": "<h3>Recover quicker after workouts<br/></h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1228,7 +1197,7 @@
         "text_Ucicgf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Loosens tight muscles caused by stress</h3>",
+            "text": "<h3>Keep your cells protected from daily wear</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1237,7 +1206,16 @@
         "text_fAHjYt": {
           "type": "text",
           "settings": {
-            "text": "<h3>Tastes like refreshing citrus, no bitterness</h3>",
+            "text": "<h3>Gentle formula you can use long-term</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_xCnNhb": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Fresh Citrus Nutty flavor that’s easy to enjoy</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1283,9 +1261,11 @@
         "spacing_A7Nw66",
         "text_QghNzh",
         "text_BFqHcM",
+        "text_wmjQzt",
         "text_FHXk9x",
         "text_Ucicgf",
         "text_fAHjYt",
+        "text_xCnNhb",
         "spacing_GFqXPi",
         "button_iKqTjh"
       ],
@@ -1299,9 +1279,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_4ed4b16f-110e-4983-b235-310bb543d5e2.jpg",
+        "image_desk": "shopify://shop_images/ia.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/Sem_Titulo-1_4ed4b16f-110e-4983-b235-310bb543d5e2.jpg",
+        "image_mob": "shopify://shop_images/ia.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -1317,6 +1297,97 @@
         "wrap_content_mobile": true,
         "spacing_desktop": "lg:py-0",
         "spacing_mobile": "py-0"
+      }
+    },
+    "how_it_helps_YPBkT9": {
+      "type": "how-it-helps",
+      "blocks": {
+        "card_6a7aP7": {
+          "type": "card",
+          "settings": {
+            "card_title": "Keeps things steady",
+            "card_text": "Helps your body reset before symptoms hit."
+          }
+        },
+        "card_cMMrq6": {
+          "type": "card",
+          "settings": {
+            "card_title": "Soothes discomfort",
+            "card_text": "Eases tension when you're feeling worn out."
+          }
+        },
+        "card_mVB6G9": {
+          "type": "card",
+          "settings": {
+            "card_title": "Triggers all around",
+            "card_text": "Pollen, stress, and pollution can throw your body off."
+          }
+        },
+        "card_h6ztFg": {
+          "type": "card",
+          "settings": {
+            "card_title": "Shields your cells",
+            "card_text": "Daily protection against stress and wear."
+          }
+        },
+        "card_zCpNRP": {
+          "type": "card",
+          "settings": {
+            "card_title": "Absorbs 10x better",
+            "card_text": "Liposomal technology delivers real results, fast."
+          }
+        }
+      },
+      "block_order": [
+        "card_6a7aP7",
+        "card_cMMrq6",
+        "card_mVB6G9",
+        "card_h6ztFg",
+        "card_zCpNRP"
+      ],
+      "name": "How it Helps",
+      "settings": {
+        "heading": "<p>HOW <em>it helps</em></p>"
+      }
+    },
+    "focus_you_Lh73aQ": {
+      "type": "focus-you",
+      "blocks": {
+        "row_NPeT7w": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/kopv-160-1.jpg",
+            "heading_1": "Easier breathing, fewer sniffles",
+            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
+            "heading_2": "Less tension, more comfort",
+            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
+            "button_text": "",
+            "button_url": "/"
+          }
+        },
+        "row_tWbad6": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "image": "shopify://shop_images/produtoa.jpg",
+            "heading_1": "Everyday defense, all day long",
+            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
+            "heading_2": "Steady energy, no crash",
+            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
+            "button_text": "",
+            "button_url": "/"
+          }
+        }
+      },
+      "block_order": [
+        "row_NPeT7w",
+        "row_tWbad6"
+      ],
+      "name": "Focus You",
+      "settings": {
+        "title": "<p>Feel <em>the Change</em></p>",
+        "subtitle": ""
       }
     },
     "landing_section_3RqYFU": {
@@ -1351,7 +1422,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>HOW MAGNESIUM <em>works in your body</em></p>",
+                "text": "<p>Built on Science, <em>made for You.</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
@@ -1430,7 +1501,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_b92ad3e1-6ae1-429e-a102-ccbd8bfed659.png",
+                        "icon_image": "shopify://shop_images/Icons_4cdc66a5-6316-4435-bce7-cbfcfa7eb21b.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1453,7 +1524,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Supports brain and nerve health helps you think more clearly</h3>",
+                        "text": "<h3>200mg of quality Quercetin per dose</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1487,7 +1558,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_1_8a8314c9-a01d-4713-b9f4-3f501f60d867.png",
+                        "icon_image": "shopify://shop_images/Icons-1_b73e55cf-5a21-4bf1-9a2d-49698f180e10.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1510,7 +1581,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Helps your body process stress and stay emotionally balanced</h3>",
+                        "text": "<h3>Supports your body’s natural balance</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1527,11 +1598,69 @@
                     "ai_gen_block_e8307fc_MD8FaW",
                     "text_block_yVAyLD"
                   ]
+                },
+                "grid_list_Wy3bat": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 0,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 0,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "ai_gen_block_e8307fc_qkywbz": {
+                      "type": "ai_gen_block_e8307fc",
+                      "name": "Icon Block",
+                      "settings": {
+                        "icon_image": "shopify://shop_images/Icons-2_e5e55a7a-276d-49fc-8859-d71b70ba4927.svg",
+                        "alt_text": "",
+                        "link": "",
+                        "alignment": "flex-start",
+                        "icon_width": 45,
+                        "icon_width_mobile": 45,
+                        "icon_padding": 8,
+                        "padding_top": 4,
+                        "padding_bottom": 4,
+                        "padding_top_mobile": 16,
+                        "padding_bottom_mobile": 4,
+                        "background_color": "rgba(0,0,0,0)",
+                        "border_radius": 8,
+                        "border_width": 0,
+                        "border_color": "#e0e0e0",
+                        "hover_scale": 1.1
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_yWLTLg": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h3>Helps protect your body from everyday damage</h3>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "desktop_font_size": 16,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "ai_gen_block_e8307fc_qkywbz",
+                    "text_block_yWLTLg"
+                  ]
                 }
               },
               "block_order": [
                 "grid_list_LdfKtp",
-                "grid_list_eDGmxC"
+                "grid_list_eDGmxC",
+                "grid_list_Wy3bat"
               ]
             },
             "section_inner_MQ4cBF": {
@@ -1563,7 +1692,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1.png",
+                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1_1.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
@@ -1603,6 +1732,7 @@
                 "bottom_spacing_desktop": 0,
                 "left_spacing_desktop": 50,
                 "right_spacing_desktop": 0,
+                "mobile_max_width": 0,
                 "mobile_grid_columns": "1",
                 "mobile_horizontal_alignment": "start",
                 "mobile_vertical_alignment": "start",
@@ -1627,6 +1757,7 @@
                     "bottom_spacing_desktop": 0,
                     "left_spacing_desktop": 0,
                     "right_spacing_desktop": 0,
+                    "mobile_max_width": 0,
                     "mobile_grid_columns": "1",
                     "mobile_horizontal_alignment": "start",
                     "mobile_vertical_alignment": "start",
@@ -1654,7 +1785,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Component_4_5e1ff22a-e1f7-4910-bd1e-e6a38ea2d57a.png",
+                            "icon_image": "shopify://shop_images/Component_4.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1677,7 +1808,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Promotes better connection between brain cells for faster response and learning</h3>",
+                            "text": "<h3>Kind to your digestion and easy to take</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1711,7 +1842,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_2_8224ef2b-f32c-40e0-afb0-43872cd3cd3a.png",
+                            "icon_image": "shopify://shop_images/Icons-3_8263dc8c-e001-450c-ae28-24657170c7cd.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1734,7 +1865,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>The liposomal format makes it easier to absorb and gentler on your gut</h3>",
+                            "text": "<h3>Clean and simple ingredients</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1800,41 +1931,41 @@
         "result_item_zqgCJN": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Day_1.jpg",
+            "image": "shopify://shop_images/pink-blossoms-on-branch.jpg",
             "title": "DAY 1",
-            "text": "<p>Cellular activation starts, NAD⁺ pathways switch on</p>"
+            "text": "<p>Feel the first signs of relief as your body begins to respond to seasonal triggers more calmly.</p>"
           }
         },
         "result_item_B9jKrw": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Day_7.jpg",
+            "image": "shopify://shop_images/Less_congestion_better_breathing_and_more_energy_throughout_the_day..png",
             "title": "DAY 7",
-            "text": "<p>Brighter mornings, lighter fatigue, clearer mind</p>"
+            "text": "<p>Less congestion, better breathing, and more energy throughout the day.</p>"
           }
         },
         "result_item_KtxBQ9": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Day_30.jpg",
+            "image": "shopify://shop_images/a-cocktail-with-a-touch-of-class.jpg",
             "title": "DAY 30",
-            "text": "<p>Balanced energy, steadier mood, sharper focus</p>"
+            "text": "<p>Discomfort feels more manageable. You recover quicker from stress and activity.</p>"
           }
         },
         "result_item_rqhTek": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Badge_3.png",
+            "image": "shopify://shop_images/Badge_25fcedcc-1467-4235-a188-bdd4b96283fb.png",
             "title": "DAY 60",
-            "text": "<p>Noticeable resilience, faster recovery, lasting strength</p>"
+            "text": "<p>Everyday triggers affect you less. You wake up clearer and feel more resilient.</p>"
           }
         },
         "result_item_9ia4b9": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Sem_Titulo-1_d79c27dc-ee5f-4079-a79c-c6a38baf4803.jpg",
+            "image": "shopify://shop_images/redish-brown-leaves-showing-the-colors-of-autumn.jpg",
             "title": "DAY 90",
-            "text": "<p>Plus consolidated vitality, sustainable clarity, empowered aging</p>"
+            "text": "<p>Your body stays balanced and supported through every season and every challenge.</p>"
           }
         }
       },
@@ -1845,7 +1976,6 @@
         "result_item_rqhTek",
         "result_item_9ia4b9"
       ],
-      "disabled": true,
       "custom_css": [
         "h3.heading {border-bottom: 1px solid; border-top: none; padding-top: 0;}",
         "h2.heading {font-size: 50px !important;}",
@@ -1855,7 +1985,7 @@
       ],
       "name": "Results List",
       "settings": {
-        "title": "YOUR NMN JOURNEY : v<em>itality milestones</em>"
+        "title": "Your Relief <em>Timeline</em>"
       }
     },
     "ingredients_tabs_nKwUYB": {
@@ -1874,36 +2004,17 @@
           "type": "tab",
           "settings": {
             "tab_title": "Phosphatidylcholine Liposomes",
-            "tab_heading": "Phosphatidylcholine Liposomes",
-            "tab_text": "<p>Tiny natural bubbles that shuttle magnesium through the gut wall, giving you up to 10× more absorption—and faster results you can feel.<br/><br/></p>",
-            "tab_image": "shopify://shop_images/Badge_a5304f30-2ba0-497c-89c2-830294649372.png"
-          }
-        },
-        "tab_FJMkiw": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Non‑GMO Sunflower Lecithin",
-            "tab_heading": "Non‑GMO Sunflower Lecithin",
-            "tab_text": "<p>Extra phosphatidylcholine that nourishes cell membranes and supports healthy brain signaling while keeping the formula soy‑free.</p>",
-            "tab_image": "shopify://shop_images/Badge-1.png"
-          }
-        },
-        "tab_MP3FYR": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Organic Citrus Extract",
-            "tab_heading": "Organic Citrus Extract",
-            "tab_text": "<p>Adds a refreshing taste and a hit of natural antioxidants, so your daily shot is both enjoyable and good for you.</p>",
-            "tab_image": "shopify://shop_images/Badge4.png"
+            "tab_heading": "Magnesium Bisglycinate",
+            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
+            "tab_image": "shopify://shop_images/Image_5.png"
           }
         }
       },
       "block_order": [
         "tab_GQg8LN",
-        "tab_g36fUn",
-        "tab_FJMkiw",
-        "tab_MP3FYR"
+        "tab_g36fUn"
       ],
+      "disabled": true,
       "name": "Ingredients Tabs",
       "settings": {
         "heading": "THOUGHTFULLY SOURCED,",
@@ -1975,7 +2086,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<h2>TAKE BACK <em>your energy</em></h2><h4><em>Clinically proven NMN raised blood NAD⁺ by up to 60% in eight weeks</em></h4>",
+                        "text": "<h2>Easy to take, <em>hard to beat</em></h2>",
                         "tag_select": "h1",
                         "text_color": "",
                         "desktop_font_size": 0,
@@ -1988,12 +2099,12 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>A single teaspoon delivers 400 mg NMN in liposomal form, giving your body up to 10x more usable NMN than standard capsules. Expect faster uptake, real energy, sharper focus in the first week.</p>",
+                        "text": "<p><em>One 6 mL tonic. 200mg of Quercetin. Fast support with clean ingredients.</em></p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
                         "text_alignment_desktop": "left",
-                        "tooltip_texts": "Footnotes1o tooltip: Eight week human trial on liposomal NMN, NAD⁺ increaseSegundo: Independent data comparing liposomal and standard NMN absorption<br>Terceiro: Townsend Newsletter 2021, intracellular NAD⁺ rise with liposomal NMN",
+                        "tooltip_texts": "",
                         "text_alignment_mobile": "left"
                       },
                       "blocks": {}
@@ -2005,38 +2116,12 @@
                         "mobile_spacing": 10
                       },
                       "blocks": {}
-                    },
-                    "ai_gen_block_3608cf6_FRaWaP": {
-                      "type": "ai_gen_block_3608cf6",
-                      "settings": {
-                        "button_text": "Buy Now",
-                        "button_link": "#",
-                        "background_color": "#000000",
-                        "text_color": "#ffffff",
-                        "border_color": "#000000",
-                        "hover_background_color": "#333333",
-                        "hover_text_color": "#ffffff",
-                        "hover_border_color": "#333333",
-                        "font_size": 32,
-                        "font_weight": "400",
-                        "width_type": "custom",
-                        "custom_width": 55,
-                        "min_width": 0,
-                        "alignment": "left",
-                        "padding_vertical": 10,
-                        "padding_horizontal": 60,
-                        "border_width": 1,
-                        "border_radius": 0,
-                        "mobile_full_width": true
-                      },
-                      "blocks": {}
                     }
                   },
                   "block_order": [
                     "heading_block_h8V6Bc",
                     "text_block_3Rzw4W",
-                    "ai_gen_block_ab0bec8_dRmymN",
-                    "ai_gen_block_3608cf6_FRaWaP"
+                    "ai_gen_block_ab0bec8_dRmymN"
                   ]
                 }
               },
@@ -2101,6 +2186,61 @@
         "use_bottom_border_mobile": false
       }
     },
+    "longevity_circle_EFCxTg": {
+      "type": "longevity-circle",
+      "disabled": true,
+      "name": "Longevity Circle",
+      "settings": {}
+    },
+    "subscription_products_R9LyAA": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_fFXXLn": {
+          "type": "product_card",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "quantity_block_jmAMT8": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146779968
+          }
+        },
+        "quantity_block_JdYBxG": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        }
+      },
+      "block_order": [
+        "product_card_fFXXLn",
+        "quantity_block_jmAMT8",
+        "quantity_block_JdYBxG"
+      ],
+      "disabled": true,
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<p>Complete <em>your routine</em></p>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
+        "show_all_link": true
+      }
+    },
+    "easy_to_take_mAqb98": {
+      "type": "easy-to-take",
+      "name": "Easy to Take",
+      "settings": {
+        "title": "EASY TO TAKE, hard to beat",
+        "subtitle": "One 6 mL tonic. 200mg of Quercetin. Fast support with clean ingredients.",
+        "desktop_image": "shopify://shop_images/Relief_Tonic-banner.jpg",
+        "mobile_image": "shopify://shop_images/Relief_Tonic.png"
+      }
+    },
     "image_banner_azPmDb": {
       "type": "image-banner",
       "custom_css": [
@@ -2110,7 +2250,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_27281022-99cb-44fd-899c-7e0a505a2228.png",
+        "image": "shopify://shop_images/Poli_Alves_r1_relief_2.gif",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -2144,8 +2284,8 @@
           "type": "step",
           "settings": {
             "number": "",
-            "step_title": "SIP (10 ml)",
-            "step_text": "Use when you need to feel sharp, centered, and ready. Drink straight or mix with water or tea."
+            "step_title": "TAKE ONE 6 ML TONIC A DAY.",
+            "step_text": "Drink it straight or mix with water, juice, or your favorite drink. Easy to take anywhere."
           }
         }
       },
@@ -2161,8 +2301,8 @@
       ],
       "settings": {
         "show_border_top": true,
-        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_1.png",
-        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_27281022-99cb-44fd-899c-7e0a505a2228.png"
+        "first_image": "shopify://shop_images/drfink.jpg",
+        "second_image": "shopify://shop_images/Poli_Alves_r1_relief_2.gif"
       }
     },
     "image_banner_D6TgTi": {
@@ -2175,7 +2315,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_6.png",
+        "image": "shopify://shop_images/drfink.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -2186,297 +2326,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "longevity_circle_cNW94D": {
-      "type": "longevity-circle",
-      "blocks": {
-        "bottle_9aipyC": {
-          "type": "bottle",
-          "settings": {
-            "image": "shopify://shop_images/Calm_b4e6bc48-64a9-419c-97cd-47e1dcb48548.png",
-            "alt": "",
-            "block_title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
-            "block_subtitle": "<p>LIPOSOMAL <em>magnesium</em></p>",
-            "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
-            "block_link": "shopify://products/biological-age-test",
-            "block_botao": "<p>COMPLETE <em>your routine</em></p>"
-          }
-        },
-        "bottle_UAhy8F": {
-          "type": "bottle",
-          "settings": {
-            "image": "shopify://shop_images/Cell.png",
-            "alt": "",
-            "block_title": "<p>WELCOME TO THE longevity circle</p>",
-            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
-            "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
-            "block_link": "",
-            "block_botao": "<p>COMPLETE your routine</p>"
-          }
-        },
-        "bottle_fgPcGQ": {
-          "type": "bottle",
-          "settings": {
-            "image": "shopify://shop_images/immunity.png",
-            "alt": "",
-            "block_title": "<p>WELCOME TO THE longevity circle</p>",
-            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
-            "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
-            "block_link": "",
-            "block_botao": "<p>COMPLETE your routine</p>"
-          }
-        },
-        "bottle_Dtazi6": {
-          "type": "bottle",
-          "settings": {
-            "image": "shopify://shop_images/liver.png",
-            "alt": "",
-            "block_title": "<p>WELCOME TO THE longevity circle</p>",
-            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
-            "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
-            "block_link": "",
-            "block_botao": "<p>COMPLETE your routine</p>"
-          }
-        },
-        "bottle_XVyqzL": {
-          "type": "bottle",
-          "settings": {
-            "image": "shopify://shop_images/sleep.png",
-            "alt": "",
-            "block_title": "<p>WELCOME TO THE longevity circle</p>",
-            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
-            "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
-            "block_link": "",
-            "block_botao": "<p>COMPLETE your routine</p>"
-          }
-        },
-        "bottle_FbgAPe": {
-          "type": "bottle",
-          "settings": {
-            "image": "shopify://shop_images/radiance.png",
-            "alt": "",
-            "block_title": "<p>WELCOME TO THE longevity circle</p>",
-            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
-            "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
-            "block_link": "",
-            "block_botao": "<p>COMPLETE your routine</p>"
-          }
-        },
-        "bottle_UCqRei": {
-          "type": "bottle",
-          "settings": {
-            "image": "shopify://shop_images/Component_20.png",
-            "alt": "",
-            "block_title": "<p>WELCOME TO THE longevity circle</p>",
-            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
-            "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
-            "block_link": "",
-            "block_botao": "<p>COMPLETE your routine</p>"
-          }
-        },
-        "bottle_TGFQAV": {
-          "type": "bottle",
-          "settings": {
-            "image": "shopify://shop_images/relief.png",
-            "alt": "",
-            "block_title": "<p>WELCOME TO THE longevity circle</p>",
-            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
-            "block_subtitle2": "<p>CALM TONIC</p>",
-            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
-            "block_link": "",
-            "block_botao": "<p>COMPLETE your routine</p>"
-          }
-        }
-      },
-      "block_order": [
-        "bottle_9aipyC",
-        "bottle_UAhy8F",
-        "bottle_fgPcGQ",
-        "bottle_Dtazi6",
-        "bottle_XVyqzL",
-        "bottle_FbgAPe",
-        "bottle_UCqRei",
-        "bottle_TGFQAV"
-      ],
-      "disabled": true,
-      "name": "Longevity Circle",
-      "settings": {}
-    },
-    "subscription_products_TYLphp": {
-      "type": "subscription-products",
-      "blocks": {
-        "product_card_kD4Ywj": {
-          "type": "product_card",
-          "settings": {
-            "product": "nmn-cell-renew-tonic"
-          }
-        },
-        "quantity_block_dm3xwy": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693146779968
-          }
-        },
-        "quantity_block_Cic4Hq": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 2,
-            "subscription_id": 693146812736
-          }
-        },
-        "product_card_GPfNYa": {
-          "type": "product_card",
-          "settings": {
-            "product": "beach-tote-with-logo"
-          }
-        },
-        "quantity_block_9JGYXt": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 8989978009
-          }
-        },
-        "quantity_block_zN9QVw": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 2,
-            "subscription_id": 5454547744
-          }
-        }
-      },
-      "block_order": [
-        "product_card_kD4Ywj",
-        "quantity_block_dm3xwy",
-        "quantity_block_Cic4Hq",
-        "product_card_GPfNYa",
-        "quantity_block_9JGYXt",
-        "quantity_block_zN9QVw"
-      ],
-      "disabled": true,
-      "name": "Subscription Products",
-      "settings": {
-        "title": "<p>Complete <em>your routine</em></p>",
-        "subtitle": "",
-        "all_link_url": "shopify://collections/all",
-        "all_link_text": "<p>SEE ALL <em>products</em></p>",
-        "show_all_link": true
-      }
-    },
-    "subscription_products_REAFz7": {
-      "type": "subscription-products",
-      "blocks": {
-        "product_card_P7bfAG": {
-          "type": "product_card",
-          "settings": {
-            "product": "nmn-cell-renew-tonic"
-          }
-        },
-        "quantity_block_rDFzDD": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693146779968
-          }
-        },
-        "quantity_block_4Ar93H": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 2,
-            "subscription_id": 693146812736
-          }
-        },
-        "product_card_EqYHRd": {
-          "type": "product_card",
-          "settings": {
-            "product": "longevity-shots"
-          }
-        },
-        "quantity_block_iLhfAL": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693008924992
-          }
-        },
-        "quantity_block_UnGwmd": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693008859456
-          }
-        },
-        "product_card_C74ntJ": {
-          "type": "product_card",
-          "settings": {
-            "product": "lean-muscle-formula"
-          }
-        },
-        "quantity_block_VDhw77": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693107163456
-          }
-        },
-        "quantity_block_Lp7Bq7": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693109719360
-          }
-        },
-        "product_card_yBdbd4": {
-          "type": "product_card",
-          "settings": {
-            "product": "hydroburn"
-          }
-        },
-        "quantity_block_PfB698": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693066072384
-          }
-        },
-        "quantity_block_AxDbPp": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693090320704
-          }
-        }
-      },
-      "block_order": [
-        "product_card_P7bfAG",
-        "quantity_block_rDFzDD",
-        "quantity_block_4Ar93H",
-        "product_card_EqYHRd",
-        "quantity_block_iLhfAL",
-        "quantity_block_UnGwmd",
-        "product_card_C74ntJ",
-        "quantity_block_VDhw77",
-        "quantity_block_Lp7Bq7",
-        "product_card_yBdbd4",
-        "quantity_block_PfB698",
-        "quantity_block_AxDbPp"
-      ],
-      "name": "Subscription Products",
-      "settings": {
-        "title": "<p>Complete <em>your routine</em></p>",
-        "subtitle": "",
-        "all_link_url": "shopify://collections/all",
-        "all_link_text": "<p>SEE ALL <em>products</em></p>",
-        "show_all_link": true
       }
     },
     "wines": {
@@ -2684,98 +2533,221 @@
         "use_bottom_border_mobile": false
       }
     },
+    "image_with_text_wjQyxT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hiF9jj": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>START FEELING BETTER, <em>every day</em></p>",
+            "heading_size": "h1",
+            "line-height": 1
+          }
+        },
+        "text_yLR6KH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Relief Tonic helps your body bounce back from daily triggers with confidence. Refreshing citrus taste. Clean ingredients. Real results. Start today.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_8rgaR3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hiF9jj",
+        "text_yLR6KH",
+        "button_8rgaR3"
+      ],
+      "custom_css": [],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/martha.png",
+        "height": "adapt",
+        "landscape": false,
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "subscription_products_3Ghc7P": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_eP9tUd": {
+          "type": "product_card",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "quantity_block_Dm6g9x": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146779968
+          }
+        },
+        "quantity_block_jX7JVy": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        },
+        "product_card_8bAMNz": {
+          "type": "product_card",
+          "settings": {
+            "product": "longevity-shots"
+          }
+        },
+        "quantity_block_W4hnjK": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693008924992
+          }
+        },
+        "quantity_block_nCwbCw": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693008859456
+          }
+        },
+        "product_card_dkGQxL": {
+          "type": "product_card",
+          "settings": {
+            "product": "lean-muscle-formula"
+          }
+        },
+        "quantity_block_VbKMeJ": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693107163456
+          }
+        },
+        "quantity_block_WYU38p": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693109719360
+          }
+        },
+        "product_card_e3yRJR": {
+          "type": "product_card",
+          "settings": {
+            "product": "hydroburn"
+          }
+        },
+        "quantity_block_Jary7p": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693066072384
+          }
+        },
+        "quantity_block_DGUgjf": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693090320704
+          }
+        }
+      },
+      "block_order": [
+        "product_card_eP9tUd",
+        "quantity_block_Dm6g9x",
+        "quantity_block_jX7JVy",
+        "product_card_8bAMNz",
+        "quantity_block_W4hnjK",
+        "quantity_block_nCwbCw",
+        "product_card_dkGQxL",
+        "quantity_block_VbKMeJ",
+        "quantity_block_WYU38p",
+        "product_card_e3yRJR",
+        "quantity_block_Jary7p",
+        "quantity_block_DGUgjf"
+      ],
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<p>Complete <em>your routine</em></p>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
+        "show_all_link": true
+      }
+    },
     "faqs_9gMU6f": {
       "type": "faqs",
       "blocks": {
         "faq_1": {
           "type": "faq",
           "settings": {
-            "question": "1. What exactly is Calm Tonic?",
-            "answer": "<p>A fast-working magnesium shot that helps you focus, stay composed, and think more clearly when life gets busy.</p>"
+            "question": "1. What is Relief Tonic?",
+            "answer": "<p>Relief Tonic is a fast-absorbing liquid supplement with 200mg of liposomal Quercetin per serving. It helps reduce daily discomfort from things like allergies, stress, or intense activity.</p>"
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
-            "question": "2. Who is it for?",
-            "answer": "<p>Anyone dealing with stress, intense focus demands, or hormonal mood swings from professionals to creatives to caregivers.</p>"
+            "question": "2. How do I take it?",
+            "answer": "<p>Take one 6 mL tonic per day. You can drink it straight or mix it with a beverage.</p>"
           }
         },
         "faq_3": {
           "type": "faq",
           "settings": {
-            "question": "3. What type of magnesium is used?",
-            "answer": "<p>We use magnesium bisglycinate, known for its high bioavailability and gentleness on digestion no laxative effect.<br/></p>"
+            "question": "3. When will I feel the effects?",
+            "answer": "<p>Many people notice clearer breathing and more energy within the first few days. Full benefits build over time.</p>"
           }
         },
         "faq_dfmbmf": {
           "type": "faq",
           "settings": {
-            "question": "4. What is liposomal delivery and why does it matter?",
-            "answer": "<p>Liposomal technology wraps magnesium in a phospholipid layer, helping it pass through your digestive system and reach your cells more efficiently.</p>"
+            "question": "4. Is it safe for daily use?",
+            "answer": "<p>Yes! Relief Tonic is made with clean ingredients and is gentle enough for daily support.</p>"
           }
         },
         "faq_6UkLU3": {
           "type": "faq",
           "settings": {
-            "question": "5. How much magnesium is in each dose?",
-            "answer": "<p>Each 10 mL shot contains 212 mg of magnesium a clinically effective dose to support focus and balance.</p>"
+            "question": "5. Is it like an allergy medicine?",
+            "answer": "<p>Not exactly. Relief Tonic doesn’t cause drowsiness or block symptoms—it helps your body react more calmly from the start.</p>"
           }
         },
         "faq_LWdF6e": {
           "type": "faq",
           "settings": {
-            "question": "6. Will it make me tired?",
-            "answer": "<p>No. Calm Tonic supports focus and clarity without sedation. It helps your body stay balanced without slowing you down.</p>"
+            "question": "6. What does it taste like?",
+            "answer": "<p>It has a refreshing Citrus Nutty flavor that’s smooth, lightly tart, and easy to enjoy.</p>"
           }
         },
         "faq_aEfQyb": {
           "type": "faq",
           "settings": {
-            "question": "7. Can I use it every day?",
-            "answer": "<p>Yes. It’s safe and effective for daily use.</p>"
+            "question": "7. Can I take it with other supplements?",
+            "answer": "<p>Yes. Relief Tonic is safe to pair with other supplements in your routine.</p>"
           }
         },
         "faq_WqnYjM": {
           "type": "faq",
           "settings": {
-            "question": "8. Is it habit-forming?",
-            "answer": "<p>Not at all. It’s non-habit forming and designed for consistent support.</p>"
-          }
-        },
-        "faq_Eb44T8": {
-          "type": "faq",
-          "settings": {
-            "question": "9. Can I take it with other supplements or medications?",
-            "answer": "<p>In most cases, yes. But consult your healthcare provider if you’re on medication or managing a specific condition.</p>"
-          }
-        },
-        "faq_YaakAD": {
-          "type": "faq",
-          "settings": {
-            "question": "10. Will it help me sleep?",
-            "answer": "<p>While it’s not designed as a sleep aid, many users report improved sleep quality due to lower evening tension and fewer muscle cramps.</p>"
-          }
-        },
-        "faq_3CWMLC": {
-          "type": "faq",
-          "settings": {
-            "question": "11. Is it clean and allergy-safe?",
-            "answer": "<p>Yes. It contains no sugar, gluten, soy, dairy, or synthetic fillers just what your body and mind need.</p>"
-          }
-        },
-        "faq_d6qTBa": {
-          "type": "faq",
-          "settings": {
-            "question": "12. Is it safe for all ages?",
-            "answer": "<p>Calm Tonic is formulated for adults. If you’re considering it for teens or older adults with specific conditions, consult a healthcare provider.</p>"
-          }
-        },
-        "faq_ynT9nx": {
-          "type": "faq",
-          "settings": {
-            "question": "13. Where is it made?",
-            "answer": "<p>Formulated and produced in the USA under strict quality standards, with third-party testing and a public Certificate of Analysis for every batch.</p>"
+            "question": "8. Is it vegan and gluten-free?",
+            "answer": "<p>Yes. It’s vegan, non-GMO, gluten-free, and made without fillers or added sugar.</p>"
           }
         }
       },
@@ -2787,12 +2759,7 @@
         "faq_6UkLU3",
         "faq_LWdF6e",
         "faq_aEfQyb",
-        "faq_WqnYjM",
-        "faq_Eb44T8",
-        "faq_YaakAD",
-        "faq_3CWMLC",
-        "faq_d6qTBa",
-        "faq_ynT9nx"
+        "faq_WqnYjM"
       ],
       "custom_css": [
         "#faqs {border-top: 1px solid;}"
@@ -2826,24 +2793,27 @@
   },
   "order": [
     "main",
-    "landing_section_GdHXgh",
     "marquee_pMqq4Y",
-    "focus_you_Lh73aQ",
+    "landing_section_GdHXgh",
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
     "image_with_text_blocks_gAjTfr",
+    "how_it_helps_YPBkT9",
+    "focus_you_Lh73aQ",
     "landing_section_3RqYFU",
     "results_list_LqxNh4",
     "ingredients_tabs_nKwUYB",
     "landing_section_nqCRrp",
+    "longevity_circle_EFCxTg",
+    "subscription_products_R9LyAA",
+    "easy_to_take_mAqb98",
     "image_banner_azPmDb",
     "timeline_section_hBBi6r",
     "image_banner_D6TgTi",
-    "longevity_circle_cNW94D",
-    "subscription_products_TYLphp",
-    "subscription_products_REAFz7",
     "wines",
     "landing_section_qAbkWE",
+    "image_with_text_wjQyxT",
+    "subscription_products_3Ghc7P",
     "faqs_9gMU6f",
     "17401711251af96b37"
   ]
