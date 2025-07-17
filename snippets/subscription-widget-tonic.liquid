@@ -266,8 +266,8 @@
             data-subsinfog="{{ block.settings.product_content_text | default: block.settings.num_bottles | append: ' ' | append: settings.bottles_suffix }}"
             data-subsinfogbuy="{% if block.settings.product_content_text != blank %}{{ block.settings.product_content_text }}{% elsif buy_buttons_true > 0 %}{{ bbb.product_content_text_default_kit }}{% else %}{{ block.settings.num_bottles }} {{- settings.bottles_suffix -}}{% endif %}"
             data-oneinfoa="{{ block.settings.product_content_text | default: block.settings.num_bottles | append: ' ' | append: settings.bottles_suffix }}"
-            data-oneinfo1="{{ block.settings.subs_info_1 }}"
-            data-oneinfo2="{{ block.settings.subs_info_2 }}"
+            data-oneinfo1="{{ bbb.default_info_sub_1 }}"
+            data-oneinfo2="{{ bbb.default_info_sub_1 }}"
           >
             <button type="button" class="radio-option__button">
               <div class="radio-circle"><div class="radio-dot"></div></div>
