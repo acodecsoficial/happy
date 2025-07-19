@@ -287,99 +287,62 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateSingleProductPrices() {
-  const variant = this.getCurrentVariant();
-  const plan    = this.getCurrentPlan();
+    const variant = this.getCurrentVariant();
+    const plan = this.getCurrentPlan();
 
-  // 0) Esconde tudo de subscription por default
-  this.querySelectorAll(".js-subscription-price-compare, .js-subscription-save")
-    .forEach(el => el.classList.add("hidden"));
-
-  // ————— Subscription —————
-  if (plan && this.state.cadence === 'subscription') {
-    const subscriptionPrice        = plan.price * this.state.quantity;
-    const subscriptionComparePrice = variant.price * this.state.quantity;
-
-    // 1) Atualiza o preço periódico ("/mo")
-    if (this.elements.prices.subscription.period) {
-      this.elements.prices.subscription.period.innerText =
-        this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
+    // Always update subscription prices if plan exists
+    if (plan) {
+      const subscriptionPrice = plan.price * this.state.quantity;
+      const subscriptionComparePrice = variant.price * this.state.quantity;
+      this.updatePriceElement(this.elements.prices.subscription, subscriptionPrice, subscriptionComparePrice);
+      if (this.elements.prices.subscription.period) {
+        this.elements.prices.subscription.period.innerText = this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
+      }
     }
-    // 2) Mostra e preenche todas as compares de subscription
-    this.querySelectorAll(".js-subscription-price-compare")
-      .forEach(el => {
-        el.innerText = this.formatPrice(subscriptionComparePrice);
-        el.classList.remove("hidden");
-      });
-    // 3) Mostra e preenche todos os saves de subscription
-    this.querySelectorAll(".js-subscription-save")
-      .forEach(el => {
-        el.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
-        el.classList.remove("hidden");
-      });
+
+    // Always update one-time prices
+    const activeBlock = this.querySelector(".quantity-block.active");
+    const onetimePrice = (activeBlock ? Number(activeBlock.dataset.onetimePrice) : variant.price) * this.state.quantity;
+    const compareAtPrice = (variant.compare_at_price || variant.price) * this.state.quantity;
+
+    this.updatePriceElement(this.elements.prices.onetime, onetimePrice, compareAtPrice);
   }
-
-  // ————— One‑time —————
-  const activeBlock = this.querySelector(".quantity-block.active");
-  const basePrice   = activeBlock
-    ? Number(activeBlock.dataset.onetimePrice)
-    : variant.price;
-
-  const onetimePrice        = basePrice * this.state.quantity;
-  const onetimeComparePrice = (variant.compare_at_price || variant.price) * this.state.quantity;
-
-  // 4) Atualiza preços e saves de one‑time
-  this.updatePriceElement(
-    this.elements.prices.onetime,
-    onetimePrice,
-    onetimeComparePrice
-  );
-}
-
-
 
   updatePriceElement(elements, price, comparePrice) {
-  if (!elements) return;
+    if (!elements) return;
 
-  // 1) Atualiza preço atual
-  if (elements.current) {
-    elements.current.innerText = this.formatPrice(price);
-  }
+    if (elements.current) {
+      elements.current.innerText = this.formatPrice(price);
+    }
 
-  // 2) Atualiza compare
-  if (elements.compare) {
-    if (comparePrice > price) {
-      elements.compare.innerText = this.formatPrice(comparePrice);
-      elements.compare.classList.remove("hidden");
-    } else {
-      elements.compare.classList.add("hidden");
+    if (elements.compare) {
+      if (comparePrice && comparePrice > price) {
+        elements.compare.innerText = this.formatPrice(comparePrice);
+        elements.compare.classList.remove("hidden");
+      } else {
+        elements.compare.classList.add("hidden");
+      }
+    }
+
+    if (elements.save) {
+      if (comparePrice && comparePrice > price) {
+        elements.save.innerText = this.getSaveText(price, comparePrice);
+        //elements.save.innerText = this.getSaveText(price, comparePrice);
+        
+        //const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+        //oneTime.innerHTML = this.getSaveText(price, comparePrice);
+
+        if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
+          const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+          //subsTime.innerHTML = this.getSaveText(price, comparePrice);          
+        }
+
+        elements.save.classList.remove("hidden");
+      } else {
+        elements.save.classList.add("hidden");
+      }
     }
   }
-
-  // 3) Atualiza todos os saves de subscription, mas só dentro deste widget
-  if (elements === this.elements.prices.subscription) {
-    this.querySelectorAll(".js-subscription-save").forEach(el => {
-      if (comparePrice > price) {
-        el.innerText = this.getSaveText(price, comparePrice);
-        el.classList.remove("hidden");
-      } else {
-        el.classList.add("hidden");
-      }
-    });
-  }
-
-  // 4) Atualiza todos os saves de one‑time, escopando ao widget
-  if (elements === this.elements.prices.onetime) {
-    this.querySelectorAll(".js-onetime-save-custom").forEach(el => {
-      if (comparePrice > price) {
-        el.innerText = this.getSaveText(price, comparePrice);
-        el.classList.remove("hidden");
-      } else {
-        el.classList.add("hidden");
-      }
-    });
-  }
-}
-
 
   updateQuantityPrices() {
     if (this.config.product.is_bundle) {
@@ -529,57 +492,26 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateMobileValueProps() {
-  console.warn("Atualizando mobile value props...");
+    // Get active cadence value props
 
-  // 1) HTML de fallback: pega o .value‑props do bloco de cadence ativo (subscription vs one-time)
-  const desktopActiveOption = this.state.cadence === "subscription"
-    ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
-    : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
-  const fallbackHTML = desktopActiveOption
-    ? desktopActiveOption.querySelector(".value-props")?.innerHTML || ""
-    : "";
+    console.warn(" mobile props *****************");
+    
+    const activeCadence =
+      this.state.cadence === "subscription"
+        ? this.querySelector('[data-cadence="subscription"]')?.closest(".radio-option")
+        : this.querySelector('[data-cadence="one-time-purchase"]')?.closest(".radio-option");
 
-  // 2) Para cada bloco mobile, tenta montar dinamicamente pelos data‑attributes…
-  this.querySelectorAll(".quantity-grid-mobile .radio-option").forEach(block => {
-    const isSubscription = this.state.cadence === "subscription";
-    const prefix       = isSubscription ? "subsinfo"   : "oneinfo";
-    const count        = isSubscription ? 6            : 2;
+    const valueProps = activeCadence?.querySelector(".value-props")?.innerHTML || "";
 
-    let html = "";
-    for (let i = 1; i <= count; i++) {
-      const key = prefix + i;          // ex: “subsinfo1” ou “oneinfo2”
-      const txt = block.dataset[key];  
-      if (!txt) continue;
-
-      // escolhe o ícone
-      const iconClass = isSubscription
-        ? "icon-subscription-sync"
-        : (i === 1 ? "icon-shipping-box" : "icon-shipping-clock");
-
-      html += `
-        <div class="value-prop">
-          <span class="value-prop-icon ${iconClass}"><svg width="12" height="12" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:8px;">
-<path d="M10.5 1.54688L10.1016 1.94531L4.14844 7.875L3.75 8.27344L3.35156 7.875L0.398438 4.92188L0 4.52344L0.773438 3.72656L1.17188 4.125L3.75 6.67969L9.30469 1.14844L9.70312 0.75L10.5 1.54688Z" fill="#707070"/>
-</svg></span>
-          <p class="value-prop-text">${txt}</p>
-        </div>`;
+    // Copy to active quantity block on mobile
+    const activeQtyBlock = this.querySelector(".quantity-grid-mobile .radio-option.active");
+    if (activeQtyBlock) {
+      const mobileValueProps = activeQtyBlock.querySelector(".js-mobile-value-props");
+      if (mobileValueProps) {
+        mobileValueProps.innerHTML = valueProps;
+      }
     }
-
-    // 3) Se não gerou nada, usa o fallback
-    if (!html.trim()) html = fallbackHTML;
-
-    // 4) Injeta no container mobile
-    const dest = block.querySelector(".js-mobile-value-props");
-    if (dest) {
-      dest.innerHTML = html;
-    } else {
-      console.warn("js-mobile-value-props não encontrado em:", block);
-    }
-  });
-}
-
-
-
+  }
 
   setQuantityBlock(block) {
     if (!block || this.config.product.is_bundle) return;
