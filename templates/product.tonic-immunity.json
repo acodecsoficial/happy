@@ -579,7 +579,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/20250715_1450_Citrus_Elegance_simple_compose_01k07k8qfge819vcc1g0pmpsjg.png",
+                    "image": "shopify://shop_images/1370x13702.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -641,7 +641,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/asset2_df60975c-aa51-4c80-a156-89800a1bb9e7.png",
+                    "image": "shopify://shop_images/20250715_1450_Citrus_Elegance_simple_compose_01k07k8qfge819vcc1g0pmpsjg.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
