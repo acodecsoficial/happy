@@ -61,24 +61,7 @@
                 >
                   {{ section.settings.form_submit_label }}
                 </button>
-
-                <div id="newsletter-success-message" class="mt-4 text-green-600 text-sm" style="display: none;"></div>
-
-                <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("newsletter-form");
-    const successEl = document.getElementById("newsletter-success-message");
-
-    if (form && successEl) {
-      form.addEventListener("success", function () {
-        const message = form.getAttribute("data-success-text") || "Success!";
-        successEl.textContent = message;
-        successEl.style.display = "block";
-      });
-    }
-  });
-</script>
-                
+              
                 <p class="text-xs mt-2">{{ section.settings.form_disclaimer_text }}</p>
               </div>
             </form>
