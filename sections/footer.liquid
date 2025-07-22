@@ -70,6 +70,48 @@
           </newsletter-form>
         </div>
       </div>
+
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const newsletterForm = document.querySelector("newsletter-form");
+    const form = newsletterForm?.querySelector("form");
+    const successEl = newsletterForm?.querySelector(".success");
+    const errorEl = newsletterForm?.querySelector(".error");
+    const emailInput = form?.querySelector("input[name='email']");
+    const listId = newsletterForm?.dataset.listId;
+
+    if (form && emailInput && listId && successEl) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        fetch("https://manage.kmail-lists.com/ajax/subscriptions/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            g: listId,
+            email: emailInput.value
+          })
+        })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            successEl.classList.remove("d-none");
+            errorEl?.classList.add("d-none");
+            form.reset();
+          } else {
+            errorEl?.classList.remove("d-none");
+            successEl?.classList.add("d-none");
+          }
+        })
+        .catch(() => {
+          errorEl?.classList.remove("d-none");
+          successEl?.classList.add("d-none");
+        });
+      });
+    }
+  });
+</script>
+
       
       <div class="flex justify-between lg:items-center px-9 md:px-32 lg:px-16 xl:px-24 lg:w-1/2">
         <nav class="h-full">
