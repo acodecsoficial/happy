@@ -70,53 +70,6 @@
           </newsletter-form>
         </div>
       </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const formWrapper = document.querySelector("newsletter-form");
-    const form = formWrapper?.querySelector("form");
-    const successText = formWrapper?.getAttribute("data-success-text");
-    const successMessage = formWrapper?.querySelector(".success");
-    const errorMessage = formWrapper?.querySelector(".error");
-
-    if (form && successMessage) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const email = form.querySelector("input[name='email']").value;
-
-        fetch("https://manage.kmail-lists.com/ajax/subscriptions/subscribe", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            g: formWrapper.dataset.listId, // lista ID
-            email: email
-          })
-        })
-        .then(res => res.json())
-        .then(data => {
-          if (data.success) {
-            successMessage.textContent = successText || "Success!";
-            successMessage.classList.remove("d-none");
-            errorMessage?.classList.add("d-none");
-            form.reset();
-          } else {
-            errorMessage?.classList.remove("d-none");
-            successMessage?.classList.add("d-none");
-          }
-        })
-        .catch(() => {
-          errorMessage?.classList.remove("d-none");
-          successMessage?.classList.add("d-none");
-        });
-      });
-    }
-  });
-</script>
-
-
       
       <div class="flex justify-between lg:items-center px-9 md:px-32 lg:px-16 xl:px-24 lg:w-1/2">
         <nav class="h-full">
