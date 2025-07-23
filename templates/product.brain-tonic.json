@@ -1435,6 +1435,7 @@
         "card_h6ztFg",
         "card_zCpNRP"
       ],
+      "disabled": true,
       "name": "How it Helps",
       "settings": {
         "heading": "<p>HOW <em>it helps</em></p>"
@@ -1474,6 +1475,7 @@
         "row_NPeT7w",
         "row_tWbad6"
       ],
+      "disabled": true,
       "name": "Focus You",
       "settings": {
         "title": "<p>Feel <em>the Change</em></p>",
@@ -1512,7 +1514,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>Built on Science, <em>made for You.</em></p>",
+                "text": "<p>HOW BRAIN TONIC WORKS <em>for your mind</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
@@ -1591,7 +1593,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_4cdc66a5-6316-4435-bce7-cbfcfa7eb21b.svg",
+                        "icon_image": "shopify://shop_images/Icons_0e1014e4-5674-4496-988b-8f1e870f5429.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1614,7 +1616,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>200mg of quality Quercetin per dose</h3>",
+                        "text": "<h3>CoQ10 fuels your brain’s natural energy</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1648,7 +1650,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons-1_b73e55cf-5a21-4bf1-9a2d-49698f180e10.svg",
+                        "icon_image": "shopify://shop_images/Icons_1.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1671,7 +1673,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Supports your body’s natural balance</h3>",
+                        "text": "<h3>Stress and age deplete it</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1705,7 +1707,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons-2_e5e55a7a-276d-49fc-8859-d71b70ba4927.svg",
+                        "icon_image": "shopify://shop_images/Icons_2.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1728,7 +1730,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Helps protect your body from everyday damage</h3>",
+                        "text": "<h3>Our liposomal formula absorbs better than capsules</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1782,7 +1784,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1_1.png",
+                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1_1_fdb4ff42-1007-4353-bf8b-1dc25013dbf6.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
@@ -1875,7 +1877,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Component_4.svg",
+                            "icon_image": "shopify://shop_images/Icons_3.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1898,7 +1900,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Kind to your digestion and easy to take</h3>",
+                            "text": "<h3>You feel it faster. No caffeine needed</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1932,7 +1934,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons-3_8263dc8c-e001-450c-ae28-24657170c7cd.svg",
+                            "icon_image": "shopify://shop_images/Icons_4.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1955,7 +1957,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Clean and simple ingredients</h3>",
+                            "text": "<h3>One teaspoon a day. More clarity. Less fog</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -2075,7 +2077,7 @@
       ],
       "name": "Results List",
       "settings": {
-        "title": "Your Relief <em>Timeline</em>"
+        "title": "YOUR Brain<em> journey</em>"
       }
     },
     "ingredients_tabs_nKwUYB": {
