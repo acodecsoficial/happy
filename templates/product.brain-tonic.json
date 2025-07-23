@@ -2189,6 +2189,23 @@
     },
     "longevity_circle_EFCxTg": {
       "type": "longevity-circle",
+      "blocks": {
+        "bottle_kp7WDB": {
+          "type": "bottle",
+          "settings": {
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        }
+      },
+      "block_order": [
+        "bottle_kp7WDB"
+      ],
       "disabled": true,
       "name": "Longevity Circle",
       "settings": {}
