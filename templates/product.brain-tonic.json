@@ -2079,7 +2079,7 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_1_efe5be64-537c-4818-af2c-34a3ec0e7c33.jpg",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_2_b8762182-f899-47ca-a30b-3d7138e6feab.jpg",
         "image_height_desk": "square",
         "image_mob": "shopify://shop_images/ia.jpg",
         "image_height_mob": "adapt",
@@ -2328,6 +2328,7 @@
     },
     "easy_to_take_mAqb98": {
       "type": "easy-to-take",
+      "disabled": true,
       "name": "Easy to Take",
       "settings": {
         "title": "EASY TO TAKE, hard to beat",
@@ -2379,8 +2380,8 @@
           "type": "step",
           "settings": {
             "number": "",
-            "step_title": "TAKE ONE 6 ML TONIC A DAY.",
-            "step_text": "Drink it straight or mix with water, juice, or your favorite drink. Easy to take anywhere."
+            "step_title": "TAKE ONE TEASPOON (6 mL)",
+            "step_text": "In the morning. Enjoy straight or mix into water,<br> juice or your favorite smoothie"
           }
         }
       },
@@ -2396,8 +2397,8 @@
       ],
       "settings": {
         "show_border_top": true,
-        "first_image": "shopify://shop_images/drfink.jpg",
-        "second_image": "shopify://shop_images/Poli_Alves_r1_relief_2.gif"
+        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_2_82d72f41-90c7-4b6d-828f-d04d0229a0ef.png",
+        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_1_5ba3d4be-c8ef-4021-8dcd-5bc720574f85.png"
       }
     },
     "image_banner_D6TgTi": {
