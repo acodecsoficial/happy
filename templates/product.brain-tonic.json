@@ -1389,99 +1389,6 @@
         "padding_bottom": 36
       }
     },
-    "how_it_helps_YPBkT9": {
-      "type": "how-it-helps",
-      "blocks": {
-        "card_6a7aP7": {
-          "type": "card",
-          "settings": {
-            "card_title": "Keeps things steady",
-            "card_text": "Helps your body reset before symptoms hit."
-          }
-        },
-        "card_cMMrq6": {
-          "type": "card",
-          "settings": {
-            "card_title": "Soothes discomfort",
-            "card_text": "Eases tension when you're feeling worn out."
-          }
-        },
-        "card_mVB6G9": {
-          "type": "card",
-          "settings": {
-            "card_title": "Triggers all around",
-            "card_text": "Pollen, stress, and pollution can throw your body off."
-          }
-        },
-        "card_h6ztFg": {
-          "type": "card",
-          "settings": {
-            "card_title": "Shields your cells",
-            "card_text": "Daily protection against stress and wear."
-          }
-        },
-        "card_zCpNRP": {
-          "type": "card",
-          "settings": {
-            "card_title": "Absorbs 10x better",
-            "card_text": "Liposomal technology delivers real results, fast."
-          }
-        }
-      },
-      "block_order": [
-        "card_6a7aP7",
-        "card_cMMrq6",
-        "card_mVB6G9",
-        "card_h6ztFg",
-        "card_zCpNRP"
-      ],
-      "disabled": true,
-      "name": "How it Helps",
-      "settings": {
-        "heading": "<p>HOW <em>it helps</em></p>"
-      }
-    },
-    "focus_you_Lh73aQ": {
-      "type": "focus-you",
-      "blocks": {
-        "row_NPeT7w": {
-          "type": "row",
-          "settings": {
-            "image_position": "left",
-            "image": "shopify://shop_images/kopv-160-1.jpg",
-            "heading_1": "Easier breathing, fewer sniffles",
-            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
-            "heading_2": "Less tension, more comfort",
-            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
-            "button_text": "",
-            "button_url": "/"
-          }
-        },
-        "row_tWbad6": {
-          "type": "row",
-          "settings": {
-            "image_position": "right",
-            "image": "shopify://shop_images/produtoa.jpg",
-            "heading_1": "Everyday defense, all day long",
-            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
-            "heading_2": "Steady energy, no crash",
-            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
-            "button_text": "",
-            "button_url": "/"
-          }
-        }
-      },
-      "block_order": [
-        "row_NPeT7w",
-        "row_tWbad6"
-      ],
-      "disabled": true,
-      "name": "Focus You",
-      "settings": {
-        "title": "<p>Feel <em>the Change</em></p>",
-        "subtitle": ""
-      }
-    },
     "landing_section_3RqYFU": {
       "type": "landing-section",
       "blocks": {
@@ -2080,37 +1987,116 @@
         "title": "YOUR Brain<em> journey</em>"
       }
     },
-    "ingredients_tabs_nKwUYB": {
-      "type": "ingredients-tabs",
+    "image_with_text_blocks_XbQgyL": {
+      "type": "image-with-text-blocks",
       "blocks": {
-        "tab_GQg8LN": {
-          "type": "tab",
+        "text_JcNbmc": {
+          "type": "text",
           "settings": {
-            "tab_title": "MAGNESIUM BISGLYCINATE",
-            "tab_heading": "Magnesium Bisglycinate",
-            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
-            "tab_image": "shopify://shop_images/Badge.png"
+            "text": "<p>RECLAIM YOUR <em>mental energy</em></p>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
           }
         },
-        "tab_g36fUn": {
-          "type": "tab",
+        "text_wVcfFY": {
+          "type": "text",
           "settings": {
-            "tab_title": "Phosphatidylcholine Liposomes",
-            "tab_heading": "Magnesium Bisglycinate",
-            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
-            "tab_image": "shopify://shop_images/Image_5.png"
+            "text": "<h3>Caffeine gives you a jolt. Brain Tonic gives you fuel.</h3>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
+        "spacing_qbLrUU": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 50,
+            "spacing_mobile": 0,
+            "fill_all_desktop": false
+          }
+        },
+        "spacing_tJYdym": {
+          "type": "spacing",
+          "disabled": true,
+          "settings": {
+            "spacing_desktop": 20,
+            "spacing_mobile": 40,
+            "fill_all_desktop": false
+          }
+        },
+        "text_QACA9C": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>With advanced liposomal CoQ10 for superior absorption, you get clean energy, real clarity and long term support. All in one teaspoon a day.</h3>",
+            "text_style": "body",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
+        "spacing_tbQ4gW": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 20,
+            "spacing_mobile": 20,
+            "fill_all_desktop": false
+          }
+        },
+        "button_k9aTVC": {
+          "type": "button",
+          "settings": {
+            "button_text": "Buy Now",
+            "button_link": "#",
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "border_color": "#000000",
+            "hover_background_color": "#333333",
+            "hover_text_color": "#ffffff",
+            "hover_border_color": "#333333",
+            "font_size": 32,
+            "font_weight": "400",
+            "width_type": "custom",
+            "custom_width": 40,
+            "min_width": 0,
+            "alignment": "left",
+            "padding_vertical": 10,
+            "padding_horizontal": 32,
+            "border_width": 1,
+            "border_radius": 0,
+            "mobile_full_width": true
           }
         }
       },
       "block_order": [
-        "tab_GQg8LN",
-        "tab_g36fUn"
+        "text_JcNbmc",
+        "text_wVcfFY",
+        "spacing_qbLrUU",
+        "spacing_tJYdym",
+        "text_QACA9C",
+        "spacing_tbQ4gW",
+        "button_k9aTVC"
       ],
-      "disabled": true,
-      "name": "Ingredients Tabs",
       "settings": {
-        "heading": "THOUGHTFULLY SOURCED,",
-        "subheading": "clinically-verified ingredients"
+        "title": "",
+        "text": "",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_1_efe5be64-537c-4818-af2c-34a3ec0e7c33.jpg",
+        "image_height_desk": "square",
+        "image_mob": "shopify://shop_images/ia.jpg",
+        "image_height_mob": "adapt",
+        "width": "full",
+        "width_mobile": "full",
+        "image_first": false,
+        "image_first_mob": false,
+        "image_large": false,
+        "show_border": false,
+        "show_border_top": true,
+        "hide_border_mobile": false,
+        "remove_py_content": false,
+        "small_content": false,
+        "wrap_image_mobile": false,
+        "wrap_content_mobile": true,
+        "spacing_desktop": "lg:py-0",
+        "spacing_mobile": "py-0"
       }
     },
     "landing_section_nqCRrp": {
@@ -2858,11 +2844,9 @@
     "landing_section_ExiDxD",
     "image_with_text_blocks_gAjTfr",
     "image_with_text_NDbkez",
-    "how_it_helps_YPBkT9",
-    "focus_you_Lh73aQ",
     "landing_section_3RqYFU",
     "results_list_LqxNh4",
-    "ingredients_tabs_nKwUYB",
+    "image_with_text_blocks_XbQgyL",
     "landing_section_nqCRrp",
     "longevity_circle_EFCxTg",
     "subscription_products_R9LyAA",
