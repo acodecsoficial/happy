@@ -2008,17 +2008,8 @@
             "center_mobile": false
           }
         },
-        "spacing_qbLrUU": {
-          "type": "spacing",
-          "settings": {
-            "spacing_desktop": 50,
-            "spacing_mobile": 0,
-            "fill_all_desktop": false
-          }
-        },
         "spacing_tJYdym": {
           "type": "spacing",
-          "disabled": true,
           "settings": {
             "spacing_desktop": 20,
             "spacing_mobile": 40,
@@ -2070,7 +2061,6 @@
       "block_order": [
         "text_JcNbmc",
         "text_wVcfFY",
-        "spacing_qbLrUU",
         "spacing_tJYdym",
         "text_QACA9C",
         "spacing_tbQ4gW",
@@ -2381,7 +2371,7 @@
           "settings": {
             "number": "",
             "step_title": "TAKE ONE TEASPOON (6 mL)",
-            "step_text": "In the morning. Enjoy straight or mix into water,<br> juice or your favorite smoothie"
+            "step_text": "In the morning. Enjoy straight or mix into water, juice or your favorite smoothie"
           }
         }
       },
