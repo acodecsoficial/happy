@@ -1,4 +1,4 @@
-<div class="{% if section.settings.show_border_top %} border-t border-black{% endif %}">
+<div class="{% if section.settings.show_border_top %} border-t border-black{% endif %} timeline_section">
   <div class="relative px-8 lg:px-6 lg:pt-[70px] text-center text-sm max-w-[1074px] m-auto">
     {% for block in section.blocks %}
 
@@ -80,7 +80,7 @@
         <div class="d-none lg:block absolute top-[1318px] lg:left-[32px] xl:left-[0]">
           {%- render 'image', image: section.settings.fourth_image, class: 'max-w-[260px]', sizes: '400px' -%}
         </div>
-        <div class="d-none lg:block absolute top-[1680px] lg:right-[32px] time-img xl:right-[0]">
+        <div class="d-none lg:block absolute top-[1680px] lg:right-[32px] time-img xl:right-[0] timeline_img">
           {%- render 'image', image: section.settings.fifth_image, class: 'max-w-[260px]', sizes: '400px' -%}
         </div>
       {% endif %}
