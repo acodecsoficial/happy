@@ -913,7 +913,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Fast Relief</em></p>",
+                        "text": "<p><em>Liposomal delivery</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 0,
@@ -926,7 +926,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Daily support for discomforts and staying balanced.</p>",
+                        "text": "<p>CoQ10 that’s actually absorbed and used by your body</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -963,7 +963,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Effective Dose</em></p>",
+                        "text": "<p><em>CoQ10 powered</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -975,7 +975,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>200mg of high-performing Quercetin.</p>",
+                        "text": "<p>Supports energy production at the cellular level, especially in the brain</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1011,7 +1011,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Clean Formula</em></p>",
+                        "text": "<p><em>No stimulants</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1023,7 +1023,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>No fillers. No sugar. Vegan. Gluten-free. Third-party tested.</p>",
+                        "text": "<p>Clarity without caffeine, tension or crashes</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1060,7 +1060,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Convenient</em></p>",
+                        "text": "<p><em>Daily Essential</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1072,7 +1072,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>A small 6 mL tonic that fits easily into your routine.</p>",
+                        "text": "<p>One teaspoon. Fast effect. Long term support</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1110,7 +1110,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Science-Backed</em></p>",
+                        "text": "<p><em>Brain Support</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1122,7 +1122,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Formulated with research and tested for quality.</p>",
+                        "text": "<p>Optimizes cognitive function and mental performance.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
