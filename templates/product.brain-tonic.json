@@ -854,7 +854,7 @@
                   "name": "Heading block",
                   "settings": {
                     "subheading": "",
-                    "text": "<p>WHY choose <em>Happy Aging?</em></p>",
+                    "text": "<p>WHAT MAKES <em>brain tonic different</em></p>",
                     "tag_select": "h2",
                     "text_color": "",
                     "letter_spacing": 0,
@@ -1187,7 +1187,7 @@
         "text_nLEfLV": {
           "type": "text",
           "settings": {
-            "text": "<p>MADE FOR <em>real life</em></p>",
+            "text": "<p>DESIGNED TO <em>keep up with you</em> </p>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1195,9 +1195,8 @@
         },
         "text_GcHhgp": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<h3><em>Clinically proven NMN raised blood NAD⁺ by up to 60% in eight weeks</em></h3>",
+            "text": "<h3><em>Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1213,6 +1212,7 @@
         },
         "spacing_A7Nw66": {
           "type": "spacing",
+          "disabled": true,
           "settings": {
             "spacing_desktop": 20,
             "spacing_mobile": 40,
@@ -1222,7 +1222,7 @@
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Breathe easier and start your mornings clear</h3>",
+            "text": "<h3>Focus that holds. No refill required</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1231,7 +1231,7 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Stay steady through the seasons</h3>",
+            "text": "<h3>A cleaner way to stay focused and productive</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1240,7 +1240,7 @@
         "text_wmjQzt": {
           "type": "text",
           "settings": {
-            "text": "<h3>Reduce Inflammation</h3>",
+            "text": "<h3>Supports your brain’s energy and long term resilience</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1249,34 +1249,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Recover quicker after workouts<br/></h3>",
-            "text_style": "body",
-            "has_border": true,
-            "center_mobile": false
-          }
-        },
-        "text_Ucicgf": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Keep your cells protected from daily wear</h3>",
-            "text_style": "body",
-            "has_border": true,
-            "center_mobile": false
-          }
-        },
-        "text_fAHjYt": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Gentle formula you can use long-term</h3>",
-            "text_style": "body",
-            "has_border": true,
-            "center_mobile": false
-          }
-        },
-        "text_xCnNhb": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Fresh Citrus Nutty flavor that’s easy to enjoy</h3>",
+            "text": "<h3>Tastes like citrus. Works like clarity</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1324,9 +1297,6 @@
         "text_BFqHcM",
         "text_wmjQzt",
         "text_FHXk9x",
-        "text_Ucicgf",
-        "text_fAHjYt",
-        "text_xCnNhb",
         "spacing_GFqXPi",
         "button_iKqTjh"
       ],
@@ -1340,7 +1310,7 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/ia.jpg",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_1_efe5be64-537c-4818-af2c-34a3ec0e7c33.jpg",
         "image_height_desk": "square",
         "image_mob": "shopify://shop_images/ia.jpg",
         "image_height_mob": "adapt",
