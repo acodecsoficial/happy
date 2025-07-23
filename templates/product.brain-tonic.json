@@ -290,7 +290,7 @@
               "type": "highlight-image-item",
               "name": "Highlight image item",
               "settings": {
-                "image": "shopify://shop_images/banner.jpg",
+                "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_1_81050bcc-ca21-45b9-90bc-89433cdbd7c6.png",
                 "image_max_width_mobile": 1000,
                 "title": "",
                 "title_size": 48,
@@ -418,7 +418,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p>REFRESH YOUR <em>body’s response</em></p>",
+                        "text": "<p>CLARITY THAT <em>sticks with you</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 50,
@@ -450,7 +450,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2><em>Relief Tonic steps in when your body reacts strongly to everyday triggers like pollen, stress, or pollution.</em></h2>",
+                        "text": "<h2><em>There’s focus that fades. And there’s focus that flows.</em></h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -465,7 +465,7 @@
                     "text_block_EJp8ft": {
                       "type": "text-block",
                       "settings": {
-                        "text": "<p>It helps your system stay steady, helps keep your body running smoothly, and keeps discomfort in check before it slows you down.<br/>The secret? 200mg of Quercetin in every dose. Thanks to advanced liposomal technology, your body absorbs it faster and uses it better.</p>",
+                        "text": "<p>Brain Tonic is your daily ritual for clear, steady focus that lasts. Its easily absorbed formula supports your natural energy so you can stay focused and clear-headed all day — without the highs or the crash.<br/>You don’t need more noise. You need more you.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -519,6 +519,65 @@
         "bottom_spacing_mobile": 0,
         "use_top_border_mobile": false,
         "use_bottom_border_mobile": false
+      }
+    },
+    "image_with_text_wjQyxT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hiF9jj": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>WHERE <em>clarity begins</em></p>",
+            "heading_size": "h1",
+            "line-height": 1
+          }
+        },
+        "text_486Kkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><em>Most formulas stimulate. This one fuels.</em></h2>",
+            "text_style": "body"
+          }
+        },
+        "text_yLR6KH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Brain Tonic delivers 100 mg of CoQ10 in a high-performance liposomal format. That means it’s easier for your cells to absorb and use. Inside every brain cell, there’s a little energy factory working to keep you focused. Brain Tonic helps it run smoothly, so you get more mental clarity and steady energy right where it matters most.<br/><br/>It’s not about more ingredients. It’s about better absorption.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_8rgaR3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hiF9jj",
+        "text_486Kkh",
+        "text_yLR6KH",
+        "button_8rgaR3"
+      ],
+      "custom_css": [],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_df9ff4db-e8df-44ab-9597-aed5042602ec.png",
+        "height": "adapt",
+        "landscape": false,
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "landing_section_KWgCJm": {
@@ -2551,57 +2610,6 @@
         "use_bottom_border_mobile": false
       }
     },
-    "image_with_text_wjQyxT": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_hiF9jj": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>START FEELING BETTER, <em>every day</em></p>",
-            "heading_size": "h1",
-            "line-height": 1
-          }
-        },
-        "text_yLR6KH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Relief Tonic helps your body bounce back from daily triggers with confidence. Refreshing citrus taste. Clean ingredients. Real results. Start today.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_8rgaR3": {
-          "type": "button",
-          "settings": {
-            "button_label": "Buy Now",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_hiF9jj",
-        "text_yLR6KH",
-        "button_8rgaR3"
-      ],
-      "custom_css": [],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/martha.png",
-        "height": "adapt",
-        "landscape": false,
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "subscription_products_3Ghc7P": {
       "type": "subscription-products",
       "blocks": {
@@ -2813,6 +2821,7 @@
     "main",
     "marquee_pMqq4Y",
     "landing_section_GdHXgh",
+    "image_with_text_wjQyxT",
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
     "image_with_text_blocks_gAjTfr",
@@ -2830,7 +2839,6 @@
     "image_banner_D6TgTi",
     "wines",
     "landing_section_qAbkWE",
-    "image_with_text_wjQyxT",
     "subscription_products_3Ghc7P",
     "faqs_9gMU6f",
     "17401711251af96b37"
