@@ -42,10 +42,8 @@
 
   .coluna_grid{
     display: flex;
-justify-content: space-between;
-align-items: center;
-align-self: stretch;
-  }
+    flex-direction: column;
+  }  
 @media (min-width: 768px) { .benefits-grid { grid-template-columns: repeat(2, 1fr); } }
 .benefits-grid img { width: 100%; border-radius: 0.5rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); }
 .benefits-grid h3 { font-family: serif; font-size: 1.25rem; margin-bottom: 0.5rem; }
@@ -57,14 +55,12 @@ align-self: stretch;
     <h2 class="heading benefits_tile">{{ section.settings.heading_main }}</h2>
     <div class="benefits-grid">
       <!-- Bloco 1 -->
-      <div class="coluna_grid">
-
-        <div>
+      <div>
         {% if section.settings.image_1 != blank %}
           <img src="{{ section.settings.image_1 | image_url }}" alt="{{ section.settings.heading_1 }}" />
         {% endif %}
       </div>
-      <div>
+      <div class="coluna_grid">
         <h2 class="heading title_benefits">{{ section.settings.heading_1 }}</h2>
         <ul class="font_surt">
           {% assign items = section.settings.bullets_1 | split: "|" %}
@@ -73,10 +69,8 @@ align-self: stretch;
           {% endfor %}
         </ul>
       </div>
-        
-      </div>
       <!-- Bloco 2 -->
-      <div>
+      <div class="coluna_grid">
         <h2 class="heading title_benefits">{{ section.settings.heading_2 }}</h2>
         <ul class="font_surt">
           {% assign items2 = section.settings.bullets_2 | split: "|" %}
@@ -96,7 +90,7 @@ align-self: stretch;
           <img src="{{ section.settings.image_3 | image_url }}" alt="{{ section.settings.heading_3 }}" />
         {% endif %}
       </div>
-      <div>
+      <div class="coluna_grid">
         <h2 class="heading title_benefits">{{ section.settings.heading_3 }}</h2>
         <ul class="font_surt">
           {% assign items3 = section.settings.bullets_3 | split: "|" %}
