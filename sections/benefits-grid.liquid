@@ -34,7 +34,7 @@
 
 <section class="benefits-section">
   <div class="max-w-6xl mx-auto">
-    <h2>{{ section.settings.heading_main }}</h2>
+    <h2 class="heading">{{ section.settings.heading_main }}</h2>
     <div class="benefits-grid">
       <!-- Bloco 1 -->
       <div>
@@ -43,7 +43,7 @@
         {% endif %}
       </div>
       <div>
-        <h3>{{ section.settings.heading_1 }}</h3>
+        <h2>{{ section.settings.heading_1 }}</h2>
         <ul>
           {% assign items = section.settings.bullets_1 | split: "|" %}
           {% for item in items %}
