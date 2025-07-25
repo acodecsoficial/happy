@@ -41,8 +41,10 @@
   }
 
   .coluna_grid{
-    display: flex;
+        display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
   }  
 @media (min-width: 768px) { .benefits-grid { grid-template-columns: repeat(2, 1fr); } }
 .benefits-grid img { width: 100%; border-radius: 0.5rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); }
@@ -70,7 +72,7 @@
         </ul>
       </div>
       <!-- Bloco 2 -->
-      <div class="coluna_grid">
+      <div class="coluna_grid diferente">
         <h2 class="heading title_benefits">{{ section.settings.heading_2 }}</h2>
         <ul class="font_surt">
           {% assign items2 = section.settings.bullets_2 | split: "|" %}
