@@ -1,6 +1,86 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Benefits Grid",
+  "tag": "section",
+  "class": "benefits-section",
+  "settings": [
+    {"type": "text", "id": "heading_main", "label": "Título principal", "default": "WHAT YOU’LL notice first"},
+    {"type": "image_picker", "id": "image_1", "label": "Imagem topo esquerdo"},
+    {"type": "text", "id": "heading_1", "label": "Título bloco 1", "default": "In your body"},
+    {"type": "textarea", "id": "bullets_1", "label": "Itens bloco 1 (separados por |)", "default": "Light, sustained energy that carries you through|No highs, no lows, just clean momentum"},
+    {"type": "text", "id": "heading_2", "label": "Título bloco 2", "default": "In your mind"},
+    {"type": "textarea", "id": "bullets_2", "label": "Itens bloco 2 (separados por |)", "default": "Sharper thinking and faster recall|More presence, less mental noise"},
+    {"type": "image_picker", "id": "image_2", "label": "Imagem meio direito"},
+    {"type": "text", "id": "heading_3", "label": "Título bloco 3", "default": "In your flow"},
+    {"type": "textarea", "id": "bullets_3", "label": "Itens bloco 3 (separados por |)", "default": "Meetings feel easier|Ideas come quicker|You stay in rhythm"},
+    {"type": "image_picker", "id": "image_3", "label": "Imagem base esquerdo"}
+  ],
+  "blocks": [],
+  "presets": [
+    {"name": "Benefits Grid"}
+  ]
+}
 {% endschema %}
+
+<style>
+.benefits-section { background-color: #f8f5ec; padding: 4rem 1rem; }
+.benefits-section h2 { font-family: serif; font-style: italic; font-size: 2rem; margin-bottom: 2rem; }
+.benefits-grid { display: grid; gap: 2rem; grid-template-columns: repeat(1, 1fr); }
+@media (min-width: 768px) { .benefits-grid { grid-template-columns: repeat(2, 1fr); } }
+.benefits-grid img { width: 100%; border-radius: 0.5rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); }
+.benefits-grid h3 { font-family: serif; font-size: 1.25rem; margin-bottom: 0.5rem; }
+.benefits-grid ul { list-style-type: disc; list-style-position: inside; color: #333; }
+</style>
+
+<section class="benefits-section">
+  <div class="max-w-6xl mx-auto">
+    <h2>{{ section.settings.heading_main }}</h2>
+    <div class="benefits-grid">
+      <!-- Bloco 1 -->
+      <div>
+        {% if section.settings.image_1 != blank %}
+          <img src="{{ section.settings.image_1 | image_url }}" alt="{{ section.settings.heading_1 }}" />
+        {% endif %}
+      </div>
+      <div>
+        <h3>{{ section.settings.heading_1 }}</h3>
+        <ul>
+          {% assign items = section.settings.bullets_1 | split: "|" %}
+          {% for item in items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- Bloco 2 -->
+      <div>
+        <h3>{{ section.settings.heading_2 }}</h3>
+        <ul>
+          {% assign items2 = section.settings.bullets_2 | split: "|" %}
+          {% for item in items2 %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        {% if section.settings.image_2 != blank %}
+          <img src="{{ section.settings.image_2 | image_url }}" alt="{{ section.settings.heading_2 }}" />
+        {% endif %}
+      </div>
+      <!-- Bloco 3 -->
+      <div>
+        {% if section.settings.image_3 != blank %}
+          <img src="{{ section.settings.image_3 | image_url }}" alt="{{ section.settings.heading_3 }}" />
+        {% endif %}
+      </div>
+      <div>
+        <h3>{{ section.settings.heading_3 }}</h3>
+        <ul>
+          {% assign items3 = section.settings.bullets_3 | split: "|" %}
+          {% for item in items3 %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
