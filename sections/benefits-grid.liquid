@@ -44,7 +44,7 @@
       </div>
       <div>
         <h2 class="heading">{{ section.settings.heading_1 }}</h2>
-        <ul>
+        <ul class="font_surt">
           {% assign items = section.settings.bullets_1 | split: "|" %}
           {% for item in items %}
             <p class="font_surt">{{ item }}</p>
@@ -54,10 +54,10 @@
       <!-- Bloco 2 -->
       <div>
         <h2 class="heading">{{ section.settings.heading_2 }}</h2>
-        <ul>
+        <ul class="font_surt">
           {% assign items2 = section.settings.bullets_2 | split: "|" %}
           {% for item in items2 %}
-            <p class="font_surt">{{ item }}</p>
+            <p>{{ item }}</p>
           {% endfor %}
         </ul>
       </div>
@@ -74,7 +74,7 @@
       </div>
       <div>
         <h2 class="heading">{{ section.settings.heading_3 }}</h2>
-        <ul>
+        <ul class="font_surt">
           {% assign items3 = section.settings.bullets_3 | split: "|" %}
           {% for item in items3 %}
             <p class="font_surt">{{ item }}</p>
