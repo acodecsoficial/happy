@@ -43,7 +43,7 @@
         {% endif %}
       </div>
       <div>
-        <h2 class="heading">{{ section.settings.heading_1 }}</h2>
+        <div class="heading">{{ section.settings.heading_1 }}</div>
         <ul>
           {% assign items = section.settings.bullets_1 | split: "|" %}
           {% for item in items %}
