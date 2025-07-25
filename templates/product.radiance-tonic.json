@@ -2305,6 +2305,45 @@
         "show_text_below": true
       }
     },
+    "image_with_text_blocks_DWHDDT": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "text_RyztRt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add your text here</p>",
+            "text_style": "body",
+            "has_border": false,
+            "center_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "text_RyztRt"
+      ],
+      "name": "Image with text blocks",
+      "settings": {
+        "title": "",
+        "text": "",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_4_f26c5bec-70f3-4af3-b012-c6418dea7995.jpg",
+        "image_height_desk": "square",
+        "image_height_mob": "square",
+        "width": "full",
+        "width_mobile": "full",
+        "image_first": false,
+        "image_first_mob": false,
+        "image_large": false,
+        "show_border": false,
+        "show_border_top": true,
+        "hide_border_mobile": false,
+        "remove_py_content": false,
+        "small_content": false,
+        "wrap_image_mobile": false,
+        "wrap_content_mobile": true,
+        "spacing_desktop": "lg:py-10",
+        "spacing_mobile": "py-10"
+      }
+    },
     "timeline_section_hBBi6r": {
       "type": "timeline-section",
       "blocks": {
@@ -2887,44 +2926,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "image_with_text_blocks_DWHDDT": {
-      "type": "image-with-text-blocks",
-      "blocks": {
-        "text_RyztRt": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Add your text here</p>",
-            "text_style": "body",
-            "has_border": false,
-            "center_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "text_RyztRt"
-      ],
-      "name": "Image with text blocks",
-      "settings": {
-        "title": "",
-        "text": "",
-        "image_height_desk": "square",
-        "image_height_mob": "square",
-        "width": "full",
-        "width_mobile": "full",
-        "image_first": false,
-        "image_first_mob": false,
-        "image_large": false,
-        "show_border": false,
-        "show_border_top": true,
-        "hide_border_mobile": false,
-        "remove_py_content": false,
-        "small_content": false,
-        "wrap_image_mobile": false,
-        "wrap_content_mobile": true,
-        "spacing_desktop": "lg:py-10",
-        "spacing_mobile": "py-10"
       }
     }
   },
