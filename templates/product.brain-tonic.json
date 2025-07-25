@@ -1387,9 +1387,7 @@
         "text_dMfrcF",
         "button_dErTNJ"
       ],
-      "custom_css": [
-        ".section-template--24823131865408__image_with_text_NDbkez-padding {border-top: 1px solid #000; }"
-      ],
+      "custom_css": [],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_1_923460cb-d9aa-4b70-ae9b-80151b3f2446.png",
