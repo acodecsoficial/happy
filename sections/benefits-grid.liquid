@@ -55,7 +55,7 @@
           <img src="{{ section.settings.image_1 | image_url }}" alt="{{ section.settings.heading_1 }}" />
         {% endif %}
       </div>
-      <div>
+      <div class="coluna_grid">
         <h2 class="heading title_benefits">{{ section.settings.heading_1 }}</h2>
         <ul class="font_surt">
           {% assign items = section.settings.bullets_1 | split: "|" %}
@@ -65,7 +65,7 @@
         </ul>
       </div>
       <!-- Bloco 2 -->
-      <div>
+      <div class="coluna_grid">
         <h2 class="heading title_benefits">{{ section.settings.heading_2 }}</h2>
         <ul class="font_surt">
           {% assign items2 = section.settings.bullets_2 | split: "|" %}
@@ -85,7 +85,7 @@
           <img src="{{ section.settings.image_3 | image_url }}" alt="{{ section.settings.heading_3 }}" />
         {% endif %}
       </div>
-      <div>
+      <div class="coluna_grid">
         <h2 class="heading title_benefits">{{ section.settings.heading_3 }}</h2>
         <ul class="font_surt">
           {% assign items3 = section.settings.bullets_3 | split: "|" %}
