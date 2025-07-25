@@ -60,7 +60,7 @@
         </div>
       {%- endif -%}
       {% comment %} Image with content {% endcomment %}
-      <div class="flex flex-col lg:flex-row ">
+      <div class="flex flex-col lg:flex-row mobile_column">
         {%- capture image_classes -%}
           {% if section.settings.wrap_image_mobile %} px-5 lg:px-0 {% endif %}
           {% unless section.settings.image_first_mob %} order-2 {% else %} order-1 {% endunless %} 
