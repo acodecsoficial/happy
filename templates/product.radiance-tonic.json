@@ -2215,6 +2215,7 @@
       "block_order": [
         "section_inner_jaGitq"
       ],
+      "disabled": true,
       "custom_css": [
         ".heading-block h2 {font-size: 50px;}",
         ".heading-block h4 {font-size: 24px;}"
