@@ -84,7 +84,8 @@
           {% endfor %}
         </ul>
       </div>
-      <!-- Bloco 2 -->
+     <div class="mudar_mobile">
+        <!-- Bloco 2 -->
       <div class="coluna_grid diferente">
         <h2 class="heading title_benefits">{{ section.settings.heading_2 }}</h2>
         <ul class="font_surt">
@@ -99,6 +100,7 @@
           <img src="{{ section.settings.image_2 | image_url }}" alt="{{ section.settings.heading_2 }}" />
         {% endif %}
       </div>
+     </div>
       <!-- Bloco 3 -->
       <div>
         {% if section.settings.image_3 != blank %}
