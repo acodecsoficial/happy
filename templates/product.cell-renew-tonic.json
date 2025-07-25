@@ -81,7 +81,7 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true,
-            "tonic": true,
+            "tonic": false,
             "default_info_sub_1": "Ships every month",
             "default_info_sub_2": "Free shipping on all orders",
             "default_info_sub_3": "Cancel your subscription anytime",
