@@ -585,7 +585,7 @@
       "type": "benefits-grid",
       "name": "Benefits Grid",
       "settings": {
-        "heading_main": "<h2>WHAT YOU’LL <em>notice first</em></h2>",
+        "heading_main": "<h3>WHAT YOU’LL <em>notice first</em></h3>",
         "image_1": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_3_bb477bf7-93a1-4cae-9aa8-b174afd799c7.png",
         "heading_1": "<p>In your body</p>",
         "bullets_1": "<ul><li>Light, sustained energy that carries you through</li><li>No highs, no lows, just clean momentum</li></ul>",
