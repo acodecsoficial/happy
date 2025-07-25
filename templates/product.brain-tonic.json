@@ -585,15 +585,15 @@
       "type": "benefits-grid",
       "name": "Benefits Grid",
       "settings": {
-        "heading_main": "WHAT YOU’LL notice first",
+        "heading_main": "<p>WHAT YOU’LL <em>notice first</em></p>",
         "image_1": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_3_bb477bf7-93a1-4cae-9aa8-b174afd799c7.png",
-        "heading_1": "In your body",
-        "bullets_1": "Light, sustained energy that carries you through|No highs, no lows, just clean momentum",
-        "heading_2": "In your mind",
-        "bullets_2": "Sharper thinking and faster recall|More presence, less mental noise",
+        "heading_1": "<p>In your body</p>",
+        "bullets_1": "<p>Light, sustained energy that carries you through|No highs, no lows, just clean momentum</p>",
+        "heading_2": "<p>In your mind</p>",
+        "bullets_2": "<p>Sharper thinking and faster recall|More presence, less mental noise</p>",
         "image_2": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_4_56c88d42-9d25-443b-8a75-f2da65088316.png",
-        "heading_3": "In your flow",
-        "bullets_3": "Meetings feel easier|Ideas come quicker|You stay in rhythm",
+        "heading_3": "<p>In your flow</p>",
+        "bullets_3": "<p>Meetings feel easier|Ideas come quicker|You stay in rhythm</p>",
         "image_3": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_5_2543d6a2-681a-4579-aed4-285dbebe6fb2.png"
       }
     },
