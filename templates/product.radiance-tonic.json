@@ -2464,6 +2464,7 @@
         "text": "",
         "image_desk": "shopify://shop_images/Sem_Titulo-1_4_f26c5bec-70f3-4af3-b012-c6418dea7995.jpg",
         "image_height_desk": "square",
+        "image_mob": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_10.png",
         "image_height_mob": "square",
         "width": "full",
         "width_mobile": "full",
@@ -2525,10 +2526,9 @@
     },
     "image_banner_kGC7P6": {
       "type": "image-banner",
-      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/IMMUNITYs.png",
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_11.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
