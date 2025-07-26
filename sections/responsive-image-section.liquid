@@ -1,23 +1,16 @@
 {% comment %}
   Responsive Image Section
-  Displays one image on desktop and a separate image on mobile.
+  Exibe uma imagem para desktop e outra para mobile usando CSS.
 {% endcomment %}
 
 {% if section.settings.desktop_image or section.settings.mobile_image %}
 <div class="responsive-image-section">
-  <picture>
-    {% if section.settings.mobile_image != blank %}
-    <source media="(max-width: 768px)" srcset="{{ section.settings.mobile_image | img_url: 'master' }}">
-    {% endif %}
-    {% if section.settings.desktop_image != blank %}
-    <source media="(min-width: 769px)" srcset="{{ section.settings.desktop_image | img_url: 'master' }}">
-    {% endif %}
-    {% assign img = section.settings.desktop_image %}
-    {% if img == blank %}
-    {% assign img = section.settings.mobile_image %}
-    {% endif %}
-    <img src="{{ img | img_url: 'master' }}" alt="{{ img.alt | escape }}" loading="lazy">
-  </picture>
+  {% if section.settings.desktop_image != blank %}
+    <img class="desktop-only" src="{{ section.settings.desktop_image | img_url: 'master' }}" alt="{{ section.settings.desktop_image.alt | escape }}" loading="lazy">
+  {% endif %}
+  {% if section.settings.mobile_image != blank %}
+    <img class="mobile-only" src="{{ section.settings.mobile_image | img_url: 'master' }}" alt="{{ section.settings.mobile_image.alt | escape }}" loading="lazy">
+  {% endif %}
 </div>
 {% endif %}
 
@@ -45,11 +38,19 @@
 {% endschema %}
 
 <style>
-.responsive-image-section picture,
 .responsive-image-section img {
   display: block;
   width: 100%;
   height: auto;
-  margin: 40px 0px; 
+}
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
 }
 </style>
