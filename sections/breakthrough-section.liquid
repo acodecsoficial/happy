@@ -12,7 +12,7 @@
     <div class="breakthrough-section__features">
       {% for block in section.blocks %}
         <div class="breakthrough-feature">
-          <h3 class="breakthrough-feature__heading heading">{{ block.settings.title }}</h3>
+          <h3 class="breakthrough-feature__heading heading"><li>{{ block.settings.title }}</li></h3>
           <p class="breakthrough-feature__text">{{ block.settings.text }}</p>
         </div>
       {% endfor %}
