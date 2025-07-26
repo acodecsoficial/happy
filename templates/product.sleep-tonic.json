@@ -1164,16 +1164,6 @@
             "center_mobile": false
           }
         },
-        "text_GcHhgp": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<h3><em> Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
-            "text_style": "heading",
-            "has_border": false,
-            "center_mobile": false
-          }
-        },
         "spacing_HM7NB3": {
           "type": "spacing",
           "settings": {
@@ -1182,10 +1172,19 @@
             "fill_all_desktop": false
           }
         },
+        "text_GcHhgp": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><em>Clinically balanced to deliver quality sleep, detox, and day-after clarity</em></h3>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
         "spacing_UFC7A6": {
           "type": "spacing",
           "settings": {
-            "spacing_desktop": 0,
+            "spacing_desktop": 20,
             "spacing_mobile": 20,
             "fill_all_desktop": false
           }
@@ -1193,7 +1192,7 @@
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Supports cellular vitality and natural energy production at the mitochondrial level</h3>",
+            "text": "<h3>Calmer nights after overstimulation or stress</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1202,7 +1201,7 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Enhances liver detoxification and helps eliminate environmental toxins from your system</h3>",
+            "text": "<h3>Deeper, more consistent sleep cycles</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1211,7 +1210,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Strengthens immune resilience by optimizing white blood cell function and response</h3>",
+            "text": "<h3>Improved morning focus and sustained energy</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1220,7 +1219,7 @@
         "text_Ucicgf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Promotes natural radiance through improved skin clarity, tone, and cellular health</h3>",
+            "text": "<h3>Supports hormone balance during perimenopause</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1229,7 +1228,7 @@
         "text_fAHjYt": {
           "type": "text",
           "settings": {
-            "text": "<h3>Defends against oxidative stress from daily environmental and lifestyle stressors</h3>",
+            "text": "<h3>No grogginess or residue the next day</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1238,7 +1237,7 @@
         "text_yWAANL": {
           "type": "text",
           "settings": {
-            "text": "<h3>Pleasantly tart-sweet taste without sugar, bitterness, or synthetic flavorin</h3>",
+            "text": "<h3>Naturally delicious flavor that fits your nighttime ritual</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1279,8 +1278,8 @@
       },
       "block_order": [
         "text_nLEfLV",
-        "text_GcHhgp",
         "spacing_HM7NB3",
+        "text_GcHhgp",
         "spacing_UFC7A6",
         "text_QghNzh",
         "text_BFqHcM",
