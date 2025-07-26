@@ -44,17 +44,18 @@
         "icon_text_list_xhFzwP": {
           "type": "icon_text_list",
           "settings": {
-            "icon_1": "shopify://shop_images/387f1ba7966876ec910357f579983025.svg",
-            "text_1": "Clinically Proven to Absorb 20x Better",
-            "icon_2": "shopify://shop_images/ad5e603ed9c42308431463dd4448c51c.svg",
-            "text_2": "Supports liver detox, fights oxidative stress",
-            "icon_3": "shopify://shop_images/76bf71cb4bb82b49562ef2a73db8df58.svg",
-            "text_3": "Promotes a radiant and healthy skin",
-            "icon_4": "shopify://shop_images/a845d62f39dbf0366d47d10f1de71c9d.svg",
-            "text_4": "Daily liposomal glutathione to flush toxins, reinforce immune defense, and extend cellular health",
-            "icon_5": "shopify://shop_images/5cbcf7de68f4d031bcb79ad7ffe95a66.svg",
-            "text_5": "Vegan • sugar-free • gut-friendly • non-GMO",
-            "text_6": "",
+            "icon_1": "shopify://shop_images/b23338a004f07d33bead6ee776255f4d.svg",
+            "text_1": "10x better absorption with liposomal delivery",
+            "icon_2": "shopify://shop_images/b23338a004f07d33bead6ee776255f4d.svg",
+            "text_2": "Fall asleep faster and stay asleep longer",
+            "icon_3": "shopify://shop_images/b23338a004f07d33bead6ee776255f4d.svg",
+            "text_3": "Wake up clear, not groggy",
+            "icon_4": "shopify://shop_images/b23338a004f07d33bead6ee776255f4d.svg",
+            "text_4": "Delivers overnight detox and recovery while you sleep",
+            "icon_5": "shopify://shop_images/b23338a004f07d33bead6ee776255f4d.svg",
+            "text_5": "Calms racing thoughts and midnight mind-chatter instantly",
+            "icon_6": "shopify://shop_images/b23338a004f07d33bead6ee776255f4d.svg",
+            "text_6": "Vegan, sugar-free, clean formula, non-GMO",
             "text_7": "",
             "text_size_desktop": 14,
             "text_size_mobile": 14,
@@ -387,7 +388,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p>A RADIANT GLOW <em>that uplifts you</em></p>",
+                        "text": "<p>Fall asleep fast. <em>Wake up clear.</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 50,
@@ -419,7 +420,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2><em>Radiance begins with what your skin actually absorbs.</em></h2>",
+                        "text": "<h2>Because real recovery starts with real rest.</h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -434,7 +435,7 @@
                     "text_block_EJp8ft": {
                       "type": "text-block",
                       "settings": {
-                        "text": "<p>Clinically proven to absorb 20x more effectively than traditional supplements, this breakthrough liposomal formula delivers 503mg of pure glutathione: your body's master antioxidant—directly to your cells, supporting cellular resilience, natural radiance, and graceful aging from within.</p>",
+                        "text": "<p>Sleep isn’t the end of your day. It’s the beginning of your next. Sleep Tonic works with your natural rhythm. It delivers restful sleep, overnight detox, and a clear morning without caffeine. Advanced liposomal technology absorbs nutrients up to 10× better than capsules, so every dose works faster, deeper, and produces results you feel by sunrise.<br/><br/>No more lying awake at 2 AM. No more exhausted mornings.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -590,7 +591,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<h2>What you’ll notice</h2>",
+                    "text": "<h2>Everyday win</h2>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -606,7 +607,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Your energy feels more stable throughout the day, mental fog starts to lift, and your skin has a subtle but noticeable glow.</li><li> Friends might ask if you're using a new skincare routine or getting more sleep.</li></ul>",
+                    "text": "<ul><li>Fall asleep naturally in under an hour</li><li>Stay asleep longer with fewer wake-ups</li><li>Wake up refreshed, without morning fog </li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -669,7 +670,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Liposomal glutathione rapidly restores cellular antioxidant levels that naturally decline with age and stress. </li><li>Your liver begins processing toxins more efficiently, your immune cells function optimally, and cellular energy production improves creating that unmistakable vitality that radiates outward.</li></ul>",
+                    "text": "<ul><li>Nervous-system calm from GABA plus liposomal melatonin</li><li>Overnight detox and cellular renewal with glutathione</li><li>Clinically dosed formula that syncs with your circadian rhythm</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -823,7 +824,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Targeted</em></p>",
+                        "text": "<p><em>One</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 0,
@@ -836,7 +837,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Formulated specifically to support cellular longevity, liver detox, immune resilience, and the natural radiance that comes from optimal cellular health.</p>",
+                        "text": "<p>A weekly ritual that restores deep sleep and mental clarity.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -873,7 +874,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>20x More Effective</em></p>",
+                        "text": "<p><em>2.5 mg</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -885,7 +886,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Clinically shown to absorb 20x better than powders, maximizing cellular uptake and systemic benefits throughout your body.</p>",
+                        "text": "<p>Clinically dosed melatonin for gentle rhythm reset.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -921,7 +922,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>503 mg</em></p>",
+                        "text": "<p><em>Clean</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -933,7 +934,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>High-dose glutathione in its most bioavailable liposomal form, delivering clinical-strength cellular support.</p>",
+                        "text": "<p>No sugar, gluten, dairy, or synthetic additives. Third-party tested.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -970,7 +971,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Clean</em></p>",
+                        "text": "<p><em>Quick</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -982,7 +983,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Sugar-free, non-GMO, tested for heavy metals and formulated with pharmaceutical-grade USP water for maximum purity.</p>",
+                        "text": "<p>Liposomal liquid format absorbs fast and feels gentle.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1020,7 +1021,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Simple</em></p>",
+                        "text": "<p><em>Science</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1032,7 +1033,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>No mixing. No capsules. Just a quick sip every morning, effortless daily support for lifelong cellular vitality.</p>",
+                        "text": "<p>Every claim backed. Every batch tested. Trust built nightly.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1132,6 +1133,7 @@
         "text_rF6LLk",
         "button_MKUyna"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_8.png",
@@ -1150,54 +1152,13 @@
         "padding_bottom": 36
       }
     },
-    "focus_you_Lh73aQ": {
-      "type": "focus-you",
-      "blocks": {
-        "row_NPeT7w": {
-          "type": "row",
-          "settings": {
-            "image_position": "left",
-            "image": "shopify://shop_images/Image_8.png",
-            "heading_1": "Easier breathing, fewer sniffles",
-            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
-            "heading_2": "Less tension, more comfort",
-            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
-            "button_text": "",
-            "button_url": "/"
-          }
-        },
-        "row_tWbad6": {
-          "type": "row",
-          "settings": {
-            "image_position": "right",
-            "image": "shopify://shop_images/Image_8.png",
-            "heading_1": "Everyday defense, all day long",
-            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
-            "heading_2": "Steady energy, no crash",
-            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
-            "button_text": "Experience Relief Today",
-            "button_url": "/"
-          }
-        }
-      },
-      "block_order": [
-        "row_NPeT7w",
-        "row_tWbad6"
-      ],
-      "disabled": true,
-      "name": "Focus You",
-      "settings": {
-        "title": "<p>Feel <em>the Change</em></p>",
-        "subtitle": ""
-      }
-    },
     "image_with_text_blocks_gAjTfr": {
       "type": "image-with-text-blocks",
       "blocks": {
         "text_nLEfLV": {
           "type": "text",
           "settings": {
-            "text": "<p>BUILT TO PERFORM <em>designed to fit you</em></p>",
+            "text": "<p>BUILT TO PERFORM <em>designed to restore</em></p>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1340,9 +1301,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_5_d97e971f-f8c5-4ed6-b3e1-de4876482c89.jpg",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_7.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/Sem_Titulo-1_6_d60d283b-f6a6-48e9-8c2f-a85652daeaf0.jpg",
+        "image_mob": "shopify://shop_images/Sem_Titulo-1_8.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -1358,58 +1319,6 @@
         "wrap_content_mobile": true,
         "spacing_desktop": "lg:py-0",
         "spacing_mobile": "py-0"
-      }
-    },
-    "how_it_helps_YPBkT9": {
-      "type": "how-it-helps",
-      "blocks": {
-        "card_6a7aP7": {
-          "type": "card",
-          "settings": {
-            "card_title": "Keeps things steady",
-            "card_text": "Helps your body reset before symptoms hit."
-          }
-        },
-        "card_cMMrq6": {
-          "type": "card",
-          "settings": {
-            "card_title": "Soothes discomfort",
-            "card_text": "Eases tension when you're feeling worn out."
-          }
-        },
-        "card_mVB6G9": {
-          "type": "card",
-          "settings": {
-            "card_title": "Triggers all around",
-            "card_text": "Pollen, stress, and pollution can throw your body off."
-          }
-        },
-        "card_h6ztFg": {
-          "type": "card",
-          "settings": {
-            "card_title": "Shields your cells",
-            "card_text": "Daily protection against stress and wear."
-          }
-        },
-        "card_zCpNRP": {
-          "type": "card",
-          "settings": {
-            "card_title": "Absorbs 10x better",
-            "card_text": "Liposomal technology delivers real results, fast."
-          }
-        }
-      },
-      "block_order": [
-        "card_6a7aP7",
-        "card_cMMrq6",
-        "card_mVB6G9",
-        "card_h6ztFg",
-        "card_zCpNRP"
-      ],
-      "disabled": true,
-      "name": "How it Helps",
-      "settings": {
-        "heading": "<p>HOW it helps</p>"
       }
     },
     "landing_section_3RqYFU": {
@@ -2080,315 +1989,6 @@
         "title": "YOUR RADIANCE JOURNEY: <em>90-day progression</em>"
       }
     },
-    "ingredients_tabs_nKwUYB": {
-      "type": "ingredients-tabs",
-      "blocks": {
-        "tab_GQg8LN": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "MAGNESIUM BISGLYCINATE",
-            "tab_heading": "Magnesium Bisglycinate",
-            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
-            "tab_image": "shopify://shop_images/Badge.png"
-          }
-        },
-        "tab_g36fUn": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Phosphatidylcholine Liposomes",
-            "tab_heading": "Magnesium Bisglycinate",
-            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
-            "tab_image": "shopify://shop_images/Image_5.png"
-          }
-        }
-      },
-      "block_order": [
-        "tab_GQg8LN",
-        "tab_g36fUn"
-      ],
-      "disabled": true,
-      "name": "Ingredients Tabs",
-      "settings": {
-        "heading": "THOUGHTFULLY SOURCED,",
-        "subheading": "clinically-verified ingredients"
-      }
-    },
-    "landing_section_nqCRrp": {
-      "type": "landing-section",
-      "blocks": {
-        "section_inner_jaGitq": {
-          "type": "section-inner",
-          "settings": {
-            "desktop_max_width": 1440,
-            "desktop_grid_columns": "2",
-            "horizontal_alignment": "center",
-            "vertical_alignment": "start",
-            "desktop_grid_column_gap": 50,
-            "desktop_grid_row_gap": 0,
-            "top_spacing_desktop": 70,
-            "bottom_spacing_desktop": 70,
-            "left_spacing_desktop": 30,
-            "right_spacing_desktop": 30,
-            "mobile_grid_columns": "1",
-            "mobile_horizontal_alignment": "start",
-            "mobile_vertical_alignment": "start",
-            "mobile_grid_column_gap": 0,
-            "mobile_grid_row_gap": 0,
-            "top_spacing_mobile": 0,
-            "bottom_spacing_mobile": 0,
-            "left_spacing_mobile": 20,
-            "right_spacing_mobile": 20
-          },
-          "blocks": {
-            "grid_list_8NRiw8": {
-              "type": "grid-list",
-              "settings": {
-                "desktop_grid_columns": "1",
-                "column_gap_desktop": 40,
-                "row_gap_desktop": 40,
-                "mobile_grid_columns": "1",
-                "column_gap_mobile": 0,
-                "row_gap_mobile": 0
-              },
-              "blocks": {
-                "image_block_4rVcUP": {
-                  "type": "image-block",
-                  "settings": {
-                    "image": "shopify://shop_images/asset4.png",
-                    "different_mobile_image": false,
-                    "show_on_mobile": true,
-                    "show_on_desktop": true
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_block_4rVcUP"
-              ]
-            },
-            "section_inner_edEAQq": {
-              "type": "section-inner",
-              "settings": {
-                "desktop_grid_columns": "1",
-                "horizontal_alignment": "start",
-                "vertical_alignment": "center",
-                "desktop_grid_column_gap": 0,
-                "desktop_grid_row_gap": 0,
-                "top_spacing_desktop": 0,
-                "bottom_spacing_desktop": 0,
-                "left_spacing_desktop": 0,
-                "right_spacing_desktop": 70,
-                "mobile_grid_columns": "1",
-                "mobile_horizontal_alignment": "start",
-                "mobile_vertical_alignment": "center",
-                "mobile_grid_column_gap": 0,
-                "mobile_grid_row_gap": 50,
-                "top_spacing_mobile": 20,
-                "bottom_spacing_mobile": 20,
-                "left_spacing_mobile": 0,
-                "right_spacing_mobile": 0
-              },
-              "blocks": {
-                "grid_list_39DAGw": {
-                  "type": "grid-list",
-                  "settings": {
-                    "desktop_grid_columns": "1",
-                    "column_gap_desktop": 40,
-                    "row_gap_desktop": 20,
-                    "mobile_grid_columns": "1",
-                    "column_gap_mobile": 30,
-                    "row_gap_mobile": 15
-                  },
-                  "blocks": {
-                    "heading_block_h8V6Bc": {
-                      "type": "heading-block",
-                      "settings": {
-                        "subheading": "",
-                        "text": "<h2>TAKE BACK <em>your immunity</em></h2>",
-                        "tag_select": "h1",
-                        "text_color": "",
-                        "desktop_font_size": 0,
-                        "text_alignment_desktop": "left",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
-                    "text_block_rbCFYQ": {
-                      "type": "text-block",
-                      "name": "Text block",
-                      "settings": {
-                        "text": "<h3><em>Clinically supported liposomal Vitamin C for rapid, effective defense</em></h3>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": false,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
-                    "text_block_3Rzw4W": {
-                      "type": "text-block",
-                      "name": "Text block",
-                      "settings": {
-                        "text": "<p>A single teaspoon delivers 1,000 mg of Vitamin C in liposomal form, helping your body stay ready and resilient. Expect faster uptake, stronger immune readiness and vitality that shows.</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": false,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
-                    "ai_gen_block_ab0bec8_dRmymN": {
-                      "type": "ai_gen_block_ab0bec8",
-                      "settings": {
-                        "desktop_spacing": 15,
-                        "mobile_spacing": 10
-                      },
-                      "blocks": {}
-                    },
-                    "ai_gen_block_3608cf6_FRaWaP": {
-                      "type": "ai_gen_block_3608cf6",
-                      "settings": {
-                        "button_text": "Buy Now",
-                        "button_link": "#",
-                        "background_color": "#000000",
-                        "text_color": "#ffffff",
-                        "border_color": "#000000",
-                        "hover_background_color": "#333333",
-                        "hover_text_color": "#ffffff",
-                        "hover_border_color": "#333333",
-                        "font_size": 32,
-                        "font_weight": "400",
-                        "width_type": "custom",
-                        "custom_width": 55,
-                        "min_width": 0,
-                        "alignment": "left",
-                        "padding_vertical": 10,
-                        "padding_horizontal": 60,
-                        "border_width": 1,
-                        "border_radius": 0,
-                        "mobile_full_width": true
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "heading_block_h8V6Bc",
-                    "text_block_rbCFYQ",
-                    "text_block_3Rzw4W",
-                    "ai_gen_block_ab0bec8_dRmymN",
-                    "ai_gen_block_3608cf6_FRaWaP"
-                  ]
-                }
-              },
-              "block_order": [
-                "grid_list_39DAGw"
-              ]
-            }
-          },
-          "block_order": [
-            "grid_list_8NRiw8",
-            "section_inner_edEAQq"
-          ]
-        }
-      },
-      "block_order": [
-        "section_inner_jaGitq"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".heading-block h2 {font-size: 50px;}",
-        ".heading-block h4 {font-size: 24px;}"
-      ],
-      "settings": {
-        "background_color": "#f7f5eb",
-        "full_width": false,
-        "max_width": 0,
-        "top_spacing": 0,
-        "bottom_spacing": 0,
-        "use_top_border": true,
-        "use_bottom_border": false,
-        "full_width_mobile": true,
-        "max_width_mobile": 0,
-        "top_spacing_mobile": 20,
-        "bottom_spacing_mobile": 20,
-        "use_top_border_mobile": true,
-        "use_bottom_border_mobile": false
-      }
-    },
-    "image_with_text_wjQyxT": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_hiF9jj": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Start Feeling Better, <em>every day</em></p>",
-            "heading_size": "h1",
-            "line-height": 1
-          }
-        },
-        "text_yLR6KH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Relief Tonic helps your body bounce back from daily triggers with confidence. Refreshing citrus taste. Clean ingredients. Real results. Start today.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_8rgaR3": {
-          "type": "button",
-          "settings": {
-            "button_label": "Buy Now",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_hiF9jj",
-        "text_yLR6KH",
-        "button_8rgaR3"
-      ],
-      "disabled": true,
-      "custom_css": [],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_3.png",
-        "height": "adapt",
-        "landscape": false,
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_banner_iQ4HPC": {
-      "type": "image-banner",
-      "disabled": true,
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/martha_868fe994-f73b-494b-bb0a-272b0580bf56.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "image_with_text_blocks_DWHDDT": {
       "type": "image-with-text-blocks",
       "blocks": {
@@ -2648,233 +2248,12 @@
         "show_all_link": true
       }
     },
-    "image_banner_D6TgTi": {
-      "type": "image-banner",
-      "disabled": true,
-      "custom_css": [
-        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
-        ".banner__media {margin-top: 3rem;}",
-        ".banner__content {display: none;}",
-        "@media (max-width: 900px) {#Banner-template--24672251937088__image_banner_D6TgTi {padding-bottom: 3rem; }}"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Image_51ffbcb3-db98-4e77-806a-44de65fe5b49.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "wines": {
       "type": "wines",
       "disabled": true,
       "settings": {
         "title_section": "AGE LIKE <em>fine wine</em>",
         "text_section": "Forget “a glass of wine”—elevate to an antioxidant celebration, without the alcohol. Each shot delivers 220 mg of 98% purity Resveratrol, equal to 43 bottles of red wine. Toast to vibrant health and longevity with every sip."
-      }
-    },
-    "landing_section_qAbkWE": {
-      "type": "landing-section",
-      "blocks": {
-        "section_inner_tcDKaG": {
-          "type": "section-inner",
-          "settings": {
-            "desktop_grid_columns": "2",
-            "horizontal_alignment": "start",
-            "vertical_alignment": "start",
-            "desktop_grid_column_gap": 50,
-            "desktop_grid_row_gap": 0,
-            "top_spacing_desktop": 70,
-            "bottom_spacing_desktop": 70,
-            "left_spacing_desktop": 70,
-            "right_spacing_desktop": 70,
-            "mobile_grid_columns": "1",
-            "mobile_horizontal_alignment": "start",
-            "mobile_vertical_alignment": "start",
-            "mobile_grid_column_gap": 0,
-            "mobile_grid_row_gap": 0,
-            "top_spacing_mobile": 0,
-            "bottom_spacing_mobile": 0,
-            "left_spacing_mobile": 0,
-            "right_spacing_mobile": 0
-          },
-          "blocks": {
-            "grid_list_xwWhF9": {
-              "type": "grid-list",
-              "settings": {
-                "desktop_grid_columns": "1",
-                "column_gap_desktop": 40,
-                "row_gap_desktop": 40,
-                "mobile_grid_columns": "1",
-                "column_gap_mobile": 30,
-                "row_gap_mobile": 30
-              },
-              "blocks": {
-                "image_block_UQdmmD": {
-                  "type": "image-block",
-                  "settings": {
-                    "image": "shopify://shop_images/ChatGPT_Image_Apr_29_2025_09_08_14_PM.png",
-                    "different_mobile_image": false,
-                    "show_on_mobile": true,
-                    "show_on_desktop": true
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_block_UQdmmD"
-              ]
-            },
-            "section_inner_ziMpcL": {
-              "type": "section-inner",
-              "settings": {
-                "desktop_grid_columns": "1",
-                "horizontal_alignment": "start",
-                "vertical_alignment": "flex-between",
-                "desktop_grid_column_gap": 0,
-                "desktop_grid_row_gap": 0,
-                "top_spacing_desktop": 0,
-                "bottom_spacing_desktop": 0,
-                "left_spacing_desktop": 0,
-                "right_spacing_desktop": 70,
-                "mobile_grid_columns": "1",
-                "mobile_horizontal_alignment": "start",
-                "mobile_vertical_alignment": "center",
-                "mobile_grid_column_gap": 0,
-                "mobile_grid_row_gap": 50,
-                "top_spacing_mobile": 20,
-                "bottom_spacing_mobile": 20,
-                "left_spacing_mobile": 0,
-                "right_spacing_mobile": 0
-              },
-              "blocks": {
-                "grid_list_BWJghP": {
-                  "type": "grid-list",
-                  "settings": {
-                    "desktop_grid_columns": "1",
-                    "column_gap_desktop": 40,
-                    "row_gap_desktop": 40,
-                    "mobile_grid_columns": "1",
-                    "column_gap_mobile": 30,
-                    "row_gap_mobile": 30
-                  },
-                  "blocks": {
-                    "heading_block_4fV3EH": {
-                      "type": "heading-block",
-                      "settings": {
-                        "subheading": "",
-                        "text": "<p>HOW TO USE</p>",
-                        "tag_select": "h2",
-                        "text_color": "",
-                        "text_alignment_desktop": "left",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "heading_block_4fV3EH"
-                  ]
-                },
-                "grid_list_DGEiFe": {
-                  "type": "grid-list",
-                  "settings": {
-                    "desktop_grid_columns": "1",
-                    "column_gap_desktop": 40,
-                    "row_gap_desktop": 0,
-                    "mobile_grid_columns": "1",
-                    "column_gap_mobile": 0,
-                    "row_gap_mobile": 15
-                  },
-                  "blocks": {
-                    "text_block_hf8TQj": {
-                      "type": "text-block",
-                      "settings": {
-                        "text": "<p>HOW TO MAKE <br/><br/>Mix one scoop per day with water, almond milk, or your favorite smoothie.</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": true,
-                        "top_spacing_desktop": 10,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "top_spacing_mobile": 10,
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
-                    "heading_block_VctgjK": {
-                      "type": "heading-block",
-                      "settings": {
-                        "subheading": "",
-                        "text": "",
-                        "tag_select": "h2",
-                        "text_color": "",
-                        "desktop_line_height": 0,
-                        "top_spacing_desktop": 40,
-                        "text_alignment_desktop": "left",
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    },
-                    "text_block_VAgnt7": {
-                      "type": "text-block",
-                      "settings": {
-                        "text": "<p>WHEN TO USE<br/><br/>Ideal after workouts or anytime you need a clean, plant-based energy boost</p>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": true,
-                        "desktop_line_height": 0,
-                        "top_spacing_desktop": 10,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "top_spacing_mobile": 10,
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_block_hf8TQj",
-                    "heading_block_VctgjK",
-                    "text_block_VAgnt7"
-                  ]
-                }
-              },
-              "block_order": [
-                "grid_list_BWJghP",
-                "grid_list_DGEiFe"
-              ]
-            }
-          },
-          "block_order": [
-            "grid_list_xwWhF9",
-            "section_inner_ziMpcL"
-          ]
-        }
-      },
-      "block_order": [
-        "section_inner_tcDKaG"
-      ],
-      "disabled": true,
-      "settings": {
-        "background_color": "#e5dbcc",
-        "full_width": true,
-        "top_spacing": 0,
-        "bottom_spacing": 0,
-        "use_top_border": false,
-        "use_bottom_border": false,
-        "full_width_mobile": false,
-        "top_spacing_mobile": 20,
-        "bottom_spacing_mobile": 20,
-        "use_top_border_mobile": true,
-        "use_bottom_border_mobile": false
       }
     },
     "faqs_9gMU6f": {
@@ -3036,9 +2415,6 @@
         "faq_LAfBXQ"
       ],
       "disabled": true,
-      "custom_css": [
-        "#faqs {border-top: 1px solid;}"
-      ],
       "settings": {
         "title": "Frequently Asked Questions",
         "is_padding_top": "yes",
@@ -3073,22 +2449,14 @@
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
     "image_with_text_4b8iec",
-    "focus_you_Lh73aQ",
     "image_with_text_blocks_gAjTfr",
-    "how_it_helps_YPBkT9",
     "landing_section_3RqYFU",
     "results_list_LqxNh4",
-    "ingredients_tabs_nKwUYB",
-    "landing_section_nqCRrp",
-    "image_with_text_wjQyxT",
-    "image_banner_iQ4HPC",
     "image_with_text_blocks_DWHDDT",
     "timeline_section_hBBi6r",
     "image_banner_kGC7P6",
     "subscription_products_Q9kNnn",
-    "image_banner_D6TgTi",
     "wines",
-    "landing_section_qAbkWE",
     "faqs_9gMU6f",
     "17401711251af96b37"
   ]
