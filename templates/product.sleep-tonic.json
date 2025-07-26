@@ -1092,66 +1092,6 @@
         "use_bottom_border_mobile": false
       }
     },
-    "image_with_text_4b8iec": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_b7693f": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>WHY <em>liposomal glutathione?</em></p>",
-            "heading_size": "h1",
-            "line-height": 1
-          }
-        },
-        "heading_k6PitK": {
-          "type": "heading",
-          "settings": {
-            "heading": "<h2><em>Because what your body absorbs makes all the difference.</em></h2>",
-            "heading_size": "h2",
-            "line-height": 1
-          }
-        },
-        "text_rF6LLk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Radiance Tonic uses a special delivery method that wraps each glutathione molecule in tiny protective bubbles. This helps it travel through your digestive system and reach your cells where it matters most.<br/>Clinical study showed: Participants taking liposomal glutathione experienced improved liver function and a 39% reduction in blood mercury levels in just 30 days, demonstrating powerful detoxification support at the cellular level.<br/>That's why it absorbs up to 20 times better than powders. <br/><br/>You feel and see results faster.</p>",
-            "text_style": "subtitle"
-          }
-        },
-        "button_MKUyna": {
-          "type": "button",
-          "settings": {
-            "button_label": "Buy Now",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_b7693f",
-        "heading_k6PitK",
-        "text_rF6LLk",
-        "button_MKUyna"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_8.png",
-        "height": "adapt",
-        "landscape": false,
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_blocks_gAjTfr": {
       "type": "image-with-text-blocks",
       "blocks": {
@@ -1986,6 +1926,7 @@
         "spacing_jerdRF",
         "button_zcHpKg"
       ],
+      "disabled": true,
       "name": "Image with text blocks",
       "settings": {
         "title": "",
@@ -2010,6 +1951,56 @@
         "spacing_mobile": "py-10"
       }
     },
+    "image_with_text_4b8iec": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_b7693f": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>YOUR SLEEP <em>essential</em></p>",
+            "heading_size": "h1",
+            "line-height": 1
+          }
+        },
+        "text_rF6LLk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Just one teaspoon delivers a complete sleep support system with 30 servings per bottle. <br/>Experience deeper, more restorative sleep with our precisely dosed formula designed for occasional use when you need quality rest most.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_MKUyna": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_b7693f",
+        "text_rF6LLk",
+        "button_MKUyna"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_12.png",
+        "height": "adapt",
+        "landscape": false,
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "timeline_section_hBBi6r": {
       "type": "timeline-section",
       "blocks": {
@@ -2032,7 +2023,7 @@
           "settings": {
             "number": "",
             "step_title": "TAKE ONE TEASPOON (6 ML)",
-            "step_text": "Every morning, straight or mixed into water,<br> juice, or a smoothie"
+            "step_text": "30 minutes before bedtime for optimal results.<br> Mix into water, your favorite beverage, or sip it straight."
           }
         }
       },
@@ -2048,7 +2039,7 @@
       ],
       "settings": {
         "show_border_top": true,
-        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_9.png",
+        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_13.png",
         "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_2_7275b6aa-5522-4ddd-b1f1-b504191bb210.png"
       }
     },
@@ -2359,11 +2350,11 @@
     "landing_section_GdHXgh",
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
-    "image_with_text_4b8iec",
     "image_with_text_blocks_gAjTfr",
     "landing_section_3RqYFU",
     "results_list_LqxNh4",
     "image_with_text_blocks_DWHDDT",
+    "image_with_text_4b8iec",
     "timeline_section_hBBi6r",
     "subscription_products_Q9kNnn",
     "wines",
