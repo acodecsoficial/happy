@@ -1446,7 +1446,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>HOW VITAMIN C WORKS <em>for your cells</em></p>",
+                "text": "<p>HOW IT <em>works</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
@@ -1455,10 +1455,24 @@
                 "text_alignment_mobile": "left"
               },
               "blocks": {}
+            },
+            "heading_block_LaBbgV": {
+              "type": "heading-block",
+              "name": "Heading block",
+              "settings": {
+                "subheading": "<p><em>Glutathione helps keep your skin visibly clearer, more even, and more resilient to the effects of time and environmental stressors.</em></p>",
+                "text": "",
+                "tag_select": "h2",
+                "text_color": "",
+                "text_alignment_desktop": "left",
+                "text_alignment_mobile": "left"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "heading_block_g9fQLV"
+            "heading_block_g9fQLV",
+            "heading_block_LaBbgV"
           ]
         },
         "section_inner_KGEFVa": {
@@ -1716,7 +1730,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/MOLECULAR_VIDEO.png",
+                    "image": "shopify://shop_images/Sem_Titulo-4_1_5b244a62-64e1-40e8-9865-265eff7b3d30.jpg",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
