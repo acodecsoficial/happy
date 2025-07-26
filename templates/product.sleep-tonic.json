@@ -1828,7 +1828,7 @@
         "max_width": 1440,
         "top_spacing": 70,
         "bottom_spacing": 70,
-        "use_top_border": true,
+        "use_top_border": false,
         "use_bottom_border": false,
         "full_width_mobile": false,
         "top_spacing_mobile": 35,
