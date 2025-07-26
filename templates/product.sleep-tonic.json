@@ -1713,7 +1713,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_8.svg",
+                            "icon_image": "shopify://shop_images/Icons_11.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1736,7 +1736,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Acts as a powerful antioxidant, reducing oxidative stress and supporting long-term cellular health.</h3>",
+                            "text": "<h3>Glutathione powers overnight detox and cellular repair</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1770,7 +1770,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_9.svg",
+                            "icon_image": "shopify://shop_images/Icons_11.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1793,7 +1793,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Promotes even skin tone and reduces signs of hyperpigmentation by inhibiting melanin production.</h3>",
+                            "text": "<h3>The clean formula tastes smooth, with no bitterness or synthetic aftertaste</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1810,69 +1810,11 @@
                         "ai_gen_block_e8307fc_NtbyeH",
                         "text_block_gbe6Vy"
                       ]
-                    },
-                    "grid_list_aCpTQR": {
-                      "type": "grid-list",
-                      "name": "Grid (simple)",
-                      "settings": {
-                        "desktop_grid_columns": "1",
-                        "column_gap_desktop": 0,
-                        "row_gap_desktop": 0,
-                        "mobile_grid_columns": "1",
-                        "column_gap_mobile": 0,
-                        "row_gap_mobile": 0
-                      },
-                      "blocks": {
-                        "ai_gen_block_e8307fc_dVRyb3": {
-                          "type": "ai_gen_block_e8307fc",
-                          "name": "Icon Block",
-                          "settings": {
-                            "icon_image": "shopify://shop_images/Icons_10.svg",
-                            "alt_text": "",
-                            "link": "",
-                            "alignment": "flex-end",
-                            "icon_width": 45,
-                            "icon_width_mobile": 45,
-                            "icon_padding": 8,
-                            "padding_top": 4,
-                            "padding_bottom": 4,
-                            "padding_top_mobile": 16,
-                            "padding_bottom_mobile": 16,
-                            "background_color": "rgba(0,0,0,0)",
-                            "border_radius": 8,
-                            "border_width": 0,
-                            "border_color": "#e0e0e0",
-                            "hover_scale": 1.1
-                          },
-                          "blocks": {}
-                        },
-                        "text_block_xfKeqf": {
-                          "type": "text-block",
-                          "name": "Text block",
-                          "settings": {
-                            "text": "<h3>Protects collagen from oxidative damage and supports healthy, firm, elastic skin.</h3>",
-                            "text_color": "",
-                            "text_weight": "normal",
-                            "border-top": false,
-                            "desktop_font_size": 16,
-                            "text_alignment_desktop": "right",
-                            "tooltip_texts": "",
-                            "mobile_font_size": 16,
-                            "text_alignment_mobile": "right"
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "ai_gen_block_e8307fc_dVRyb3",
-                        "text_block_xfKeqf"
-                      ]
                     }
                   },
                   "block_order": [
                     "grid_list_pqk4a3",
-                    "grid_list_TyYWRe",
-                    "grid_list_aCpTQR"
+                    "grid_list_TyYWRe"
                   ]
                 }
               },
