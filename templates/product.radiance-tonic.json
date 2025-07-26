@@ -2645,30 +2645,6 @@
         "show_all_link": true
       }
     },
-    "image_banner_D6TgTi": {
-      "type": "image-banner",
-      "disabled": true,
-      "custom_css": [
-        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
-        ".banner__media {margin-top: 3rem;}",
-        ".banner__content {display: none;}",
-        "@media (max-width: 900px) {#Banner-template--24672251937088__image_banner_D6TgTi {padding-bottom: 3rem; }}"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Image_51ffbcb3-db98-4e77-806a-44de65fe5b49.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "wines": {
       "type": "wines",
       "disabled": true,
@@ -3084,7 +3060,6 @@
     "timeline_section_hBBi6r",
     "responsive_image_section_qi3Xji",
     "subscription_products_Q9kNnn",
-    "image_banner_D6TgTi",
     "wines",
     "landing_section_qAbkWE",
     "faqs_9gMU6f",
