@@ -1021,6 +1021,42 @@
   }
 </style>
 
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('newsletter-form');
+    if (!wrapper) return;
+
+    const successEl = wrapper.querySelector('.success');
+    const errorEl   = wrapper.querySelector('.error');
+
+    // Função de toast reutilizável
+    function showToast(message, type) {
+      const toast = document.createElement('div');
+      toast.className = `newsletter-toast ${type}`;
+      toast.textContent = message;
+      document.body.append(toast);
+      setTimeout(() => toast.remove(), 5000);
+    }
+
+    // Quando der sucesso, remove o d-none e dispara o toast
+    wrapper.addEventListener('submitSuccess', () => {
+      if (successEl.classList.contains('d-none')) {
+        successEl.classList.remove('d-none');
+      }
+      showToast(successEl.textContent, 'success');
+    });
+
+    // Quando der erro, remove o d-none e dispara o toast
+    wrapper.addEventListener('submitError', () => {
+      if (errorEl.classList.contains('d-none')) {
+        errorEl.classList.remove('d-none');
+      }
+      showToast(errorEl.textContent, 'error');
+    });
+  });
+</script>
+
+
     
   <!-- Rebuy START --> 
   {% render 'rebuy-extensions' %} 
