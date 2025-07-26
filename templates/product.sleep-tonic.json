@@ -1352,7 +1352,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>HOW IT <em>works</em></p>",
+                "text": "<p>Unlock THE SCIENCE <em>behind deep sleep</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
@@ -1361,24 +1361,10 @@
                 "text_alignment_mobile": "left"
               },
               "blocks": {}
-            },
-            "heading_block_LaBbgV": {
-              "type": "heading-block",
-              "name": "Heading block",
-              "settings": {
-                "subheading": "",
-                "text": "<p><em>Glutathione helps keep your skin visibly clearer, more even, and more resilient to the effects of time and environmental stressors.</em></p>",
-                "tag_select": "h2",
-                "text_color": "",
-                "text_alignment_desktop": "left",
-                "text_alignment_mobile": "left"
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "heading_block_g9fQLV",
-            "heading_block_LaBbgV"
+            "heading_block_g9fQLV"
           ]
         },
         "section_inner_KGEFVa": {
@@ -1445,7 +1431,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_5.svg",
+                        "icon_image": "shopify://shop_images/Icons_11.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1468,7 +1454,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Liposomal delivery protects glutathione through digestion, increasing absorption by up to 20x vs. standard forms.</h3>",
+                        "text": "<h3>Melatonin resets your internal clock and signals it is time to sleep</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1502,7 +1488,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_6.svg",
+                        "icon_image": "shopify://shop_images/Icons_11.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1525,7 +1511,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Helps neutralize toxins and supports key detox pathways in the liver.</h3>",
+                        "text": "<h3>GABA calms the nervous system so your mind can finally let go</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1559,7 +1545,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_7.svg",
+                        "icon_image": "shopify://shop_images/Icons_11.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1582,7 +1568,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Enhances white blood cell activity and helps regulate a balanced immune response.</h2>",
+                        "text": "<h3>Liposomal delivery unlocks faster, deeper absorption with zero discomfort</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
