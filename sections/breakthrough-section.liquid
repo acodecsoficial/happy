@@ -1,6 +1,98 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{% comment %}
+  Breakthrough Section
+  Two-column layout: heading/subheading on left, dynamic feature list on right.
+{% endcomment %}
+
+<section class="breakthrough-section" id="{{ section.id }}">
+  <div class="breakthrough-section__inner">
+    <div class="breakthrough-section__content">
+      <h2 class="breakthrough-section__title">{{ section.settings.heading }}</h2>
+      <p class="breakthrough-section__subtitle">{{ section.settings.subheading }}</p>
+    </div>
+    <div class="breakthrough-section__features">
+      {% for block in section.blocks %}
+        <div class="breakthrough-feature">
+          <h3 class="breakthrough-feature__heading">{{ block.settings.title }}</h3>
+          <p class="breakthrough-feature__text">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.breakthrough-section__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.breakthrough-section__content {
+  flex: 1 1 40%;
+}
+.breakthrough-section__features {
+  flex: 1 1 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.breakthrough-feature__heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.breakthrough-feature__text {
+  margin: 0;
+  font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+  .breakthrough-section__inner {
+    flex-direction: column;
   }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Breakthrough Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "The breakthrough that changes everything"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subtítulo",
+      "default": "Why most sleep aids fail: They force sedation instead of supporting natural sleep processes. Result? You're unconscious but not restored."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title",
+          "default": "GABA"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Feature Text",
+          "default": "Shuts down the mental chatter and anxiety that keeps you awake."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Breakthrough Section",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
