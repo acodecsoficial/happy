@@ -1260,6 +1260,50 @@
         "spacing_mobile": "py-0"
       }
     },
+    "breakthrough_section_VdKPKw": {
+      "type": "breakthrough-section",
+      "blocks": {
+        "feature_4xACKE": {
+          "type": "feature",
+          "settings": {
+            "title": "GABA",
+            "text": "Shuts down the mental chatter and anxiety that keeps you awake"
+          }
+        },
+        "feature_BAYx69": {
+          "type": "feature",
+          "settings": {
+            "title": "Glutathione (5mg)",
+            "text": "Powers overnight detox and cellular repair for true restoration"
+          }
+        },
+        "feature_ggQfP3": {
+          "type": "feature",
+          "settings": {
+            "title": "Melatonin (2.5mg)",
+            "text": "Resets your internal clock without next-day drowsiness"
+          }
+        },
+        "feature_m8FKiR": {
+          "type": "feature",
+          "settings": {
+            "title": "Liposomal Delivery",
+            "text": "Ensures maximum absorption and rapid results"
+          }
+        }
+      },
+      "block_order": [
+        "feature_4xACKE",
+        "feature_BAYx69",
+        "feature_ggQfP3",
+        "feature_m8FKiR"
+      ],
+      "name": "Breakthrough Section",
+      "settings": {
+        "heading": "The breakthrough that changes everything",
+        "subheading": "Why most sleep aids fail: They force sedation instead of supporting natural sleep processes. Result? You're unconscious but not restored."
+      }
+    },
     "landing_section_3RqYFU": {
       "type": "landing-section",
       "blocks": {
@@ -2023,7 +2067,7 @@
           "settings": {
             "number": "",
             "step_title": "TAKE ONE TEASPOON (6 ML)",
-            "step_text": "30 minutes before bedtime for optimal results.<br> Mix into water, your favorite beverage, or sip it straight."
+            "step_text": "30 minutes before bedtime for optimal results. Mix into water, your favorite beverage, or sip it straight."
           }
         }
       },
@@ -2351,6 +2395,7 @@
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
     "image_with_text_blocks_gAjTfr",
+    "breakthrough_section_VdKPKw",
     "landing_section_3RqYFU",
     "results_list_LqxNh4",
     "image_with_text_blocks_DWHDDT",
