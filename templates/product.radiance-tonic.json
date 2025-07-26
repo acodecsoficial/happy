@@ -2426,24 +2426,24 @@
             "fill_all_desktop": false
           }
         },
-        "button_zBH3FT": {
+        "button_zcHpKg": {
           "type": "button",
           "settings": {
             "button_text": "Buy Now",
-            "button_link": "",
+            "button_link": "#",
             "background_color": "#000000",
             "text_color": "#ffffff",
             "border_color": "#000000",
             "hover_background_color": "#333333",
             "hover_text_color": "#ffffff",
             "hover_border_color": "#333333",
-            "font_size": 18,
-            "font_weight": "600",
-            "width_type": "full",
-            "custom_width": 50,
+            "font_size": 32,
+            "font_weight": "400",
+            "width_type": "custom",
+            "custom_width": 40,
             "min_width": 0,
-            "alignment": "center",
-            "padding_vertical": 16,
+            "alignment": "left",
+            "padding_vertical": 10,
             "padding_horizontal": 32,
             "border_width": 1,
             "border_radius": 0,
@@ -2456,7 +2456,7 @@
         "spacing_yxL7cL",
         "text_qCpPf3",
         "spacing_jerdRF",
-        "button_zBH3FT"
+        "button_zcHpKg"
       ],
       "name": "Image with text blocks",
       "settings": {
