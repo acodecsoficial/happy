@@ -2463,7 +2463,7 @@
         "title": "",
         "text": "",
         "image_desk": "shopify://shop_images/Sem_Titulo-1_4_f26c5bec-70f3-4af3-b012-c6418dea7995.jpg",
-        "image_height_desk": "fit",
+        "image_height_desk": "square",
         "image_mob": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_10.png",
         "image_height_mob": "square",
         "width": "full",
