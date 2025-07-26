@@ -2482,6 +2482,13 @@
         "spacing_mobile": "py-10"
       }
     },
+    "responsive_image_section_JKiFN8": {
+      "type": "responsive-image-section",
+      "name": "Imagem Responsiva",
+      "settings": {
+        "mobile_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_3_8e00558a-fbcb-48ae-8a02-b3baff2aedae.png"
+      }
+    },
     "timeline_section_hBBi6r": {
       "type": "timeline-section",
       "blocks": {
@@ -2524,21 +2531,11 @@
         "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_2_7275b6aa-5522-4ddd-b1f1-b504191bb210.png"
       }
     },
-    "image_banner_kGC7P6": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
+    "responsive_image_section_qi3Xji": {
+      "type": "responsive-image-section",
+      "name": "Imagem Responsiva",
       "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_11.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "mobile_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_11.png"
       }
     },
     "subscription_products_Q9kNnn": {
@@ -3083,8 +3080,9 @@
     "image_with_text_wjQyxT",
     "image_banner_iQ4HPC",
     "image_with_text_blocks_DWHDDT",
+    "responsive_image_section_JKiFN8",
     "timeline_section_hBBi6r",
-    "image_banner_kGC7P6",
+    "responsive_image_section_qi3Xji",
     "subscription_products_Q9kNnn",
     "image_banner_D6TgTi",
     "wines",
