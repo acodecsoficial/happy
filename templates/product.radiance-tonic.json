@@ -1460,8 +1460,8 @@
               "type": "heading-block",
               "name": "Heading block",
               "settings": {
-                "subheading": "<p><em>Glutathione helps keep your skin visibly clearer, more even, and more resilient to the effects of time and environmental stressors.</em></p>",
-                "text": "",
+                "subheading": "",
+                "text": "<p><em>Glutathione helps keep your skin visibly clearer, more even, and more resilient to the effects of time and environmental stressors.</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "text_alignment_desktop": "left",
@@ -1539,7 +1539,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_cb5831c2-9738-4f1f-a838-d7576cc4f736.svg",
+                        "icon_image": "shopify://shop_images/Icons_5.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1562,7 +1562,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Vitamin C supports your immune cells’ function, from activation to protection.</h3>",
+                        "text": "<h3>Liposomal delivery protects glutathione through digestion, increasing absorption by up to 20x vs. standard forms.</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1596,7 +1596,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons-1_017901cf-4eae-4c08-bb65-d88b5f817459.svg",
+                        "icon_image": "shopify://shop_images/Icons_6.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1619,7 +1619,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Oxidative stress and inflammation can compromise your defenses. Vitamin C helps rebalance.</h3>",
+                        "text": "<h3>Helps neutralize toxins and supports key detox pathways in the liver.</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1653,7 +1653,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons-2_f2435c5f-5111-48e4-9dfa-850f1a088e61.svg",
+                        "icon_image": "shopify://shop_images/Icons_7.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1676,7 +1676,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Real immunity starts with real absorption.</h3>",
+                        "text": "<h2>Enhances white blood cell activity and helps regulate a balanced immune response.</h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1821,7 +1821,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons-3_63b35096-a2d4-4062-9b95-07be96bad84b.svg",
+                            "icon_image": "shopify://shop_images/Icons_8.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1844,7 +1844,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Clinical data supports higher absorption and better outcomes with liposomal delivery.</h3>",
+                            "text": "<h3>Acts as a powerful antioxidant, reducing oxidative stress and supporting long-term cellular health.</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1878,7 +1878,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons-4.svg",
+                            "icon_image": "shopify://shop_images/Icons_9.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1901,7 +1901,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Liposomal technology protects the nutrient through digestion so it reaches your bloodstream intact.</h3>",
+                            "text": "<h3>Promotes even skin tone and reduces signs of hyperpigmentation by inhibiting melanin production.</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1918,11 +1918,69 @@
                         "ai_gen_block_e8307fc_NtbyeH",
                         "text_block_gbe6Vy"
                       ]
+                    },
+                    "grid_list_aCpTQR": {
+                      "type": "grid-list",
+                      "name": "Grid (simple)",
+                      "settings": {
+                        "desktop_grid_columns": "1",
+                        "column_gap_desktop": 0,
+                        "row_gap_desktop": 0,
+                        "mobile_grid_columns": "1",
+                        "column_gap_mobile": 0,
+                        "row_gap_mobile": 0
+                      },
+                      "blocks": {
+                        "ai_gen_block_e8307fc_dVRyb3": {
+                          "type": "ai_gen_block_e8307fc",
+                          "name": "Icon Block",
+                          "settings": {
+                            "icon_image": "shopify://shop_images/Icons_10.svg",
+                            "alt_text": "",
+                            "link": "",
+                            "alignment": "flex-end",
+                            "icon_width": 45,
+                            "icon_width_mobile": 45,
+                            "icon_padding": 8,
+                            "padding_top": 4,
+                            "padding_bottom": 4,
+                            "padding_top_mobile": 16,
+                            "padding_bottom_mobile": 16,
+                            "background_color": "rgba(0,0,0,0)",
+                            "border_radius": 8,
+                            "border_width": 0,
+                            "border_color": "#e0e0e0",
+                            "hover_scale": 1.1
+                          },
+                          "blocks": {}
+                        },
+                        "text_block_xfKeqf": {
+                          "type": "text-block",
+                          "name": "Text block",
+                          "settings": {
+                            "text": "<h3>Protects collagen from oxidative damage and supports healthy, firm, elastic skin.</h3>",
+                            "text_color": "",
+                            "text_weight": "normal",
+                            "border-top": false,
+                            "desktop_font_size": 16,
+                            "text_alignment_desktop": "right",
+                            "tooltip_texts": "",
+                            "mobile_font_size": 16,
+                            "text_alignment_mobile": "right"
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "ai_gen_block_e8307fc_dVRyb3",
+                        "text_block_xfKeqf"
+                      ]
                     }
                   },
                   "block_order": [
                     "grid_list_pqk4a3",
-                    "grid_list_TyYWRe"
+                    "grid_list_TyYWRe",
+                    "grid_list_aCpTQR"
                   ]
                 }
               },
@@ -2021,7 +2079,7 @@
       ],
       "name": "Results List",
       "settings": {
-        "title": "YOUR VITAMIN <em>C journey</em>"
+        "title": "YOUR RADIANCE JOURNEY: <em>90-day progression</em>"
       }
     },
     "ingredients_tabs_nKwUYB": {
@@ -2339,15 +2397,68 @@
         "text_RyztRt": {
           "type": "text",
           "settings": {
-            "text": "<p>Add your text here</p>",
+            "text": "<p>YOUR EVEN-TONE <em>essential</em></p>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
+        "spacing_yxL7cL": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 20,
+            "spacing_mobile": 20,
+            "fill_all_desktop": false
+          }
+        },
+        "text_qCpPf3": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Just one teaspoon daily delivers 500mg of high-purity glutathione with industry-leading absorption. Support optimal cellular function, enhanced detoxification, immune resilience, and natural radiance with effortless daily wellness.</h4>",
             "text_style": "body",
             "has_border": false,
             "center_mobile": false
           }
+        },
+        "spacing_jerdRF": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 20,
+            "spacing_mobile": 20,
+            "fill_all_desktop": false
+          }
+        },
+        "button_zBH3FT": {
+          "type": "button",
+          "settings": {
+            "button_text": "Buy Now",
+            "button_link": "",
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "border_color": "#000000",
+            "hover_background_color": "#333333",
+            "hover_text_color": "#ffffff",
+            "hover_border_color": "#333333",
+            "font_size": 18,
+            "font_weight": "600",
+            "width_type": "full",
+            "custom_width": 50,
+            "min_width": 0,
+            "alignment": "center",
+            "padding_vertical": 16,
+            "padding_horizontal": 32,
+            "border_width": 1,
+            "border_radius": 0,
+            "mobile_full_width": true
+          }
         }
       },
       "block_order": [
-        "text_RyztRt"
+        "text_RyztRt",
+        "spacing_yxL7cL",
+        "text_qCpPf3",
+        "spacing_jerdRF",
+        "button_zBH3FT"
       ],
       "name": "Image with text blocks",
       "settings": {
