@@ -66,16 +66,10 @@
   max-width: 226px;
 }
 
-  .breakthrough-section__features {
-  list-style: disc outside;
-  padding: 0;
-  margin: 0;
-}
-.breakthrough-feature {
-  padding-left: 1.2em;   /* espaço para o bullet */
-}
-.breakthrough-feature::marker {
-  margin-right: 0.5em;   /* gap entre bullet e texto */
+  .breakthrough-feature__heading::before {
+  content: "•";
+  margin-right: 0.5em;
+  font-size: 1em;
 }
 @media (max-width: 768px) {
   .breakthrough-section__inner {
