@@ -323,7 +323,9 @@
                 "highlight_image_item_6wWHKq": {
                   "type": "highlight-image-item",
                   "settings": {
+                    "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_2_8a7d65c5-4c60-41c0-8e6e-a27da8ec3cea.png",
                     "image_max_width_desktop": 0,
+                    "image_max_width_mobile": 1000,
                     "title": "",
                     "title_size": 30,
                     "title_line_height": 42,
@@ -387,7 +389,7 @@
                       "type": "heading-block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p>FIRST LIQUID</p><p><em>liposomal Vitamin C</em></p>",
+                        "text": "<p>A RADIANT GLOW <em>that uplifts you</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 50,
@@ -419,7 +421,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2><em>Before the sniffles start, your cells are already stronger.</em></h2>",
+                        "text": "<h2><em>Radiance begins with what your skin actually absorbs.</em></h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -434,7 +436,7 @@
                     "text_block_EJp8ft": {
                       "type": "text-block",
                       "settings": {
-                        "text": "<p>What matters isn't how much you take but how well your body absorbs it. Immunity Tonic by Happy Aging uses advanced liposomal technology to deliver Vitamin C with up to 10x better absorption, getting into your system fast for real support.</p>",
+                        "text": "<p>Clinically proven to absorb 20x more effectively than traditional supplements, this breakthrough liposomal formula delivers 503mg of pure glutathione: your body's master antioxidant—directly to your cells, supporting cellular resilience, natural radiance, and graceful aging from within.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -579,7 +581,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/1370x13702.jpg",
+                    "image": "shopify://shop_images/Sem_Titulo-4_1_5b244a62-64e1-40e8-9865-265eff7b3d30.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -590,7 +592,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<h2>Everyday win</h2>",
+                    "text": "<h2>What you’ll notice</h2>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -606,7 +608,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Energized mornings, without the crash</li><li>Stronger immune defense, no guesswork</li><li>Natural support for skin, mood, and vitality</li></ul>",
+                    "text": "<ul><li>Your energy feels more stable throughout the day, mental fog starts to lift, and your skin has a subtle but noticeable glow.</li><li> Friends might ask if you're using a new skincare routine or getting more sleep.</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -641,7 +643,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/20250715_1450_Citrus_Elegance_simple_compose_01k07k8qfge819vcc1g0pmpsjg.png",
+                    "image": "shopify://shop_images/Sem_Titulo-4_1_5b244a62-64e1-40e8-9865-265eff7b3d30.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -669,7 +671,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Liposomal delivery ensures superior cellular absorption</li><li>Clinically backed Vitamin C dose optimizes bioavailability</li><li>Neutralizes oxidative stress and supports collagen synthesis</li></ul>",
+                    "text": "<ul><li>Liposomal glutathione rapidly restores cellular antioxidant levels that naturally decline with age and stress. </li><li>Your liver begins processing toxins more efficiently, your immune cells function optimally, and cellular energy production improves creating that unmistakable vitality that radiates outward.</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -764,7 +766,7 @@
                   "name": "Heading block",
                   "settings": {
                     "subheading": "",
-                    "text": "<p>WHY HAPPY AGING <em>is your advantage</em></p>",
+                    "text": "<p>WHY HAPPY AGING IS<em> your advantage</em></p>",
                     "tag_select": "h2",
                     "text_color": "",
                     "letter_spacing": 0,
@@ -823,7 +825,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>One</em></p>",
+                        "text": "<p><em>Targeted</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 0,
@@ -836,7 +838,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>A ritual that strengthens your defenses without the overload</p>",
+                        "text": "<p>Formulated specifically to support cellular longevity, liver detox, immune resilience, and the natural radiance that comes from optimal cellular health.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -873,7 +875,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>1,000 mg</em></p>",
+                        "text": "<p><em>20x More Effective</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -885,7 +887,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Vitamin C in liposomal form supports immunity, collagen and antioxidant activity</p>",
+                        "text": "<p>Clinically shown to absorb 20x better than powders, maximizing cellular uptake and systemic benefits throughout your body.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -921,7 +923,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Clean</em></p>",
+                        "text": "<p><em>503 mg</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -933,7 +935,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>No sugar, synthetic preservatives or fillers</p>",
+                        "text": "<p>High-dose glutathione in its most bioavailable liposomal form, delivering clinical-strength cellular support.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -970,7 +972,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Quick</em></p>",
+                        "text": "<p><em>Clean</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -982,7 +984,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Sip format fits busy mornings and wellness routines</p>",
+                        "text": "<p>Sugar-free, non-GMO, tested for heavy metals and formulated with pharmaceutical-grade USP water for maximum purity.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1020,7 +1022,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>Science</em></p>",
+                        "text": "<p><em>Simple</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -1032,7 +1034,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Clinically backed formula with targeted delivery</p>",
+                        "text": "<p>No mixing. No capsules. Just a quick sip every morning, effortless daily support for lifelong cellular vitality.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1097,22 +1099,30 @@
         "heading_b7693f": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Image with text</p>",
+            "heading": "<p>WHY <em>liposomal glutathione?</em></p>",
             "heading_size": "h1",
+            "line-height": 1
+          }
+        },
+        "heading_k6PitK": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><em>Because what your body absorbs makes all the difference.</em></h2>",
+            "heading_size": "h2",
             "line-height": 1
           }
         },
         "text_rF6LLk": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
+            "text": "<p>Radiance Tonic uses a special delivery method that wraps each glutathione molecule in tiny protective bubbles. This helps it travel through your digestive system and reach your cells where it matters most.<br/>Clinical study showed: Participants taking liposomal glutathione experienced improved liver function and a 39% reduction in blood mercury levels in just 30 days, demonstrating powerful detoxification support at the cellular level.<br/>That's why it absorbs up to 20 times better than powders. <br/><br/>You feel and see results faster.</p>",
+            "text_style": "subtitle"
           }
         },
         "button_MKUyna": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Buy Now",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -1120,12 +1130,13 @@
       },
       "block_order": [
         "heading_b7693f",
+        "heading_k6PitK",
         "text_rF6LLk",
         "button_MKUyna"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_7.png",
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_8.png",
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
@@ -1188,7 +1199,17 @@
         "text_nLEfLV": {
           "type": "text",
           "settings": {
-            "text": "<p>BUILD TO PROTECT, <em>designed to support you</em></p>",
+            "text": "<p>BUILT TO PERFORM <em>designed to fit you</em></p>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
+        "text_GcHhgp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h3><em> Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1197,40 +1218,23 @@
         "spacing_HM7NB3": {
           "type": "spacing",
           "settings": {
-            "spacing_desktop": 0,
+            "spacing_desktop": 20,
             "spacing_mobile": 20,
             "fill_all_desktop": false
           }
         },
-        "text_GcHhgp": {
-          "type": "text",
-          "settings": {
-            "text": "<h3><em> Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
-            "text_style": "heading",
-            "has_border": false,
-            "center_mobile": false
-          }
-        },
-        "spacing_B7txqB": {
+        "spacing_UFC7A6": {
           "type": "spacing",
           "settings": {
-            "spacing_desktop": 50,
-            "spacing_mobile": 0,
-            "fill_all_desktop": false
-          }
-        },
-        "spacing_A7Nw66": {
-          "type": "spacing",
-          "settings": {
-            "spacing_desktop": 20,
-            "spacing_mobile": 40,
+            "spacing_desktop": 0,
+            "spacing_mobile": 20,
             "fill_all_desktop": false
           }
         },
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Boosts daily immunity and supports white blood cell activity</h3>",
+            "text": "<h3>Supports cellular vitality and natural energy production at the mitochondrial level</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1239,7 +1243,7 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Helps reduce duration and severity of seasonal immune challenges</h3>",
+            "text": "<h3>Enhances liver detoxification and helps eliminate environmental toxins from your system</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1248,7 +1252,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Protects skin and tissues from oxidative stress</h3>",
+            "text": "<h3>Strengthens immune resilience by optimizing white blood cell function and response</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1257,7 +1261,7 @@
         "text_Ucicgf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Supports adrenal health and vitality</h3>",
+            "text": "<h3>Promotes natural radiance through improved skin clarity, tone, and cellular health</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1266,7 +1270,16 @@
         "text_fAHjYt": {
           "type": "text",
           "settings": {
-            "text": "<h3>Refreshing taste, easy to use</h3>",
+            "text": "<h3>Defends against oxidative stress from daily environmental and lifestyle stressors</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_yWAANL": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Pleasantly tart-sweet taste without sugar, bitterness, or synthetic flavorin</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1307,15 +1320,15 @@
       },
       "block_order": [
         "text_nLEfLV",
-        "spacing_HM7NB3",
         "text_GcHhgp",
-        "spacing_B7txqB",
-        "spacing_A7Nw66",
+        "spacing_HM7NB3",
+        "spacing_UFC7A6",
         "text_QghNzh",
         "text_BFqHcM",
         "text_FHXk9x",
         "text_Ucicgf",
         "text_fAHjYt",
+        "text_yWAANL",
         "spacing_GFqXPi",
         "button_iKqTjh"
       ],
@@ -1329,9 +1342,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/1370x1370.jpg",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_5_d97e971f-f8c5-4ed6-b3e1-de4876482c89.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/1370x1370.jpg",
+        "image_mob": "shopify://shop_images/Sem_Titulo-1_6_d60d283b-f6a6-48e9-8c2f-a85652daeaf0.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
