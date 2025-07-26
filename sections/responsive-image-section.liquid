@@ -1,6 +1,54 @@
+{% comment %}
+  Responsive Image Section
+  Displays one image on desktop and a separate image on mobile.
+{% endcomment %}
+
+{% if section.settings.desktop_image or section.settings.mobile_image %}
+<div class="responsive-image-section">
+  <picture>
+    {% if section.settings.mobile_image != blank %}
+    <source media="(max-width: 768px)" srcset="{{ section.settings.mobile_image | img_url: 'master' }}">
+    {% endif %}
+    {% if section.settings.desktop_image != blank %}
+    <source media="(min-width: 769px)" srcset="{{ section.settings.desktop_image | img_url: 'master' }}">
+    {% endif %}
+    {% assign img = section.settings.desktop_image %}
+    {% if img == blank %}
+    {% assign img = section.settings.mobile_image %}
+    {% endif %}
+    <img src="{{ img | img_url: 'master' }}" alt="{{ img.alt | escape }}" loading="lazy">
+  </picture>
+</div>
+{% endif %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Responsive Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Imagem Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Imagem Mobile"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Imagem Responsiva"
+    }
+  ]
+}
 {% endschema %}
+
+<style>
+.responsive-image-section picture,
+.responsive-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+</style>
