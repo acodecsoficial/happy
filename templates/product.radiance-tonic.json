@@ -2478,8 +2478,8 @@
         "small_content": false,
         "wrap_image_mobile": false,
         "wrap_content_mobile": true,
-        "spacing_desktop": "lg:py-10",
-        "spacing_mobile": "py-10"
+        "spacing_desktop": "lg:py-0",
+        "spacing_mobile": "py-0"
       }
     },
     "responsive_image_section_JKiFN8": {
