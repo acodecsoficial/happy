@@ -20,6 +20,10 @@
     align-items: center;
   }
 
+  .top47{
+    top: 0px !important;
+  }
+
   .cadence-selector .value-props {
     display: none !important;
   }
