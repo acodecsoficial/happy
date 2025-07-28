@@ -2100,7 +2100,7 @@
         "image_first_mob": false,
         "image_large": false,
         "show_border": false,
-        "show_border_top": true,
+        "show_border_top": false,
         "hide_border_mobile": false,
         "remove_py_content": false,
         "small_content": false,
