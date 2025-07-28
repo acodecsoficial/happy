@@ -98,8 +98,8 @@
           "type": "quantity_block",
           "settings": {
             "qty": 1,
-            "onetime_price": 40,
-            "plan_id": "693146779968",
+            "onetime_price": 55,
+            "plan_id": "69318544620",
             "title": "30-day Supply",
             "sub_title": "",
             "num_bottles": "1",
@@ -117,8 +117,8 @@
           "type": "quantity_block",
           "settings": {
             "qty": 2,
-            "onetime_price": 40,
-            "plan_id": "693185708352",
+            "onetime_price": 55,
+            "plan_id": "693195374912",
             "title": "60-day Supply",
             "sub_title": "",
             "num_bottles": "2",
