@@ -194,11 +194,11 @@
         "@media screen and (max-width: 500px) {.grid-product-title {display: flex; align-items: center; gap: 15px; } span.main-tag-product {display: flex; margin-top: 0; } li#Slide-template--24670584504640__main-40407209967936 {margin-left: -2%; width: 103%; max-width: 121%; }}"
       ],
       "settings": {
-        "old_product": "relief-tonic",
+        "old_product": "brain-tonic",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "highlight_color": "#ffa614",
-        "title_label": "<p>Relief tonic</p>",
+        "highlight_color": "#fda302",
+        "title_label": "<p>bRAIN tonic</p>",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "cover",
