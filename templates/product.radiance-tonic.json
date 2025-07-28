@@ -194,7 +194,7 @@
         "old_product": "radiance-tonic",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "highlight_color": "#f2763d",
+        "highlight_color": "#c592a5",
         "title_label": "<p>Radiance Tonic</p>",
         "media_size": "medium",
         "constrain_to_viewport": true,
