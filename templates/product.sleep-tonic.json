@@ -1819,7 +1819,7 @@
         "section_inner_KGEFVa"
       ],
       "custom_css": [
-        ".text-block {xborder-bottom: 1px solid #f90;}"
+        ".text-block {border-bottom: 1px solid #000;}"
       ],
       "name": "Landing Section",
       "settings": {
