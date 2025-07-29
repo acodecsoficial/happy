@@ -391,6 +391,7 @@
                         "tag_select": "h2",
                         "text_color": "",
                         "desktop_font_size": 50,
+                        "top_spacing_desktop": 0,
                         "text_alignment_desktop": "left",
                         "mobile_font_size": 48,
                         "top_spacing_mobile": 20,
