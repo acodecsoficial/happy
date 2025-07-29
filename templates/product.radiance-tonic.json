@@ -641,7 +641,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/rad1.png",
+                    "image": "shopify://shop_images/rad3.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -2463,9 +2463,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/rad3.png",
+        "image_desk": "shopify://shop_images/rad1.png",
         "image_height_desk": "square",
-        "image_mob": "shopify://shop_images/rad3.png",
+        "image_mob": "shopify://shop_images/rad1.png",
         "image_height_mob": "square",
         "width": "full",
         "width_mobile": "full",
@@ -2473,7 +2473,7 @@
         "image_first_mob": false,
         "image_large": false,
         "show_border": false,
-        "show_border_top": true,
+        "show_border_top": false,
         "hide_border_mobile": false,
         "remove_py_content": false,
         "small_content": false,
@@ -2857,36 +2857,36 @@
         "faq_1": {
           "type": "faq",
           "settings": {
-            "question": "1. What exactly is Cell Renew Tonic?",
-            "answer": "<p>Cell Renew Tonic is a red berry liquid NMN supplement designed to help women feel sharper, stronger, and more energized at any age. It works at the cellular level to boost NAD⁺, your body’s natural fuel for energy, repair, and resilience. Just one teaspoon a day helps reset your energy, balance your hormones, and support graceful, empowered aging.</p>"
+            "question": "1. How does it support liver health?",
+            "answer": "<p>Glutathione is crucial for your liver's Phase II detoxification process. Clinical studies show it helps improve liver function markers and can reduce blood mercury levels by 39% in just 30 days. It helps bind to toxins, heavy metals, and waste products, making them water-soluble so they can be eliminated. A healthy liver means better energy, clearer skin, and more efficient toxin removal.</p>"
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
-            "question": "2. Who is this product for?",
-            "answer": "<p>This formula is made for women over 35 who want more energy, better focus, and smoother hormone balance without caffeine, sugar, or unnecessary pills. Whether you're juggling career, family, workouts, or perimenopause, this is your foundational wellness ritual.<br/><br/></p>"
+            "question": "2. What does Radiance Tonic do?",
+            "answer": "<p>Radiance Tonic supports cellular vitality, liver detoxification, and immune resilience while promoting natural radiance from within. It helps defend against oxidative stress, supports your body's natural detox processes, and enhances overall cellular health. The visible benefits include clearer, more vibrant skin as a reflection of optimal cellular function.</p>"
           }
         },
-        "faq_3": {
+        "faq_f9UrfV": {
           "type": "faq",
           "settings": {
-            "question": "3. Why is NAD⁺ important for my body?",
-            "answer": "<p>NAD⁺ is a molecule found in every cell. It powers essential functions like energy production, DNA repair, hormone regulation, and mental clarity. As we age, NAD⁺ levels can drop by up to 50 percent by age 40. Cell Renew helps restore those levels using NMN, a direct NAD⁺ precursor.<br/><br/></p>"
+            "question": "3. How is it different from other Happy Aging tonics?",
+            "answer": "<p>Radiance Tonic is focused on cellular longevity and comprehensive wellness, powered by high-potency liposomal glutathione, your body's master antioxidant. Glow Shot is designed for hydration and elasticity with collagen. Calm Shot supports mood and nervous system balance. Each product plays a distinct role in your wellness routine.</p>"
           }
         },
         "faq_dfmbmf": {
           "type": "faq",
           "settings": {
-            "question": "4. What makes Cell Renew Tonic different from capsules or powders?",
-            "answer": "<p>It delivers up to 10 times better absorption with advanced liposomal delivery</p><p>It comes in liquid form for faster action and no digestive discomfort</p><p>Each teaspoon contains 444 mg of NMN in a clinically aligned dose </p><p>It is designed specifically for women’s metabolism and hormone rhythms </p><p>It uses a clean label formula that is vegan, non-GMO, sugar-free, caffeine-free, and gut-friendly </p><p>It is backed by scientific studies and third-party tested<br/><br/></p>"
+            "question": "4. What makes liposomal glutathione special?",
+            "answer": "<p>Liposomal delivery allows glutathione to be absorbed up to 20x more efficiently than powders or capsules. Clinical studies show it can improve liver function and reduce blood mercury levels by 39% in 30 days. That means faster results and better support for your cells where it matters most.</p>"
           }
         },
         "faq_6UkLU3": {
           "type": "faq",
           "settings": {
-            "question": "5. When will I start noticing results?",
-            "answer": "<p>Week 1: Brighter mornings, less mental fog<br/> By Day 30: More sustained energy, emotional stability, and improved focus<br/> By Day 60: Increased stamina, faster recovery, and better hormone balance<br/> After 90 Days: Greater resilience, deeper cellular vitality, and lasting mental clarity<br/> Results may vary depending on your baseline NAD⁺ levels, lifestyle, and consistency.</p>"
+            "question": "5. How do I take it?",
+            "answer": "<p>Take one teaspoon (6 mL) daily, ideally on an empty stomach. You can take it straight or mix it into water, juice, or a smoothie.</p>"
           }
         },
         "faq_LWdF6e": {
@@ -2991,7 +2991,7 @@
       "block_order": [
         "faq_1",
         "faq_2",
-        "faq_3",
+        "faq_f9UrfV",
         "faq_dfmbmf",
         "faq_6UkLU3",
         "faq_LWdF6e",
@@ -3009,7 +3009,6 @@
         "faq_hATLcE",
         "faq_LAfBXQ"
       ],
-      "disabled": true,
       "custom_css": [
         "#faqs {border-top: 1px solid;}"
       ],
