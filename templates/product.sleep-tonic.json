@@ -322,7 +322,7 @@
                 "highlight_image_item_6wWHKq": {
                   "type": "highlight-image-item",
                   "settings": {
-                    "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_2_8a7d65c5-4c60-41c0-8e6e-a27da8ec3cea.png",
+                    "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_12479f1c-c5c1-476b-bd6e-1c91f970794c.png",
                     "image_max_width_desktop": 0,
                     "image_max_width_mobile": 1000,
                     "title": "",
@@ -358,7 +358,7 @@
                 "vertical_alignment": "start",
                 "desktop_grid_column_gap": 0,
                 "desktop_grid_row_gap": 0,
-                "top_spacing_desktop": 0,
+                "top_spacing_desktop": 50,
                 "bottom_spacing_desktop": 30,
                 "left_spacing_desktop": 0,
                 "right_spacing_desktop": 0,
