@@ -321,7 +321,7 @@
                 "highlight_image_item_6wWHKq": {
                   "type": "highlight-image-item",
                   "settings": {
-                    "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_2_8a7d65c5-4c60-41c0-8e6e-a27da8ec3cea.png",
+                    "image": "shopify://shop_images/Poli_Alves_r1_03E_9920_fde0ae6e-d1f5-47c3-85cf-d6e1bbabfdee.png",
                     "image_max_width_desktop": 0,
                     "image_max_width_mobile": 1000,
                     "title": "",
@@ -579,7 +579,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/Sem_Titulo-4_1_5b244a62-64e1-40e8-9865-265eff7b3d30.jpg",
+                    "image": "shopify://shop_images/rad2.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -641,7 +641,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/Sem_Titulo-4_1_5b244a62-64e1-40e8-9865-265eff7b3d30.jpg",
+                    "image": "shopify://shop_images/rad1.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -1134,7 +1134,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_8.png",
+        "image": "shopify://shop_images/brain_v6a.png",
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
@@ -1340,9 +1340,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_5_d97e971f-f8c5-4ed6-b3e1-de4876482c89.jpg",
+        "image_desk": "shopify://shop_images/brain_v6_ddd1893d-2f60-4d17-9a58-f29378fb39ec.png",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/Sem_Titulo-1_6_d60d283b-f6a6-48e9-8c2f-a85652daeaf0.jpg",
+        "image_mob": "shopify://shop_images/brain_v6_ddd1893d-2f60-4d17-9a58-f29378fb39ec.png",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -2023,7 +2023,7 @@
         "result_item_zqgCJN": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/cell_s_protection.png",
+            "image": "shopify://shop_images/cell_s_protection_bb5150fe-c711-4068-be16-87e26464c694.png",
             "title": "DAY 1",
             "text": "<p>Cellular protection begins</p>"
           }
@@ -2031,7 +2031,7 @@
         "result_item_B9jKrw": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Badge_4e39dffc-d59c-4067-a024-7b4b75bb7fda.png",
+            "image": "shopify://shop_images/Badge_a021a5d4-a15b-4243-b93c-8f5be0ac2277.png",
             "title": "DAY 7",
             "text": "<p>Improved energy and daily vitality</p>"
           }
@@ -2039,7 +2039,7 @@
         "result_item_KtxBQ9": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/20250716_1156_Waterproof_Material_Cross-Section_remix_01k09vma4ee4hbq1bcbq10a4gk.png",
+            "image": "shopify://shop_images/Badge-1_49279e56-8652-48bf-acde-7048121394bd.png",
             "title": "DAY 30",
             "text": "<p>Stronger skin barrier and stress modulation</p>"
           }
@@ -2047,7 +2047,7 @@
         "result_item_rqhTek": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Badge0.png",
+            "image": "shopify://shop_images/Badge-2_2dc80a3c-ec32-49fa-beab-c0fe7221286f.png",
             "title": "DAY 60",
             "text": "<p>Visible glow, better immune resilience</p>"
           }
@@ -2055,7 +2055,7 @@
         "result_item_9ia4b9": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Badge4_9dc618f8-78b7-42de-9d4d-b75031213b66.png",
+            "image": "shopify://shop_images/Badge-3_f578aee9-dc8c-4ebc-a586-c295545c97bc.png",
             "title": "DAY 90",
             "text": "<p>Elevated energy, mood, and defenses</p>"
           }
@@ -2462,9 +2462,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_4_f26c5bec-70f3-4af3-b012-c6418dea7995.jpg",
+        "image_desk": "shopify://shop_images/rad3.png",
         "image_height_desk": "square",
-        "image_mob": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_10.png",
+        "image_mob": "shopify://shop_images/rad3.png",
         "image_height_mob": "square",
         "width": "full",
         "width_mobile": "full",
@@ -2527,8 +2527,8 @@
       ],
       "settings": {
         "show_border_top": true,
-        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_9.png",
-        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_2_7275b6aa-5522-4ddd-b1f1-b504191bb210.png"
+        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_47f5d609-35ba-4431-841b-7fb69e5106b5.png",
+        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_9a2ef0bd-94e8-4b48-98a6-65f61beddf12.png"
       }
     },
     "responsive_image_section_qi3Xji": {
