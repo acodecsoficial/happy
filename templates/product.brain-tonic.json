@@ -545,7 +545,7 @@
         "text_yLR6KH": {
           "type": "text",
           "settings": {
-            "text": "<p>Brain Tonic delivers 100 mg of CoQ10 in a high-performance liposomal format. That means it’s easier for your cells to absorb and use. Inside every brain cell, there’s a little energy factory working to keep you focused. Brain Tonic helps it run smoothly, so you get more mental clarity and steady energy right where it matters most.<br/><br/>It’s not about more ingredients. It’s about better absorption.</p>",
+            "text": "<p>Brain Tonic delivers 100 mg of CoQ10 in a high-performance liposomal format. That means it’s easier for your cells to absorb and use. Inside every brain cell, there’s a little energy factory working to keep you focused. Brain Tonic helps it run smoothly, so you get more mental clarity and steady energy right where it matters most..</p><p>It’s not about more ingredients. It’s about better absorption.</p>",
             "text_style": "body"
           }
         },
