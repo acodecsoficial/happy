@@ -1829,7 +1829,7 @@
         "top_spacing": 70,
         "bottom_spacing": 70,
         "use_top_border": false,
-        "use_bottom_border": false,
+        "use_bottom_border": true,
         "full_width_mobile": false,
         "top_spacing_mobile": 35,
         "bottom_spacing_mobile": 0,
