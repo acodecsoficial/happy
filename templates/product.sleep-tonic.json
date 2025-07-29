@@ -1415,7 +1415,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_11.svg",
+                        "icon_image": "shopify://shop_images/Ativo_1.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1472,7 +1472,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_11.svg",
+                        "icon_image": "shopify://shop_images/Ativo_6.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1529,7 +1529,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_11.svg",
+                        "icon_image": "shopify://shop_images/Ativo_3.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1697,7 +1697,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_11.svg",
+                            "icon_image": "shopify://shop_images/Ativo_4.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1754,7 +1754,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_11.svg",
+                            "icon_image": "shopify://shop_images/Ativo_7.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
