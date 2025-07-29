@@ -427,7 +427,7 @@
                         "border-top": false,
                         "max_width": 0,
                         "desktop_font_size": 36,
-                        "top_spacing_desktop": 20,
+                        "top_spacing_desktop": 0,
                         "text_alignment_desktop": "left",
                         "tooltip_texts": "",
                         "text_alignment_mobile": "left"
