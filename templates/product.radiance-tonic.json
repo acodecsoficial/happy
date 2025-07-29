@@ -836,7 +836,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Formulated specifically to support cellular longevity, liver detox, immune resilience, and natural radiance.</p>",
+                        "text": "<p>Supports cellular longevity and radiance.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -885,7 +885,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Clinically shown to absorb 20x better than powders, maximizing cellular uptake throughout your body.<br/><br/></p>",
+                        "text": "<p>Absorbs 20x better than powders.<br/><br/></p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -933,7 +933,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>High-dose glutathione in its most bioavailable liposomal form, clinical-strength cellular support.</p>",
+                        "text": "<p>High-dose liposomal glutathione formula.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -982,7 +982,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Sugar-free, non-GMO, tested for heavy metals and formulated with pharmaceutical-grade USP water.</p>",
+                        "text": "<p>Sugar-free, non-GMO, heavy metal tested</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1032,7 +1032,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>No mixing. No capsules. Just a quick sip every morning, effortless daily support for cellular vitality.</p>",
+                        "text": "<p>One sip. Daily cellular vitality.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1457,6 +1457,7 @@
             "heading_block_LaBbgV": {
               "type": "heading-block",
               "name": "Heading block",
+              "disabled": true,
               "settings": {
                 "subheading": "",
                 "text": "<p><em>Glutathione helps keep your skin visibly clearer, more even, and more resilient to the effects of time and environmental stressors.</em></p>",
