@@ -426,7 +426,6 @@
                         "border-top": false,
                         "max_width": 0,
                         "desktop_font_size": 36,
-                        "top_spacing_desktop": 20,
                         "text_alignment_desktop": "left",
                         "tooltip_texts": "",
                         "text_alignment_mobile": "left"
@@ -1416,7 +1415,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Ativo_1.svg",
+                        "icon_image": "shopify://shop_images/Icons_15e3d51c-2604-46a0-8afa-a0b49ff3f15d.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1473,7 +1472,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Ativo_6.svg",
+                        "icon_image": "shopify://shop_images/Icons-1_fea911c0-718e-402f-a940-2e0ffd2e184c.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1530,7 +1529,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Ativo_3.svg",
+                        "icon_image": "shopify://shop_images/Icons_6e62842b-0528-40d7-a1c3-abca87295f37.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1698,7 +1697,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Ativo_4.svg",
+                            "icon_image": "shopify://shop_images/Iconsa.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1755,7 +1754,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Ativo_7.svg",
+                            "icon_image": "shopify://shop_images/Iconss.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1820,7 +1819,7 @@
         "section_inner_KGEFVa"
       ],
       "custom_css": [
-        ".text-block {border-bottom: 1px solid #000;}"
+        ".text-block {xborder-bottom: 1px solid #f90;}"
       ],
       "name": "Landing Section",
       "settings": {
