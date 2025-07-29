@@ -58,6 +58,8 @@
 
 }
 
+
+
 @media (max-width: 900px){
   .quantity-grid-mobile .radio-option:nth-child(2) .value-props.js-mobile-value-props{
     display: flex !important;
