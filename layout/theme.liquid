@@ -854,24 +854,6 @@
   />
 {% endif %}
 
-    {%- comment -%}
-  No layout/theme.liquid, logo antes de fechar </body>:
-{%- endcomment -%}
-{% if template.suffix %}
-  {%- comment -%}
-    Se estiver em product.tonic-immunity.json, isso vira “tonic-immunity.js”
-  {%- endcomment -%}
-  <script
-    src="{{ template.suffix | append: '.js' | asset_url }}"
-    defer
-    onerror="this.onerror=null;this.src='{{ 'subscription-widget.js' | asset_url }}'"
-  ></script>
-{% else %}
-  {%- comment -%}
-    Em qualquer outra página sem suffix, carrega o padrão
-  {%- endcomment -%}
-  <script src="{{ 'subscription-widget.js' | asset_url }}" defer></script>
-{% endif %}
 
     
   </head>
