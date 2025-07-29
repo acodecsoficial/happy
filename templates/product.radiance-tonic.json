@@ -836,7 +836,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Formulated specifically to support cellular longevity, liver detox, immune resilience, and the natural radiance that comes from optimal cellular health.</p>",
+                        "text": "<p>Formulated specifically to support cellular longevity, liver detox, immune resilience, and natural radiance.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -885,7 +885,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Clinically shown to absorb 20x better than powders, maximizing cellular uptake and systemic benefits throughout your body.</p>",
+                        "text": "<p>Clinically shown to absorb 20x better than powders, maximizing cellular uptake throughout your body.<br/><br/></p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -921,7 +921,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>503 mg</em></p>",
+                        "text": "<p><em>500 mg</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -933,7 +933,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>High-dose glutathione in its most bioavailable liposomal form, delivering clinical-strength cellular support.</p>",
+                        "text": "<p>High-dose glutathione in its most bioavailable liposomal form, clinical-strength cellular support.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -982,7 +982,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Sugar-free, non-GMO, tested for heavy metals and formulated with pharmaceutical-grade USP water for maximum purity.</p>",
+                        "text": "<p>Sugar-free, non-GMO, tested for heavy metals and formulated with pharmaceutical-grade USP water.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1032,7 +1032,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>No mixing. No capsules. Just a quick sip every morning, effortless daily support for lifelong cellular vitality.</p>",
+                        "text": "<p>No mixing. No capsules. Just a quick sip every morning, effortless daily support for cellular vitality.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1113,7 +1113,7 @@
         "text_rF6LLk": {
           "type": "text",
           "settings": {
-            "text": "<p>Radiance Tonic uses a special delivery method that wraps each glutathione molecule in tiny protective bubbles. This helps it travel through your digestive system and reach your cells where it matters most.<br/>Clinical study showed: Participants taking liposomal glutathione experienced improved liver function and a 39% reduction in blood mercury levels in just 30 days, demonstrating powerful detoxification support at the cellular level.<br/>That's why it absorbs up to 20 times better than powders. <br/><br/>You feel and see results faster.</p>",
+            "text": "<p>Radiance Tonic uses a special delivery method that wraps each glutathione molecule in tiny protective bubbles. This helps it travel through your digestive system and reach your cells where it matters most.<br/></p><p>Clinical study showed: Participants taking liposomal glutathione experienced improved liver function and a 39% reduction in blood mercury levels in just 30 days, demonstrating powerful detoxification support at the cellular level.<br/>That's why it absorbs up to 20 times better than powders. You feel and see results faster.<br/></p>",
             "text_style": "subtitle"
           }
         },
@@ -1232,7 +1232,7 @@
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Supports cellular vitality and natural energy production at the mitochondrial level</h3>",
+            "text": "<h3>Supports cellular vitality  and mitochondrial energy production</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1241,7 +1241,7 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Enhances liver detoxification and helps eliminate environmental toxins from your system</h3>",
+            "text": "<h3>Enhances liver detoxification and eliminates environmental toxins</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1250,7 +1250,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Strengthens immune resilience by optimizing white blood cell function and response</h3>",
+            "text": "<h3>Strengthens immune resilience by optimizing white blood cell function</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1259,7 +1259,7 @@
         "text_Ucicgf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Promotes natural radiance through improved skin clarity, tone, and cellular health</h3>",
+            "text": "<h3>Promotes natural radiance  through improved skin clarity and tone</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1268,7 +1268,7 @@
         "text_fAHjYt": {
           "type": "text",
           "settings": {
-            "text": "<h3>Defends against oxidative stress from daily environmental and lifestyle stressors</h3>",
+            "text": "<h3>Defends against oxidative stress  from daily environmental stressors</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1277,7 +1277,7 @@
         "text_yWAANL": {
           "type": "text",
           "settings": {
-            "text": "<h3>Pleasantly tart-sweet taste without sugar, bitterness, or synthetic flavorin</h3>",
+            "text": "<h3>Pleasantly tart-sweet taste without sugar, bitterness, or synthetic flavoring</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1674,7 +1674,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Enhances white blood cell activity and helps regulate a balanced immune response.</h2>",
+                        "text": "<h3>Enhances white blood cell activity and helps regulate a balanced immune response.</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
