@@ -1362,7 +1362,7 @@
         "heading_j3LBxK": {
           "type": "heading",
           "settings": {
-            "heading": "<h2><em>Your brain uses more energy than any other part of your body. </em></h2>",
+            "heading": "<h3><em>Your brain uses more energy than any other part of your body. </em></h3>",
             "heading_size": "h2",
             "line-height": 1
           }
@@ -1392,7 +1392,7 @@
       "custom_css": [],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/brain_v62.png",
+        "image": "shopify://shop_images/brain_v61.png",
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
