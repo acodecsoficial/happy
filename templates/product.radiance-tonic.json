@@ -2921,18 +2921,19 @@
           "type": "faq",
           "settings": {
             "question": "10. Can I take it if I'm using other supplements or skincare?",
-            "answer": "<p>If you are pregnant, planning to become pregnant, or breastfeeding, speak with your doctor before using Cell Renew Tonic.</p>"
+            "answer": "<p>Absolutely. Radiance Tonic is gentle and works from within, making it a great addition to your current supplement or skincare routine. As always, if you have specific health concerns, check with your provider.</p>"
           }
         },
         "faq_3CWMLC": {
           "type": "faq",
           "settings": {
-            "question": "11. What if I miss a day?",
-            "answer": "<p>Just resume the next day. While consistency brings the best results, missing a day now and then will not interfere with your progress.</p>"
+            "question": "11. How does this support graceful aging?",
+            "answer": "<p>Radiance Tonic supports your body's natural cellular processes rather than fighting aging. By enhancing cellular vitality, optimizing detoxification, and strengthening immune function, it helps you age with energy, resilience, and natural radiance, embracing the journey with cellular confidence.</p>"
           }
         },
         "faq_d6qTBa": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "12. What happens if I stop taking it?",
             "answer": "<p>Your NAD⁺ levels may gradually decline again, and benefits like energy, focus, or hormonal balance may fade. For long-term support, we recommend using Cell Renew consistently.</p>"
@@ -2940,6 +2941,7 @@
         },
         "faq_ynT9nx": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "13. Are there any side effects?",
             "answer": "<p>Most users experience no side effects. In rare cases, some may feel mild detox-like symptoms in the first few days such as slight headache or fatigue as NAD⁺ pathways reactivate. These typically resolve quickly.</p>"
@@ -2947,6 +2949,7 @@
         },
         "faq_y8B9H8": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "14. What’s in it?",
             "answer": "<p>Ingredients per 6 ml serving:<br/> NMN (Nicotinamide Mononucleotide) 444 mg<br/> Purified water<br/> Vegetable glycerin<br/> Non-GMO sunflower lecithin<br/> Natural citrus flavor<br/> Potassium sorbate<br/> Stevia<br/> Free from sugar, caffeine, gluten, dairy, soy, synthetic additives, and GMOs</p>"
@@ -2954,6 +2957,7 @@
         },
         "faq_mjT3ae": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "15. Is it vegan and non-GMO?",
             "answer": "<p>Yes. Cell Renew is 100 percent vegan and non-GMO. It is made with clean-label ingredients and third-party tested for purity and potency.</p>"
@@ -2961,6 +2965,7 @@
         },
         "faq_dQMyfY": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "16. Is the product FDA-approved?",
             "answer": "<p>As with all dietary supplements in the United States, Cell Renew is not evaluated by the FDA. However, it is manufactured in certified facilities that follow GMP guidelines, and the ingredients are backed by clinical research.</p>"
@@ -2968,6 +2973,7 @@
         },
         "faq_hgWKNQ": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "17. What’s your return policy?",
             "answer": "<p>We offer a 30-day money-back guarantee. If you are not satisfied with your results, contact our support team. Your first order also includes free shipping.</p>"
@@ -2975,6 +2981,7 @@
         },
         "faq_hATLcE": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "18. How should I store the bottle?",
             "answer": "<p>Store it in a cool, dry place away from sunlight. Refrigeration after opening is optional and can help preserve freshness.</p>"
@@ -2982,6 +2989,7 @@
         },
         "faq_LAfBXQ": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "19. How long should I take Cell Renew?",
             "answer": "<p>Cell Renew is designed for long-term use. The benefits are cumulative. We recommend using it for at least 60 to 90 days to allow your NAD⁺ levels to stabilize and your results to build over time.</p>"
