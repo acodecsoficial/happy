@@ -1214,7 +1214,7 @@
         "text_GcHhgp": {
           "type": "text",
           "settings": {
-            "text": "<h3><em>Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
+            "text": "",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1953,7 +1953,7 @@
           "settings": {
             "image": "shopify://shop_images/cell_s_protection_cd32974a-2def-4a1e-8836-18cd057041ed.png",
             "title": "DAY 1",
-            "text": "<p>Feel the first signs of relief as your body begins to respond to seasonal triggers more calmly.</p>"
+            "text": "<p>A subtle lift in clarity and energy</p>"
           }
         },
         "result_item_B9jKrw": {
@@ -1961,7 +1961,7 @@
           "settings": {
             "image": "shopify://shop_images/Badge_c7ba64d9-2295-4fe6-8b08-cdd70cbd71af.png",
             "title": "DAY 7",
-            "text": "<p>Less congestion, better breathing, and more energy throughout the day.</p>"
+            "text": "<p>You focus sooner and stay in flow longer</p>"
           }
         },
         "result_item_KtxBQ9": {
@@ -1969,7 +1969,7 @@
           "settings": {
             "image": "shopify://shop_images/Badge-1_539c36da-6d9d-412f-9583-37d061e8bc1a.png",
             "title": "DAY 30",
-            "text": "<p>Discomfort feels more manageable. You recover quicker from stress and activity.</p>"
+            "text": "<p>Mental sharpness feels more natural</p>"
           }
         },
         "result_item_rqhTek": {
@@ -1977,7 +1977,7 @@
           "settings": {
             "image": "shopify://shop_images/Badge-2_08f8be15-2016-404c-9bc3-1fbf740dc915.png",
             "title": "DAY 60",
-            "text": "<p>Everyday triggers affect you less. You wake up clearer and feel more resilient.</p>"
+            "text": "<p>Brain fog is no longer part of your routine</p>"
           }
         },
         "result_item_9ia4b9": {
@@ -1985,7 +1985,7 @@
           "settings": {
             "image": "shopify://shop_images/Badge-3.png",
             "title": "DAY 90",
-            "text": "<p>Your body stays balanced and supported through every season and every challenge.</p>"
+            "text": "<p>You’re not chasing energy anymore. You’ve got it</p>"
           }
         }
       },
@@ -2023,7 +2023,7 @@
         "text_wVcfFY": {
           "type": "text",
           "settings": {
-            "text": "<h3>Caffeine gives you a jolt. Brain Tonic gives you fuel.</h3>",
+            "text": "<h3><em>Caffeine gives you a jolt. Brain Tonic gives you fuel.</em></h3>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -2040,7 +2040,7 @@
         "text_QACA9C": {
           "type": "text",
           "settings": {
-            "text": "<h3>With advanced liposomal CoQ10 for superior absorption, you get clean energy, real clarity and long term support. All in one teaspoon a day.</h3>",
+            "text": "<h3>With advanced liposomal CoQ10 for superior absorption, you get clean energy, real clarity and long term support. </h3><h3>All in one teaspoon a day.</h3>",
             "text_style": "body",
             "has_border": false,
             "center_mobile": false
