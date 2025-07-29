@@ -589,12 +589,12 @@
       "settings": {
         "heading_main": "<p>WHAT YOU’LL <em>notice first</em></p>",
         "image_1": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_444be158-31d8-45d9-bbb9-ff399e41fda5.png",
-        "heading_1": "<p>In your body</p>",
+        "heading_1": "<p><em>In your body</em></p>",
         "bullets_1": "<ul><li>Light, sustained energy that carries you through</li><li>No highs, no lows, just clean momentum</li></ul>",
-        "heading_2": "<p>In your mind</p>",
+        "heading_2": "<p><em>In your mind</em></p>",
         "bullets_2": "<ul><li>Sharper thinking and faster recall</li><li>More presence, less mental noise</li></ul>",
         "image_2": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy-1.png",
-        "heading_3": "<p>In your flow</p>",
+        "heading_3": "<p><em>In your flow</em></p>",
         "bullets_3": "<ul><li>Meetings feel easier </li><li>Ideas come quicker</li><li>You stay in rhythm</li></ul>",
         "image_3": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy-2.png"
       }
