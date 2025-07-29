@@ -3,6 +3,10 @@
     display: block !important;
   }
 
+  .top47{
+    top: 0px;  
+  }
+
   .quantity-grid{
     display: none !important;
   }
