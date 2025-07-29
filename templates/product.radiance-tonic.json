@@ -606,7 +606,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Your energy feels more stable throughout the day, mental fog starts to lift, and your skin has a subtle but noticeable glow.</li><li> Friends might ask if you're using a new skincare routine or getting more sleep.</li></ul>",
+                    "text": "<ul><li>Your energy stays consistent all day instead of crashing at 2 PM</li><li>Brain fog disappears completely</li><li>Your skin gets that healthy glow people actually comment on</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -669,7 +669,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Liposomal glutathione rapidly restores cellular antioxidant levels that naturally decline with age and stress. </li><li>Your liver begins processing toxins more efficiently, your immune cells function optimally, and cellular energy production improves creating that unmistakable vitality that radiates outward.</li></ul>",
+                    "text": "<ul><li>Liposomal glutathione efficiently restores cellular antioxidant levels</li><li>Optimizes liver detoxification pathways</li><li>Enhances cellular energy production, creating that authentic vitality that radiates from within<br/><br/></li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
