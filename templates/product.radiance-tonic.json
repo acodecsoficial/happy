@@ -357,7 +357,7 @@
                 "vertical_alignment": "start",
                 "desktop_grid_column_gap": 0,
                 "desktop_grid_row_gap": 0,
-                "top_spacing_desktop": 30,
+                "top_spacing_desktop": 50,
                 "bottom_spacing_desktop": 30,
                 "left_spacing_desktop": 0,
                 "right_spacing_desktop": 0,
@@ -2694,6 +2694,7 @@
               "blocks": {
                 "image_block_UQdmmD": {
                   "type": "image-block",
+                  "disabled": true,
                   "settings": {
                     "image": "shopify://shop_images/ChatGPT_Image_Apr_29_2025_09_08_14_PM.png",
                     "different_mobile_image": false,
