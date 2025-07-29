@@ -452,7 +452,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2><em>There’s focus that fades. And there’s focus that flows.</em></h2>",
+                        "text": "<h2>One teaspoon = 8+ hours of peak mental performance.</h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -467,7 +467,7 @@
                     "text_block_EJp8ft": {
                       "type": "text-block",
                       "settings": {
-                        "text": "<p>Brain Tonic is your daily ritual for clear, steady focus that lasts. Its easily absorbed formula supports your natural energy so you can stay focused and clear-headed all day — without the highs or the crash.<br/>You don’t need more noise. You need more you.</p>",
+                        "text": "<p>While other \"brain boosters\" give you temporary highs followed by crashes, Brain Tonic fuels your brain cells directly with the one nutrient they absolutely need: CoQ10. The result? Mental clarity that flows naturally all day, every day.</p><p>Stop chasing focus. Start owning it.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
