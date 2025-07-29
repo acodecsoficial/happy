@@ -588,15 +588,15 @@
       "name": "Benefits Grid",
       "settings": {
         "heading_main": "<p>WHAT YOU’LL <em>notice first</em></p>",
-        "image_1": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_3_bb477bf7-93a1-4cae-9aa8-b174afd799c7.png",
+        "image_1": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_444be158-31d8-45d9-bbb9-ff399e41fda5.png",
         "heading_1": "<p>In your body</p>",
         "bullets_1": "<ul><li>Light, sustained energy that carries you through</li><li>No highs, no lows, just clean momentum</li></ul>",
         "heading_2": "<p>In your mind</p>",
         "bullets_2": "<ul><li>Sharper thinking and faster recall</li><li>More presence, less mental noise</li></ul>",
-        "image_2": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_4_56c88d42-9d25-443b-8a75-f2da65088316.png",
+        "image_2": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy-1.png",
         "heading_3": "<p>In your flow</p>",
         "bullets_3": "<ul><li>Meetings feel easier </li><li>Ideas come quicker</li><li>You stay in rhythm</li></ul>",
-        "image_3": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_5_2543d6a2-681a-4579-aed4-285dbebe6fb2.png"
+        "image_3": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy-2.png"
       }
     },
     "landing_section_KWgCJm": {
@@ -1328,9 +1328,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_1_efe5be64-537c-4818-af2c-34a3ec0e7c33.jpg",
+        "image_desk": "shopify://shop_images/brain_v62.png",
         "image_height_desk": "square",
-        "image_mob": "shopify://shop_images/ia.jpg",
+        "image_mob": "shopify://shop_images/brain_v62.png",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -1392,7 +1392,7 @@
       "custom_css": [],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_1_923460cb-d9aa-4b70-ae9b-80151b3f2446.png",
+        "image": "shopify://shop_images/brain_v62.png",
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
@@ -1951,7 +1951,7 @@
         "result_item_zqgCJN": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/cell_s_protection_35b3daa3-93c1-4e5b-8a1f-d51007720b13.png",
+            "image": "shopify://shop_images/cell_s_protection_cd32974a-2def-4a1e-8836-18cd057041ed.png",
             "title": "DAY 1",
             "text": "<p>Feel the first signs of relief as your body begins to respond to seasonal triggers more calmly.</p>"
           }
@@ -1959,7 +1959,7 @@
         "result_item_B9jKrw": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Less_congestion_better_breathing_and_more_energy_throughout_the_day..png",
+            "image": "shopify://shop_images/Badge_c7ba64d9-2295-4fe6-8b08-cdd70cbd71af.png",
             "title": "DAY 7",
             "text": "<p>Less congestion, better breathing, and more energy throughout the day.</p>"
           }
@@ -1967,7 +1967,7 @@
         "result_item_KtxBQ9": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/a-cocktail-with-a-touch-of-class.jpg",
+            "image": "shopify://shop_images/Badge-1_539c36da-6d9d-412f-9583-37d061e8bc1a.png",
             "title": "DAY 30",
             "text": "<p>Discomfort feels more manageable. You recover quicker from stress and activity.</p>"
           }
@@ -1975,7 +1975,7 @@
         "result_item_rqhTek": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Badge_25fcedcc-1467-4235-a188-bdd4b96283fb.png",
+            "image": "shopify://shop_images/Badge-2_08f8be15-2016-404c-9bc3-1fbf740dc915.png",
             "title": "DAY 60",
             "text": "<p>Everyday triggers affect you less. You wake up clearer and feel more resilient.</p>"
           }
@@ -1983,7 +1983,7 @@
         "result_item_9ia4b9": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/redish-brown-leaves-showing-the-colors-of-autumn.jpg",
+            "image": "shopify://shop_images/Badge-3.png",
             "title": "DAY 90",
             "text": "<p>Your body stays balanced and supported through every season and every challenge.</p>"
           }
@@ -2090,7 +2090,7 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/Sem_Titulo-1_3_ad96a663-86e2-4a00-95a8-13bd9c8fed31.jpg",
+        "image_desk": "shopify://shop_images/brain_v62_f89ca215-6373-40d6-b85f-b4f7b6fe58b2.png",
         "image_height_desk": "square",
         "image_mob": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_6_9b8b03f3-d3c0-4009-89a1-0142179a4789.png",
         "image_height_mob": "adapt",
@@ -2408,8 +2408,8 @@
       ],
       "settings": {
         "show_border_top": true,
-        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_2_82d72f41-90c7-4b6d-828f-d04d0229a0ef.png",
-        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_1_5ba3d4be-c8ef-4021-8dcd-5bc720574f85.png"
+        "first_image": "shopify://shop_images/31_Screenshot_2025-05-143.png",
+        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_fbbb5904-444b-49ad-9a28-af73192d36a7.png"
       }
     },
     "image_banner_D6TgTi": {
