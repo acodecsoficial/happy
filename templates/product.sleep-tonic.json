@@ -1302,7 +1302,7 @@
       ],
       "name": "Breakthrough Section",
       "settings": {
-        "heading": "The breakthrough <em>that changes everything</em>",
+        "heading": "THE BREAKTHROUGH that changes everything",
         "subheading": "Why most sleep aids fail: They force sedation instead of supporting natural sleep processes. Result? You're unconscious but not restored."
       }
     },
@@ -1338,7 +1338,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>Unlock THE SCIENCE <em>behind deep sleep</em></p>",
+                "text": "<p>UNLOCK THE SCIENCE <em>behind deep sleep</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
