@@ -308,9 +308,9 @@ class SubscriptionWidget extends HTMLElement {
   const container = el.closest('.radio-option');
   if (container?.classList.contains('active')) {
     el.innerText = this.formatPrice(subscriptionComparePrice);
-   
+    el.classList.remove("hidden");
   } else {
-   
+    el.classList.remove("hidden");
   }
 });
 
@@ -318,9 +318,9 @@ this.querySelectorAll(".js-subscription-save").forEach(el => {
   const container = el.closest('.radio-option');
   if (container?.classList.contains('active')) {
     el.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
-    
+    el.classList.remove("hidden");
   } else {
-    
+    el.classList.remove("hidden");
   }
 });
 
