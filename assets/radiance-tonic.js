@@ -310,15 +310,12 @@ class SubscriptionWidget extends HTMLElement {
         el.innerText = this.formatPrice(subscriptionComparePrice);
         el.classList.remove("hidden");
       });
-        const activeOption = this.querySelector('.cadence-selector .radio-option.active');
-    if (activeOption) {
-      const saveEl = activeOption.querySelector(".js-subscription-save");
-      if (saveEl) {
-        saveEl.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
-        saveEl.classList.remove("hidden");
-      }
-    }
-
+    // 3) Mostra e preenche todos os saves de subscription
+    this.querySelectorAll(".js-subscription-save")
+      .forEach(el => {
+        el.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
+        el.classList.remove("hidden");
+      });
   }
 
   // ————— One‑time —————
