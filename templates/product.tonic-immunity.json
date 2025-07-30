@@ -2175,13 +2175,13 @@
         "max_width": 0,
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "use_top_border": true,
+        "use_top_border": false,
         "use_bottom_border": false,
         "full_width_mobile": true,
         "max_width_mobile": 0,
         "top_spacing_mobile": 20,
         "bottom_spacing_mobile": 20,
-        "use_top_border_mobile": true,
+        "use_top_border_mobile": false,
         "use_bottom_border_mobile": false
       }
     },
