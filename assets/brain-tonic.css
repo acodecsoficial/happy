@@ -12,6 +12,10 @@
     flex-direction: column;
   }
 
+  .image-with-text__content>*+* {
+    margin-top: 1rem;
+}
+
   .cadence-selector {
     order: -1;
      margin-bottom: 1rem !important;
