@@ -13,7 +13,7 @@
 }
 
 .period-price {
-    display: none;
+    display: none !important;
 }
 
 .save-text{
