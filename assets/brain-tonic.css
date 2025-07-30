@@ -7,9 +7,8 @@
     display: none !important;
   }
 
-   .subscription-widget {
-    display: flex !important;
-    flex-direction: column;
+  .top47{
+    top: 0px;  
   }
 
   .image-with-text__content>*+* {
@@ -20,16 +19,17 @@
     margin-bottom: 30px;
   }
 
+   .subscription-widget {
+    display: flex !important;
+    flex-direction: column;
+  }
+
   .cadence-selector {
     order: -1;
      margin-bottom: 1rem !important;
     flex-direction: row !important;
     gap: 1rem;
     align-items: center;
-  }
-
-  .top47{
-    top: 0px !important;
   }
 
   .cadence-selector .value-props {
@@ -66,7 +66,31 @@
 
 }
 
+.quantity-grid-mobile .option-details {
+    display: flex !important;
+    align-items: end;
+    justify-content: end;
+  position: relative;
+}
 
+.bottles-text {
+    white-space: nowrap;
+    display: none;
+}
+
+p.save-text.js-subscription-save{
+  display: none;
+}
+
+.save-text{
+      margin: 0 !important;
+    position: absolute !important;
+    font-size: 10px !important;
+    background: #9caf88 !important;
+    padding: 5px !important;
+    color: #000000bf !important;
+    top: 20px;
+}
 
 @media (max-width: 900px){
   .quantity-grid-mobile .radio-option:nth-child(2) .value-props.js-mobile-value-props{
