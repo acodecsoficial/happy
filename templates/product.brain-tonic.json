@@ -2789,7 +2789,14 @@
           "type": "faq",
           "settings": {
             "question": "6. What does it taste like?",
-            "answer": "<p>It has a refreshing Citrus Nutty flavor that’s smooth, lightly tart, and easy to enjoy.</p>"
+            "answer": "<p>It has a bright, naturally citrus flavor—refreshing and uplifting, with no synthetic aftertaste. Think of it as a zesty brain boost.</p>"
+          }
+        },
+        "faq_xjrEd7": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
           }
         },
         "faq_aEfQyb": {
@@ -2814,6 +2821,7 @@
         "faq_dfmbmf",
         "faq_6UkLU3",
         "faq_LWdF6e",
+        "faq_xjrEd7",
         "faq_aEfQyb",
         "faq_WqnYjM"
       ],
