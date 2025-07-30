@@ -304,28 +304,23 @@ class SubscriptionWidget extends HTMLElement {
       this.elements.prices.subscription.period.innerText =
         this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
     }
-    // 2) Mostra e preenche todas as compares de subscription
-    this.querySelectorAll(".js-subscription-price-compare")
-      .forEach(el => {
-        el.innerText = this.formatPrice(subscriptionComparePrice);
-        el.classList.remove("hidden");
-      });
-    
-      const variant = this.getCurrentVariant();
-const qty = this.state.quantity;
+    this.querySelectorAll(".js-subscription-price-compare").forEach(el => {
+  const container = el.closest('.radio-option');
+  if (container?.classList.contains('active')) {
+    el.innerText = this.formatPrice(subscriptionComparePrice);
+    el.classList.remove("hidden");
+  } else {
+    el.classList.add("hidden");
+  }
+});
 
-this.querySelectorAll(".radio-option[data-plan-id]").forEach(option => {
-  const planId = Number(option.dataset.planId);
-  const plan = variant.selling_plan_allocations.find(p => p.selling_plan_id === planId);
-  if (!plan) return;
-
-  const subPrice = plan.price * qty;
-  const comparePrice = variant.price * qty;
-
-  const saveEl = option.querySelector(".js-subscription-save");
-  if (saveEl) {
-    saveEl.innerText = this.getSaveText(subPrice, comparePrice);
-    saveEl.classList.remove("hidden");
+this.querySelectorAll(".js-subscription-save").forEach(el => {
+  const container = el.closest('.radio-option');
+  if (container?.classList.contains('active')) {
+    el.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
+    el.classList.remove("hidden");
+  } else {
+    el.classList.add("hidden");
   }
 });
 
