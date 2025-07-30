@@ -16,6 +16,10 @@
     margin-top: 0rem !important;
 }
 
+  .image-with-text__content--desktop-left>*{
+    margin-bottom: 30px;
+  }
+
   .cadence-selector {
     order: -1;
      margin-bottom: 1rem !important;
