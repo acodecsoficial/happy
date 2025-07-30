@@ -78,6 +78,10 @@
     display: none;
 }
 
+p.save-text.js-subscription-save{
+  display: none;
+}
+
 .save-text{
       margin: 0 !important;
     position: absolute !important;
