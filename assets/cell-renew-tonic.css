@@ -1,0 +1,26 @@
+
+.quantity-grid-mobile .option-details {
+    display: flex !important;
+    align-items: end;
+    justify-content: end;
+  position: relative;
+}
+
+.bottles-text {
+    white-space: nowrap;
+    display: none;
+}
+
+p.save-text.js-subscription-save{
+  display: none;
+}
+
+.save-text{
+      margin: 0 !important;
+    position: absolute !important;
+    font-size: 10px !important;
+    background: #9caf88 !important;
+    padding: 5px !important;
+    color: #000000bf !important;
+    top: 20px;
+}
