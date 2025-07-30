@@ -716,7 +716,7 @@
         "full_width_mobile": true,
         "top_spacing_mobile": 0,
         "bottom_spacing_mobile": 0,
-        "use_top_border_mobile": true,
+        "use_top_border_mobile": false,
         "use_bottom_border_mobile": false
       }
     },
