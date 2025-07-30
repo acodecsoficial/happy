@@ -68,6 +68,7 @@
     },
     "hero_gPwYAK": {
       "type": "hero",
+      "disabled": true,
       "name": "Hero - Brain, Sleep, Radiance",
       "settings": {
         "fifty_fifty": true,
