@@ -11,6 +11,14 @@
     top: 0px;  
   }
 
+  .image-with-text__content>*+* {
+    margin-top: 0rem !important;
+}
+
+  .image-with-text__content--desktop-left>*{
+    margin-bottom: 30px;
+  }
+
    .subscription-widget {
     display: flex !important;
     flex-direction: column;
