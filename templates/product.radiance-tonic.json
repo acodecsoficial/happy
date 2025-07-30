@@ -110,25 +110,6 @@
             "subs_info_6": ""
           }
         },
-        "quantity_block_hxax3a": {
-          "type": "quantity_block",
-          "settings": {
-            "qty": 2,
-            "onetime_price": 65,
-            "plan_id": "693195342144",
-            "title": "60-day supply",
-            "sub_title": "",
-            "num_bottles": "2",
-            "badge": "",
-            "product_content_text": "60-day Supply",
-            "subs_info_1": "Free shipping in 12h, every 60 days",
-            "subs_info_2": "Cancel your subscription anytime",
-            "subs_info_3": "",
-            "subs_info_4": "",
-            "subs_info_5": "",
-            "subs_info_6": ""
-          }
-        },
         "quantity_block_dHibUt": {
           "type": "quantity_block",
           "settings": {
@@ -141,6 +122,25 @@
             "badge": "",
             "product_content_text": "",
             "subs_info_1": "Free shipping in 12h, every 30 days",
+            "subs_info_2": "Cancel your subscription anytime",
+            "subs_info_3": "",
+            "subs_info_4": "",
+            "subs_info_5": "",
+            "subs_info_6": ""
+          }
+        },
+        "quantity_block_hxax3a": {
+          "type": "quantity_block",
+          "settings": {
+            "qty": 2,
+            "onetime_price": 65,
+            "plan_id": "693195342144",
+            "title": "60-day supply",
+            "sub_title": "",
+            "num_bottles": "2",
+            "badge": "",
+            "product_content_text": "60-day Supply",
+            "subs_info_1": "Free shipping in 12h, every 60 days",
             "subs_info_2": "Cancel your subscription anytime",
             "subs_info_3": "",
             "subs_info_4": "",
@@ -199,8 +199,8 @@
         "frontrow_WcpwRH",
         "buy_buttons_W9PKFR",
         "quantity_block_XPNgFV",
-        "quantity_block_hxax3a",
         "quantity_block_dHibUt",
+        "quantity_block_hxax3a",
         "text_RB6DBe",
         "text_h9imWD",
         "aside_content_TPcz4K",
