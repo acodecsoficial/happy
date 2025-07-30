@@ -7,6 +7,18 @@
     display: none !important;
   }
 
+  .top47{
+    top: 0px;  
+  }
+
+  .image-with-text__content>*+* {
+    margin-top: 0rem !important;
+}
+
+  .image-with-text__content--desktop-left>*{
+    margin-bottom: 30px;
+  }
+
    .subscription-widget {
     display: flex !important;
     flex-direction: column;
@@ -52,6 +64,32 @@
     justify-content: center;
   }
 
+}
+
+.quantity-grid-mobile .option-details {
+    display: flex !important;
+    align-items: end;
+    justify-content: end;
+  position: relative;
+}
+
+.bottles-text {
+    white-space: nowrap;
+    display: none;
+}
+
+p.save-text.js-subscription-save{
+  display: none;
+}
+
+.save-text{
+      margin: 0 !important;
+    position: absolute !important;
+    font-size: 10px !important;
+    background: #9caf88 !important;
+    padding: 5px !important;
+    color: #000000bf !important;
+    top: 20px;
 }
 
 @media (max-width: 900px){
