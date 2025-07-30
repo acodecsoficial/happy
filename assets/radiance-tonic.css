@@ -67,7 +67,7 @@
 }
 
 .quantity-grid-mobile .option-details {
-    display: flex;
+    display: flex !important;
     align-items: end;
     justify-content: end;
 }
