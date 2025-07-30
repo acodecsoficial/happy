@@ -580,7 +580,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/rad2.png",
+                    "image": "shopify://shop_images/brain_v6a.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -642,7 +642,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/rad3.png",
+                    "image": "shopify://shop_images/brain_v6_ddd1893d-2f60-4d17-9a58-f29378fb39ec.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -1135,7 +1135,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/brain_v6a.png",
+        "image": "shopify://shop_images/rad2.png",
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
@@ -1341,9 +1341,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/brain_v6_ddd1893d-2f60-4d17-9a58-f29378fb39ec.png",
+        "image_desk": "shopify://shop_images/rad3.png",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/brain_v6_ddd1893d-2f60-4d17-9a58-f29378fb39ec.png",
+        "image_mob": "shopify://shop_images/rad3.png",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
