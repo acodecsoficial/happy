@@ -421,7 +421,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h2>Because real recovery starts with real rest.</h2>",
+                        "text": "<h2><em>Because real recovery starts with real rest.</em></h2>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
