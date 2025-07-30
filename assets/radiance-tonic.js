@@ -310,12 +310,15 @@ class SubscriptionWidget extends HTMLElement {
         el.innerText = this.formatPrice(subscriptionComparePrice);
         el.classList.remove("hidden");
       });
-    // 3) Mostra e preenche todos os saves de subscription
-    this.querySelectorAll(".js-subscription-save")
-      .forEach(el => {
-        el.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
-        el.classList.remove("hidden");
-      });
+          const activeOption = this.querySelector('.cadence-selector .radio-option.active');
+      if (activeOption) {
+        const saveEl = activeOption.querySelector(".js-subscription-save");
+        if (saveEl) {
+          saveEl.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
+          saveEl.classList.remove("hidden");
+        }
+      }
+
   }
 
   // ————— One‑time —————
@@ -357,14 +360,19 @@ class SubscriptionWidget extends HTMLElement {
 
   // 3) Atualiza todos os saves de subscription, mas só dentro deste widget
   if (elements === this.elements.prices.subscription) {
-    this.querySelectorAll(".js-subscription-save").forEach(el => {
-      if (comparePrice > price) {
-        el.innerText = this.getSaveText(price, comparePrice);
-        el.classList.remove("hidden");
-      } else {
-        el.classList.add("hidden");
-      }
-    });
+    const relatedOption = this.querySelector(`.cadence-selector .radio-option[data-plan-id="${this.state.selectedPlanId}"]`);
+if (relatedOption) {
+  const el = relatedOption.querySelector(".js-subscription-save");
+  if (el) {
+    if (comparePrice > price) {
+      el.innerText = this.getSaveText(price, comparePrice);
+      el.classList.remove("hidden");
+    } else {
+      el.classList.add("hidden");
+    }
+  }
+}
+
   }
 
   // 4) Atualiza todos os saves de one‑time, escopando ao widget
