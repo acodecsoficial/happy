@@ -13,7 +13,7 @@
   }
 
   .image-with-text__content>*+* {
-    margin-top: 0rem;
+    margin-top: 0rem !important;
 }
 
   .cadence-selector {
