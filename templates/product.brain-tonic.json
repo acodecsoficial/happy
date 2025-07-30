@@ -158,7 +158,7 @@
           "settings": {
             "title": "Ingredients",
             "text": "",
-            "image": "shopify://shop_images/HappyAging_Relief_Facts_620x620_ff51d99e-7a64-4470-ac7a-7ef2404b7204.jpg"
+            "image": "shopify://shop_images/SUP_FACTS_BRAIN.png"
           }
         },
         "aside_content_rBPMby": {
@@ -1337,7 +1337,7 @@
         "image_first": false,
         "image_first_mob": false,
         "image_large": false,
-        "show_border": false,
+        "show_border": true,
         "show_border_top": true,
         "hide_border_mobile": false,
         "remove_py_content": false,
@@ -1441,7 +1441,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>HOW BRAIN TONIC WORKS <em>for your mind</em></p>",
+                "text": "<p>HOW IT WORKS <em>for your mind</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
@@ -2005,7 +2005,7 @@
       ],
       "name": "Results List",
       "settings": {
-        "title": "YOUR Brain<em> journey</em>"
+        "title": "YOUR BRAIN<em> journey</em>"
       }
     },
     "image_with_text_blocks_XbQgyL": {
