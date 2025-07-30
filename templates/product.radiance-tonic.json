@@ -94,7 +94,7 @@
         "quantity_block_DybNAN": {
           "type": "quantity_block",
           "settings": {
-            "qty": 2,
+            "qty": 1,
             "onetime_price": 55,
             "plan_id": "693195309376",
             "title": "30-day supply",
@@ -114,7 +114,7 @@
           "type": "quantity_block",
           "settings": {
             "qty": 2,
-            "onetime_price": 65,
+            "onetime_price": 55,
             "plan_id": "693195342144",
             "title": "60-day supply",
             "sub_title": "",
