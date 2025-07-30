@@ -2754,7 +2754,7 @@
           "type": "faq",
           "settings": {
             "question": "1. What is Brain Tonic?",
-            "answer": "<p>Brain Tonic™ is a clean, citrus-flavored liquid shot formulated with 105.6 mg of highly bioavailable CoQ10. It supports cognitive clarity, cellular energy production, and long-term brain health helping you feel sharp, focused, and vibrant at every age.</p>"
+            "answer": "<p>Brain Tonic is a clean, citrus-flavored liquid shot formulated with 105.6 mg of highly bioavailable CoQ10. It supports cognitive clarity, cellular energy production, and long-term brain health helping you feel sharp, focused, and vibrant at every age.</p>"
           }
         },
         "faq_2": {
@@ -2810,7 +2810,7 @@
           "type": "faq",
           "settings": {
             "question": "9. How is Brain Tonic tested for quality?",
-            "answer": "<p>Each batch undergoes third-party purity testing and is crafted using USP 645-grade purified water. Our formula is backed by science and integrity you can trust.<br/><br/></p>"
+            "answer": "<p>Each batch undergoes third-party purity testing and is crafted using USP 645-grade purified water. Our formula is backed by science and integrity you can trust.</p>"
           }
         }
       },
