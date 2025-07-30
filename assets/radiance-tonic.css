@@ -66,6 +66,12 @@
 
 }
 
+.quantity-grid-mobile .option-details {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
 @media (max-width: 900px){
   .quantity-grid-mobile .radio-option:nth-child(2) .value-props.js-mobile-value-props{
     display: flex !important;
