@@ -304,40 +304,25 @@ class SubscriptionWidget extends HTMLElement {
       this.elements.prices.subscription.period.innerText =
         this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
     }
-
-    // Atualiza todos os blocos de plano com seus respectivos valores
-const variant = this.getCurrentVariant();
-
-this.querySelectorAll(".radio-option[data-plan-id]").forEach(option => {
-  const planId = Number(option.dataset.planId);
-  const plan = variant.selling_plan_allocations.find(p => p.selling_plan_id === planId);
-  if (!plan) return;
-
-  const qty = this.state.quantity;
-  const subPrice = plan.price * qty;
-  const comparePrice = variant.price * qty;
-
-  const saveEl = option.querySelector(".js-subscription-save");
-  const compareEl = option.querySelector(".js-subscription-price-compare");
-  const periodEl = option.querySelector(".js-subscription-period-price");
-  const priceEl = option.querySelector(".js-subscription-price");
-
-  if (saveEl) {
-    saveEl.innerText = this.getSaveText(subPrice, comparePrice);
-    saveEl.classList.remove("hidden");
-  }
-  if (compareEl) {
-    compareEl.innerText = this.formatPrice(comparePrice);
-    compareEl.classList.remove("hidden");
-  }
-  if (periodEl) {
-    periodEl.innerText = this.formatPrice(subPrice / qty) + "/mo";
-  }
-  if (priceEl) {
-    priceEl.innerText = this.formatPrice(subPrice);
+    this.querySelectorAll(".js-subscription-price-compare").forEach(el => {
+  const container = el.closest('.radio-option');
+  if (container?.classList.contains('active')) {
+    el.innerText = this.formatPrice(subscriptionComparePrice);
+    el.classList.remove("hidden");
+  } else {
+    el.classList.add("hidden");
   }
 });
 
+this.querySelectorAll(".js-subscription-save").forEach(el => {
+  const container = el.closest('.radio-option');
+  if (container?.classList.contains('active')) {
+    el.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
+    el.classList.remove("hidden");
+  } else {
+    el.classList.add("hidden");
+  }
+});
 
   }
 
