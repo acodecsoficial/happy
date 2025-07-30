@@ -304,29 +304,18 @@ class SubscriptionWidget extends HTMLElement {
       this.elements.prices.subscription.period.innerText =
         this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
     }
-    const activeOption = this.querySelector('.cadence-selector .radio-option.active');
-if (activeOption) {
-  const saveEl = activeOption.querySelector('.js-subscription-save');
-  const compareEl = activeOption.querySelector('.js-subscription-price-compare');
-  const periodEl = activeOption.querySelector('.js-subscription-period-price');
-  const currentEl = activeOption.querySelector('.js-subscription-price');
-
-  if (saveEl) {
-    saveEl.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
-    saveEl.classList.remove('hidden');
-  }
-  if (compareEl) {
-    compareEl.innerText = this.formatPrice(subscriptionComparePrice);
-    compareEl.classList.remove('hidden');
-  }
-  if (periodEl) {
-    periodEl.innerText = this.formatPrice(subscriptionPrice / this.state.quantity) + "/mo";
-  }
-  if (currentEl) {
-    currentEl.innerText = this.formatPrice(subscriptionPrice);
-  }
-}
-
+    // 2) Mostra e preenche todas as compares de subscription
+    this.querySelectorAll(".js-subscription-price-compare")
+      .forEach(el => {
+        el.innerText = this.formatPrice(subscriptionComparePrice);
+        el.classList.remove("hidden");
+      });
+    // 3) Mostra e preenche todos os saves de subscription
+    this.querySelectorAll(".js-subscription-save")
+      .forEach(el => {
+        el.innerText = this.getSaveText(subscriptionPrice, subscriptionComparePrice);
+        el.classList.remove("hidden");
+      });
   }
 
   // ————— One‑time —————
