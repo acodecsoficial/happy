@@ -1268,7 +1268,7 @@
         "feature_4xACKE": {
           "type": "feature",
           "settings": {
-            "title": "<em>GABA</em>",
+            "title": "GABA",
             "text": "Shuts down the mental chatter and anxiety that keeps you awake"
           }
         },
@@ -1302,8 +1302,8 @@
       ],
       "name": "Breakthrough Section",
       "settings": {
-        "heading": "THE BREAKTHROUGH <em>that changes everything</em>",
-        "subheading": "Why most sleep aids fail: They force sedation instead of supporting natural sleep processes. Result? You're unconscious but not restored."
+        "heading": "THE BREAKTHROUGH that changes everything",
+        "subheading": "Most sleep aids sedate instead of supporting natural sleep. The result? You're unconscious, not truly restored."
       }
     },
     "landing_section_3RqYFU": {
