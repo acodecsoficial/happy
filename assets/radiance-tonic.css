@@ -72,6 +72,15 @@
     justify-content: end;
 }
 
+.bottles-text {
+    white-space: nowrap;
+    display: none;
+}
+
+.save-text{
+  margin: 0 !important;
+}
+
 @media (max-width: 900px){
   .quantity-grid-mobile .radio-option:nth-child(2) .value-props.js-mobile-value-props{
     display: flex !important;
