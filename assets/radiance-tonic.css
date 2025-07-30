@@ -70,6 +70,7 @@
     display: flex !important;
     align-items: end;
     justify-content: end;
+  position: relative;
 }
 
 .bottles-text {
