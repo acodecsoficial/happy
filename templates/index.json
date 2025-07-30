@@ -68,6 +68,33 @@
     },
     "hero_gPwYAK": {
       "type": "hero",
+      "disabled": true,
+      "name": "Hero - Brain, Sleep, Radiance",
+      "settings": {
+        "fifty_fifty": true,
+        "bg_color": "#f7f5eb",
+        "button_color": "black",
+        "text_color": "black",
+        "sub_heading": "The Longevity Circle",
+        "title": "<p><em>Liposomal</em></p>",
+        "sup_word": "",
+        "title_words": "Magnesium, Quercetin, Vitamin C",
+        "text": "<p>GLOW STRONGER. STRESS LESS. FEEL BETTER.</p>",
+        "cta_link": "shopify://collections/tonics",
+        "cta_text": "Shop Now",
+        "text_garantia": "",
+        "banner_link": "shopify://collections/tonics",
+        "banner_link_new_window": false,
+        "image_desktop": "shopify://shop_images/Tonics_arrivals.jpg",
+        "image_mobile": "shopify://shop_images/Tonics_arrivals.jpg",
+        "video_url_desktop": "",
+        "video_url_mobile": "",
+        "mobile_image_first": true
+      }
+    },
+    "hero_FLMFhb": {
+      "type": "hero",
+      "name": "Hero- Immunity, Calm, Relief",
       "settings": {
         "fifty_fifty": true,
         "bg_color": "#f7f5eb",
@@ -1043,6 +1070,7 @@
     "hero",
     "hero_Nq9J7U",
     "hero_gPwYAK",
+    "hero_FLMFhb",
     "hero_v2_tAjFKf",
     "landing_section_PVxkVe",
     "hero_G3BmVP",
