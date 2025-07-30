@@ -1,5 +1,5 @@
 
-cadence-selector.cadence-selector .option-details {
+.subscription-widget cadence-selector.cadence-selector .option-details {
     display: flex !important;
     align-items: end;
     justify-content: end;
@@ -12,8 +12,8 @@ cadence-selector.cadence-selector .option-details {
     display: none;
 }
 
-p.save-text.js-subscription-save{
-  display: none;
+.period-price {
+    display: none;
 }
 
 .save-text{
