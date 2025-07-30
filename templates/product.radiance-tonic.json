@@ -93,7 +93,6 @@
         },
         "quantity_block_XPNgFV": {
           "type": "quantity_block",
-          "disabled": true,
           "settings": {
             "qty": 2,
             "onetime_price": 60,
