@@ -1,9 +1,10 @@
 
-.quantity-grid-mobile .option-details {
+cadence-selector.cadence-selector .option-details {
     display: flex !important;
     align-items: end;
     justify-content: end;
   position: relative;
+  border:0 !important;
 }
 
 .bottles-text {
