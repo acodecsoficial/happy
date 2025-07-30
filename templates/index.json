@@ -68,7 +68,6 @@
     },
     "hero_gPwYAK": {
       "type": "hero",
-      "disabled": true,
       "name": "Hero - Brain, Sleep, Radiance",
       "settings": {
         "fifty_fifty": true,
@@ -78,7 +77,7 @@
         "sub_heading": "The Longevity Circle",
         "title": "<p>LIPOSOMAL</p>",
         "sup_word": "",
-        "title_words": "Brain, Radiance, Sleep",
+        "title_words": "CoQ10, Sleep Blend, Glutathione",
         "text": "<p>FOCUS MORE. GLOW MORE. SLEEP BETTER. </p>",
         "cta_link": "shopify://collections/tonics",
         "cta_text": "Shop Now",
