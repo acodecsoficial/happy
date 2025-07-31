@@ -1362,7 +1362,7 @@
         "heading_j3LBxK": {
           "type": "heading",
           "settings": {
-            "heading": "<h2><em>Your brain uses more energy than any other part of your body. </em></h2>",
+            "heading": "<h2><em>Your brain uses more energy than any other part of your body. <br/></em></h2>",
             "heading_size": "h2",
             "line-height": 1
           }
@@ -1370,7 +1370,7 @@
         "text_dMfrcF": {
           "type": "text",
           "settings": {
-            "text": "<p>But that energy depends on CoQ10. With stress and age, those levels drop. Brain Tonic helps bring them back using liposomal delivery for better absorption. It gets where it needs to go, fast. That means more ATP, less brain fog, and a mental state that feels strong, clear and steady.</p>",
+            "text": "<p><br/>But that energy depends on CoQ10. With stress and age, those levels drop. Brain Tonic helps bring them back using liposomal delivery for better absorption. It gets where it needs to go, fast. That means more ATP, less brain fog, and a mental state that feels strong, clear and steady.</p>",
             "text_style": "body"
           }
         },
