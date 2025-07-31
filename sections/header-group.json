@@ -24,6 +24,7 @@
         },
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Get a free travel bag on all orders $120+",
             "link": "shopify://collections/all"
