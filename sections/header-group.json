@@ -28,11 +28,19 @@
             "text": "Get a free travel bag on all orders $120+",
             "link": "shopify://collections/all"
           }
+        },
+        "announcement_kCgXK9": {
+          "type": "announcement",
+          "settings": {
+            "text": "New tonics - Focus. Sleep. Radiance.",
+            "link": "shopify://collections/tonics"
+          }
         }
       },
       "block_order": [
         "announcement_fXjLnC",
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_kCgXK9"
       ],
       "settings": {
         "color_scheme": "scheme-2",
