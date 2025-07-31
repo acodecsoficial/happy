@@ -608,6 +608,22 @@
     "products_carousel_6wT9GL": {
       "type": "products-carousel",
       "blocks": {
+        "product_ibwM4q": {
+          "type": "product",
+          "settings": {
+            "product": "radiance-tonic",
+            "title": "Liposomal Magnesium",
+            "info": "Calm Tonic"
+          }
+        },
+        "product_7mgEgX": {
+          "type": "product",
+          "settings": {
+            "product": "sleep-tonic",
+            "title": "Liposomal Magnesium",
+            "info": "Calm Tonic"
+          }
+        },
         "product_hGQ7YU": {
           "type": "product",
           "settings": {
@@ -672,6 +688,8 @@
         }
       },
       "block_order": [
+        "product_ibwM4q",
+        "product_7mgEgX",
         "product_hGQ7YU",
         "product_WEQKkB",
         "product_WEQKkR",
