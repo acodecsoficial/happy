@@ -1,0 +1,24 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-grid": {
+      "type": "main-collection-grid",
+      "settings": {
+        "hero_image": "shopify://shop_images/brain_v6_c9ada190-1816-4a54-b934-6aa51ac64f20.png",
+        "hero_eyebrow": "Brain & Focus",
+        "hero_title": "MORE FOCUS. <em>Better results.</em>"
+      }
+    }
+  },
+  "order": [
+    "main-collection-grid"
+  ]
+}
