@@ -537,8 +537,8 @@
         "heading_cnjk4F": {
           "type": "heading",
           "settings": {
-            "heading": "<p><em>Most formulas stimulate. This one fuels.</em></p>",
-            "heading_size": "h2",
+            "heading": "<h2><em>Most formulas stimulate. This one fuels.</em></h2>",
+            "heading_size": "h0",
             "line-height": 1
           }
         },
@@ -1362,9 +1362,9 @@
         "heading_j3LBxK": {
           "type": "heading",
           "settings": {
-            "heading": "<h2><em>Your brain uses more energy than any other part of your body. <br/></em></h2>",
+            "heading": "<p><em>Your brain uses more energy than any other part of your body. <br/></em></p>",
             "heading_size": "h2",
-            "line-height": 1
+            "line-height": 0.9
           }
         },
         "text_dMfrcF": {
