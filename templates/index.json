@@ -616,6 +616,14 @@
             "info": "Calm Tonic"
           }
         },
+        "product_PAERp9": {
+          "type": "product",
+          "settings": {
+            "product": "relief-tonic",
+            "title": "Liposomal Magnesium",
+            "info": "Calm Tonic"
+          }
+        },
         "product_7mgEgX": {
           "type": "product",
           "settings": {
@@ -689,6 +697,7 @@
       },
       "block_order": [
         "product_ibwM4q",
+        "product_PAERp9",
         "product_7mgEgX",
         "product_hGQ7YU",
         "product_WEQKkB",
