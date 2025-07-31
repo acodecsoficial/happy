@@ -1106,7 +1106,7 @@
         "heading_k6PitK": {
           "type": "heading",
           "settings": {
-            "heading": "<h2><em>Because what your body absorbs makes all the difference.</em></h2>",
+            "heading": "<p><em>Because what your body absorbs makes all the difference.</em></p>",
             "heading_size": "h2",
             "line-height": 0.9
           }
