@@ -1,0 +1,24 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-grid": {
+      "type": "main-collection-grid",
+      "settings": {
+        "hero_image": "shopify://shop_images/Image_3_36db5ab5-6dbf-48cd-8984-66c109f9d15c.png",
+        "hero_eyebrow": "Calm & Mood",
+        "hero_title": "YOUR CALM <em>starts now</em>"
+      }
+    }
+  },
+  "order": [
+    "main-collection-grid"
+  ]
+}
