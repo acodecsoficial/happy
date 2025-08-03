@@ -180,11 +180,6 @@
         "disabled": false,
         "settings": {}
       },
-      "10641372206048101839": {
-        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
-        "disabled": false,
-        "settings": {}
-      },
       "7322671195855991875": {
         "type": "shopify://apps/discount-mixer/blocks/discount-view/791c666a-e939-4fd3-bdd3-b122066bb588",
         "disabled": false,
@@ -249,6 +244,11 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "10641372206048101839": {
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
