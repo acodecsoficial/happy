@@ -163,13 +163,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15350224971397959980": {
-        "type": "shopify://apps/stay-ai-subscription/blocks/bundle-cart-settings/896a3134-375a-4df4-8274-d37b95eafdee",
-        "disabled": true,
-        "settings": {
-          "enable_stay_bundles": false
-        }
-      },
       "144831480468751239": {
         "type": "shopify://apps/essential-upsell/blocks/app-embed/50627fd9-24fd-4250-8614-accc12826d80",
         "disabled": false,
@@ -247,8 +240,15 @@
       },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
+      },
+      "15350224971397959980": {
+        "type": "shopify://apps/stay-ai-subscription/blocks/bundle-cart-settings/896a3134-375a-4df4-8274-d37b95eafdee",
+        "disabled": false,
+        "settings": {
+          "enable_stay_bundles": false
+        }
       }
     },
     "color_schemes": {
