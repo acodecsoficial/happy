@@ -190,13 +190,6 @@
         "disabled": false,
         "settings": {}
       },
-      "5149645339031002760": {
-        "type": "shopify://apps/minmaxify-order-limits/blocks/app-embed-block/3acfba32-89f3-4377-ae20-cbb9abc48475",
-        "disabled": false,
-        "settings": {
-          "async": false
-        }
-      },
       "8218531531362863771": {
         "type": "shopify://apps/kite-discount-free-gift/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
         "disabled": false,
@@ -223,7 +216,7 @@
       },
       "7322671195855991875": {
         "type": "shopify://apps/discount-mixer/blocks/discount-view/791c666a-e939-4fd3-bdd3-b122066bb588",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "discounted-price-background-color": "#000000",
           "card-discounted-price-font-size": 16,
@@ -248,6 +241,13 @@
           "tier-table-border-width": 1,
           "tier-table-border-radius": 5,
           "tier-table-font-size": 14
+        }
+      },
+      "5149645339031002760": {
+        "type": "shopify://apps/minmaxify-order-limits/blocks/app-embed-block/3acfba32-89f3-4377-ae20-cbb9abc48475",
+        "disabled": true,
+        "settings": {
+          "async": false
         }
       }
     },
