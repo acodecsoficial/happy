@@ -1055,6 +1055,20 @@
             "question": "Your Refund Options",
             "answer": "<p>Full refund: Receive a full refund for your purchase </p><p>Store credit: Opt for store credit to use toward future purchases.</p><p>Please note: Once we receive your return, please allow 7 business days for us to inspect and process the return. We’ll issue your refund right after, and it should land back in your account within 1–5 days, depending on your bank or card issuer.</p>"
           }
+        },
+        "faq_7LMzzE": {
+          "type": "faq",
+          "settings": {
+            "question": "Damaged, Incorrect or missing Items",
+            "answer": "<p>If your product arrives damaged, incorrect or missing, let us know within 7 days at hello@happyaging.com, and we’ll make it right with a replacement or full refund.</p>"
+          }
+        },
+        "faq_jzn6Ci": {
+          "type": "faq",
+          "settings": {
+            "question": "Need Help?",
+            "answer": "<p>We’re here for you. If you have any questions or need assistance, feel free to reach out to us at hello@happyaging.com. <br/><br/>We're happy to support you on your healthy aging journey.</p>"
+          }
         }
       },
       "block_order": [
@@ -1072,7 +1086,9 @@
         "faq_BwTCah",
         "faq_Tf6K7L",
         "faq_MGiLtH",
-        "faq_c7UYPF"
+        "faq_c7UYPF",
+        "faq_7LMzzE",
+        "faq_jzn6Ci"
       ],
       "settings": {
         "title": "Subscriptions",
