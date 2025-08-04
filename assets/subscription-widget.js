@@ -358,7 +358,12 @@ class SubscriptionWidget extends HTMLElement {
       const onetimePrice = Number(block.dataset.onetimePrice);
 
       const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-      const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
+      const price = this.state.cadence === "subscription" && plan
+      ? plan.price
+      : this.state.cadence === "subscription" && !plan
+        ? variant.price  // fallback caso não encontre o plano
+        : onetimePrice;
+
       const comparePrice = variant.compare_at_price || variant.price;
 
 
