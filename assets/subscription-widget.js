@@ -425,7 +425,7 @@ class SubscriptionWidget extends HTMLElement {
             console.warn("subs el = ", subsTimeTxt);
       
             
-            //document.querySelector('.current-price.cp1').innerHTML = document.querySelector('.atc-price').innerHTML;
+            document.querySelector('.current-price.cp1').innerHTML = document.querySelector('.atc-price').innerHTML;
             if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
               console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
               
