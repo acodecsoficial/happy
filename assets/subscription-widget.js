@@ -1,3 +1,10 @@
+const oneTimeDiscountMap = {
+  // coloque aqui as suas variantes que precisam de desconto one-time:
+  50115166142784: 693008859456,  // ex.: NAD+ Longevity shots
+  // 12345678901234: 693010170176, // outro produto…
+};
+
+
 /*
 Subscription Widget
 */
@@ -59,11 +66,35 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   connectedCallback() {
-    this.initializeConfig();
-    this.initializeEventListeners();
-    this.refresh();
-    this.updateMobileValueProps();
+  // ❚1) carrega a config do Liquid
+  this.initializeConfig();
+
+  // ❚2) OVERRIDE ONE-TIME PURCHASE (só em alguns produtos)
+  const variant = this.getCurrentVariant();
+  const discountPlanId = oneTimeDiscountMap[variant.id];
+  if (discountPlanId) {
+    const planAlloc = variant.selling_plan_allocations
+      .find(p => p.selling_plan_id === discountPlanId);
+    if (planAlloc) {
+      // desktop
+      this.querySelectorAll('[data-qty-block]').forEach(block => {
+        const qty = Number(block.dataset.qty);
+        block.dataset.onetimePrice = planAlloc.per_delivery_price * qty;
+      });
+      // mobile
+      this.querySelectorAll('.quantity-grid-mobile .radio-option').forEach(block => {
+        const qty = Number(block.dataset.qty);
+        block.dataset.onetimePrice = planAlloc.per_delivery_price * qty;
+      });
+    }
   }
+
+  // ❚3) resto do fluxo normal
+  this.initializeEventListeners();
+  this.refresh();
+  this.updateMobileValueProps();
+}
+
 
   initializeConfig() {
     const configJson = this.querySelector("[data-widget-config]").innerText;
