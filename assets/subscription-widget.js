@@ -621,20 +621,53 @@ class QuantityPicker extends HTMLElement {
       const button = e.target.closest("[data-qty-block]");
       if (!button) return;
 
-      // Update both desktop and mobile buttons
+      // 🔄 Ativa visualmente o bloco clicado
       this.querySelectorAll("[data-qty-block]").forEach((block) => {
-        //if (block.dataset.qty === button.dataset.qty) {
-        if (block === button) {
-          block.classList.add("active");
-        } else {
-          block.classList.remove("active");
-        }
+        block.classList.toggle("active", block === button);
       });
 
+      // ✅ Seta o bloco selecionado
       this.widget.setQuantityBlock(button);
+
+      // ✅ Atualiza preços e força correção no mobile
+      setTimeout(() => {
+        const variant = this.widget.getCurrentVariant();
+        const cadence = this.widget.state.cadence;
+        const planId = Number(button.dataset.planId);
+        const qty = Number(button.dataset.qty);
+        const plan = planId ? variant.selling_plan_allocations.find(p => p.selling_plan_id === planId) : null;
+
+        if (cadence === "subscription" && plan) {
+          const total = plan.price * qty;
+          const compare = variant.price * qty;
+          const saveText = this.widget.getSaveText(total, compare);
+
+          const priceEl = button.querySelector(".js-qty-price");
+          const compareEl = button.querySelector(".js-qty-price-compare");
+          const saveEl = button.querySelector(".js-saving-text");
+
+          console.log("📱 Clique no mobile — forçando preço correto:");
+          console.log("Cadence:", cadence);
+          console.log("Plan ID:", planId);
+          console.log("Total:", total);
+          console.log("Compare:", compare);
+          console.log("Save:", saveText);
+
+          if (priceEl) priceEl.innerText = this.widget.formatPrice(total);
+          if (compareEl) {
+            compareEl.innerText = this.widget.formatPrice(compare);
+            compareEl.classList.toggle("hidden", compare <= total);
+          }
+          if (saveEl) {
+            saveEl.innerText = saveText;
+            saveEl.classList.toggle("hidden", compare <= total);
+          }
+        }
+      }, 10);
     });
   }
 }
+
 
 class CadenceSelector extends HTMLElement {
   connectedCallback() {
