@@ -66,35 +66,11 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   connectedCallback() {
-  // ❚1) carrega a config do Liquid
-  this.initializeConfig();
-
-  // ❚2) OVERRIDE ONE-TIME PURCHASE (só em alguns produtos)
-  const variant = this.getCurrentVariant();
-  const discountPlanId = oneTimeDiscountMap[variant.id];
-  if (discountPlanId) {
-    const planAlloc = variant.selling_plan_allocations
-      .find(p => p.selling_plan_id === discountPlanId);
-    if (planAlloc) {
-      // desktop
-      this.querySelectorAll('[data-qty-block]').forEach(block => {
-        const qty = Number(block.dataset.qty);
-        block.dataset.onetimePrice = planAlloc.per_delivery_price * qty;
-      });
-      // mobile
-      this.querySelectorAll('.quantity-grid-mobile .radio-option').forEach(block => {
-        const qty = Number(block.dataset.qty);
-        block.dataset.onetimePrice = planAlloc.per_delivery_price * qty;
-      });
-    }
+    this.initializeConfig();
+    this.initializeEventListeners();
+    this.refresh();
+    this.updateMobileValueProps();
   }
-
-  // ❚3) resto do fluxo normal
-  this.initializeEventListeners();
-  this.refresh();
-  this.updateMobileValueProps();
-}
-
 
   initializeConfig() {
     const configJson = this.querySelector("[data-widget-config]").innerText;
