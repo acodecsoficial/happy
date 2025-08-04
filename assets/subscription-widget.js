@@ -409,30 +409,18 @@ class SubscriptionWidget extends HTMLElement {
       if (priceEl) {
   console.warn(price + " - " + qty + " - " + comparePrice);
 
-  const isMobileBlock = block.closest(".quantity-grid-mobile");
-  const cadence = this.state.cadence;
+  const isMobile = block.closest(".quantity-grid-mobile");
 
-  // ✅ CORREÇÃO DO BUG: força uso do preço do plano se estiver em assinatura e for mobile
-  if (isMobileBlock && cadence === "subscription" && plan) {
-    console.warn("🔧 Corrigindo price no MOBILE com assinatura ativa!");
-    priceEl.innerText = this.formatPrice(plan.price * qty);
-  } else {
-    priceEl.innerText = this.formatPrice(price * qty);
-  }
-
-  if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length == 1) {
+  if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length === 1) {
     console.warn("same - length = 1");
     setTimeout(function () {
       const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
-      const oneTimeTxt = oneTime?.innerHTML || "";
-
       const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
-      const subsTimeTxt = subsTime?.innerHTML || "";
 
-      console.warn("one time = ", oneTimeTxt);
-      console.warn("subs el = ", subsTimeTxt);
+      if (oneTime && subsTime) {
+        const subsTimeTxt = subsTime.innerHTML;
+        console.warn("subs el = ", subsTimeTxt);
 
-      if (subsTime) {
         console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         oneTime.innerHTML = subsTimeTxt;
         oneTime.classList.remove("hidden");
@@ -440,19 +428,17 @@ class SubscriptionWidget extends HTMLElement {
         console.warn("element else");
       }
     }, 100);
+
   } else if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length > 1) {
     console.warn("same - length > 1");
     setTimeout(function () {
       const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
-      const oneTimeTxt = oneTime?.innerHTML || "";
-
       const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
-      const subsTimeTxt = subsTime?.innerHTML || "";
 
-      console.warn("one time = ", oneTimeTxt);
-      console.warn("subs el = ", subsTimeTxt);
+      if (oneTime && subsTime) {
+        const subsTimeTxt = subsTime.innerHTML;
+        console.warn("subs el = ", subsTimeTxt);
 
-      if (subsTime) {
         console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         oneTime.innerHTML = subsTimeTxt;
         oneTime.classList.remove("hidden");
@@ -460,6 +446,15 @@ class SubscriptionWidget extends HTMLElement {
         console.warn("element else");
       }
     }, 1000);
+  }
+
+  // ⚠️ Aqui forçamos o uso de plan.price no mobile mesmo que cadence seja one-time
+  if (isMobile && plan) {
+    const correctedPrice = plan.price * qty;
+    console.warn("🛠️ MOBILE → Forçando plan.price mesmo com cadence = one-time:", correctedPrice);
+    priceEl.innerText = this.formatPrice(correctedPrice);
+  } else {
+    priceEl.innerText = this.formatPrice(price * qty);
   }
 }
 
