@@ -383,18 +383,18 @@ class SubscriptionWidget extends HTMLElement {
 
         //const elementX = document.querySelector('[data-cadence="one-time-purchase"]');
   
-        const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
+        // const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
       
-        optionBtns.forEach(function(e) {
-          e.addEventListener("click", function () {
-            document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function(d){
-              console.warn("clicked =======================================");
-              console.warn("clicked ==", d);
-              //d.classList.add('hidden');
-              d.classList.add('did');
-            });
-          });
-        });
+        // optionBtns.forEach(function(e) {
+        //   e.addEventListener("click", function () {
+        //     document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function(d){
+        //       console.warn("clicked =======================================");
+        //       console.warn("clicked ==", d);
+        //       //d.classList.add('hidden');
+        //       d.classList.add('did');
+        //     });
+        //   });
+        // });
       
         
 
