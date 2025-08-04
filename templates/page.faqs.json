@@ -968,43 +968,92 @@
         "faq_HpJcrw": {
           "type": "faq",
           "settings": {
-            "question": "How do I update my shipping address?",
-            "answer": "<p>To update your subscription shipping address, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.”</p>"
+            "question": "Forgot your password?",
+            "answer": "<ul><li>On the login page, enter your purchase email and click “Manage Subscriptions without password.”</li><li>We’ll immediately send you a one-time login code to that email address.</li><li>If you don’t see the code in your inbox, please check your Spam or Junk folder.</li></ul>"
           }
         },
         "faq_DzLaVL": {
           "type": "faq",
           "settings": {
-            "question": "How do I update my billing information?",
-            "answer": "<p>To update your subscription billing information, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.”</p>"
+            "question": "How do I add or change a product in my subscription order?",
+            "answer": "<p>To add or change a product in your subscription, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.”</p>"
           }
         },
         "faq_yPGaen": {
           "type": "faq",
           "settings": {
-            "question": "How do I update my shipping date?",
-            "answer": "<p>To update your subscription shipping date, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.”</p>"
+            "question": "How do I update my shipping address?",
+            "answer": "<p>To update your subscription shipping address, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.”</p><p>Please note: make sure to update your address before your next order is processed. Once an order has been processed on our site, we’ll do our best to assist you, but we’re unable to guarantee changes to the shipping address. <br/><br/>Unfortunately, we cannot create a new replacement order or issue a refund if the order has already been shipped to the incorrect address.</p>"
           }
         },
         "faq_KMKVhQ": {
           "type": "faq",
           "settings": {
-            "question": "When will my subscription be billed?",
-            "answer": "<p>To view your subscription billing date, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.”</p>"
+            "question": "How do I update my billing information?",
+            "answer": "<p>To update your subscription billing information, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.”</p>"
           }
         },
         "faq_qrQgQg": {
           "type": "faq",
           "settings": {
-            "question": "How do I pause or cancel my subscription?",
-            "answer": "<p>To manage your subscriptions, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.” </p>"
+            "question": "How do I update my shipping date?",
+            "answer": "<p>To update your subscription shipping date, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.”</p>"
           }
         },
         "faq_6qrkcm": {
           "type": "faq",
           "settings": {
+            "question": "When will my subscription be billed?",
+            "answer": "<p>Your subscription will be billed automatically according to the frequency you selected (every 10 days, 20 days, 1 month, 3 months, or 6 months).</p><p>To view your subscription billing date, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.”</p>"
+          }
+        },
+        "faq_fR7ALp": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I pause or cancel my subscription?",
+            "answer": "<p>To manage your subscriptions, log into your account at <a href=\"http://www.happyaging.com\">www.happyaging.com</a>, click “Login”, and then go to “Manage Subscriptions.”</p><p>If you have any questions or need help with the process, feel free to email us at hello@happyaging.com — we’re happy to assist!</p><p>Please note: Cancellation requests sent through other channels (like social media) are not accepted; please use your account or email us directly. If you request cancellation via email, our team will first confirm your identity for security purposes. Your subscription will only be effectively canceled once you receive confirmation from our team.</p>"
+          }
+        },
+        "faq_qVnFwe": {
+          "type": "faq",
+          "settings": {
             "question": "How do I restart my subscription?",
-            "answer": "<p>To manage your subscriptions, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.” Once you are in your subscription portal, click “Reactivate Subscription.” </p>"
+            "answer": "<p>To manage your subscriptions, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.” Once you are in your subscription portal, click “Reactivate Subscription.”</p>"
+          }
+        },
+        "faq_tPVJVL": {
+          "type": "faq",
+          "settings": {
+            "question": "Return Policy",
+            "answer": "<p>We’re here to ensure your experience with Happy Aging is smooth and enjoyable. If your first order isn’t quite right, our 30-Day Guarantee makes returns easy and stress-free.</p><p>30-Day Guarantee (First Purchase Only)<br/><br/>We want you to try our products risk-free!<br/><br/>- Valid for one product per customer on <em>your first order</em>.<br/><br/>- If you’re not satisfied, keep the first product and return any unopened products within 30 days of delivery for a full refund.</p>"
+          }
+        },
+        "faq_BwTCah": {
+          "type": "faq",
+          "settings": {
+            "question": "How It Works",
+            "answer": "<ul><li>Try one product: If your order includes more than one product, feel free to open and enjoy one. If it’s not quite what you were expecting, keep the first product with our compliments.<br/></li><li>Return unopened products<strong>: </strong>Simply return any unopened boxes within 30 days to receive a full refund.</li></ul>"
+          }
+        },
+        "faq_Tf6K7L": {
+          "type": "faq",
+          "settings": {
+            "question": "Getting Your Refund",
+            "answer": "<p>We’ll happily credit you for the full purchase price. Need a return label? We can generate one in a snap, just note that return-shipping costs are yours to cover. </p><p>Tap “Start a Return,” enter your order number and ZIP code, and we’ll email you a label to print, pop on the box, and send any unopened goodies back our way. Prefer a helping hand? Drop us a line at hello@happyaging.com and we’ll walk you through the process.<br/><br/>Once your items arrive at our warehouse, please allow up to 7 business days for us to inspect and process the return. We’ll issue your refund right after, and it should land back in your account within 1–5 days, depending on your bank or card issuer.</p>"
+          }
+        },
+        "faq_MGiLtH": {
+          "type": "faq",
+          "settings": {
+            "question": "General Returns",
+            "answer": "<p>For future orders, we accept returns under the following conditions:<br/><br/>Unopened products only: We can accept returns for unopened products in their original condition, inside their regular shipping box and properly sealed.</p><p>30-day return window: You have 30 days from the date of delivery to request a return. If you have initiated the return after the 30-day window, you will not be eligible for a refund.<br/><br/>To start a return, contact us at hello@happyaging.com and we’ll guide you and provide a return label.<br/><br/>Please note: as an emerging company, we are able to provide the return label for your convenience, but we are not able to cover the cost of return shipping.</p>"
+          }
+        },
+        "faq_c7UYPF": {
+          "type": "faq",
+          "settings": {
+            "question": "Your Refund Options",
+            "answer": "<p>Full refund: Receive a full refund for your purchase </p><p>Store credit: Opt for store credit to use toward future purchases.</p><p>Please note: Once we receive your return, please allow 7 business days for us to inspect and process the return. We’ll issue your refund right after, and it should land back in your account within 1–5 days, depending on your bank or card issuer.</p>"
           }
         }
       },
@@ -1016,7 +1065,14 @@
         "faq_yPGaen",
         "faq_KMKVhQ",
         "faq_qrQgQg",
-        "faq_6qrkcm"
+        "faq_6qrkcm",
+        "faq_fR7ALp",
+        "faq_qVnFwe",
+        "faq_tPVJVL",
+        "faq_BwTCah",
+        "faq_Tf6K7L",
+        "faq_MGiLtH",
+        "faq_c7UYPF"
       ],
       "settings": {
         "title": "Subscriptions",
