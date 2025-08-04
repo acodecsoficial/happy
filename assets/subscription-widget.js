@@ -345,20 +345,27 @@ class SubscriptionWidget extends HTMLElement {
   }
 
  updateQuantityPrices() {
-  if (this.config.product.is_bundle) {
-    return;
-  }
+  if (this.config.product.is_bundle) return;
 
   const variant = this.getCurrentVariant();
 
   this.querySelectorAll("[data-qty-block]").forEach((block) => {
-    console.warn("block.dataset.qty ===== ", block.dataset.qty);
     const qty = Number(block.dataset.qty);
     const planId = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
 
     const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-    const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
+    const isMobileBlock = block.closest(".quantity-grid-mobile");
+    const cadence = document.querySelector('.cadence-selector .radio-option.active')?.dataset.cadence;
+
+    // 🔥 Aqui está o fix principal:
+    let price;
+    if (cadence === "subscription" && plan) {
+      price = plan.price;
+    } else {
+      price = onetimePrice; // usa o onetime correto (com desconto)
+    }
+
     const comparePrice = variant.compare_at_price || variant.price;
 
     const priceEl = block.querySelector(".js-qty-price");
@@ -373,80 +380,62 @@ class SubscriptionWidget extends HTMLElement {
     if (savingTextEl) {
       const totalComparePrice = comparePrice * qty;
       const totalCurrentPrice = price * qty;
-
       savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
       savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
     }
 
-    const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
-    optionBtns.forEach(function (e) {
-      e.addEventListener("click", function () {
-        document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function (d) {
-          console.warn("clicked =======================================");
-          console.warn("clicked ==", d);
+    document.querySelectorAll('.cadence-selector .radio-option__button').forEach((e) => {
+      e.addEventListener("click", () => {
+        document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach((d) => {
           d.classList.add('did');
         });
       });
     });
 
     if (priceEl) {
-      console.warn(price + "-" + qty + "-" + comparePrice);
-
-      if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length == 1) {
-        console.warn("same - length = 1");
-        setTimeout(function () {
-          const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
-          const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
-
-          if (subsTime && oneTime) {
-            console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-            oneTime.innerHTML = subsTime.innerHTML;
-            oneTime.classList.remove("hidden");
-          }
-        }, 100);
-      } else if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length > 1) {
-        console.warn("same - length > 1");
-        setTimeout(function () {
-          const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
-          const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
-
-          if (subsTime && oneTime) {
-            console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-            oneTime.innerHTML = subsTime.innerHTML;
-            oneTime.classList.remove("hidden");
-          }
-        }, 1000);
-      }
-
-      // Aplicar o preço corretamente
-      const expectedPriceText = this.formatPrice(price * qty);
-      priceEl.innerText = expectedPriceText;
-
-      // ✅ MutationObserver somente para mobile e one-time
-      const isMobile = block.closest(".quantity-grid-mobile");
-      const cadence = document.querySelector(".cadence-selector .radio-option.active")?.dataset.cadence;
-
-      if (isMobile && cadence === "one-time-purchase") {
-        console.warn("🔍 Ativando MutationObserver para proteger preço correto no mobile one-time");
-
-        const observer = new MutationObserver(() => {
-          const currentPrice = priceEl.innerText.trim();
-          if (currentPrice !== expectedPriceText) {
-            console.warn("🔁 Corrigindo alteração de preço: ", currentPrice, "→", expectedPriceText);
-            priceEl.innerText = expectedPriceText;
-          }
-        });
-
-        observer.observe(priceEl, {
-          childList: true,
-          subtree: true,
-        });
-
-        // ⚠️ Opcional: desconectar após 3 segundos
-        setTimeout(() => observer.disconnect(), 3000);
-      }
+      priceEl.innerText = this.formatPrice(price * qty);
     }
   });
+
+  // ✅ MutationObserver para impedir alteração indevida de preço no mobile
+  const observePriceMutation = () => {
+    document.querySelectorAll('.quantity-grid-mobile [data-qty-block]').forEach((block) => {
+      const priceEl = block.querySelector('.js-qty-price');
+      const qty = Number(block.dataset.qty);
+      const planId = Number(block.dataset.planId);
+      const onetimePrice = Number(block.dataset.onetimePrice);
+      const variant = this.getCurrentVariant();
+      const plan = variant?.selling_plan_allocations?.find((p) => p.selling_plan_id === planId);
+      const cadence = document.querySelector('.cadence-selector .radio-option.active')?.dataset.cadence;
+
+      if (!priceEl) return;
+
+      // 🛡 Usar preço correto de acordo com o modo
+      const expectedRawPrice = cadence === "subscription" && plan ? plan.price : onetimePrice;
+      const expectedPrice = this.formatPrice(expectedRawPrice * qty);
+
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach(() => {
+          if (priceEl.innerText.trim() !== expectedPrice) {
+            console.warn("🔁 Corrigindo preço:", priceEl.innerText, "→", expectedPrice);
+            priceEl.innerText = expectedPrice;
+          }
+        });
+      });
+
+      observer.observe(priceEl, {
+        childList: true,
+        characterData: true,
+        subtree: true,
+      });
+
+      // Garante valor inicial correto
+      priceEl.innerText = expectedPrice;
+    });
+  };
+
+  // ⏳ Delay pequeno para garantir render
+  setTimeout(observePriceMutation, 200);
 }
 
 
