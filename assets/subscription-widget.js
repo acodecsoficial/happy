@@ -364,7 +364,6 @@ class SubscriptionWidget extends HTMLElement {
     const planId = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
 
-    // ✅ NOVO BLOCO para corrigir o plano no mobile
     let plan = null;
     const isMobileBlock = block.closest(".quantity-grid-mobile");
 
@@ -404,9 +403,9 @@ class SubscriptionWidget extends HTMLElement {
     }
 
     const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
-    optionBtns.forEach(function(e) {
+    optionBtns.forEach(function (e) {
       e.addEventListener("click", function () {
-        document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function(d){
+        document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function (d) {
           console.warn("clicked =======================================");
           console.warn("clicked ==", d);
           d.classList.add('did');
@@ -417,9 +416,9 @@ class SubscriptionWidget extends HTMLElement {
     if (priceEl) {
       console.warn(price + "-" + qty + "-" + comparePrice);
 
-      if(document.querySelectorAll('.quantity-grid-mobile .radio-option').length == 1 ){
+      if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length == 1) {
         console.warn("same - length = 1");
-        setTimeout(function() {
+        setTimeout(function () {
           const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
           const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
 
@@ -432,9 +431,9 @@ class SubscriptionWidget extends HTMLElement {
             console.warn("element else");
           }
         }, 100);
-      } else if(document.querySelectorAll('.quantity-grid-mobile .radio-option').length > 1){
+      } else if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length > 1) {
         console.warn("same - length > 1");
-        setTimeout(function() {
+        setTimeout(function () {
           const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
           const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
 
@@ -452,6 +451,44 @@ class SubscriptionWidget extends HTMLElement {
       priceEl.innerText = this.formatPrice(price * qty);
     }
   });
+
+  // ✅ MutationObserver para corrigir alterações no preço do mobile após clique
+  const observePriceMutation = () => {
+    document.querySelectorAll('.quantity-grid-mobile [data-qty-block]').forEach((block) => {
+      const priceEl = block.querySelector('.js-qty-price');
+      const planId = Number(block.dataset.planId);
+      const qty = Number(block.dataset.qty);
+      const variant = this.getCurrentVariant();
+      const plan = variant?.selling_plan_allocations?.find((p) => p.selling_plan_id === planId);
+
+      if (!priceEl || !plan) return;
+
+      const expectedPrice = this.formatPrice(plan.price * qty);
+
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === "childList" || mutation.type === "characterData") {
+            const current = priceEl.innerText.trim();
+            if (current !== expectedPrice) {
+              console.warn("🚨 Corrigindo preço forçado no mobile:", current, "→", expectedPrice);
+              priceEl.innerText = expectedPrice;
+            }
+          }
+        });
+      });
+
+      observer.observe(priceEl, {
+        characterData: true,
+        childList: true,
+        subtree: true,
+      });
+
+      // Força o valor esperado inicialmente
+      priceEl.innerText = expectedPrice;
+    });
+  };
+
+  setTimeout(observePriceMutation, 200);
 }
 
 
