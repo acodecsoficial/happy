@@ -435,35 +435,56 @@ class SubscriptionWidget extends HTMLElement {
     }
   });
 
-  // 🔁 Força renderização correta no mobile após bloco ativo
-if (this.state.cadence === "subscription") {
-  const variant = this.getCurrentVariant();
-  const activeMobileBlock = this.querySelector(".quantity-grid-mobile .radio-option.active");
-  if (activeMobileBlock) {
-    const qty = Number(activeMobileBlock.dataset.qty);
-    const planId = Number(activeMobileBlock.dataset.planId);
-    const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-
-    if (plan) {
-      const total = plan.price * qty;
-      const compare = variant.price * qty;
-
-      const priceEl = activeMobileBlock.querySelector(".js-qty-price");
-      const compareEl = activeMobileBlock.querySelector(".js-qty-price-compare");
-      const saveEl = activeMobileBlock.querySelector(".js-saving-text");
-
-      if (priceEl) priceEl.innerText = this.formatPrice(total);
-      if (compareEl) {
-        compareEl.innerText = this.formatPrice(compare);
-        compareEl.classList.toggle("hidden", compare <= total);
-      }
-      if (saveEl) {
-        const saveText = this.getSaveText(total, compare);
-        saveEl.innerText = saveText;
-        saveEl.classList.toggle("hidden", compare <= total);
-      }
+  if (this.state.cadence === "subscription") {
+  setTimeout(() => {
+    const activeBlock = this.querySelector(".quantity-grid-mobile .radio-option.active");
+    if (!activeBlock) {
+      console.warn("❌ Nenhum bloco mobile ativo encontrado");
+      return;
     }
-  }
+
+    const qty = Number(activeBlock.dataset.qty);
+    const planId = Number(activeBlock.dataset.planId);
+    const variant = this.getCurrentVariant();
+    const plan = planId
+      ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId)
+      : null;
+
+    if (!plan) {
+      console.warn("❌ Plano não encontrado para planId:", planId);
+      return;
+    }
+
+    const total = plan.price * qty;
+    const compare = variant.price * qty;
+    const saveText = this.getSaveText(total, compare);
+
+    const priceEl = activeBlock.querySelector(".js-qty-price");
+    const compareEl = activeBlock.querySelector(".js-qty-price-compare");
+    const saveEl = activeBlock.querySelector(".js-saving-text");
+
+    console.log("✅ Forçando preço mobile:");
+    console.log("Plan ID:", planId);
+    console.log("Plan price:", plan.price);
+    console.log("Qty:", qty);
+    console.log("Total price:", this.formatPrice(total));
+    console.log("Compare price:", this.formatPrice(compare));
+    console.log("Save text:", saveText);
+
+    if (priceEl) {
+      priceEl.innerText = this.formatPrice(total);
+    }
+
+    if (compareEl) {
+      compareEl.innerText = this.formatPrice(compare);
+      compareEl.classList.toggle("hidden", compare <= total);
+    }
+
+    if (saveEl) {
+      saveEl.innerText = saveText;
+      saveEl.classList.toggle("hidden", compare <= total);
+    }
+  }, 50); // delay curto para sobrescrever qualquer interferência externa
 }
 
 }
