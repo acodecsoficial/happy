@@ -358,19 +358,7 @@ class SubscriptionWidget extends HTMLElement {
       const onetimePrice = Number(block.dataset.onetimePrice);
 
       const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-      let price;
-
-if (this.state.cadence === "subscription") {
-  if (plan) {
-    price = plan.price;
-  } else {
-    // fallback: use variant price mesmo sem allocation
-    price = variant.price;
-  }
-} else {
-  price = onetimePrice;
-}
-
+      const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
       const comparePrice = variant.compare_at_price || variant.price;
 
 
@@ -473,8 +461,7 @@ if (this.state.cadence === "subscription") {
           
         }
         
-        const finalPrice = price * qty;
-  priceEl.innerText = this.formatPrice(finalPrice);
+        priceEl.innerText = this.formatPrice(price * qty);
       }
 
 
