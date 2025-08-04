@@ -407,8 +407,7 @@ class SubscriptionWidget extends HTMLElement {
 
       
       if (priceEl) {
-        //alert( price +"-"+ qty);
-        console.warn( price +"-"+ qty + "-" + comparePrice);
+        
 
         
         
