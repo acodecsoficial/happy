@@ -396,16 +396,11 @@ class SubscriptionWidget extends HTMLElement {
         console.warn("same - length = 1");
         setTimeout(function () {
           const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
-          const oneTimeTxt = oneTime?.innerHTML;
           const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
-          const subsTimeTxt = subsTime?.innerHTML;
-
-          console.warn("one time = ", oneTimeTxt);
-          console.warn("subs el = ", subsTimeTxt);
 
           if (subsTime && oneTime) {
             console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-            oneTime.innerHTML = subsTimeTxt;
+            oneTime.innerHTML = subsTime.innerHTML;
             oneTime.classList.remove("hidden");
           }
         }, 100);
@@ -413,47 +408,42 @@ class SubscriptionWidget extends HTMLElement {
         console.warn("same - length > 1");
         setTimeout(function () {
           const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
-          const oneTimeTxt = oneTime?.innerHTML;
           const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
-          const subsTimeTxt = subsTime?.innerHTML;
-
-          console.warn("one time = ", oneTimeTxt);
-          console.warn("subs el = ", subsTimeTxt);
 
           if (subsTime && oneTime) {
             console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-            oneTime.innerHTML = subsTimeTxt;
+            oneTime.innerHTML = subsTime.innerHTML;
             oneTime.classList.remove("hidden");
           }
         }, 1000);
       }
 
-      priceEl.innerText = this.formatPrice(price * qty);
+      // Aplicar o preço corretamente
+      const expectedPriceText = this.formatPrice(price * qty);
+      priceEl.innerText = expectedPriceText;
 
-      // ✅ Só ativa o MutationObserver no bloco mobile + one-time-purchase
+      // ✅ MutationObserver somente para mobile e one-time
       const isMobile = block.closest(".quantity-grid-mobile");
-      const activeCadence = document.querySelector(".cadence-selector .radio-option.active")?.dataset.cadence;
+      const cadence = document.querySelector(".cadence-selector .radio-option.active")?.dataset.cadence;
 
-      if (isMobile && activeCadence === "one-time-purchase") {
-        const expectedPrice = this.formatPrice(price * qty);
+      if (isMobile && cadence === "one-time-purchase") {
+        console.warn("🔍 Ativando MutationObserver para proteger preço correto no mobile one-time");
 
-        const observer = new MutationObserver((mutations) => {
-          mutations.forEach(() => {
-            const currentPrice = priceEl.innerText.trim();
-            if (currentPrice !== expectedPrice) {
-              console.warn("🔁 Corrigindo preço sobrescrito:", currentPrice, "→", expectedPrice);
-              priceEl.innerText = expectedPrice;
-            }
-          });
+        const observer = new MutationObserver(() => {
+          const currentPrice = priceEl.innerText.trim();
+          if (currentPrice !== expectedPriceText) {
+            console.warn("🔁 Corrigindo alteração de preço: ", currentPrice, "→", expectedPriceText);
+            priceEl.innerText = expectedPriceText;
+          }
         });
 
         observer.observe(priceEl, {
           childList: true,
-          characterData: true,
           subtree: true,
         });
 
-        console.warn("📱 Observer ativado para mobile one-time");
+        // ⚠️ Opcional: desconectar após 3 segundos
+        setTimeout(() => observer.disconnect(), 3000);
       }
     }
   });
