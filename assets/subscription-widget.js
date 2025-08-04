@@ -353,21 +353,15 @@ class SubscriptionWidget extends HTMLElement {
     const qty = Number(block.dataset.qty);
     const planId = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
+    const cadence = block.dataset.cadence; // usa o cadence do bloco
 
-    const activeCadenceEl = document.querySelector('.cadence-selector .radio-option.active');
-    const cadence = activeCadenceEl?.dataset.cadence;
-    const selectedPlanId = Number(activeCadenceEl?.dataset.planId); // ← novo
+    const plan = planId
+      ? variant.selling_plan_allocations.find(
+          (p) => p.selling_plan_id === planId
+        )
+      : null;
 
-    const plan = planId ? variant.selling_plan_allocations.find(p => p.selling_plan_id === planId) : null;
-
-    // 💡 Só usa plan.price se o plano do bloco for o plano ativo
-    let price;
-    if (cadence === "subscription" && plan && planId === selectedPlanId) {
-      price = plan.price;
-    } else {
-      price = onetimePrice;
-    }
-
+    const price = cadence === "subscription" && plan ? plan.price : onetimePrice;
     const comparePrice = variant.compare_at_price || variant.price;
 
     const priceEl = block.querySelector(".js-qty-price");
@@ -389,40 +383,17 @@ class SubscriptionWidget extends HTMLElement {
     if (priceEl) {
       priceEl.innerText = this.formatPrice(price * qty);
     }
-  });
 
-  // ✅ Observer fixo: respeita planId ativo
-  const observePriceMutation = () => {
-    document.querySelectorAll('.quantity-grid-mobile [data-qty-block]').forEach((block) => {
-      const priceEl = block.querySelector('.js-qty-price');
-      const qty = Number(block.dataset.qty);
-      const planId = Number(block.dataset.planId);
-      const onetimePrice = Number(block.dataset.onetimePrice);
-      const variant = this.getCurrentVariant();
-
-      const activeCadenceEl = document.querySelector('.cadence-selector .radio-option.active');
-      const cadence = activeCadenceEl?.dataset.cadence;
-      const selectedPlanId = Number(activeCadenceEl?.dataset.planId);
-
-      const plan = planId ? variant?.selling_plan_allocations?.find((p) => p.selling_plan_id === planId) : null;
-
-      let expectedRawPrice;
-      if (cadence === "subscription" && plan && planId === selectedPlanId) {
-        expectedRawPrice = plan.price;
-      } else {
-        expectedRawPrice = onetimePrice;
-      }
-
-      const expectedPrice = this.formatPrice(expectedRawPrice * qty);
-
-      const observer = new MutationObserver((mutations) => {
-        mutations.forEach(() => {
-          const currentPrice = priceEl.innerText.trim();
-          if (currentPrice !== expectedPrice) {
-            console.warn(`🔁 Corrigindo preço do bloco: ${currentPrice} → ${expectedPrice}`);
-            priceEl.innerText = expectedPrice;
-          }
-        });
+    // 🔁 Observa alterações externas indevidas no bloco
+    if (priceEl && block.closest(".quantity-grid-mobile")) {
+      const observer = new MutationObserver(() => {
+        const expected = this.formatPrice(
+          (cadence === "subscription" && plan ? plan.price : onetimePrice) * qty
+        );
+        if (priceEl.innerText.trim() !== expected) {
+          console.warn("🔁 Corrigindo preço:", priceEl.innerText, "→", expected);
+          priceEl.innerText = expected;
+        }
       });
 
       observer.observe(priceEl, {
@@ -430,12 +401,30 @@ class SubscriptionWidget extends HTMLElement {
         characterData: true,
         subtree: true,
       });
+    }
+  });
 
-      priceEl.innerText = expectedPrice;
+  // clique nas opções do plano
+  document.querySelectorAll('.cadence-selector .radio-option__button').forEach((e) => {
+    e.addEventListener("click", () => {
+      document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach((d) => {
+        d.classList.add('did');
+      });
     });
-  };
+  });
 
-  setTimeout(observePriceMutation, 200);
+  // atualiza blocos de texto com descontos visuais
+  setTimeout(() => {
+    const subsSave = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+    const subsSaveTxt = subsSave?.innerHTML;
+
+    document.querySelectorAll('.quantity-grid-mobile .radio-option.active .js-onetime-save').forEach((el) => {
+      if (subsSaveTxt) {
+        el.innerHTML = subsSaveTxt;
+        el.classList.remove("hidden");
+      }
+    });
+  }, 300);
 }
 
 
