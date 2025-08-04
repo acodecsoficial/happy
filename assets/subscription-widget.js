@@ -1,10 +1,3 @@
-const oneTimeDiscountMap = {
-  // coloque aqui as suas variantes que precisam de desconto one-time:
-  50115166142784: 693008859456,  // ex.: NAD+ Longevity shots
-  // 12345678901234: 693010170176, // outro produto…
-};
-
-
 /*
 Subscription Widget
 */
@@ -351,27 +344,21 @@ class SubscriptionWidget extends HTMLElement {
     }
   }
 
-  updateQuantityPrices() {
-  if (this.config.product.is_bundle) return;
+ updateQuantityPrices() {
+  if (this.config.product.is_bundle) {
+    return;
+  }
 
   const variant = this.getCurrentVariant();
 
   this.querySelectorAll("[data-qty-block]").forEach((block) => {
+    console.warn("block.dataset.qty ===== ", block.dataset.qty);
     const qty = Number(block.dataset.qty);
     const planId = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
 
-    let plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-    const isMobileBlock = block.closest(".quantity-grid-mobile");
-    const cadence = document.querySelector('.cadence-selector .radio-option.active')?.dataset.cadence;
-
-    let price;
-    if (isMobileBlock) {
-      price = cadence === "subscription" && plan ? plan.price : onetimePrice;
-    } else {
-      price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
-    }
-
+    const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
+    const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
     const comparePrice = variant.compare_at_price || variant.price;
 
     const priceEl = block.querySelector(".js-qty-price");
@@ -386,59 +373,88 @@ class SubscriptionWidget extends HTMLElement {
     if (savingTextEl) {
       const totalComparePrice = comparePrice * qty;
       const totalCurrentPrice = price * qty;
+
       savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
       savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
     }
 
-    document.querySelectorAll('.cadence-selector .radio-option__button').forEach((e) => {
-      e.addEventListener("click", () => {
-        document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach((d) => {
+    const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
+
+    optionBtns.forEach(function (e) {
+      e.addEventListener("click", function () {
+        document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function (d) {
+          console.warn("clicked =======================================");
+          console.warn("clicked ==", d);
           d.classList.add('did');
         });
       });
     });
 
     if (priceEl) {
+      console.warn(price + "-" + qty + "-" + comparePrice);
+
+      if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length == 1) {
+        console.warn("same - length = 1");
+        setTimeout(function () {
+          const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+          const oneTimeTxt = oneTime?.innerHTML;
+          const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+          const subsTimeTxt = subsTime?.innerHTML;
+
+          console.warn("one time = ", oneTimeTxt);
+          console.warn("subs el = ", subsTimeTxt);
+
+          if (subsTime && oneTime) {
+            console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+            oneTime.innerHTML = subsTimeTxt;
+            oneTime.classList.remove("hidden");
+          } else {
+            console.warn("element else");
+          }
+        }, 100);
+      } else if (document.querySelectorAll('.quantity-grid-mobile .radio-option').length > 1) {
+        console.warn("same - length > 1");
+        setTimeout(function () {
+          const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+          const oneTimeTxt = oneTime?.innerHTML;
+          const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+          const subsTimeTxt = subsTime?.innerHTML;
+
+          console.warn("one time = ", oneTimeTxt);
+          console.warn("subs el = ", subsTimeTxt);
+
+          if (subsTime && oneTime) {
+            console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+            oneTime.innerHTML = subsTimeTxt;
+            oneTime.classList.remove("hidden");
+          } else {
+            console.warn("element else");
+          }
+        }, 1000);
+      }
+
+      // Aplicar preço normalmente
       priceEl.innerText = this.formatPrice(price * qty);
-    }
-  });
 
-  // ✅ MutationObserver para corrigir alterações externas ao preço no mobile
-  const observePriceMutation = () => {
-    document.querySelectorAll('.quantity-grid-mobile [data-qty-block]').forEach((block) => {
-      const priceEl = block.querySelector('.js-qty-price');
-      const qty = Number(block.dataset.qty);
-      const planId = Number(block.dataset.planId);
-      const onetimePrice = Number(block.dataset.onetimePrice);
-      const variant = this.getCurrentVariant();
-      const plan = variant?.selling_plan_allocations?.find((p) => p.selling_plan_id === planId);
-      const cadence = document.querySelector('.cadence-selector .radio-option.active')?.dataset.cadence;
-
-      if (!priceEl || (!plan && cadence === "subscription")) return;
-
-      const expectedRawPrice = cadence === "subscription" && plan ? plan.price : onetimePrice;
-      const expectedPrice = this.formatPrice(expectedRawPrice * qty);
-
+      // ✅ Bloqueia alteração indevida com MutationObserver
+      const expectedPrice = this.formatPrice(price * qty);
       const observer = new MutationObserver((mutations) => {
         mutations.forEach(() => {
-          if (priceEl.innerText.trim() !== expectedPrice) {
-            console.warn("🔁 Corrigindo preço:", priceEl.innerText, "→", expectedPrice);
+          const currentPrice = priceEl.innerText.trim();
+          if (currentPrice !== expectedPrice) {
+            console.warn("🚨 Corrigindo alteração indevida de preço:", currentPrice, "→", expectedPrice);
             priceEl.innerText = expectedPrice;
           }
         });
       });
 
       observer.observe(priceEl, {
-        childList: true,
         characterData: true,
+        childList: true,
         subtree: true,
       });
-
-      priceEl.innerText = expectedPrice;
-    });
-  };
-
-  setTimeout(observePriceMutation, 200);
+    }
+  });
 }
 
 
