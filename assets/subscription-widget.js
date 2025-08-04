@@ -351,50 +351,7 @@ class SubscriptionWidget extends HTMLElement {
     }
   }
 
-  updateQuantityPrices() {
-    if (this.config.product.is_bundle) {
-      return;
-    }
-
-    const variant = this.getCurrentVariant();
-
-    this.querySelectorAll("[data-qty-block]").forEach((block) => {
-      console.warn("block.dataset.qty ===== ", block.dataset.qty);
-      const qty = Number(block.dataset.qty);
-      const planId = Number(block.dataset.planId);
-      const onetimePrice = Number(block.dataset.onetimePrice);
-
-      const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-      const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
-      const comparePrice = variant.compare_at_price || variant.price;
-
-
-      
-
-        //const elementX = document.querySelector('[data-cadence="one-time-purchase"]');
   
-        const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
-      
-        optionBtns.forEach(function(e) {
-          e.addEventListener("click", function () {
-            document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function(d){
-              console.warn("clicked =======================================");
-              console.warn("clicked ==", d);
-              //d.classList.add('hidden');
-              d.classList.add('did');
-            });
-          });
-        });
-      
-        
-
-      
-      
-
-
-      
-    });
-  }
 
   setCadence(cadence) {
     this.state.cadence = cadence;
