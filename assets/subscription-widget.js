@@ -354,16 +354,18 @@ class SubscriptionWidget extends HTMLElement {
     const planId = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
 
-    const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-    const isMobileBlock = block.closest(".quantity-grid-mobile");
-    const cadence = document.querySelector('.cadence-selector .radio-option.active')?.dataset.cadence;
+    const activeCadenceEl = document.querySelector('.cadence-selector .radio-option.active');
+    const cadence = activeCadenceEl?.dataset.cadence;
+    const selectedPlanId = Number(activeCadenceEl?.dataset.planId); // ← novo
 
-    // 🔥 Aqui está o fix principal:
+    const plan = planId ? variant.selling_plan_allocations.find(p => p.selling_plan_id === planId) : null;
+
+    // 💡 Só usa plan.price se o plano do bloco for o plano ativo
     let price;
-    if (cadence === "subscription" && plan) {
+    if (cadence === "subscription" && plan && planId === selectedPlanId) {
       price = plan.price;
     } else {
-      price = onetimePrice; // usa o onetime correto (com desconto)
+      price = onetimePrice;
     }
 
     const comparePrice = variant.compare_at_price || variant.price;
@@ -384,58 +386,55 @@ class SubscriptionWidget extends HTMLElement {
       savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
     }
 
-    document.querySelectorAll('.cadence-selector .radio-option__button').forEach((e) => {
-      e.addEventListener("click", () => {
-        document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach((d) => {
-          d.classList.add('did');
-        });
-      });
-    });
-
     if (priceEl) {
       priceEl.innerText = this.formatPrice(price * qty);
     }
   });
 
-  // ✅ MutationObserver para impedir alteração indevida de preço no mobile
+  // ✅ Observer fixo: respeita planId ativo
   const observePriceMutation = () => {
-  document.querySelectorAll('.quantity-grid-mobile [data-qty-block]').forEach((block) => {
-    const priceEl = block.querySelector('.js-qty-price');
-    const qty = Number(block.dataset.qty);
-    const planId = Number(block.dataset.planId);
-    const onetimePrice = Number(block.dataset.onetimePrice);
-    const variant = this.getCurrentVariant();
-    const plan = variant?.selling_plan_allocations?.find((p) => p.selling_plan_id === planId);
-    const cadence = document.querySelector('.cadence-selector .radio-option.active')?.dataset.cadence;
+    document.querySelectorAll('.quantity-grid-mobile [data-qty-block]').forEach((block) => {
+      const priceEl = block.querySelector('.js-qty-price');
+      const qty = Number(block.dataset.qty);
+      const planId = Number(block.dataset.planId);
+      const onetimePrice = Number(block.dataset.onetimePrice);
+      const variant = this.getCurrentVariant();
 
-    if (!priceEl) return;
+      const activeCadenceEl = document.querySelector('.cadence-selector .radio-option.active');
+      const cadence = activeCadenceEl?.dataset.cadence;
+      const selectedPlanId = Number(activeCadenceEl?.dataset.planId);
 
-    // 💡 Aqui está a correção: usar o preço **do bloco**
-    const expectedRawPrice = cadence === "subscription" && plan ? plan.price : onetimePrice;
-    const expectedPrice = this.formatPrice(expectedRawPrice * qty);
+      const plan = planId ? variant?.selling_plan_allocations?.find((p) => p.selling_plan_id === planId) : null;
 
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach(() => {
-        const currentPrice = priceEl.innerText.trim();
-        if (currentPrice !== expectedPrice) {
-          console.warn(`🔁 Corrigindo preço do bloco: ${currentPrice} → ${expectedPrice}`);
-          priceEl.innerText = expectedPrice;
-        }
+      let expectedRawPrice;
+      if (cadence === "subscription" && plan && planId === selectedPlanId) {
+        expectedRawPrice = plan.price;
+      } else {
+        expectedRawPrice = onetimePrice;
+      }
+
+      const expectedPrice = this.formatPrice(expectedRawPrice * qty);
+
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach(() => {
+          const currentPrice = priceEl.innerText.trim();
+          if (currentPrice !== expectedPrice) {
+            console.warn(`🔁 Corrigindo preço do bloco: ${currentPrice} → ${expectedPrice}`);
+            priceEl.innerText = expectedPrice;
+          }
+        });
       });
+
+      observer.observe(priceEl, {
+        childList: true,
+        characterData: true,
+        subtree: true,
+      });
+
+      priceEl.innerText = expectedPrice;
     });
+  };
 
-    observer.observe(priceEl, {
-      childList: true,
-      characterData: true,
-      subtree: true,
-    });
-
-    priceEl.innerText = expectedPrice;
-  });
-};
-
-
-  // ⏳ Delay pequeno para garantir render
   setTimeout(observePriceMutation, 200);
 }
 
