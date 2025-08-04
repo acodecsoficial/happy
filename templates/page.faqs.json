@@ -961,8 +961,8 @@
         "faq_3A6LzQ": {
           "type": "faq",
           "settings": {
-            "question": "How do I add or change a product in my subscription order?",
-            "answer": "<p>To add or change a product in your subscription, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.”</p>"
+            "question": "How do I login to my account?",
+            "answer": "<ol><li>Visit our website at <a href=\"http://www.happyaging.com\">www.happyaging.com</a> and click “Login” in the top-right corner.<br/></li><li>Enter the email address you used to place your order and your password, then click “Sign In.”</li></ol>"
           }
         },
         "faq_HpJcrw": {
