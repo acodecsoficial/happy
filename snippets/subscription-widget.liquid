@@ -130,6 +130,14 @@
         "plan_id": {% if has_plan %}{{ plan_allocation.selling_plan.id | json }}{% else %}null{% endif %}
       },
       "bottles_suffix": {{ settings.bottles_suffix | json }}
+      "bottles_suffix": {{ settings.bottles_suffix | json }},
+      {% if product.tags contains 'one_time_discount' %}
+        "one_time_discount_enabled": true,
+        "one_time_discount_plan_id": {{ product.metafields.custom.one_time_discount_plan_id | json }}
+      {% else %}
+        "one_time_discount_enabled": false
+      {% endif %}
+   }
     }
   </script>
 
