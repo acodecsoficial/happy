@@ -365,7 +365,18 @@ class SubscriptionWidget extends HTMLElement {
       const onetimePrice = Number(block.dataset.onetimePrice);
 
       const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-      const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
+      let price;
+      const isMobileBlock = block.closest(".quantity-grid-mobile");
+
+      if (isMobileBlock && plan) {
+        // ✅ Força o uso do plan.price no mobile, mesmo se cadence for "one-time-purchase"
+        price = plan.price;
+        console.warn("📱 Mobile block: usando plan.price forçado →", price);
+      } else {
+        // Normal para desktop ou sem plano
+        price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
+      }
+
       const comparePrice = variant.compare_at_price || variant.price;
 
 
