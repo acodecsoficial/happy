@@ -435,31 +435,37 @@ class SubscriptionWidget extends HTMLElement {
     }
   });
 
-  // ✅ NOVO BLOCO ADICIONADO: Força atualização correta no bloco ativo do MOBILE
-  if (this.state.cadence === "subscription") {
-    const activeMobileBlock = document.querySelector(".quantity-grid-mobile .radio-option.active");
-    if (activeMobileBlock) {
-      const qty = Number(activeMobileBlock.dataset.qty);
-      const planId = Number(activeMobileBlock.dataset.planId);
-      const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
+  // 🔁 Força renderização correta no mobile após bloco ativo
+if (this.state.cadence === "subscription") {
+  const variant = this.getCurrentVariant();
+  const activeMobileBlock = this.querySelector(".quantity-grid-mobile .radio-option.active");
+  if (activeMobileBlock) {
+    const qty = Number(activeMobileBlock.dataset.qty);
+    const planId = Number(activeMobileBlock.dataset.planId);
+    const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
 
-      if (plan) {
-        const finalPrice = this.formatPrice(plan.price * qty);
+    if (plan) {
+      const total = plan.price * qty;
+      const compare = variant.price * qty;
 
-        const priceEl = activeMobileBlock.querySelector(".js-qty-price");
-        if (priceEl) {
-          priceEl.innerText = finalPrice;
-        }
+      const priceEl = activeMobileBlock.querySelector(".js-qty-price");
+      const compareEl = activeMobileBlock.querySelector(".js-qty-price-compare");
+      const saveEl = activeMobileBlock.querySelector(".js-saving-text");
 
-        const saveText = this.getSaveText(plan.price * qty, variant.price * qty);
-        const saveEl = activeMobileBlock.querySelector(".js-saving-text");
-        if (saveEl) {
-          saveEl.innerText = saveText;
-          saveEl.classList.remove("hidden");
-        }
+      if (priceEl) priceEl.innerText = this.formatPrice(total);
+      if (compareEl) {
+        compareEl.innerText = this.formatPrice(compare);
+        compareEl.classList.toggle("hidden", compare <= total);
+      }
+      if (saveEl) {
+        const saveText = this.getSaveText(total, compare);
+        saveEl.innerText = saveText;
+        saveEl.classList.toggle("hidden", compare <= total);
       }
     }
   }
+}
+
 }
 
 
