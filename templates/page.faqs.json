@@ -336,6 +336,124 @@
         "callout_text": ""
       }
     },
+    "faqs_UeqNRj": {
+      "type": "faqs",
+      "blocks": {
+        "faq_LnaywY": {
+          "type": "faq",
+          "settings": {
+            "question": "What is HydroBurn?",
+            "answer": "<p>HydroBurn is an effervescent tablet supplement developed for those seeking steady energy, metabolic balance, and overall wellness in a clean and natural way. It’s powered by an innovative and scientifically backed ingredient: Molecular Hydrogen (H₂)—a selective antioxidant supported by over 1,500 studies that show its ability to reduce oxidative stress, support mitochondrial function, and optimize cellular metabolism.</p><p>More than just a quick energy boost, HydroBurn helps your body perform at its best—every single day—without caffeine, crashes, or compromises.</p>"
+          }
+        },
+        "faq_P7xeXM": {
+          "type": "faq",
+          "settings": {
+            "question": "What is it for?",
+            "answer": "<p>HydroBurn was designed to:</p><p>- Provide clean, sustained energy without stimulants</p><p>- Support muscular and mental recovery</p><p>- Promote metabolic balance and reduce oxidative stress</p><p>- Support cellular longevity with science-backed benefits</p><p>- Enhance physical performance and mental clarity</p>"
+          }
+        },
+        "faq_bbxKPU": {
+          "type": "faq",
+          "settings": {
+            "question": "How does Molecular Hydrogen work?",
+            "answer": "<p>Unlike traditional energy boosters, H₂ works at the mitochondrial level—the energy center of our cells. It helps your body generate energy more efficiently, neutralizes harmful free radicals, and naturally regulates inflammation. Think of it as a fine-tuning tool for your internal engine.</p>"
+          }
+        },
+        "faq_FpAaxc": {
+          "type": "faq",
+          "settings": {
+            "question": "How should I take it?",
+            "answer": "<p>Dissolve one effervescent tablet in a glass of water (250ml) and drink immediately. Use daily—ideally in the morning or before any physical or mental activity that requires energy and focus.</p>"
+          }
+        },
+        "faq_nDUcYa": {
+          "type": "faq",
+          "settings": {
+            "question": "When will I feel the effects?",
+            "answer": "<p>Some benefits—such as increased energy and clarity—may appear within the first few weeks. Deeper metabolic and recovery effects build over time, generally between weeks 4 and 12. Remember: every body is unique, but results do come with consistency.</p>"
+          }
+        },
+        "faq_fkCLfQ": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it safe for daily use?",
+            "answer": "<p>Yes! HydroBurn is made with clean ingredients, free from caffeine, sugar, dyes, and unnecessary additives. It’s safe for daily use as part of your wellness routine. If you're pregnant, nursing, or managing a medical condition, we recommend speaking with your healthcare provider first.</p>"
+          }
+        },
+        "faq_hzDWgb": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it normal not to feel results immediately?",
+            "answer": "<p>Yes. Some people feel the effects quickly; others take longer. HydroBurn works deeply and intelligently. Consistency is key and please note that everyone is different. </p>"
+          }
+        },
+        "faq_HrCyan": {
+          "type": "faq",
+          "settings": {
+            "question": "Is this an energy drink or does it contain caffeine?",
+            "answer": "<p>No! HydroBurn provides energy without stimulants. It won’t disturb your sleep or make your heart race.</p>"
+          }
+        },
+        "faq_bWHBrW": {
+          "type": "faq",
+          "settings": {
+            "question": "Can it help with weight loss?",
+            "answer": "<p>While not a weight-loss product, HydroBurn can support fat metabolism and reduce cravings when paired with healthy habits.</p>"
+          }
+        },
+        "faq_FwhEpn": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take it on an empty stomach?",
+            "answer": "<p>Yes! Many users take it first thing in the morning to start their day with energy.</p>"
+          }
+        },
+        "faq_nirpwp": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it safe for diabetics or people with insulin resistance?",
+            "answer": "<p>Yes! HydroBurn supports insulin sensitivity and metabolic health. Still, we recommend a healthcare consultation for tailored advice.</p>"
+          }
+        },
+        "faq_cQ8WVX": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take it with other supplements?",
+            "answer": "<p>Yes, it’s generally safe to combine with other supplements. When in doubt, check with your health professional.</p>"
+          }
+        },
+        "faq_VW6Hq3": {
+          "type": "faq",
+          "settings": {
+            "question": "How is it different from a multivitamin or pre-workout?",
+            "answer": "<p>Multivitamins provide nutrients. HydroBurn enhances how your cells use energy. It’s stimulant-free and targets your mitochondria directly.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_LnaywY",
+        "faq_P7xeXM",
+        "faq_bbxKPU",
+        "faq_FpAaxc",
+        "faq_nDUcYa",
+        "faq_fkCLfQ",
+        "faq_hzDWgb",
+        "faq_HrCyan",
+        "faq_bWHBrW",
+        "faq_FwhEpn",
+        "faq_nirpwp",
+        "faq_cQ8WVX",
+        "faq_VW6Hq3"
+      ],
+      "settings": {
+        "title": "Hydro Burn",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
     "faqs_iUQzLx": {
       "type": "faqs",
       "blocks": {
@@ -622,6 +740,7 @@
     "faqs_DB8xQe",
     "faqs_6x6p6a",
     "faqs_arLPWn",
+    "faqs_UeqNRj",
     "faqs_iUQzLx",
     "faqs_Wmae88",
     "faqs_YNtjRb",
