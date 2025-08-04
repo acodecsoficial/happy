@@ -473,7 +473,8 @@ if (this.state.cadence === "subscription") {
           
         }
         
-        priceEl.innerText = this.formatPrice(price * qty);
+        const finalPrice = price * qty;
+  priceEl.innerText = this.formatPrice(finalPrice);
       }
 
 
