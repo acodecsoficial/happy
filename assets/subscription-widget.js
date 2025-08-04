@@ -408,8 +408,8 @@ class SubscriptionWidget extends HTMLElement {
           console.warn("same - length = 1");
           setTimeout(function() {
 
-            // const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
-            // const oneTimeTxt = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save').innerHTML;
+            const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+            const oneTimeTxt = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save').innerHTML;
 
             const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
             const subsTimeTxt = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save').innerHTML;
