@@ -454,6 +454,172 @@
         "callout_text": ""
       }
     },
+    "faqs_KywrXM": {
+      "type": "faqs",
+      "blocks": {
+        "faq_qxegbR": {
+          "type": "faq",
+          "settings": {
+            "question": "What is Lean Muscle?",
+            "answer": "<p>Lean Muscle is a delicious, plant-based protein powder designed for people who want more energy, faster recovery, and lean muscle support — all while keeping it clean and natural. With a rich chocolate flavor, this protein is 100% vegan, gluten-free, lactose-free, and soy-free. It combines premium ingredients like organic pea protein, organic pumpkin and chia seeds, and 5g of Creatine Monohydrate, making it a powerful ally for daily wellness.</p>"
+          }
+        },
+        "faq_CPYt68": {
+          "type": "faq",
+          "settings": {
+            "question": "Who is it for?",
+            "answer": "<p>For everyone who wants to take better care of their body — whether you're starting your fitness journey or are already active. It’s especially great for:<br/><br/>- People looking to build or maintain muscle mass<br/><br/>- Those who want to feel stronger and more energized<br/><br/>- Anyone seeking a clean protein shake with no additives<br/><br/>- People needing an easy, healthy snack or breakfast option</p>"
+          }
+        },
+        "faq_WUwttG": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW TO CONSUME",
+            "answer": "<p>When is the best time to take it?</p><p>The most popular times are:<br/><br/>- After your workout – for optimal recovery<br/><br/>- In the morning – to start the day with more energy<br/><br/>- As a snack – when you want something light and filling<br/><br/>Some customers also enjoy it before bed for muscle support overnight.</p>"
+          }
+        },
+        "faq_zAeAXb": {
+          "type": "faq",
+          "settings": {
+            "question": "How to prepare it?",
+            "answer": "<p>Just add 1 scoop (approx. 36g) to 8–10 oz of water, plant-based milk, or your favorite base. Shake or blend well.<br/><br/>Tip: Try it with banana, oats, peanut butter, or even in pancakes or smoothies!</p>"
+          }
+        },
+        "faq_83Lyx3": {
+          "type": "faq",
+          "settings": {
+            "question": "How many servings per day?",
+            "answer": "<p>1 to 2 servings are ideal depending on your diet and activity level. Always listen to your body or consult a nutritionist.</p>"
+          }
+        },
+        "faq_E4h4x4": {
+          "type": "faq",
+          "settings": {
+            "question": "INGREDIENTS & FORMULA",
+            "answer": "<p>What’s in the formula?</p><p>- Organic Pea Protein<br/><br/>- Organic Pumpkin Seed Protein<br/><br/>- Organic Chia Seed<br/><br/>- Organic Cocoa Powder<br/><br/>- Organic Monk Fruit<br/><br/>- Creatine Monohydrate (5g per scoop)<br/><br/>- Natural Flavors</p><p>Does it contain sugar?</p><p>No added sugar — it’s naturally sweetened with monk fruit.</p>"
+          }
+        },
+        "faq_e3EmFK": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it free from allergens?",
+            "answer": "<p>Yes. It’s free from gluten, lactose, soy, and artificial ingredients.<br/><br/>However, it’s made in a facility that may process allergens like milk, eggs, or nuts.</p>"
+          }
+        },
+        "faq_3WMwhN": {
+          "type": "faq",
+          "settings": {
+            "question": "What are the benefits of Lean Muscle?",
+            "answer": "<p> Supports muscle growth and recovery<br/><br/>- Boosts daily energy levels<br/><br/>- Promotes satiety (you feel fuller for longer)<br/><br/>- Easy to digest and gentle on the stomach<br/><br/>- Provides essential amino acids and 5g of creatine</p>"
+          }
+        },
+        "faq_3egDTC": {
+          "type": "faq",
+          "settings": {
+            "question": "Does it help with weight loss?",
+            "answer": "<p>It can help indirectly. Protein keeps you full longer and helps regulate cravings, perfect for those managing their weight.</p>"
+          }
+        },
+        "faq_RdiVAx": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take it even if I don’t work out?",
+            "answer": "<p>Absolutely! Protein is essential for everyone, especially for those who want to support muscle preservation, energy, and immunity.</p>"
+          }
+        },
+        "faq_E3Yarj": {
+          "type": "faq",
+          "settings": {
+            "question": "Will it make me bulky?",
+            "answer": "<p>Not at all! Lean Muscle supports your natural body goals. To gain muscle mass, you still need consistent training and a calorie surplus.</p>"
+          }
+        },
+        "faq_7jMJ43": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use it for cooking?",
+            "answer": "<p>Yes! It’s great in smoothies, protein pancakes, overnight oats, and even baked goods like muffins or brownies.</p>"
+          }
+        },
+        "faq_jMfhhn": {
+          "type": "faq",
+          "settings": {
+            "question": "How much protein per scoop?",
+            "answer": "<p>20g of high-quality, plant-based protein.</p>"
+          }
+        },
+        "faq_Liwdq6": {
+          "type": "faq",
+          "settings": {
+            "question": "Is pea protein complete?",
+            "answer": "<p>Yes, it has a great amino acid profile, including BCAAs. Combined with a balanced diet, it fully supports your needs.</p>"
+          }
+        },
+        "faq_fdLkUj": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes it different from other plant proteins?",
+            "answer": "<p>The formula includes creatine, natural sweeteners, and zero artificial ingredients, a rare combo in clean proteins!</p>"
+          }
+        },
+        "faq_fWxWnP": {
+          "type": "faq",
+          "settings": {
+            "question": "Can it replace a meal?",
+            "answer": "<p>Alone, it’s a light option, but blended with fruit, oats or nut butter, it becomes a complete and satisfying meal.</p>"
+          }
+        },
+        "faq_7Mb8KR": {
+          "type": "faq",
+          "settings": {
+            "question": "How long does one pouch last?",
+            "answer": "<p>With one scoop per day: about 20–25 days.</p>"
+          }
+        },
+        "faq_ki4qVY": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take it before sleep?",
+            "answer": "<p>Yes! Many people enjoy a scoop before bed to help muscle recovery overnight.</p>"
+          }
+        },
+        "faq_FKpaJd": {
+          "type": "faq",
+          "settings": {
+            "question": "Any contraindications?",
+            "answer": "<p>It’s safe for most healthy adults. If you are pregnant, nursing, or have a health condition, consult your doctor first.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_qxegbR",
+        "faq_CPYt68",
+        "faq_WUwttG",
+        "faq_zAeAXb",
+        "faq_83Lyx3",
+        "faq_E4h4x4",
+        "faq_e3EmFK",
+        "faq_3WMwhN",
+        "faq_3egDTC",
+        "faq_RdiVAx",
+        "faq_E3Yarj",
+        "faq_7jMJ43",
+        "faq_jMfhhn",
+        "faq_Liwdq6",
+        "faq_fdLkUj",
+        "faq_fWxWnP",
+        "faq_7Mb8KR",
+        "faq_ki4qVY",
+        "faq_FKpaJd"
+      ],
+      "settings": {
+        "title": "Lean Muscle Formula",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
     "faqs_iUQzLx": {
       "type": "faqs",
       "blocks": {
@@ -741,6 +907,7 @@
     "faqs_6x6p6a",
     "faqs_arLPWn",
     "faqs_UeqNRj",
+    "faqs_KywrXM",
     "faqs_iUQzLx",
     "faqs_Wmae88",
     "faqs_YNtjRb",
