@@ -369,24 +369,7 @@ class SubscriptionWidget extends HTMLElement {
       const comparePrice = variant.compare_at_price || variant.price;
 
 
-      const priceEl = block.querySelector(".js-qty-price");
-      const comparePriceEl = block.querySelector(".js-qty-price-compare");
-      const savingTextEl = block.querySelector(".js-saving-text");
-
-
-      if (comparePriceEl) {
-        comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
-        comparePriceEl.classList.toggle("hidden", comparePrice <= price);
-      }
-
-      if (savingTextEl) {
-        const totalComparePrice = comparePrice * qty;
-        const totalCurrentPrice = price * qty;
-
-        savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
-        savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
-      }
-
+      
 
         //const elementX = document.querySelector('[data-cadence="one-time-purchase"]');
   
