@@ -234,6 +234,108 @@
         "callout_text": ""
       }
     },
+    "faqs_arLPWn": {
+      "type": "faqs",
+      "blocks": {
+        "faq_nhpDr4": {
+          "type": "faq",
+          "settings": {
+            "question": "WHAT IS CALM SHOT?",
+            "answer": "<p>Calm Shot is a scientifically designed, on-the-go solution for managing stress and boosting mental clarity. Whether it’s a high-pressure meeting, an important event, or just a packed day, Calm Shot empowers you to show up at your best.</p><ul><li>Format: Single-serving, ready-to-drink bottle.</li><li>Timing: Drink before activities that demand focus and calmness.</li><li>Purpose: Helping you feel calm, clear, and in control when it matters most.</li></ul>"
+          }
+        },
+        "faq_g3A9iP": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW TO USE CALM SHOT?",
+            "answer": "<p>WHEN TO TAKE IT</p><ul><li>Drink Calm Shot 15–30 minutes before stressful activities or events, such as:</li><li>Presentations</li><li>Deadlines</li><li>Exams</li><li>Travel</li><li>Intense workouts</li></ul><p>QUICK TIPS FOR BEST RESULTS</p><ul><li>Shake well before drinking.</li><li>Pair with deep breathing for an even greater sense of calm and focus.</li></ul><p>INSTANT BENEFITS</p><ul><li>Cortisol Reduction: Ashwagandha calms your stress response almost immediately.</li><li>Enhanced Focus: Feel mentally sharper when it matters most.</li><li>Emotional Balance: Stay positive and composed, no matter the pressure.</li></ul><p>LONG-TERM ADVANTAGES</p><ul><li>Build resilience to stress over time.</li><li>Improve overall emotional and physical well-being.</li></ul>"
+          }
+        },
+        "faq_xwLYNn": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW CALM SHOT LOWERS CORTISOL AND WHY IT MATTERS",
+            "answer": "<p>Cortisol, often called the \"stress hormone,\" is your body’s natural response to high-pressure situations. While it’s helpful in short bursts, prolonged high cortisol levels can harm your health and performance.</p>"
+          }
+        },
+        "faq_3P6Y3T": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW CALM SHOT WORKS",
+            "answer": "<ul><li>Powered by Ashwagandha: This clinically proven adaptogen lowers cortisol by up to 30%, calming your body and mind.</li><li>Magnesium Sulfate: Eases physical tension caused by stress, promoting relaxation and balance.</li></ul>"
+          }
+        },
+        "faq_MdMMNk": {
+          "type": "faq",
+          "settings": {
+            "question": "WILL CALM SHOT MAKE ME SLEEPY?",
+            "answer": "<p>No! Calm Shot promotes relaxation without sedation. Ingredients like L-Theanine and Magnesium Sulfate help calm your nerves while keeping your mind sharp and alert.</p>"
+          }
+        },
+        "faq_QkK3cV": {
+          "type": "faq",
+          "settings": {
+            "question": "DOES GLOW SHOT TASTE GOOD?",
+            "answer": "<p>Absolutely! Glow Shot has a light, refreshing taste with natural flavors. It’s enjoyable on its own or can be mixed into your favorite beverages.</p>"
+          }
+        },
+        "faq_gUepBi": {
+          "type": "faq",
+          "settings": {
+            "question": "IS CALM SHOT SAFE?",
+            "answer": "<p>Yes, Calm Shot is made with clean, natural ingredients and is free from added sugars, artificial preservatives, and synthetic fillers. However, consult your healthcare provider if you are pregnant, nursing, taking medications, or have a medical condition. Calm Shot is not intended for individuals under 18.</p>"
+          }
+        },
+        "faq_JPpbYU": {
+          "type": "faq",
+          "settings": {
+            "question": "WHAT ARE THE BENEFITS OF REDUCING CORTISOL WITH CALM SHOT?",
+            "answer": "<p>Reducing cortisol helps:</p><ul><li>Lower stress and tension.</li><li>Improve focus and mental clarity.</li><li>Balance your mood.</li><li>Enhance sleep quality.</li><li>Support long-term physical and emotional well-being.</li></ul>"
+          }
+        },
+        "faq_nQjBk4": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW LONG DOES IT TAKE TO FEEL THE EFFECTS?",
+            "answer": "<p>Many users report feeling calmer and more focused within 15–30 minutes of drinking Calm Shot.</p>"
+          }
+        },
+        "faq_PkXMik": {
+          "type": "faq",
+          "settings": {
+            "question": "CAN I TAKE CALM SHOT WITH OTHER SUPPLEMENTS?",
+            "answer": "<p>Yes, Calm Shot’s clean formula integrates seamlessly into most wellness routines. If you’re unsure about interactions, consult your healthcare provider.</p>"
+          }
+        },
+        "faq_N4Pzie": {
+          "type": "faq",
+          "settings": {
+            "question": "DOES CALM SHOT TASTE GOOD?",
+            "answer": "<p>Absolutely! Calm Shot features a light, refreshing passion fruit flavor that’s easy to enjoy on its own or with your favorite beverage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_nhpDr4",
+        "faq_g3A9iP",
+        "faq_xwLYNn",
+        "faq_3P6Y3T",
+        "faq_MdMMNk",
+        "faq_QkK3cV",
+        "faq_gUepBi",
+        "faq_JPpbYU",
+        "faq_nQjBk4",
+        "faq_PkXMik",
+        "faq_N4Pzie"
+      ],
+      "settings": {
+        "title": "Calm Shots",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
     "faqs_iUQzLx": {
       "type": "faqs",
       "blocks": {
@@ -519,6 +621,7 @@
     "main",
     "faqs_DB8xQe",
     "faqs_6x6p6a",
+    "faqs_arLPWn",
     "faqs_iUQzLx",
     "faqs_Wmae88",
     "faqs_YNtjRb",
