@@ -620,6 +620,124 @@
         "callout_text": ""
       }
     },
+    "faqs_XptXYA": {
+      "type": "faqs",
+      "blocks": {
+        "faq_3AMCmz": {
+          "type": "faq",
+          "settings": {
+            "question": "What is NMN (Cell Renew)?",
+            "answer": "<p>NMN (Nicotinamide Mononucleotide) is a direct precursor to NAD⁺, a coenzyme essential for energy production, DNA repair, and cellular health. As we age, NAD⁺ levels decline, contributing to fatigue, slower metabolism, and aging-related issues. NMN (Cell Renew) is a clean, daily formula designed to support healthy aging from the inside out.</p>"
+          }
+        },
+        "faq_CUFkDg": {
+          "type": "faq",
+          "settings": {
+            "question": "Key Benefits",
+            "answer": "<p>- Promotes NAD⁺ production and energy metabolism</p><p>- Supports cellular repair and mitochondrial function</p><p>- Aids in combating fatigue and age-related decline</p><p>- Daily formula with clean ingredients and no artificial additives</p><p>- Liposomal delivery for superior absorption</p>"
+          }
+        },
+        "faq_Fe8fUf": {
+          "type": "faq",
+          "settings": {
+            "question": "How to Use It",
+            "answer": "<p>Take 6 ml daily (approximately one dropper), ideally in the morning. You can take it directly or mix with a small amount of water or juice. Store in a cool, dry place. Shake well before use.</p>"
+          }
+        },
+        "faq_7r77hm": {
+          "type": "faq",
+          "settings": {
+            "question": "What’s the difference between NMN (Cell Renew) and the Longevity Shot?",
+            "answer": "<p>Both our Longevity Shot and NMN Tonic are liposomal formulas that support NAD⁺ levels, essential for energy, cellular repair, and healthy aging. The Longevity Shot is our signature product, with NR and Resveratrol in a delicious and powerful ritual taken just twice a week. If you’re choosing one product for your longevity routine, this is the one we recommend. Some customers like to add the NMN Tonic on days they don’t take the Shot or use it while traveling, since it’s a daily option and easy to carry. <br/><br/>At Happy Aging, we offer flexible, science-backed tools so you can build the routine that fits your life best. Let us know if we can help you find your perfect combination.</p>"
+          }
+        },
+        "faq_37nxqw": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I combine both products?",
+            "answer": "<p>Yes! Many customers use the Longevity Shot twice a week and take NMN on the other days. It’s a great way to maintain daily NAD⁺ support and build a flexible longevity ritual.</p>"
+          }
+        },
+        "faq_4TQbLh": {
+          "type": "faq",
+          "settings": {
+            "question": "Why did you create both?",
+            "answer": "<p>Because longevity isn’t one-size-fits-all. Some people love the Shot’s powerful, twice-weekly ritual. Others prefer a daily approach. We created both to give you options that fit your lifestyle and goals.</p>"
+          }
+        },
+        "faq_HANaHM": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they both liposomal?",
+            "answer": "<p>Yes. Both NMN and the Longevity Shot use liposomal delivery for enhanced absorption and effectiveness.</p>"
+          }
+        },
+        "faq_UNF8x6": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it safe to use daily?",
+            "answer": "<p>Absolutely. NMN (Cell Renew) is designed for daily use. However, if you’re pregnant, nursing, or taking medication, consult your healthcare provider.</p>"
+          }
+        },
+        "faq_fUtkgi": {
+          "type": "faq",
+          "settings": {
+            "question": "Does NMN (Cell Renew) have any flavor?",
+            "answer": "<p>It has a mild, natural flavor with no added sugars or artificial sweeteners.</p>"
+          }
+        },
+        "faq_Peaaqi": {
+          "type": "faq",
+          "settings": {
+            "question": "When is the best time to take it?",
+            "answer": "<p>We recommend taking it in the morning, as part of your daily wellness routine. Some users report improved focus and energy when taken early in the day.</p>"
+          }
+        },
+        "faq_3hHbGx": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it normal not to feel effects right away?",
+            "answer": "<p>Yes. Effects vary from person to person. While some feel a boost in energy and focus within a few days, for others the benefits build up gradually over a few weeks. Consistency is key.</p>"
+          }
+        },
+        "faq_JCGgJK": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I travel with it?",
+            "answer": "<p>Yes! NMN (Cell Renew) is designed to be portable and travel-friendly. Keep it in a cool place and always tighten the cap after use.</p>"
+          }
+        },
+        "faq_GDk38G": {
+          "type": "faq",
+          "settings": {
+            "question": "Is NMN vegan and allergen-free?",
+            "answer": "<p>Yes. Our formula is 100% vegan, non-GMO, and free from gluten, soy, and dairy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_3AMCmz",
+        "faq_CUFkDg",
+        "faq_Fe8fUf",
+        "faq_7r77hm",
+        "faq_37nxqw",
+        "faq_4TQbLh",
+        "faq_HANaHM",
+        "faq_UNF8x6",
+        "faq_fUtkgi",
+        "faq_Peaaqi",
+        "faq_3hHbGx",
+        "faq_JCGgJK",
+        "faq_GDk38G"
+      ],
+      "settings": {
+        "title": "What is NMN (Cell Renew)?",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
     "faqs_iUQzLx": {
       "type": "faqs",
       "blocks": {
@@ -758,18 +876,26 @@
         "faq_n4nPGz": {
           "type": "faq",
           "settings": {
-            "question": "What is your return policy?",
-            "answer": "<p>We want you to love your experience with Happy Aging. If for any reason you’re not satisfied, we accept returns within 30 days of purchase. For future purchases, we accept returns of unopened products within 30 days of delivery. For more information, visit our <a href=\"/pages/return-policy\" title=\"Return\">Return Policy</a>.</p>"
+            "question": "How do I track my order?",
+            "answer": "<p>The moment your package of pro-aging goodness leaves our warehouse, we’ll send a friendly email saying that  “Your Happy Aging order is on its way!”. Inside you’ll find a live tracking link so you can follow each stop from our door to yours</p>"
+          }
+        },
+        "faq_rP9j4D": {
+          "type": "faq",
+          "settings": {
+            "question": "How long does shipping take?",
+            "answer": "<p>Standard Shipping: Typically arrives within 3–7 business days after it leaves our warehouse.</p><p>Express Shipping: Reaches you in 2–3 business days for those “need-it-now” moments.</p><p>Delivery windows begin once your order ships. We pack parcels quickly, but weekends and holidays can add a little extra time. </p>"
           }
         }
       },
       "block_order": [
         "faq_yTG9Gt",
         "faq_x6BANi",
-        "faq_n4nPGz"
+        "faq_n4nPGz",
+        "faq_rP9j4D"
       ],
       "settings": {
-        "title": "Orders",
+        "title": "Order & Payments",
         "is_padding_top": "no",
         "is_background_default": "yes",
         "is_margin_bottom": "no",
@@ -782,22 +908,22 @@
         "faq_fJ3FWi": {
           "type": "faq",
           "settings": {
-            "question": "Where does Happy Aging ship?",
-            "answer": "<p>Currently, we ship only within the United States. We hope to expand internationally soon.</p>"
+            "question": "Do you ship internationally? ",
+            "answer": "<p>At the moment, we only ship within the United States. However, expanding internationally is on our radar, and we’ll be sure to keep you updated once we start shipping internationally.</p>"
           }
         },
         "faq_VyKiLi": {
           "type": "faq",
           "settings": {
-            "question": "When will my order arrive?",
-            "answer": "<p>Standard shipping typically takes 3-5 business days, while express shipping arrives in 1-3 business days. You’ll receive tracking details to keep an eye on your order's journey.</p>"
+            "question": "How can I track the status of my order?",
+            "answer": "<p>We’ll email you tracking details as soon as your order ships. Use the tracking number provided to follow your package on the carrier’s website.</p>"
           }
         },
         "faq_hracWF": {
           "type": "faq",
           "settings": {
-            "question": "How can I track the status of my order?",
-            "answer": "<p>We use Route to ensure seamless tracking for all orders. You’ll receive an email with tracking information as soon as your order ships. You can also track your order <a href=\"/pages/track-order\" title=\"Track Order\"><span style=\"text-decoration:underline\">here</span></a>.</p>"
+            "question": "What if my order arrives damaged, is missing, or marked as delivered but not received?",
+            "answer": "<p>If your order is damaged or missing, send us a message at hello@happyaging.com  or file a claim through Route for quick assistance (if your order is covered by Route)</p><p>If your order is marked as delivered but you didn’t receive it, please contact our support team at hello@happyaging.com.<br/><br/>We’ll help you resolve the issue, if covered by Route, we coordinate with them. If not, we’ll investigate directly with the carrier.</p>"
           }
         },
         "faq_xnxetL": {
@@ -908,6 +1034,7 @@
     "faqs_arLPWn",
     "faqs_UeqNRj",
     "faqs_KywrXM",
+    "faqs_XptXYA",
     "faqs_iUQzLx",
     "faqs_Wmae88",
     "faqs_YNtjRb",
