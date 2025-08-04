@@ -406,13 +406,7 @@ class SubscriptionWidget extends HTMLElement {
         
 
       
-      if (priceEl) {
-        
-
-        
-        
-        priceEl.innerText = this.formatPrice(price * qty);
-      }
+      
 
 
       
