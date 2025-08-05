@@ -345,46 +345,73 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateQuantityPrices() {
-  // 1) se for bundle, nada a fazer
-  if (this.config.product.is_bundle) {
-    return;
+  // 1) Bundles não entram aqui
+  if (this.config.product.is_bundle) return;
+
+  // 2) Inicializa MutationObserver UMA vez para \"listen\" nas trocas de cadence
+  if (!this._qtyObserver) {
+    this._qtyObserver = new MutationObserver((mutations) => {
+      mutations.forEach((m) => {
+        if (m.attributeName === 'class') {
+          const el = m.target;
+          // Se mudou para one-time e ficou ACTIVE, desconecta o observer
+          if (
+            el.dataset.cadence === 'one-time-purchase' &&
+            el.classList.contains('active')
+          ) {
+            this._qtyObserver.disconnect();
+            return;
+          }
+          // Se mudou para subscription e ficou ACTIVE, recalcule preços
+          if (
+            el.dataset.cadence === 'subscription' &&
+            el.classList.contains('active')
+          ) {
+            this.updateQuantityPrices();
+          }
+        }
+      });
+    });
+    // Observa cada radio-option de cadence
+    this.querySelectorAll('.cadence-selector .radio-option').forEach((opt) =>
+      this._qtyObserver.observe(opt, { attributes: true, attributeFilter: ['class'] })
+    );
   }
 
+  // 3) Define flags para lógica interna
   const variant = this.getCurrentVariant();
   const isOneTime = this.state.cadence === 'one-time-purchase';
 
+  // 4) Percorre cada bloco de quantidade
   this.querySelectorAll('[data-qty-block]').forEach((block) => {
-    // detecta se é o bloco mobile (radio-option)
     const isMobile = !!block.closest('.quantity-grid-mobile');
+    // Se for one-time no mobile, pula o recálculo deste bloco
+    if (isOneTime && isMobile) return;
 
-    // 2) se estivermos em one-time E for bloco mobile, pula este bloco
-    if (isOneTime && isMobile) {
-      return;
-    }
-
-    // 3) caso contrário, faz o cálculo normal
     const qty          = Number(block.dataset.qty);
     const planId       = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
-
     const plan = planId
-      ? variant.selling_plan_allocations.find(p => p.selling_plan_id === planId)
+      ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId)
       : null;
 
-    const price = (this.state.cadence === 'subscription' && plan)
-      ? plan.price
-      : onetimePrice;
+    const price =
+      this.state.cadence === 'subscription' && plan
+        ? plan.price
+        : onetimePrice;
     const comparePrice = variant.compare_at_price || variant.price;
 
     const priceEl        = block.querySelector('.js-qty-price');
     const comparePriceEl = block.querySelector('.js-qty-price-compare');
     const savingTextEl   = block.querySelector('.js-saving-text');
 
+    // Atualiza preço comparativo
     if (comparePriceEl) {
       comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
       comparePriceEl.classList.toggle('hidden', comparePrice <= price);
     }
 
+    // Atualiza texto de economia
     if (savingTextEl) {
       const totalCompare  = comparePrice * qty;
       const totalCurrent  = price * qty;
@@ -392,6 +419,7 @@ class SubscriptionWidget extends HTMLElement {
       savingTextEl.classList.toggle('hidden', totalCompare <= totalCurrent);
     }
 
+    // Atualiza preço principal
     if (priceEl) {
       priceEl.innerText = this.formatPrice(price * qty);
     }
