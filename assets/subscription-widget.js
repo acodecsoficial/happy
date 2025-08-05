@@ -345,31 +345,20 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateQuantityPrices() {
+  // 0) se for bundle, nada a fazer
   if (this.config.product.is_bundle) {
     return;
   }
 
-  // ——————————————————————————————————
-  // 1) Anexa clic em TODOS os radios *uma vez*
-  // ——————————————————————————————————
-  if (!this._listenerAttached) {
-    document
-      .querySelectorAll('.cadence-selector .radio-option__button')
-      .forEach((btn) => {
-        btn.addEventListener('click', () => {
-          // mantém seu comportamento original de marcar '.did'
-          document
-            .querySelectorAll('.quantity-grid-mobile .js-onetime-save')
-            .forEach((d) => d.classList.add('did'));
-
-          // se o radio clicado for one-time, pula o próximo recálculo de preço
-          const cadence = btn.closest('.radio-option').dataset.cadence;
-          this._skipNextPriceUpdate = cadence === 'one-time-purchase';
-        });
-      });
-    this._listenerAttached = true;
+  // 1) se o usuário acabou de clicar em “One Time Purchase”, pulamos este recálculo
+  const activeBtn = this.querySelector(
+    '.cadence-selector .radio-option.active .radio-option__button'
+  );
+  if (activeBtn?.dataset.cadence === 'one-time-purchase') {
+    return;
   }
 
+  // 2) senão, segue o processamento normal
   const variant = this.getCurrentVariant();
 
   this.querySelectorAll('[data-qty-block]').forEach((block) => {
@@ -377,14 +366,16 @@ class SubscriptionWidget extends HTMLElement {
     const qty          = Number(block.dataset.qty);
     const planId       = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
+
     const plan = planId
-      ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId)
+      ? variant.selling_plan_allocations.find(
+          (p) => p.selling_plan_id === planId
+        )
       : null;
 
+    // se for subscription *e* existir plano, usa plan.price; senão, usa onetimePrice
     const price =
-      this.state.cadence === 'subscription' && plan
-        ? plan.price
-        : onetimePrice;
+      this.state.cadence === 'subscription' && plan ? plan.price : onetimePrice;
     const comparePrice = variant.compare_at_price || variant.price;
 
     const priceEl        = block.querySelector('.js-qty-price');
@@ -405,16 +396,11 @@ class SubscriptionWidget extends HTMLElement {
       savingTextEl.classList.toggle('hidden', totalCompare <= totalCurrent);
     }
 
-    // ———————————————————————————————
-    // 2) Só muda o preço principal se não estiver pulando
-    // ———————————————————————————————
-    if (!this._skipNextPriceUpdate && priceEl) {
+    // atualiza preço principal
+    if (priceEl) {
       priceEl.innerText = this.formatPrice(price * qty);
     }
   });
-
-  // zera a flag de skip depois de usar
-  this._skipNextPriceUpdate = false;
 }
 
 
