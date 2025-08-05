@@ -553,33 +553,52 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateAtcPrice() {
-    const atcPrice = this.elements.form.querySelector(".atc-price");
-    if (!atcPrice) return;
+  const atcPriceEl = this.elements.form.querySelector(".atc-price");
+  if (!atcPriceEl) return;
 
-    let price;
-    if (this.state.cadence === "subscription" && this.getCurrentPlan()) {
-      //alert("subs");
-      // Get subscription price
-      if (this.config.product.is_bundle) {
-        price = this.elements.prices.subscription.current.textContent;
-      } else {
-        price = this.formatPrice(this.getCurrentPlan().price * this.state.quantity);
-      }
-    } else {
-      //alert("one");
-      // Get one-time price
-      if (this.config.product.is_bundle) {
-        price = this.elements.prices.onetime.current.textContent;
-      } else {
-        const activeBlock = this.querySelector(".quantity-block.active");
-        const basePrice = activeBlock ? Number(activeBlock.dataset.onetimePrice) : this.getCurrentVariant().price;
-        price = this.formatPrice(basePrice * this.state.quantity);
-      }
+  // 1) Se houver um radio mobile ativo, pega dele o js-qty-price
+  const mobileQtyPriceEl = this.querySelector(
+    ".quantity-grid-mobile .radio-option.active .js-qty-price"
+  );
+  if (mobileQtyPriceEl) {
+    // joga direto no atc-price
+    atcPriceEl.textContent = mobileQtyPriceEl.textContent;
+
+    // e também atualiza o botão mobile current-price, se quiser
+    const mobileCurrentEl = this.querySelector(
+      ".quantity-grid-mobile .radio-option.active .current-price"
+    );
+    if (mobileCurrentEl) {
+      mobileCurrentEl.textContent = mobileQtyPriceEl.textContent;
     }
-
-    atcPrice.textContent = price;
-    this.querySelector('.quantity-grid-mobile .radio-option.active .current-price').textContent = price;
+    return;
   }
+
+  // 2) Senão, cai no fluxo original (subscription vs one-time no desktop)
+  let price;
+  if (this.state.cadence === "subscription" && this.getCurrentPlan()) {
+    if (this.config.product.is_bundle) {
+      price = this.elements.prices.subscription.current.textContent;
+    } else {
+      price = this.formatPrice(
+        this.getCurrentPlan().price * this.state.quantity
+      );
+    }
+  } else {
+    if (this.config.product.is_bundle) {
+      price = this.elements.prices.onetime.current.textContent;
+    } else {
+      const activeBlock = this.querySelector(".quantity-block.active");
+      const basePrice = activeBlock
+        ? Number(activeBlock.dataset.onetimePrice)
+        : this.getCurrentVariant().price;
+      price = this.formatPrice(basePrice * this.state.quantity);
+    }
+  }
+
+  atcPriceEl.textContent = price;
+}
+
 
   updateBottles() {
     if (this.config.product.is_bundle) {
