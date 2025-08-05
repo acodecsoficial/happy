@@ -356,89 +356,94 @@ class SubscriptionWidget extends HTMLElement {
     const onetimePrice = Number(block.dataset.onetimePrice);
     const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
 
-    // Preços definitivos (nunca misturados)
-    const currentPrice = isOneTime ? onetimePrice : (plan ? plan.price : variant.price);
+    // Preços definitivos
+    const subscriptionPrice = plan ? plan.price : variant.price;
+    const oneTimePrice = onetimePrice;
+    
+    // Seleciona o preço baseado na modalidade
+    const activePrice = isOneTime ? oneTimePrice : subscriptionPrice;
     const comparePrice = variant.compare_at_price || variant.price;
 
-    // Elementos de preço
+    // Elementos específicos que precisam ser protegidos
     const priceEl = block.querySelector(".js-qty-price");
-    const cp1El = block.querySelector(".current-price.cp1"); // Elemento específico que você mencionou
-
-    // Atualização segura dos preços
-    if (isOneTime) {
-      // Modo one-time - sempre mostra preço one-time
-      const oneTimeDisplayPrice = onetimePrice * qty;
-      
-      if (priceEl) priceEl.innerText = this.formatPrice(oneTimeDisplayPrice);
-      if (cp1El) cp1El.innerText = this.formatPrice(oneTimeDisplayPrice);
-      
-      // Mostra elementos one-time e esconde subscription
-      block.querySelectorAll('.js-onetime-save').forEach(el => el.classList.remove('hidden'));
-      block.querySelectorAll('.js-subscription-save').forEach(el => el.classList.add('hidden'));
-    } else {
-      // Modo subscription - mostra preços com desconto
-      const subscriptionDisplayPrice = plan ? (plan.price * qty) : (variant.price * qty);
-      
-      if (priceEl) priceEl.innerText = this.formatPrice(subscriptionDisplayPrice);
-      if (cp1El) cp1El.innerText = this.formatPrice(subscriptionDisplayPrice);
-      
-      // Mostra elementos subscription e esconde one-time
-      block.querySelectorAll('.js-subscription-save').forEach(el => el.classList.remove('hidden'));
-      block.querySelectorAll('.js-onetime-save').forEach(el => el.classList.add('hidden'));
-    }
-
-    // Atualiza preço de comparação (funciona para ambos os modos)
+    const cp1El = block.querySelector(".current-price.cp1");
     const comparePriceEl = block.querySelector(".js-qty-price-compare");
-    if (comparePriceEl) {
-      comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
-      comparePriceEl.classList.toggle("hidden", comparePrice <= currentPrice);
-    }
-
-    // Atualiza texto de economia
     const savingTextEl = block.querySelector(".js-saving-text");
-    if (savingTextEl) {
-      const totalComparePrice = comparePrice * qty;
-      const totalCurrentPrice = currentPrice * qty;
-      savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
-      savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
+
+    // Atualização condicional dos preços
+    if (isOneTime) {
+      // Modo one-time - preços fixos
+      const displayPrice = oneTimePrice * qty;
+      
+      if (priceEl) priceEl.innerText = this.formatPrice(displayPrice);
+      if (cp1El) cp1El.innerText = this.formatPrice(displayPrice);
+      
+      // Atualiza preço de comparação se existir
+      if (comparePriceEl) {
+        comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
+        comparePriceEl.classList.toggle("hidden", comparePrice <= oneTimePrice);
+      }
+      
+      // Atualiza texto de economia
+      if (savingTextEl) {
+        const totalComparePrice = comparePrice * qty;
+        const totalCurrentPrice = oneTimePrice * qty;
+        savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
+        savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
+      }
+    } else {
+      // Modo subscription - preços com desconto
+      const displayPrice = subscriptionPrice * qty;
+      
+      if (priceEl) priceEl.innerText = this.formatPrice(displayPrice);
+      if (cp1El) cp1El.innerText = this.formatPrice(displayPrice);
+      
+      // Atualiza preço de comparação
+      if (comparePriceEl) {
+        comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
+        comparePriceEl.classList.toggle("hidden", comparePrice <= subscriptionPrice);
+      }
+      
+      // Atualiza texto de economia
+      if (savingTextEl) {
+        const totalComparePrice = comparePrice * qty;
+        const totalCurrentPrice = subscriptionPrice * qty;
+        savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
+        savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
+      }
     }
   });
 }
 
-// Inicialização robusta dos event listeners
-initPriceListeners() {
-  // Remove listeners antigos para evitar duplicação
+// Handler para mudança de cadência
+handleCadenceChange() {
+  setTimeout(() => {
+    this.updateQuantityPrices();
+    
+    // Proteção extra para os elementos cp1
+    if (!this.state.cadence || this.state.cadence === "one-time-purchase") {
+      this.querySelectorAll('[data-qty-block]').forEach(block => {
+        const cp1El = block.querySelector('.current-price.cp1');
+        if (cp1El) {
+          const qty = Number(block.dataset.qty);
+          const onetimePrice = Number(block.dataset.onetimePrice);
+          cp1El.innerText = this.formatPrice(onetimePrice * qty);
+        }
+      });
+    }
+  }, 50);
+}
+
+// Inicialização dos listeners
+initListeners() {
   document.querySelectorAll('.cadence-selector .radio-option__button').forEach(btn => {
     btn.removeEventListener('click', this.handleCadenceChange);
-  });
-
-  // Adiciona novos listeners
-  document.querySelectorAll('.cadence-selector .radio-option__button').forEach(btn => {
     btn.addEventListener('click', this.handleCadenceChange.bind(this));
   });
 }
 
-// Handler dedicado para mudança de cadência
-handleCadenceChange() {
-  // Pequeno delay para garantir que o estado foi atualizado
-  setTimeout(() => {
-    this.updateQuantityPrices();
-    
-    // Força atualização dos elementos específicos
-    document.querySelectorAll('.current-price.cp1').forEach(el => {
-      const block = el.closest('[data-qty-block]');
-      const qty = Number(block.dataset.qty);
-      const onetimePrice = Number(block.dataset.onetimePrice);
-      
-      if (!this.state.cadence || this.state.cadence === "one-time-purchase") {
-        el.innerText = this.formatPrice(onetimePrice * qty);
-      }
-    });
-  }, 50);
-}
-
-// Chame este método na inicialização do seu componente
-this.initPriceListeners();
+// Chamar na inicialização
+this.initListeners();
 
   setCadence(cadence) {
     this.state.cadence = cadence;
