@@ -345,47 +345,29 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateQuantityPrices() {
+  // 1) Não faz nada para bundles
   if (this.config.product.is_bundle) {
     return;
   }
 
-  // ———————— 1) Inicializa o MutationObserver só na primeira vez ————————
-  if (!this._cadenceObserver) {
-    const cadenceOpts = this.querySelectorAll('.cadence-selector .radio-option');
-    this._cadenceObserver = new MutationObserver((mutations) => {
-      mutations.forEach((m) => {
-        const el = m.target;
-        // sempre que a classe "active" mudar, recalcule preços
-        this.updateQuantityPrices();
-        // se ativou o one-time, desconecta o observer para não recalcular mais
-        if (
-          el.dataset.cadence === 'one-time-purchase' &&
-          el.classList.contains('active')
-        ) {
-          this._cadenceObserver.disconnect();
-        }
-      });
-    });
-    cadenceOpts.forEach((opt) =>
-      this._cadenceObserver.observe(opt, {
-        attributes: true,
-        attributeFilter: ['class']
-      })
-    );
+  // 2) Se estiver em modo *one-time*, não recalcula preços ao clicar no rádio
+  if (this.state.cadence !== 'subscription') {
+    return;
   }
 
-  // ———————— 2) Lógica de cálculo de preços ————————
+  // 3) Modo subscription: faz o cálculo normalmente
   const variant = this.getCurrentVariant();
 
   this.querySelectorAll('[data-qty-block]').forEach((block) => {
+    console.warn('block.dataset.qty =====', block.dataset.qty);
     const qty          = Number(block.dataset.qty);
     const planId       = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
+
     const plan = planId
       ? variant.selling_plan_allocations.find(p => p.selling_plan_id === planId)
       : null;
 
-    // se estiver em subscription *e* existir plano, usa plan.price; senão, onetimePrice
     const price = (this.state.cadence === 'subscription' && plan)
       ? plan.price
       : onetimePrice;
@@ -395,13 +377,11 @@ class SubscriptionWidget extends HTMLElement {
     const comparePriceEl = block.querySelector('.js-qty-price-compare');
     const savingTextEl   = block.querySelector('.js-saving-text');
 
-    // atualiza o preço de comparação
     if (comparePriceEl) {
       comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
       comparePriceEl.classList.toggle('hidden', comparePrice <= price);
     }
 
-    // atualiza o texto de economia
     if (savingTextEl) {
       const totalCompare = comparePrice * qty;
       const totalCurrent = price * qty;
@@ -409,12 +389,12 @@ class SubscriptionWidget extends HTMLElement {
       savingTextEl.classList.toggle('hidden', totalCompare <= totalCurrent);
     }
 
-    // atualiza o preço principal
     if (priceEl) {
       priceEl.innerText = this.formatPrice(price * qty);
     }
   });
 }
+
 
 
   setCadence(cadence) {
