@@ -345,101 +345,106 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateQuantityPrices() {
-  if (this.config.product.is_bundle) {
-    return;
-  }
+    if (this.config.product.is_bundle) {
+      return;
+    }
 
-  const variant = this.getCurrentVariant();
-  const isSubscription = this.state.cadence === "subscription";
+    const variant = this.getCurrentVariant();
 
-  this.querySelectorAll("[data-qty-block]").forEach((block) => {
-    const qty = Number(block.dataset.qty);
-    const planId = Number(block.dataset.planId);
-    const onetimePrice = Number(block.dataset.onetimePrice);
+    this.querySelectorAll("[data-qty-block]").forEach((block) => {
+      const qty = Number(block.dataset.qty);
+      const planId = Number(block.dataset.planId);
+      const onetimePrice = Number(block.dataset.onetimePrice);
 
-    // Determina o preço baseado no modo de compra
-    let price, comparePrice;
-    
-    if (isSubscription && planId) {
-      const plan = variant.selling_plan_allocations.find(p => p.selling_plan_id === planId);
-      if (plan) {
-        price = plan.price;
-        comparePrice = variant.compare_at_price || variant.price;
-      } else {
-        // Fallback para preço one-time se não encontrar plano
-        price = onetimePrice;
-        comparePrice = variant.compare_at_price || variant.price;
+      const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
+      
+      // Modificação importante: manter o preço one-time original quando no modo one-time
+      const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
+      const comparePrice = variant.compare_at_price || variant.price;
+
+      const priceEl = block.querySelector(".js-qty-price");
+      const comparePriceEl = block.querySelector(".js-qty-price-compare");
+      const savingTextEl = block.querySelector(".js-saving-text");
+
+      if (comparePriceEl) {
+        comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
+        comparePriceEl.classList.toggle("hidden", comparePrice <= price);
       }
-    } else {
-      // Modo one-time
-      price = onetimePrice;
-      comparePrice = variant.compare_at_price || variant.price;
-    }
 
-    // Atualiza elementos de preço
-    const priceEl = block.querySelector(".js-qty-price");
-    const comparePriceEl = block.querySelector(".js-qty-price-compare");
-    const savingTextEl = block.querySelector(".js-saving-text");
+      if (savingTextEl) {
+        const totalComparePrice = comparePrice * qty;
+        const totalCurrentPrice = price * qty;
 
-    if (priceEl) {
-      priceEl.innerText = this.formatPrice(price * qty);
-    }
+        savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
+        
+        // Mostrar economia apenas no modo subscription
+        savingTextEl.classList.toggle("hidden", this.state.cadence !== "subscription" || totalComparePrice <= totalCurrentPrice);
+      }
 
-    if (comparePriceEl) {
-      comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
-      comparePriceEl.classList.toggle("hidden", comparePrice <= price);
-    }
-
-    if (savingTextEl) {
-      const totalComparePrice = comparePrice * qty;
-      const totalCurrentPrice = price * qty;
-      
-      savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
-      savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
-      
-      // Mostra/oculta baseado no modo de compra
-      savingTextEl.classList.toggle("hidden", !isSubscription);
-    }
-  });
-
-  // Atualiza os textos de economia quando muda o modo de compra
-  this.updateSavingsTexts();
-}
-
-// Novo método para lidar com a atualização dos textos de economia
-updateSavingsTexts() {
-  const isSubscription = this.state.cadence === "subscription";
-  
-  // Atualiza os textos de economia nos botões de opção
-  document.querySelectorAll('.radio-option').forEach(option => {
-    const saveEl = option.querySelector('.js-saving-text, .js-onetime-save, .js-subscription-save');
-    if (saveEl) {
-      saveEl.classList.toggle('hidden', !isSubscription);
-    }
-  });
-}
-
-// Adiciona MutationObserver para monitorar mudanças nos radios
-setupMutationObserver() {
-  const observer = new MutationObserver(mutations => {
-    mutations.forEach(mutation => {
-      if (mutation.attributeName === 'class' && 
-          mutation.target.classList.contains('radio-option')) {
-        this.updateQuantityPrices();
+      if (priceEl) {
+        priceEl.innerText = this.formatPrice(price * qty);
       }
     });
-  });
 
-  document.querySelectorAll('.radio-option').forEach(radio => {
-    observer.observe(radio, { attributes: true });
-  });
-}
+    // Mantemos sua lógica original para sincronizar os textos
+    this.syncSavingsTexts();
+  }
 
-// Inicializa o observer quando o componente é carregado
-connectedCallback() {
-  super.connectedCallback();
-  this.setupMutationObserver();
-}
+  // Método para sincronizar os textos como no seu código original
+  syncSavingsTexts() {
+    const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
+    
+    optionBtns.forEach((e) => {
+      e.addEventListener("click", () => {
+        setTimeout(() => {
+          const oneTimeSave = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+          const subscriptionSave = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+          
+          if (oneTimeSave && subscriptionSave) {
+            if (this.state.cadence === "subscription") {
+              oneTimeSave.innerHTML = subscriptionSave.innerHTML;
+              oneTimeSave.classList.remove("hidden");
+            } else {
+              // No modo one-time, manter o texto original ou esconder
+              oneTimeSave.classList.add("hidden");
+            }
+          }
+        }, 100);
+      });
+    });
+
+    // Sincroniza imediatamente ao carregar
+    setTimeout(() => {
+      const oneTimeSave = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+      const subscriptionSave = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+      
+      if (oneTimeSave && subscriptionSave && this.state.cadence === "subscription") {
+        oneTimeSave.innerHTML = subscriptionSave.innerHTML;
+        oneTimeSave.classList.remove("hidden");
+      }
+    }, 300);
+  }
+
+  // Adiciona o observer para mudanças nos radios
+  setupRadioObserver() {
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'class' && mutation.target.classList.contains('radio-option')) {
+          this.updateQuantityPrices();
+        }
+      });
+    });
+
+    document.querySelectorAll('.radio-option').forEach((radio) => {
+      observer.observe(radio, { attributes: true });
+    });
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.setupRadioObserver();
+    this.syncSavingsTexts();
+  }
 
   setCadence(cadence) {
     this.state.cadence = cadence;
