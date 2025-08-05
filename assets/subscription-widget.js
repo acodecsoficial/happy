@@ -345,64 +345,129 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateQuantityPrices() {
-  // 0) se for bundle, nada a fazer
-  if (this.config.product.is_bundle) {
-    return;
+    if (this.config.product.is_bundle) {
+      return;
+    }
+
+    const variant = this.getCurrentVariant();
+
+    this.querySelectorAll("[data-qty-block]").forEach((block) => {
+      console.warn("block.dataset.qty ===== ", block.dataset.qty);
+      const qty = Number(block.dataset.qty);
+      const planId = Number(block.dataset.planId);
+      const onetimePrice = Number(block.dataset.onetimePrice);
+
+      const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
+      const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
+      const comparePrice = variant.compare_at_price || variant.price;
+
+
+      const priceEl = block.querySelector(".js-qty-price");
+      const comparePriceEl = block.querySelector(".js-qty-price-compare");
+      const savingTextEl = block.querySelector(".js-saving-text");
+
+
+      if (comparePriceEl) {
+        comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
+        comparePriceEl.classList.toggle("hidden", comparePrice <= price);
+      }
+
+      if (savingTextEl) {
+        const totalComparePrice = comparePrice * qty;
+        const totalCurrentPrice = price * qty;
+
+        savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
+        savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
+      }
+
+
+        //const elementX = document.querySelector('[data-cadence="one-time-purchase"]');
+  
+        const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
+      
+        optionBtns.forEach(function(e) {
+          e.addEventListener("click", function () {
+            document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function(d){
+              console.warn("clicked =======================================");
+              console.warn("clicked ==", d);
+              //d.classList.add('hidden');
+              d.classList.add('did');
+            });
+          });
+        });
+      
+        
+
+      
+      if (priceEl) {
+        //alert( price +"-"+ qty);
+        console.warn( price +"-"+ qty + "-" + comparePrice);
+
+        if(document.querySelectorAll('.quantity-grid-mobile .radio-option').length == 1 ){
+          //alert("same");
+          console.warn("same - length = 1");
+          setTimeout(function() {
+
+            const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+            const oneTimeTxt = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save').innerHTML;
+
+            const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+            const subsTimeTxt = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save').innerHTML;
+            
+            console.warn("one time = ", oneTimeTxt);
+            console.warn("subs el = ", subsTimeTxt);
+      
+            
+            //document.querySelector('.current-price.cp1').innerHTML = document.querySelector('.atc-price').innerHTML;
+            if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
+              console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+              
+              oneTime.innerHTML = subsTimeTxt;
+              oneTime.classList.remove("hidden");
+              
+            }else{
+              console.warn("element else");
+            }
+            
+          }, 100);
+            
+        }else if(document.querySelectorAll('.quantity-grid-mobile .radio-option').length > 1){
+
+                        console.warn("same - length > 1");
+                        setTimeout(function() {
+              
+                          const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+                          const oneTimeTxt = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save').innerHTML;
+              
+                          const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+                          const subsTimeTxt = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save').innerHTML;
+                          
+                          console.warn("one time = ", oneTimeTxt);
+                          console.warn("subs el = ", subsTimeTxt);
+                    
+                          
+                          //document.querySelector('.current-price.cp1').innerHTML = document.querySelector('.atc-price').innerHTML;
+                          if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
+                            console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                            
+                            oneTime.innerHTML = subsTimeTxt;
+                            oneTime.classList.remove("hidden");
+                            
+                          }else{
+                            console.warn("element else");
+                          }
+                          
+                        }, 1000);
+          
+        }
+        
+        priceEl.innerText = this.formatPrice(price * qty);
+      }
+
+
+      
+    });
   }
-
-  // 1) se o usuário acabou de clicar em “One Time Purchase”, pulamos este recálculo
-  const activeBtn = this.querySelector(
-    '.cadence-selector .radio-option.active .radio-option__button'
-  );
-  if (activeBtn?.dataset.cadence === 'one-time-purchase') {
-    return;
-  }
-
-  // 2) senão, segue o processamento normal
-  const variant = this.getCurrentVariant();
-
-  this.querySelectorAll('[data-qty-block]').forEach((block) => {
-    console.warn('block.dataset.qty =====', block.dataset.qty);
-    const qty          = Number(block.dataset.qty);
-    const planId       = Number(block.dataset.planId);
-    const onetimePrice = Number(block.dataset.onetimePrice);
-
-    const plan = planId
-      ? variant.selling_plan_allocations.find(
-          (p) => p.selling_plan_id === planId
-        )
-      : null;
-
-    // se for subscription *e* existir plano, usa plan.price; senão, usa onetimePrice
-    const price =
-      this.state.cadence === 'subscription' && plan ? plan.price : onetimePrice;
-    const comparePrice = variant.compare_at_price || variant.price;
-
-    const priceEl        = block.querySelector('.js-qty-price');
-    const comparePriceEl = block.querySelector('.js-qty-price-compare');
-    const savingTextEl   = block.querySelector('.js-saving-text');
-
-    // atualiza preço de comparação
-    if (comparePriceEl) {
-      comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
-      comparePriceEl.classList.toggle('hidden', comparePrice <= price);
-    }
-
-    // atualiza texto de economia
-    if (savingTextEl) {
-      const totalCompare = comparePrice * qty;
-      const totalCurrent = price * qty;
-      savingTextEl.innerText = this.getSaveText(totalCurrent, totalCompare);
-      savingTextEl.classList.toggle('hidden', totalCompare <= totalCurrent);
-    }
-
-    // atualiza preço principal
-    if (priceEl) {
-      priceEl.innerText = this.formatPrice(price * qty);
-    }
-  });
-}
-
 
   setCadence(cadence) {
     this.state.cadence = cadence;
