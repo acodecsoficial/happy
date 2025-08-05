@@ -361,19 +361,14 @@ class SubscriptionWidget extends HTMLElement {
     const comparePrice = variant.compare_at_price || variant.price;
 
     let price;
-    let currentComparePrice = comparePrice;
 
-    // Lógica para definir o preço com base na cadência.
-    // Isso garante que o preço "one-time" nunca seja substituído.
+    // Define o preço de forma explícita, dependendo da cadência
     if (this.state.cadence === "subscription" && plan) {
       price = plan.price;
-      currentComparePrice = comparePrice;
     } else {
-      // Se a cadência for 'one-time', usamos o preço e o comparePrice originais.
+      // Usa o preço de one-time para o rádio de one-time
       price = onetimePrice;
-      currentComparePrice = onetimePrice; // Usamos o mesmo preço para evitar a exibição do "compare at price"
     }
-
 
     const priceEl = block.querySelector(".js-qty-price");
     const comparePriceEl = block.querySelector(".js-qty-price-compare");
@@ -381,8 +376,8 @@ class SubscriptionWidget extends HTMLElement {
 
 
     if (comparePriceEl) {
-      comparePriceEl.innerText = this.formatPrice(currentComparePrice * qty);
-      comparePriceEl.classList.toggle("hidden", currentComparePrice <= price);
+      comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
+      comparePriceEl.classList.toggle("hidden", comparePrice <= price);
     }
 
     if (savingTextEl) {
