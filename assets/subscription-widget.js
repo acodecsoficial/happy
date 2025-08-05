@@ -360,13 +360,15 @@ class SubscriptionWidget extends HTMLElement {
     const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
     const comparePrice = variant.compare_at_price || variant.price;
 
-    let price;
+    const activeRadio = document.querySelector('.cadence-selector .radio-option.active');
+    const isOneTimePurchase = activeRadio && activeRadio.dataset.cadence === 'one-time-purchase';
 
-    // Define o preço de forma explícita, dependendo da cadência
-    if (this.state.cadence === "subscription" && plan) {
+    let price;
+    if (isOneTimePurchase) {
+      price = onetimePrice;
+    } else if (this.state.cadence === "subscription" && plan) {
       price = plan.price;
     } else {
-      // Usa o preço de one-time para o rádio de one-time
       price = onetimePrice;
     }
 
