@@ -350,18 +350,17 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   const variant = this.getCurrentVariant();
+  const isOneTimeActive = this.querySelector('.cadence-selector .radio-option[data-cadence="one-time-purchase"].active') !== null;
 
   this.querySelectorAll("[data-qty-block]").forEach((block) => {
-    console.warn("block.dataset.qty ===== ", block.dataset.qty);
     const qty = Number(block.dataset.qty);
     const planId = Number(block.dataset.planId);
     const onetimePrice = Number(block.dataset.onetimePrice);
 
     const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
     
-    // Determina se estamos no modo subscription ou one-time
-    const isSubscription = this.state.cadence === "subscription";
-    const price = isSubscription && plan ? plan.price : onetimePrice;
+    // Se one-time estiver ativo, sempre usa onetimePrice, caso contrário usa o preço do plano
+    const price = isOneTimeActive ? onetimePrice : (plan ? plan.price : onetimePrice);
     const comparePrice = variant.compare_at_price || variant.price;
 
     const priceEl = block.querySelector(".js-qty-price");
@@ -381,39 +380,58 @@ class SubscriptionWidget extends HTMLElement {
       savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
     }
 
-    // Atualiza os preços apenas se o elemento priceEl existir
     if (priceEl) {
-      // Se estivermos no modo one-time, usa o preço one-time diretamente
-      if (!isSubscription) {
+      // Se for one-time, mostra o preço one-time original
+      if (isOneTimeActive) {
         priceEl.innerText = this.formatPrice(onetimePrice * qty);
+        
+        // Esconde os elementos de desconto do subscription se existirem
+        block.querySelectorAll('.js-subscription-save').forEach(el => {
+          el.classList.add('hidden');
+        });
+        
+        // Mostra os elementos de one-time se existirem
+        block.querySelectorAll('.js-onetime-save').forEach(el => {
+          el.classList.remove('hidden');
+        });
       } else {
-        // Modo subscription - usa o preço do plano
+        // Se for subscription, mostra o preço com desconto
         priceEl.innerText = this.formatPrice(price * qty);
-      }
-
-      // Lógica para lidar com os elementos de economia
-      const oneTimeSaveEl = block.querySelector('.js-onetime-save');
-      const subscriptionSaveEl = block.querySelector('.js-subscription-save');
-      
-      // Mantém os textos de economia separados
-      if (oneTimeSaveEl && !isSubscription) {
-        oneTimeSaveEl.classList.remove('hidden');
-      }
-      
-      if (subscriptionSaveEl && isSubscription) {
-        subscriptionSaveEl.classList.remove('hidden');
+        
+        // Esconde os elementos de one-time se existirem
+        block.querySelectorAll('.js-onetime-save').forEach(el => {
+          el.classList.add('hidden');
+        });
+        
+        // Mostra os elementos de subscription se existirem
+        block.querySelectorAll('.js-subscription-save').forEach(el => {
+          el.classList.remove('hidden');
+        });
       }
     }
   });
 
-  // Adiciona listeners para os botões de opção
-  const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
-  optionBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      // Força a atualização dos preços após a mudança
-      setTimeout(() => this.updateQuantityPrices(), 50);
-    });
+  // Atualiza os listeners dos botões
+  this.updateCadenceListeners();
+}
+
+// Função auxiliar para atualizar os listeners
+updateCadenceListeners() {
+  const optionBtns = this.querySelectorAll('.cadence-selector .radio-option__button');
+  
+  optionBtns.forEach(btn => {
+    // Remove listeners antigos para evitar duplicação
+    btn.removeEventListener('click', this.cadenceButtonHandler);
+    
+    // Adiciona novo listener
+    btn.addEventListener('click', this.cadenceButtonHandler.bind(this));
   });
+}
+
+// Handler separado para os cliques nos botões de cadência
+cadenceButtonHandler() {
+  // Força a atualização dos preços após um pequeno delay
+  setTimeout(() => this.updateQuantityPrices(), 50);
 }
 
   setCadence(cadence) {
