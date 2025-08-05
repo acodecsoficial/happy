@@ -361,12 +361,17 @@ class SubscriptionWidget extends HTMLElement {
     const comparePrice = variant.compare_at_price || variant.price;
 
     let price;
+    let currentComparePrice = comparePrice;
 
-    // Lógica para definir o preço com base na cadência
+    // Lógica para definir o preço com base na cadência.
+    // Isso garante que o preço "one-time" nunca seja substituído.
     if (this.state.cadence === "subscription" && plan) {
       price = plan.price;
+      currentComparePrice = comparePrice;
     } else {
+      // Se a cadência for 'one-time', usamos o preço e o comparePrice originais.
       price = onetimePrice;
+      currentComparePrice = onetimePrice; // Usamos o mesmo preço para evitar a exibição do "compare at price"
     }
 
 
@@ -376,8 +381,8 @@ class SubscriptionWidget extends HTMLElement {
 
 
     if (comparePriceEl) {
-      comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
-      comparePriceEl.classList.toggle("hidden", comparePrice <= price);
+      comparePriceEl.innerText = this.formatPrice(currentComparePrice * qty);
+      comparePriceEl.classList.toggle("hidden", currentComparePrice <= price);
     }
 
     if (savingTextEl) {
@@ -387,27 +392,6 @@ class SubscriptionWidget extends HTMLElement {
       savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
       savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
     }
-
-    // Adiciona o MutationObserver para a lógica de one-time
-    const onetimeObserver = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === "attributes" && mutation.attributeName === "class") {
-          const onetimeBlock = document.querySelector('[data-cadence="one-time-purchase"]');
-          if (onetimeBlock && onetimeBlock.classList.contains('active')) {
-            const onetimePriceEl = block.querySelector(".js-qty-price");
-            const originalOnetimePrice = Number(block.dataset.onetimePrice);
-            onetimePriceEl.innerText = this.formatPrice(originalOnetimePrice * qty);
-          }
-        }
-      });
-    });
-
-    const config = { attributes: true };
-    const onetimeRadio = document.querySelector('[data-cadence="one-time-purchase"]');
-    if (onetimeRadio) {
-      onetimeObserver.observe(onetimeRadio, config);
-    }
-
 
     const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
 
@@ -436,7 +420,7 @@ class SubscriptionWidget extends HTMLElement {
           console.warn("one time = ", oneTimeTxt);
           console.warn("subs el = ", subsTimeTxt);
 
-          if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
+          if (document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')) {
             console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
             if (oneTime) {
               oneTime.innerHTML = subsTimeTxt;
@@ -459,7 +443,7 @@ class SubscriptionWidget extends HTMLElement {
           console.warn("one time = ", oneTimeTxt);
           console.warn("subs el = ", subsTimeTxt);
           
-          if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
+          if (document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')) {
             console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
             if (oneTime) {
               oneTime.innerHTML = subsTimeTxt;
