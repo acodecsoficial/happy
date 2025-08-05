@@ -363,7 +363,7 @@ class SubscriptionWidget extends HTMLElement {
 
 
       const priceEl = block.querySelector(".js-qty-price");
-     // const comparePriceEl = block.querySelector(".js-qty-price-compare");
+      const comparePriceEl = block.querySelector(".js-qty-price-compare");
       const savingTextEl = block.querySelector(".js-saving-text");
 
 
