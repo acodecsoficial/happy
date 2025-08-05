@@ -1586,7 +1586,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/mitochondriav2.png",
+                    "image": "shopify://shop_images/liposomal.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
