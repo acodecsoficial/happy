@@ -345,71 +345,129 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   updateQuantityPrices() {
-  if (this.config.product.is_bundle) {
-    return;
-  }
-
-  const variant = this.getCurrentVariant();
-
-  // Encontra o rádio ativo para saber se é one-time ou subscription
-  const activeRadio = document.querySelector('.cadence-selector .radio-option.active');
-  const isOneTimePurchase = activeRadio && activeRadio.dataset.cadence === 'one-time-purchase';
-
-  this.querySelectorAll("[data-qty-block]").forEach((block) => {
-    const qty = Number(block.dataset.qty);
-    const planId = Number(block.dataset.planId);
-    const onetimePrice = Number(block.dataset.onetimePrice);
-    const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
-    const comparePrice = variant.compare_at_price || variant.price;
-
-    let price;
-    
-    // Lógica para definir o preço: se for one-time, usa o onetimePrice do dataset
-    if (isOneTimePurchase) {
-      price = onetimePrice;
-    } else if (plan) {
-      price = plan.price;
-    } else {
-      // Fallback para one-time, caso a cadência de assinatura não seja encontrada
-      price = onetimePrice; 
+    if (this.config.product.is_bundle) {
+      return;
     }
 
-    const priceEl = block.querySelector(".js-qty-price");
-    const comparePriceEl = block.querySelector(".js-qty-price-compare");
-    const savingTextEl = block.querySelector(".js-saving-text");
+    const variant = this.getCurrentVariant();
+
+    this.querySelectorAll("[data-qty-block]").forEach((block) => {
+      console.warn("block.dataset.qty ===== ", block.dataset.qty);
+      const qty = Number(block.dataset.qty);
+      const planId = Number(block.dataset.planId);
+      const onetimePrice = Number(block.dataset.onetimePrice);
+
+      const plan = planId ? variant.selling_plan_allocations.find((p) => p.selling_plan_id === planId) : null;
+      const price = this.state.cadence === "subscription" && plan ? plan.price : onetimePrice;
+      const comparePrice = variant.compare_at_price || variant.price;
 
 
-    if (comparePriceEl) {
-      comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
-      comparePriceEl.classList.toggle("hidden", comparePrice <= price);
-    }
+      const priceEl = block.querySelector(".js-qty-price");
+      const comparePriceEl = block.querySelector(".js-qty-price-compare");
+      const savingTextEl = block.querySelector(".js-saving-text");
 
-    if (savingTextEl) {
-      const totalComparePrice = comparePrice * qty;
-      const totalCurrentPrice = price * qty;
 
-      savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
-      savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
-    }
+      if (comparePriceEl) {
+        comparePriceEl.innerText = this.formatPrice(comparePrice * qty);
+        comparePriceEl.classList.toggle("hidden", comparePrice <= price);
+      }
 
-    const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
+      if (savingTextEl) {
+        const totalComparePrice = comparePrice * qty;
+        const totalCurrentPrice = price * qty;
 
-    optionBtns.forEach(function(e) {
-      e.addEventListener("click", function () {
-        document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function(d){
-          console.warn("clicked =======================================");
-          console.warn("clicked ==", d);
-          d.classList.add('did');
+        savingTextEl.innerText = this.getSaveText(totalCurrentPrice, totalComparePrice);
+        savingTextEl.classList.toggle("hidden", totalComparePrice <= totalCurrentPrice);
+      }
+
+
+        //const elementX = document.querySelector('[data-cadence="one-time-purchase"]');
+  
+        const optionBtns = document.querySelectorAll('.cadence-selector .radio-option__button');
+      
+        optionBtns.forEach(function(e) {
+          e.addEventListener("click", function () {
+            document.querySelectorAll('.quantity-grid-mobile .js-onetime-save').forEach(function(d){
+              console.warn("clicked =======================================");
+              console.warn("clicked ==", d);
+              //d.classList.add('hidden');
+              d.classList.add('did');
+            });
+          });
         });
-      });
+      
+        
+
+      
+      if (priceEl) {
+        //alert( price +"-"+ qty);
+        console.warn( price +"-"+ qty + "-" + comparePrice);
+
+        if(document.querySelectorAll('.quantity-grid-mobile .radio-option').length == 1 ){
+          //alert("same");
+          console.warn("same - length = 1");
+          setTimeout(function() {
+
+            const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+            const oneTimeTxt = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save').innerHTML;
+
+            const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+            const subsTimeTxt = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save').innerHTML;
+            
+            console.warn("one time = ", oneTimeTxt);
+            console.warn("subs el = ", subsTimeTxt);
+      
+            
+            //document.querySelector('.current-price.cp1').innerHTML = document.querySelector('.atc-price').innerHTML;
+            if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
+              console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+              
+              oneTime.innerHTML = subsTimeTxt;
+              oneTime.classList.remove("hidden");
+              
+            }else{
+              console.warn("element else");
+            }
+            
+          }, 100);
+            
+        }else if(document.querySelectorAll('.quantity-grid-mobile .radio-option').length > 1){
+
+                        console.warn("same - length > 1");
+                        setTimeout(function() {
+              
+                          const oneTime = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save');
+                          const oneTimeTxt = document.querySelector('.quantity-grid-mobile .radio-option.active .js-onetime-save').innerHTML;
+              
+                          const subsTime = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save');
+                          const subsTimeTxt = document.querySelector('.cadence-selector .radio-option.active .js-subscription-save').innerHTML;
+                          
+                          console.warn("one time = ", oneTimeTxt);
+                          console.warn("subs el = ", subsTimeTxt);
+                    
+                          
+                          //document.querySelector('.current-price.cp1').innerHTML = document.querySelector('.atc-price').innerHTML;
+                          if(document.querySelector('.cadence-selector .radio-option.active .js-subscription-save')){
+                            console.warn("element TRUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                            
+                            oneTime.innerHTML = subsTimeTxt;
+                            oneTime.classList.remove("hidden");
+                            
+                          }else{
+                            console.warn("element else");
+                          }
+                          
+                        }, 1000);
+          
+        }
+        
+        priceEl.innerText = this.formatPrice(price * qty);
+      }
+
+
+      
     });
-    
-    if (priceEl) {
-      console.warn(price + "-" + qty + "-" + comparePrice);
-      priceEl.innerText = this.formatPrice(price * qty);
-    }
-  });
-}
+  }
 
   setCadence(cadence) {
     this.state.cadence = cadence;
