@@ -496,18 +496,26 @@ class SubscriptionWidget extends HTMLElement {
   }
 
   setCadence(cadence) {
-  this.state.cadence = cadence;
-  // —— NÃO trave ainda —— 
-  // this._lockMobileQty = (cadence === 'one-time-purchase');
+    this.state.cadence = cadence;
 
-  // 1) roda TODOS os cálculos (incluindo mobile) — primeiro clique...
-  this.refresh();
-  this.updateMobileValueProps();
+    // Reset to default plan when switching to subscription
+    if (cadence === "subscription") {
+      // Get the active quantity block's plan ID first
+      const activeBlock = this.querySelector(".quantity-block.active");
+      if (activeBlock && activeBlock.dataset.planId) {
+        this.state.selectedPlanId = Number(activeBlock.dataset.planId);
+      } else {
+        // Fallback to default plan ID if no active block or no plan ID
+        this.state.selectedPlanId = this.config.defaults.plan_id;
+      }
+    } else if (cadence === "one-time-purchase") {
+      // Clear selected plan ID when switching to one-time purchase
+      this.state.selectedPlanId = null;
+    }
 
-  // 2) agora sim, se for one-time, trava os próximos recálculos no mobile
-  this._lockMobileQty = (cadence === 'one-time-purchase');
-}
-
+    this.refresh();
+    this.updateMobileValueProps();
+  }
 
   updateMobileValueProps() {
     // Get active cadence value props
