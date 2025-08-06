@@ -848,6 +848,7 @@
         "faq_dnKXan",
         "faq_9mFN9k"
       ],
+      "disabled": true,
       "settings": {
         "title": "Biological Age Test",
         "is_padding_top": "no",
@@ -1101,15 +1102,15 @@
   },
   "order": [
     "main",
+    "faqs_Wmae88",
+    "faqs_YNtjRb",
+    "faqs_mwT7eK",
     "faqs_DB8xQe",
     "faqs_6x6p6a",
     "faqs_arLPWn",
     "faqs_UeqNRj",
     "faqs_KywrXM",
     "faqs_XptXYA",
-    "faqs_iUQzLx",
-    "faqs_Wmae88",
-    "faqs_YNtjRb",
-    "faqs_mwT7eK"
+    "faqs_iUQzLx"
   ]
 }
