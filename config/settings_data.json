@@ -249,6 +249,14 @@
         "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
         "disabled": false,
         "settings": {}
+      },
+      "13594360033309995742": {
+        "type": "shopify://apps/raygun-crash-reporting/blocks/raygun-cr/f2649138-7c03-4560-8ba6-443947f351cd",
+        "disabled": false,
+        "settings": {
+          "raygun-api-key": "",
+          "ignore-third-party-errors": true
+        }
       }
     },
     "color_schemes": {
