@@ -14,33 +14,15 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_fXjLnC": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "Enjoy: Free shipping on orders over $40",
-            "link": "shopify://collections/all"
-          }
-        },
-        "announcement-bar-0": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "Get a free travel bag on all orders $120+",
-            "link": "shopify://collections/all"
-          }
-        },
         "announcement_kCgXK9": {
           "type": "announcement",
           "settings": {
-            "text": "New tonics - Focus. Sleep. Radiance.",
-            "link": "shopify://collections/tonics"
+            "text": "WEEKEND DEAL: 20% OFF – 48 HOURS ONLY",
+            "link": "shopify://collections/all"
           }
         }
       },
       "block_order": [
-        "announcement_fXjLnC",
-        "announcement-bar-0",
         "announcement_kCgXK9"
       ],
       "settings": {
