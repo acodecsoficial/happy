@@ -1690,7 +1690,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Iconss.svg",
+                            "icon_image": "shopify://shop_images/Icons_15.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1713,7 +1713,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<p>More curcumin reaches your bloodstream for daily support</p>",
+                            "text": "<h3>More curcumin reaches your bloodstream for daily support</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
