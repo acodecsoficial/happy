@@ -420,6 +420,7 @@
                     "text_block_BdfahW": {
                       "type": "text-block",
                       "name": "Text block",
+                      "disabled": true,
                       "settings": {
                         "text": "<h2><em>Because real recovery starts with real rest.</em></h2>",
                         "text_color": "",
@@ -437,7 +438,7 @@
                     "text_block_EJp8ft": {
                       "type": "text-block",
                       "settings": {
-                        "text": "<p>Sleep isn’t the end of your day. It’s the beginning of your next. Sleep Tonic works with your natural rhythm. It delivers restful sleep, overnight detox, and a clear morning without caffeine. Advanced liposomal technology absorbs nutrients up to 10× better than capsules, so every dose works faster, deeper, and produces results you feel by sunrise.<br/><br/>No more lying awake at 2 AM. No more exhausted mornings.</p>",
+                        "text": "<p>Liver Tonic delivers 250 mg of curcumin in a high-absorption liposomal format that your body can truly use. With no pills or powders, it fits easily into your routine. Just one teaspoon a day is all it takes to support your body from within.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
