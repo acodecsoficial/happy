@@ -1936,7 +1936,7 @@
         "heading_b7693f": {
           "type": "heading",
           "settings": {
-            "heading": "<p>YOUR SLEEP <em>essential</em></p>",
+            "heading": "<p>TAKE BACK <em>your balance</em></p>",
             "heading_size": "h1",
             "line-height": 1
           }
@@ -1944,7 +1944,7 @@
         "text_rF6LLk": {
           "type": "text",
           "settings": {
-            "text": "<p><br/>Just one teaspoon delivers a complete sleep support system with 30 servings per bottle. <br/>Experience deeper, more restorative sleep with our precisely dosed formula designed for occasional use when you need quality rest most.</p>",
+            "text": "<p>A teaspoon a day is all it takes. </p><p>No prepping. No detox plan. Just clean support your body recognizes. Give your liver what it needs to help you feel your best.</p>",
             "text_style": "body"
           }
         },
@@ -1962,10 +1962,9 @@
         "text_rF6LLk",
         "button_MKUyna"
       ],
-      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_12c56922-a46d-4da5-8271-6b89b8c5f805.png",
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_14.png",
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
@@ -2002,8 +2001,8 @@
           "type": "step",
           "settings": {
             "number": "",
-            "step_title": "TAKE ONE TEASPOON (6 ML)",
-            "step_text": "30 minutes before bedtime for optimal results. Mix into water, your favorite beverage, or sip it straight."
+            "step_title": "TAKE ONE TEASPOON (6 ML) DAILY.",
+            "step_text": "Sip it straight, chilled, or mix into water or juice.<br> Best taken in the morning to start your day<br> feeling light and steady."
           }
         }
       },
@@ -2019,8 +2018,8 @@
       ],
       "settings": {
         "show_border_top": true,
-        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy-1_5eabeb5f-2b4b-4023-a02d-34ee64aa85aa.png",
-        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_b2975915-65a8-4639-ac78-6cf99b81e57c.png"
+        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_15.png",
+        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_4.png"
       }
     },
     "subscription_products_Q9kNnn": {
