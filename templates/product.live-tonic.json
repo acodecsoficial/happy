@@ -44,7 +44,7 @@
         "icon_text_list_xhFzwP": {
           "type": "icon_text_list",
           "settings": {
-            "icon_1": "shopify://shop_images/197ca6ea82ea3302eebe25ca92bc5031.svg",
+            "icon_1": "shopify://shop_images/197ca6ea82ea3302eebe25ca92bc5031_3489f199-c501-4d28-bb6d-3973cbcc534f.svg",
             "text_1": "10x better absorption with liposomal delivery",
             "icon_2": "shopify://shop_images/ebc08fad3e6ba8ea03ef4589e6d13de1.svg",
             "text_2": "Bright citrus flavor",
@@ -1416,7 +1416,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_8b97a9d7-c0ec-46f5-817e-214f3b7e0738.svg",
+                        "icon_image": "shopify://shop_images/Icons_cfd88dd6-a2b3-481a-a523-7cb331cdac68.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
