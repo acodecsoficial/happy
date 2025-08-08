@@ -1,6 +1,6 @@
 {% style %}
   #shopify-block-{{ block.id }} .image-block__image {
-    max-width: 100%;
+    max-width: 80%;
     object-fit: contain;
   }
 
@@ -9,6 +9,11 @@
       #shopify-block-{{ block.id }} {
         display: none;
       }
+
+      #shopify-block-{{ block.id }} .image-block__image {
+    max-width: 100%;
+    object-fit: contain;
+  }
     }
   {% endif %}
 
