@@ -1810,15 +1810,16 @@
         "result_item_rqhTek": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Badge0.png",
+            "image": "shopify://shop_images/Photo_Jul_29_2025_4_02_27_AM.jpg",
             "title": "DAY 60",
             "text": "<p>Visible glow, better immune resilience</p>"
           }
         },
         "result_item_9ia4b9": {
           "type": "result_item",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Badge4_9dc618f8-78b7-42de-9d4d-b75031213b66.png",
+            "image": "shopify://shop_images/Photo_Jul_29_2025_4_02_27_AM.jpg",
             "title": "DAY 90",
             "text": "<p>Elevated energy, mood, and defenses</p>"
           }
