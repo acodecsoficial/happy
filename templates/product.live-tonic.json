@@ -590,7 +590,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/HAPPY_AGING15297-cr.jpg",
+                    "image": "shopify://shop_images/PHOTO2.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -652,7 +652,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/HAPPY_AGING15023-crop.jpg",
+                    "image": "shopify://shop_images/Photo_Jul_29_2025_5_29_31_AM.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
