@@ -1125,7 +1125,7 @@
         "text_GcHhgp": {
           "type": "text",
           "settings": {
-            "text": "<h3>Not a fad. Not a juice. </h3><h3>Just daily support for a liver that works hard behind the scenes.</h3>",
+            "text": "<h3><em>Not a fad. Not a juice. </em></h3><h3><em>Just daily support for a liver that works hard behind the scenes.</em></h3>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
