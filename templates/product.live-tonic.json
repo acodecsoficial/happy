@@ -1987,6 +1987,13 @@
         "padding_bottom": 36
       }
     },
+    "responsive_image_section_AtDt9W": {
+      "type": "responsive-image-section",
+      "name": "Imagem Responsiva",
+      "settings": {
+        "mobile_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_5.png"
+      }
+    },
     "timeline_section_hBBi6r": {
       "type": "timeline-section",
       "blocks": {
@@ -2027,6 +2034,13 @@
         "show_border_top": true,
         "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_15.png",
         "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_4.png"
+      }
+    },
+    "responsive_image_section_ecJDtW": {
+      "type": "responsive-image-section",
+      "name": "Imagem Responsiva",
+      "settings": {
+        "mobile_image": "shopify://shop_images/Image_5_da5a4f19-b4e8-4248-97b9-47e3c8814be0.png"
       }
     },
     "subscription_products_Q9kNnn": {
@@ -2350,7 +2364,9 @@
     "results_list_LqxNh4",
     "image_with_text_blocks_DWHDDT",
     "image_with_text_4b8iec",
+    "responsive_image_section_AtDt9W",
     "timeline_section_hBBi6r",
+    "responsive_image_section_ecJDtW",
     "subscription_products_Q9kNnn",
     "wines",
     "faqs_9gMU6f",
