@@ -590,7 +590,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/Sem_Titulo-5_1.png",
+                    "image": "shopify://shop_images/HAPPY_AGING15297-cr.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -652,7 +652,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/Sem_Titulo-4_2.jpg",
+                    "image": "shopify://shop_images/HAPPY_AGING15023-crop.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
