@@ -1416,7 +1416,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_12.svg",
+                        "icon_image": "shopify://shop_images/Icons_8b97a9d7-c0ec-46f5-817e-214f3b7e0738.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1473,7 +1473,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_13.svg",
+                        "icon_image": "shopify://shop_images/Icons-1_4fede5e5-f74f-437b-a355-1352f19cc8bb.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1549,7 +1549,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1_3.png",
+                    "image": "shopify://shop_images/liverv2_9a3db096-f77f-408e-bfd2-de3b305ce3e4.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
@@ -1640,7 +1640,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_14.svg",
+                            "icon_image": "shopify://shop_images/Icons-2_a2a9656b-1430-4869-b3a4-1128de96d476.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1697,7 +1697,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Icons_15.svg",
+                            "icon_image": "shopify://shop_images/Icons-3_fded2572-3256-4a89-8fb0-4fc8033a71c5.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
