@@ -195,7 +195,7 @@
         "old_product": "liver-tonic",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "highlight_color": "#c1285e",
+        "highlight_color": "#f2763d",
         "title_label": "<p>Live Tonic</p>",
         "media_size": "medium",
         "constrain_to_viewport": true,
