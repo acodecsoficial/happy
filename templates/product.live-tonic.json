@@ -583,7 +583,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/Sem_Titulo-5_ae534922-d58a-4a5b-849e-4b9ce4e9d4b8.png",
+                    "image": "shopify://shop_images/Sem_Titulo-5_1.png",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -610,7 +610,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Fall asleep naturally in under an hour</li><li>Stay asleep longer with fewer wake-ups</li><li>Wake up refreshed, without morning fog </li></ul>",
+                    "text": "<ul><li>Less bloating after meals</li><li>Natural energy before coffeev</li><li>Skin that feels more radiant</li><li>A calm and centered mood</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -645,7 +645,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/sleep_00900446-0991-449b-81f0-4346b25c1430.png",
+                    "image": "shopify://shop_images/Sem_Titulo-4_2.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -673,7 +673,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Nervous-system calm from GABA plus liposomal melatonin</li><li>Overnight detox and cellular renewal with glutathione</li><li>Clinically dosed formula that syncs with your circadian rhythm</li></ul>",
+                    "text": "<ul><li>250 mg curcumin per serving</li><li>Liposomal delivery helps it absorb faster</li><li>Supports your liver’s natural detox process</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
@@ -840,7 +840,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>A weekly ritual that restores deep sleep and mental clarity.</p>",
+                        "text": "<p>Just one serving a day. No crash. No cleanse.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -877,7 +877,7 @@
                       "name": "Heading block",
                       "settings": {
                         "subheading": "",
-                        "text": "<p><em>2.5 mg</em></p>",
+                        "text": "<p><em>250 mg</em></p>",
                         "tag_select": "h2",
                         "text_color": "",
                         "text_alignment_desktop": "left",
@@ -889,7 +889,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Clinically dosed melatonin for gentle rhythm reset.</p>",
+                        "text": "<p>Clinical dose of curcumin with real benefits.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -937,7 +937,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>No sugar, gluten, dairy, or synthetic additives. Third-party tested.</p>",
+                        "text": "<p>Vegan, sugar-free, gut-friendly, non-GMO.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -986,7 +986,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Liposomal liquid format absorbs fast and feels gentle.</p>",
+                        "text": "<p>Takes seconds. Fits into busy mornings.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1036,7 +1036,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<p>Every claim backed. Every batch tested. Trust built nightly.</p>",
+                        "text": "<p>Liposomal delivery for 10x absorption.</p>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": true,
@@ -1101,7 +1101,7 @@
         "text_nLEfLV": {
           "type": "text",
           "settings": {
-            "text": "<p>BUILT TO PERFORM <em>designed to restore</em></p>",
+            "text": "<p>BUILT  FOR WOMEN WHO <em>want to fell light again</em></p>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1118,7 +1118,7 @@
         "text_GcHhgp": {
           "type": "text",
           "settings": {
-            "text": "<h3><em>Clinically balanced to deliver quality sleep, detox, and day-after clarity</em></h3>",
+            "text": "<h3>Not a fad. Not a juice. </h3><h3>Just daily support for a liver that works hard behind the scenes.</h3>",
             "text_style": "heading",
             "has_border": false,
             "center_mobile": false
@@ -1135,7 +1135,7 @@
         "text_QghNzh": {
           "type": "text",
           "settings": {
-            "text": "<h3>Calmer nights after overstimulation or stress</h3>",
+            "text": "<h3>Eases digestion</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1144,7 +1144,7 @@
         "text_BFqHcM": {
           "type": "text",
           "settings": {
-            "text": "<h3>Deeper, more consistent sleep cycles</h3>",
+            "text": "<h3>Supports skin clarity</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1153,7 +1153,7 @@
         "text_FHXk9x": {
           "type": "text",
           "settings": {
-            "text": "<h3>Improved morning focus and sustained energy</h3>",
+            "text": "<h3>Boosts natural energy</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1162,7 +1162,7 @@
         "text_Ucicgf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Supports hormone balance during perimenopause</h3>",
+            "text": "<h3>Encourages hormonal balance</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1171,16 +1171,7 @@
         "text_fAHjYt": {
           "type": "text",
           "settings": {
-            "text": "<h3>No grogginess or residue the next day</h3>",
-            "text_style": "body",
-            "has_border": true,
-            "center_mobile": false
-          }
-        },
-        "text_yWAANL": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Naturally delicious flavor that fits your nighttime ritual</h3>",
+            "text": "<h3>Fresh citrus taste that feels like a ritual</h3>",
             "text_style": "body",
             "has_border": true,
             "center_mobile": false
@@ -1229,7 +1220,6 @@
         "text_FHXk9x",
         "text_Ucicgf",
         "text_fAHjYt",
-        "text_yWAANL",
         "spacing_GFqXPi",
         "button_iKqTjh"
       ],
@@ -1243,9 +1233,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/sleep2.png",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_9.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/sleep2.png",
+        "image_mob": "shopify://shop_images/Sem_Titulo-1_10.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -1301,6 +1291,7 @@
         "feature_ggQfP3",
         "feature_m8FKiR"
       ],
+      "disabled": true,
       "name": "Breakthrough Section",
       "settings": {
         "heading": "THE BREAKTHROUGH that changes everything",
@@ -1339,7 +1330,7 @@
               "name": "Heading block",
               "settings": {
                 "subheading": "",
-                "text": "<p>UNLOCK THE SCIENCE <em>behind deep sleep</em></p>",
+                "text": "<p>HOW CURCUMIN WORKS <em>for your body</em></p>",
                 "tag_select": "h2",
                 "text_color": "",
                 "desktop_font_size": 50,
@@ -1418,7 +1409,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons_15e3d51c-2604-46a0-8afa-a0b49ff3f15d.svg",
+                        "icon_image": "shopify://shop_images/Icons_12.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1441,7 +1432,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>Melatonin resets your internal clock and signals it is time to sleep</h3>",
+                        "text": "<h3>Activates liver enzymes to support detox and metabolism</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1475,7 +1466,7 @@
                       "type": "ai_gen_block_e8307fc",
                       "name": "Icon Block",
                       "settings": {
-                        "icon_image": "shopify://shop_images/Icons-1_fea911c0-718e-402f-a940-2e0ffd2e184c.svg",
+                        "icon_image": "shopify://shop_images/Icons_13.svg",
                         "alt_text": "",
                         "link": "",
                         "alignment": "flex-start",
@@ -1498,7 +1489,7 @@
                       "type": "text-block",
                       "name": "Text block",
                       "settings": {
-                        "text": "<h3>GABA calms the nervous system so your mind can finally let go</h3>",
+                        "text": "<h3>Helps regulate inflammation (TNF-α, IL-6)</h3>",
                         "text_color": "",
                         "text_weight": "normal",
                         "border-top": false,
@@ -1515,69 +1506,11 @@
                     "ai_gen_block_e8307fc_MD8FaW",
                     "text_block_yVAyLD"
                   ]
-                },
-                "grid_list_Wy3bat": {
-                  "type": "grid-list",
-                  "name": "Grid (simple)",
-                  "settings": {
-                    "desktop_grid_columns": "1",
-                    "column_gap_desktop": 0,
-                    "row_gap_desktop": 0,
-                    "mobile_grid_columns": "1",
-                    "column_gap_mobile": 0,
-                    "row_gap_mobile": 0
-                  },
-                  "blocks": {
-                    "ai_gen_block_e8307fc_qkywbz": {
-                      "type": "ai_gen_block_e8307fc",
-                      "name": "Icon Block",
-                      "settings": {
-                        "icon_image": "shopify://shop_images/Icons_6e62842b-0528-40d7-a1c3-abca87295f37.svg",
-                        "alt_text": "",
-                        "link": "",
-                        "alignment": "flex-start",
-                        "icon_width": 45,
-                        "icon_width_mobile": 45,
-                        "icon_padding": 8,
-                        "padding_top": 4,
-                        "padding_bottom": 4,
-                        "padding_top_mobile": 16,
-                        "padding_bottom_mobile": 4,
-                        "background_color": "rgba(0,0,0,0)",
-                        "border_radius": 8,
-                        "border_width": 0,
-                        "border_color": "#e0e0e0",
-                        "hover_scale": 1.1
-                      },
-                      "blocks": {}
-                    },
-                    "text_block_yWLTLg": {
-                      "type": "text-block",
-                      "name": "Text block",
-                      "settings": {
-                        "text": "<h3>Liposomal delivery unlocks faster, deeper absorption with zero discomfort</h3>",
-                        "text_color": "",
-                        "text_weight": "normal",
-                        "border-top": false,
-                        "desktop_font_size": 16,
-                        "text_alignment_desktop": "left",
-                        "tooltip_texts": "",
-                        "mobile_font_size": 16,
-                        "text_alignment_mobile": "left"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "ai_gen_block_e8307fc_qkywbz",
-                    "text_block_yWLTLg"
-                  ]
                 }
               },
               "block_order": [
                 "grid_list_LdfKtp",
-                "grid_list_eDGmxC",
-                "grid_list_Wy3bat"
+                "grid_list_eDGmxC"
               ]
             },
             "section_inner_MQ4cBF": {
@@ -1609,7 +1542,7 @@
                   "type": "highlight-image-item",
                   "name": "Highlight image item",
                   "settings": {
-                    "image": "shopify://shop_images/melatonin_v2.png",
+                    "image": "shopify://shop_images/MOLECULAR_VIDEO.mp4_1_3.png",
                     "image_max_width_mobile": 10000,
                     "title": "",
                     "title_size": 30,
@@ -1700,7 +1633,7 @@
                           "type": "ai_gen_block_e8307fc",
                           "name": "Icon Block",
                           "settings": {
-                            "icon_image": "shopify://shop_images/Iconsa.svg",
+                            "icon_image": "shopify://shop_images/Icons_14.svg",
                             "alt_text": "",
                             "link": "",
                             "alignment": "flex-end",
@@ -1723,7 +1656,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>Glutathione powers overnight detox and cellular repair</h3>",
+                            "text": "<h3>Liposomal delivery protects and boosts curcumin absorption</h3>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1780,7 +1713,7 @@
                           "type": "text-block",
                           "name": "Text block",
                           "settings": {
-                            "text": "<h3>The clean formula tastes smooth, with no bitterness or synthetic aftertaste</h3>",
+                            "text": "<p>More curcumin reaches your bloodstream for daily support</p>",
                             "text_color": "",
                             "text_weight": "normal",
                             "border-top": false,
@@ -1891,7 +1824,6 @@
         "result_item_rqhTek",
         "result_item_9ia4b9"
       ],
-      "disabled": true,
       "custom_css": [
         "h3.heading {border-bottom: 1px solid; border-top: none; padding-top: 0;}",
         "h2.heading {font-size: 50px !important;}",
@@ -2030,6 +1962,7 @@
         "text_rF6LLk",
         "button_MKUyna"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_12c56922-a46d-4da5-8271-6b89b8c5f805.png",
