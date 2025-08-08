@@ -469,11 +469,23 @@
             "grid_list_Pf4yHh",
             "section_inner_qAQ6QY"
           ]
+        },
+        "image_block_QmHitb": {
+          "type": "image-block",
+          "name": "Image block",
+          "settings": {
+            "different_mobile_image": true,
+            "mobile_image": "shopify://shop_images/Sem_Titulo-4_3.jpg",
+            "show_on_mobile": true,
+            "show_on_desktop": true
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "section_inner_WBhNK7",
-        "section_inner_YmreYw"
+        "section_inner_YmreYw",
+        "image_block_QmHitb"
       ],
       "custom_css": [
         ".site-container {padding-left: 0; padding-right: 0;}",
