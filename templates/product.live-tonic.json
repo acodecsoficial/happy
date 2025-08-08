@@ -463,38 +463,11 @@
                 "grid_list_aTxT4k",
                 "grid_list_UKGRj3"
               ]
-            },
-            "highlight_image_item_hrmnkP": {
-              "type": "highlight-image-item",
-              "name": "Highlight image item",
-              "settings": {
-                "image": "shopify://shop_images/Sem_Titulo-4_3.jpg",
-                "image_max_width_mobile": 1000,
-                "title": "",
-                "title_size": 30,
-                "title_line_height": 42,
-                "title_color": "",
-                "text": "",
-                "text_alignment_desktop": "left",
-                "text_alignment_mobile": "center",
-                "flex_direction": "row",
-                "justify_content": "start",
-                "align_items": "start",
-                "row_gap": 20,
-                "column_gap": 20,
-                "flex_direction_mobile": "column",
-                "justify_content_mobile": "center",
-                "align_items_mobile": "center",
-                "row_gap_mobile": 20,
-                "column_gap_mobile": 20
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "grid_list_Pf4yHh",
-            "section_inner_qAQ6QY",
-            "highlight_image_item_hrmnkP"
+            "section_inner_qAQ6QY"
           ]
         }
       },
@@ -519,6 +492,13 @@
         "bottom_spacing_mobile": 0,
         "use_top_border_mobile": false,
         "use_bottom_border_mobile": false
+      }
+    },
+    "responsive_image_section_U4UYLw": {
+      "type": "responsive-image-section",
+      "name": "Imagem Responsiva",
+      "settings": {
+        "mobile_image": "shopify://shop_images/Sem_Titulo-4_3.jpg"
       }
     },
     "landing_section_KWgCJm": {
@@ -2361,6 +2341,7 @@
     "main",
     "marquee_pMqq4Y",
     "landing_section_GdHXgh",
+    "responsive_image_section_U4UYLw",
     "landing_section_KWgCJm",
     "landing_section_ExiDxD",
     "image_with_text_blocks_gAjTfr",
