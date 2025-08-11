@@ -1788,15 +1788,15 @@
           "settings": {
             "image": "shopify://shop_images/cell_s_protection.png",
             "title": "DAY 1",
-            "text": "<p>Cellular protection begins</p>"
+            "text": "<p>Fresh citrus taste. A new beginning.</p>"
           }
         },
         "result_item_B9jKrw": {
           "type": "result_item",
           "settings": {
             "image": "shopify://shop_images/Badge_4e39dffc-d59c-4067-a024-7b4b75bb7fda.png",
-            "title": "DAY 7",
-            "text": "<p>Improved energy and daily vitality</p>"
+            "title": "WEEK 1",
+            "text": "<p>Less bloating. Smoother digestion.</p>"
           }
         },
         "result_item_KtxBQ9": {
@@ -1811,8 +1811,8 @@
           "type": "result_item",
           "settings": {
             "image": "shopify://shop_images/Photo_Jul_29_2025_4_02_27_AM.jpg",
-            "title": "DAY 60",
-            "text": "<p>Visible glow, better immune resilience</p>"
+            "title": "WEEK 4",
+            "text": "<p>Brighter skin. Steady energy. Better mood.</p>"
           }
         },
         "result_item_9ia4b9": {
@@ -1820,8 +1820,8 @@
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Photo_Jul_29_2025_4_02_27_AM.jpg",
-            "title": "DAY 90",
-            "text": "<p>Elevated energy, mood, and defenses</p>"
+            "title": "WEEK 8",
+            "text": "<p>Balance returns. And you feel it.</p>"
           }
         }
       },
