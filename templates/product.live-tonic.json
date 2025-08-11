@@ -2241,26 +2241,23 @@
         },
         "faq_d6qTBa": {
           "type": "faq",
-          "disabled": true,
           "settings": {
-            "question": "12. What happens if I stop taking it?",
-            "answer": "<p>Your NAD⁺ levels may gradually decline again, and benefits like energy, focus, or hormonal balance may fade. For long-term support, we recommend using Cell Renew consistently.</p>"
+            "question": "12. What does it taste like?",
+            "answer": "<p>It has a smooth, refreshing lemon citrus flavor. Light and pleasant with no bitterness or earthy turmeric aftertaste.</p>"
           }
         },
         "faq_ynT9nx": {
           "type": "faq",
-          "disabled": true,
           "settings": {
-            "question": "13. Are there any side effects?",
-            "answer": "<p>Most users experience no side effects. In rare cases, some may feel mild detox-like symptoms in the first few days such as slight headache or fatigue as NAD⁺ pathways reactivate. These typically resolve quickly.</p>"
+            "question": "13. How long does one bottle last?",
+            "answer": "<p>Each bottle contains 300 ml, which gives you a 50-day supply when taking the recommended daily dose of 6 ml (1 teaspoon).</p>"
           }
         },
         "faq_y8B9H8": {
           "type": "faq",
-          "disabled": true,
           "settings": {
-            "question": "14. What’s in it?",
-            "answer": "<p>Ingredients per 6 ml serving:<br/> NMN (Nicotinamide Mononucleotide) 444 mg<br/> Purified water<br/> Vegetable glycerin<br/> Non-GMO sunflower lecithin<br/> Natural citrus flavor<br/> Potassium sorbate<br/> Stevia<br/> Free from sugar, caffeine, gluten, dairy, soy, synthetic additives, and GMOs</p>"
+            "question": "14. Is it gluten-free and vegan?",
+            "answer": "<p>Yes. Liver Tonic is 100 percent vegan, gluten-free, and made with non-GMO ingredients.</p>"
           }
         },
         "faq_mjT3ae": {
