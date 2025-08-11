@@ -20,10 +20,18 @@
             "text": "Free Hydro Burn on orders over $120",
             "link": "shopify://collections/all"
           }
+        },
+        "announcement_mKETyW": {
+          "type": "announcement",
+          "settings": {
+            "text": "+ Free Shipping",
+            "link": "shopify://collections/all"
+          }
         }
       },
       "block_order": [
-        "announcement_kCgXK9"
+        "announcement_kCgXK9",
+        "announcement_mKETyW"
       ],
       "settings": {
         "color_scheme": "scheme-2",
