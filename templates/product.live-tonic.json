@@ -590,7 +590,7 @@
                   "type": "image-block",
                   "name": "Image block",
                   "settings": {
-                    "image": "shopify://shop_images/PHOTO2.jpg",
+                    "image": "shopify://shop_images/IMG_4109_copy.jpg",
                     "different_mobile_image": false,
                     "show_on_mobile": true,
                     "show_on_desktop": true
@@ -1240,9 +1240,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/3W5A0512-cropped.jpg",
+        "image_desk": "shopify://shop_images/liver_tonic17_1.jpg",
         "image_height_desk": "fit",
-        "image_mob": "shopify://shop_images/3W5A0512-cropped.jpg",
+        "image_mob": "shopify://shop_images/liver_tonic17_1.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -1786,7 +1786,7 @@
         "result_item_zqgCJN": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/cell_s_protection.png",
+            "image": "shopify://shop_images/3W5A0512-cropped.jpg",
             "title": "DAY 1",
             "text": "<p>Fresh citrus taste. A new beginning.</p>"
           }
@@ -1794,7 +1794,7 @@
         "result_item_B9jKrw": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/Badge_4e39dffc-d59c-4067-a024-7b4b75bb7fda.png",
+            "image": "shopify://shop_images/Photo_Jul_29_2025_5_08_28_AM.jpg",
             "title": "WEEK 1",
             "text": "<p>Less bloating. Smoother digestion.</p>"
           }
@@ -1802,7 +1802,7 @@
         "result_item_KtxBQ9": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/20250716_1156_Waterproof_Material_Cross-Section_remix_01k09vma4ee4hbq1bcbq10a4gk.png",
+            "image": "shopify://shop_images/HAPPY_AGING15023-crop.jpg",
             "title": "DAY 30",
             "text": "<p>Stronger skin barrier and stress modulation</p>"
           }
