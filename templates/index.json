@@ -75,7 +75,7 @@
         "button_color": "black",
         "text_color": "black",
         "sub_heading": "Weekend Deal",
-        "title": "<p>20% off. 48 Hours only. </p>",
+        "title": "<p>20% Off. </p><p>Extended Promotion. </p>",
         "sup_word": "",
         "title_words": "",
         "text": "<p>Use code 20VIP and grab your favorite longevity products</p>",
@@ -223,7 +223,7 @@
         "split_media_order": "normal",
         "overlay_text_position": "none",
         "overlay_text_column": "center",
-        "overlay_text_bg_color": "rgba(0, 0, 0, 0.7)",
+        "overlay_text_bg_color": "#000000b3",
         "css_class": "",
         "section_id": ""
       }
