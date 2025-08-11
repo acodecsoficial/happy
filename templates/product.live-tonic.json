@@ -1972,7 +1972,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/3W5A0727.jpg",
+        "image": "shopify://shop_images/liver_tonic17_1.jpg",
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
@@ -2033,7 +2033,7 @@
       ],
       "settings": {
         "show_border_top": true,
-        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_15.png",
+        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_5a98ef6b-1865-4c26-a864-796acc84c8e5.png",
         "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_4.png"
       }
     },
