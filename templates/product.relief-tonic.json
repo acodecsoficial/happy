@@ -1280,9 +1280,9 @@
       "settings": {
         "title": "",
         "text": "",
-        "image_desk": "shopify://shop_images/ia.jpg",
+        "image_desk": "shopify://shop_images/ReliefTonic_2_3D_JNT.jpg",
         "image_height_desk": "square",
-        "image_mob": "shopify://shop_images/ia.jpg",
+        "image_mob": "shopify://shop_images/ReliefTonic_2_3D_JNT.jpg",
         "image_height_mob": "adapt",
         "width": "full",
         "width_mobile": "full",
@@ -1371,7 +1371,7 @@
           "type": "row",
           "settings": {
             "image_position": "right",
-            "image": "shopify://shop_images/produtoa.jpg",
+            "image": "shopify://shop_images/relief_render.jpg",
             "heading_1": "Everyday defense, all day long",
             "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
             "heading_2": "Steady energy, no crash",
