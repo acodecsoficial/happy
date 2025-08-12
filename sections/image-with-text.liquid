@@ -6,7 +6,11 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
+    {
+      "type": "checkbox",
+      "id": "border-top",
+      "label": "Enable border top",
+    },
   .section-{{ section.id }}-padding .button--primaryX{
     background:#000;
     color:#f7f5eb;
