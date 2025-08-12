@@ -1143,21 +1143,12 @@
             "text": "<p>Dr. Yadegar is a Harvard-trained longevity physician and Happy Aging co-founder who blends rigorous medical science with a warm, human approach to care. He’s a recognized expert in internal medicine and cardiovascular health with advanced fellowship training in age management and regenerative medicine. He earned his undergraduate degree with honors from Harvard and his MD from Weill Cornell, where he serves as a Clinical Instructor in Medicine.At Happy Aging, he turns cutting-edge research into real-world results, championing a pro-aging philosophy so women can feel vibrant at every stage of life. It’s the spirit behind our promise to age beautifully and our commitment to being Science-Driven.</p>",
             "text_style": "body"
           }
-        },
-        "button_Y8j8jt": {
-          "type": "button",
-          "settings": {
-            "button_label": "Buy Now",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_x9JpL9",
         "heading_zMKF8q",
-        "text_EPUMUp",
-        "button_Y8j8jt"
+        "text_EPUMUp"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
