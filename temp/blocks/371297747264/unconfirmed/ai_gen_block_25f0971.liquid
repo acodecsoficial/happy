@@ -1,6 +1,422 @@
+{% doc %}
+  @prompt
+    Uma seção com imagem do lado esquerdo e texto do lado direito para inserirmos a biografia do médico fundador. Responsivo para mobile e desktop em inglês.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-founder-bio-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-founder-bio-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ block.settings.content_gap }}px;
+    align-items: center;
+  }
+
+  .ai-founder-bio-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    position: relative;
+  }
+
+  .ai-founder-bio-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    object-fit: cover;
+  }
+
+  .ai-founder-bio-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 4/5;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-founder-bio-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-founder-bio-content-{{ ai_gen_id }} {
+    padding-left: {{ block.settings.content_padding }}px;
+  }
+
+  .ai-founder-bio-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.title_margin }}px 0;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .ai-founder-bio-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0 0 {{ block.settings.subtitle_margin }}px 0;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  .ai-founder-bio-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ai-founder-bio-text-{{ ai_gen_id }} p {
+    margin-bottom: 16px;
+  }
+
+  .ai-founder-bio-text-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-founder-bio-container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.mobile_gap }}px;
+      text-align: {{ block.settings.mobile_text_alignment }};
+    }
+
+    .ai-founder-bio-content-{{ ai_gen_id }} {
+      padding-left: 0;
+      order: {{ block.settings.mobile_content_order }};
+    }
+
+    .ai-founder-bio-image-wrapper-{{ ai_gen_id }} {
+      order: {{ block.settings.mobile_image_order }};
+      max-width: {{ block.settings.mobile_image_width }}px;
+      margin: 0 auto;
+    }
+
+    .ai-founder-bio-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_title_size }}px;
+    }
+
+    .ai-founder-bio-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_subtitle_size }}px;
+    }
+
+    .ai-founder-bio-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_text_size }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-founder-bio-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-founder-bio-container-{{ ai_gen_id }}">
+    <div class="ai-founder-bio-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.founder_image %}
+        <img
+          src="{{ block.settings.founder_image | image_url: width: 800 }}"
+          alt="{{ block.settings.founder_image.alt | escape }}"
+          class="ai-founder-bio-image-{{ ai_gen_id }}"
+          loading="lazy"
+          width="{{ block.settings.founder_image.width }}"
+          height="{{ block.settings.founder_image.height }}"
+        >
+      {% else %}
+        <div class="ai-founder-bio-image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-founder-bio-content-{{ ai_gen_id }}">
+      {% if block.settings.founder_name != blank %}
+        <h2 class="ai-founder-bio-title-{{ ai_gen_id }}">{{ block.settings.founder_name }}</h2>
+      {% endif %}
+
+      {% if block.settings.founder_title != blank %}
+        <h3 class="ai-founder-bio-subtitle-{{ ai_gen_id }}">{{ block.settings.founder_title }}</h3>
+      {% endif %}
+
+      {% if block.settings.founder_bio != blank %}
+        <div class="ai-founder-bio-text-{{ ai_gen_id }}">
+          {{ block.settings.founder_bio }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Founder biography",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "founder_image",
+      "label": "Founder image"
+    },
+    {
+      "type": "text",
+      "id": "founder_name",
+      "label": "Founder name",
+      "default": "Dr. John Smith"
+    },
+    {
+      "type": "text",
+      "id": "founder_title",
+      "label": "Professional title",
+      "default": "Founder & Chief Medical Officer"
+    },
+    {
+      "type": "richtext",
+      "id": "founder_bio",
+      "label": "Biography",
+      "default": "<p>Dr. John Smith is a renowned physician with over 20 years of experience in medical practice. He founded our company with a vision to revolutionize healthcare through innovative solutions.</p><p>His dedication to patient care and medical excellence has been the driving force behind our mission to provide the highest quality healthcare services.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "min": 20,
+      "max": 80,
+      "step": 10,
+      "unit": "px",
+      "label": "Content gap",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "min": 0,
+      "max": 60,
+      "step": 10,
+      "unit": "px",
+      "label": "Content padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Name",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Title",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Biography text",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Name size",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Biography text size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_margin",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Name bottom margin",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "subtitle_margin",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Title bottom margin",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Mobile settings"
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile content gap",
+      "default": 30
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "label": "Mobile text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "mobile_image_width",
+      "min": 200,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "label": "Mobile image width",
+      "default": 300
+    },
+    {
+      "type": "select",
+      "id": "mobile_content_order",
+      "label": "Mobile content order",
+      "options": [
+        {
+          "value": "1",
+          "label": "Content first"
+        },
+        {
+          "value": "2",
+          "label": "Content second"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "mobile_image_order",
+      "label": "Mobile image order",
+      "options": [
+        {
+          "value": "1",
+          "label": "Image first"
+        },
+        {
+          "value": "2",
+          "label": "Image second"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_size",
+      "min": 18,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile name size",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "mobile_subtitle_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile title size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile biography text size",
+      "default": 14
+    }
+  ],
+  "presets": [
+    {
+      "name": "Founder biography"
+    }
+  ],
+  "tag": null
+}
 {% endschema %}
