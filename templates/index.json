@@ -1145,34 +1145,6 @@
         "border": "border-t border-black"
       }
     },
-    "doctors_hqYJaV": {
-      "type": "doctors",
-      "blocks": {
-        "doctor_8iaaae": {
-          "type": "doctor",
-          "settings": {
-            "image": "shopify://shop_images/Mask_group_9.png",
-            "title": "Dr. Daniel Yadegar, MD",
-            "sub_heading": "CREDENTIALS",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>",
-            "bio": ""
-          }
-        }
-      },
-      "block_order": [
-        "doctor_8iaaae"
-      ],
-      "settings": {
-        "text_align": "text-center",
-        "sub_heading": "",
-        "title": "<p>TRUSTED <em>by doctors</em></p>",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
-        "cta_text": "Learn More",
-        "cta_url": "",
-        "bg": "#e5dbcc",
-        "border": ""
-      }
-    },
     "cta-banner": {
       "type": "cta-banner",
       "settings": {
@@ -1185,15 +1157,21 @@
         "cta_style": "button"
       }
     },
-    "landing_intro_fKRnjV": {
-      "type": "landing-intro",
-      "name": "Landing Intro",
+    "landing_section_BjrAJa": {
+      "type": "landing-section",
+      "name": "Landing Section",
       "settings": {
-        "text_align": "text-center",
-        "sub_heading": "",
-        "title": "",
-        "text": "",
-        "caption": ""
+        "background_color": "",
+        "full_width": true,
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
       }
     }
   },
@@ -1218,8 +1196,7 @@
     "image_with_marquee_KQbghH",
     "image_with_blocks_e6WPEE",
     "featured_reviews_XUfiHi",
-    "doctors_hqYJaV",
     "cta-banner",
-    "landing_intro_fKRnjV"
+    "landing_section_BjrAJa"
   ]
 }
