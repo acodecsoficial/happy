@@ -153,6 +153,16 @@
             "text_align": "text-left"
           }
         },
+        "text_nm49jX": {
+          "type": "text",
+          "settings": {
+            "text": "*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure orprevent any disease.",
+            "customclass": "moneyinfo",
+            "text_style": "body",
+            "text_size": "text-[10px]",
+            "text_align": "text-left"
+          }
+        },
         "aside_content_TPcz4K": {
           "type": "aside_content",
           "settings": {
@@ -187,6 +197,7 @@
         "quantity_block_hxax3a",
         "text_RB6DBe",
         "text_h9imWD",
+        "text_nm49jX",
         "aside_content_TPcz4K",
         "aside_content_rBPMby",
         "essential_upsell_app_block_XLXFkq"
@@ -568,6 +579,7 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/brain_v6_c9ada190-1816-4a54-b934-6aa51ac64f20.png",
+        "border-top": false,
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
@@ -1393,6 +1405,7 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/brain_v61.png",
+        "border-top": false,
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
