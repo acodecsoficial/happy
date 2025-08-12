@@ -617,7 +617,7 @@
                   "type": "text-block",
                   "name": "Text block",
                   "settings": {
-                    "text": "<ul><li>Less bloating after meals</li><li>Natural energy before coffeev</li><li>Skin that feels more radiant</li><li>A calm and centered mood</li></ul>",
+                    "text": "<ul><li>Less bloating after meals</li><li>Natural energy before coffee</li><li>Skin that feels more radiant</li><li>A calm and centered mood</li></ul>",
                     "text_color": "",
                     "text_weight": "normal",
                     "border-top": false,
