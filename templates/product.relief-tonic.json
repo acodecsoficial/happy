@@ -1932,7 +1932,7 @@
         "result_item_zqgCJN": {
           "type": "result_item",
           "settings": {
-            "image": "shopify://shop_images/pink-blossoms-on-branch.jpg",
+            "image": "shopify://shop_images/ABDAB33B-83EC-49C9-AD7D-3172386919A4_a4e6f5f1-5f64-4129-baaa-1dab366ffda3.jpg",
             "title": "DAY 1",
             "text": "<p>Feel the first signs of relief as your body begins to respond to seasonal triggers more calmly.</p>"
           }
@@ -2569,7 +2569,7 @@
       "custom_css": [],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/martha.png",
+        "image": "shopify://shop_images/Relief_edited2.jpg",
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
