@@ -1102,6 +1102,7 @@
       "block_order": [
         "ai_gen_block_63c811b_Vxg9Ch"
       ],
+      "disabled": true,
       "name": "Landing Section",
       "settings": {
         "background_color": "",
@@ -1115,6 +1116,65 @@
         "bottom_spacing_mobile": 0,
         "use_top_border_mobile": false,
         "use_bottom_border_mobile": false
+      }
+    },
+    "image_with_text_i4UemH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_x9JpL9": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Dr. Daniel Yadegar</p>",
+            "heading_size": "h1",
+            "line-height": 0.9
+          }
+        },
+        "heading_zMKF8q": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><em>Harvard-Trained Longevity Physician & Happy Aging Co-Founder</em></h2>",
+            "heading_size": "h0",
+            "line-height": 1
+          }
+        },
+        "text_EPUMUp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. Yadegar is a Harvard-trained longevity physician and Happy Aging co-founder who blends rigorous medical science with a warm, human approach to care. He’s a recognized expert in internal medicine and cardiovascular health with advanced fellowship training in age management and regenerative medicine. He earned his undergraduate degree with honors from Harvard and his MD from Weill Cornell, where he serves as a Clinical Instructor in Medicine.At Happy Aging, he turns cutting-edge research into real-world results, championing a pro-aging philosophy so women can feel vibrant at every stage of life. It’s the spirit behind our promise to age beautifully and our commitment to being Science-Driven.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Y8j8jt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_x9JpL9",
+        "heading_zMKF8q",
+        "text_EPUMUp",
+        "button_Y8j8jt"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/1595988081844_bw.jpg",
+        "height": "adapt",
+        "landscape": false,
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 36
       }
     },
     "cta-banner": {
@@ -1151,6 +1211,7 @@
     "image_with_marquee_KQbghH",
     "image_with_blocks_e6WPEE",
     "landing_section_BjrAJa",
+    "image_with_text_i4UemH",
     "cta-banner"
   ]
 }
