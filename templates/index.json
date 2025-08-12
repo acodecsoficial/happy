@@ -1065,6 +1065,61 @@
         "border": "border-t border-black"
       }
     },
+    "landing_section_BjrAJa": {
+      "type": "landing-section",
+      "blocks": {
+        "ai_gen_block_6e1f1a2_ehgxym": {
+          "type": "ai_gen_block_6e1f1a2",
+          "settings": {
+            "doctor_image": "shopify://shop_images/1595988081844.jpg",
+            "doctor_name": "Dr. Daniel Yadegar",
+            "doctor_title": "Harvard-Trained Longevity Physician & Happy Aging Co-Founder",
+            "doctor_bio": "<p>Dr. Yadegar is a Harvard-trained longevity physician and Happy Aging co-founder who blends rigorous medical science with a warm, human approach to care. He’s a recognized expert in internal medicine and cardiovascular health with advanced fellowship training in age management and regenerative medicine. He earned his undergraduate degree with honors from Harvard and his MD from Weill Cornell, where he serves as a Clinical Instructor in Medicine.<br/><br/><br/>At Happy Aging, he turns cutting-edge research into real-world results, championing a pro-aging philosophy so women can feel vibrant at every stage of life. It’s the spirit behind our promise to age beautifully and our commitment to being Science-Driven.<br/><br/></p>",
+            "image_width": 40,
+            "image_aspect_ratio": "4/5",
+            "content_gap": 40,
+            "section_padding": 40,
+            "mobile_layout": "column",
+            "mobile_image_max_width": 280,
+            "mobile_text_alignment": "center",
+            "mobile_content_gap": 25,
+            "mobile_section_padding": 20,
+            "name_font_size": 32,
+            "title_font_size": 20,
+            "description_font_size": 16,
+            "mobile_name_font_size": 34,
+            "mobile_title_font_size": 18,
+            "mobile_description_font_size": 15,
+            "name_margin_bottom": 12,
+            "title_margin_bottom": 20,
+            "background_color": "#f7f5eb",
+            "name_color": "#000000",
+            "title_color": "#666666",
+            "text_color": "#333333",
+            "image_border_radius": 8
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6e1f1a2_ehgxym"
+      ],
+      "disabled": true,
+      "name": "Landing Section",
+      "settings": {
+        "background_color": "",
+        "full_width": true,
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
+      }
+    },
     "featured_reviews_XUfiHi": {
       "type": "featured-reviews",
       "blocks": {
@@ -1118,61 +1173,6 @@
         "cta_label": "Learn About HA Labs",
         "cta_style": "button"
       }
-    },
-    "landing_section_BjrAJa": {
-      "type": "landing-section",
-      "blocks": {
-        "ai_gen_block_6e1f1a2_ehgxym": {
-          "type": "ai_gen_block_6e1f1a2",
-          "disabled": true,
-          "settings": {
-            "doctor_image": "shopify://shop_images/1595988081844.jpg",
-            "doctor_name": "Dr. Daniel Yadegar",
-            "doctor_title": "Harvard-Trained Longevity Physician & Happy Aging Co-Founder",
-            "doctor_bio": "<p>Dr. Yadegar is a Harvard-trained longevity physician and Happy Aging co-founder who blends rigorous medical science with a warm, human approach to care. He’s a recognized expert in internal medicine and cardiovascular health with advanced fellowship training in age management and regenerative medicine. He earned his undergraduate degree with honors from Harvard and his MD from Weill Cornell, where he serves as a Clinical Instructor in Medicine.<br/><br/><br/>At Happy Aging, he turns cutting-edge research into real-world results, championing a pro-aging philosophy so women can feel vibrant at every stage of life. It’s the spirit behind our promise to “age beautifully” and our commitment to being \"Science-Driven.”<br/><br/></p>",
-            "image_width": 40,
-            "image_aspect_ratio": "4/5",
-            "content_gap": 40,
-            "section_padding": 40,
-            "mobile_layout": "column",
-            "mobile_image_max_width": 280,
-            "mobile_text_alignment": "center",
-            "mobile_content_gap": 25,
-            "mobile_section_padding": 20,
-            "name_font_size": 32,
-            "title_font_size": 20,
-            "description_font_size": 16,
-            "mobile_name_font_size": 28,
-            "mobile_title_font_size": 18,
-            "mobile_description_font_size": 15,
-            "name_margin_bottom": 12,
-            "title_margin_bottom": 20,
-            "background_color": "#f7f5eb",
-            "name_color": "#000000",
-            "title_color": "#666666",
-            "text_color": "#333333",
-            "image_border_radius": 8
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_6e1f1a2_ehgxym"
-      ],
-      "name": "Landing Section",
-      "settings": {
-        "background_color": "",
-        "full_width": true,
-        "top_spacing": 0,
-        "bottom_spacing": 0,
-        "use_top_border": false,
-        "use_bottom_border": false,
-        "full_width_mobile": true,
-        "top_spacing_mobile": 0,
-        "bottom_spacing_mobile": 0,
-        "use_top_border_mobile": false,
-        "use_bottom_border_mobile": false
-      }
     }
   },
   "order": [
@@ -1195,8 +1195,8 @@
     "multicolumn_v2_cTqXCC",
     "image_with_marquee_KQbghH",
     "image_with_blocks_e6WPEE",
+    "landing_section_BjrAJa",
     "featured_reviews_XUfiHi",
-    "cta-banner",
-    "landing_section_BjrAJa"
+    "cta-banner"
   ]
 }
