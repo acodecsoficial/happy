@@ -1063,7 +1063,7 @@
         "image_mob": "shopify://shop_images/376f92ad7882749a343b325f0a735460.jpg",
         "image_height_mob": "adapt",
         "image_first": true,
-        "border": "border-t border-black"
+        "border": "border-b border-black"
       }
     },
     "landing_section_BjrAJa": {
