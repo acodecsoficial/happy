@@ -1068,43 +1068,40 @@
     "landing_section_BjrAJa": {
       "type": "landing-section",
       "blocks": {
-        "ai_gen_block_6e1f1a2_ehgxym": {
-          "type": "ai_gen_block_6e1f1a2",
+        "ai_gen_block_63c811b_Vxg9Ch": {
+          "type": "ai_gen_block_63c811b",
           "settings": {
-            "doctor_image": "shopify://shop_images/1595988081844.jpg",
-            "doctor_name": "Dr. Daniel Yadegar",
-            "doctor_title": "Harvard-Trained Longevity Physician & Happy Aging Co-Founder",
-            "doctor_bio": "<p>Dr. Yadegar is a Harvard-trained longevity physician and Happy Aging co-founder who blends rigorous medical science with a warm, human approach to care. He’s a recognized expert in internal medicine and cardiovascular health with advanced fellowship training in age management and regenerative medicine. He earned his undergraduate degree with honors from Harvard and his MD from Weill Cornell, where he serves as a Clinical Instructor in Medicine.<br/><br/><br/>At Happy Aging, he turns cutting-edge research into real-world results, championing a pro-aging philosophy so women can feel vibrant at every stage of life. It’s the spirit behind our promise to age beautifully and our commitment to being Science-Driven.<br/><br/></p>",
-            "image_width": 40,
-            "image_aspect_ratio": "4/5",
+            "founder_image": "shopify://shop_images/1595988081844_bw.jpg",
+            "founder_name": "Dr. Daniel Yadegar",
+            "founder_title": "Harvard-Trained Longevity Physician & Happy Aging Co-Founder",
+            "founder_bio": "<p>Dr. Yadegar is a Harvard-trained longevity physician and Happy Aging co-founder who blends rigorous medical science with a warm, human approach to care. He’s a recognized expert in internal medicine and cardiovascular health with advanced fellowship training in age management and regenerative medicine. He earned his undergraduate degree with honors from Harvard and his MD from Weill Cornell, where he serves as a Clinical Instructor in Medicine.</p><p>At Happy Aging, he turns cutting-edge research into real-world results, championing a pro-aging philosophy so women can feel vibrant at every stage of life. It’s the spirit behind our promise to  a<em>ge beautifully</em> and our commitment to being Science-Driven.</p>",
+            "section_padding": 60,
             "content_gap": 40,
-            "section_padding": 40,
-            "mobile_layout": "column",
-            "mobile_image_max_width": 280,
-            "mobile_text_alignment": "center",
-            "mobile_content_gap": 25,
-            "mobile_section_padding": 20,
-            "name_font_size": 32,
-            "title_font_size": 20,
-            "description_font_size": 16,
-            "mobile_name_font_size": 34,
-            "mobile_title_font_size": 18,
-            "mobile_description_font_size": 15,
-            "name_margin_bottom": 12,
-            "title_margin_bottom": 20,
+            "content_padding": 20,
             "background_color": "#f7f5eb",
-            "name_color": "#000000",
-            "title_color": "#666666",
+            "title_color": "#000000",
+            "subtitle_color": "#666666",
             "text_color": "#333333",
-            "image_border_radius": 8
+            "title_size": 36,
+            "subtitle_size": 18,
+            "text_size": 16,
+            "title_margin": 8,
+            "subtitle_margin": 16,
+            "mobile_gap": 30,
+            "mobile_text_alignment": "center",
+            "mobile_image_width": 300,
+            "mobile_content_order": "2",
+            "mobile_image_order": "1",
+            "mobile_title_size": 28,
+            "mobile_subtitle_size": 16,
+            "mobile_text_size": 14
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_6e1f1a2_ehgxym"
+        "ai_gen_block_63c811b_Vxg9Ch"
       ],
-      "disabled": true,
       "name": "Landing Section",
       "settings": {
         "background_color": "",
@@ -1118,48 +1115,6 @@
         "bottom_spacing_mobile": 0,
         "use_top_border_mobile": false,
         "use_bottom_border_mobile": false
-      }
-    },
-    "featured_reviews_XUfiHi": {
-      "type": "featured-reviews",
-      "blocks": {
-        "review_6DRgNy": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/1734364688176.webp",
-            "title": "<p>Radiant, hydrated skin</p>",
-            "text": "<p>“I started using the Longevity Shot a month ago and I already see differences. My energy has increased and my skin feels firmer. It's great to find something that really works!”</p>"
-          }
-        },
-        "review_NRrwaD": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/7d3fb2479e800b9a84a73b86b3fed8fb.png",
-            "title": "<p>Loving the NAD+!</p>",
-            "text": "<p>“As someone who knows the amazing benefits of NAD+, I love the ease of taking this product as well! It’s taken only twice a week, and it tastes good! I can’t wait to see how I feel next month!”</p>"
-          }
-        },
-        "review_r739dy": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/1735257052355.webp",
-            "title": "<p>More energy and focus</p>",
-            "text": "<p>“I've been using the Longevity Shot for a few weeks and I love the results. My skin feels more hydrated and the fine lines are less visible. I feel more confident!”</p>"
-          }
-        }
-      },
-      "block_order": [
-        "review_6DRgNy",
-        "review_NRrwaD",
-        "review_r739dy"
-      ],
-      "settings": {
-        "rating": 4.7,
-        "sub_heading": "<p>REVIEWS ACROSS</p><p>ALL PRODUCTS</p>",
-        "title": "<p>AGING LIKE<br/><em>fine wine</em></p>",
-        "cta_link": "/pages/reviews",
-        "cta_text": "",
-        "border": "border-t border-black"
       }
     },
     "cta-banner": {
@@ -1196,7 +1151,6 @@
     "image_with_marquee_KQbghH",
     "image_with_blocks_e6WPEE",
     "landing_section_BjrAJa",
-    "featured_reviews_XUfiHi",
     "cta-banner"
   ]
 }
