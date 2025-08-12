@@ -60,10 +60,10 @@
           {%- render 'image', image: section.settings.second_image, class: 'w-full', sizes: '400px' -%}
         </div> {% endcomment %}
         <div class="d-none lg:block absolute top-[87px] lg:right-[32px] xl:right-[0]">
-          {%- render 'image', image: section.settings.first_image, class: 'max-w-[400px] time-img', sizes: '400px' -%}
+          {%- render 'image', image: section.settings.first_image, class: 'max-w-[260px] time-img', sizes: '400px' -%}
         </div>
         <div class="d-none lg:block absolute top180 lg:left-[32px] xl:left-[0]">
-          {%- render 'image', image: section.settings.second_image, class: 'max-w-[400px] timeline_img', sizes: '400px' -%}
+          {%- render 'image', image: section.settings.second_image, class: 'max-w-[260px] timeline_img', sizes: '400px' -%}
         </div>
       {% endif %}
       {% if forloop.index == 5 and section.settings.third_image != blank %}
@@ -72,7 +72,7 @@
         </div>
         <div class="d-none lg:block absolute top-[974px] lg:right-[0px] xl:right-[-60px]">
           <div class="relative w-[330px]">
-            {%- render 'image', image: section.settings.third_image, class: 'max-w-[330px]', sizes: '400px' -%}
+            {%- render 'image', image: section.settings.third_image, class: 'max-w-[260px]', sizes: '400px' -%}
           </div>
         </div>
       {% endif %}
