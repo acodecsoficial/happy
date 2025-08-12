@@ -9,6 +9,48 @@
  */
 {
   "sections": {
+    "175501706993519f3a": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6e1f1a2_RDtdLe": {
+          "type": "ai_gen_block_6e1f1a2",
+          "disabled": true,
+          "settings": {
+            "doctor_image": "shopify://shop_images/1595988081844.jpg",
+            "doctor_name": "Dr. Daniel Yadegar",
+            "doctor_title": "Harvard-Trained Longevity Physician & Happy Aging Co-Founder",
+            "doctor_bio": "<p>Dr. Yadegar is a Harvard-trained longevity physician and Happy Aging co-founder who blends rigorous medical science with a warm, human approach to care. He’s a recognized expert in internal medicine and cardiovascular health with advanced fellowship training in age management and regenerative medicine. He earned his undergraduate degree with honors from Harvard and his MD from Weill Cornell, where he serves as a Clinical Instructor in Medicine.<br/><br/><br/>At Happy Aging, he turns cutting-edge research into real-world results, championing a pro-aging philosophy so women can feel vibrant at every stage of life. It’s the spirit behind our promise to “age beautifully” and our commitment to being \"Science-Driven.”<br/><br/></p>",
+            "image_width": 40,
+            "image_aspect_ratio": "4/5",
+            "content_gap": 40,
+            "section_padding": 40,
+            "mobile_layout": "column",
+            "mobile_image_max_width": 280,
+            "mobile_text_alignment": "center",
+            "mobile_content_gap": 25,
+            "mobile_section_padding": 20,
+            "name_font_size": 32,
+            "title_font_size": 20,
+            "description_font_size": 16,
+            "mobile_name_font_size": 28,
+            "mobile_title_font_size": 18,
+            "mobile_description_font_size": 15,
+            "name_margin_bottom": 12,
+            "title_margin_bottom": 20,
+            "background_color": "#f7f5eb",
+            "name_color": "#000000",
+            "title_color": "#666666",
+            "text_color": "#333333",
+            "image_border_radius": 8
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6e1f1a2_RDtdLe"
+      ],
+      "settings": {}
+    },
     "hero": {
       "type": "hero",
       "disabled": true,
@@ -1115,45 +1157,11 @@
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>",
             "bio": ""
           }
-        },
-        "doctor_8iaaaa": {
-          "type": "doctor",
-          "settings": {
-            "image": "shopify://shop_images/Mask_group2.png",
-            "title": "Dr. John Doe",
-            "sub_heading": "CREDENTIALS",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>",
-            "bio": ""
-          }
-        },
-        "doctor_8iaaab": {
-          "type": "doctor",
-          "settings": {
-            "image": "shopify://shop_images/Mask_group3.png",
-            "title": "Dr. Jane Doe",
-            "sub_heading": "CREDENTIALS",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>",
-            "bio": ""
-          }
-        },
-        "doctor_8iaaac": {
-          "type": "doctor",
-          "settings": {
-            "image": "shopify://shop_images/Mask_group4.png",
-            "title": "Dr. Janet Doe",
-            "sub_heading": "CREDENTIALS",
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>",
-            "bio": ""
-          }
         }
       },
       "block_order": [
-        "doctor_8iaaae",
-        "doctor_8iaaaa",
-        "doctor_8iaaab",
-        "doctor_8iaaac"
+        "doctor_8iaaae"
       ],
-      "disabled": true,
       "settings": {
         "text_align": "text-center",
         "sub_heading": "",
@@ -1176,9 +1184,21 @@
         "cta_label": "Learn About HA Labs",
         "cta_style": "button"
       }
+    },
+    "landing_intro_fKRnjV": {
+      "type": "landing-intro",
+      "name": "Landing Intro",
+      "settings": {
+        "text_align": "text-center",
+        "sub_heading": "",
+        "title": "",
+        "text": "",
+        "caption": ""
+      }
     }
   },
   "order": [
+    "175501706993519f3a",
     "hero",
     "hero_Nq9J7U",
     "hero_gPwYAK",
@@ -1199,6 +1219,7 @@
     "image_with_blocks_e6WPEE",
     "featured_reviews_XUfiHi",
     "doctors_hqYJaV",
-    "cta-banner"
+    "cta-banner",
+    "landing_intro_fKRnjV"
   ]
 }
