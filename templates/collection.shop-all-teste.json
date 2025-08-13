@@ -108,10 +108,40 @@
         "product_item_jxkrLa": {
           "type": "product_item",
           "settings": {
-            "product": ""
+            "product": "cap-happy-aging-1"
           }
         },
         "product_item_b7Hprb": {
+          "type": "product_item",
+          "settings": {
+            "product": "cap-happy-aging"
+          }
+        },
+        "product_item_WNUi9U": {
+          "type": "product_item",
+          "settings": {
+            "product": "cap-happy-aging-copy"
+          }
+        },
+        "product_item_rUkcaK": {
+          "type": "product_item",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_item_NBmXTY": {
+          "type": "product_item",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_item_hmHEJV": {
+          "type": "product_item",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_item_HDdTFi": {
           "type": "product_item",
           "settings": {
             "product": ""
@@ -141,6 +171,11 @@
         "product_item_bqGLam",
         "product_item_jxkrLa",
         "product_item_b7Hprb",
+        "product_item_WNUi9U",
+        "product_item_rUkcaK",
+        "product_item_NBmXTY",
+        "product_item_hmHEJV",
+        "product_item_HDdTFi",
         "product_item_FFJrkE"
       ],
       "name": "Product List",
