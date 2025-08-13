@@ -1973,6 +1973,7 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/liver_tonic17_1.jpg",
+        "border-top": false,
         "height": "adapt",
         "landscape": false,
         "desktop_image_width": "medium",
@@ -2041,7 +2042,7 @@
       "type": "responsive-image-section",
       "name": "Imagem Responsiva",
       "settings": {
-        "mobile_image": "shopify://shop_images/Image_5_da5a4f19-b4e8-4248-97b9-47e3c8814be0.png"
+        "mobile_image": "shopify://shop_images/how-to-liver.png"
       }
     },
     "subscription_products_Q9kNnn": {
