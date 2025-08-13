@@ -145,8 +145,8 @@
       ],
       "name": "Product List",
       "settings": {
-        "title": "",
-        "show_atc": false
+        "title": "Shop All",
+        "show_atc": true
       }
     }
   },
