@@ -323,7 +323,7 @@
         "full_width": true,
         "top_spacing": 40,
         "bottom_spacing": 40,
-        "use_top_border": false,
+        "use_top_border": true,
         "use_bottom_border": false,
         "full_width_mobile": true,
         "top_spacing_mobile": 40,
