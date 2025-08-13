@@ -271,7 +271,7 @@
       ],
       "name": "Subscription Products",
       "settings": {
-        "title": "<p>Complete <em>your routine</em></p>",
+        "title": "",
         "subtitle": "",
         "all_link_url": "shopify://collections/all",
         "all_link_text": "<p>SEE ALL <em>products</em></p>",
