@@ -16,9 +16,129 @@
         "hero_eyebrow": "",
         "hero_title": "Target the effects of <em>aging from within</em>"
       }
+    },
+    "subscription_products_xhnGrc": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_Lxn6i4": {
+          "type": "product_card",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "quantity_block_Jmbdwt": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146779968
+          }
+        },
+        "quantity_block_cc8kjj": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        },
+        "product_card_XiYbx6": {
+          "type": "product_card",
+          "settings": {
+            "product": "longevity-shots"
+          }
+        },
+        "quantity_block_V373hz": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693008924992
+          }
+        },
+        "quantity_block_AmCQ7d": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693008859456
+          }
+        },
+        "product_card_Td7dxy": {
+          "type": "product_card",
+          "settings": {
+            "product": "lean-muscle-formula"
+          }
+        },
+        "quantity_block_Xbk8Fm": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693107163456
+          }
+        },
+        "quantity_block_exWCYE": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693109719360
+          }
+        },
+        "product_card_Laybwx": {
+          "type": "product_card",
+          "settings": {
+            "product": "hydroburn"
+          }
+        },
+        "quantity_block_nhz4tQ": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693066072384
+          }
+        },
+        "quantity_block_kggY7W": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693090320704
+          }
+        }
+      },
+      "block_order": [
+        "product_card_Lxn6i4",
+        "quantity_block_Jmbdwt",
+        "quantity_block_cc8kjj",
+        "product_card_XiYbx6",
+        "quantity_block_V373hz",
+        "quantity_block_AmCQ7d",
+        "product_card_Td7dxy",
+        "quantity_block_Xbk8Fm",
+        "quantity_block_exWCYE",
+        "product_card_Laybwx",
+        "quantity_block_nhz4tQ",
+        "quantity_block_kggY7W"
+      ],
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<p>Complete <em>your routine</em></p>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
+        "show_all_link": true
+      }
+    },
+    "subscription_products_yWrDAy": {
+      "type": "subscription-products",
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<h2>Complete your routine</h2>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<h2>SEE ALL products</h2>",
+        "show_all_link": true
+      }
     }
   },
   "order": [
-    "main-collection-grid"
+    "main-collection-grid",
+    "subscription_products_xhnGrc",
+    "subscription_products_yWrDAy"
   ]
 }
