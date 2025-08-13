@@ -697,6 +697,14 @@
     "products_carousel_6wT9GL": {
       "type": "products-carousel",
       "blocks": {
+        "product_DYYLqL": {
+          "type": "product",
+          "settings": {
+            "product": "liver-tonic",
+            "title": "",
+            "info": "Liver Tonic"
+          }
+        },
         "product_ibwM4q": {
           "type": "product",
           "settings": {
@@ -785,6 +793,7 @@
         }
       },
       "block_order": [
+        "product_DYYLqL",
         "product_ibwM4q",
         "product_PAERp9",
         "product_7mgEgX",
