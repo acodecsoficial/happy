@@ -1,6 +1,6 @@
 <div class="site-container py-16 lg:py-20 {% if section.settings.show_atc %} lg:pb-0 {% endif %}">
   {% unless section.settings.title == blank %}
-    <h1 class="heading !text-[40px] mb-8 lg:mb-10">{{ section.settings.title }}</h1>
+    <h2 class="heading !text-[40px] mb-8 lg:mb-10">{{ section.settings.title }}</h2>
   {% endunless %}
   <div class="d-grid gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-4">
     {% for block in section.blocks %}
