@@ -126,31 +126,25 @@
         "product_item_rUkcaK": {
           "type": "product_item",
           "settings": {
-            "product": ""
+            "product": "cosmetic-bag-happy-aging-copy"
           }
         },
         "product_item_NBmXTY": {
           "type": "product_item",
           "settings": {
-            "product": ""
+            "product": "cosmetic-bag-happy-aging-1"
           }
         },
         "product_item_hmHEJV": {
           "type": "product_item",
           "settings": {
-            "product": ""
+            "product": "cosmetic-bag-happy-aging"
           }
         },
         "product_item_HDdTFi": {
           "type": "product_item",
           "settings": {
-            "product": ""
-          }
-        },
-        "product_item_FFJrkE": {
-          "type": "product_item",
-          "settings": {
-            "product": ""
+            "product": "cap-age-beautifully"
           }
         }
       },
@@ -175,8 +169,7 @@
         "product_item_rUkcaK",
         "product_item_NBmXTY",
         "product_item_hmHEJV",
-        "product_item_HDdTFi",
-        "product_item_FFJrkE"
+        "product_item_HDdTFi"
       ],
       "name": "Product List",
       "settings": {
