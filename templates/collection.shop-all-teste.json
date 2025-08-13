@@ -18,224 +18,140 @@
         "hero_title": "Target the effects of <em>aging from within</em>"
       }
     },
-    "subscription_products_xhnGrc": {
-      "type": "subscription-products",
+    "product_list_7tQLqi": {
+      "type": "product-list",
       "blocks": {
-        "product_card_Lxn6i4": {
-          "type": "product_card",
+        "product_item_T7QFa8": {
+          "type": "product_item",
+          "settings": {
+            "product": "brain-tonic"
+          }
+        },
+        "product_item_AWWVyi": {
+          "type": "product_item",
+          "settings": {
+            "product": "liver-tonic"
+          }
+        },
+        "product_item_YPKGxz": {
+          "type": "product_item",
+          "settings": {
+            "product": "radiance-tonic"
+          }
+        },
+        "product_item_RAydrz": {
+          "type": "product_item",
+          "settings": {
+            "product": "calm-tonic"
+          }
+        },
+        "product_item_JciQAF": {
+          "type": "product_item",
+          "settings": {
+            "product": "relief-tonic"
+          }
+        },
+        "product_item_Kj3LAk": {
+          "type": "product_item",
+          "settings": {
+            "product": "sleep-tonic"
+          }
+        },
+        "product_item_EnVxzL": {
+          "type": "product_item",
+          "settings": {
+            "product": "immunity-tonic"
+          }
+        },
+        "product_item_UMAzGG": {
+          "type": "product_item",
           "settings": {
             "product": "nmn-cell-renew-tonic"
           }
         },
-        "quantity_block_Jmbdwt": {
-          "type": "quantity_block",
+        "product_item_q9y8Yf": {
+          "type": "product_item",
           "settings": {
-            "quantity": 1,
-            "subscription_id": 693146779968
+            "product": "longevitys-essential"
           }
         },
-        "quantity_block_FXz78B": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 2,
-            "subscription_id": 693146812736
-          }
-        },
-        "product_card_XiYbx6": {
-          "type": "product_card",
+        "product_item_TjiqUR": {
+          "type": "product_item",
           "settings": {
             "product": "longevity-shots"
           }
         },
-        "quantity_block_V373hz": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693008924992
-          }
-        },
-        "quantity_block_AmCQ7d": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693008859456
-          }
-        },
-        "product_card_Td7dxy": {
-          "type": "product_card",
+        "product_item_BbU6if": {
+          "type": "product_item",
           "settings": {
             "product": "lean-muscle-formula"
           }
         },
-        "quantity_block_Xbk8Fm": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693107163456
-          }
-        },
-        "quantity_block_exWCYE": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693109719360
-          }
-        },
-        "product_card_Laybwx": {
-          "type": "product_card",
+        "product_item_Rwciiy": {
+          "type": "product_item",
           "settings": {
             "product": "hydroburn"
           }
         },
-        "quantity_block_nhz4tQ": {
-          "type": "quantity_block",
+        "product_item_gtbJik": {
+          "type": "product_item",
           "settings": {
-            "quantity": 1,
-            "subscription_id": 693066072384
+            "product": "glow-shot"
           }
         },
-        "quantity_block_kggY7W": {
-          "type": "quantity_block",
+        "product_item_bqGLam": {
+          "type": "product_item",
           "settings": {
-            "quantity": 1,
-            "subscription_id": 693090320704
+            "product": "calm-shot"
+          }
+        },
+        "product_item_jxkrLa": {
+          "type": "product_item",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_item_b7Hprb": {
+          "type": "product_item",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_item_FFJrkE": {
+          "type": "product_item",
+          "settings": {
+            "product": ""
           }
         }
       },
       "block_order": [
-        "product_card_Lxn6i4",
-        "quantity_block_Jmbdwt",
-        "quantity_block_FXz78B",
-        "product_card_XiYbx6",
-        "quantity_block_V373hz",
-        "quantity_block_AmCQ7d",
-        "product_card_Td7dxy",
-        "quantity_block_Xbk8Fm",
-        "quantity_block_exWCYE",
-        "product_card_Laybwx",
-        "quantity_block_nhz4tQ",
-        "quantity_block_kggY7W"
+        "product_item_T7QFa8",
+        "product_item_AWWVyi",
+        "product_item_YPKGxz",
+        "product_item_RAydrz",
+        "product_item_JciQAF",
+        "product_item_Kj3LAk",
+        "product_item_EnVxzL",
+        "product_item_UMAzGG",
+        "product_item_q9y8Yf",
+        "product_item_TjiqUR",
+        "product_item_BbU6if",
+        "product_item_Rwciiy",
+        "product_item_gtbJik",
+        "product_item_bqGLam",
+        "product_item_jxkrLa",
+        "product_item_b7Hprb",
+        "product_item_FFJrkE"
       ],
-      "name": "Subscription Products",
-      "settings": {
-        "title": "<p>Complete <em>your routine</em></p>",
-        "subtitle": "",
-        "all_link_url": "shopify://collections/all",
-        "all_link_text": "<p>SEE ALL <em>products</em></p>",
-        "show_all_link": false
-      }
-    },
-    "subscription_products_3VNz3B": {
-      "type": "subscription-products",
-      "blocks": {
-        "product_card_EznmGi": {
-          "type": "product_card",
-          "settings": {
-            "product": "nmn-cell-renew-tonic"
-          }
-        },
-        "quantity_block_hKzXf6": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693146779968
-          }
-        },
-        "quantity_block_eF6Fpr": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 2,
-            "subscription_id": 693146812736
-          }
-        },
-        "product_card_zNAyQn": {
-          "type": "product_card",
-          "settings": {
-            "product": "longevity-shots"
-          }
-        },
-        "quantity_block_hLPYLU": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693008924992
-          }
-        },
-        "quantity_block_9eAGVn": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693008859456
-          }
-        },
-        "product_card_yXXnKd": {
-          "type": "product_card",
-          "settings": {
-            "product": "lean-muscle-formula"
-          }
-        },
-        "quantity_block_qEULJ8": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693107163456
-          }
-        },
-        "quantity_block_fFwMph": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693109719360
-          }
-        },
-        "product_card_B8q4NA": {
-          "type": "product_card",
-          "settings": {
-            "product": "hydroburn"
-          }
-        },
-        "quantity_block_mFpwBf": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693066072384
-          }
-        },
-        "quantity_block_wDrQp3": {
-          "type": "quantity_block",
-          "settings": {
-            "quantity": 1,
-            "subscription_id": 693090320704
-          }
-        }
-      },
-      "block_order": [
-        "product_card_EznmGi",
-        "quantity_block_hKzXf6",
-        "quantity_block_eF6Fpr",
-        "product_card_zNAyQn",
-        "quantity_block_hLPYLU",
-        "quantity_block_9eAGVn",
-        "product_card_yXXnKd",
-        "quantity_block_qEULJ8",
-        "quantity_block_fFwMph",
-        "product_card_B8q4NA",
-        "quantity_block_mFpwBf",
-        "quantity_block_wDrQp3"
-      ],
-      "name": "Subscription Products",
+      "name": "Product List",
       "settings": {
         "title": "",
-        "subtitle": "",
-        "all_link_url": "shopify://collections/all",
-        "all_link_text": "<p>SEE ALL <em>products</em></p>",
-        "show_all_link": false
+        "show_atc": false
       }
     }
   },
   "order": [
     "main-collection-grid",
-    "subscription_products_xhnGrc",
-    "subscription_products_3VNz3B"
+    "product_list_7tQLqi"
   ]
 }
