@@ -21,78 +21,6 @@
     "product_list_7tQLqi": {
       "type": "product-list",
       "blocks": {
-        "product_item_T7QFa8": {
-          "type": "product_item",
-          "settings": {
-            "product": "brain-tonic"
-          }
-        },
-        "product_item_AWWVyi": {
-          "type": "product_item",
-          "settings": {
-            "product": "liver-tonic"
-          }
-        },
-        "product_item_YPKGxz": {
-          "type": "product_item",
-          "settings": {
-            "product": "radiance-tonic"
-          }
-        },
-        "product_item_RAydrz": {
-          "type": "product_item",
-          "settings": {
-            "product": "calm-tonic"
-          }
-        },
-        "product_item_JciQAF": {
-          "type": "product_item",
-          "settings": {
-            "product": "relief-tonic"
-          }
-        },
-        "product_item_Kj3LAk": {
-          "type": "product_item",
-          "settings": {
-            "product": "sleep-tonic"
-          }
-        },
-        "product_item_EnVxzL": {
-          "type": "product_item",
-          "settings": {
-            "product": "immunity-tonic"
-          }
-        },
-        "product_item_UMAzGG": {
-          "type": "product_item",
-          "settings": {
-            "product": "nmn-cell-renew-tonic"
-          }
-        },
-        "product_item_q9y8Yf": {
-          "type": "product_item",
-          "settings": {
-            "product": "longevitys-essential"
-          }
-        },
-        "product_item_TjiqUR": {
-          "type": "product_item",
-          "settings": {
-            "product": "longevity-shots"
-          }
-        },
-        "product_item_BbU6if": {
-          "type": "product_item",
-          "settings": {
-            "product": "lean-muscle-formula"
-          }
-        },
-        "product_item_Rwciiy": {
-          "type": "product_item",
-          "settings": {
-            "product": "hydroburn"
-          }
-        },
         "product_item_gtbJik": {
           "type": "product_item",
           "settings": {
@@ -104,54 +32,92 @@
           "settings": {
             "product": "calm-shot"
           }
-        },
-        "product_item_jxkrLa": {
-          "type": "product_item",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_item_b7Hprb": {
-          "type": "product_item",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_item_FFJrkE": {
-          "type": "product_item",
-          "settings": {
-            "product": ""
-          }
         }
       },
       "block_order": [
-        "product_item_T7QFa8",
-        "product_item_AWWVyi",
-        "product_item_YPKGxz",
-        "product_item_RAydrz",
-        "product_item_JciQAF",
-        "product_item_Kj3LAk",
-        "product_item_EnVxzL",
-        "product_item_UMAzGG",
-        "product_item_q9y8Yf",
-        "product_item_TjiqUR",
-        "product_item_BbU6if",
-        "product_item_Rwciiy",
         "product_item_gtbJik",
-        "product_item_bqGLam",
-        "product_item_jxkrLa",
-        "product_item_b7Hprb",
-        "product_item_FFJrkE"
+        "product_item_bqGLam"
       ],
       "name": "Product List",
       "settings": {
         "title": "",
         "show_atc": false
       }
+    },
+    "featured_product_y7Ra8A": {
+      "type": "featured-product",
+      "blocks": {
+        "text_mHndNf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_QBJNHJ": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_qFm6fe": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_mtt7Bc": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_7wAdbe": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_LKLe6H": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_FUcMYh": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_mHndNf",
+        "title_QBJNHJ",
+        "price_qFm6fe",
+        "variant_picker_mtt7Bc",
+        "quantity_selector_7wAdbe",
+        "buy_buttons_LKLe6H",
+        "share_FUcMYh"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main-collection-grid",
-    "product_list_7tQLqi"
+    "product_list_7tQLqi",
+    "featured_product_y7Ra8A"
   ]
 }
