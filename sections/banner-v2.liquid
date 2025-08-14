@@ -15,7 +15,7 @@
               class="media media--transparent ratio"
               style="--ratio-percent: {{ ratio }}%;"
             >
-              {{ section.settings.image_desk | image_url: width: 2000 | image_tag: class: 'object-cover', loading: 'lazy' }}
+              {{ section.settings.image_desk | image_url: width: full | image_tag: class: 'object-cover', loading: 'lazy' }}
             </div>
           </div>
         {%- else -%}
