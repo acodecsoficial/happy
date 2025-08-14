@@ -7,13 +7,13 @@
         {% comment %} DESKTOP IMAGE {% endcomment %}
         {%- if section.settings.image_desk -%}
           {%- liquid assign ratio = 40 -%}
-          <div class="d-none lg:block">
+          <div class="hidden lg:block">
             <div class="media media--transparent ratio" style="--ratio-percent: {{ ratio }}%;">
               {{ section.settings.image_desk | image_url: width: 2000 | image_tag: class: 'object-cover', loading: 'lazy' }}
             </div>
           </div>
         {%- else -%}
-          <div class="d-none lg:block" style="height: 20vw;">
+          <div class="hidden lg:block" style="height: 20vw;">
             {{ 'collection-apparel-1' | placeholder_svg_tag: 'w-full h-full' }}
           </div>
         {%- endif -%}
@@ -43,7 +43,7 @@
 
           {% if section.settings.title != blank %}
             <div class="flex flex-col lg:flex-row items-baseline gap-2 mb-6">
-              <h2 class="heading !text-[50px]">{{ section.settings.title }}</h2>
+              <h2 class="heading text-[50px]">{{ section.settings.title }}</h2>
             </div>
           {% endif %}
 
@@ -54,8 +54,7 @@
 
         {% unless section.settings.cta_link == blank or section.settings.cta_text == blank %}
           <a
-            style="padding: 10px 20px;"
-            class="button mx-auto lg:mx-0 {% if section.settings.button_color == 'cream' %}button--cream{% else %}button--black{% endif %}"
+            class="button mx-auto lg:mx-0 mt-10 lg:mt-0 {% if section.settings.button_color == 'cream' %}button--cream{% else %}button--black{% endif %}"
             href="{{ section.settings.cta_link }}"
             title="{{ section.settings.cta_text }}"
           >
