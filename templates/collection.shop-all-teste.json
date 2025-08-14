@@ -172,11 +172,11 @@
         "product_item_HDdTFi"
       ],
       "custom_css": [
-        ".shop-all-title {font-size: 64px !important; font-style: italic !important; font-weight: 300 !important; letter-spacing: 1px; margin-bottom: 24px; color: #222;}",
-        ".no-js-hidden {display: block !important;}",
-        ".product-card-wrapper .quick-add {opacity: 1 !important; transform: none !important; display: block !important;}",
-        ".product-card-wrapper {margin-bottom: 30px !important; /* espaço vertical */}",
-        ".section-shop-all .d-grid {gap: 20px !important; /* espaço horizontal entre produtos */}"
+        ".shop-all-title{font-size:64px!important;font-style:italic!important;font-weight:300!important;letter-spacing:1px;margin-bottom:24px;color:#222}",
+        ".no-js-hidden{display:block!important}",
+        ".product-card-wrapper .quick-add{opacity:1!important;transform:none!important;display:block!important}",
+        ".section-shop-all .d-grid{column-gap:20px!important;row-gap:30px!important}",
+        ".product-card-wrapper{display:flex;flex-direction:column"
       ],
       "name": "Product List",
       "settings": {
