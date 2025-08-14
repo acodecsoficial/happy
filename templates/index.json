@@ -101,6 +101,7 @@
       "settings": {
         "image_desk": "shopify://shop_images/HOMEBANNER_56bae1ed-2094-4a9d-9291-9b8de7905eef.jpg",
         "image_mob": "shopify://shop_images/HOMEBANNER.jpg",
+        "full_width": true,
         "image_ratio": 40,
         "eyebrow_text": "DETOX MADE EASY",
         "title": "<h1>LIPOSOMAL <em>curcumin</em></h1>",
