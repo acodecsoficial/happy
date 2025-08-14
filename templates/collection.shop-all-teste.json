@@ -173,9 +173,8 @@
       ],
       "custom_css": [
         ".shop-all-title{font-size:64px!important;font-style:italic!important;font-weight:300!important;letter-spacing:1px;margin-bottom:24px;color:#222}",
-        ".product-card-wrapper .quick-add{opacity:1!important;transform:none!important;display:block!important}",
-        ".section-shop-all .d-grid{column-gap:15px!important;row-gap:10px!important;align-items:stretch}",
-        ".section-shop-all .d-grid>*{height:100%}"
+        ".product-card-wrapper h2,.product-card-wrapper .eyebrow{margin-top:4px!important;margin-bottom:6px!important}",
+        ".product-card-wrapper{margin-bottom:40px!important}"
       ],
       "name": "Product List",
       "settings": {
