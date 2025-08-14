@@ -171,11 +171,7 @@
         "product_item_hmHEJV",
         "product_item_HDdTFi"
       ],
-      "custom_css": [
-        ".shop-all-title{font-size:64px!important;font-style:italic!important;font-weight:300!important;letter-spacing:1px;margin-bottom:24px;color:#222}",
-        ".no-js-hidden{display:block!important}",
-        ".product-card-wrapper .quick-add{opacity:1!important;transform:none!important;display:block!important}"
-      ],
+      "custom_css": [],
       "name": "Product List",
       "settings": {
         "title": "Shop All",
