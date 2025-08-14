@@ -171,7 +171,9 @@
         "product_item_hmHEJV",
         "product_item_HDdTFi"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "#shop-all-teste .heading {font-size: 60px !important; font-style: italic;}"
+      ],
       "name": "Product List",
       "settings": {
         "title": "Shop All",
