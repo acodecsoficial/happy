@@ -7,10 +7,13 @@
   %}
 
   <style>
+    /* Espaçamento configurável do body */
     #BannerV2-{{ section.id }} .body-copy { margin-bottom: {{ mobile_spacing }}px; }
     @media (min-width: 1024px) {
       #BannerV2-{{ section.id }} .body-copy { margin-bottom: {{ desktop_spacing }}px; }
     }
+    /* Garante itálico no <em> dentro do heading */
+    #BannerV2-{{ section.id }} .heading em { font-style: italic !important; }
   </style>
 
   {%- comment -%} === BLOCO DA IMAGEM (com opção full-bleed) === {%- endcomment -%}
@@ -128,8 +131,8 @@
     },
 
     { "type": "text", "id": "eyebrow_text", "label": "Eyebrow Text", "default": "WHY WAIT?" },
-    { "type": "richtext", "id": "title", "label": "Heading Text", "default": "<p>YOUR CALM <em>starts now</em></p>" },
-    { "type": "richtext", "id": "body_text", "label": "Body Text", "default": "<p>Don't let stress hold you back. With Calm Shot, you can approach every challenge with clarity, focus, and peace of mind. Take control today! Try Calm Shot and experience the difference!</p>" },
+    { "type": "richtext", "id": "title", "label": "Heading Text", "default": "<p>LIPOSOMAL <em>curcumin</em></p>" },
+    { "type": "richtext", "id": "body_text", "label": "Body Text", "default": "<p>Liver Tonic was made to help you feel clear, calm, and vibrant every day.</p>" },
     { "type": "text", "id": "cta_text", "label": "CTA Text", "default": "Shop now" },
     { "type": "url", "id": "cta_link", "label": "CTA Link" },
     {
