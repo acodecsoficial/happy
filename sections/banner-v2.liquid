@@ -1,74 +1,101 @@
-<div class="{% if section.settings.show_border_top %}border-t border-black{% endif %} py-16 pt-8">
+<div id="BannerV2-{{ section.id }}" class="{% if section.settings.show_border_top %}border-t border-black{% endif %} py-16 pt-8">
+  {% liquid
+    assign image_ratio     = section.settings.image_ratio | default: 40
+    assign alt_text        = section.settings.title | default: '' | strip_html | strip | escape
+    assign mobile_spacing  = section.settings.mobile_text_spacing | default: 30
+    assign desktop_spacing = section.settings.desktop_text_spacing | default: 0
+  %}
+
+  <style>
+    /* Espaçamento configurável do body */
+    #BannerV2-{{ section.id }} .body-copy { margin-bottom: {{ mobile_spacing }}px; }
+    @media (min-width: 1024px) {
+      #BannerV2-{{ section.id }} .body-copy { margin-bottom: {{ desktop_spacing }}px; }
+    }
+    /* Heading próprio desta seção (evita regras globais do tema) */
+    #BannerV2-{{ section.id }} .banner-heading em,
+    #BannerV2-{{ section.id }} .banner-heading i {
+      font-style: italic;
+    }
+  </style>
+
+  {%- comment -%} === BLOCO DA IMAGEM (com opção full-bleed) === {%- endcomment -%}
+  {% if section.settings.image_desk or section.settings.image_mob %}
+    <div
+      class="{% if section.settings.full_width %}w-screen{% else %}site-container{% endif %}"
+      {% if section.settings.full_width %}style="margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);" {% endif %}
+    >
+      <div class="relative w-full" style="padding-top:{{ image_ratio }}%;">
+        <div class="absolute inset-0">
+          <picture class="block w-full h-full">
+            {% if section.settings.image_desk %}
+              <source media="(min-width: 1024px)" srcset="{{ section.settings.image_desk | image_url: width: 2000 }}">
+            {% endif %}
+            {% if section.settings.image_mob %}
+              {{ section.settings.image_mob
+                | image_url: width: 1800
+                | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: alt_text
+              }}
+            {% else %}
+              {{ section.settings.image_desk
+                | image_url: width: 1800
+                | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: alt_text
+              }}
+            {% endif %}
+          </picture>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    {%- comment -%} Placeholders se nenhuma imagem estiver setada {%- endcomment -%}
+    <div
+      class="{% if section.settings.full_width %}w-screen{% else %}site-container{% endif %}"
+      {% if section.settings.full_width %}style="margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);" {% endif %}
+    >
+      <div class="hidden lg:block" style="height: 20vw;">
+        {{ 'collection-apparel-1' | placeholder_svg_tag: 'w-full h-full' }}
+      </div>
+      <div class="lg:hidden">
+        {{ 'collection-apparel-2' | placeholder_svg_tag: 'w-full' }}
+      </div>
+    </div>
+  {% endif %}
+
+  {%- comment -%} === TEXTO / CTA (sempre dentro do container) === {%- endcomment -%}
   <div class="site-container">
     <div class="lg:px-0">
-      
-      {%- comment -%} Image Container (robusto com <picture>) {%- endcomment -%}
-      <div>
-        {% if section.settings.image_desk or section.settings.image_mob %}
-          <div class="relative w-full" style="padding-top:40%;"> {# 40% ~ 2.5:1 #}
-            <div class="absolute inset-0">
-              <picture class="block w-full h-full">
-                {%- comment -%} Fonte para telas ≥1024px (desktop) {%- endcomment -%}
-                {% if section.settings.image_desk %}
-                  <source media="(min-width: 1024px)" srcset="{{ section.settings.image_desk | image_url: width: 2000 }}">
-                {% endif %}
-
-                {%- comment -%} Fallback <img>: usa mobile se existir, senão desktop {%- endcomment -%}
-                {% if section.settings.image_mob %}
-                  {{ section.settings.image_mob
-                    | image_url: width: 1800
-                    | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: section.settings.title | strip_html | escape
-                  }}
-                {% else %}
-                  {{ section.settings.image_desk
-                    | image_url: width: 1800
-                    | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: section.settings.title | strip_html | escape
-                  }}
-                {% endif %}
-              </picture>
-            </div>
-          </div>
-        {% else %}
-          {%- comment -%} Placeholders se nenhuma imagem estiver setada {%- endcomment -%}
-          <div class="hidden lg:block" style="height: 20vw;">
-            {{ 'collection-apparel-1' | placeholder_svg_tag: 'w-full h-full' }}
-          </div>
-          <div class="lg:hidden">
-            {{ 'collection-apparel-2' | placeholder_svg_tag: 'w-full' }}
-          </div>
-        {% endif %}
-      </div>
-
-      {%- comment -%} Text Container {%- endcomment -%}
       <div class="flex flex-col lg:flex-row justify-between items-start pt-6 lg:pt-10">
         <div class="flex flex-col max-w-[490px]">
-          
           {% if section.settings.eyebrow_text != blank %}
             <div class="eyebrow mb-4">{{ section.settings.eyebrow_text }}</div>
           {% endif %}
 
           {% if section.settings.title != blank %}
             <div class="flex flex-col lg:flex-row items-baseline gap-2 mb-6">
-              <h2 class="heading text-[50px]">{{ section.settings.title }}</h2>
+              <!-- NÃO usar <h2> com richtext para evitar <p> dentro de h2 -->
+              <div class="banner-heading text-[50px] leading-tight">
+                {{ section.settings.title }}
+              </div>
             </div>
           {% endif %}
 
           {% if section.settings.body_text != blank %}
-            <div class="rte li-circle">{{ section.settings.body_text }}</div>
+            <div class="rte li-circle body-copy">
+              {{ section.settings.body_text }}
+            </div>
           {% endif %}
         </div>
 
         {% unless section.settings.cta_link == blank or section.settings.cta_text == blank %}
           <a
-            class="button mx-auto lg:mx-0 mt-10 lg:mt-0 {% if section.settings.button_color == 'cream' %}button--cream{% else %}button--black{% endif %}"
+            class="button mx-auto lg:mx-0 mt-0 lg:mt-0 {% if section.settings.button_color == 'cream' %}button--cream{% else %}button--black{% endif %}"
             href="{{ section.settings.cta_link }}"
-            title="{{ section.settings.cta_text }}"
+            title="{{ section.settings.cta_text | escape }}"
           >
             {{ section.settings.cta_text }}
           </a>
         {% endunless %}
       </div>
-
     </div>
   </div>
 </div>
@@ -78,71 +105,23 @@
   "name": "Banner v2",
   "tag": "section",
   "settings": [
-    {
-      "type": "header",
-      "content": "Images"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_desk",
-      "label": "Image Desktop"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_mob",
-      "label": "Image Mobile"
-    },
-    {
-      "type": "text",
-      "id": "eyebrow_text",
-      "label": "Eyebrow Text",
-      "default": "WHY WAIT?"
-    },
-    {
-      "type": "richtext",
-      "id": "title",
-      "label": "Heading Text",
-      "default": "<p>YOUR CALM <em>starts now</em></p>"
-    },
-    {
-      "type": "richtext",
-      "id": "body_text",
-      "label": "Body Text",
-      "default": "<p>Don't let stress hold you back. With Calm Shot, you can approach every challenge with clarity, focus, and peace of mind. Take control today! Try Calm Shot and experience the difference!</p>"
-    },
-    {
-      "type": "text",
-      "id": "cta_text",
-      "label": "CTA Text",
-      "default": "Shop now"
-    },
-    {
-      "type": "url",
-      "id": "cta_link",
-      "label": "CTA Link"
-    },
-    {
-      "type": "select",
-      "id": "button_color",
-      "label": "Button Color",
-      "default": "black",
-      "options": [
-        { "value": "black", "label": "Black" },
-        { "value": "cream", "label": "Cream" }
-      ]
-    },
-    {
-      "type": "checkbox",
-      "id": "show_border_top",
-      "label": "Show Top Border",
-      "default": true
-    }
+    { "type": "header", "content": "Images" },
+    { "type": "image_picker", "id": "image_desk", "label": "Image Desktop" },
+    { "type": "image_picker", "id": "image_mob", "label": "Image Mobile" },
+
+    { "type": "checkbox", "id": "full_width", "label": "Imagem em largura total (full screen)", "default": false },
+    { "type": "range", "id": "image_ratio", "label": "Altura do banner (ratio %)", "min": 20, "max": 80, "step": 1, "unit": "%", "default": 40 },
+    { "type": "range", "id": "mobile_text_spacing", "label": "Espaço abaixo do texto (mobile)", "min": 0, "max": 100, "step": 5, "unit": "px", "default": 30 },
+    { "type": "range", "id": "desktop_text_spacing", "label": "Espaço abaixo do texto (desktop)", "min": 0, "max": 100, "step": 5, "unit": "px", "default": 0 },
+
+    { "type": "text", "id": "eyebrow_text", "label": "Eyebrow Text", "default": "WHY WAIT?" },
+    { "type": "richtext", "id": "title", "label": "Heading Text", "default": "<p>LIPOSOMAL <em>curcumin</em></p>" },
+    { "type": "richtext", "id": "body_text", "label": "Body Text", "default": "<p>Liver Tonic was made to help you feel clear, calm, and vibrant every day.</p>" },
+    { "type": "text", "id": "cta_text", "label": "CTA Text", "default": "Shop now" },
+    { "type": "url", "id": "cta_link", "label": "CTA Link" },
+    { "type": "select", "id": "button_color", "label": "Button Color", "default": "black", "options": [ { "value": "black", "label": "Black" }, { "value": "cream", "label": "Cream" } ] },
+    { "type": "checkbox", "id": "show_border_top", "label": "Show Top Border", "default": true }
   ],
-  "presets": [
-    {
-      "name": "Banner v2",
-      "settings": {}
-    }
-  ]
+  "presets": [{ "name": "Banner v2", "settings": {} }]
 }
 {% endschema %}
