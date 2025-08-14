@@ -2,35 +2,41 @@
   <div class="site-container">
     <div class="lg:px-0">
       
-      {%- comment -%} Image Container {%- endcomment -%}
+      {%- comment -%} Image Container (robusto com <picture>) {%- endcomment -%}
       <div>
-        {% comment %} DESKTOP IMAGE {% endcomment %}
-        {%- if section.settings.image_desk -%}
-          {%- liquid assign ratio = 40 -%}
-          <div class="hidden lg:block">
-            <div class="media media--transparent ratio" style="--ratio-percent: {{ ratio }}%;">
-              {{ section.settings.image_desk | image_url: width: 2000 | image_tag: class: 'object-cover', loading: 'lazy' }}
+        {% if section.settings.image_desk or section.settings.image_mob %}
+          <div class="relative w-full" style="padding-top:40%;"> {# 40% ~ 2.5:1 #}
+            <div class="absolute inset-0">
+              <picture class="block w-full h-full">
+                {%- comment -%} Fonte para telas ≥1024px (desktop) {%- endcomment -%}
+                {% if section.settings.image_desk %}
+                  <source media="(min-width: 1024px)" srcset="{{ section.settings.image_desk | image_url: width: 2000 }}">
+                {% endif %}
+
+                {%- comment -%} Fallback <img>: usa mobile se existir, senão desktop {%- endcomment -%}
+                {% if section.settings.image_mob %}
+                  {{ section.settings.image_mob
+                    | image_url: width: 1800
+                    | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: section.settings.title | strip_html | escape
+                  }}
+                {% else %}
+                  {{ section.settings.image_desk
+                    | image_url: width: 1800
+                    | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: section.settings.title | strip_html | escape
+                  }}
+                {% endif %}
+              </picture>
             </div>
           </div>
-        {%- else -%}
+        {% else %}
+          {%- comment -%} Placeholders se nenhuma imagem estiver setada {%- endcomment -%}
           <div class="hidden lg:block" style="height: 20vw;">
             {{ 'collection-apparel-1' | placeholder_svg_tag: 'w-full h-full' }}
           </div>
-        {%- endif -%}
-
-        {% comment %} MOBILE IMAGE {% endcomment %}
-        {%- if section.settings.image_mob -%}
-          {%- liquid assign ratio = 1 | divided_by: section.settings.image_mob.aspect_ratio | times: 100 -%}
-          <div class="lg:hidden">
-            <div class="media media--transparent ratio" style="--ratio-percent: {{ ratio }}%">
-              {{ section.settings.image_mob | image_url: width: 2000 | image_tag: class: 'object-cover', loading: 'lazy' }}
-            </div>
-          </div>
-        {%- else -%}
           <div class="lg:hidden">
             {{ 'collection-apparel-2' | placeholder_svg_tag: 'w-full' }}
           </div>
-        {%- endif -%}
+        {% endif %}
       </div>
 
       {%- comment -%} Text Container {%- endcomment -%}
