@@ -172,7 +172,7 @@
         "product_item_HDdTFi"
       ],
       "custom_css": [
-        "h2.heading:first-of-type {font-size: 64px !important; font-style: italic !important;}"
+        "h2.heading:has(> :where(:not(*)):contains(\"Shop All\")) {font-size: 64px !important; font-style: italic !important;}"
       ],
       "name": "Product List",
       "settings": {
