@@ -172,8 +172,7 @@
         "product_item_HDdTFi"
       ],
       "custom_css": [
-        "h2.heading:has(> :where(:not(*)):contains(\"Shop All\")) {font-size: 64px !important; font-style: italic !important;}",
-        ".shop-all-title {font-size: 64px !important; font-style: italic !important;}"
+        ".shop-all-title {font-size: 64px !important; font-style: italic !important; font-weight: 300 !important; /* mais leve */ letter-spacing: 1px; /* espaçamento entre letras */ margin-bottom: 1.5rem; /* mais respiro abaixo */ color: #222; /* cor levemente suavizada */}"
       ],
       "name": "Product List",
       "settings": {
