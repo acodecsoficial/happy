@@ -1,6 +1,6 @@
 <div class="{% if section.settings.show_border_top %}border-t border-black{% endif %} py-16 pt-8">
   <div class="site-container">
-      <div class="lg:px-0">
+    <div class="lg:px-0">
       {%- comment -%} Image Container {%- endcomment -%}
       <div class="">
         {% comment %} DESKTOP IMAGE: {% endcomment %}
@@ -8,13 +8,8 @@
           {%- liquid
             assign ratio = 40
           -%}
-          <div
-            class="d-none lg:block"
-          >
-            <div
-              class="media media--transparent ratio"
-              style="--ratio-percent: {{ ratio }}%;"
-            >
+          <div class="d-none lg:block">
+            <div class="media media--transparent ratio" style="--ratio-percent: {{ ratio }}%;">
               {{ section.settings.image_desk | image_url: width: 2000 | image_tag: class: 'object-cover', loading: 'lazy' }}
             </div>
           </div>
@@ -23,6 +18,7 @@
             {{ 'collection-apparel-1' | placeholder_svg_tag: 'w-full h-full' }}
           </div>
         {%- endif -%}
+
         {% comment %} MOBILE IMAGE: {% endcomment %}
         {%- if section.settings.image_mob -%}
           {%- liquid
@@ -39,26 +35,40 @@
           </div>
         {%- endif -%}
       </div>
+
       {% comment %} Text Container {% endcomment %}
       <div class="flex flex-col lg:flex-row justify-between items-start pt-6 lg:pt-10">
         <div class="flex flex-col max-w-[490px]">
           {% if section.settings.eyebrow_text != blank %}
             <div class="eyebrow mb-4">{{ section.settings.eyebrow_text }}</div>
           {% endif %}
+
           {%- if section.settings.title != blank -%}
             <div class="flex flex-col lg:flex-row items-baseline gap-2 mb-6">
               <h2 class="heading !text-[50px]">{{ section.settings.title }}</h2>
             </div>
           {%- endif -%}
+
           {% if section.settings.body_text != blank %}
             <div class="rte li-circle">{{ section.settings.body_text }}</div>
           {% endif %}
         </div>
+
         {% if section.settings.button_text != blank %}
           <floating-cta class="block mt-10 lg:mt-0 text-center lg:text-left w-full lg:w-auto">
             <button class="button button--black">{{ section.settings.button_text }}</button>
           </floating-cta>
-          
+
+          {% unless section.settings.cta_link == blank or section.settings.cta_text == blank %}
+            <a
+              style="padding: 10px 20px;"
+              class="button mx-auto lg:mx-0 {% if section.settings.button_color == 'cream' %}button--cream{% else %}button--black{% endif %}"
+              href="{{ section.settings.cta_link }}"
+              title="{{ section.settings.cta_text }}"
+            >
+              {{ section.settings.cta_text }}
+            </a>
+          {% endunless %}
         {% endif %}
       </div>
     </div>
@@ -79,7 +89,6 @@
       "id": "image_desk",
       "label": "Image Desktop"
     },
-
     {
       "type": "image_picker",
       "id": "image_mob",
@@ -109,7 +118,27 @@
       "label": "Button Text",
       "default": "Get Calm"
     },
-    { "type": "url",        "id": "cta_link",                 "label": "CTA Link" },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Link"
+    },
+    {
+      "type": "select",
+      "id": "button_color",
+      "label": "Button Color",
+      "default": "black",
+      "options": [
+        { "value": "black", "label": "Black" },
+        { "value": "cream", "label": "Cream" }
+      ]
+    },
     {
       "type": "checkbox",
       "id": "show_border_top",
