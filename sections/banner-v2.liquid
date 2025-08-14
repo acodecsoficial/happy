@@ -1,5 +1,4 @@
 <div class="{% if section.settings.show_border_top %}border-t border-black{% endif %} py-16 pt-8">
-  {%- comment -%} Pré-cálculos {%- endcomment -%}
   {% liquid
     assign image_ratio = section.settings.image_ratio | default: 40
     assign alt_text = section.settings.title | default: '' | strip_html | strip | escape
@@ -64,13 +63,13 @@
           {% endif %}
 
           {% if section.settings.body_text != blank %}
-            <div class="rte li-circle">{{ section.settings.body_text }}</div>
+            <div class="rte li-circle mb-[30px] lg:mb-0">{{ section.settings.body_text }}</div>
           {% endif %}
         </div>
 
         {% unless section.settings.cta_link == blank or section.settings.cta_text == blank %}
           <a
-            class="button mx-auto lg:mx-0 mt-10 lg:mt-0 {% if section.settings.button_color == 'cream' %}button--cream{% else %}button--black{% endif %}"
+            class="button mx-auto lg:mx-0 mt-0 lg:mt-0 {% if section.settings.button_color == 'cream' %}button--cream{% else %}button--black{% endif %}"
             href="{{ section.settings.cta_link }}"
             title="{{ section.settings.cta_text | escape }}"
           >
