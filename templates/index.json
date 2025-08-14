@@ -105,6 +105,9 @@
         "title": "<p>LIPOSOMAL <em>curcumin</em></p>",
         "body_text": "<p>Liver Tonic was made to help you feel clear, calm, and vibrant every day.</p>",
         "button_text": "SHOP NOW",
+        "cta_text": "SHOP NOW",
+        "cta_link": "shopify://products/liver-tonic",
+        "button_color": "black",
         "show_border_top": true
       }
     },
