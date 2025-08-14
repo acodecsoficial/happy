@@ -2,9 +2,14 @@
   {% unless section.settings.title == blank %}
     <h2 class="heading shop-all-title !text-[40px] mb-8 lg:mb-10">{{ section.settings.title }}</h2>
   {% endunless %}
+
   <div class="d-grid gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-4">
     {% for block in section.blocks %}
-      {% render 'product-item', product: block.settings.product, show_atc: section.settings.show_atc %}
+      {% render 'product-item',
+        product: block.settings.product,
+        show_atc: section.settings.show_atc,
+        show_learn_more: section.settings.show_learn_more
+      %}
     {% endfor %}
   </div>
 </div>
@@ -18,12 +23,20 @@
     {
       "type": "text",
       "id": "title",
-      "label": "Title"
+      "label": "Title",
+      "default": "Shop All"
     },
     {
       "type": "checkbox",
       "id": "show_atc",
-      "label": "Show Add To Cart"
+      "label": "Show Add To Cart",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_learn_more",
+      "label": "Mostrar botão Learn More",
+      "default": true
     }
   ],
   "blocks": [
