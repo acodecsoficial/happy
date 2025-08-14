@@ -1,6 +1,6 @@
 <div class="site-container py-16 lg:py-20 section-shop-all {% if section.settings.show_atc %} lg:pb-0 {% endif %}">
   {% unless section.settings.title == blank %}
-    <h2 class="heading !text-[40px] mb-8 lg:mb-10">{{ section.settings.title }}</h2>
+    <h2 class="heading shop-all-title !text-[40px] mb-8 lg:mb-10">{{ section.settings.title }}</h2>
   {% endunless %}
   <div class="d-grid gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-4">
     {% for block in section.blocks %}
@@ -8,19 +8,8 @@
     {% endfor %}
   </div>
 </div>
-.heading {
-  font-size: 60px !important;
-  font-style: italic;
-}
-
-#shopify-section-1234567890 h2.heading.\!text-\[40px\] {
-  font-size: 64px !important;
-  font-style: italic !important;
-}
-
 
 {% schema %}
-
 {
   "name": "Product List",
   "class": "border-t border-black",
