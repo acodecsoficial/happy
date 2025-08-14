@@ -1,11 +1,14 @@
 <div class="{% if section.settings.show_border_top %}border-t border-black{% endif %} py-16 pt-8">
   <div class="site-container">
     <div class="lg:px-0">
-      
-      {%- comment -%} Image Container (robusto com <picture>) {%- endcomment -%}
+
+      {%- comment -%} Image Container (robusto com <picture> + ratio configurável) {%- endcomment -%}
       <div>
+        {% liquid
+          assign image_ratio = section.settings.image_ratio | default: 40
+        %}
         {% if section.settings.image_desk or section.settings.image_mob %}
-          <div class="relative w-full" style="padding-top:40%;"> {# 40% ~ 2.5:1 #}
+          <div class="relative w-full" style="padding-top:{{ image_ratio }}%;"> {# altura = % da largura #}
             <div class="absolute inset-0">
               <picture class="block w-full h-full">
                 {%- comment -%} Fonte para telas ≥1024px (desktop) {%- endcomment -%}
@@ -42,7 +45,6 @@
       {%- comment -%} Text Container {%- endcomment -%}
       <div class="flex flex-col lg:flex-row justify-between items-start pt-6 lg:pt-10">
         <div class="flex flex-col max-w-[490px]">
-          
           {% if section.settings.eyebrow_text != blank %}
             <div class="eyebrow mb-4">{{ section.settings.eyebrow_text }}</div>
           {% endif %}
@@ -91,6 +93,16 @@
       "type": "image_picker",
       "id": "image_mob",
       "label": "Image Mobile"
+    },
+    {
+      "type": "range",
+      "id": "image_ratio",
+      "label": "Altura do banner (ratio %)",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "unit": "%",
+      "default": 40
     },
     {
       "type": "text",
