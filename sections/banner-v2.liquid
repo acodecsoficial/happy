@@ -6,26 +6,26 @@
       <div>
         {% liquid
           assign image_ratio = section.settings.image_ratio | default: 40
+          assign alt_text = section.settings.title | default: '' | strip_html | strip | escape
         %}
         {% if section.settings.image_desk or section.settings.image_mob %}
-          <div class="relative w-full" style="padding-top:{{ image_ratio }}%;"> {# altura = % da largura #}
+          <!-- altura = % da largura -->
+          <div class="relative w-full" style="padding-top:{{ image_ratio }}%;">
             <div class="absolute inset-0">
               <picture class="block w-full h-full">
-                {%- comment -%} Fonte para telas ≥1024px (desktop) {%- endcomment -%}
                 {% if section.settings.image_desk %}
                   <source media="(min-width: 1024px)" srcset="{{ section.settings.image_desk | image_url: width: 2000 }}">
                 {% endif %}
 
-                {%- comment -%} Fallback <img>: usa mobile se existir, senão desktop {%- endcomment -%}
                 {% if section.settings.image_mob %}
                   {{ section.settings.image_mob
                     | image_url: width: 1800
-                    | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: section.settings.title | strip_html | escape
+                    | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: alt_text
                   }}
                 {% else %}
                   {{ section.settings.image_desk
                     | image_url: width: 1800
-                    | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: section.settings.title | strip_html | escape
+                    | image_tag: class: 'w-full h-full object-cover', loading: 'lazy', alt: alt_text
                   }}
                 {% endif %}
               </picture>
@@ -64,7 +64,7 @@
           <a
             class="button mx-auto lg:mx-0 mt-10 lg:mt-0 {% if section.settings.button_color == 'cream' %}button--cream{% else %}button--black{% endif %}"
             href="{{ section.settings.cta_link }}"
-            title="{{ section.settings.cta_text }}"
+            title="{{ section.settings.cta_text | escape }}"
           >
             {{ section.settings.cta_text }}
           </a>
@@ -80,59 +80,20 @@
   "name": "Banner v2",
   "tag": "section",
   "settings": [
-    {
-      "type": "header",
-      "content": "Images"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_desk",
-      "label": "Image Desktop"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_mob",
-      "label": "Image Mobile"
-    },
+    { "type": "header", "content": "Images" },
+    { "type": "image_picker", "id": "image_desk", "label": "Image Desktop" },
+    { "type": "image_picker", "id": "image_mob", "label": "Image Mobile" },
     {
       "type": "range",
       "id": "image_ratio",
       "label": "Altura do banner (ratio %)",
-      "min": 20,
-      "max": 80,
-      "step": 1,
-      "unit": "%",
-      "default": 40
+      "min": 20, "max": 80, "step": 1, "unit": "%", "default": 40
     },
-    {
-      "type": "text",
-      "id": "eyebrow_text",
-      "label": "Eyebrow Text",
-      "default": "WHY WAIT?"
-    },
-    {
-      "type": "richtext",
-      "id": "title",
-      "label": "Heading Text",
-      "default": "<p>YOUR CALM <em>starts now</em></p>"
-    },
-    {
-      "type": "richtext",
-      "id": "body_text",
-      "label": "Body Text",
-      "default": "<p>Don't let stress hold you back. With Calm Shot, you can approach every challenge with clarity, focus, and peace of mind. Take control today! Try Calm Shot and experience the difference!</p>"
-    },
-    {
-      "type": "text",
-      "id": "cta_text",
-      "label": "CTA Text",
-      "default": "Shop now"
-    },
-    {
-      "type": "url",
-      "id": "cta_link",
-      "label": "CTA Link"
-    },
+    { "type": "text", "id": "eyebrow_text", "label": "Eyebrow Text", "default": "WHY WAIT?" },
+    { "type": "richtext", "id": "title", "label": "Heading Text", "default": "<p>YOUR CALM <em>starts now</em></p>" },
+    { "type": "richtext", "id": "body_text", "label": "Body Text", "default": "<p>Don't let stress hold you back. With Calm Shot, you can approach every challenge with clarity, focus, and peace of mind. Take control today! Try Calm Shot and experience the difference!</p>" },
+    { "type": "text", "id": "cta_text", "label": "CTA Text", "default": "Shop now" },
+    { "type": "url", "id": "cta_link", "label": "CTA Link" },
     {
       "type": "select",
       "id": "button_color",
@@ -143,18 +104,8 @@
         { "value": "cream", "label": "Cream" }
       ]
     },
-    {
-      "type": "checkbox",
-      "id": "show_border_top",
-      "label": "Show Top Border",
-      "default": true
-    }
+    { "type": "checkbox", "id": "show_border_top", "label": "Show Top Border", "default": true }
   ],
-  "presets": [
-    {
-      "name": "Banner v2",
-      "settings": {}
-    }
-  ]
+  "presets": [{ "name": "Banner v2", "settings": {} }]
 }
 {% endschema %}
