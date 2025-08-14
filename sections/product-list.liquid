@@ -24,15 +24,23 @@
     #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc {
       display: flex;
       flex-direction: column;
+      height: 100%;
+    }
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc > a {
+      flex: 1 1 auto;
+      min-height: 1px;
     }
     #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .quick-add {
-      margin-top: auto; /* empurra a área do botão para baixo do card */
+      margin-top: auto;
     }
     #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .quick-add__submit,
     #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .button--cream {
       position: sticky;
       bottom: 0;
       z-index: 2;
+    }
+    #shopify-section-{{ section.id }} .d-grid > * {
+      height: 100%;
     }
   </style>
 {% endif %}
@@ -53,7 +61,7 @@
       "type": "checkbox",
       "id": "show_atc",
       "label": "Show Add To Cart",
-      "default": false
+      "default": true
     },
     {
       "type": "checkbox",
