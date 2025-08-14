@@ -1,8 +1,17 @@
-<div class="{% if section.settings.show_border_top %}border-t border-black{% endif %} py-16 pt-8">
+<div id="BannerV2-{{ section.id }}" class="{% if section.settings.show_border_top %}border-t border-black{% endif %} py-16 pt-8">
   {% liquid
-    assign image_ratio = section.settings.image_ratio | default: 40
-    assign alt_text = section.settings.title | default: '' | strip_html | strip | escape
+    assign image_ratio     = section.settings.image_ratio | default: 40
+    assign alt_text        = section.settings.title | default: '' | strip_html | strip | escape
+    assign mobile_spacing  = section.settings.mobile_text_spacing | default: 30
+    assign desktop_spacing = section.settings.desktop_text_spacing | default: 0
   %}
+
+  <style>
+    #BannerV2-{{ section.id }} .body-copy { margin-bottom: {{ mobile_spacing }}px; }
+    @media (min-width: 1024px) {
+      #BannerV2-{{ section.id }} .body-copy { margin-bottom: {{ desktop_spacing }}px; }
+    }
+  </style>
 
   {%- comment -%} === BLOCO DA IMAGEM (com opção full-bleed) === {%- endcomment -%}
   {% if section.settings.image_desk or section.settings.image_mob %}
@@ -16,7 +25,6 @@
             {% if section.settings.image_desk %}
               <source media="(min-width: 1024px)" srcset="{{ section.settings.image_desk | image_url: width: 2000 }}">
             {% endif %}
-
             {% if section.settings.image_mob %}
               {{ section.settings.image_mob
                 | image_url: width: 1800
@@ -63,7 +71,9 @@
           {% endif %}
 
           {% if section.settings.body_text != blank %}
-            <div class="rte li-circle mb-[30px] lg:mb-0">{{ section.settings.body_text }}</div>
+            <div class="rte li-circle body-copy">
+              {{ section.settings.body_text }}
+            </div>
           {% endif %}
         </div>
 
@@ -101,6 +111,20 @@
       "id": "image_ratio",
       "label": "Altura do banner (ratio %)",
       "min": 20, "max": 80, "step": 1, "unit": "%", "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_spacing",
+      "label": "Espaço abaixo do texto (mobile)",
+      "min": 0, "max": 100, "step": 5, "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "desktop_text_spacing",
+      "label": "Espaço abaixo do texto (desktop)",
+      "min": 0, "max": 100, "step": 5, "unit": "px",
+      "default": 0
     },
 
     { "type": "text", "id": "eyebrow_text", "label": "Eyebrow Text", "default": "WHY WAIT?" },
