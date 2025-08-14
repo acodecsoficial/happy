@@ -103,6 +103,8 @@
         "image_mob": "shopify://shop_images/HOMEBANNER.jpg",
         "full_width": false,
         "image_ratio": 40,
+        "mobile_text_spacing": 40,
+        "desktop_text_spacing": 0,
         "eyebrow_text": "DETOX MADE EASY",
         "title": "<h1>LIPOSOMAL <em>curcumin</em></h1>",
         "body_text": "<p>Liver Tonic was made to help you feel clear, calm, and vibrant every day.<br/></p>",
