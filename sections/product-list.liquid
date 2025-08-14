@@ -8,11 +8,34 @@
       {% render 'product-item',
         product: block.settings.product,
         show_atc: section.settings.show_atc,
-        show_learn_more: section.settings.show_learn_more
+        show_learn_more: section.settings.show_learn_more,
+        fix_atc: section.settings.fix_atc
       %}
     {% endfor %}
   </div>
 </div>
+
+{%- comment -%}
+  CSS escopado: só injeta quando o checkbox "Fixar botão Add To Cart" estiver ligado.
+{%- endcomment -%}
+{% if section.settings.fix_atc %}
+  <style>
+    /* Escopo apenas para esta seção */
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc {
+      display: flex;
+      flex-direction: column;
+    }
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .quick-add {
+      margin-top: auto; /* empurra a área do botão para baixo do card */
+    }
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .quick-add__submit,
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .button--cream {
+      position: sticky;
+      bottom: 0;
+      z-index: 2;
+    }
+  </style>
+{% endif %}
 
 {% schema %}
 {
@@ -37,6 +60,12 @@
       "id": "show_learn_more",
       "label": "Mostrar botão Learn More",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "fix_atc",
+      "label": "Fixar botão Add To Cart",
+      "default": false
     }
   ],
   "blocks": [
