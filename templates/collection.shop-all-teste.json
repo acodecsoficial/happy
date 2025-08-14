@@ -177,7 +177,9 @@
       "name": "Product List",
       "settings": {
         "title": "Shop All",
-        "show_atc": true
+        "show_atc": true,
+        "show_learn_more": true,
+        "fix_atc": true
       }
     }
   },

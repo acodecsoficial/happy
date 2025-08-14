@@ -6,7 +6,7 @@
   {% assign show_learn_more = true %}
 {% endunless %}
 
-<div class="flex flex-col gap-4 mb-4 lg:mb-6 product-card-wrapper">
+<div class="flex flex-col gap-4 mb-4 lg:mb-6 product-card-wrapper{% if fix_atc %} is-sticky-atc{% endif %}">
   <a href="{{ product.url }}" class="group d-grid gap-4 w-full">
     <div class="aspect-[7/8] relative bg-beige">
       <img
