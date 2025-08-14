@@ -95,6 +95,19 @@
         "mobile_image_first": true
       }
     },
+    "banner_v2_MLrh8g": {
+      "type": "banner-v2",
+      "name": "Banner v2",
+      "settings": {
+        "image_desk": "shopify://shop_images/HOMEBANNER_56bae1ed-2094-4a9d-9291-9b8de7905eef.jpg",
+        "image_mob": "shopify://shop_images/HOMEBANNER.jpg",
+        "eyebrow_text": "DETOX MADE EASY",
+        "title": "<p>LIPOSOMAL <em>curcumin</em></p>",
+        "body_text": "<p>Liver Tonic was made to help you feel clear, calm, and vibrant every day.</p>",
+        "button_text": "SHOP NOW",
+        "show_border_top": true
+      }
+    },
     "hero_v2_tAjFKf": {
       "type": "hero-v2",
       "disabled": true,
@@ -324,6 +337,7 @@
         "text_garantia": "",
         "banner_link": "",
         "banner_link_new_window": true,
+        "image_desktop": "shopify://shop_images/Liver_02_1.jpg",
         "video_url_desktop": "",
         "video_url_mobile": "",
         "mobile_image_first": false
@@ -364,7 +378,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop Now",
-            "button_link_1": "shopify://products/hydroburn",
+            "button_link_1": "shopify://products/liver-tonic",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -1171,6 +1185,7 @@
     "hero",
     "hero_Nq9J7U",
     "hero_FLMFhb",
+    "banner_v2_MLrh8g",
     "hero_v2_tAjFKf",
     "rs_hero_section_4hB9aH",
     "landing_section_PVxkVe",
