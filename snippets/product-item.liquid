@@ -1,12 +1,6 @@
-{%- comment -%}
-  Product Item Snippet – Add to Cart sempre visível
-  Uso: {% render 'product-item', product: product %}
-{%- endcomment -%}
-
 {%- assign card_id = 'product-card-' | append: product.id -%}
 {%- assign first_avail_variant = product.selected_or_first_available_variant -%}
 {%- assign has_default_variant = product.has_only_default_variant -%}
-
 {% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
   {% assign on_sale = true %}
@@ -14,92 +8,54 @@
 
 <article id="{{ card_id }}" class="group d-grid gap-2">
 
-  <!-- Imagem -->
   <a href="{{ product.url }}" class="block relative aspect-[3/4] overflow-hidden rounded-xl bg-beige">
-    {%- if product.featured_image -%}
-      <img
-        class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
-        src="{{ product.featured_image | img_url: '800x' }}"
-        alt="{{ product.featured_image.alt | escape }}"
-        loading="lazy">
-    {%- else -%}
-      <div class="absolute inset-0 flex items-center justify-center text-xs opacity-60">
-        Sem imagem
-      </div>
-    {%- endif -%}
+    {% if product.featured_image %}
+      <img class="absolute inset-0 h-full w-full object-cover object-center"
+           src="{{ product.featured_image | img_url: '800x' }}"
+           alt="{{ product.featured_image.alt | escape }}"
+           loading="lazy">
+    {% else %}
+      <div class="absolute inset-0 flex items-center justify-center text-xs opacity-60">Sem imagem</div>
+    {% endif %}
 
-    {%- if on_sale -%}
+    {% if on_sale %}
       <span class="absolute left-2 top-2 rounded-full bg-red-600/90 px-2 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
         Promoção
       </span>
-    {%- endif -%}
+    {% endif %}
   </a>
 
-  <!-- Título -->
   <a href="{{ product.url }}" class="block leading-snug">
     <h3 class="text-base font-medium">{{ product.title }}</h3>
   </a>
 
-  <!-- Preço -->
   <div class="flex items-center gap-2">
-    <span class="text-sm font-semibold">
-      {{ product.price | money }}
-    </span>
-    {%- if on_sale -%}
-      <span class="text-xs line-through opacity-60">
-        {{ product.compare_at_price | money }}
-      </span>
-    {%- endif -%}
+    <span class="text-sm font-semibold">{{ product.price | money }}</span>
+    {% if on_sale %}
+      <span class="text-xs line-through opacity-60">{{ product.compare_at_price | money }}</span>
+    {% endif %}
   </div>
 
-  <!-- FORM: Produto (NUNCA 'new_comment') -->
   {%- form 'product', product, id: 'product-form-' | append: product.id, class: 'mt-2 d-grid gap-2' -%}
-
-    {%- if has_default_variant -%}
-      <!-- Produto com 1 variante -->
+    {% if has_default_variant %}
       <input type="hidden" name="id" value="{{ first_avail_variant.id }}">
-    {%- else -%}
-      <!-- Produto com múltiplas variantes -->
-      <label for="variant-{{ product.id }}" class="sr-only">Escolha uma opção</label>
-      <select
-        id="variant-{{ product.id }}"
-        name="id"
-        class="w-full rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black/10">
+    {% else %}
+      <select name="id" class="w-full rounded-lg border border-neutral-300 px-3 py-2 text-sm">
         {% for variant in product.variants %}
-          <option
-            value="{{ variant.id }}"
+          <option value="{{ variant.id }}"
             {% if variant.id == first_avail_variant.id %}selected{% endif %}
             {% unless variant.available %}disabled{% endunless %}>
             {{ variant.title }} — {{ variant.price | money }}
-            {%- unless variant.available -%} (Esgotado){%- endunless -%}
+            {% unless variant.available %} (Esgotado){% endunless %}
           </option>
         {% endfor %}
       </select>
-    {%- endif -%}
+    {% endif %}
 
-    <!-- Quantidade (opcional) -->
-    <div class="flex items-center gap-2">
-      <label for="qty-{{ product.id }}" class="sr-only">Quantidade</label>
-      <input
-        id="qty-{{ product.id }}"
-        class="w-20 rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black/10"
-        type="number"
-        name="quantity"
-        value="1"
-        min="1"
-        inputmode="numeric">
-      <button
-        type="submit"
-        class="flex-1 rounded-xl bg-black px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50"
-        {% unless product.available %}disabled{% endunless %}>
-        {%- if product.available -%}
-          Adicionar ao carrinho
-        {%- else -%}
-          Esgotado
-        {%- endif -%}
-      </button>
-    </div>
-
+    <button type="submit" class="rounded-xl bg-black px-4 py-2 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-50"
+      {% unless product.available %}disabled{% endunless %}>
+      {% if product.available %}Adicionar ao carrinho{% else %}Esgotado{% endif %}
+    </button>
   {%- endform -%}
 
 </article>
