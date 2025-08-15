@@ -1,51 +1,69 @@
-<div class="site-container pt-6 lg:pt-10 pb-24">
-  <div class="pb-10">
-    <div class="d-grid lg:grid-cols-2 items-center gap-6 lg:gap-2">
-      <div class="order-2 lg:order-1 d-grid gap-4 lg:pl-24">
-        {% if section.settings.hero_eyebrow == blank %}
-          <h1 class="eyebrow">{{ collection.title }}</h1>
-        {% else %}
-          <h1 class="eyebrow">{{ section.settings.hero_eyebrow }}</h1>
-        {% endif %}
-        {% unless section.settings.hero_title == blank %}
-          <p class="heading heading--1 max-w-[300px]">{{ section.settings.hero_title }}
-        {% endunless %}
-      </div>
-      <div class="order-1 lg:order-2">
-        <div class="aspect-[2.2] relative bg-beige">
-          {% unless section.settings.hero_image == blank %}
-            <img class="absolute top-0 left-0 w-full h-full object-cover object-center" src="{{ section.settings.hero_image | img_url: '1200x' }}">
-          {% endunless %}
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="d-grid gap-4 md:grid-cols-2 md:gap-2 lg:grid-cols-4 pt-4 lg:pt-10 items-start">
-    {% for product in collection.products %}
-      {% render 'product-item', product: product, show_atc: false %}
-    {% endfor %}
-  </div>
-</div>
+{%- comment -%} Sempre mostra botão Add to Cart {%- endcomment -%}
 
-{% schema %}
-{
-  "name": "Main Collection",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "hero_image",
-      "label": "Hero Image"
-    },
-    {
-      "type": "text",
-      "id": "hero_eyebrow",
-      "label": "Hero Eyebrow"
-    },
-    {
-      "type": "inline_richtext",
-      "id": "hero_title",
-      "label": "Hero Title"
-    }
-  ]
-}
-{% endschema %}
+{%- assign card_id = 'product-card-' | append: product.id -%}
+{%- assign first_avail_variant = product.selected_or_first_available_variant -%}
+{%- assign has_default_variant = product.has_only_default_variant -%}
+
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+  {% assign on_sale = true %}
+{% endif %}
+
+<article id="{{ card_id }}" class="group d-grid gap-2">
+  <!-- Imagem -->
+  <a href="{{ product.url }}" class="block relative aspect-[3/4] overflow-hidden rounded-xl bg-beige">
+    {%- if product.featured_image -%}
+      <img
+        class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+        src="{{ product.featured_image | img_url: '800x' }}"
+        alt="{{ product.featured_image.alt | escape }}"
+        loading="lazy">
+    {%- else -%}
+      <div class="absolute inset-0 flex items-center justify-center text-xs opacity-60">
+        Sem imagem
+      </div>
+    {%- endif -%}
+    {%- if on_sale -%}
+      <span class="absolute left-2 top-2 rounded-full bg-red-600/90 px-2 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
+        Promoção
+      </span>
+    {%- endif -%}
+  </a>
+
+  <!-- Título -->
+  <a href="{{ product.url }}" class="block leading-snug">
+    <h3 class="text-base font-medium">{{ product.title }}</h3>
+  </a>
+
+  <!-- Preço -->
+  <div class="flex items-center gap-2">
+    <span class="text-sm font-semibold">
+      {{ product.price | money }}
+    </span>
+    {%- if on_sale -%}
+      <span class="text-xs line-through opacity-60">
+        {{ product.compare_at_price | money }}
+      </span>
+    {%- endif -%}
+  </div>
+
+  <!-- Form Add to Cart -->
+  {%- form 'product', product, id: 'product-form-' | append: product.id, class: 'mt-2 d-grid gap-2' -%}
+    {%- if has_default_variant -%}
+      <input type="hidden" name="id" value="{{ first_avail_variant.id }}">
+    {%- else -%}
+      <select name="id" class="w-full rounded-lg border px-3 py-2 text-sm">
+        {% for variant in product.variants %}
+          <option value="{{ variant.id }}" {% unless variant.available %}disabled{% endunless %}>
+            {{ variant.title }} — {{ variant.price | money }}
+          </option>
+        {% endfor %}
+      </select>
+    {%- endif -%}
+
+    <button type="submit" class="rounded-xl bg-black px-4 py-2 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-50"
+      {% unless product.available %}disabled{% endunless %}>
+      {% if product.available %}Adicionar ao carrinho{% else %}Esgotado{% endif %}
+    </button>
+  {%- endform -%}
+</article>
