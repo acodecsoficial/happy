@@ -1,61 +1,88 @@
-{%- assign card_id = 'product-card-' | append: product.id -%}
-{%- assign first_avail_variant = product.selected_or_first_available_variant -%}
-{%- assign has_default_variant = product.has_only_default_variant -%}
-{% assign on_sale = false %}
-{% if product.compare_at_price > product.price %}
-  {% assign on_sale = true %}
-{% endif %}
+{% unless show_atc == false %}
+  {% assign show_atc = true %}
+{% endunless %}
 
-<article id="{{ card_id }}" class="group d-grid gap-2">
+{% unless show_learn_more == false %}
+  {% assign show_learn_more = true %}
+{% endunless %}
 
-  <a href="{{ product.url }}" class="block relative aspect-[3/4] overflow-hidden rounded-xl bg-beige">
-    {% if product.featured_image %}
-      <img class="absolute inset-0 h-full w-full object-cover object-center"
-           src="{{ product.featured_image | img_url: '800x' }}"
-           alt="{{ product.featured_image.alt | escape }}"
-           loading="lazy">
-    {% else %}
-      <div class="absolute inset-0 flex items-center justify-center text-xs opacity-60">Sem imagem</div>
-    {% endif %}
+<div class="flex flex-col gap-4 mb-4 lg:mb-6 product-card-wrapper{% if fix_atc %} is-sticky-atc{% endif %}">
+  <a href="{{ product.url }}" class="group d-grid gap-4 w-full">
+    <div class="aspect-[7/8] relative bg-beige">
+      <img
+        width="500px" height="500px"
+        src="{{ product.images[0].src | image_url: width: 500 }}"
+        class="absolute top-0 left-0 w-full h-full object-cover object-center"
+        alt="{{ product.title | escape }}"
+      >
+      {% unless product.images[1] == blank %}
+        <img
+          width="500px" height="500px"
+          src="{{ product.images[1].src | image_url: width: 500 }}"
+          class="absolute top-0 left-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-300 lg:group-hover:opacity-100 z-10"
+          alt="{{ product.title | escape }}"
+        >
+      {% endunless %}
+    </div>
 
-    {% if on_sale %}
-      <span class="absolute left-2 top-2 rounded-full bg-red-600/90 px-2 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
-        Promoção
-      </span>
-    {% endif %}
+    <div class="d-grid gap-2 px-2 lg:px-3">
+      {% comment %} {% render 'pdp-hero-star-reviews', product: product %} {% endcomment %}
+
+      {% assign italic_metafield = product.metafields['happy-aging'].italicized_product_title_segment | downcase %}
+      {% if italic_metafield %}
+        {% assign italic = '<em class="font-heading-light-italic">' | append: italic_metafield | append: '</em>' %}
+        {% assign final_product_title = product.title | downcase | replace: italic_metafield, italic %}
+      {% else %}
+        {% assign final_product_title = product.title %}
+      {% endif %}
+
+      <h2 class="heading !text-[40px] lowercase truncate">
+        {{ final_product_title }}
+      </h2>
+      <p class="eyebrow truncate">{{ product.metafields.custom.eyebrow }}</p>
+      <p class="eyebrow">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</p>
+    </div>
   </a>
 
-  <a href="{{ product.url }}" class="block leading-snug">
-    <h3 class="text-base font-medium">{{ product.title }}</h3>
-  </a>
+  {% if show_atc == true %}
+    <!-- ATC em todas as larguras (desktop e mobile) -->
+    <div class="mt-auto w-full">
+      {% assign product_form_id = 'quick-add-' | append: section_id | append: product.id %}
+      <div class="quick-add">
+        <!-- FORM HTML PADRÃO (sem AJAX do tema) -->
+        <form method="post" action="{{ routes.cart_add_url }}" id="{{ product_form_id }}" class="form">
+          <input
+            type="hidden" name="id"
+            value="{{ product.selected_or_first_available_variant.id }}"
+            {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+          >
+          <input type="hidden" name="properties[_ts]" value="{{ 'now' | date: '%s%L' }}">
+          <!-- volta para a mesma página após adicionar -->
+          <input type="hidden" name="return_to" value="back">
 
-  <div class="flex items-center gap-2">
-    <span class="text-sm font-semibold">{{ product.price | money }}</span>
-    {% if on_sale %}
-      <span class="text-xs line-through opacity-60">{{ product.compare_at_price | money }}</span>
-    {% endif %}
-  </div>
+          <button
+            id="{{ product_form_id }}-submit"
+            type="submit" name="add"
+            class="quick-add__submit button button--black button--full-width{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
+            {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+          >
+            <span>
+              {%- if product.selected_or_first_available_variant.available -%}
+                {{ 'products.product.add_to_cart' | t }}
+              {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- endif -%}
+            </span>
+            {%- if horizontal_quick_add -%}
+              <span class="icon-wrap">{{- 'icon-plus.svg' | inline_asset_content -}}</span>
+            {%- endif -%}
+          </button>
+        </form>
 
-  {%- form 'product', product, id: 'product-form-' | append: product.id, class: 'mt-2 d-grid gap-2' -%}
-    {% if has_default_variant %}
-      <input type="hidden" name="id" value="{{ first_avail_variant.id }}">
-    {% else %}
-      <select name="id" class="w-full rounded-lg border border-neutral-300 px-3 py-2 text-sm">
-        {% for variant in product.variants %}
-          <option value="{{ variant.id }}"
-            {% if variant.id == first_avail_variant.id %}selected{% endif %}
-            {% unless variant.available %}disabled{% endunless %}>
-            {{ variant.title }} — {{ variant.price | money }}
-            {% unless variant.available %} (Esgotado){% endunless %}
-          </option>
-        {% endfor %}
-      </select>
-    {% endif %}
-
-    <button type="submit" class="rounded-xl bg-black px-4 py-2 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-50"
-      {% unless product.available %}disabled{% endunless %}>
-      {% if product.available %}Adicionar ao carrinho{% else %}Esgotado{% endif %}
-    </button>
-  {%- endform -%}
-
-</article> 
+        {% if show_learn_more == true %}
+          <a href="{{ product.url }}" class="mt-2 button button--cream button--full-width">Learn More</a>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</div>
