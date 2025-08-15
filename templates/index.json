@@ -72,6 +72,32 @@
     },
     "hero_FLMFhb": {
       "type": "hero",
+      "disabled": true,
+      "name": "HERO - Labor Day",
+      "settings": {
+        "fifty_fifty": true,
+        "bg_color": "#f7f5eb",
+        "button_color": "black",
+        "text_color": "black",
+        "sub_heading": "Start Celebrating Now",
+        "title": "<p>Early <em>Labor Day</em><br/>20% OFF</p>",
+        "sup_word": "",
+        "title_words": "",
+        "text": "<p>Use code <strong>LABORDAY</strong></p><p> at checkout.</p>",
+        "cta_link": "shopify://collections/all",
+        "cta_text": "Shop Now",
+        "text_garantia": "Age beautifully.",
+        "banner_link": "shopify://collections/all",
+        "banner_link_new_window": false,
+        "image_desktop": "shopify://shop_images/Banner-site-2.gif",
+        "image_mobile": "shopify://shop_images/Banner-site-2.gif",
+        "video_url_desktop": "",
+        "video_url_mobile": "",
+        "mobile_image_first": true
+      }
+    },
+    "hero_YYPm3g": {
+      "type": "hero",
       "name": "HERO - Hydro burn promo",
       "settings": {
         "fifty_fifty": true,
@@ -1191,6 +1217,7 @@
     "hero",
     "hero_Nq9J7U",
     "hero_FLMFhb",
+    "hero_YYPm3g",
     "banner_v2_MLrh8g",
     "hero_v2_tAjFKf",
     "rs_hero_section_4hB9aH",
