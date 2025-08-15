@@ -1,11 +1,12 @@
 {%- comment -%}
-  Product Item Snippet - Sempre mostra botão Add to Cart
-  Para uso em loops de coleção: {% render 'product-item', product: product %}
+  Product Item Snippet – Add to Cart sempre visível
+  Uso: {% render 'product-item', product: product %}
 {%- endcomment -%}
 
 {%- assign card_id = 'product-card-' | append: product.id -%}
 {%- assign first_avail_variant = product.selected_or_first_available_variant -%}
 {%- assign has_default_variant = product.has_only_default_variant -%}
+
 {% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
   {% assign on_sale = true %}
@@ -51,15 +52,17 @@
     {%- endif -%}
   </div>
 
-  <!-- Formulário Add to Cart -->
+  <!-- FORM: Produto (NUNCA 'new_comment') -->
   {%- form 'product', product, id: 'product-form-' | append: product.id, class: 'mt-2 d-grid gap-2' -%}
 
     {%- if has_default_variant -%}
-      <!-- Produto com apenas 1 variante -->
+      <!-- Produto com 1 variante -->
       <input type="hidden" name="id" value="{{ first_avail_variant.id }}">
     {%- else -%}
       <!-- Produto com múltiplas variantes -->
+      <label for="variant-{{ product.id }}" class="sr-only">Escolha uma opção</label>
       <select
+        id="variant-{{ product.id }}"
         name="id"
         class="w-full rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black/10">
         {% for variant in product.variants %}
@@ -74,17 +77,28 @@
       </select>
     {%- endif -%}
 
-    <!-- Botão -->
-    <button
-      type="submit"
-      class="rounded-xl bg-black px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50"
-      {% unless product.available %}disabled{% endunless %}>
-      {% if product.available %}
-        Adicionar ao carrinho
-      {% else %}
-        Esgotado
-      {% endif %}
-    </button>
+    <!-- Quantidade (opcional) -->
+    <div class="flex items-center gap-2">
+      <label for="qty-{{ product.id }}" class="sr-only">Quantidade</label>
+      <input
+        id="qty-{{ product.id }}"
+        class="w-20 rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black/10"
+        type="number"
+        name="quantity"
+        value="1"
+        min="1"
+        inputmode="numeric">
+      <button
+        type="submit"
+        class="flex-1 rounded-xl bg-black px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+        {% unless product.available %}disabled{% endunless %}>
+        {%- if product.available -%}
+          Adicionar ao carrinho
+        {%- else -%}
+          Esgotado
+        {%- endif -%}
+      </button>
+    </div>
 
   {%- endform -%}
 
