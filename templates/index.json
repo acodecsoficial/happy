@@ -72,6 +72,7 @@
     },
     "hero_FLMFhb": {
       "type": "hero",
+      "disabled": true,
       "name": "HERO - Labor Day",
       "settings": {
         "fifty_fifty": true,
@@ -97,7 +98,6 @@
     },
     "hero_YYPm3g": {
       "type": "hero",
-      "disabled": true,
       "name": "HERO - Hydro burn promo",
       "settings": {
         "fifty_fifty": true,
