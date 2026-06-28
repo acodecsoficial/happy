@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "okendo_star_rating_XckRMV": {
-          "type": "shopify://apps/okendo/blocks/star-rating/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "lean-muscle-formula"
-          }
-        },
         "custom_reviews_yRiyrR": {
           "type": "custom_reviews",
           "disabled": true,
@@ -162,14 +156,9 @@
             "title": "How to use",
             "text": "<p><strong>How to Use</strong></p><p>Mix one scoop (36g) to 8-12 oz, per day with water, almond milk, or your favorite smoothie.</p><p>Ideal after workouts or anytime you need a clean, plant-based energy boost</p><p><strong>Organic, Powerful, and Purposeful</strong></p><p>At Happy Aging, we don’t just make supplements. We create wellness rituals that support your energy, focus, and long-term strength. It’s not about perfection. It’s about progress that feels real.</p><p>This is your daily strength ritual, crafted with real ingredients and backed by science. It gives your body exactly what it needs, and nothing it doesn’t.</p><p><strong>Make It a Ritual</strong></p><p>Subscribe and save with every order.</p><p>Be the first to explore our latest wellness innovations and exclusive formulas.</p><p><strong> Product Details</strong></p><ul><li>Format: Powder (20 servings)</li><li>Sweetener: Monk Fruit</li><li>Free from: Dairy, soy, gluten, and artificial additives</li><li>Certified Organic and Non-GMO</li><li>Made in the USA in a GMP-certified facility</li></ul>"
           }
-        },
-        "essential_upsell_app_block_XLXFkq": {
-          "type": "shopify://apps/essential-upsell/blocks/app-block/50627fd9-24fd-4250-8614-accc12826d80",
-          "settings": {}
         }
       },
       "block_order": [
-        "okendo_star_rating_XckRMV",
         "custom_reviews_yRiyrR",
         "title",
         "vendor",
@@ -184,14 +173,13 @@
         "text_RB6DBe",
         "text_h9imWD",
         "aside_content_TPcz4K",
-        "aside_content_rBPMby",
-        "essential_upsell_app_block_XLXFkq"
+        "aside_content_rBPMby"
       ],
       "custom_css": [
         "@media screen and (max-width: 500px) {.grid-product-title {display: flex; align-items: center; gap: 15px; } span.main-tag-product {display: flex; margin-top: 0; }}"
       ],
       "settings": {
-        "old_product": "lean-muscle-formula",
+        "old_product": "creatine-for-women",
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "highlight_color": "#de4845",
@@ -1222,18 +1210,6 @@
     },
     "17401711251af96b37": {
       "type": "apps",
-      "blocks": {
-        "okendo_reviews_widget_zJJy9k": {
-          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "{{ product }}",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_widget_zJJy9k"
-      ],
       "settings": {
         "include_margins": true
       }
