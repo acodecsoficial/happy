@@ -1,0 +1,227 @@
+<div class="">
+  <section id="focus-you" class="focus-you-section site-container py-14">
+  <div class="focus-you__inner">
+    {% if section.settings.title != blank %}
+      <h2 class="focus-you__title heading">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <p class="focus-you__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    {% for block in section.blocks %}
+      {%- assign pos = block.settings.image_position | default: 'right' -%}
+      <div class="focus-you__row focus-you__row--image-{{ pos }}">
+        <div class="focus-you__media">
+          {% if block.settings.image %}
+            <img src="{{ block.settings.image | img_url: 'master' }}"
+                 alt=""
+                 class="focus-you__img">
+          {% endif %}
+        </div>
+        <div class="focus-you__content">
+          {% if block.settings.heading_1 != blank %}
+            <h3 class="focus-you__heading heading"><em>{{ block.settings.heading_1 }}</em></h3>
+          {% endif %}
+          {% if block.settings.text_1 != blank %}
+            <div class="focus-you__text">{{ block.settings.text_1 }}</div>
+          {% endif %}
+
+          {% if block.settings.heading_2 != blank %}
+            <h3 class="focus-you__heading heading"><em>{{ block.settings.heading_2 }}</em></h3>
+          {% endif %}
+          {% if block.settings.text_2 != blank %}
+            <div class="focus-you__text">{{ block.settings.text_2 }}</div>
+          {% endif %}
+
+          {% if block.settings.button_text != blank %}
+    <div class="ai-button-wrapper-buttonikqtjh mobile">
+      <a href="{{ block.settings.button_url }}" class="ai-button-buttonikqtjh focus">
+        <h2>{{ block.settings.button_text }}</h2>
+      </a>
+    </div>
+  {% endif %}
+        </div>
+      </div>
+
+    {% if block.settings.button_text != blank %}
+    <div class="ai-button-wrapper-buttonikqtjh desktop" style="margin: 0 20px;">
+      <a href="{{ block.settings.button_url }}" class="ai-button-buttonikqtjh focus">
+        <h2>{{ block.settings.button_text }}</h2>
+      </a>
+    </div>
+  {% endif %}
+    {% endfor %}
+  </div>
+</section>
+</div>
+
+<style>
+  .focus-you__row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+  .ai-button-buttonikqtjh.focus{
+    height: 41px;
+    max-width: 304px;
+  }
+
+  .focus-you__title{
+    font-size: 50px !important;
+  }
+
+.focus-you__heading.heading{
+  font-size: 36px;
+}
+
+.focus-you__text{
+  margin-bottom: 42px;
+  margin-top: 5px;
+  max-width: 530px;
+}
+
+  .focus-you__media, .focus-you__content{
+    width: 50%;
+  }
+
+  .focus-you__row--image-left .focus-you__media img{
+    margin-left: auto;
+  }
+
+  .focus-you__row--image-right .focus-you__media img{
+    margin-right: auto;
+  }
+
+/* imagem à direita (padrão) */
+.focus-you__row--image-right {
+  flex-direction: row;
+}
+
+/* imagem à esquerda */
+.focus-you__row--image-left {
+  flex-direction: row-reverse;
+}
+
+.focus-you__media img {
+  width: 100%;
+  height: auto;
+  max-width: 530px;
+}
+
+@media (min-width: 768px){
+  .desktop{
+  display: none !important;
+}
+}
+
+@media (max-width: 767px) {
+  .focus-you__row {
+    flex-direction: column-reverse !important;
+  }
+  .focus-you__media {
+    margin-bottom: 1.5rem;
+  }
+
+  .focus-you__media, .focus-you__content{
+    width: 100%;
+  }
+
+  .focus-you__content, .focus-you__title.heading{
+    padding: 0px 20px;
+  }
+
+  .mobile{
+    display: none !important;
+  }
+}
+
+</style>
+{% schema %}
+{
+  "name": "Focus You",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Título da seção",
+      "default": "<p>FOCUS YOU can feel</p>"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo (opcional)"
+      /* removido default vazio */
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Linha de conteúdo",
+      "settings": [
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Posição da imagem",
+          "options": [
+            { "value": "right", "label": "Direita" },
+            { "value": "left",  "label": "Esquerda" }
+          ],
+          "default": "right"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagem"
+        },
+        {
+          "type": "text",
+          "id": "heading_1",
+          "label": "Título 1",
+          "default": "Get centered, stay clear"
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Texto 1",
+          "default": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>"
+        },
+        {
+          "type": "text",
+          "id": "heading_2",
+          "label": "Título 2",
+          "default": "Stay laser-focused"
+        },
+        {
+          "type": "richtext",
+          "id": "text_2",
+          "label": "Texto 2",
+          "default": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Texto do botão",
+          "default": "Buy Now"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Link do botão",
+          "default": "/"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Focus You",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+

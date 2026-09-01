@@ -1,0 +1,136 @@
+{%- comment -%}
+  RS Hero Blocks Snippet
+  
+  Parameters:
+  - blocks: section.blocks
+  - block_types: 'text', 'media', or empty for all blocks
+  - media_type: 'image', 'video', or empty for all media types
+  - media_index: numeric index to select specific media block (1 for first, 2 for second, etc.)
+{%- endcomment -%}
+
+{%- liquid
+  assign text_blocks = 'subtitle,title,description,cta_button'
+  assign media_blocks = 'image,video'
+  assign text_block_array = text_blocks | split: ','
+  assign media_block_array = media_blocks | split: ','
+  assign current_media_index = 0
+-%}
+
+{%- for block in blocks -%}
+  {%- liquid
+    assign render_block = false
+    
+    # Handle media index counting
+    if media_block_array contains block.type
+      assign current_media_index = current_media_index | plus: 1
+    endif
+    
+    if block_types == blank
+      assign render_block = true
+    elsif block_types == 'text' and text_block_array contains block.type
+      assign render_block = true
+    elsif block_types == 'media' and media_block_array contains block.type
+      if media_type == blank
+        assign render_block = true
+      elsif media_type == 'image' and block.type == 'image'
+        assign render_block = true
+      elsif media_type == 'video' and block.type == 'video'
+        assign render_block = true
+      endif
+      
+      # Handle media_index filtering
+      if render_block and media_index != blank
+        if current_media_index != media_index
+          assign render_block = false
+        endif
+      endif
+    endif
+  -%}
+
+  {%- if render_block -%}
+    {%- case block.type -%}
+      {%- when 'subtitle' -%}
+        {%- unless block.settings.subtitle_text == blank -%}
+          <div class="rs-hero__subtitle rs-hero__subtitle--{{ block.id }} {%- if block.settings.subtitle_image != blank -%}rs-hero__subtitle--with-image{%- endif -%}" style="font-weight: {{ block.settings.subtitle_weight }}" {{ block.shopify_attributes }}>
+            {%- if block.settings.subtitle_image != blank -%}
+              <img src="{{ block.settings.subtitle_image | image_url: width: 50 }}" alt="{{ block.settings.subtitle_text }}" width="" height="">
+            {%- endif -%}
+            <span>{{ block.settings.subtitle_text }}</span>
+          </div>
+        {%- endunless -%}
+
+      {%- when 'title' -%}
+        {%- unless block.settings.title_text == blank -%}
+          <div class="rs-hero__title rs-hero__title--{{ block.id }}" {{ block.shopify_attributes }}>
+            {{ block.settings.title_text }}
+          </div>
+        {%- endunless -%}
+
+      {%- when 'description' -%}
+        {%- unless block.settings.description_text == blank -%}
+          <div class="rs-hero__description rs-hero__description--{{ block.id }}" {{ block.shopify_attributes }}>
+            {{ block.settings.description_text }}
+          </div>
+        {%- endunless -%}
+
+      {%- when 'cta_button' -%}
+        {%- unless block.settings.button_text == blank -%}
+          <a
+            class="button rs-hero__cta rs-hero__cta--{{ block.id }}"
+            {%- if block.settings.button_link != blank -%}
+              href="{{ block.settings.button_link }}"
+            {%- else -%}
+              href="#"
+            {%- endif -%}
+            {%- if block.settings.button_new_tab -%}
+              target="_blank"
+              rel="noopener noreferrer"
+            {%- endif -%}
+            {{ block.shopify_attributes }}
+          >
+            {{ block.settings.button_text }}
+          </a>
+        {%- endunless -%}
+
+      {%- when 'image' -%}
+        {%- unless block.settings.image == blank -%}
+          <div class="rs-hero__image rs-hero__image--{{ block.settings.image_position | default: 'center' }}" {{ block.shopify_attributes }}>
+            {%- if block.settings.image_link != blank -%}
+              <a href="{{ block.settings.image_link }}">
+            {%- endif -%}
+            {{
+              block.settings.image
+              | image_url: width: 2000
+              | image_tag:
+                alt: block.settings.image_alt,
+                class: 'w-full h-full object-cover',
+                sizes: '(min-width: 750px) 50vw, 100vw',
+                widths: '375, 550, 750, 1100, 1500, 2000'
+            }}
+            {%- if block.settings.image_link != blank -%}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endunless -%}
+
+      {%- when 'video' -%}
+        {%- unless block.settings.video_url == blank -%}
+          <div class="rs-hero__video rs-hero__video--{{ block.settings.video_position | default: 'center' }}" {{ block.shopify_attributes }}>
+            <site-video>
+              <video
+                class="w-full h-full object-cover"
+                {%- if block.settings.video_poster != blank %} poster="{{ block.settings.video_poster | image_url: width: 1920 }}"{% endif -%}
+                {%- if block.settings.video_autoplay %} autoplay{% endif -%}
+                {%- if block.settings.video_muted %} muted{% endif -%}
+                {%- if block.settings.video_loop %} loop{% endif -%}
+                playsinline
+              >
+                <source src="{{ block.settings.video_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </site-video>
+          </div>
+        {%- endunless -%}
+    {%- endcase -%}
+  {%- endif -%}
+{%- endfor -%} 

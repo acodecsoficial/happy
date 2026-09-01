@@ -1,0 +1,56 @@
+{% comment %}
+  Responsive Image Section
+  Exibe uma imagem para desktop e outra para mobile usando CSS.
+{% endcomment %}
+
+{% if section.settings.desktop_image or section.settings.mobile_image %}
+<div class="responsive-image-section">
+  {% if section.settings.desktop_image != blank %}
+    <img class="desktop-only" src="{{ section.settings.desktop_image | img_url: 'master' }}" alt="{{ section.settings.desktop_image.alt | escape }}" loading="lazy">
+  {% endif %}
+  {% if section.settings.mobile_image != blank %}
+    <img class="mobile-only" src="{{ section.settings.mobile_image | img_url: 'master' }}" alt="{{ section.settings.mobile_image.alt | escape }}" loading="lazy">
+  {% endif %}
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Responsive Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Imagem Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Imagem Mobile"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Imagem Responsiva"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.responsive-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+</style>

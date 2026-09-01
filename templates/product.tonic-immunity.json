@@ -1,0 +1,2842 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_mxftaL": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n\n.showMobile{\n  display:none;\n}\n.showDesktop{\n  display:block;\n}\n\n.radio-option.active .option-label {\n    font-weight:600;\n}\n\n@media screen and (min-width:1360px) and (max-width:1445px){\n    .site-container {\n        padding-left: 5rem;\n        padding-right: 5rem;\n    }\n}\n\n.site-container > .product--left {\n    justify-content: center;\n}\n\n\n\ncadence-selector .radio-option:nth-child(2){\n    border:1px solid #d7d7d7;\n    margin-bottom:0!important;\n}\n\ncadence-selector .radio-option:nth-child(2) .radio-option__button{\n    margin-bottom:0;\n}\n\n\n\n@media screen and (max-width:540px){\n  .showMobile{\n  display:block;\n}\n.showDesktop{\n  display:none;\n}\n}\n\nspan.oke-sr-label-text {\n    color: #707070!important;\n}\n\n.oke-sr-count {\n    color: #707070!important;\n    text-transform: uppercase;\n}  \n\ncadence-selector.cadence-selector, .quantity-grid-mobile {\n    padding: 10px;\n    border: 1px solid #d7d7d7;\n}\n\ncadence-selector .radio-option.active, .quantity-grid-mobile .radio-option.active {\n    border: 2px solid #9caf88 !important;\n    border-color: #9caf88 !important;\n}\n#product-form-template--24636152283456__main > subscription-widget > cadence-selector > div {\n  border-color: #9caf88 !important;\n}\n\ncadence-selector .value-props, .quantity-grid-mobile .value-props{\n    display: flex!important;\n    flex-direction: column;\n}\n\ncadence-selector .value-props .value-prop:nth-child(2),\ncadence-selector .value-props .value-prop:nth-child(4){\n    border: 1px solid red;\n    display:none;\n}\n\n.value-prop {\n    color: #707070;\n}\n\ncadence-selector.cadence-selector .radio-option.active .radio-dot {\n    background: #9caf88 !important;\n}\n\ncadence-selector.cadence-selector .radio-option.active .radio-circle {\n    border-color: #9caf88 !important;\n}\n\ncadence-selector.cadence-selector .option-details {\n    border:2px solid red;\n    display:none!important;\n}\n\np.option-label-text {\n    color:#1e1e1e;\n    font-size:14px;\n}\n\n.truemed-entry-box {\n    display: none!important;\n}\n\n.moneyinfo{\n  color:#707070;\n  font-size:10px;\n  margin-top:-10px!important;\n}\n\n.moneyback{\n  color:#1e1e1e;\n}\n\n.icon-text-block span {\n    color: #1e1e1e;\n}\n\n.quantity-grid-mobile .option-details {display: none;}\n\n\n@media screen and (max-width:540px){\n    cadence-selector.cadence-selector .radio-option {\n        max-width: 50%;\n    }\n    \n    cadence-selector.cadence-selector .radio-option p{\n        font-size: 10px!important;\n    }\n    \n    \n    \n    .quantity-grid-mobile .radio-option:nth-child(2) button.radio-option__button {\n        padding-bottom:0!important;\n        margin-bottom:0!important;\n        /*border: 1px solid red!important;*/\n    }\n\nspan.main-tag-product {\n    text-align: center;\n        padding: 3px;\n        height: auto;\n}\n\n\n\np.save-text.js-subscription-save {\n\n    right: 5rem!important;\n    font-size: 10px;\n    background: #9CAF88;\n    padding: 5px;\n\n}\n\n}\n\n@media screen and (min-width:500px){\n    .cadence-selector .radio-option {\n        margin-bottom: 10px;\n    }\n}\n\np.save-text.js-subscription-save {\n    position: absolute;\n    right: 6%;\n    font-size: 10px;\n    background: #9CAF88;\n    padding: 5px;\n    color: #000000bf;\n}\n\n@media (max-width: 900px){\n.site-container {\n  margin-left: auto;\n  margin-right: auto;\n  max-width: 1440px;\n  padding-left: 0;\n  padding-right: 0;\n}\n\n.product__info-wrapper, .thumbnail-slider, #shopify-section-template--24672251937088__results_list_LqxNh4 .site-container, header.site-container{\npadding-left: 2rem;\n  padding-right: 2rem;\n}\n.slider-button .icon {\n  height: 33px;\n  width: 33px;\n}\n\n</style>"
+          }
+        },
+        "custom_reviews_yRiyrR": {
+          "type": "custom_reviews",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "badge_text": "{{ product.metafields.happy_aging.title_tag.value }}"
+          }
+        },
+        "custom_liquid_xUN8aT": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"\" class=\"uppercase showMobile\">{{ section.settings.title_label }}</span>"
+          }
+        },
+        "icon_text_list_xhFzwP": {
+          "type": "icon_text_list",
+          "settings": {
+            "icon_1": "shopify://shop_images/0fe576222833e7723e12597ba42d31ce.svg",
+            "text_1": "1000 mg of Liposomal Vitamin C per serving",
+            "icon_2": "shopify://shop_images/6fea4535895e0fefe551a7e1ce3c88ab.svg",
+            "text_2": "Up to 10x better absorption with liposomal delivery",
+            "icon_3": "shopify://shop_images/7524c56ea78a6f04e5e2c56a0ee130e3.svg",
+            "text_3": "Fortifies the immune system and supports all-day vitality",
+            "icon_4": "shopify://shop_images/f2e81aadfa4715236ee4f1f5bc0a1ccd.svg",
+            "text_4": "Protects against stress and oxidative damage",
+            "icon_5": "shopify://shop_images/b9aa971410c87e016a5af8fc9b4c1131.svg",
+            "text_5": "Vegan • sugar-free • gut-friendly • non-GMO",
+            "icon_6": "shopify://shop_images/54b5d5eb1a54be2eeeeb622b74cf948f.svg",
+            "text_6": "Natural citrus taste for easy daily use",
+            "icon_7": "shopify://shop_images/f24dc820646343d9998b96eeca85a0f3.svg",
+            "text_7": "All-day vitality with antioxidant-powered energy support",
+            "text_size_desktop": 14,
+            "text_size_mobile": 14,
+            "icon_size_desktop": 16,
+            "icon_size_mobile": 16,
+            "alignment_desktop": "left",
+            "alignment_mobile": "left",
+            "margin_top_desktop": 20,
+            "margin_bottom_desktop": 20,
+            "margin_top_mobile": 20,
+            "margin_bottom_mobile": 20
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "frontrow_WcpwRH": {
+          "type": "frontrow",
+          "settings": {}
+        },
+        "buy_buttons_W9PKFR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "tonic": true,
+            "default_info_sub_1": "Ships in 12 hours",
+            "default_info_sub_2": "",
+            "default_info_sub_3": "",
+            "default_info_sub_4": "",
+            "default_info_one_1": "",
+            "default_info_one_2": "",
+            "product_content_text_default_kit": ""
+          }
+        },
+        "quantity_block_XPNgFV": {
+          "type": "quantity_block",
+          "settings": {
+            "qty": 1,
+            "onetime_price": 55,
+            "plan_id": "693185413440",
+            "title": "30-day supply",
+            "sub_title": "",
+            "num_bottles": "1",
+            "badge": "",
+            "product_content_text": "30-Day Supply",
+            "subs_info_1": "Free shipping in 12h, every 30 days",
+            "subs_info_2": "Cancel your subscription anytime",
+            "subs_info_3": "",
+            "subs_info_4": "",
+            "subs_info_5": "",
+            "subs_info_6": ""
+          }
+        },
+        "quantity_block_hxax3a": {
+          "type": "quantity_block",
+          "settings": {
+            "qty": 2,
+            "onetime_price": 55,
+            "plan_id": "693185610048",
+            "title": "60-day supply",
+            "sub_title": "",
+            "num_bottles": "2",
+            "badge": "",
+            "product_content_text": "60-day Supply",
+            "subs_info_1": "Free shipping in 12h, every 60 days",
+            "subs_info_2": "Cancel your subscription anytime",
+            "subs_info_3": "",
+            "subs_info_4": "",
+            "subs_info_5": "",
+            "subs_info_6": ""
+          }
+        },
+        "text_RB6DBe": {
+          "type": "text",
+          "settings": {
+            "text": "30 Day Money Back Guarantee",
+            "customclass": "moneybacktext",
+            "text_style": "body",
+            "text_size": "text-xs",
+            "text_align": "text-left"
+          }
+        },
+        "text_h9imWD": {
+          "type": "text",
+          "settings": {
+            "text": "If you're unsatisfied with your shots, for any reason, we'll give you a full refund–no return necessary!",
+            "customclass": "moneyinfo",
+            "text_style": "body",
+            "text_size": "text-[10px]",
+            "text_align": "text-left"
+          }
+        },
+        "aside_content_TPcz4K": {
+          "type": "aside_content",
+          "settings": {
+            "title": "Ingredients",
+            "text": "",
+            "image": "shopify://shop_images/HappyAging_Immunity_Facts_620x620_5338dca2-86f3-4a1c-bb68-1220c52692f8.jpg"
+          }
+        },
+        "aside_content_rBPMby": {
+          "type": "aside_content",
+          "settings": {
+            "title": "How to use",
+            "text": "<ul><li>Shake the bottle. </li><li>Take one teaspoon (6 ml) every morning straight or mixed into water, juice or a smoothie. </li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_mxftaL",
+        "custom_reviews_yRiyrR",
+        "title",
+        "custom_liquid_xUN8aT",
+        "icon_text_list_xhFzwP",
+        "description",
+        "frontrow_WcpwRH",
+        "buy_buttons_W9PKFR",
+        "quantity_block_XPNgFV",
+        "quantity_block_hxax3a",
+        "text_RB6DBe",
+        "text_h9imWD",
+        "aside_content_TPcz4K",
+        "aside_content_rBPMby"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 500px) {.grid-product-title {display: flex; align-items: center; gap: 15px; } span.main-tag-product {display: flex; margin-top: 0; } li#Slide-template--24670584504640__main-40407209967936 {margin-left: -2%; width: 103%; max-width: 121%; }}"
+      ],
+      "settings": {
+        "old_product": "immunity-tonic",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "highlight_color": "#f2763d",
+        "title_label": "<p>IMMUNITY TONIC</p>",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "marquee_pMqq4Y": {
+      "type": "marquee",
+      "blocks": {
+        "text_F9fHWN": {
+          "type": "text",
+          "settings": {
+            "text": "Clinically-Validated Doses"
+          }
+        },
+        "text_z7tkeC": {
+          "type": "text",
+          "settings": {
+            "text": "Premium Ingredients"
+          }
+        },
+        "text_8c4bkD": {
+          "type": "text",
+          "settings": {
+            "text": "100% Natural"
+          }
+        },
+        "text_LhF6BY": {
+          "type": "text",
+          "settings": {
+            "text": "Vegan & Gluten-Free"
+          }
+        },
+        "text_qkCpGH": {
+          "type": "text",
+          "settings": {
+            "text": "No Added Sugars"
+          }
+        }
+      },
+      "block_order": [
+        "text_F9fHWN",
+        "text_z7tkeC",
+        "text_8c4bkD",
+        "text_LhF6BY",
+        "text_qkCpGH"
+      ],
+      "custom_css": [
+        "site-marqueex {border-top: 1px solid;}"
+      ],
+      "settings": {}
+    },
+    "landing_section_GdHXgh": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_WBhNK7": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_max_width": 0,
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 80,
+            "right_spacing_desktop": 80,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 60,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 0,
+            "right_spacing_mobile": 0
+          },
+          "blocks": {}
+        },
+        "section_inner_YmreYw": {
+          "type": "section-inner",
+          "settings": {
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 30,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 80,
+            "right_spacing_desktop": 80,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 2,
+            "mobile_grid_row_gap": 30,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "grid_list_Pf4yHh": {
+              "type": "grid-list",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 0,
+                "row_gap_desktop": 0,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 0,
+                "row_gap_mobile": 0
+              },
+              "blocks": {
+                "highlight_image_item_6wWHKq": {
+                  "type": "highlight-image-item",
+                  "settings": {
+                    "image_max_width_desktop": 0,
+                    "title": "",
+                    "title_size": 30,
+                    "title_line_height": 42,
+                    "title_color": "",
+                    "text": "",
+                    "text_alignment_desktop": "left",
+                    "text_alignment_mobile": "center",
+                    "flex_direction": "row",
+                    "justify_content": "start",
+                    "align_items": "start",
+                    "row_gap": 20,
+                    "column_gap": 20,
+                    "flex_direction_mobile": "column",
+                    "justify_content_mobile": "center",
+                    "align_items_mobile": "center",
+                    "row_gap_mobile": 20,
+                    "column_gap_mobile": 20
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "highlight_image_item_6wWHKq"
+              ]
+            },
+            "section_inner_qAQ6QY": {
+              "type": "section-inner",
+              "settings": {
+                "desktop_grid_columns": "2",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "start",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 30,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 0,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 20,
+                "top_spacing_mobile": 0,
+                "bottom_spacing_mobile": 30,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_aTxT4k": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 40,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 30
+                  },
+                  "blocks": {
+                    "heading_block_gbkbFr": {
+                      "type": "heading-block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p>FIRST LIQUID</p><p><em>liposomal Vitamin C</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "desktop_font_size": 50,
+                        "text_alignment_desktop": "left",
+                        "mobile_font_size": 48,
+                        "top_spacing_mobile": 20,
+                        "lr_spacing_mobile": 0,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_gbkbFr"
+                  ]
+                },
+                "grid_list_UKGRj3": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 25,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 1,
+                    "row_gap_mobile": 1
+                  },
+                  "blocks": {
+                    "text_block_BdfahW": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h2><em>Before the sniffles start, your cells are already stronger.</em></h2>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "max_width": 0,
+                        "desktop_font_size": 36,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_EJp8ft": {
+                      "type": "text-block",
+                      "settings": {
+                        "text": "<p>What matters isn't how much you take but how well your body absorbs it. Immunity Tonic by Happy Aging uses advanced liposomal technology to deliver Vitamin C with up to 10x better absorption, getting into your system fast for real support.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "max_width": 0,
+                        "desktop_font_size": 16,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "top_spacing_mobile": 10,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_block_BdfahW",
+                    "text_block_EJp8ft"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_aTxT4k",
+                "grid_list_UKGRj3"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_Pf4yHh",
+            "section_inner_qAQ6QY"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_WBhNK7",
+        "section_inner_YmreYw"
+      ],
+      "custom_css": [
+        ".site-container {padding-left: 0; padding-right: 0;}",
+        "@media (min-width: 1000px) {#shopify-block-AM1F5dFhTcHluS3V3b__highlight_image_item_BLJ8i3 .highlight-image__title {display: none; }}"
+      ],
+      "settings": {
+        "background_color": "",
+        "full_width": false,
+        "max_width": 1440,
+        "top_spacing": 80,
+        "bottom_spacing": 50,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "landing_section_KWgCJm": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_yArRpj": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_max_width": 974,
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 20,
+            "left_spacing_desktop": 0,
+            "right_spacing_desktop": 0,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 35,
+            "bottom_spacing_mobile": 20,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "heading_block_GUQqVg": {
+              "type": "heading-block",
+              "name": "Heading block",
+              "settings": {
+                "subheading": "",
+                "text": "<h1>FEEL IT <em>first shifts</em></h1>",
+                "tag_select": "h2",
+                "text_color": "",
+                "desktop_font_size": 50,
+                "text_alignment_desktop": "left",
+                "mobile_font_size": 50,
+                "text_alignment_mobile": "left"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_block_GUQqVg"
+          ]
+        },
+        "section_inner_gGdAUQ": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_max_width": 974,
+            "desktop_grid_columns": "2",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 20,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 0,
+            "right_spacing_desktop": 0,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 30,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 60,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "grid_list_XVQaRQ": {
+              "type": "grid-list",
+              "name": "Grid (simple)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 15,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 10,
+                "row_gap_mobile": 5
+              },
+              "blocks": {
+                "image_block_wixqxw": {
+                  "type": "image-block",
+                  "name": "Image block",
+                  "settings": {
+                    "image": "shopify://shop_images/1370x13702.jpg",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                },
+                "text_block_bLNe3B": {
+                  "type": "text-block",
+                  "name": "Text block",
+                  "settings": {
+                    "text": "<h2>Everyday win</h2>",
+                    "text_color": "",
+                    "text_weight": "normal",
+                    "border-top": false,
+                    "text_alignment_desktop": "left",
+                    "tooltip_texts": "",
+                    "mobile_font_size": 0,
+                    "top_spacing_mobile": 10,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                },
+                "text_block_DzQCiF": {
+                  "type": "text-block",
+                  "name": "Text block",
+                  "settings": {
+                    "text": "<ul><li>Energized mornings, without the crash</li><li>Stronger immune defense, no guesswork</li><li>Natural support for skin, mood, and vitality</li></ul>",
+                    "text_color": "",
+                    "text_weight": "normal",
+                    "border-top": false,
+                    "desktop_font_size": 16,
+                    "text_alignment_desktop": "left",
+                    "tooltip_texts": "",
+                    "mobile_font_size": 16,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_wixqxw",
+                "text_block_bLNe3B",
+                "text_block_DzQCiF"
+              ]
+            },
+            "grid_list_dUcrMP": {
+              "type": "grid-list",
+              "name": "Grid (simple)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 15,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 10,
+                "row_gap_mobile": 5
+              },
+              "blocks": {
+                "image_block_J6fg7p": {
+                  "type": "image-block",
+                  "name": "Image block",
+                  "settings": {
+                    "image": "shopify://shop_images/20250715_1450_Citrus_Elegance_simple_compose_01k07k8qfge819vcc1g0pmpsjg.png",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                },
+                "text_block_GRJ9tN": {
+                  "type": "text-block",
+                  "name": "Text block",
+                  "settings": {
+                    "text": "<h2>Why it happens</h2>",
+                    "text_color": "",
+                    "text_weight": "normal",
+                    "border-top": false,
+                    "desktop_font_size": 0,
+                    "text_alignment_desktop": "left",
+                    "tooltip_texts": "",
+                    "mobile_font_size": 48,
+                    "top_spacing_mobile": 10,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                },
+                "text_block_YDUF8E": {
+                  "type": "text-block",
+                  "name": "Text block",
+                  "settings": {
+                    "text": "<ul><li>Liposomal delivery ensures superior cellular absorption</li><li>Clinically backed Vitamin C dose optimizes bioavailability</li><li>Neutralizes oxidative stress and supports collagen synthesis</li></ul>",
+                    "text_color": "",
+                    "text_weight": "normal",
+                    "border-top": false,
+                    "desktop_font_size": 16,
+                    "text_alignment_desktop": "left",
+                    "tooltip_texts": "",
+                    "mobile_font_size": 16,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_J6fg7p",
+                "text_block_GRJ9tN",
+                "text_block_YDUF8E"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_XVQaRQ",
+            "grid_list_dUcrMP"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_yArRpj",
+        "section_inner_gGdAUQ"
+      ],
+      "custom_css": [
+        ".text-block ul li {list-style: inside; padding: 5px;}",
+        "@media screen and (max-width: 540px) {h2 {font-size: 36px; }}"
+      ],
+      "name": "Landing Section",
+      "settings": {
+        "background_color": "",
+        "full_width": false,
+        "max_width": 974,
+        "top_spacing": 70,
+        "bottom_spacing": 70,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": true,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "landing_section_ExiDxD": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_jMigaK": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_max_width": 1440,
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 50,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 0,
+            "right_spacing_desktop": 0,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 35,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "grid_list_GratK3": {
+              "type": "grid-list",
+              "name": "Grid (simple)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 40,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 30,
+                "row_gap_mobile": 30
+              },
+              "blocks": {
+                "heading_block_pKVY9k": {
+                  "type": "heading-block",
+                  "name": "Heading block",
+                  "settings": {
+                    "subheading": "",
+                    "text": "<p>WHY HAPPY AGING <em>is your advantage</em></p>",
+                    "tag_select": "h2",
+                    "text_color": "",
+                    "letter_spacing": 0,
+                    "desktop_line_height": 0,
+                    "top_spacing_desktop": 0,
+                    "text_alignment_desktop": "center",
+                    "mobile_font_size": 48,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_block_pKVY9k"
+              ]
+            },
+            "section_inner_HpigUY": {
+              "type": "section-inner",
+              "name": "Grid (wrapper)",
+              "settings": {
+                "desktop_max_width": 0,
+                "desktop_grid_columns": "5",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "start",
+                "desktop_grid_column_gap": 30,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 0,
+                "mobile_grid_columns": "2",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 20,
+                "mobile_grid_row_gap": 50,
+                "top_spacing_mobile": 35,
+                "bottom_spacing_mobile": 0,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_9tFUGK": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_ptKwtR": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>One</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "desktop_font_size": 0,
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_hNGj3F": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>A ritual that strengthens your defenses without the overload</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_ptKwtR",
+                    "text_block_hNGj3F"
+                  ]
+                },
+                "grid_list_Q4hBYK": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_AkQakG": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>1,000 mg</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_Gya3pg": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>Vitamin C in liposomal form supports immunity, collagen and antioxidant activity</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_AkQakG",
+                    "text_block_Gya3pg"
+                  ]
+                },
+                "grid_list_RJCRew": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_iHzN3H": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>Clean</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_LUiRbt": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>No sugar, synthetic preservatives or fillers</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_iHzN3H",
+                    "text_block_LUiRbt"
+                  ]
+                },
+                "grid_list_BwzMKy": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_q7taLp": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>Quick</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_FeLFaV": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>Sip format fits busy mornings and wellness routines</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "mobile_line_height": 0,
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_q7taLp",
+                    "text_block_FeLFaV"
+                  ]
+                },
+                "grid_list_9eVrbX": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_yfYHVF": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>Science</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_YpUc8B": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>Clinically backed formula with targeted delivery</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_yfYHVF",
+                    "text_block_YpUc8B"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_9tFUGK",
+                "grid_list_Q4hBYK",
+                "grid_list_RJCRew",
+                "grid_list_BwzMKy",
+                "grid_list_9eVrbX"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_GratK3",
+            "section_inner_HpigUY"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_jMigaK"
+      ],
+      "custom_css": [
+        ".text-block.border-t {border-color: #707070 !important;}",
+        "@media screen and (max-width: 540px) {.heading-block p em {font-size: 40px !important; }}"
+      ],
+      "name": "Landing Section",
+      "settings": {
+        "background_color": "#e5dbcc",
+        "full_width": false,
+        "max_width": 1440,
+        "top_spacing": 70,
+        "bottom_spacing": 70,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "top_spacing_mobile": 70,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "focus_you_Lh73aQ": {
+      "type": "focus-you",
+      "blocks": {
+        "row_NPeT7w": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/Image_8.png",
+            "heading_1": "Easier breathing, fewer sniffles",
+            "text_1": "<p>Quercetin helps calm histamine responses, easing seasonal allergy symptoms.</p>",
+            "heading_2": "Less tension, more comfort",
+            "text_2": "<p>Anti-inflammatory action supports joint relief and helps reduce body discomfort.</p>",
+            "button_text": "",
+            "button_url": "/"
+          }
+        },
+        "row_tWbad6": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "image": "shopify://shop_images/Image_8.png",
+            "heading_1": "Everyday defense, all day long",
+            "text_1": "<p>Natural antioxidant power helps protect your body from environmental stress and wear.</p>",
+            "heading_2": "Steady energy, no crash",
+            "text_2": "<p>Clean formula supports your body without pills, sugar, or fog.</p>",
+            "button_text": "Experience Relief Today",
+            "button_url": "/"
+          }
+        }
+      },
+      "block_order": [
+        "row_NPeT7w",
+        "row_tWbad6"
+      ],
+      "disabled": true,
+      "name": "Focus You",
+      "settings": {
+        "title": "<p>Feel <em>the Change</em></p>",
+        "subtitle": ""
+      }
+    },
+    "image_with_text_blocks_gAjTfr": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "text_nLEfLV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>BUILD TO PROTECT, <em>designed to support you</em></p>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
+        "spacing_HM7NB3": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 0,
+            "spacing_mobile": 20,
+            "fill_all_desktop": false
+          }
+        },
+        "text_GcHhgp": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><em> Clinically supported liposomal Vitamin C for better bioavailability</em></h3>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
+        "spacing_B7txqB": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 50,
+            "spacing_mobile": 0,
+            "fill_all_desktop": false
+          }
+        },
+        "spacing_A7Nw66": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 20,
+            "spacing_mobile": 40,
+            "fill_all_desktop": false
+          }
+        },
+        "text_QghNzh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Boosts daily immunity and supports white blood cell activity</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_BFqHcM": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Helps reduce duration and severity of seasonal immune challenges</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_FHXk9x": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Protects skin and tissues from oxidative stress</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_Ucicgf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Supports adrenal health and vitality</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_fAHjYt": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Refreshing taste, easy to use</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "spacing_GFqXPi": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 20,
+            "spacing_mobile": 20,
+            "fill_all_desktop": false
+          }
+        },
+        "button_iKqTjh": {
+          "type": "button",
+          "settings": {
+            "button_text": "Buy Now",
+            "button_link": "#",
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "border_color": "#000000",
+            "hover_background_color": "#333333",
+            "hover_text_color": "#ffffff",
+            "hover_border_color": "#333333",
+            "font_size": 32,
+            "font_weight": "400",
+            "width_type": "custom",
+            "custom_width": 40,
+            "min_width": 0,
+            "alignment": "left",
+            "padding_vertical": 10,
+            "padding_horizontal": 32,
+            "border_width": 1,
+            "border_radius": 0,
+            "mobile_full_width": true
+          }
+        }
+      },
+      "block_order": [
+        "text_nLEfLV",
+        "spacing_HM7NB3",
+        "text_GcHhgp",
+        "spacing_B7txqB",
+        "spacing_A7Nw66",
+        "text_QghNzh",
+        "text_BFqHcM",
+        "text_FHXk9x",
+        "text_Ucicgf",
+        "text_fAHjYt",
+        "spacing_GFqXPi",
+        "button_iKqTjh"
+      ],
+      "custom_css": [
+        "div.leading-5.border-b {border-color: #d7d7d7; padding-bottom: 5px; margin-bottom: 5px;}",
+        "div.leading-5 h3 {font-size: 28px;}",
+        "@media screen and (min-width: 1300px) {img {padding-right: 00px; }}",
+        "@media screen and (max-width: 540px) {img {border-bottom: 1px solid !important; }}",
+        ".largura_content {max-width: 510px !important;}"
+      ],
+      "settings": {
+        "title": "",
+        "text": "",
+        "image_desk": "shopify://shop_images/1370x1370.jpg",
+        "image_height_desk": "fit",
+        "image_mob": "shopify://shop_images/1370x1370.jpg",
+        "image_height_mob": "adapt",
+        "width": "full",
+        "width_mobile": "full",
+        "image_first": false,
+        "image_first_mob": false,
+        "image_large": false,
+        "show_border": false,
+        "show_border_top": true,
+        "hide_border_mobile": false,
+        "remove_py_content": false,
+        "small_content": false,
+        "wrap_image_mobile": false,
+        "wrap_content_mobile": true,
+        "spacing_desktop": "lg:py-0",
+        "spacing_mobile": "py-0"
+      }
+    },
+    "how_it_helps_YPBkT9": {
+      "type": "how-it-helps",
+      "blocks": {
+        "card_6a7aP7": {
+          "type": "card",
+          "settings": {
+            "card_title": "Keeps things steady",
+            "card_text": "Helps your body reset before symptoms hit."
+          }
+        },
+        "card_cMMrq6": {
+          "type": "card",
+          "settings": {
+            "card_title": "Soothes discomfort",
+            "card_text": "Eases tension when you're feeling worn out."
+          }
+        },
+        "card_mVB6G9": {
+          "type": "card",
+          "settings": {
+            "card_title": "Triggers all around",
+            "card_text": "Pollen, stress, and pollution can throw your body off."
+          }
+        },
+        "card_h6ztFg": {
+          "type": "card",
+          "settings": {
+            "card_title": "Shields your cells",
+            "card_text": "Daily protection against stress and wear."
+          }
+        },
+        "card_zCpNRP": {
+          "type": "card",
+          "settings": {
+            "card_title": "Absorbs 10x better",
+            "card_text": "Liposomal technology delivers real results, fast."
+          }
+        }
+      },
+      "block_order": [
+        "card_6a7aP7",
+        "card_cMMrq6",
+        "card_mVB6G9",
+        "card_h6ztFg",
+        "card_zCpNRP"
+      ],
+      "disabled": true,
+      "name": "How it Helps",
+      "settings": {
+        "heading": "<p>HOW it helps</p>"
+      }
+    },
+    "landing_section_3RqYFU": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_W3tNRM": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 20,
+            "left_spacing_desktop": 30,
+            "right_spacing_desktop": 30,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 0,
+            "right_spacing_mobile": 0
+          },
+          "blocks": {
+            "heading_block_g9fQLV": {
+              "type": "heading-block",
+              "name": "Heading block",
+              "settings": {
+                "subheading": "",
+                "text": "<p>HOW VITAMIN C WORKS <em>for your cells</em></p>",
+                "tag_select": "h2",
+                "text_color": "",
+                "desktop_font_size": 50,
+                "text_alignment_desktop": "left",
+                "mobile_font_size": 50,
+                "text_alignment_mobile": "left"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_block_g9fQLV"
+          ]
+        },
+        "section_inner_KGEFVa": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_grid_columns": "3",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 30,
+            "right_spacing_desktop": 30,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 35,
+            "left_spacing_mobile": 0,
+            "right_spacing_mobile": 0
+          },
+          "blocks": {
+            "section_inner_einebR": {
+              "type": "section-inner",
+              "name": "Grid (wrapper)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "start",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 20,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 50,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 0,
+                "top_spacing_mobile": 0,
+                "bottom_spacing_mobile": 0,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_LdfKtp": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 0,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 0,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "ai_gen_block_e8307fc_mtrpJh": {
+                      "type": "ai_gen_block_e8307fc",
+                      "name": "Icon Block",
+                      "settings": {
+                        "icon_image": "shopify://shop_images/Icons_cb5831c2-9738-4f1f-a838-d7576cc4f736.svg",
+                        "alt_text": "",
+                        "link": "",
+                        "alignment": "flex-start",
+                        "icon_width": 45,
+                        "icon_width_mobile": 45,
+                        "icon_padding": 8,
+                        "padding_top": 4,
+                        "padding_bottom": 4,
+                        "padding_top_mobile": 16,
+                        "padding_bottom_mobile": 4,
+                        "background_color": "rgba(0,0,0,0)",
+                        "border_radius": 8,
+                        "border_width": 0,
+                        "border_color": "#e0e0e0",
+                        "hover_scale": 1.1
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_EBcM9m": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h3>Vitamin C supports your immune cells’ function, from activation to protection.</h3>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "desktop_font_size": 16,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "ai_gen_block_e8307fc_mtrpJh",
+                    "text_block_EBcM9m"
+                  ]
+                },
+                "grid_list_eDGmxC": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 0,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 0,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "ai_gen_block_e8307fc_MD8FaW": {
+                      "type": "ai_gen_block_e8307fc",
+                      "name": "Icon Block",
+                      "settings": {
+                        "icon_image": "shopify://shop_images/Icons-1_017901cf-4eae-4c08-bb65-d88b5f817459.svg",
+                        "alt_text": "",
+                        "link": "",
+                        "alignment": "flex-start",
+                        "icon_width": 45,
+                        "icon_width_mobile": 45,
+                        "icon_padding": 8,
+                        "padding_top": 4,
+                        "padding_bottom": 4,
+                        "padding_top_mobile": 16,
+                        "padding_bottom_mobile": 4,
+                        "background_color": "rgba(0,0,0,0)",
+                        "border_radius": 8,
+                        "border_width": 0,
+                        "border_color": "#e0e0e0",
+                        "hover_scale": 1.1
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_yVAyLD": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h3>Oxidative stress and inflammation can compromise your defenses. Vitamin C helps rebalance.</h3>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "desktop_font_size": 16,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "ai_gen_block_e8307fc_MD8FaW",
+                    "text_block_yVAyLD"
+                  ]
+                },
+                "grid_list_Wy3bat": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 0,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 0,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "ai_gen_block_e8307fc_qkywbz": {
+                      "type": "ai_gen_block_e8307fc",
+                      "name": "Icon Block",
+                      "settings": {
+                        "icon_image": "shopify://shop_images/Icons-2_f2435c5f-5111-48e4-9dfa-850f1a088e61.svg",
+                        "alt_text": "",
+                        "link": "",
+                        "alignment": "flex-start",
+                        "icon_width": 45,
+                        "icon_width_mobile": 45,
+                        "icon_padding": 8,
+                        "padding_top": 4,
+                        "padding_bottom": 4,
+                        "padding_top_mobile": 16,
+                        "padding_bottom_mobile": 4,
+                        "background_color": "rgba(0,0,0,0)",
+                        "border_radius": 8,
+                        "border_width": 0,
+                        "border_color": "#e0e0e0",
+                        "hover_scale": 1.1
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_yWLTLg": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h3>Real immunity starts with real absorption.</h3>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "desktop_font_size": 16,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "ai_gen_block_e8307fc_qkywbz",
+                    "text_block_yWLTLg"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_LdfKtp",
+                "grid_list_eDGmxC",
+                "grid_list_Wy3bat"
+              ]
+            },
+            "section_inner_MQ4cBF": {
+              "type": "section-inner",
+              "name": "Grid (wrapper)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 0,
+                "mobile_max_width": 0,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 0,
+                "top_spacing_mobile": 25,
+                "bottom_spacing_mobile": 20,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "highlight_image_item_QweEBC": {
+                  "type": "highlight-image-item",
+                  "name": "Highlight image item",
+                  "settings": {
+                    "image": "shopify://shop_images/immunityv2.png",
+                    "image_max_width_mobile": 10000,
+                    "title": "",
+                    "title_size": 30,
+                    "title_line_height": 42,
+                    "title_color": "",
+                    "text": "",
+                    "text_alignment_desktop": "left",
+                    "text_alignment_mobile": "center",
+                    "flex_direction": "row",
+                    "justify_content": "start",
+                    "align_items": "start",
+                    "row_gap": 20,
+                    "column_gap": 20,
+                    "flex_direction_mobile": "column",
+                    "justify_content_mobile": "center",
+                    "align_items_mobile": "center",
+                    "row_gap_mobile": 20,
+                    "column_gap_mobile": 20
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "highlight_image_item_QweEBC"
+              ]
+            },
+            "section_inner_bAxLpg": {
+              "type": "section-inner",
+              "name": "Grid (wrapper)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "start",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 50,
+                "right_spacing_desktop": 0,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 0,
+                "top_spacing_mobile": 0,
+                "bottom_spacing_mobile": 0,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "section_inner_ApnLBe": {
+                  "type": "section-inner",
+                  "name": "Grid (wrapper)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "horizontal_alignment": "start",
+                    "vertical_alignment": "start",
+                    "desktop_grid_column_gap": 0,
+                    "desktop_grid_row_gap": 20,
+                    "top_spacing_desktop": 0,
+                    "bottom_spacing_desktop": 0,
+                    "left_spacing_desktop": 0,
+                    "right_spacing_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "mobile_horizontal_alignment": "start",
+                    "mobile_vertical_alignment": "start",
+                    "mobile_grid_column_gap": 0,
+                    "mobile_grid_row_gap": 0,
+                    "top_spacing_mobile": 0,
+                    "bottom_spacing_mobile": 0,
+                    "left_spacing_mobile": 0,
+                    "right_spacing_mobile": 0
+                  },
+                  "blocks": {
+                    "grid_list_pqk4a3": {
+                      "type": "grid-list",
+                      "name": "Grid (simple)",
+                      "settings": {
+                        "desktop_grid_columns": "1",
+                        "column_gap_desktop": 0,
+                        "row_gap_desktop": 0,
+                        "mobile_grid_columns": "1",
+                        "column_gap_mobile": 0,
+                        "row_gap_mobile": 0
+                      },
+                      "blocks": {
+                        "ai_gen_block_e8307fc_E3iDrC": {
+                          "type": "ai_gen_block_e8307fc",
+                          "name": "Icon Block",
+                          "settings": {
+                            "icon_image": "shopify://shop_images/Icons-3_63b35096-a2d4-4062-9b95-07be96bad84b.svg",
+                            "alt_text": "",
+                            "link": "",
+                            "alignment": "flex-end",
+                            "icon_width": 45,
+                            "icon_width_mobile": 45,
+                            "icon_padding": 8,
+                            "padding_top": 4,
+                            "padding_bottom": 4,
+                            "padding_top_mobile": 16,
+                            "padding_bottom_mobile": 4,
+                            "background_color": "rgba(0,0,0,0)",
+                            "border_radius": 8,
+                            "border_width": 0,
+                            "border_color": "#e0e0e0",
+                            "hover_scale": 1.1
+                          },
+                          "blocks": {}
+                        },
+                        "text_block_GMeQRr": {
+                          "type": "text-block",
+                          "name": "Text block",
+                          "settings": {
+                            "text": "<h3>Clinical data supports higher absorption and better outcomes with liposomal delivery.</h3>",
+                            "text_color": "",
+                            "text_weight": "normal",
+                            "border-top": false,
+                            "desktop_font_size": 16,
+                            "text_alignment_desktop": "right",
+                            "tooltip_texts": "",
+                            "mobile_font_size": 16,
+                            "text_alignment_mobile": "right"
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "ai_gen_block_e8307fc_E3iDrC",
+                        "text_block_GMeQRr"
+                      ]
+                    },
+                    "grid_list_TyYWRe": {
+                      "type": "grid-list",
+                      "name": "Grid (simple)",
+                      "settings": {
+                        "desktop_grid_columns": "1",
+                        "column_gap_desktop": 0,
+                        "row_gap_desktop": 0,
+                        "mobile_grid_columns": "1",
+                        "column_gap_mobile": 0,
+                        "row_gap_mobile": 0
+                      },
+                      "blocks": {
+                        "ai_gen_block_e8307fc_NtbyeH": {
+                          "type": "ai_gen_block_e8307fc",
+                          "name": "Icon Block",
+                          "settings": {
+                            "icon_image": "shopify://shop_images/Icons-4.svg",
+                            "alt_text": "",
+                            "link": "",
+                            "alignment": "flex-end",
+                            "icon_width": 45,
+                            "icon_width_mobile": 45,
+                            "icon_padding": 8,
+                            "padding_top": 4,
+                            "padding_bottom": 4,
+                            "padding_top_mobile": 16,
+                            "padding_bottom_mobile": 16,
+                            "background_color": "rgba(0,0,0,0)",
+                            "border_radius": 8,
+                            "border_width": 0,
+                            "border_color": "#e0e0e0",
+                            "hover_scale": 1.1
+                          },
+                          "blocks": {}
+                        },
+                        "text_block_gbe6Vy": {
+                          "type": "text-block",
+                          "name": "Text block",
+                          "settings": {
+                            "text": "<h3>Liposomal technology protects the nutrient through digestion so it reaches your bloodstream intact.</h3>",
+                            "text_color": "",
+                            "text_weight": "normal",
+                            "border-top": false,
+                            "desktop_font_size": 16,
+                            "text_alignment_desktop": "right",
+                            "tooltip_texts": "",
+                            "mobile_font_size": 16,
+                            "text_alignment_mobile": "right"
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "ai_gen_block_e8307fc_NtbyeH",
+                        "text_block_gbe6Vy"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "grid_list_pqk4a3",
+                    "grid_list_TyYWRe"
+                  ]
+                }
+              },
+              "block_order": [
+                "section_inner_ApnLBe"
+              ]
+            }
+          },
+          "block_order": [
+            "section_inner_einebR",
+            "section_inner_MQ4cBF",
+            "section_inner_bAxLpg"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_W3tNRM",
+        "section_inner_KGEFVa"
+      ],
+      "custom_css": [
+        ".text-block {border-bottom: 1px solid #000;}"
+      ],
+      "name": "Landing Section",
+      "settings": {
+        "background_color": "",
+        "full_width": false,
+        "max_width": 1440,
+        "top_spacing": 70,
+        "bottom_spacing": 70,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": false,
+        "top_spacing_mobile": 35,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "results_list_LqxNh4": {
+      "type": "results-list",
+      "blocks": {
+        "result_item_zqgCJN": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/cell_s_protection.png",
+            "title": "DAY 1",
+            "text": "<p>Cellular protection begins</p>"
+          }
+        },
+        "result_item_B9jKrw": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/Badge_4e39dffc-d59c-4067-a024-7b4b75bb7fda.png",
+            "title": "DAY 7",
+            "text": "<p>Improved energy and daily vitality</p>"
+          }
+        },
+        "result_item_KtxBQ9": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/20250716_1156_Waterproof_Material_Cross-Section_remix_01k09vma4ee4hbq1bcbq10a4gk.png",
+            "title": "DAY 30",
+            "text": "<p>Stronger skin barrier and stress modulation</p>"
+          }
+        },
+        "result_item_rqhTek": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/Badge0.png",
+            "title": "DAY 60",
+            "text": "<p>Visible glow, better immune resilience</p>"
+          }
+        },
+        "result_item_9ia4b9": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/Badge4_9dc618f8-78b7-42de-9d4d-b75031213b66.png",
+            "title": "DAY 90",
+            "text": "<p>Elevated energy, mood, and defenses</p>"
+          }
+        }
+      },
+      "block_order": [
+        "result_item_zqgCJN",
+        "result_item_B9jKrw",
+        "result_item_KtxBQ9",
+        "result_item_rqhTek",
+        "result_item_9ia4b9"
+      ],
+      "custom_css": [
+        "h3.heading {border-bottom: 1px solid; border-top: none; padding-top: 0;}",
+        "h2.heading {font-size: 50px !important;}",
+        ".text-xs.leading-5 p {transition-duration: 0.3s; font-size: 22px; font-family: var(--font-heading-family); opacity: 0;}",
+        ".d-grid .d-grid:hover .text-xs.leading-5 p {opacity: 1;}",
+        "@media screen and (max-width: 500px) {.text-xs.leading-5 p {opacity: 1 !important; font-family: var(--font-heading-family); font-size: 24px; }}"
+      ],
+      "name": "Results List",
+      "settings": {
+        "title": "YOUR VITAMIN <em>C journey</em>"
+      }
+    },
+    "ingredients_tabs_nKwUYB": {
+      "type": "ingredients-tabs",
+      "blocks": {
+        "tab_GQg8LN": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "MAGNESIUM BISGLYCINATE",
+            "tab_heading": "Magnesium Bisglycinate",
+            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
+            "tab_image": "shopify://shop_images/Badge.png"
+          }
+        },
+        "tab_g36fUn": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Phosphatidylcholine Liposomes",
+            "tab_heading": "Magnesium Bisglycinate",
+            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
+            "tab_image": "shopify://shop_images/Image_5.png"
+          }
+        }
+      },
+      "block_order": [
+        "tab_GQg8LN",
+        "tab_g36fUn"
+      ],
+      "disabled": true,
+      "name": "Ingredients Tabs",
+      "settings": {
+        "heading": "THOUGHTFULLY SOURCED,",
+        "subheading": "clinically-verified ingredients"
+      }
+    },
+    "landing_section_nqCRrp": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_jaGitq": {
+          "type": "section-inner",
+          "settings": {
+            "desktop_max_width": 1440,
+            "desktop_grid_columns": "2",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 50,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 70,
+            "bottom_spacing_desktop": 70,
+            "left_spacing_desktop": 30,
+            "right_spacing_desktop": 30,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "grid_list_8NRiw8": {
+              "type": "grid-list",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 40,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 0,
+                "row_gap_mobile": 0
+              },
+              "blocks": {
+                "image_block_4rVcUP": {
+                  "type": "image-block",
+                  "settings": {
+                    "image": "shopify://shop_images/asset4.png",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_4rVcUP"
+              ]
+            },
+            "section_inner_edEAQq": {
+              "type": "section-inner",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "center",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 70,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "center",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 50,
+                "top_spacing_mobile": 20,
+                "bottom_spacing_mobile": 20,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_39DAGw": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 20,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 15
+                  },
+                  "blocks": {
+                    "heading_block_h8V6Bc": {
+                      "type": "heading-block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<h2>TAKE BACK <em>your immunity</em></h2>",
+                        "tag_select": "h1",
+                        "text_color": "",
+                        "desktop_font_size": 0,
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_rbCFYQ": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h3><em>Clinically supported liposomal Vitamin C for rapid, effective defense</em></h3>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_3Rzw4W": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>A single teaspoon delivers 1,000 mg of Vitamin C in liposomal form, helping your body stay ready and resilient. Expect faster uptake, stronger immune readiness and vitality that shows.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "ai_gen_block_ab0bec8_dRmymN": {
+                      "type": "ai_gen_block_ab0bec8",
+                      "settings": {
+                        "desktop_spacing": 15,
+                        "mobile_spacing": 10
+                      },
+                      "blocks": {}
+                    },
+                    "ai_gen_block_3608cf6_FRaWaP": {
+                      "type": "ai_gen_block_3608cf6",
+                      "settings": {
+                        "button_text": "Buy Now",
+                        "button_link": "#",
+                        "background_color": "#000000",
+                        "text_color": "#ffffff",
+                        "border_color": "#000000",
+                        "hover_background_color": "#333333",
+                        "hover_text_color": "#ffffff",
+                        "hover_border_color": "#333333",
+                        "font_size": 32,
+                        "font_weight": "400",
+                        "width_type": "custom",
+                        "custom_width": 55,
+                        "min_width": 0,
+                        "alignment": "left",
+                        "padding_vertical": 10,
+                        "padding_horizontal": 60,
+                        "border_width": 1,
+                        "border_radius": 0,
+                        "mobile_full_width": true
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_h8V6Bc",
+                    "text_block_rbCFYQ",
+                    "text_block_3Rzw4W",
+                    "ai_gen_block_ab0bec8_dRmymN",
+                    "ai_gen_block_3608cf6_FRaWaP"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_39DAGw"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_8NRiw8",
+            "section_inner_edEAQq"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_jaGitq"
+      ],
+      "custom_css": [
+        ".heading-block h2 {font-size: 50px;}",
+        ".heading-block h4 {font-size: 24px;}"
+      ],
+      "settings": {
+        "background_color": "#f7f5eb",
+        "full_width": false,
+        "max_width": 0,
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "max_width_mobile": 0,
+        "top_spacing_mobile": 20,
+        "bottom_spacing_mobile": 20,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "image_with_text_wjQyxT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hiF9jj": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Start Feeling Better, <em>every day</em></p>",
+            "heading_size": "h1",
+            "line-height": 1
+          }
+        },
+        "text_yLR6KH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Relief Tonic helps your body bounce back from daily triggers with confidence. Refreshing citrus taste. Clean ingredients. Real results. Start today.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_8rgaR3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hiF9jj",
+        "text_yLR6KH",
+        "button_8rgaR3"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_3.png",
+        "height": "adapt",
+        "landscape": false,
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_iQ4HPC": {
+      "type": "image-banner",
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/martha_868fe994-f73b-494b-bb0a-272b0580bf56.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "timeline_section_hBBi6r": {
+      "type": "timeline-section",
+      "blocks": {
+        "title_ERxH8J": {
+          "type": "title",
+          "settings": {
+            "title": "<p>HOW <em>to use</em></p>"
+          }
+        },
+        "step_zxLdV4": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "step_title": "SHAKE THE BOTTLE",
+            "step_text": ""
+          }
+        },
+        "step_QnBzQa": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "step_title": "TAKE ONE TEASPOON (6 ML)",
+            "step_text": "Every morning, straight or mixed into water, juice or your favorite smoothie."
+          }
+        }
+      },
+      "block_order": [
+        "title_ERxH8J",
+        "step_zxLdV4",
+        "step_QnBzQa"
+      ],
+      "custom_css": [
+        "div .relative {/*border-bottom: 20px solid red;*/ padding-bottom: 19rem;}",
+        "@media screen and (max-width: 500px) {div .relative {/*border-bottom: 20px solid red;*/ padding-bottom: 0; }}",
+        ".heading {font-size: 50px;}"
+      ],
+      "settings": {
+        "show_border_top": true,
+        "first_image": "shopify://shop_images/imagem1.png",
+        "second_image": "shopify://shop_images/martha_868fe994-f73b-494b-bb0a-272b0580bf56.png"
+      }
+    },
+    "image_banner_kGC7P6": {
+      "type": "image-banner",
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/IMMUNITYs.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "subscription_products_Q9kNnn": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_h6rRVw": {
+          "type": "product_card",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "quantity_block_YY9FYQ": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146779968
+          }
+        },
+        "quantity_block_XqAhQc": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        },
+        "product_card_c9xmAe": {
+          "type": "product_card",
+          "settings": {
+            "product": "longevity-shots"
+          }
+        },
+        "quantity_block_3aQNrd": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693008924992
+          }
+        },
+        "quantity_block_q9eBhX": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693008859456
+          }
+        },
+        "product_card_78ntT7": {
+          "type": "product_card",
+          "settings": {
+            "product": "creatine-for-women"
+          }
+        },
+        "quantity_block_Beyw3H": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693107163456
+          }
+        },
+        "quantity_block_3Ha43Q": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693109719360
+          }
+        },
+        "product_card_fAbDJE": {
+          "type": "product_card",
+          "settings": {
+            "product": "hydroburn"
+          }
+        },
+        "quantity_block_6tjBUA": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693066072384
+          }
+        },
+        "quantity_block_KRaWaj": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693090320704
+          }
+        }
+      },
+      "block_order": [
+        "product_card_h6rRVw",
+        "quantity_block_YY9FYQ",
+        "quantity_block_XqAhQc",
+        "product_card_c9xmAe",
+        "quantity_block_3aQNrd",
+        "quantity_block_q9eBhX",
+        "product_card_78ntT7",
+        "quantity_block_Beyw3H",
+        "quantity_block_3Ha43Q",
+        "product_card_fAbDJE",
+        "quantity_block_6tjBUA",
+        "quantity_block_KRaWaj"
+      ],
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<p>Complete <em>your routine</em></p>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
+        "show_all_link": true
+      }
+    },
+    "image_banner_D6TgTi": {
+      "type": "image-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
+        ".banner__media {margin-top: 3rem;}",
+        ".banner__content {display: none;}",
+        "@media (max-width: 900px) {#Banner-template--24672251937088__image_banner_D6TgTi {padding-bottom: 3rem; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Image_51ffbcb3-db98-4e77-806a-44de65fe5b49.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "wines": {
+      "type": "wines",
+      "disabled": true,
+      "settings": {
+        "title_section": "AGE LIKE <em>fine wine</em>",
+        "text_section": "Forget “a glass of wine”—elevate to an antioxidant celebration, without the alcohol. Each shot delivers 220 mg of 98% purity Resveratrol, equal to 43 bottles of red wine. Toast to vibrant health and longevity with every sip."
+      }
+    },
+    "landing_section_qAbkWE": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_tcDKaG": {
+          "type": "section-inner",
+          "settings": {
+            "desktop_grid_columns": "2",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 50,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 70,
+            "bottom_spacing_desktop": 70,
+            "left_spacing_desktop": 70,
+            "right_spacing_desktop": 70,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 0,
+            "right_spacing_mobile": 0
+          },
+          "blocks": {
+            "grid_list_xwWhF9": {
+              "type": "grid-list",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 40,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 30,
+                "row_gap_mobile": 30
+              },
+              "blocks": {
+                "image_block_UQdmmD": {
+                  "type": "image-block",
+                  "settings": {
+                    "image": "shopify://shop_images/ChatGPT_Image_Apr_29_2025_09_08_14_PM.png",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_UQdmmD"
+              ]
+            },
+            "section_inner_ziMpcL": {
+              "type": "section-inner",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "flex-between",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 70,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "center",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 50,
+                "top_spacing_mobile": 20,
+                "bottom_spacing_mobile": 20,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_BWJghP": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 40,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 30
+                  },
+                  "blocks": {
+                    "heading_block_4fV3EH": {
+                      "type": "heading-block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p>HOW TO USE</p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_4fV3EH"
+                  ]
+                },
+                "grid_list_DGEiFe": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 0,
+                    "row_gap_mobile": 15
+                  },
+                  "blocks": {
+                    "text_block_hf8TQj": {
+                      "type": "text-block",
+                      "settings": {
+                        "text": "<p>HOW TO MAKE <br/><br/>Mix one scoop per day with water, almond milk, or your favorite smoothie.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "top_spacing_desktop": 10,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "top_spacing_mobile": 10,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "heading_block_VctgjK": {
+                      "type": "heading-block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "desktop_line_height": 0,
+                        "top_spacing_desktop": 40,
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_VAgnt7": {
+                      "type": "text-block",
+                      "settings": {
+                        "text": "<p>WHEN TO USE<br/><br/>Ideal after workouts or anytime you need a clean, plant-based energy boost</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_line_height": 0,
+                        "top_spacing_desktop": 10,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "top_spacing_mobile": 10,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_block_hf8TQj",
+                    "heading_block_VctgjK",
+                    "text_block_VAgnt7"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_BWJghP",
+                "grid_list_DGEiFe"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_xwWhF9",
+            "section_inner_ziMpcL"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_tcDKaG"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "#e5dbcc",
+        "full_width": true,
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": false,
+        "top_spacing_mobile": 20,
+        "bottom_spacing_mobile": 20,
+        "use_top_border_mobile": true,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "faqs_9gMU6f": {
+      "type": "faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "1. What is Immunity Tonic?",
+            "answer": "<p>Immunity Tonic is a liposomal Vitamin C supplement designed specifically for women. It delivers 1,000 mg of Vitamin C per serving with up to 10x better absorption, supporting daily immune defense, antioxidant protection, and all-day vitality.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "2. How does liposomal Vitamin C work?",
+            "answer": "<p>Liposomas mal technology encapsulates Vitamin C in tiny fat-like particles, protecting it through digestion and enhancing its delivery directly into your bloodstream—resulting in superior absorption and faster, more effective benefits.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "3. What are the main benefits of taking Immunity Tonic?",
+            "answer": "<ul><li>Strengthens immune response</li><li>Boosts daily energy and vitality</li><li>Helps neutralize oxidative stress</li><li>Supports collagen production for skin and tissue health</li><li>Protects against seasonal challenges</li><li>Enhances resilience and recovery</li></ul>"
+          }
+        },
+        "faq_dfmbmf": {
+          "type": "faq",
+          "settings": {
+            "question": "4. How should I take Immunity Tonic?",
+            "answer": "<p>Take one teaspoon (6ml) every morning. You can enjoy it straight from the spoon or mix it into water, juice, or your favorite smoothie.</p>"
+          }
+        },
+        "faq_6UkLU3": {
+          "type": "faq",
+          "settings": {
+            "question": "5. How soon will I feel the benefits?",
+            "answer": "<ul><li><strong>Day 1</strong>: Cellular protection begins</li><li><strong>Week 1</strong>: Noticeable energy and focus</li><li><strong>Day 30</strong>: Enhanced skin resilience and stress support</li></ul><p><strong>Day 90</strong>: Improved mood, immune strength, and overall vitality</p>"
+          }
+        },
+        "faq_LWdF6e": {
+          "type": "faq",
+          "settings": {
+            "question": "6. Is Immunity Tonic safe for daily use?",
+            "answer": "<p>Yes, it's designed for daily use. However, consult your healthcare provider if you're pregnant, nursing, or taking medication</p>"
+          }
+        },
+        "faq_aEfQyb": {
+          "type": "faq",
+          "settings": {
+            "question": "7. Is it vegan and sugar-free?",
+            "answer": "<p>Absolutely. Immunity Tonic is vegan, sugar-free, gut-friendly, and non-GMO—with a naturally delicious citrus flavor.</p>"
+          }
+        },
+        "faq_WqnYjM": {
+          "type": "faq",
+          "settings": {
+            "question": "8. Can it replace my multivitamin or other supplements?",
+            "answer": "<p>While it provides powerful immune and antioxidant support, it’s best used as part of a complete wellness routine. It complements other supplements, especially those in the Happy Aging lineup.</p>"
+          }
+        },
+        "faq_Eb44T8": {
+          "type": "faq",
+          "settings": {
+            "question": "9. Who is this product ideal for?",
+            "answer": "<p>Women seeking proactive immune support, better energy, and a simple, effective way to feel strong and vibrant every day, especially those with busy lifestyles or frequent stress exposure.</p>"
+          }
+        },
+        "faq_YaakAD": {
+          "type": "faq",
+          "settings": {
+            "question": "10. Can I take it if I’m pregnant or breastfeeding?",
+            "answer": "<p>If you are pregnant, planning to become pregnant, or breastfeeding, speak with your doctor before using Cell Renew Tonic.</p>"
+          }
+        },
+        "faq_3CWMLC": {
+          "type": "faq",
+          "settings": {
+            "question": "11. What if I miss a day?",
+            "answer": "<p>Just resume the next day. While consistency brings the best results, missing a day now and then will not interfere with your progress.</p>"
+          }
+        },
+        "faq_d6qTBa": {
+          "type": "faq",
+          "settings": {
+            "question": "12. What happens if I stop taking it?",
+            "answer": "<p>Your NAD⁺ levels may gradually decline again, and benefits like energy, focus, or hormonal balance may fade. For long-term support, we recommend using Cell Renew consistently.</p>"
+          }
+        },
+        "faq_ynT9nx": {
+          "type": "faq",
+          "settings": {
+            "question": "13. Are there any side effects?",
+            "answer": "<p>Most users experience no side effects. In rare cases, some may feel mild detox-like symptoms in the first few days such as slight headache or fatigue as NAD⁺ pathways reactivate. These typically resolve quickly.</p>"
+          }
+        },
+        "faq_y8B9H8": {
+          "type": "faq",
+          "settings": {
+            "question": "14. What’s in it?",
+            "answer": "<p>Ingredients per 6 ml serving:<br/> NMN (Nicotinamide Mononucleotide) 444 mg<br/> Purified water<br/> Vegetable glycerin<br/> Non-GMO sunflower lecithin<br/> Natural citrus flavor<br/> Potassium sorbate<br/> Stevia<br/> Free from sugar, caffeine, gluten, dairy, soy, synthetic additives, and GMOs</p>"
+          }
+        },
+        "faq_mjT3ae": {
+          "type": "faq",
+          "settings": {
+            "question": "15. Is it vegan and non-GMO?",
+            "answer": "<p>Yes. Cell Renew is 100 percent vegan and non-GMO. It is made with clean-label ingredients and third-party tested for purity and potency.</p>"
+          }
+        },
+        "faq_dQMyfY": {
+          "type": "faq",
+          "settings": {
+            "question": "16. Is the product FDA-approved?",
+            "answer": "<p>As with all dietary supplements in the United States, Cell Renew is not evaluated by the FDA. However, it is manufactured in certified facilities that follow GMP guidelines, and the ingredients are backed by clinical research.</p>"
+          }
+        },
+        "faq_hgWKNQ": {
+          "type": "faq",
+          "settings": {
+            "question": "17. What’s your return policy?",
+            "answer": "<p>We offer a 30-day money-back guarantee. If you are not satisfied with your results, contact our support team. Your first order also includes free shipping.</p>"
+          }
+        },
+        "faq_hATLcE": {
+          "type": "faq",
+          "settings": {
+            "question": "18. How should I store the bottle?",
+            "answer": "<p>Store it in a cool, dry place away from sunlight. Refrigeration after opening is optional and can help preserve freshness.</p>"
+          }
+        },
+        "faq_LAfBXQ": {
+          "type": "faq",
+          "settings": {
+            "question": "19. How long should I take Cell Renew?",
+            "answer": "<p>Cell Renew is designed for long-term use. The benefits are cumulative. We recommend using it for at least 60 to 90 days to allow your NAD⁺ levels to stabilize and your results to build over time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_dfmbmf",
+        "faq_6UkLU3",
+        "faq_LWdF6e",
+        "faq_aEfQyb",
+        "faq_WqnYjM",
+        "faq_Eb44T8",
+        "faq_YaakAD",
+        "faq_3CWMLC",
+        "faq_d6qTBa",
+        "faq_ynT9nx",
+        "faq_y8B9H8",
+        "faq_mjT3ae",
+        "faq_dQMyfY",
+        "faq_hgWKNQ",
+        "faq_hATLcE",
+        "faq_LAfBXQ"
+      ],
+      "custom_css": [
+        "#faqs {border-top: 1px solid;}"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_padding_top": "yes",
+        "is_background_default": "no",
+        "is_margin_bottom": "yes",
+        "callout_text": "<p>Still Have Questions?<br/>Our team is here to help! Reach out to us at <a href=\"mailto:hello@happyaging.com\">hello@happyaging.com</a> for personalized support.</p>"
+      }
+    },
+    "17401711251af96b37": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "marquee_pMqq4Y",
+    "landing_section_GdHXgh",
+    "landing_section_KWgCJm",
+    "landing_section_ExiDxD",
+    "focus_you_Lh73aQ",
+    "image_with_text_blocks_gAjTfr",
+    "how_it_helps_YPBkT9",
+    "landing_section_3RqYFU",
+    "results_list_LqxNh4",
+    "ingredients_tabs_nKwUYB",
+    "landing_section_nqCRrp",
+    "image_with_text_wjQyxT",
+    "image_banner_iQ4HPC",
+    "timeline_section_hBBi6r",
+    "image_banner_kGC7P6",
+    "subscription_products_Q9kNnn",
+    "image_banner_D6TgTi",
+    "wines",
+    "landing_section_qAbkWE",
+    "faqs_9gMU6f",
+    "17401711251af96b37"
+  ]
+}

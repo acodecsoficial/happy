@@ -1,0 +1,1116 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [],
+      "settings": {}
+    },
+    "faqs_DB8xQe": {
+      "type": "faqs",
+      "blocks": {
+        "faq_eAtycF": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the Longevity Shot made of?",
+            "answer": "<p>The Longevity Shot is crafted entirely from all-natural ingredients, with 80% of the ingredients being non-GMO. It is gluten-free, vegan, caffeine-free, soy-free, and dairy-free, with no synthetic ingredients, artificial sweeteners, preservatives, or artificial colors/flavors. Each shot contains 18 calories per serving.</p>"
+          }
+        },
+        "faq_UUPwcd": {
+          "type": "faq",
+          "settings": {
+            "question": "Does the Longevity Shot contain sugar or alcohol?",
+            "answer": "<p>The Longevity Shot contains 2.5 grams of natural sugar from apple and grape juice concentrate. It is also lightly sweetened with steviol glycosides, a natural sweetener derived from the Stevia rebaudiana plant that is sugar and calorie-free. It is alcohol-free.</p>"
+          }
+        },
+        "faq_iQyba9": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the Longevity Shot safe for those with allergies or dietary restrictions?",
+            "answer": "<p>Yes, the Longevity Shot is free from common allergens like nuts, soy, dairy, and gluten, making it suitable for most individuals with dietary sensitivities. Additionally, it can fit into most keto diets.</p>"
+          }
+        },
+        "faq_HYRCjk": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the Longevity Shots tested on animals?",
+            "answer": "<p>No, the Longevity Shot is not tested on animals.</p>"
+          }
+        },
+        "faq_MkqUGq": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take the Longevity Shot if I’m pregnant or breastfeeding?",
+            "answer": "<p>While the Longevity Shot is made with natural ingredients, we always recommend that pregnant or breastfeeding women consult their healthcare provider to ensure it aligns with their unique health needs during this time.</p>"
+          }
+        },
+        "faq_FNWcVw": {
+          "type": "faq",
+          "settings": {
+            "question": "How should I take the Longevity Shot, and when is the best time?",
+            "answer": "<p>For optimal results, we recommend taking two shots per week, at any time of the day. This schedule helps maintain NAD+ levels and activate sirtuins—proteins vital for cellular health, DNA repair, and metabolic function. This intermittent dosing supports long-term vitality and overall longevity, slowing the aging process without overwhelming your body.</p>"
+          }
+        },
+        "faq_UCQGNd": {
+          "type": "faq",
+          "settings": {
+            "question": "When will I see results from the Longevity Shot?",
+            "answer": "<p>The timing of results can vary depending on your body and lifestyle. Many women begin to notice positive changes in energy, skin health, and overall well-being within the first 30 days of regular use.</p>"
+          }
+        },
+        "faq_n4RMcM": {
+          "type": "faq",
+          "settings": {
+            "question": "How long should I continue taking the Longevity Shot?",
+            "answer": "<p>The long-term benefits of the Longevity Shot—such as cellular health support and slowing the aging process—are best experienced over time with consistent use. </p>"
+          }
+        },
+        "faq_c4DUUj": {
+          "type": "faq",
+          "settings": {
+            "question": "Are there any side effects of interactions with medications?",
+            "answer": "<p>The natural ingredients in the Longevity Shot are generally well-tolerated, but everyone is unique. If you’re taking any prescription medications or have a medical condition, particularly autoimmune conditions, we encourage you to consult your healthcare provider before starting the Longevity Shot.</p>"
+          }
+        },
+        "faq_iF7YeU": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the Longevity Shot suitable for children or teenagers?",
+            "answer": "<p>The Longevity Shot is formulated with adults in mind. If you’re considering it for children or teenagers, we recommend speaking with a healthcare provider to ensure it’s appropriate for their needs.</p>"
+          }
+        },
+        "faq_qNBN8k": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the Longevity Shot Kosher or Halal certified?",
+            "answer": "<p>No, the Longevity Shot is not currently Kosher or Halal certified.</p>"
+          }
+        },
+        "faq_dyDmFp": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the longevity shot gluten free? ",
+            "answer": "<p>Our Longevity Shot is certified gluten-free. While it does contain wheat, it adheres to FDA regulations by keeping gluten levels below 20 parts per million (ppm), meeting the FDA’s strict standards. This makes it generally safe for individuals following a gluten-free diet. However, if you have any health concerns or sensitivities, we recommend consulting your healthcare provider before use.</p>"
+          }
+        },
+        "faq_C3dmw7": {
+          "type": "faq",
+          "settings": {
+            "question": "When will I start feeling and seeing the benefits?",
+            "answer": "<p>Every body is beautifully different, so your timeline may not match your best friend’s. Still, most women notice a gentle lift in energy and a fresh, dewy glow within the first 4 weeks of enjoying two Longevity Shots per week. Inside your cells, antioxidant defenses and detox pathways are already revving up—paving the way for smoother skin and greater vitality over the next couple of months. Expect deeper wins like firmer skin and a measurable slowdown in biological aging by months two and three, but remember that the exact pace varies from person to person.</p>"
+          }
+        },
+        "faq_FVkfpH": {
+          "type": "faq",
+          "settings": {
+            "question": "How long should I keep Longevity Shot in my routine?",
+            "answer": "<p>Longevity is a lifestyle, not a quick fix. Because cellular renewal happens continually, we recommend making Longevity Shot a steady ritual—two shots each week, taken year-round. This rhythm keeps resveratrol, nicotinamide riboside, and ceramides working in harmony to protect your cells, boost skin elasticity, and support graceful, pro-aging vitality for the long haul. Think of it as an investment that pays wellness dividends every single day you keep sipping.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_eAtycF",
+        "faq_UUPwcd",
+        "faq_iQyba9",
+        "faq_HYRCjk",
+        "faq_MkqUGq",
+        "faq_FNWcVw",
+        "faq_UCQGNd",
+        "faq_n4RMcM",
+        "faq_c4DUUj",
+        "faq_iF7YeU",
+        "faq_qNBN8k",
+        "faq_dyDmFp",
+        "faq_C3dmw7",
+        "faq_FVkfpH"
+      ],
+      "settings": {
+        "title": "Longevity Shots",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_6x6p6a": {
+      "type": "faqs",
+      "blocks": {
+        "faq_DzH7CK": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW OFTEN SHOULD I USE GLOW SHOT?",
+            "answer": "<p>Glow Shot is designed for daily use. Simply drink one bottle a day to maximize the benefits for your skin, nails, and overall beauty.</p>"
+          }
+        },
+        "faq_64VmVA": {
+          "type": "faq",
+          "settings": {
+            "question": "WHEN WILL I SEE RESULTS?",
+            "answer": "<p>Every body is beautifully different, so your timeline may not match your best friend’s. Many users notice improvements in skin hydration and glow within 4 weeks. By 8 weeks, elasticity and smoothness become more apparent. After 12 weeks, you can expect firmer, more radiant skin and stronger nails.</p>"
+          }
+        },
+        "faq_zrChtG": {
+          "type": "faq",
+          "settings": {
+            "question": "WHAT MAKES GLOW SHOT DIFFERENT FROM OTHER COLLAGEN SUPPLEMENTS?",
+            "answer": "<p>Glow Shot stands out for its:</p><ul><li>High-Potency Collagen (10,000 mg): Among the most potent doses available.</li><li>Liposomal Technology: Ensures superior nutrient absorption for faster and more effective results.</li><li>Additional Benefits: Includes hibiscus extract and nutritional yeast for antioxidant protection and overall vitality.</li></ul>"
+          }
+        },
+        "faq_yFwKDJ": {
+          "type": "faq",
+          "settings": {
+            "question": "IS GLOW SHOT SAFE?",
+            "answer": "<p>Yes, Glow Shot is made with clean, high-quality ingredients free from added sugars and artificial preservatives. However, if you are pregnant, nursing, taking medications, or have a medical condition, it’s best to consult your physician before use.</p>"
+          }
+        },
+        "faq_UxCy6C": {
+          "type": "faq",
+          "settings": {
+            "question": "CAN I TAKE GLOW SHOT WITH OTHER SUPPLEMENTS?",
+            "answer": "<p>Yes, Glow Shot can complement most supplements. Its clean formula is designed to integrate seamlessly into your wellness routine. For specific concerns, consult your healthcare provider.</p>"
+          }
+        },
+        "faq_JqkUeE": {
+          "type": "faq",
+          "settings": {
+            "question": "DOES GLOW SHOT TASTE GOOD?",
+            "answer": "<p>Absolutely! Glow Shot has a light, refreshing taste with natural flavors. It’s enjoyable on its own or can be mixed into your favorite beverages.</p>"
+          }
+        },
+        "faq_Nm9XJ8": {
+          "type": "faq",
+          "settings": {
+            "question": "IS GLOW SHOT ECO-FRIENDLY?",
+            "answer": "<p>Glow Shot is committed to transparency and quality, sourcing sustainable marine collagen and packaging responsibly.</p>"
+          }
+        },
+        "faq_C9F3VT": {
+          "type": "faq",
+          "settings": {
+            "question": "DOES GLOW SHOT WORK FOR HAIR AND NAILS TOO?",
+            "answer": "<p>Yes! The high-potency collagen supports not only your skin but also contributes to stronger, healthier nails and more resilient hair.</p>"
+          }
+        },
+        "faq_TB7G39": {
+          "type": "faq",
+          "settings": {
+            "question": "CAN I SKIP DAYS AND STILL SEE RESULTS?",
+            "answer": "<p>For the best and most consistent results, daily use is recommended. Missing occasional days won’t harm progress, but consistency ensures maximum benefits.</p>"
+          }
+        },
+        "faq_CdUwDA": {
+          "type": "faq",
+          "settings": {
+            "question": "WHAT ARE THE MAIN BENEFITS OF GLOW SHOT?",
+            "answer": "<ol><li>HYDRATED, RADIANT SKIN</li></ol><p>Glow Shot delivers deep hydration, improving skin texture, reducing dryness, and restoring a luminous, healthy glow from within.</p><ol><li>ENHANCED SKIN FIRMNESS AND ELASTICITY</li></ol><p>Thanks to its potent 10,000 mg dose of marine collagen, Glow Shot supports your skin’s structure by rebuilding collagen density, improving elasticity, and reducing sagging.</p><ol><li>FAST, VISIBLE RESULTS</li></ol><p>In as little as 4 weeks, you’ll notice softer, smoother skin. By 12 weeks, expect firmer, more resilient skin, strengthened nails, and an overall revitalized appearance.</p><ol><li>PROTECTION AGAINST ENVIRONMENTAL STRESS</li></ol><p>The antioxidant power of hibiscus extract helps combat oxidative damage from pollution and UV exposure, keeping your skin healthier for longer.</p><ol><li>HOLISTIC BEAUTY SUPPORT</li></ol><p>Beyond skin hydration, Glow Shot supports stronger nails and improved hair resilience, giving you a comprehensive beauty boost.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_DzH7CK",
+        "faq_64VmVA",
+        "faq_zrChtG",
+        "faq_yFwKDJ",
+        "faq_UxCy6C",
+        "faq_JqkUeE",
+        "faq_Nm9XJ8",
+        "faq_C9F3VT",
+        "faq_TB7G39",
+        "faq_CdUwDA"
+      ],
+      "settings": {
+        "title": "Glow Shots",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_arLPWn": {
+      "type": "faqs",
+      "blocks": {
+        "faq_nhpDr4": {
+          "type": "faq",
+          "settings": {
+            "question": "WHAT IS CALM SHOT?",
+            "answer": "<p>Calm Shot is a scientifically designed, on-the-go solution for managing stress and boosting mental clarity. Whether it’s a high-pressure meeting, an important event, or just a packed day, Calm Shot empowers you to show up at your best.</p><ul><li>Format: Single-serving, ready-to-drink bottle.</li><li>Timing: Drink before activities that demand focus and calmness.</li><li>Purpose: Helping you feel calm, clear, and in control when it matters most.</li></ul>"
+          }
+        },
+        "faq_g3A9iP": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW TO USE CALM SHOT?",
+            "answer": "<p>WHEN TO TAKE IT</p><ul><li>Drink Calm Shot 15–30 minutes before stressful activities or events, such as:</li><li>Presentations</li><li>Deadlines</li><li>Exams</li><li>Travel</li><li>Intense workouts</li></ul><p>QUICK TIPS FOR BEST RESULTS</p><ul><li>Shake well before drinking.</li><li>Pair with deep breathing for an even greater sense of calm and focus.</li></ul><p>INSTANT BENEFITS</p><ul><li>Cortisol Reduction: Ashwagandha calms your stress response almost immediately.</li><li>Enhanced Focus: Feel mentally sharper when it matters most.</li><li>Emotional Balance: Stay positive and composed, no matter the pressure.</li></ul><p>LONG-TERM ADVANTAGES</p><ul><li>Build resilience to stress over time.</li><li>Improve overall emotional and physical well-being.</li></ul>"
+          }
+        },
+        "faq_xwLYNn": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW CALM SHOT LOWERS CORTISOL AND WHY IT MATTERS",
+            "answer": "<p>Cortisol, often called the \"stress hormone,\" is your body’s natural response to high-pressure situations. While it’s helpful in short bursts, prolonged high cortisol levels can harm your health and performance.</p>"
+          }
+        },
+        "faq_3P6Y3T": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW CALM SHOT WORKS",
+            "answer": "<ul><li>Powered by Ashwagandha: This clinically proven adaptogen lowers cortisol by up to 30%, calming your body and mind.</li><li>Magnesium Sulfate: Eases physical tension caused by stress, promoting relaxation and balance.</li></ul>"
+          }
+        },
+        "faq_MdMMNk": {
+          "type": "faq",
+          "settings": {
+            "question": "WILL CALM SHOT MAKE ME SLEEPY?",
+            "answer": "<p>No! Calm Shot promotes relaxation without sedation. Ingredients like L-Theanine and Magnesium Sulfate help calm your nerves while keeping your mind sharp and alert.</p>"
+          }
+        },
+        "faq_QkK3cV": {
+          "type": "faq",
+          "settings": {
+            "question": "DOES GLOW SHOT TASTE GOOD?",
+            "answer": "<p>Absolutely! Glow Shot has a light, refreshing taste with natural flavors. It’s enjoyable on its own or can be mixed into your favorite beverages.</p>"
+          }
+        },
+        "faq_gUepBi": {
+          "type": "faq",
+          "settings": {
+            "question": "IS CALM SHOT SAFE?",
+            "answer": "<p>Yes, Calm Shot is made with clean, natural ingredients and is free from added sugars, artificial preservatives, and synthetic fillers. However, consult your healthcare provider if you are pregnant, nursing, taking medications, or have a medical condition. Calm Shot is not intended for individuals under 18.</p>"
+          }
+        },
+        "faq_JPpbYU": {
+          "type": "faq",
+          "settings": {
+            "question": "WHAT ARE THE BENEFITS OF REDUCING CORTISOL WITH CALM SHOT?",
+            "answer": "<p>Reducing cortisol helps:</p><ul><li>Lower stress and tension.</li><li>Improve focus and mental clarity.</li><li>Balance your mood.</li><li>Enhance sleep quality.</li><li>Support long-term physical and emotional well-being.</li></ul>"
+          }
+        },
+        "faq_nQjBk4": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW LONG DOES IT TAKE TO FEEL THE EFFECTS?",
+            "answer": "<p>Many users report feeling calmer and more focused within 15–30 minutes of drinking Calm Shot.</p>"
+          }
+        },
+        "faq_PkXMik": {
+          "type": "faq",
+          "settings": {
+            "question": "CAN I TAKE CALM SHOT WITH OTHER SUPPLEMENTS?",
+            "answer": "<p>Yes, Calm Shot’s clean formula integrates seamlessly into most wellness routines. If you’re unsure about interactions, consult your healthcare provider.</p>"
+          }
+        },
+        "faq_N4Pzie": {
+          "type": "faq",
+          "settings": {
+            "question": "DOES CALM SHOT TASTE GOOD?",
+            "answer": "<p>Absolutely! Calm Shot features a light, refreshing passion fruit flavor that’s easy to enjoy on its own or with your favorite beverage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_nhpDr4",
+        "faq_g3A9iP",
+        "faq_xwLYNn",
+        "faq_3P6Y3T",
+        "faq_MdMMNk",
+        "faq_QkK3cV",
+        "faq_gUepBi",
+        "faq_JPpbYU",
+        "faq_nQjBk4",
+        "faq_PkXMik",
+        "faq_N4Pzie"
+      ],
+      "settings": {
+        "title": "Calm Shots",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_UeqNRj": {
+      "type": "faqs",
+      "blocks": {
+        "faq_LnaywY": {
+          "type": "faq",
+          "settings": {
+            "question": "What is HydroBurn?",
+            "answer": "<p>HydroBurn is an effervescent tablet supplement developed for those seeking steady energy, metabolic balance, and overall wellness in a clean and natural way. It’s powered by an innovative and scientifically backed ingredient: Molecular Hydrogen (H₂)—a selective antioxidant supported by over 1,500 studies that show its ability to reduce oxidative stress, support mitochondrial function, and optimize cellular metabolism.</p><p>More than just a quick energy boost, HydroBurn helps your body perform at its best—every single day—without caffeine, crashes, or compromises.</p>"
+          }
+        },
+        "faq_P7xeXM": {
+          "type": "faq",
+          "settings": {
+            "question": "What is it for?",
+            "answer": "<p>HydroBurn was designed to:</p><p>- Provide clean, sustained energy without stimulants</p><p>- Support muscular and mental recovery</p><p>- Promote metabolic balance and reduce oxidative stress</p><p>- Support cellular longevity with science-backed benefits</p><p>- Enhance physical performance and mental clarity</p>"
+          }
+        },
+        "faq_bbxKPU": {
+          "type": "faq",
+          "settings": {
+            "question": "How does Molecular Hydrogen work?",
+            "answer": "<p>Unlike traditional energy boosters, H₂ works at the mitochondrial level—the energy center of our cells. It helps your body generate energy more efficiently, neutralizes harmful free radicals, and naturally regulates inflammation. Think of it as a fine-tuning tool for your internal engine.</p>"
+          }
+        },
+        "faq_FpAaxc": {
+          "type": "faq",
+          "settings": {
+            "question": "How should I take it?",
+            "answer": "<p>Dissolve one effervescent tablet in a glass of water (250ml) and drink immediately. Use daily—ideally in the morning or before any physical or mental activity that requires energy and focus.</p>"
+          }
+        },
+        "faq_nDUcYa": {
+          "type": "faq",
+          "settings": {
+            "question": "When will I feel the effects?",
+            "answer": "<p>Some benefits—such as increased energy and clarity—may appear within the first few weeks. Deeper metabolic and recovery effects build over time, generally between weeks 4 and 12. Remember: every body is unique, but results do come with consistency.</p>"
+          }
+        },
+        "faq_fkCLfQ": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it safe for daily use?",
+            "answer": "<p>Yes! HydroBurn is made with clean ingredients, free from caffeine, sugar, dyes, and unnecessary additives. It’s safe for daily use as part of your wellness routine. If you're pregnant, nursing, or managing a medical condition, we recommend speaking with your healthcare provider first.</p>"
+          }
+        },
+        "faq_hzDWgb": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it normal not to feel results immediately?",
+            "answer": "<p>Yes. Some people feel the effects quickly; others take longer. HydroBurn works deeply and intelligently. Consistency is key and please note that everyone is different. </p>"
+          }
+        },
+        "faq_HrCyan": {
+          "type": "faq",
+          "settings": {
+            "question": "Is this an energy drink or does it contain caffeine?",
+            "answer": "<p>No! HydroBurn provides energy without stimulants. It won’t disturb your sleep or make your heart race.</p>"
+          }
+        },
+        "faq_bWHBrW": {
+          "type": "faq",
+          "settings": {
+            "question": "Can it help with weight loss?",
+            "answer": "<p>While not a weight-loss product, HydroBurn can support fat metabolism and reduce cravings when paired with healthy habits.</p>"
+          }
+        },
+        "faq_FwhEpn": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take it on an empty stomach?",
+            "answer": "<p>Yes! Many users take it first thing in the morning to start their day with energy.</p>"
+          }
+        },
+        "faq_nirpwp": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it safe for diabetics or people with insulin resistance?",
+            "answer": "<p>Yes! HydroBurn supports insulin sensitivity and metabolic health. Still, we recommend a healthcare consultation for tailored advice.</p>"
+          }
+        },
+        "faq_cQ8WVX": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take it with other supplements?",
+            "answer": "<p>Yes, it’s generally safe to combine with other supplements. When in doubt, check with your health professional.</p>"
+          }
+        },
+        "faq_VW6Hq3": {
+          "type": "faq",
+          "settings": {
+            "question": "How is it different from a multivitamin or pre-workout?",
+            "answer": "<p>Multivitamins provide nutrients. HydroBurn enhances how your cells use energy. It’s stimulant-free and targets your mitochondria directly.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_LnaywY",
+        "faq_P7xeXM",
+        "faq_bbxKPU",
+        "faq_FpAaxc",
+        "faq_nDUcYa",
+        "faq_fkCLfQ",
+        "faq_hzDWgb",
+        "faq_HrCyan",
+        "faq_bWHBrW",
+        "faq_FwhEpn",
+        "faq_nirpwp",
+        "faq_cQ8WVX",
+        "faq_VW6Hq3"
+      ],
+      "settings": {
+        "title": "Hydro Burn",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_KywrXM": {
+      "type": "faqs",
+      "blocks": {
+        "faq_qxegbR": {
+          "type": "faq",
+          "settings": {
+            "question": "What is Lean Muscle?",
+            "answer": "<p>Lean Muscle is a delicious, plant-based protein powder designed for people who want more energy, faster recovery, and lean muscle support — all while keeping it clean and natural. With a rich chocolate flavor, this protein is 100% vegan, gluten-free, lactose-free, and soy-free. It combines premium ingredients like organic pea protein, organic pumpkin and chia seeds, and 5g of Creatine Monohydrate, making it a powerful ally for daily wellness.</p>"
+          }
+        },
+        "faq_CPYt68": {
+          "type": "faq",
+          "settings": {
+            "question": "Who is it for?",
+            "answer": "<p>For everyone who wants to take better care of their body — whether you're starting your fitness journey or are already active. It’s especially great for:<br/><br/>- People looking to build or maintain muscle mass<br/><br/>- Those who want to feel stronger and more energized<br/><br/>- Anyone seeking a clean protein shake with no additives<br/><br/>- People needing an easy, healthy snack or breakfast option</p>"
+          }
+        },
+        "faq_WUwttG": {
+          "type": "faq",
+          "settings": {
+            "question": "HOW TO CONSUME",
+            "answer": "<p>When is the best time to take it?</p><p>The most popular times are:<br/><br/>- After your workout – for optimal recovery<br/><br/>- In the morning – to start the day with more energy<br/><br/>- As a snack – when you want something light and filling<br/><br/>Some customers also enjoy it before bed for muscle support overnight.</p>"
+          }
+        },
+        "faq_zAeAXb": {
+          "type": "faq",
+          "settings": {
+            "question": "How to prepare it?",
+            "answer": "<p>Just add 1 scoop (approx. 36g) to 8–10 oz of water, plant-based milk, or your favorite base. Shake or blend well.<br/><br/>Tip: Try it with banana, oats, peanut butter, or even in pancakes or smoothies!</p>"
+          }
+        },
+        "faq_83Lyx3": {
+          "type": "faq",
+          "settings": {
+            "question": "How many servings per day?",
+            "answer": "<p>1 to 2 servings are ideal depending on your diet and activity level. Always listen to your body or consult a nutritionist.</p>"
+          }
+        },
+        "faq_E4h4x4": {
+          "type": "faq",
+          "settings": {
+            "question": "INGREDIENTS & FORMULA",
+            "answer": "<p>What’s in the formula?</p><p>- Organic Pea Protein<br/><br/>- Organic Pumpkin Seed Protein<br/><br/>- Organic Chia Seed<br/><br/>- Organic Cocoa Powder<br/><br/>- Organic Monk Fruit<br/><br/>- Creatine Monohydrate (5g per scoop)<br/><br/>- Natural Flavors</p><p>Does it contain sugar?</p><p>No added sugar — it’s naturally sweetened with monk fruit.</p>"
+          }
+        },
+        "faq_e3EmFK": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it free from allergens?",
+            "answer": "<p>Yes. It’s free from gluten, lactose, soy, and artificial ingredients.<br/><br/>However, it’s made in a facility that may process allergens like milk, eggs, or nuts.</p>"
+          }
+        },
+        "faq_3WMwhN": {
+          "type": "faq",
+          "settings": {
+            "question": "What are the benefits of Lean Muscle?",
+            "answer": "<p> Supports muscle growth and recovery<br/><br/>- Boosts daily energy levels<br/><br/>- Promotes satiety (you feel fuller for longer)<br/><br/>- Easy to digest and gentle on the stomach<br/><br/>- Provides essential amino acids and 5g of creatine</p>"
+          }
+        },
+        "faq_3egDTC": {
+          "type": "faq",
+          "settings": {
+            "question": "Does it help with weight loss?",
+            "answer": "<p>It can help indirectly. Protein keeps you full longer and helps regulate cravings, perfect for those managing their weight.</p>"
+          }
+        },
+        "faq_RdiVAx": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take it even if I don’t work out?",
+            "answer": "<p>Absolutely! Protein is essential for everyone, especially for those who want to support muscle preservation, energy, and immunity.</p>"
+          }
+        },
+        "faq_E3Yarj": {
+          "type": "faq",
+          "settings": {
+            "question": "Will it make me bulky?",
+            "answer": "<p>Not at all! Lean Muscle supports your natural body goals. To gain muscle mass, you still need consistent training and a calorie surplus.</p>"
+          }
+        },
+        "faq_7jMJ43": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use it for cooking?",
+            "answer": "<p>Yes! It’s great in smoothies, protein pancakes, overnight oats, and even baked goods like muffins or brownies.</p>"
+          }
+        },
+        "faq_jMfhhn": {
+          "type": "faq",
+          "settings": {
+            "question": "How much protein per scoop?",
+            "answer": "<p>20g of high-quality, plant-based protein.</p>"
+          }
+        },
+        "faq_Liwdq6": {
+          "type": "faq",
+          "settings": {
+            "question": "Is pea protein complete?",
+            "answer": "<p>Yes, it has a great amino acid profile, including BCAAs. Combined with a balanced diet, it fully supports your needs.</p>"
+          }
+        },
+        "faq_fdLkUj": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes it different from other plant proteins?",
+            "answer": "<p>The formula includes creatine, natural sweeteners, and zero artificial ingredients, a rare combo in clean proteins!</p>"
+          }
+        },
+        "faq_fWxWnP": {
+          "type": "faq",
+          "settings": {
+            "question": "Can it replace a meal?",
+            "answer": "<p>Alone, it’s a light option, but blended with fruit, oats or nut butter, it becomes a complete and satisfying meal.</p>"
+          }
+        },
+        "faq_7Mb8KR": {
+          "type": "faq",
+          "settings": {
+            "question": "How long does one pouch last?",
+            "answer": "<p>With one scoop per day: about 20–25 days.</p>"
+          }
+        },
+        "faq_ki4qVY": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I take it before sleep?",
+            "answer": "<p>Yes! Many people enjoy a scoop before bed to help muscle recovery overnight.</p>"
+          }
+        },
+        "faq_FKpaJd": {
+          "type": "faq",
+          "settings": {
+            "question": "Any contraindications?",
+            "answer": "<p>It’s safe for most healthy adults. If you are pregnant, nursing, or have a health condition, consult your doctor first.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_qxegbR",
+        "faq_CPYt68",
+        "faq_WUwttG",
+        "faq_zAeAXb",
+        "faq_83Lyx3",
+        "faq_E4h4x4",
+        "faq_e3EmFK",
+        "faq_3WMwhN",
+        "faq_3egDTC",
+        "faq_RdiVAx",
+        "faq_E3Yarj",
+        "faq_7jMJ43",
+        "faq_jMfhhn",
+        "faq_Liwdq6",
+        "faq_fdLkUj",
+        "faq_fWxWnP",
+        "faq_7Mb8KR",
+        "faq_ki4qVY",
+        "faq_FKpaJd"
+      ],
+      "settings": {
+        "title": "Lean Muscle Formula",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_XptXYA": {
+      "type": "faqs",
+      "blocks": {
+        "faq_3AMCmz": {
+          "type": "faq",
+          "settings": {
+            "question": "What is NMN (Cell Renew)?",
+            "answer": "<p>NMN (Nicotinamide Mononucleotide) is a direct precursor to NAD⁺, a coenzyme essential for energy production, DNA repair, and cellular health. As we age, NAD⁺ levels decline, contributing to fatigue, slower metabolism, and aging-related issues. NMN (Cell Renew) is a clean, daily formula designed to support healthy aging from the inside out.</p>"
+          }
+        },
+        "faq_CUFkDg": {
+          "type": "faq",
+          "settings": {
+            "question": "Key Benefits",
+            "answer": "<p>- Promotes NAD⁺ production and energy metabolism</p><p>- Supports cellular repair and mitochondrial function</p><p>- Aids in combating fatigue and age-related decline</p><p>- Daily formula with clean ingredients and no artificial additives</p><p>- Liposomal delivery for superior absorption</p>"
+          }
+        },
+        "faq_Fe8fUf": {
+          "type": "faq",
+          "settings": {
+            "question": "How to Use It",
+            "answer": "<p>Take 6 ml daily (approximately one dropper), ideally in the morning. You can take it directly or mix with a small amount of water or juice. Store in a cool, dry place. Shake well before use.</p>"
+          }
+        },
+        "faq_7r77hm": {
+          "type": "faq",
+          "settings": {
+            "question": "What’s the difference between NMN (Cell Renew) and the Longevity Shot?",
+            "answer": "<p>Both our Longevity Shot and NMN Tonic are liposomal formulas that support NAD⁺ levels, essential for energy, cellular repair, and healthy aging. The Longevity Shot is our signature product, with NR and Resveratrol in a delicious and powerful ritual taken just twice a week. If you’re choosing one product for your longevity routine, this is the one we recommend. Some customers like to add the NMN Tonic on days they don’t take the Shot or use it while traveling, since it’s a daily option and easy to carry. <br/><br/>At Happy Aging, we offer flexible, science-backed tools so you can build the routine that fits your life best. Let us know if we can help you find your perfect combination.</p>"
+          }
+        },
+        "faq_37nxqw": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I combine both products?",
+            "answer": "<p>Yes! Many customers use the Longevity Shot twice a week and take NMN on the other days. It’s a great way to maintain daily NAD⁺ support and build a flexible longevity ritual.</p>"
+          }
+        },
+        "faq_4TQbLh": {
+          "type": "faq",
+          "settings": {
+            "question": "Why did you create both?",
+            "answer": "<p>Because longevity isn’t one-size-fits-all. Some people love the Shot’s powerful, twice-weekly ritual. Others prefer a daily approach. We created both to give you options that fit your lifestyle and goals.</p>"
+          }
+        },
+        "faq_HANaHM": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they both liposomal?",
+            "answer": "<p>Yes. Both NMN and the Longevity Shot use liposomal delivery for enhanced absorption and effectiveness.</p>"
+          }
+        },
+        "faq_UNF8x6": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it safe to use daily?",
+            "answer": "<p>Absolutely. NMN (Cell Renew) is designed for daily use. However, if you’re pregnant, nursing, or taking medication, consult your healthcare provider.</p>"
+          }
+        },
+        "faq_fUtkgi": {
+          "type": "faq",
+          "settings": {
+            "question": "Does NMN (Cell Renew) have any flavor?",
+            "answer": "<p>It has a mild, natural flavor with no added sugars or artificial sweeteners.</p>"
+          }
+        },
+        "faq_Peaaqi": {
+          "type": "faq",
+          "settings": {
+            "question": "When is the best time to take it?",
+            "answer": "<p>We recommend taking it in the morning, as part of your daily wellness routine. Some users report improved focus and energy when taken early in the day.</p>"
+          }
+        },
+        "faq_3hHbGx": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it normal not to feel effects right away?",
+            "answer": "<p>Yes. Effects vary from person to person. While some feel a boost in energy and focus within a few days, for others the benefits build up gradually over a few weeks. Consistency is key.</p>"
+          }
+        },
+        "faq_JCGgJK": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I travel with it?",
+            "answer": "<p>Yes! NMN (Cell Renew) is designed to be portable and travel-friendly. Keep it in a cool place and always tighten the cap after use.</p>"
+          }
+        },
+        "faq_GDk38G": {
+          "type": "faq",
+          "settings": {
+            "question": "Is NMN vegan and allergen-free?",
+            "answer": "<p>Yes. Our formula is 100% vegan, non-GMO, and free from gluten, soy, and dairy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_3AMCmz",
+        "faq_CUFkDg",
+        "faq_Fe8fUf",
+        "faq_7r77hm",
+        "faq_37nxqw",
+        "faq_4TQbLh",
+        "faq_HANaHM",
+        "faq_UNF8x6",
+        "faq_fUtkgi",
+        "faq_Peaaqi",
+        "faq_3hHbGx",
+        "faq_JCGgJK",
+        "faq_GDk38G"
+      ],
+      "settings": {
+        "title": "What is NMN (Cell Renew)?",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_iUQzLx": {
+      "type": "faqs",
+      "blocks": {
+        "faq_XhgfDp": {
+          "type": "faq",
+          "settings": {
+            "question": "What is a biological age test?",
+            "answer": "<p>A biological age test provides insights into the age of your cells and tissues, which may be different from your chronological age. This deeper understanding of your cellular health can help predict your risk for age-related conditions. By regularly tracking your biological age, you'll gain insights into how your lifestyle choices are influencing your health and well-being over time.</p>"
+          }
+        },
+        "faq_H7n7UY": {
+          "type": "faq",
+          "settings": {
+            "question": "How is Happy Aging different from other biological age tests?",
+            "answer": "<p>Happy Aging uses the most advanced aging algorithms and analyzes over 75 biomarkers. Powered by TruDiagnostic, our algorithms are developed in collaboration with top academic institutions like Harvard University and Yale University. We’re the only company outside of TruDiagnostic to offer the OMICmAge and SymphonyAge outputs.</p>"
+          }
+        },
+        "faq_ReVdDT": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I register my test?",
+            "answer": "<p>To register your biological age test, log in to your account at happyaging.com. Select \"HA Bio Age Test\" from the dashboard and click \"Register a Test.\" Follow the prompts to enter your personal details and the unique barcode from your test kit. This ensures your sample is securely tracked, and you'll receive your results directly in your account.</p>"
+          }
+        },
+        "faq_cUt4JC": {
+          "type": "faq",
+          "settings": {
+            "question": "What will this test reveal about my health?",
+            "answer": "<p>Your test will provide a comparison of your biological age to your chronological age (OMICmAge), the ages of 11 key organ systems (SymphonyAge), and the rate at which your body is aging per year (DunedinPace). You'll also receive lifestyle recommendations to help improve your biological age and support your overall health.</p>"
+          }
+        },
+        "faq_9rYDBW": {
+          "type": "faq",
+          "settings": {
+            "question": "What organ systems does SYMPHONYAge measure?",
+            "answer": "<p>SYMPHONYAge analyzes the aging of 11 organ systems: brain, heart, liver, lungs, musculoskeletal system, kidneys, immune system, metabolic system, hormones, blood, and inflammation. This algorithm also provides an overall assessment of your whole body, offering a unique SYMPHONYAge biological age that is distinct from your OMICmAge biological age.</p>"
+          }
+        },
+        "faq_tzmTVV": {
+          "type": "faq",
+          "settings": {
+            "question": "What should I do with my test results?",
+            "answer": "<p>Your test results offer valuable insights into your cellular health and how your body is aging. However, these results are not intended to diagnose or treat any condition. We recommend discussing your results with your primary care doctor or a healthcare professional to get a full understanding of what they mean for your overall health and well-being.</p>"
+          }
+        },
+        "faq_9teWeW": {
+          "type": "faq",
+          "settings": {
+            "question": "What if my results seem to show different information?",
+            "answer": "<p>Each aging output uses a different algorithm to measure specific aspects of your health. For instance, your OMICmAge biological age may differ from your SYMPHONYAge biological age because each output focuses on unique biological markers. These variations are expected and, together, provide a comprehensive view of your health so you can make well-rounded lifestyle adjustments.</p>"
+          }
+        },
+        "faq_8NcatE": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I collect my sample?",
+            "answer": "<p>Your test includes everything you need to collect your sample at home, along with straightforward instructions. Use the provided lancet to prick your finger and fully fill the circles on the blood spot card. The process is quick and gentle.</p>"
+          }
+        },
+        "faq_ARkDTU": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I send my sample back to the lab?",
+            "answer": "<p>Once you’ve collected your sample, use the prepaid shipping envelope to send it back to our lab. Make sure your sample is securely sealed for a safe return.</p>"
+          }
+        },
+        "faq_YDaPtX": {
+          "type": "faq",
+          "settings": {
+            "question": "When will I receive my results?",
+            "answer": "<p>You can expect to receive your personalized report within 2-3 weeks after your sample is received by our lab. In the meantime, you can track the status of your sample in your account dashboard for real-time updates. We’ll notify you by email as soon as your results are ready, and you’ll be available to download your report directly from your online dashboard.</p>"
+          }
+        },
+        "faq_Yd893p": {
+          "type": "faq",
+          "settings": {
+            "question": "How accurate are the test results?",
+            "answer": "<p>Our tests leverage cutting-edge science and are developed in collaboration with leading academic institutions. By analyzing nearly 1,000,000 CpG locations on your DNA, we deliver results with a published reliability greater than 98%.</p>"
+          }
+        },
+        "faq_dnKXan": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I track changes in my biological age over time?",
+            "answer": "<p>Absolutely! We recommend testing every three or six months to track how lifestyle changes are influencing your biological age. This ongoing insight empowers you to see your progress and make informed changes.</p>"
+          }
+        },
+        "faq_9mFN9k": {
+          "type": "faq",
+          "settings": {
+            "question": "Are tests CLIA certified?",
+            "answer": "<p>Yes, our lab services are CLIA certified and HIPAA compliant, ensuring the highest standards for data security and patient confidentiality.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_XhgfDp",
+        "faq_H7n7UY",
+        "faq_ReVdDT",
+        "faq_cUt4JC",
+        "faq_9rYDBW",
+        "faq_tzmTVV",
+        "faq_9teWeW",
+        "faq_8NcatE",
+        "faq_ARkDTU",
+        "faq_YDaPtX",
+        "faq_Yd893p",
+        "faq_dnKXan",
+        "faq_9mFN9k"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Biological Age Test",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_Wmae88": {
+      "type": "faqs",
+      "blocks": {
+        "faq_yTG9Gt": {
+          "type": "faq",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<p>We accept Visa, Mastercard, American Express, Discover, Diner’s Club, Amazon Pay, Apple Pay, Meta Pay, Google Pay, and Shop Pay.</p>"
+          }
+        },
+        "faq_x6BANi": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I modify or cancel my order after it’s been placed?",
+            "answer": "<p>Once your order is placed, we’re unable to make changes or cancel it. However, if you need assistance, please reach out to us at hello@happyaging.com as soon as possible, and we’ll do our best to help.</p>"
+          }
+        },
+        "faq_n4nPGz": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I track my order?",
+            "answer": "<p>The moment your package of pro-aging goodness leaves our warehouse, we’ll send a friendly email saying that  “Your Happy Aging order is on its way!”. Inside you’ll find a live tracking link so you can follow each stop from our door to yours</p>"
+          }
+        },
+        "faq_rP9j4D": {
+          "type": "faq",
+          "settings": {
+            "question": "How long does shipping take?",
+            "answer": "<p>Standard Shipping: Typically arrives within 3–7 business days after it leaves our warehouse.</p><p>Express Shipping: Reaches you in 2–3 business days for those “need-it-now” moments.</p><p>Delivery windows begin once your order ships. We pack parcels quickly, but weekends and holidays can add a little extra time. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_yTG9Gt",
+        "faq_x6BANi",
+        "faq_n4nPGz",
+        "faq_rP9j4D"
+      ],
+      "settings": {
+        "title": "Order & Payments",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_YNtjRb": {
+      "type": "faqs",
+      "blocks": {
+        "faq_fJ3FWi": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you ship internationally? ",
+            "answer": "<p>At the moment, we only ship within the United States. However, expanding internationally is on our radar, and we’ll be sure to keep you updated once we start shipping internationally.</p>"
+          }
+        },
+        "faq_VyKiLi": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I track the status of my order?",
+            "answer": "<p>We’ll email you tracking details as soon as your order ships. Use the tracking number provided to follow your package on the carrier’s website.</p>"
+          }
+        },
+        "faq_hracWF": {
+          "type": "faq",
+          "settings": {
+            "question": "What if my order arrives damaged, is missing, or marked as delivered but not received?",
+            "answer": "<p>If your order is damaged or missing, send us a message at hello@happyaging.com  or file a claim through Route for quick assistance (if your order is covered by Route)</p><p>If your order is marked as delivered but you didn’t receive it, please contact our support team at hello@happyaging.com.<br/><br/>We’ll help you resolve the issue, if covered by Route, we coordinate with them. If not, we’ll investigate directly with the carrier.</p>"
+          }
+        },
+        "faq_xnxetL": {
+          "type": "faq",
+          "settings": {
+            "question": "What if my order arrives damaged or is missing?",
+            "answer": "<p>We use Route to protect your package. If your order arrives damaged or is missing, simply file a claim through our <a href=\"https://claims.route.com/?_gl=1*1x1czr6*_gcl_aw*R0NMLjE3MjkxMjQ1NjkuQ2owS0NRand5TDI0QmhDdEFSSXNBTG8wZlNEMzYwZEY0M3RZM2F6OEhpaUFxQnRHTHl3bnhtMXJZZ2xYeDRGZWVnWUVSWFBsZlRZM1JUQWFBcGMwRUFMd193Y0I.*_ga_KBN0FSD3J5*MTcyOTEyMzI3My4zLjEuMTcyOTEyNDU3OC40OC4wLjEyNzcwNzE3NTU.\"><span style=\"text-decoration:underline\">Route</span></a>, and they’ll assist you in resolving the issue.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_fJ3FWi",
+        "faq_VyKiLi",
+        "faq_hracWF",
+        "faq_xnxetL"
+      ],
+      "settings": {
+        "title": "Shipping",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "no",
+        "callout_text": ""
+      }
+    },
+    "faqs_mwT7eK": {
+      "type": "faqs",
+      "blocks": {
+        "faq_ViT8mX": {
+          "type": "faq",
+          "settings": {
+            "question": "How does the subscription work?",
+            "answer": "<p>When you sign up for the Happy Aging subscription program, you will automatically receive an email from Happy Aging with your products and the frequency you choose, whether it be every 10 days, monthly, or every 6 months.<br/><br/>Our subscription program ensures you receive your favorite products automatically, according to the frequency you selected when purchasing whether every 10 days, 20 days, monthly, quarterly, or semi-annually.<br/><br/>Benefits:<br/><br/>- Convenience: Never run out.<br/><br/>- Savings: Enjoy exclusive discounts.<br/><br/>- Free Shipping: Always included.<br/><br/>- Flexibility: Manage your plan anytime.<br/><br/><br/>Please note: You have full autonomy to cancel your subscription whenever you like by logging into your account. <br/><br/>However, any changes to your subscription, including address updates, product quantity, pauses, or cancellations, must be made before the subscription is processed. Once an order has been processed, we’re no longer able to cancel, modify, or refund that shipment.</p>"
+          }
+        },
+        "faq_3A6LzQ": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I login to my account?",
+            "answer": "<ol><li>Visit our website at <a href=\"http://www.happyaging.com\">www.happyaging.com</a> and click “Login” in the top-right corner.<br/></li><li>Enter the email address you used to place your order and your password, then click “Sign In.”</li></ol>"
+          }
+        },
+        "faq_HpJcrw": {
+          "type": "faq",
+          "settings": {
+            "question": "Forgot your password?",
+            "answer": "<ul><li>On the login page, enter your purchase email and click “Manage Subscriptions without password.”</li><li>We’ll immediately send you a one-time login code to that email address.</li><li>If you don’t see the code in your inbox, please check your Spam or Junk folder.</li></ul>"
+          }
+        },
+        "faq_DzLaVL": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I add or change a product in my subscription order?",
+            "answer": "<p>To add or change a product in your subscription, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.”</p>"
+          }
+        },
+        "faq_yPGaen": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I update my shipping address?",
+            "answer": "<p>To update your subscription shipping address, log into your account at happyaging.com, click “Subscriptions,” and then “Manage Subscriptions.”</p><p>Please note: make sure to update your address before your next order is processed. Once an order has been processed on our site, we’ll do our best to assist you, but we’re unable to guarantee changes to the shipping address. <br/><br/>Unfortunately, we cannot create a new replacement order or issue a refund if the order has already been shipped to the incorrect address.</p>"
+          }
+        },
+        "faq_KMKVhQ": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I update my billing information?",
+            "answer": "<p>To update your subscription billing information, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.”</p>"
+          }
+        },
+        "faq_qrQgQg": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I update my shipping date?",
+            "answer": "<p>To update your subscription shipping date, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.”</p>"
+          }
+        },
+        "faq_6qrkcm": {
+          "type": "faq",
+          "settings": {
+            "question": "When will my subscription be billed?",
+            "answer": "<p>Your subscription will be billed automatically according to the frequency you selected (every 10 days, 20 days, 1 month, 3 months, or 6 months).</p><p>To view your subscription billing date, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.”</p>"
+          }
+        },
+        "faq_fR7ALp": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I pause or cancel my subscription?",
+            "answer": "<p>To manage your subscriptions, log into your account at <a href=\"http://www.happyaging.com\">www.happyaging.com</a>, click “Login”, and then go to “Manage Subscriptions.”</p><p>If you have any questions or need help with the process, feel free to email us at hello@happyaging.com — we’re happy to assist!</p><p>Please note: Cancellation requests sent through other channels (like social media) are not accepted; please use your account or email us directly. If you request cancellation via email, our team will first confirm your identity for security purposes. Your subscription will only be effectively canceled once you receive confirmation from our team.</p>"
+          }
+        },
+        "faq_qVnFwe": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I restart my subscription?",
+            "answer": "<p>To manage your subscriptions, log into your account at happyaging.com, click “login,” and then “Manage Subscriptions.” Once you are in your subscription portal, click “Reactivate Subscription.”</p>"
+          }
+        },
+        "faq_tPVJVL": {
+          "type": "faq",
+          "settings": {
+            "question": "Return Policy",
+            "answer": "<p>We’re here to ensure your experience with Happy Aging is smooth and enjoyable. If your first order isn’t quite right, our 30-Day Guarantee makes returns easy and stress-free.</p><p>30-Day Guarantee (First Purchase Only)<br/><br/>We want you to try our products risk-free!<br/><br/>- Valid for one product per customer on <em>your first order</em>.<br/><br/>- If you’re not satisfied, keep the first product and return any unopened products within 30 days of delivery for a full refund.</p>"
+          }
+        },
+        "faq_BwTCah": {
+          "type": "faq",
+          "settings": {
+            "question": "How It Works",
+            "answer": "<ul><li>Try one product: If your order includes more than one product, feel free to open and enjoy one. If it’s not quite what you were expecting, keep the first product with our compliments.<br/></li><li>Return unopened products<strong>: </strong>Simply return any unopened boxes within 30 days to receive a full refund.</li></ul>"
+          }
+        },
+        "faq_Tf6K7L": {
+          "type": "faq",
+          "settings": {
+            "question": "Getting Your Refund",
+            "answer": "<p>We’ll happily credit you for the full purchase price. Need a return label? We can generate one in a snap, just note that return-shipping costs are yours to cover. </p><p>Tap “Start a Return,” enter your order number and ZIP code, and we’ll email you a label to print, pop on the box, and send any unopened goodies back our way. Prefer a helping hand? Drop us a line at hello@happyaging.com and we’ll walk you through the process.<br/><br/>Once your items arrive at our warehouse, please allow up to 7 business days for us to inspect and process the return. We’ll issue your refund right after, and it should land back in your account within 1–5 days, depending on your bank or card issuer.</p>"
+          }
+        },
+        "faq_MGiLtH": {
+          "type": "faq",
+          "settings": {
+            "question": "General Returns",
+            "answer": "<p>For future orders, we accept returns under the following conditions:<br/><br/>Unopened products only: We can accept returns for unopened products in their original condition, inside their regular shipping box and properly sealed.</p><p>30-day return window: You have 30 days from the date of delivery to request a return. If you have initiated the return after the 30-day window, you will not be eligible for a refund.<br/><br/>To start a return, contact us at hello@happyaging.com and we’ll guide you and provide a return label.<br/><br/>Please note: as an emerging company, we are able to provide the return label for your convenience, but we are not able to cover the cost of return shipping.</p>"
+          }
+        },
+        "faq_c7UYPF": {
+          "type": "faq",
+          "settings": {
+            "question": "Your Refund Options",
+            "answer": "<p>Full refund: Receive a full refund for your purchase </p><p>Store credit: Opt for store credit to use toward future purchases.</p><p>Please note: Once we receive your return, please allow 7 business days for us to inspect and process the return. We’ll issue your refund right after, and it should land back in your account within 1–5 days, depending on your bank or card issuer.</p>"
+          }
+        },
+        "faq_7LMzzE": {
+          "type": "faq",
+          "settings": {
+            "question": "Damaged, Incorrect or missing Items",
+            "answer": "<p>If your product arrives damaged, incorrect or missing, let us know within 7 days at hello@happyaging.com, and we’ll make it right with a replacement or full refund.</p>"
+          }
+        },
+        "faq_jzn6Ci": {
+          "type": "faq",
+          "settings": {
+            "question": "Need Help?",
+            "answer": "<p>We’re here for you. If you have any questions or need assistance, feel free to reach out to us at hello@happyaging.com. <br/><br/>We're happy to support you on your healthy aging journey.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_ViT8mX",
+        "faq_3A6LzQ",
+        "faq_HpJcrw",
+        "faq_DzLaVL",
+        "faq_yPGaen",
+        "faq_KMKVhQ",
+        "faq_qrQgQg",
+        "faq_6qrkcm",
+        "faq_fR7ALp",
+        "faq_qVnFwe",
+        "faq_tPVJVL",
+        "faq_BwTCah",
+        "faq_Tf6K7L",
+        "faq_MGiLtH",
+        "faq_c7UYPF",
+        "faq_7LMzzE",
+        "faq_jzn6Ci"
+      ],
+      "settings": {
+        "title": "Subscriptions",
+        "is_padding_top": "no",
+        "is_background_default": "yes",
+        "is_margin_bottom": "yes",
+        "callout_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faqs_Wmae88",
+    "faqs_YNtjRb",
+    "faqs_mwT7eK",
+    "faqs_DB8xQe",
+    "faqs_6x6p6a",
+    "faqs_arLPWn",
+    "faqs_UeqNRj",
+    "faqs_KywrXM",
+    "faqs_XptXYA",
+    "faqs_iUQzLx"
+  ]
+}

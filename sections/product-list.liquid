@@ -1,0 +1,98 @@
+<div class="site-container py-16 lg:py-20 section-shop-all {% if section.settings.show_atc %} lg:pb-0 {% endif %}">
+  {% unless section.settings.title == blank %}
+    <h2 class="heading shop-all-title !text-[40px] mb-8 lg:mb-10">{{ section.settings.title }}</h2>
+  {% endunless %}
+
+  <div class="d-grid gap-4 md:grid-cols-2 md:gap-4 lg:grid-cols-4">
+    {% for block in section.blocks %}
+      {% render 'product-item',
+        product: block.settings.product,
+        show_atc: section.settings.show_atc,
+        show_learn_more: section.settings.show_learn_more,
+        fix_atc: section.settings.fix_atc
+      %}
+    {% endfor %}
+  </div>
+</div>
+
+{%- comment -%}
+  CSS escopado: só injeta quando o checkbox "Fixar botão Add To Cart" estiver ligado.
+{%- endcomment -%}
+{% if section.settings.fix_atc %}
+  <style>
+    /* Escopo apenas para esta seção */
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc > a {
+      flex: 1 1 auto;
+      min-height: 1px;
+    }
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .quick-add {
+      margin-top: auto;
+    }
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .quick-add__submit,
+    #shopify-section-{{ section.id }} .product-card-wrapper.is-sticky-atc .button--cream {
+      position: sticky;
+      bottom: 0;
+      z-index: 2;
+    }
+    #shopify-section-{{ section.id }} .d-grid > * {
+      height: 100%;
+    }
+  </style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product List",
+  "class": "border-t border-black",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop All"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_atc",
+      "label": "Show Add To Cart",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_learn_more",
+      "label": "Mostrar botão Learn More",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "fix_atc",
+      "label": "Fixar botão Add To Cart",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_item",
+      "name": "Product Item",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product List"
+    }
+  ]
+}
+{% endschema %}

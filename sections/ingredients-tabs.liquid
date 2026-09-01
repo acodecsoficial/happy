@@ -1,0 +1,277 @@
+{% comment %}
+  Seção: Ingredients Tabs
+  Cria uma lista de abas à esquerda e o conteúdo correspondente à direita.
+{% endcomment %}
+
+<section id="ingredients-tabs-{{ section.id }}" class="ingredients-tabs-section">
+  <div class="ingredients-tabs-inner">
+    <div class="flex align-center">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="ingredients-tabs-heading heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="ingredients-tabs-subheading heading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+    </div>
+
+    <div class="ingredients-tabs-wrap">
+      <ul class="ingredients-tabs-list">
+        {%- for block in section.blocks -%}
+          <li
+            class="ingredients-tab-item heading{% if forloop.first %} active{% endif %}"
+            data-tab="tab-{{ block.id }}"
+          >
+            {{ block.settings.tab_title }}
+          </li>
+        {%- endfor -%}
+      </ul>
+
+      <div class="ingredients-tabs-content">
+        {%- for block in section.blocks -%}
+          <div
+            id="tab-{{ block.id }}"
+            class="ingredients-tab-panel{% if forloop.first %} active{% endif %}"
+          >
+            {%- if block.settings.tab_heading != blank -%}
+              <h3 class="ingredients-tab-panel-heading heading">
+                {{ block.settings.tab_heading }}
+              </h3>
+            {%- endif -%}
+            {%- if block.settings.tab_text != blank -%}
+              <div class="ingredients-tab-panel-text">
+                {{ block.settings.tab_text }}
+              </div>
+            {%- endif -%}
+            {%- if block.settings.tab_image -%}
+              <div class="ingredients-tab-panel-image">
+                <img
+                  src="{{ block.settings.tab_image | img_url: 'master' }}"
+                  alt="{{ block.settings.tab_title }}"
+                >
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab switching JS escopado à esta seção
+    (function(){
+      var sectionEl = document.getElementById('ingredients-tabs-{{ section.id }}');
+      if (!sectionEl) return;
+      var tabs = sectionEl.querySelectorAll('.ingredients-tab-item');
+      var panels = sectionEl.querySelectorAll('.ingredients-tab-panel');
+
+      tabs.forEach(function(tab){
+        tab.addEventListener('click', function(){
+          var target = tab.getAttribute('data-tab');
+
+          tabs.forEach(function(t){ t.classList.remove('active'); });
+          panels.forEach(function(p){ p.classList.remove('active'); });
+
+          tab.classList.add('active');
+          sectionEl.querySelector('#' + target).classList.add('active');
+        });
+      });
+    })();
+  </script>
+</section>
+
+<style>
+  /* === Ingredients Tabs Section === */
+.ingredients-tabs-section {
+  padding: 4rem 0rem;
+  background-color: #F7F5EB; /* ajuste conforme seu design */
+  border-top: 1px solid #000;
+}
+
+.ingredients-tabs-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ingredients-tabs-heading {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #202020;
+}
+
+.ingredients-tabs-subheading {
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+  color: #202020;
+  margin-bottom: 40px;
+}
+
+.ingredients-tabs-wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+/* Lista de abas */
+.ingredients-tabs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #D7D7D7;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 430px;
+}
+
+.ingredients-tab-item {
+  font-size: 36px;
+  padding-bottom: 30px;
+  cursor: pointer;
+  color: #707070;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.ingredients-tab-item.active {
+  color: #1E1E1E;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ingredients-tab-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 2px;
+  background-color: #d7d7d7;
+}
+
+/* Painéis de conteúdo */
+.ingredients-tabs-content {
+  position: relative;
+  max-width: 615px;
+  margin-left: auto;
+}
+
+.ingredients-tab-panel {
+  display: none;
+}
+
+.ingredients-tab-panel.active {
+  display: block;
+}
+
+.ingredients-tab-panel-heading {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.ingredients-tab-panel-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.ingredients-tab-panel-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  .ingredients-tabs-wrap {
+    grid-template-columns: 1fr;
+  }
+  .ingredients-tabs-list {
+    display: flex;
+    overflow-x: auto;
+    border-right: none;
+    padding: 0 20px;
+    border-bottom: inherit;
+  }
+
+  .ingredients-tab-panel-heading, .ingredients-tab-panel-text{
+    padding: 0 20px;
+  }
+  .ingredients-tab-item {
+    flex: none;
+    padding: 0.75rem 1rem;
+  }
+
+  .ingredients-tabs-inner .flex{
+    flex-direction: column;
+  }
+
+  .ingredients-tabs-heading {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #202020;
+}
+}
+
+</style>
+
+{% schema %}
+{
+  "name": "Ingredients Tabs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título principal",
+      "default": "THOUGHTFULLY SOURCED,"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Texto menor (italic)",
+      "default": "clinically-verified ingredients"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Título da aba",
+          "default": "MAGNESIUM BISGLYCINATE"
+        },
+        {
+          "type": "text",
+          "id": "tab_heading",
+          "label": "Cabeçalho do painel",
+          "default": "Magnesium Bisglycinate"
+        },
+        {
+          "type": "richtext",
+          "id": "tab_text",
+          "label": "Texto do painel",
+          "default": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "tab_image",
+          "label": "Imagem do painel"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Ingredients Tabs",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

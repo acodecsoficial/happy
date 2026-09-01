@@ -1,0 +1,309 @@
+<section class="longevity-circle" id="longevity-circle-{{ section.id }}">
+  <div class="longevity-circle__inner">
+    {%- if section.blocks.size > 0 -%}
+
+      <!-- MAIN SLIDER -->
+      <div class="swiper-container main-slider" id="main-{{ section.id }}">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="longevity-circle__slide">
+                <div class="longevity-circle__slide-text">
+                  <!-- richtext para título -->
+                  <div class="longevity-circle__block-title">
+                    <h2 class="heading">{{ block.settings.block_title }}</h2>
+                  </div>
+                  <div class="flex align-center titulo_longe" style="gap: 20px;">
+                    <!-- richtext para subtítulo -->
+                    <div class="longevity-circle__block-subtitle">
+                      <h2 class="heading">{{ block.settings.block_subtitle }}</h2>
+                    </div>
+                    <!-- richtext para subtítulo2 -->
+                    <div class="longevity-circle__block-subtitle2">
+                      <h3 class="font-surt">{{ block.settings.block_subtitle2 }}</h3>
+                    </div>
+                  </div>
+                  <!-- richtext para descrição -->
+                  <div class="longevity-circle__block-description">
+                    {{ block.settings.block_description }}
+                  </div>
+                  <div>
+                      <a href="{{ block.settings.block_link }}" class="flex heading justify-end" style="gap: 20px">
+                        <button>{{ block.settings.block_botao }}</button>
+                        <img src="https://cdn.shopify.com/s/files/1/0869/3704/3264/files/ARROW-RIGHT.svg?v=1752313226" width="21" height="19">
+                      </a>
+                  </div>
+                </div>
+                <div class="longevity-circle__slide-image">
+                  <img
+                    src="{{ block.settings.image | img_url: '600x' }}"
+                    alt="{{ block.settings.alt }}"
+                  />
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- THUMBS SLIDER -->
+      <div class="swiper-container thumbs-slider" id="thumbs-{{ section.id }}">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <img
+                src="{{ block.settings.image | img_url: '100x' }}"
+                alt="{{ block.settings.alt }}"
+              />
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    {%- endif -%}
+  </div>
+
+  <style>
+    /* força o swiper a 100% no main e thumbs */
+#longevity-circle-{{ section.id }} .swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* main: cada slide ocupa 100% */
+#longevity-circle-{{ section.id }} .main-slider .swiper-slide {
+  width: 100% !important;
+}
+
+/* thumbs: wrapper flex e gap controlado */
+#longevity-circle-{{ section.id }} .thumbs-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+#longevity-circle-{{ section.id }} .thumbs-slider .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+    .longevity-circle__slide {
+      display: flex;
+      align-items: initial;
+      gap: 2rem;
+      max-width: 913px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    .longevity-circle__inner{
+      padding: 60px 0px;
+      border-top: 1px solid #000;
+      position: relative;
+    }
+    .longevity-circle__block-title p {
+      font-size: 50px;
+      margin-bottom: 30px;
+      height: 50px;
+      overflow: hidden;
+    }
+    .longevity-circle__block-subtitle p {
+      font-size: 36px;
+      margin-bottom: 4px;
+      height: 36px;
+      overflow: hidden;
+    }
+    .longevity-circle__block-subtitle2 p {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .longevity-circle__block-description {
+      font-size: 16px;
+      line-height: 1.5;
+      max-width: 724px;
+      width: 100%;
+    }
+    .longevity-circle__slide-image img {
+      max-height: 463px;
+      object-fit: contain;
+      width: 100%;
+      max-width: 121px;
+    }
+    /* Thumbnails */
+    .thumbs-slider {
+      max-width: 724px;
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-65%);
+      z-index: 9;
+    }
+    .thumbs-slider .swiper-slide {
+      width: auto;
+      opacity: 0.4;
+      cursor: pointer;
+    }
+    .thumbs-slider .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+    .thumbs-slider img {
+      display: block;
+      height: 202px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 900px){
+      .longevity-circle__slide-image img{
+        max-height: 463px;
+        object-fit: contain;
+        max-width: 121px;
+        height: 350px;
+        width: 91px;
+        margin-top: 60px;
+      }
+
+      .thumbs-slider{
+        padding: 0 15px;
+      }
+
+      .longevity-circle__block-description {
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 724px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+            
+      .titulo_longe{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 4px !important;
+      }
+
+      .longevity-circle__block-title p{
+        font-size: 32px;
+        margin-bottom: 20px;
+        height: 30px;
+        overflow: hidden;
+      }
+
+      .longevity-circle__block-subtitle p {
+        font-size: 30px;
+        margin-bottom: 0px;
+        height: 30px;
+        overflow: hidden;
+      }
+
+      .thumbs-slider img{
+        height: 100px;
+      }
+
+      .thumbs-slider .swiper-slide{
+        margin-right: 25px !important;
+      }
+
+      .longevity-circle__inner{
+        padding: 30px 15px;
+        margin-top: 30px;
+      }
+
+      .thumbs-slider {
+        max-width: 300px;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-70%);
+        z-index: 9;
+      }
+    }
+  </style>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  var thumbs = new Swiper('#thumbs-{{ section.id }}', {
+    // desliga width auto que pode ter vindo em algum CSS
+    slidesPerView: 6,
+    spaceBetween: 80,
+    freeMode: true,
+    watchSlidesProgress: true,
+    // força a ocultar o que fica além de 6 miniaturas
+    watchOverflow: false,
+    // ajusta para cada tamanho de tela
+    breakpoints: {
+      0:    { slidesPerView: 5 },   // mobiles pequenos
+      640:  { slidesPerView: 4 },   // tablets
+      1024: { slidesPerView: 6 }    // desktops
+    }
+  });
+
+  new Swiper('#main-{{ section.id }}', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    thumbs: { swiper: thumbs },
+  });
+});
+
+</script>
+
+
+{% schema %}
+{
+  "name": "Longevity Circle",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "bottle",
+      "name": "Frasco",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagem do frasco"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt text"
+        },
+        {
+          "type": "richtext",
+          "id": "block_title",
+          "label": "Título do slide",
+          "default": "<p>WELCOME TO THE longevity circle</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "block_subtitle",
+          "label": "Subtítulo do slide",
+          "default": "<p>LIPOSOMAL magnesium — CALM TONIC</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "block_subtitle2",
+          "label": "Subtítulo 2 do slide",
+          "default": "<p>CALM TONIC</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "block_description",
+          "label": "Descrição do slide",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>"
+        },
+        {
+          "type": "url",
+          "id": "block_link",
+          "label": "Link do Botao"
+        },
+        {
+          "type": "richtext",
+          "id": "block_botao",
+          "label": "Texto do Botao",
+          "default": "<p>COMPLETE your routine</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Longevity Circle", "category": "Custom" }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,456 @@
+{% doc %}
+  @prompt
+    Uma seção com imagem do lado esquerdo e texto do lado direito para inserirmos a biografia do médico fundador. Responsivo para mobile e desktop
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-doctor-bio-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.content_gap }}px;
+    padding: {{ block.settings.section_padding }}px;
+    background-color: {{ block.settings.background_color }};
+    max-width: 100%;
+  }
+
+  .ai-doctor-bio-image-{{ ai_gen_id }} {
+    flex: 0 0 {{ block.settings.image_width }}%;
+    max-width: {{ block.settings.image_width }}%;
+  }
+
+  .ai-doctor-bio-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    aspect-ratio: {{ block.settings.image_aspect_ratio }};
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-doctor-bio-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-doctor-bio-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-doctor-bio-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-doctor-bio-content-{{ ai_gen_id }} {
+    flex: 1;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-doctor-bio-name-{{ ai_gen_id }} {
+    font-size: {{ block.settings.name_font_size }}px;
+    font-weight: 600;
+    margin: 0 0 {{ block.settings.name_margin_bottom }}px 0;
+    color: {{ block.settings.name_color }};
+  }
+
+  .ai-doctor-bio-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_font_size }}px;
+    font-weight: 500;
+    margin: 0 0 {{ block.settings.title_margin_bottom }}px 0;
+    color: {{ block.settings.title_color }};
+  }
+
+  .ai-doctor-bio-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_font_size }}px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ai-doctor-bio-description-{{ ai_gen_id }} p {
+    margin: 0 0 16px 0;
+  }
+
+  .ai-doctor-bio-description-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-doctor-bio-{{ ai_gen_id }} {
+      flex-direction: {{ block.settings.mobile_layout }};
+      gap: {{ block.settings.mobile_content_gap }}px;
+      padding: {{ block.settings.mobile_section_padding }}px;
+    }
+
+    .ai-doctor-bio-image-{{ ai_gen_id }} {
+      flex: none;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    {% if block.settings.mobile_layout == 'column' %}
+      .ai-doctor-bio-image-wrapper-{{ ai_gen_id }} {
+        max-width: {{ block.settings.mobile_image_max_width }}px;
+        margin: 0 auto;
+      }
+    {% endif %}
+
+    .ai-doctor-bio-name-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_name_font_size }}px;
+      text-align: {{ block.settings.mobile_text_alignment }};
+    }
+
+    .ai-doctor-bio-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_title_font_size }}px;
+      text-align: {{ block.settings.mobile_text_alignment }};
+    }
+
+    .ai-doctor-bio-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_description_font_size }}px;
+      text-align: {{ block.settings.mobile_text_alignment }};
+    }
+  }
+{% endstyle %}
+
+<div class="ai-doctor-bio-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-doctor-bio-image-{{ ai_gen_id }}">
+    <div class="ai-doctor-bio-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.doctor_image %}
+        <img
+          src="{{ block.settings.doctor_image | image_url: width: 800 }}"
+          alt="{{ block.settings.doctor_image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.doctor_image.width }}"
+          height="{{ block.settings.doctor_image.height }}"
+        >
+      {% else %}
+        <div class="ai-doctor-bio-image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="ai-doctor-bio-content-{{ ai_gen_id }}">
+    {% if block.settings.doctor_name != blank %}
+      <h2 class="ai-doctor-bio-name-{{ ai_gen_id }}">{{ block.settings.doctor_name }}</h2>
+    {% endif %}
+
+    {% if block.settings.doctor_title != blank %}
+      <h3 class="ai-doctor-bio-title-{{ ai_gen_id }}">{{ block.settings.doctor_title }}</h3>
+    {% endif %}
+
+    {% if block.settings.doctor_bio != blank %}
+      <div class="ai-doctor-bio-description-{{ ai_gen_id }}">
+        {{ block.settings.doctor_bio }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Biografia do médico",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Conteúdo"
+    },
+    {
+      "type": "image_picker",
+      "id": "doctor_image",
+      "label": "Foto do médico"
+    },
+    {
+      "type": "text",
+      "id": "doctor_name",
+      "label": "Nome do médico",
+      "default": "Dr. João Silva"
+    },
+    {
+      "type": "text",
+      "id": "doctor_title",
+      "label": "Título profissional",
+      "default": "Médico Fundador e Especialista"
+    },
+    {
+      "type": "richtext",
+      "id": "doctor_bio",
+      "label": "Biografia",
+      "default": "<p>Com mais de 20 anos de experiência na área médica, o Dr. João Silva é reconhecido por sua dedicação ao cuidado personalizado e inovação em tratamentos. Formado pela Universidade de São Paulo, especializou-se em medicina preventiva e fundou esta clínica com o objetivo de oferecer cuidados de excelência.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout desktop"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 30,
+      "max": 60,
+      "step": 5,
+      "unit": "%",
+      "label": "Largura da imagem",
+      "default": 40
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Proporção da imagem",
+      "options": [
+        {
+          "value": "1/1",
+          "label": "Quadrada (1:1)"
+        },
+        {
+          "value": "4/5",
+          "label": "Retrato (4:5)"
+        },
+        {
+          "value": "3/4",
+          "label": "Retrato (3:4)"
+        },
+        {
+          "value": "5/4",
+          "label": "Paisagem (5:4)"
+        }
+      ],
+      "default": "4/5"
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "min": 20,
+      "max": 80,
+      "step": 10,
+      "unit": "px",
+      "label": "Espaçamento entre imagem e texto",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Espaçamento interno",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Layout mobile"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Layout no mobile",
+      "options": [
+        {
+          "value": "column",
+          "label": "Imagem acima do texto"
+        },
+        {
+          "value": "column-reverse",
+          "label": "Texto acima da imagem"
+        }
+      ],
+      "default": "column"
+    },
+    {
+      "type": "range",
+      "id": "mobile_image_max_width",
+      "min": 200,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "label": "Largura máxima da imagem no mobile",
+      "default": 280
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "label": "Alinhamento do texto no mobile",
+      "options": [
+        {
+          "value": "left",
+          "label": "Esquerda"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "mobile_content_gap",
+      "min": 15,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Espaçamento entre elementos no mobile",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "mobile_section_padding",
+      "min": 15,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Espaçamento interno no mobile",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Tipografia desktop"
+    },
+    {
+      "type": "range",
+      "id": "name_font_size",
+      "min": 24,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Tamanho da fonte do nome",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "min": 16,
+      "max": 28,
+      "step": 2,
+      "unit": "px",
+      "label": "Tamanho da fonte do título",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "description_font_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Tamanho da fonte da biografia",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Tipografia mobile"
+    },
+    {
+      "type": "range",
+      "id": "mobile_name_font_size",
+      "min": 20,
+      "max": 36,
+      "step": 2,
+      "unit": "px",
+      "label": "Tamanho da fonte do nome no mobile",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_font_size",
+      "min": 14,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Tamanho da fonte do título no mobile",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_description_font_size",
+      "min": 14,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Tamanho da fonte da biografia no mobile",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Espaçamentos"
+    },
+    {
+      "type": "range",
+      "id": "name_margin_bottom",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Espaço abaixo do nome",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Espaço abaixo do título",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Cores"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Cor de fundo",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "name_color",
+      "label": "Cor do nome",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Cor do título",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Cor do texto",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Estilo da imagem"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Arredondamento da imagem",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Biografia do médico"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

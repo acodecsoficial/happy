@@ -1,0 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_kCgXK9": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Hydro Burn on $99+",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_kCgXK9"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_line_separator": false,
+        "auto_rotate": false,
+        "change_slides_speed": 3
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        "@media screen and (max-width: 768px) {.seu-container {padding-bottom: 20px; }}"
+      ],
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "header-menu",
+        "sticky_header_type": "reduce-logo-size",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

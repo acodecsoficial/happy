@@ -1,0 +1,2826 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_mxftaL": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n\n.showMobile{\n  display:none;\n}\n.showDesktop{\n  display:block;\n}\n\n.radio-option.active .option-label {\n    font-weight:600;\n}\n\n@media screen and (min-width:1360px) and (max-width:1445px){\n    .site-container {\n        padding-left: 5rem;\n        padding-right: 5rem;\n    }\n}\n\n.site-container > .product--left {\n    justify-content: center;\n}\n\ncadence-selector .radio-option:nth-child(2) .value-props{\n    display:none!important;\n    \n}\n\ncadence-selector .radio-option:nth-child(2){\n    border:1px solid #d7d7d7;\n    margin-bottom:0!important;\n}\n\ncadence-selector .radio-option:nth-child(2) .radio-option__button{\n    margin-bottom:0;\n}\n\n\n\n@media screen and (max-width:540px){\n  .showMobile{\n  display:block;\n}\n.showDesktop{\n  display:none;\n}\n}\n\nspan.oke-sr-label-text {\n    color: #707070!important;\n}\n\n.oke-sr-count {\n    color: #707070!important;\n    text-transform: uppercase;\n}  \n\ncadence-selector.cadence-selector, .quantity-grid-mobile {\n    padding: 10px;\n    border: 1px solid #d7d7d7;\n}\n\ncadence-selector .radio-option.active, .quantity-grid-mobile .radio-option.active {\n    border: 2px solid #9caf88 !important;\n    border-color: #9caf88 !important;\n}\n#product-form-template--24636152283456__main > subscription-widget > cadence-selector > div {\n  border-color: #9caf88 !important;\n}\n\ncadence-selector .value-props, .quantity-grid-mobile .value-props{\n    display: flex!important;\n    flex-direction: column;\n}\n\ncadence-selector .value-props .value-prop:nth-child(2),\ncadence-selector .value-props .value-prop:nth-child(4){\n    border: 1px solid red;\n    display:none;\n}\n\n.value-prop {\n    color: #707070;\n}\n\ncadence-selector.cadence-selector .radio-option.active .radio-dot {\n    background: #9caf88 !important;\n}\n\ncadence-selector.cadence-selector .radio-option.active .radio-circle {\n    border-color: #9caf88 !important;\n}\n\ncadence-selector.cadence-selector .option-details {\n    border:2px solid red;\n    display:none!important;\n}\n\np.option-label-text {\n    color:#1e1e1e;\n    font-size:14px;\n}\n\n.truemed-entry-box {\n    display: none!important;\n}\n\n.moneyinfo{\n  color:#707070;\n  font-size:10px;\n  margin-top:-10px!important;\n}\n\n.moneyback{\n  color:#1e1e1e;\n}\n\n.icon-text-block span {\n    color: #1e1e1e;\n}\n\n.quantity-grid-mobile .option-details {display: none;}\n\n\n@media screen and (max-width:540px){\n    cadence-selector.cadence-selector .radio-option {\n        max-width: 50%;\n    }\n    \n    cadence-selector.cadence-selector .radio-option p{\n        font-size: 10px!important;\n    }\n    \n    \n    \n    \n\nspan.main-tag-product {\n    text-align: center;\n        padding: 3px;\n        height: auto;\n}\n\n\n\np.save-text.js-subscription-save {\n\n    right: 5rem!important;\n    font-size: 10px;\n    background: #9CAF88;\n    padding: 5px;\n\n}\n\n}\n\n@media screen and (min-width:500px){\n    .cadence-selector .radio-option {\n        margin-bottom: 10px;\n    }\n}\n\np.save-text.js-subscription-save {\n    position: absolute;\n    right: 6%;\n    font-size: 10px;\n    background: #9CAF88;\n    padding: 5px;\n    color: #000000bf;\n}\n\n@media (max-width: 900px){\n.site-container {\n  margin-left: auto;\n  margin-right: auto;\n  max-width: 1440px;\n  padding-left: 0;\n  padding-right: 0;\n}\n\n.product__info-wrapper, .thumbnail-slider, #shopify-section-template--24672251937088__results_list_LqxNh4 .site-container, header.site-container{\npadding-left: 2rem;\n  padding-right: 2rem;\n}\n.slider-button .icon {\n  height: 33px;\n  width: 33px;\n}\n\n</style>"
+          }
+        },
+        "custom_reviews_yRiyrR": {
+          "type": "custom_reviews",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "badge_text": "{{ product.metafields.happy_aging.title_tag.value }}"
+          }
+        },
+        "custom_liquid_xUN8aT": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"\" class=\"uppercase showMobile\">{{ section.settings.title_label }}</span>"
+          }
+        },
+        "icon_text_list_xhFzwP": {
+          "type": "icon_text_list",
+          "settings": {
+            "icon_1": "shopify://shop_images/7d32a2286aa3de49012b9c0d508ab963.svg",
+            "text_1": "200 mg of highly absorbable magnesium to support mental focus",
+            "icon_2": "shopify://shop_images/94da2372bdb22b79a5368f327627a142.svg",
+            "text_2": "Clinically dosed and powered by liposomal technology for 10x better absorption",
+            "icon_3": "shopify://shop_images/ad6a354a5d14273257788002a1766c9c.svg",
+            "text_3": "Helps quiet a racing mind before moments that matter",
+            "icon_4": "shopify://shop_images/63a9ddb24ab88f3f285b45c12149f9a3.svg",
+            "text_4": "Keeps you sharp and clear under pressure",
+            "icon_5": "shopify://shop_images/3bfd882676c2bec06b91c1b38ebc1d1e.svg",
+            "text_5": "Eases tension without making you feel sluggish",
+            "icon_6": "shopify://shop_images/cbed559d40de7e6e1bdc4948dc9f35ad_ed0c3b49-bdc7-47da-b677-92e1d98cc669.svg",
+            "text_6": "Smooth, consistent mental energy with no highs or crashes",
+            "icon_7": "shopify://shop_images/64a79d36ae0e2e2691de0e828a9bf5b2.svg",
+            "text_7": "Simple daily ritual that fits your routine",
+            "text_size_desktop": 14,
+            "text_size_mobile": 14,
+            "icon_size_desktop": 16,
+            "icon_size_mobile": 16,
+            "alignment_desktop": "left",
+            "alignment_mobile": "left",
+            "margin_top_desktop": 20,
+            "margin_bottom_desktop": 20,
+            "margin_top_mobile": 20,
+            "margin_bottom_mobile": 20
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "frontrow_WcpwRH": {
+          "type": "frontrow",
+          "settings": {}
+        },
+        "buy_buttons_W9PKFR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "tonic": true,
+            "default_info_sub_1": "Ships in 12 hours",
+            "default_info_sub_2": "",
+            "default_info_sub_3": "",
+            "default_info_sub_4": "",
+            "default_info_one_1": "",
+            "default_info_one_2": "",
+            "product_content_text_default_kit": ""
+          }
+        },
+        "quantity_block_XPNgFV": {
+          "type": "quantity_block",
+          "settings": {
+            "qty": 1,
+            "onetime_price": 55,
+            "plan_id": "693185478976",
+            "title": "18-day supply",
+            "sub_title": "",
+            "num_bottles": "1",
+            "badge": "",
+            "product_content_text": "18-Day Supply",
+            "subs_info_1": "Free shipping in 12 hours",
+            "subs_info_2": "Cancel your subscription anytime",
+            "subs_info_3": "Ships every 18 days",
+            "subs_info_4": "",
+            "subs_info_5": "",
+            "subs_info_6": ""
+          }
+        },
+        "quantity_block_hxax3a": {
+          "type": "quantity_block",
+          "settings": {
+            "qty": 2,
+            "onetime_price": 55,
+            "plan_id": "693185675584",
+            "title": "36-day supply",
+            "sub_title": "",
+            "num_bottles": "",
+            "badge": "",
+            "product_content_text": "",
+            "subs_info_1": "Free shipping in 12 hours",
+            "subs_info_2": "Cancel your subscription anytime",
+            "subs_info_3": "Ships every 36 days",
+            "subs_info_4": "",
+            "subs_info_5": "",
+            "subs_info_6": ""
+          }
+        },
+        "text_RB6DBe": {
+          "type": "text",
+          "settings": {
+            "text": "30 Day Money Back Guarantee",
+            "customclass": "moneybacktext",
+            "text_style": "body",
+            "text_size": "text-xs",
+            "text_align": "text-left"
+          }
+        },
+        "text_h9imWD": {
+          "type": "text",
+          "settings": {
+            "text": "If you're unsatisfied with your shots, for any reason, we'll give you a full refund–no return necessary!",
+            "customclass": "moneyinfo",
+            "text_style": "body",
+            "text_size": "text-[10px]",
+            "text_align": "text-left"
+          }
+        },
+        "aside_content_TPcz4K": {
+          "type": "aside_content",
+          "settings": {
+            "title": "Ingredients",
+            "text": "",
+            "image": "shopify://shop_images/HappyAging_Calm_Facts_Amazon_679x802_d98a863a-ebe7-4f3f-b343-5ab9dfba414b.jpg"
+          }
+        },
+        "aside_content_rBPMby": {
+          "type": "aside_content",
+          "settings": {
+            "title": "How to use",
+            "text": "<ul><li>Shake the bottle. </li><li>Use when you need to feel sharp, centered, and ready. Drink straight or mix with water or tea.<br/><br/></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_mxftaL",
+        "custom_reviews_yRiyrR",
+        "title",
+        "custom_liquid_xUN8aT",
+        "icon_text_list_xhFzwP",
+        "description",
+        "frontrow_WcpwRH",
+        "buy_buttons_W9PKFR",
+        "quantity_block_XPNgFV",
+        "quantity_block_hxax3a",
+        "text_RB6DBe",
+        "text_h9imWD",
+        "aside_content_TPcz4K",
+        "aside_content_rBPMby"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 500px) {.grid-product-title {display: flex; align-items: center; gap: 15px; } span.main-tag-product {display: flex; margin-top: 0; } li#Slide-template--24670584504640__main-40407209967936 {margin-left: -2%; width: 103%; max-width: 121%; }}"
+      ],
+      "settings": {
+        "old_product": "calm-tonic",
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "highlight_color": "#ffa614",
+        "title_label": "<p>Calm Tonic</p>",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "landing_section_GdHXgh": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_WBhNK7": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_max_width": 0,
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 80,
+            "right_spacing_desktop": 80,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 0,
+            "right_spacing_mobile": 0
+          },
+          "blocks": {
+            "highlight_image_item_BLJ8i3": {
+              "type": "highlight-image-item",
+              "name": "Highlight image item",
+              "settings": {
+                "image": "shopify://shop_images/Poli_Alves_r1_03E_9920.png",
+                "image_max_width_mobile": 1000,
+                "title": "<h2>FIRST <em>liquid liposomal NMN.</em></h2>",
+                "title_size": 48,
+                "title_line_height": 42,
+                "title_color": "",
+                "text": "",
+                "text_alignment_desktop": "left",
+                "text_alignment_mobile": "center",
+                "flex_direction": "row",
+                "justify_content": "start",
+                "align_items": "start",
+                "row_gap": 20,
+                "column_gap": 20,
+                "flex_direction_mobile": "column",
+                "justify_content_mobile": "center",
+                "align_items_mobile": "center",
+                "row_gap_mobile": 20,
+                "column_gap_mobile": 20
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "highlight_image_item_BLJ8i3"
+          ]
+        },
+        "section_inner_YmreYw": {
+          "type": "section-inner",
+          "settings": {
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 30,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 80,
+            "right_spacing_desktop": 80,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 2,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "grid_list_Pf4yHh": {
+              "type": "grid-list",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 0,
+                "row_gap_desktop": 0,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 0,
+                "row_gap_mobile": 0
+              },
+              "blocks": {
+                "highlight_image_item_6wWHKq": {
+                  "type": "highlight-image-item",
+                  "settings": {
+                    "image_max_width_desktop": 0,
+                    "title": "",
+                    "title_size": 30,
+                    "title_line_height": 42,
+                    "title_color": "",
+                    "text": "",
+                    "text_alignment_desktop": "left",
+                    "text_alignment_mobile": "center",
+                    "flex_direction": "row",
+                    "justify_content": "start",
+                    "align_items": "start",
+                    "row_gap": 20,
+                    "column_gap": 20,
+                    "flex_direction_mobile": "column",
+                    "justify_content_mobile": "center",
+                    "align_items_mobile": "center",
+                    "row_gap_mobile": 20,
+                    "column_gap_mobile": 20
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "highlight_image_item_6wWHKq"
+              ]
+            },
+            "section_inner_qAQ6QY": {
+              "type": "section-inner",
+              "settings": {
+                "desktop_grid_columns": "2",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "start",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 30,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 0,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 0,
+                "top_spacing_mobile": 0,
+                "bottom_spacing_mobile": 30,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_aTxT4k": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 40,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 30
+                  },
+                  "blocks": {
+                    "heading_block_gbkbFr": {
+                      "type": "heading-block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p>FIRST <em>liquid liposomal NMN.</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "desktop_font_size": 50,
+                        "text_alignment_desktop": "left",
+                        "mobile_font_size": 48,
+                        "top_spacing_mobile": 20,
+                        "lr_spacing_mobile": 0,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_gbkbFr"
+                  ]
+                },
+                "grid_list_UKGRj3": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 25,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 1,
+                    "row_gap_mobile": 1
+                  },
+                  "blocks": {
+                    "text_block_BdfahW": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h2>Before the mirror reflects it, <em>your cells already know.</em></h2>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "max_width": 0,
+                        "desktop_font_size": 36,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_EJp8ft": {
+                      "type": "text-block",
+                      "settings": {
+                        "text": "<p>What matters isn't how much you take but how well your body absorbs it.<strong> Cell Renew Tonic by Happy Aging</strong> is formulated for up to 10x better absorption, delivering the right dose with ease and without discomfort.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "max_width": 0,
+                        "desktop_font_size": 16,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "top_spacing_mobile": 10,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_block_BdfahW",
+                    "text_block_EJp8ft"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_aTxT4k",
+                "grid_list_UKGRj3"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_Pf4yHh",
+            "section_inner_qAQ6QY"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_WBhNK7",
+        "section_inner_YmreYw"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".site-container {padding-left: 0; padding-right: 0;}"
+      ],
+      "settings": {
+        "background_color": "",
+        "full_width": false,
+        "max_width": 1440,
+        "top_spacing": 0,
+        "bottom_spacing": 50,
+        "use_top_border": false,
+        "use_bottom_border": true,
+        "full_width_mobile": true,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "marquee_pMqq4Y": {
+      "type": "marquee",
+      "blocks": {
+        "text_F9fHWN": {
+          "type": "text",
+          "settings": {
+            "text": "Clinically-Validated Doses"
+          }
+        },
+        "text_z7tkeC": {
+          "type": "text",
+          "settings": {
+            "text": "Premium Ingredients"
+          }
+        },
+        "text_8c4bkD": {
+          "type": "text",
+          "settings": {
+            "text": "100% Natural"
+          }
+        },
+        "text_LhF6BY": {
+          "type": "text",
+          "settings": {
+            "text": "Vegan & Gluten-Free"
+          }
+        },
+        "text_qkCpGH": {
+          "type": "text",
+          "settings": {
+            "text": "No Added Sugars"
+          }
+        }
+      },
+      "block_order": [
+        "text_F9fHWN",
+        "text_z7tkeC",
+        "text_8c4bkD",
+        "text_LhF6BY",
+        "text_qkCpGH"
+      ],
+      "custom_css": [
+        "site-marqueex {border-top: 1px solid;}"
+      ],
+      "settings": {}
+    },
+    "focus_you_Lh73aQ": {
+      "type": "focus-you",
+      "blocks": {
+        "row_NPeT7w": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/Image_3_36db5ab5-6dbf-48cd-8984-66c109f9d15c.png",
+            "heading_1": "Get centered, stay clear",
+            "text_1": "<p>Magnesium bisglycinate helps balance neurotransmitters so your brain can shift into a more centered, steady state. Without sedation.</p>",
+            "heading_2": "Stay laser-focused",
+            "text_2": "<p>Supports cognitive performance under pressure. Keep your thinking clear and responsive, no matter the mental load.</p>",
+            "button_text": "",
+            "button_url": "/"
+          }
+        },
+        "row_tWbad6": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "image": "shopify://shop_images/Image_5.png",
+            "heading_1": "Feel consistent energy",
+            "text_1": "<p>Clinically dosed and powered by liposomal technology for 10x better absorption. More magnesium reaches your cells for stronger nerve signaling, steadier energy, and fewer focus crashes.</p>",
+            "heading_2": "Kick-in focus, right on time",
+            "text_2": "<p>Starts working in about 1 hour and reaches full power in 2–4 hours, delivering the clarity and balance you need exactly when the pressure is on.</p>",
+            "button_text": "",
+            "button_url": "/"
+          }
+        }
+      },
+      "block_order": [
+        "row_NPeT7w",
+        "row_tWbad6"
+      ],
+      "name": "Focus You",
+      "settings": {
+        "title": "<p>FOCUS YOU <em>can feel</em></p>",
+        "subtitle": ""
+      }
+    },
+    "landing_section_KWgCJm": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_yArRpj": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_max_width": 974,
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 20,
+            "left_spacing_desktop": 0,
+            "right_spacing_desktop": 0,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 35,
+            "bottom_spacing_mobile": 20,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "heading_block_GUQqVg": {
+              "type": "heading-block",
+              "name": "Heading block",
+              "settings": {
+                "subheading": "",
+                "text": "<h1>FEEL IT <em>first shifts</em></h1>",
+                "tag_select": "h2",
+                "text_color": "",
+                "desktop_font_size": 50,
+                "text_alignment_desktop": "left",
+                "mobile_font_size": 50,
+                "text_alignment_mobile": "left"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_block_GUQqVg"
+          ]
+        },
+        "section_inner_gGdAUQ": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_max_width": 974,
+            "desktop_grid_columns": "2",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "desktop_grid_column_gap": 20,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 0,
+            "right_spacing_desktop": 0,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 35,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 60,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "grid_list_XVQaRQ": {
+              "type": "grid-list",
+              "name": "Grid (simple)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 15,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 10,
+                "row_gap_mobile": 5
+              },
+              "blocks": {
+                "image_block_wixqxw": {
+                  "type": "image-block",
+                  "name": "Image block",
+                  "settings": {
+                    "image": "shopify://shop_images/FEEL_IT_first_shifts_2.jpg",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                },
+                "text_block_bLNe3B": {
+                  "type": "text-block",
+                  "name": "Text block",
+                  "settings": {
+                    "text": "<h2>Everyday win</h2>",
+                    "text_color": "",
+                    "text_weight": "normal",
+                    "border-top": false,
+                    "text_alignment_desktop": "left",
+                    "tooltip_texts": "",
+                    "mobile_font_size": 0,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                },
+                "text_block_DzQCiF": {
+                  "type": "text-block",
+                  "name": "Text block",
+                  "settings": {
+                    "text": "<ul><li>Morning lift off, refreshed before coffee</li><li>Calm drive all day, no highs or crashes</li><li>Cycle friendly balance, mood and weight on track</li><li>Workout carry over, less burn and quick bounce back</li><li>Evening unwind, smooth shift to good sleep</li></ul>",
+                    "text_color": "",
+                    "text_weight": "normal",
+                    "border-top": false,
+                    "desktop_font_size": 16,
+                    "text_alignment_desktop": "left",
+                    "tooltip_texts": "",
+                    "mobile_font_size": 16,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_wixqxw",
+                "text_block_bLNe3B",
+                "text_block_DzQCiF"
+              ]
+            },
+            "grid_list_dUcrMP": {
+              "type": "grid-list",
+              "name": "Grid (simple)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 15,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 10,
+                "row_gap_mobile": 5
+              },
+              "blocks": {
+                "image_block_J6fg7p": {
+                  "type": "image-block",
+                  "name": "Image block",
+                  "settings": {
+                    "image": "shopify://shop_images/FEEL_IT_first_shifts.jpg",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                },
+                "text_block_GRJ9tN": {
+                  "type": "text-block",
+                  "name": "Text block",
+                  "settings": {
+                    "text": "<h2>Why it happens</h2>",
+                    "text_color": "",
+                    "text_weight": "normal",
+                    "border-top": false,
+                    "desktop_font_size": 0,
+                    "text_alignment_desktop": "left",
+                    "tooltip_texts": "",
+                    "mobile_font_size": 48,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                },
+                "text_block_YDUF8E": {
+                  "type": "text-block",
+                  "name": "Text block",
+                  "settings": {
+                    "text": "<ul><li>Morning lift off, refreshed before coffee</li><li>Calm drive all day, no highs or crashes</li><li>Cycle friendly balance, mood and weight on track</li><li>Workout carry over, less burn and quick bounce back</li><li>Evening unwind, smooth shift to good sleep</li></ul>",
+                    "text_color": "",
+                    "text_weight": "normal",
+                    "border-top": false,
+                    "desktop_font_size": 16,
+                    "text_alignment_desktop": "left",
+                    "tooltip_texts": "",
+                    "mobile_font_size": 16,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_J6fg7p",
+                "text_block_GRJ9tN",
+                "text_block_YDUF8E"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_XVQaRQ",
+            "grid_list_dUcrMP"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_yArRpj",
+        "section_inner_gGdAUQ"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-block ul li {list-style: inside; padding: 5px;}",
+        "@media screen and (max-width: 540px) {h2 {font-size: 36px; }}"
+      ],
+      "name": "Landing Section",
+      "settings": {
+        "background_color": "",
+        "full_width": false,
+        "max_width": 974,
+        "top_spacing": 70,
+        "bottom_spacing": 70,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": true,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "landing_section_ExiDxD": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_jMigaK": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_max_width": 1440,
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 50,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 0,
+            "right_spacing_desktop": 0,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 35,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "grid_list_GratK3": {
+              "type": "grid-list",
+              "name": "Grid (simple)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 40,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 30,
+                "row_gap_mobile": 30
+              },
+              "blocks": {
+                "heading_block_pKVY9k": {
+                  "type": "heading-block",
+                  "name": "Heading block",
+                  "settings": {
+                    "subheading": "",
+                    "text": "<p>WHY HAPPY AGING <em>is your advantage</em></p>",
+                    "tag_select": "h2",
+                    "text_color": "",
+                    "letter_spacing": 0,
+                    "desktop_line_height": 0,
+                    "top_spacing_desktop": 0,
+                    "text_alignment_desktop": "center",
+                    "mobile_font_size": 48,
+                    "text_alignment_mobile": "left"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_block_pKVY9k"
+              ]
+            },
+            "section_inner_HpigUY": {
+              "type": "section-inner",
+              "name": "Grid (wrapper)",
+              "settings": {
+                "desktop_max_width": 0,
+                "desktop_grid_columns": "5",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "start",
+                "desktop_grid_column_gap": 30,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 0,
+                "mobile_grid_columns": "2",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 20,
+                "mobile_grid_row_gap": 50,
+                "top_spacing_mobile": 35,
+                "bottom_spacing_mobile": 0,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_9tFUGK": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_ptKwtR": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>One</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "desktop_font_size": 0,
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_hNGj3F": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>A single teaspoon helps you feel more focused and balanced.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_ptKwtR",
+                    "text_block_hNGj3F"
+                  ]
+                },
+                "grid_list_Q4hBYK": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_AkQakG": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>200 mg</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_Gya3pg": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>A clinical dose of magnesium to support mental clarity.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_AkQakG",
+                    "text_block_Gya3pg"
+                  ]
+                },
+                "grid_list_RJCRew": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_iHzN3H": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>Clean</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_LUiRbt": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>No sugar. No gluten. Third-party tested.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_iHzN3H",
+                    "text_block_LUiRbt"
+                  ]
+                },
+                "grid_list_BwzMKy": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_q7taLp": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>Quick</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_FeLFaV": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>Drink it in seconds, no pills, no prep.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "mobile_line_height": 0,
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_q7taLp",
+                    "text_block_FeLFaV"
+                  ]
+                },
+                "grid_list_9eVrbX": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "heading_block_yfYHVF": {
+                      "type": "heading-block",
+                      "name": "Heading block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p><em>Science</em></p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_YpUc8B": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>Backed by research. Full transparency builds lifelong trust.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_font_size": 16,
+                        "top_spacing_desktop": 20,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "top_spacing_mobile": 15,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_yfYHVF",
+                    "text_block_YpUc8B"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_9tFUGK",
+                "grid_list_Q4hBYK",
+                "grid_list_RJCRew",
+                "grid_list_BwzMKy",
+                "grid_list_9eVrbX"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_GratK3",
+            "section_inner_HpigUY"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_jMigaK"
+      ],
+      "custom_css": [
+        ".text-block.border-t {border-color: #707070 !important;}",
+        "@media screen and (max-width: 540px) {.heading-block p em {font-size: 40px !important; }}"
+      ],
+      "name": "Landing Section",
+      "settings": {
+        "background_color": "#e5dbcc",
+        "full_width": false,
+        "max_width": 1440,
+        "top_spacing": 70,
+        "bottom_spacing": 70,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "top_spacing_mobile": 70,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "image_with_text_blocks_gAjTfr": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "text_nLEfLV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>BUILD to perform</p>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
+        "text_GcHhgp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h3><em>Clinically proven NMN raised blood NAD⁺ by up to 60% in eight weeks</em></h3>",
+            "text_style": "heading",
+            "has_border": false,
+            "center_mobile": false
+          }
+        },
+        "spacing_EbYH8e": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 50,
+            "spacing_mobile": 0,
+            "fill_all_desktop": false
+          }
+        },
+        "spacing_A7Nw66": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 20,
+            "spacing_mobile": 40,
+            "fill_all_desktop": false
+          }
+        },
+        "text_QghNzh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Stay sharp in high-stress meetings</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_BFqHcM": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Regroup quickly between tasks</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_FHXk9x": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Helps with mood swings (PMS, perimenopause)</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_Ucicgf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Loosens tight muscles caused by stress</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "text_fAHjYt": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Tastes like refreshing citrus, no bitterness</h3>",
+            "text_style": "body",
+            "has_border": true,
+            "center_mobile": false
+          }
+        },
+        "spacing_GFqXPi": {
+          "type": "spacing",
+          "settings": {
+            "spacing_desktop": 20,
+            "spacing_mobile": 20,
+            "fill_all_desktop": false
+          }
+        },
+        "button_iKqTjh": {
+          "type": "button",
+          "settings": {
+            "button_text": "Buy Now",
+            "button_link": "#",
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "border_color": "#000000",
+            "hover_background_color": "#333333",
+            "hover_text_color": "#ffffff",
+            "hover_border_color": "#333333",
+            "font_size": 32,
+            "font_weight": "400",
+            "width_type": "custom",
+            "custom_width": 40,
+            "min_width": 0,
+            "alignment": "left",
+            "padding_vertical": 10,
+            "padding_horizontal": 32,
+            "border_width": 1,
+            "border_radius": 0,
+            "mobile_full_width": true
+          }
+        }
+      },
+      "block_order": [
+        "text_nLEfLV",
+        "text_GcHhgp",
+        "spacing_EbYH8e",
+        "spacing_A7Nw66",
+        "text_QghNzh",
+        "text_BFqHcM",
+        "text_FHXk9x",
+        "text_Ucicgf",
+        "text_fAHjYt",
+        "spacing_GFqXPi",
+        "button_iKqTjh"
+      ],
+      "custom_css": [
+        "div.leading-5.border-b {border-color: #d7d7d7; padding-bottom: 5px; margin-bottom: 5px;}",
+        "div.leading-5 h3 {font-size: 28px;}",
+        "@media screen and (min-width: 1300px) {img {padding-right: 0px; }}",
+        "@media screen and (max-width: 540px) {img {border-bottom: 1px solid !important; }}",
+        ".largura_content {max-width: 510px !important;}"
+      ],
+      "settings": {
+        "title": "",
+        "text": "",
+        "image_desk": "shopify://shop_images/Sem_Titulo-1_4ed4b16f-110e-4983-b235-310bb543d5e2.jpg",
+        "image_height_desk": "fit",
+        "image_mob": "shopify://shop_images/Sem_Titulo-1_4ed4b16f-110e-4983-b235-310bb543d5e2.jpg",
+        "image_height_mob": "adapt",
+        "width": "full",
+        "width_mobile": "full",
+        "image_first": false,
+        "image_first_mob": false,
+        "image_large": false,
+        "show_border": false,
+        "show_border_top": true,
+        "hide_border_mobile": false,
+        "remove_py_content": false,
+        "small_content": false,
+        "wrap_image_mobile": false,
+        "wrap_content_mobile": true,
+        "spacing_desktop": "lg:py-0",
+        "spacing_mobile": "py-0"
+      }
+    },
+    "landing_section_3RqYFU": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_W3tNRM": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_grid_columns": "1",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 20,
+            "left_spacing_desktop": 30,
+            "right_spacing_desktop": 30,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 0,
+            "right_spacing_mobile": 0
+          },
+          "blocks": {
+            "heading_block_g9fQLV": {
+              "type": "heading-block",
+              "name": "Heading block",
+              "settings": {
+                "subheading": "",
+                "text": "<p>HOW MAGNESIUM <em>works in your body</em></p>",
+                "tag_select": "h2",
+                "text_color": "",
+                "desktop_font_size": 50,
+                "text_alignment_desktop": "left",
+                "mobile_font_size": 50,
+                "text_alignment_mobile": "left"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_block_g9fQLV"
+          ]
+        },
+        "section_inner_KGEFVa": {
+          "type": "section-inner",
+          "name": "Grid (wrapper)",
+          "settings": {
+            "desktop_grid_columns": "3",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 0,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 0,
+            "bottom_spacing_desktop": 0,
+            "left_spacing_desktop": 30,
+            "right_spacing_desktop": 30,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 35,
+            "left_spacing_mobile": 0,
+            "right_spacing_mobile": 0
+          },
+          "blocks": {
+            "section_inner_einebR": {
+              "type": "section-inner",
+              "name": "Grid (wrapper)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "start",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 20,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 50,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 0,
+                "top_spacing_mobile": 0,
+                "bottom_spacing_mobile": 0,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_LdfKtp": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 0,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 0,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "ai_gen_block_e8307fc_mtrpJh": {
+                      "type": "ai_gen_block_e8307fc",
+                      "name": "Icon Block",
+                      "settings": {
+                        "icon_image": "shopify://shop_images/Icons_b92ad3e1-6ae1-429e-a102-ccbd8bfed659.png",
+                        "alt_text": "",
+                        "link": "",
+                        "alignment": "flex-start",
+                        "icon_width": 45,
+                        "icon_width_mobile": 45,
+                        "icon_padding": 8,
+                        "padding_top": 4,
+                        "padding_bottom": 4,
+                        "padding_top_mobile": 16,
+                        "padding_bottom_mobile": 4,
+                        "background_color": "rgba(0,0,0,0)",
+                        "border_radius": 8,
+                        "border_width": 0,
+                        "border_color": "#e0e0e0",
+                        "hover_scale": 1.1
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_EBcM9m": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h3>Supports brain and nerve health helps you think more clearly</h3>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "desktop_font_size": 16,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "ai_gen_block_e8307fc_mtrpJh",
+                    "text_block_EBcM9m"
+                  ]
+                },
+                "grid_list_eDGmxC": {
+                  "type": "grid-list",
+                  "name": "Grid (simple)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 0,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 0,
+                    "row_gap_mobile": 0
+                  },
+                  "blocks": {
+                    "ai_gen_block_e8307fc_MD8FaW": {
+                      "type": "ai_gen_block_e8307fc",
+                      "name": "Icon Block",
+                      "settings": {
+                        "icon_image": "shopify://shop_images/Icons_1_8a8314c9-a01d-4713-b9f4-3f501f60d867.png",
+                        "alt_text": "",
+                        "link": "",
+                        "alignment": "flex-start",
+                        "icon_width": 45,
+                        "icon_width_mobile": 45,
+                        "icon_padding": 8,
+                        "padding_top": 4,
+                        "padding_bottom": 4,
+                        "padding_top_mobile": 16,
+                        "padding_bottom_mobile": 4,
+                        "background_color": "rgba(0,0,0,0)",
+                        "border_radius": 8,
+                        "border_width": 0,
+                        "border_color": "#e0e0e0",
+                        "hover_scale": 1.1
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_yVAyLD": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<h3>Helps your body process stress and stay emotionally balanced</h3>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "desktop_font_size": 16,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "mobile_font_size": 16,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "ai_gen_block_e8307fc_MD8FaW",
+                    "text_block_yVAyLD"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_LdfKtp",
+                "grid_list_eDGmxC"
+              ]
+            },
+            "section_inner_MQ4cBF": {
+              "type": "section-inner",
+              "name": "Grid (wrapper)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 0,
+                "mobile_max_width": 0,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 0,
+                "top_spacing_mobile": 25,
+                "bottom_spacing_mobile": 20,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "highlight_image_item_QweEBC": {
+                  "type": "highlight-image-item",
+                  "name": "Highlight image item",
+                  "settings": {
+                    "image": "shopify://shop_images/magnesiumv2.png",
+                    "image_max_width_mobile": 10000,
+                    "title": "",
+                    "title_size": 30,
+                    "title_line_height": 42,
+                    "title_color": "",
+                    "text": "",
+                    "text_alignment_desktop": "left",
+                    "text_alignment_mobile": "center",
+                    "flex_direction": "row",
+                    "justify_content": "start",
+                    "align_items": "start",
+                    "row_gap": 20,
+                    "column_gap": 20,
+                    "flex_direction_mobile": "column",
+                    "justify_content_mobile": "center",
+                    "align_items_mobile": "center",
+                    "row_gap_mobile": 20,
+                    "column_gap_mobile": 20
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "highlight_image_item_QweEBC"
+              ]
+            },
+            "section_inner_bAxLpg": {
+              "type": "section-inner",
+              "name": "Grid (wrapper)",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "start",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 50,
+                "right_spacing_desktop": 0,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "start",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 0,
+                "top_spacing_mobile": 0,
+                "bottom_spacing_mobile": 0,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "section_inner_ApnLBe": {
+                  "type": "section-inner",
+                  "name": "Grid (wrapper)",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "horizontal_alignment": "start",
+                    "vertical_alignment": "start",
+                    "desktop_grid_column_gap": 0,
+                    "desktop_grid_row_gap": 20,
+                    "top_spacing_desktop": 0,
+                    "bottom_spacing_desktop": 0,
+                    "left_spacing_desktop": 0,
+                    "right_spacing_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "mobile_horizontal_alignment": "start",
+                    "mobile_vertical_alignment": "start",
+                    "mobile_grid_column_gap": 0,
+                    "mobile_grid_row_gap": 0,
+                    "top_spacing_mobile": 0,
+                    "bottom_spacing_mobile": 0,
+                    "left_spacing_mobile": 0,
+                    "right_spacing_mobile": 0
+                  },
+                  "blocks": {
+                    "grid_list_pqk4a3": {
+                      "type": "grid-list",
+                      "name": "Grid (simple)",
+                      "settings": {
+                        "desktop_grid_columns": "1",
+                        "column_gap_desktop": 0,
+                        "row_gap_desktop": 0,
+                        "mobile_grid_columns": "1",
+                        "column_gap_mobile": 0,
+                        "row_gap_mobile": 0
+                      },
+                      "blocks": {
+                        "ai_gen_block_e8307fc_E3iDrC": {
+                          "type": "ai_gen_block_e8307fc",
+                          "name": "Icon Block",
+                          "settings": {
+                            "icon_image": "shopify://shop_images/Component_4_5e1ff22a-e1f7-4910-bd1e-e6a38ea2d57a.png",
+                            "alt_text": "",
+                            "link": "",
+                            "alignment": "flex-end",
+                            "icon_width": 45,
+                            "icon_width_mobile": 45,
+                            "icon_padding": 8,
+                            "padding_top": 4,
+                            "padding_bottom": 4,
+                            "padding_top_mobile": 16,
+                            "padding_bottom_mobile": 4,
+                            "background_color": "rgba(0,0,0,0)",
+                            "border_radius": 8,
+                            "border_width": 0,
+                            "border_color": "#e0e0e0",
+                            "hover_scale": 1.1
+                          },
+                          "blocks": {}
+                        },
+                        "text_block_GMeQRr": {
+                          "type": "text-block",
+                          "name": "Text block",
+                          "settings": {
+                            "text": "<h3>Promotes better connection between brain cells for faster response and learning</h3>",
+                            "text_color": "",
+                            "text_weight": "normal",
+                            "border-top": false,
+                            "desktop_font_size": 16,
+                            "text_alignment_desktop": "right",
+                            "tooltip_texts": "",
+                            "mobile_font_size": 16,
+                            "text_alignment_mobile": "right"
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "ai_gen_block_e8307fc_E3iDrC",
+                        "text_block_GMeQRr"
+                      ]
+                    },
+                    "grid_list_TyYWRe": {
+                      "type": "grid-list",
+                      "name": "Grid (simple)",
+                      "settings": {
+                        "desktop_grid_columns": "1",
+                        "column_gap_desktop": 0,
+                        "row_gap_desktop": 0,
+                        "mobile_grid_columns": "1",
+                        "column_gap_mobile": 0,
+                        "row_gap_mobile": 0
+                      },
+                      "blocks": {
+                        "ai_gen_block_e8307fc_NtbyeH": {
+                          "type": "ai_gen_block_e8307fc",
+                          "name": "Icon Block",
+                          "settings": {
+                            "icon_image": "shopify://shop_images/Icons_2_8224ef2b-f32c-40e0-afb0-43872cd3cd3a.png",
+                            "alt_text": "",
+                            "link": "",
+                            "alignment": "flex-end",
+                            "icon_width": 45,
+                            "icon_width_mobile": 45,
+                            "icon_padding": 8,
+                            "padding_top": 4,
+                            "padding_bottom": 4,
+                            "padding_top_mobile": 16,
+                            "padding_bottom_mobile": 16,
+                            "background_color": "rgba(0,0,0,0)",
+                            "border_radius": 8,
+                            "border_width": 0,
+                            "border_color": "#e0e0e0",
+                            "hover_scale": 1.1
+                          },
+                          "blocks": {}
+                        },
+                        "text_block_gbe6Vy": {
+                          "type": "text-block",
+                          "name": "Text block",
+                          "settings": {
+                            "text": "<h3>The liposomal format makes it easier to absorb and gentler on your gut</h3>",
+                            "text_color": "",
+                            "text_weight": "normal",
+                            "border-top": false,
+                            "desktop_font_size": 16,
+                            "text_alignment_desktop": "right",
+                            "tooltip_texts": "",
+                            "mobile_font_size": 16,
+                            "text_alignment_mobile": "right"
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "ai_gen_block_e8307fc_NtbyeH",
+                        "text_block_gbe6Vy"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "grid_list_pqk4a3",
+                    "grid_list_TyYWRe"
+                  ]
+                }
+              },
+              "block_order": [
+                "section_inner_ApnLBe"
+              ]
+            }
+          },
+          "block_order": [
+            "section_inner_einebR",
+            "section_inner_MQ4cBF",
+            "section_inner_bAxLpg"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_W3tNRM",
+        "section_inner_KGEFVa"
+      ],
+      "custom_css": [
+        ".text-block {border-bottom: 1px solid #000;}"
+      ],
+      "name": "Landing Section",
+      "settings": {
+        "background_color": "",
+        "full_width": false,
+        "max_width": 1440,
+        "top_spacing": 70,
+        "bottom_spacing": 70,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": false,
+        "top_spacing_mobile": 35,
+        "bottom_spacing_mobile": 0,
+        "use_top_border_mobile": false,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "results_list_LqxNh4": {
+      "type": "results-list",
+      "blocks": {
+        "result_item_zqgCJN": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/Day_1.jpg",
+            "title": "DAY 1",
+            "text": "<p>Cellular activation starts, NAD⁺ pathways switch on</p>"
+          }
+        },
+        "result_item_B9jKrw": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/Day_7.jpg",
+            "title": "DAY 7",
+            "text": "<p>Brighter mornings, lighter fatigue, clearer mind</p>"
+          }
+        },
+        "result_item_KtxBQ9": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/Day_30.jpg",
+            "title": "DAY 30",
+            "text": "<p>Balanced energy, steadier mood, sharper focus</p>"
+          }
+        },
+        "result_item_rqhTek": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/Badge_3.png",
+            "title": "DAY 60",
+            "text": "<p>Noticeable resilience, faster recovery, lasting strength</p>"
+          }
+        },
+        "result_item_9ia4b9": {
+          "type": "result_item",
+          "settings": {
+            "image": "shopify://shop_images/Sem_Titulo-1_d79c27dc-ee5f-4079-a79c-c6a38baf4803.jpg",
+            "title": "DAY 90",
+            "text": "<p>Plus consolidated vitality, sustainable clarity, empowered aging</p>"
+          }
+        }
+      },
+      "block_order": [
+        "result_item_zqgCJN",
+        "result_item_B9jKrw",
+        "result_item_KtxBQ9",
+        "result_item_rqhTek",
+        "result_item_9ia4b9"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3.heading {border-bottom: 1px solid; border-top: none; padding-top: 0;}",
+        "h2.heading {font-size: 50px !important;}",
+        ".text-xs.leading-5 p {transition-duration: 0.3s; font-size: 22px; font-family: var(--font-heading-family); opacity: 0;}",
+        ".d-grid .d-grid:hover .text-xs.leading-5 p {opacity: 1;}",
+        "@media screen and (max-width: 500px) {.text-xs.leading-5 p {opacity: 1 !important; font-family: var(--font-heading-family); font-size: 24px; }}"
+      ],
+      "name": "Results List",
+      "settings": {
+        "title": "YOUR NMN JOURNEY : v<em>itality milestones</em>"
+      }
+    },
+    "ingredients_tabs_nKwUYB": {
+      "type": "ingredients-tabs",
+      "blocks": {
+        "tab_GQg8LN": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "MAGNESIUM BISGLYCINATE",
+            "tab_heading": "Magnesium Bisglycinate",
+            "tab_text": "<p>Your brain’s favorite form of magnesium. Absorbs fast to sharpen focus, steady mood and relax tight muscles without upsetting your stomach.</p>",
+            "tab_image": "shopify://shop_images/Badge.png"
+          }
+        },
+        "tab_g36fUn": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Phosphatidylcholine Liposomes",
+            "tab_heading": "Phosphatidylcholine Liposomes",
+            "tab_text": "<p>Tiny natural bubbles that shuttle magnesium through the gut wall, giving you up to 10× more absorption—and faster results you can feel.<br/><br/></p>",
+            "tab_image": "shopify://shop_images/Badge_a5304f30-2ba0-497c-89c2-830294649372.png"
+          }
+        },
+        "tab_FJMkiw": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Non‑GMO Sunflower Lecithin",
+            "tab_heading": "Non‑GMO Sunflower Lecithin",
+            "tab_text": "<p>Extra phosphatidylcholine that nourishes cell membranes and supports healthy brain signaling while keeping the formula soy‑free.</p>",
+            "tab_image": "shopify://shop_images/Badge-1.png"
+          }
+        },
+        "tab_MP3FYR": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Organic Citrus Extract",
+            "tab_heading": "Organic Citrus Extract",
+            "tab_text": "<p>Adds a refreshing taste and a hit of natural antioxidants, so your daily shot is both enjoyable and good for you.</p>",
+            "tab_image": "shopify://shop_images/Badge4.png"
+          }
+        }
+      },
+      "block_order": [
+        "tab_GQg8LN",
+        "tab_g36fUn",
+        "tab_FJMkiw",
+        "tab_MP3FYR"
+      ],
+      "name": "Ingredients Tabs",
+      "settings": {
+        "heading": "THOUGHTFULLY SOURCED,",
+        "subheading": "clinically-verified ingredients"
+      }
+    },
+    "landing_section_nqCRrp": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_jaGitq": {
+          "type": "section-inner",
+          "settings": {
+            "desktop_max_width": 1440,
+            "desktop_grid_columns": "2",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 50,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 70,
+            "bottom_spacing_desktop": 70,
+            "left_spacing_desktop": 30,
+            "right_spacing_desktop": 30,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 20,
+            "right_spacing_mobile": 20
+          },
+          "blocks": {
+            "section_inner_edEAQq": {
+              "type": "section-inner",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "flex-between",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 70,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "center",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 50,
+                "top_spacing_mobile": 20,
+                "bottom_spacing_mobile": 20,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_39DAGw": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 20,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 15
+                  },
+                  "blocks": {
+                    "heading_block_h8V6Bc": {
+                      "type": "heading-block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<h2>TAKE BACK <em>your energy</em></h2><h4><em>Clinically proven NMN raised blood NAD⁺ by up to 60% in eight weeks</em></h4>",
+                        "tag_select": "h1",
+                        "text_color": "",
+                        "desktop_font_size": 0,
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_3Rzw4W": {
+                      "type": "text-block",
+                      "name": "Text block",
+                      "settings": {
+                        "text": "<p>A single teaspoon delivers 400 mg NMN in liposomal form, giving your body up to 10x more usable NMN than standard capsules. Expect faster uptake, real energy, sharper focus in the first week.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": false,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "Footnotes1o tooltip: Eight week human trial on liposomal NMN, NAD⁺ increaseSegundo: Independent data comparing liposomal and standard NMN absorption<br>Terceiro: Townsend Newsletter 2021, intracellular NAD⁺ rise with liposomal NMN",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "ai_gen_block_ab0bec8_dRmymN": {
+                      "type": "ai_gen_block_ab0bec8",
+                      "settings": {
+                        "desktop_spacing": 15,
+                        "mobile_spacing": 10
+                      },
+                      "blocks": {}
+                    },
+                    "ai_gen_block_3608cf6_FRaWaP": {
+                      "type": "ai_gen_block_3608cf6",
+                      "settings": {
+                        "button_text": "Buy Now",
+                        "button_link": "#",
+                        "background_color": "#000000",
+                        "text_color": "#ffffff",
+                        "border_color": "#000000",
+                        "hover_background_color": "#333333",
+                        "hover_text_color": "#ffffff",
+                        "hover_border_color": "#333333",
+                        "font_size": 32,
+                        "font_weight": "400",
+                        "width_type": "custom",
+                        "custom_width": 55,
+                        "min_width": 0,
+                        "alignment": "left",
+                        "padding_vertical": 10,
+                        "padding_horizontal": 60,
+                        "border_width": 1,
+                        "border_radius": 0,
+                        "mobile_full_width": true
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_h8V6Bc",
+                    "text_block_3Rzw4W",
+                    "ai_gen_block_ab0bec8_dRmymN",
+                    "ai_gen_block_3608cf6_FRaWaP"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_39DAGw"
+              ]
+            },
+            "grid_list_8NRiw8": {
+              "type": "grid-list",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 40,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 30,
+                "row_gap_mobile": 30
+              },
+              "blocks": {
+                "image_block_4rVcUP": {
+                  "type": "image-block",
+                  "settings": {
+                    "image": "shopify://shop_images/TAKE_BACK_your_energy_1.gif",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_4rVcUP"
+              ]
+            }
+          },
+          "block_order": [
+            "section_inner_edEAQq",
+            "grid_list_8NRiw8"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_jaGitq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".heading-block h2 {font-size: 50px;}",
+        ".heading-block h4 {font-size: 24px;}"
+      ],
+      "settings": {
+        "background_color": "#f7f5eb",
+        "full_width": false,
+        "max_width": 0,
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "use_top_border": true,
+        "use_bottom_border": false,
+        "full_width_mobile": true,
+        "max_width_mobile": 0,
+        "top_spacing_mobile": 20,
+        "bottom_spacing_mobile": 20,
+        "use_top_border_mobile": true,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "image_banner_azPmDb": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
+        ".banner__media {margin-top: 3rem;}",
+        ".banner__content {display: none;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_27281022-99cb-44fd-899c-7e0a505a2228.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "timeline_section_hBBi6r": {
+      "type": "timeline-section",
+      "blocks": {
+        "title_ERxH8J": {
+          "type": "title",
+          "settings": {
+            "title": "<p>HOW <em>to use</em></p>"
+          }
+        },
+        "step_zxLdV4": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "step_title": "SHAKE THE BOTTLE",
+            "step_text": ""
+          }
+        },
+        "step_QnBzQa": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "step_title": "SIP (10 ml)",
+            "step_text": "Use when you need to feel sharp, centered, and ready. Drink straight or mix with water or tea."
+          }
+        }
+      },
+      "block_order": [
+        "title_ERxH8J",
+        "step_zxLdV4",
+        "step_QnBzQa"
+      ],
+      "custom_css": [
+        "div .relative {/*border-bottom: 20px solid red;*/ padding-bottom: 19rem;}",
+        "@media screen and (max-width: 500px) {div .relative {/*border-bottom: 20px solid red;*/ padding-bottom: 0; }}",
+        ".heading {font-size: 50px;}"
+      ],
+      "settings": {
+        "show_border_top": true,
+        "first_image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_1.png",
+        "second_image": "shopify://shop_images/ChatGPT_Image_May_14_2025_09_26_50_PM_74c8ff2a-d3f0-44b1-bc3a-5113560f332b.png"
+      }
+    },
+    "image_banner_D6TgTi": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media screen and (min-width: 500px) {.banner {display: none; } .banner__media {display: none !important; }}",
+        ".banner__media {margin-top: 3rem;}",
+        ".banner__content {display: none;}",
+        "@media (max-width: 900px) {#Banner-template--24672251937088__image_banner_D6TgTi {padding-bottom: 3rem; }}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/31_Screenshot_2025-05-14_at_9.50.39_PM_copy_6.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "longevity_circle_cNW94D": {
+      "type": "longevity-circle",
+      "blocks": {
+        "bottle_9aipyC": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/Calm_b4e6bc48-64a9-419c-97cd-47e1dcb48548.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE <em>longevity circle</em></p>",
+            "block_subtitle": "<p>LIPOSOMAL <em>magnesium</em></p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "shopify://products/biological-age-test",
+            "block_botao": "<p>COMPLETE <em>your routine</em></p>"
+          }
+        },
+        "bottle_UAhy8F": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/Cell.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_fgPcGQ": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/immunity.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_Dtazi6": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/liver.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_XVyqzL": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/sleep.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_FbgAPe": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/radiance.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_UCqRei": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/Component_20.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        },
+        "bottle_TGFQAV": {
+          "type": "bottle",
+          "settings": {
+            "image": "shopify://shop_images/relief.png",
+            "alt": "",
+            "block_title": "<p>WELCOME TO THE longevity circle</p>",
+            "block_subtitle": "<p>LIPOSOMAL magnesium — CALM TONIC</p>",
+            "block_subtitle2": "<p>CALM TONIC</p>",
+            "block_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "block_link": "",
+            "block_botao": "<p>COMPLETE your routine</p>"
+          }
+        }
+      },
+      "block_order": [
+        "bottle_9aipyC",
+        "bottle_UAhy8F",
+        "bottle_fgPcGQ",
+        "bottle_Dtazi6",
+        "bottle_XVyqzL",
+        "bottle_FbgAPe",
+        "bottle_UCqRei",
+        "bottle_TGFQAV"
+      ],
+      "disabled": true,
+      "name": "Longevity Circle",
+      "settings": {}
+    },
+    "subscription_products_TYLphp": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_kD4Ywj": {
+          "type": "product_card",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "quantity_block_dm3xwy": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146779968
+          }
+        },
+        "quantity_block_Cic4Hq": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        },
+        "product_card_GPfNYa": {
+          "type": "product_card",
+          "settings": {
+            "product": "beach-tote-with-logo"
+          }
+        },
+        "quantity_block_9JGYXt": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 8989978009
+          }
+        },
+        "quantity_block_zN9QVw": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 5454547744
+          }
+        }
+      },
+      "block_order": [
+        "product_card_kD4Ywj",
+        "quantity_block_dm3xwy",
+        "quantity_block_Cic4Hq",
+        "product_card_GPfNYa",
+        "quantity_block_9JGYXt",
+        "quantity_block_zN9QVw"
+      ],
+      "disabled": true,
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<p>Complete <em>your routine</em></p>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
+        "show_all_link": true
+      }
+    },
+    "subscription_products_REAFz7": {
+      "type": "subscription-products",
+      "blocks": {
+        "product_card_P7bfAG": {
+          "type": "product_card",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "quantity_block_rDFzDD": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693146779968
+          }
+        },
+        "quantity_block_4Ar93H": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 2,
+            "subscription_id": 693146812736
+          }
+        },
+        "product_card_EqYHRd": {
+          "type": "product_card",
+          "settings": {
+            "product": "longevity-shots"
+          }
+        },
+        "quantity_block_iLhfAL": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693008924992
+          }
+        },
+        "quantity_block_UnGwmd": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693008859456
+          }
+        },
+        "product_card_C74ntJ": {
+          "type": "product_card",
+          "settings": {
+            "product": "creatine-for-women"
+          }
+        },
+        "quantity_block_VDhw77": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693107163456
+          }
+        },
+        "quantity_block_Lp7Bq7": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693109719360
+          }
+        },
+        "product_card_yBdbd4": {
+          "type": "product_card",
+          "settings": {
+            "product": "hydroburn"
+          }
+        },
+        "quantity_block_PfB698": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693066072384
+          }
+        },
+        "quantity_block_AxDbPp": {
+          "type": "quantity_block",
+          "settings": {
+            "quantity": 1,
+            "subscription_id": 693090320704
+          }
+        }
+      },
+      "block_order": [
+        "product_card_P7bfAG",
+        "quantity_block_rDFzDD",
+        "quantity_block_4Ar93H",
+        "product_card_EqYHRd",
+        "quantity_block_iLhfAL",
+        "quantity_block_UnGwmd",
+        "product_card_C74ntJ",
+        "quantity_block_VDhw77",
+        "quantity_block_Lp7Bq7",
+        "product_card_yBdbd4",
+        "quantity_block_PfB698",
+        "quantity_block_AxDbPp"
+      ],
+      "name": "Subscription Products",
+      "settings": {
+        "title": "<p>Complete <em>your routine</em></p>",
+        "subtitle": "",
+        "all_link_url": "shopify://collections/all",
+        "all_link_text": "<p>SEE ALL <em>products</em></p>",
+        "show_all_link": true
+      }
+    },
+    "wines": {
+      "type": "wines",
+      "disabled": true,
+      "settings": {
+        "title_section": "AGE LIKE <em>fine wine</em>",
+        "text_section": "Forget “a glass of wine”—elevate to an antioxidant celebration, without the alcohol. Each shot delivers 220 mg of 98% purity Resveratrol, equal to 43 bottles of red wine. Toast to vibrant health and longevity with every sip."
+      }
+    },
+    "landing_section_qAbkWE": {
+      "type": "landing-section",
+      "blocks": {
+        "section_inner_tcDKaG": {
+          "type": "section-inner",
+          "settings": {
+            "desktop_grid_columns": "2",
+            "horizontal_alignment": "start",
+            "vertical_alignment": "start",
+            "desktop_grid_column_gap": 50,
+            "desktop_grid_row_gap": 0,
+            "top_spacing_desktop": 70,
+            "bottom_spacing_desktop": 70,
+            "left_spacing_desktop": 70,
+            "right_spacing_desktop": 70,
+            "mobile_grid_columns": "1",
+            "mobile_horizontal_alignment": "start",
+            "mobile_vertical_alignment": "start",
+            "mobile_grid_column_gap": 0,
+            "mobile_grid_row_gap": 0,
+            "top_spacing_mobile": 0,
+            "bottom_spacing_mobile": 0,
+            "left_spacing_mobile": 0,
+            "right_spacing_mobile": 0
+          },
+          "blocks": {
+            "grid_list_xwWhF9": {
+              "type": "grid-list",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "column_gap_desktop": 40,
+                "row_gap_desktop": 40,
+                "mobile_grid_columns": "1",
+                "column_gap_mobile": 30,
+                "row_gap_mobile": 30
+              },
+              "blocks": {
+                "image_block_UQdmmD": {
+                  "type": "image-block",
+                  "settings": {
+                    "image": "shopify://shop_images/ChatGPT_Image_Apr_29_2025_09_08_14_PM.png",
+                    "different_mobile_image": false,
+                    "show_on_mobile": true,
+                    "show_on_desktop": true
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_block_UQdmmD"
+              ]
+            },
+            "section_inner_ziMpcL": {
+              "type": "section-inner",
+              "settings": {
+                "desktop_grid_columns": "1",
+                "horizontal_alignment": "start",
+                "vertical_alignment": "flex-between",
+                "desktop_grid_column_gap": 0,
+                "desktop_grid_row_gap": 0,
+                "top_spacing_desktop": 0,
+                "bottom_spacing_desktop": 0,
+                "left_spacing_desktop": 0,
+                "right_spacing_desktop": 70,
+                "mobile_grid_columns": "1",
+                "mobile_horizontal_alignment": "start",
+                "mobile_vertical_alignment": "center",
+                "mobile_grid_column_gap": 0,
+                "mobile_grid_row_gap": 50,
+                "top_spacing_mobile": 20,
+                "bottom_spacing_mobile": 20,
+                "left_spacing_mobile": 0,
+                "right_spacing_mobile": 0
+              },
+              "blocks": {
+                "grid_list_BWJghP": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 40,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 30,
+                    "row_gap_mobile": 30
+                  },
+                  "blocks": {
+                    "heading_block_4fV3EH": {
+                      "type": "heading-block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "<p>HOW TO USE</p>",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_block_4fV3EH"
+                  ]
+                },
+                "grid_list_DGEiFe": {
+                  "type": "grid-list",
+                  "settings": {
+                    "desktop_grid_columns": "1",
+                    "column_gap_desktop": 40,
+                    "row_gap_desktop": 0,
+                    "mobile_grid_columns": "1",
+                    "column_gap_mobile": 0,
+                    "row_gap_mobile": 15
+                  },
+                  "blocks": {
+                    "text_block_hf8TQj": {
+                      "type": "text-block",
+                      "settings": {
+                        "text": "<p>HOW TO MAKE <br/><br/>Mix one scoop per day with water, almond milk, or your favorite smoothie.</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "top_spacing_desktop": 10,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "top_spacing_mobile": 10,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "heading_block_VctgjK": {
+                      "type": "heading-block",
+                      "settings": {
+                        "subheading": "",
+                        "text": "",
+                        "tag_select": "h2",
+                        "text_color": "",
+                        "desktop_line_height": 0,
+                        "top_spacing_desktop": 40,
+                        "text_alignment_desktop": "left",
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    },
+                    "text_block_VAgnt7": {
+                      "type": "text-block",
+                      "settings": {
+                        "text": "<p>WHEN TO USE<br/><br/>Ideal after workouts or anytime you need a clean, plant-based energy boost</p>",
+                        "text_color": "",
+                        "text_weight": "normal",
+                        "border-top": true,
+                        "desktop_line_height": 0,
+                        "top_spacing_desktop": 10,
+                        "text_alignment_desktop": "left",
+                        "tooltip_texts": "",
+                        "top_spacing_mobile": 10,
+                        "text_alignment_mobile": "left"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_block_hf8TQj",
+                    "heading_block_VctgjK",
+                    "text_block_VAgnt7"
+                  ]
+                }
+              },
+              "block_order": [
+                "grid_list_BWJghP",
+                "grid_list_DGEiFe"
+              ]
+            }
+          },
+          "block_order": [
+            "grid_list_xwWhF9",
+            "section_inner_ziMpcL"
+          ]
+        }
+      },
+      "block_order": [
+        "section_inner_tcDKaG"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "#e5dbcc",
+        "full_width": true,
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "use_top_border": false,
+        "use_bottom_border": false,
+        "full_width_mobile": false,
+        "top_spacing_mobile": 20,
+        "bottom_spacing_mobile": 20,
+        "use_top_border_mobile": true,
+        "use_bottom_border_mobile": false
+      }
+    },
+    "faqs_9gMU6f": {
+      "type": "faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "1. What exactly is Calm Tonic?",
+            "answer": "<p>A fast-working magnesium shot that helps you focus, stay composed, and think more clearly when life gets busy.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "2. Who is it for?",
+            "answer": "<p>Anyone dealing with stress, intense focus demands, or hormonal mood swings from professionals to creatives to caregivers.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "3. What type of magnesium is used?",
+            "answer": "<p>We use magnesium bisglycinate, known for its high bioavailability and gentleness on digestion no laxative effect.<br/></p>"
+          }
+        },
+        "faq_dfmbmf": {
+          "type": "faq",
+          "settings": {
+            "question": "4. What is liposomal delivery and why does it matter?",
+            "answer": "<p>Liposomal technology wraps magnesium in a phospholipid layer, helping it pass through your digestive system and reach your cells more efficiently.</p>"
+          }
+        },
+        "faq_6UkLU3": {
+          "type": "faq",
+          "settings": {
+            "question": "5. How much magnesium is in each dose?",
+            "answer": "<p>Each 10 mL shot contains 212 mg of magnesium a clinically effective dose to support focus and balance.</p>"
+          }
+        },
+        "faq_LWdF6e": {
+          "type": "faq",
+          "settings": {
+            "question": "6. Will it make me tired?",
+            "answer": "<p>No. Calm Tonic supports focus and clarity without sedation. It helps your body stay balanced without slowing you down.</p>"
+          }
+        },
+        "faq_aEfQyb": {
+          "type": "faq",
+          "settings": {
+            "question": "7. Can I use it every day?",
+            "answer": "<p>Yes. It’s safe and effective for daily use.</p>"
+          }
+        },
+        "faq_WqnYjM": {
+          "type": "faq",
+          "settings": {
+            "question": "8. Is it habit-forming?",
+            "answer": "<p>Not at all. It’s non-habit forming and designed for consistent support.</p>"
+          }
+        },
+        "faq_Eb44T8": {
+          "type": "faq",
+          "settings": {
+            "question": "9. Can I take it with other supplements or medications?",
+            "answer": "<p>In most cases, yes. But consult your healthcare provider if you’re on medication or managing a specific condition.</p>"
+          }
+        },
+        "faq_YaakAD": {
+          "type": "faq",
+          "settings": {
+            "question": "10. Will it help me sleep?",
+            "answer": "<p>While it’s not designed as a sleep aid, many users report improved sleep quality due to lower evening tension and fewer muscle cramps.</p>"
+          }
+        },
+        "faq_3CWMLC": {
+          "type": "faq",
+          "settings": {
+            "question": "11. Is it clean and allergy-safe?",
+            "answer": "<p>Yes. It contains no sugar, gluten, soy, dairy, or synthetic fillers just what your body and mind need.</p>"
+          }
+        },
+        "faq_d6qTBa": {
+          "type": "faq",
+          "settings": {
+            "question": "12. Is it safe for all ages?",
+            "answer": "<p>Calm Tonic is formulated for adults. If you’re considering it for teens or older adults with specific conditions, consult a healthcare provider.</p>"
+          }
+        },
+        "faq_ynT9nx": {
+          "type": "faq",
+          "settings": {
+            "question": "13. Where is it made?",
+            "answer": "<p>Formulated and produced in the USA under strict quality standards, with third-party testing and a public Certificate of Analysis for every batch.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_dfmbmf",
+        "faq_6UkLU3",
+        "faq_LWdF6e",
+        "faq_aEfQyb",
+        "faq_WqnYjM",
+        "faq_Eb44T8",
+        "faq_YaakAD",
+        "faq_3CWMLC",
+        "faq_d6qTBa",
+        "faq_ynT9nx"
+      ],
+      "custom_css": [
+        "#faqs {border-top: 1px solid;}"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_padding_top": "yes",
+        "is_background_default": "no",
+        "is_margin_bottom": "yes",
+        "callout_text": "<p>Still Have Questions?<br/>Our team is here to help! Reach out to us at <a href=\"mailto:hello@happyaging.com\">hello@happyaging.com</a> for personalized support.</p>"
+      }
+    },
+    "17401711251af96b37": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "landing_section_GdHXgh",
+    "marquee_pMqq4Y",
+    "focus_you_Lh73aQ",
+    "landing_section_KWgCJm",
+    "landing_section_ExiDxD",
+    "image_with_text_blocks_gAjTfr",
+    "landing_section_3RqYFU",
+    "results_list_LqxNh4",
+    "ingredients_tabs_nKwUYB",
+    "landing_section_nqCRrp",
+    "image_banner_azPmDb",
+    "timeline_section_hBBi6r",
+    "image_banner_D6TgTi",
+    "longevity_circle_cNW94D",
+    "subscription_products_TYLphp",
+    "subscription_products_REAFz7",
+    "wines",
+    "landing_section_qAbkWE",
+    "faqs_9gMU6f",
+    "17401711251af96b37"
+  ]
+}

@@ -1,0 +1,128 @@
+<section id="how-it-helps-{{ section.id }}" class="how-it-helps-section">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="how-it-helps-heading heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    <div class="how-it-helps-grid">
+      {%- for block in section.blocks -%}
+        <div class="how-it-helps-card">
+          {%- if block.settings.card_title != blank -%}
+            <h3 class="how-it-helps-card-title heading">{{ block.settings.card_title }}</h3>
+          {%- endif -%}
+          {%- if block.settings.card_text != blank -%}
+            <p class="how-it-helps-card-text font-surt">{{ block.settings.card_text }}</p>
+          {%- endif -%}
+          <div class="how-it-helps-card-underline"></div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* === How it Helps Section === */
+.how-it-helps-section {
+  padding: 6rem 1rem;
+  background-color: #F7F5EB;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.how-it-helps-heading {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: #1E1E1E;
+}
+
+/* Grid dos cards */
+.how-it-helps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* Estilo do card */
+.how-it-helps-card {
+  background-color: #E5DBCC;
+  padding: 20px 14px;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.how-it-helps-card-title {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-bottom: 5px;
+  color: #000;
+  font-style: italic;
+}
+
+.how-it-helps-card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  flex-grow: 1;
+  color: #000000;
+}
+
+.how-it-helps-card-underline {
+  width: 100%;
+  height: 1px;
+  background-color: #707070;
+  margin-top: 1.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  .how-it-helps-section {
+    padding: 4rem 1rem;
+  }
+  .how-it-helps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+
+{% schema %}
+{
+  "name": "How it Helps",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Título da seção",
+      "default": "<p>HOW it helps</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Título do card",
+          "default": "Keeps things steady"
+        },
+        {
+          "type": "textarea",
+          "id": "card_text",
+          "label": "Texto do card",
+          "default": "Helps your body reset before symptoms hit."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "How it Helps",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

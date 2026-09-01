@@ -1,0 +1,193 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-grid": {
+      "type": "main-collection-grid",
+      "disabled": true,
+      "settings": {
+        "hero_image": "shopify://shop_images/Happy_Aging_-_Skep360_Photo_by_Ton_Gomes_2025-_1_of_1___23_3.jpg",
+        "hero_eyebrow": "",
+        "hero_title": "Target the effects of <em>aging from within</em>"
+      }
+    },
+    "product_list_7tQLqi": {
+      "type": "product-list",
+      "blocks": {
+        "product_item_T7QFa8": {
+          "type": "product_item",
+          "settings": {
+            "product": "brain-tonic"
+          }
+        },
+        "product_item_AWWVyi": {
+          "type": "product_item",
+          "settings": {
+            "product": "liver-tonic"
+          }
+        },
+        "product_item_YPKGxz": {
+          "type": "product_item",
+          "settings": {
+            "product": "radiance-tonic"
+          }
+        },
+        "product_item_RAydrz": {
+          "type": "product_item",
+          "settings": {
+            "product": "calm-tonic"
+          }
+        },
+        "product_item_JciQAF": {
+          "type": "product_item",
+          "settings": {
+            "product": "relief-tonic"
+          }
+        },
+        "product_item_Kj3LAk": {
+          "type": "product_item",
+          "settings": {
+            "product": "sleep-tonic"
+          }
+        },
+        "product_item_EnVxzL": {
+          "type": "product_item",
+          "settings": {
+            "product": "immunity-tonic"
+          }
+        },
+        "product_item_UMAzGG": {
+          "type": "product_item",
+          "settings": {
+            "product": "nmn-cell-renew-tonic"
+          }
+        },
+        "product_item_q9y8Yf": {
+          "type": "product_item",
+          "settings": {
+            "product": "longevitys-essential"
+          }
+        },
+        "product_item_TjiqUR": {
+          "type": "product_item",
+          "settings": {
+            "product": "longevity-shots"
+          }
+        },
+        "product_item_BbU6if": {
+          "type": "product_item",
+          "settings": {
+            "product": "creatine-for-women"
+          }
+        },
+        "product_item_Rwciiy": {
+          "type": "product_item",
+          "settings": {
+            "product": "hydroburn"
+          }
+        },
+        "product_item_gtbJik": {
+          "type": "product_item",
+          "settings": {
+            "product": "glow-shot"
+          }
+        },
+        "product_item_bqGLam": {
+          "type": "product_item",
+          "settings": {
+            "product": "calm-shot"
+          }
+        },
+        "product_item_jxkrLa": {
+          "type": "product_item",
+          "settings": {
+            "product": "cap-happy-aging-1"
+          }
+        },
+        "product_item_b7Hprb": {
+          "type": "product_item",
+          "settings": {
+            "product": "cap-happy-aging"
+          }
+        },
+        "product_item_WNUi9U": {
+          "type": "product_item",
+          "settings": {
+            "product": "cap-happy-aging-copy"
+          }
+        },
+        "product_item_rUkcaK": {
+          "type": "product_item",
+          "settings": {
+            "product": "cosmetic-bag-happy-aging-copy"
+          }
+        },
+        "product_item_NBmXTY": {
+          "type": "product_item",
+          "settings": {
+            "product": "cosmetic-bag-happy-aging-1"
+          }
+        },
+        "product_item_hmHEJV": {
+          "type": "product_item",
+          "settings": {
+            "product": "cosmetic-bag-happy-aging"
+          }
+        },
+        "product_item_HDdTFi": {
+          "type": "product_item",
+          "settings": {
+            "product": "cap-age-beautifully"
+          }
+        }
+      },
+      "block_order": [
+        "product_item_T7QFa8",
+        "product_item_AWWVyi",
+        "product_item_YPKGxz",
+        "product_item_RAydrz",
+        "product_item_JciQAF",
+        "product_item_Kj3LAk",
+        "product_item_EnVxzL",
+        "product_item_UMAzGG",
+        "product_item_q9y8Yf",
+        "product_item_TjiqUR",
+        "product_item_BbU6if",
+        "product_item_Rwciiy",
+        "product_item_gtbJik",
+        "product_item_bqGLam",
+        "product_item_jxkrLa",
+        "product_item_b7Hprb",
+        "product_item_WNUi9U",
+        "product_item_rUkcaK",
+        "product_item_NBmXTY",
+        "product_item_hmHEJV",
+        "product_item_HDdTFi"
+      ],
+      "custom_css": [
+        ".shop-all-title {font-size: 64px !important; font-style: italic !important; font-weight: 300 !important; letter-spacing: 1px; margin-bottom: 24px; color: #222;}",
+        ".product-card-wrapper h2,.product-card-wrapper .eyebrow {margin-top: 8px !important; margin-bottom: -10px !important;}",
+        ".product-card-wrapper {margin-bottom: 0 !important; }",
+        ".product-card-wrapper .mt-auto {margin-bottom: 50px !important; }"
+      ],
+      "name": "Product List",
+      "settings": {
+        "title": "Shop All",
+        "show_atc": true,
+        "show_learn_more": false,
+        "fix_atc": true
+      }
+    }
+  },
+  "order": [
+    "main-collection-grid",
+    "product_list_7tQLqi"
+  ]
+}

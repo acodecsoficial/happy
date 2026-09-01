@@ -1,0 +1,28 @@
+
+.subscription-widget cadence-selector.cadence-selector .option-details {
+    display: flex !important;
+    align-items: end;
+    justify-content: end;
+  position: relative;
+  border:0 !important;
+}
+
+.bottles-text {
+    white-space: nowrap;
+    display: none;
+}
+
+.period-price {
+    display: none !important;
+}
+
+.save-text{
+      margin: 0 !important;
+    position: absolute !important;
+    font-size: 10px !important;
+    background: #9caf88 !important;
+    padding: 5px !important;
+    color: #000000bf !important;
+    top: 20px;
+  right: 0% !important;
+}
